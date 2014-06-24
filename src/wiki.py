@@ -29,6 +29,7 @@ def main(wf):
     if not results:
         wf.add_item("Search Wikipedia for '{}'".format(query),
                     '',
+                    valid=True,
                     arg=query,
                     icon='wikipedia.png')
 

@@ -29,6 +29,7 @@ def main(wf):
     if not results:
         wf.add_item("Search Bing for '{}'".format(query),
                     '',
+                    valid=True,
                     arg=query,
                     icon='bing.png')
 
