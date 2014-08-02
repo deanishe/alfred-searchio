@@ -69,12 +69,15 @@ class Suggest(object):
 
     id_ = None
     name = None
-    icon = None
     _suggest_url = None
     _search_url = None
     _custom_suggest_urls = {}
     _custom_search_urls = {}
     _lang_region_map = {}
+
+    @property
+    def icon(self):
+        return 'icons/{}.png'.format(self.id_)
 
     @property
     def suggest_url(self):
@@ -129,7 +132,6 @@ class Google(Suggest):
 
     id_ = 'google'
     name = 'Google'
-    icon = 'google.png'
     _suggest_url = 'https://suggestqueries.google.com/complete/search'
     _search_url = 'http://www.google.com/webhp?q={query}#hl={lang}&safe=off&q={query}'
 
@@ -154,7 +156,6 @@ class Bing(Suggest):
 
     id_ = 'bing'
     name = 'Bing'
-    icon = 'bing.png'
     _suggest_url = 'http://api.bing.com/osjson.aspx'
     _search_url = 'https://www.bing.com/search?q={query}&go=Submit&qs=n&form=QBRE&filt=all&pq={query}&sc=8-6&sp=-1&sk='
 
@@ -175,7 +176,6 @@ class Yahoo(Suggest):
 
     id_ = 'yahoo'
     name = 'Yahoo!'
-    icon = 'yahoo.png'
     _suggest_url = 'http://{lang}-sayt.ff.search.yahoo.com/gossip-{lang}-sayt'
     _search_url = 'https://{lang}.search.yahoo.com/search?ei=utf-8&fr=crmas&p={query}'
     _custom_suggest_urls = {
@@ -201,7 +201,6 @@ class DuckDuckGo(Suggest):
 
     id_ = 'ddg'
     name = 'DuckDuckGo'
-    icon = 'ddg.png'
     _suggest_url = 'https://duckduckgo.com/ac/'
     _search_url = 'https://duckduckgo.com/?q={query}'
     _lang_region_map = {
@@ -226,7 +225,6 @@ class Wiktionary(Suggest):
 
     id_ = 'wiktionary'
     name = 'Wiktionary'
-    icon = 'wiktionary.png'
     _suggest_url = 'https://{lang}.wiktionary.org/w/api.php'
     _search_url = 'https://{lang}.wiktionary.org/wiki/{query}'
 
@@ -244,7 +242,6 @@ class Wikipedia(Suggest):
 
     id_ = 'wikipedia'
     name = 'Wikipedia'
-    icon = 'wikipedia.png'
     _suggest_url = 'https://{lang}.wikipedia.org/w/api.php'
     _search_url = 'https://{lang}.wikipedia.org/wiki/{query}'
 
@@ -262,7 +259,6 @@ class Ask(Suggest):
 
     id_ = 'ask'
     name = 'Ask'
-    icon = 'ask.png'
     _suggest_url = 'http://ss.{lang}.ask.com/query'
     _search_url = 'http://{lang}.ask.com/web?q={query}'
     _custom_suggest_urls = {
@@ -316,7 +312,7 @@ def main(wf):
                     name,
                     'Use `--engine {}` in your Script Filter'.format(id_),
                     valid=False,
-                    icon='icons/{}'.format(cls.icon))
+                    icon='icons/{}.png'.format(cls.id_))
             wf.send_feedback()
         return
 
@@ -384,7 +380,7 @@ def main(wf):
                             valid=True,
                             uid=url,
                             arg=url,
-                            icon='icons/{}'.format(engine.icon))
+                            icon=engine.icon)
 
     if not display_text:
         wf.send_feedback()
