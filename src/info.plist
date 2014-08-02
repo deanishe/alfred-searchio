@@ -3,16 +3,27 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>net.deanishe.alfred-websearch</string>
+	<string>net.deanishe.alfred-searchio</string>
 	<key>category</key>
 	<string>Internet</string>
 	<key>connections</key>
 	<dict>
+		<key>0877E34C-7243-4E59-B01B-299F8BE837A6</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1133DEAA-5A8F-4E7D-9E9C-A76CB82D9F92</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
 		<key>18E144DF-1054-4A12-B5F0-AC05C6F7DEFD</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>0114011C-F380-4CAA-8267-BE89E7477DE7</string>
+				<string>1133DEAA-5A8F-4E7D-9E9C-A76CB82D9F92</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -23,7 +34,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>8392BD28-5159-4CBD-B54D-CF2702B89E3E</string>
+				<string>1133DEAA-5A8F-4E7D-9E9C-A76CB82D9F92</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -34,7 +45,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>35657B60-9219-49BB-9067-C87F2ABBF8CC</string>
+				<string>1133DEAA-5A8F-4E7D-9E9C-A76CB82D9F92</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -45,18 +56,18 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>6FA7BF23-5149-46CC-8A7F-A6B844568C55</string>
+				<string>1133DEAA-5A8F-4E7D-9E9C-A76CB82D9F92</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
 			</dict>
 		</array>
-		<key>A423BEDD-7A37-490D-8901-B6684D239579</key>
+		<key>A9B8F463-0582-4B14-A44A-1B3B229B7055</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>002301F2-9623-49CB-8042-2C77B487A56E</string>
+				<string>1133DEAA-5A8F-4E7D-9E9C-A76CB82D9F92</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -67,7 +78,18 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>9F48BA93-0B3C-4BA5-A695-2B3F44821EBA</string>
+				<string>1133DEAA-5A8F-4E7D-9E9C-A76CB82D9F92</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>C7678A85-DE2F-43A9-B8A3-6F7BECDA4608</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1133DEAA-5A8F-4E7D-9E9C-A76CB82D9F92</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -78,19 +100,22 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>9E37324D-FAE5-40C3-B94E-1310C1028879</string>
+				<string>1133DEAA-5A8F-4E7D-9E9C-A76CB82D9F92</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
 			</dict>
+		</array>
+		<key>E27C4EA8-5B61-4C98-BED0-EDB34E30CF61</key>
+		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>935CA5C5-0175-4F70-9E28-F8510A338FE0</string>
+				<string>1133DEAA-5A8F-4E7D-9E9C-A76CB82D9F92</string>
 				<key>modifiers</key>
-				<integer>1048576</integer>
+				<integer>0</integer>
 				<key>modifiersubtext</key>
-				<string>Search German Wiktionary</string>
+				<string></string>
 			</dict>
 		</array>
 	</dict>
@@ -101,7 +126,7 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Web Search Autocomplete</string>
+	<string>Searchio!</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -116,7 +141,7 @@
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
 				<key>script</key>
-				<string>/usr/bin/python ddg.py "{query}"</string>
+				<string>/usr/bin/python search.py -e ddg "{query}"</string>
 				<key>title</key>
 				<string>Search with DuckDuckGo</string>
 				<key>type</key>
@@ -134,23 +159,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>plusspaces</key>
-				<false/>
-				<key>url</key>
-				<string>https://duckduckgo.com/?q={query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>9F48BA93-0B3C-4BA5-A695-2B3F44821EBA</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
@@ -160,7 +168,7 @@
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
 				<key>script</key>
-				<string>/usr/bin/python google.py "{query}"</string>
+				<string>/usr/bin/python search.py -e google "{query}"</string>
 				<key>title</key>
 				<string>Search with Google</string>
 				<key>type</key>
@@ -178,34 +186,27 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>plusspaces</key>
-				<false/>
-				<key>url</key>
-				<string>http://www.google.com/webhp?q={query}#hl=en&amp;safe=off&amp;q={query}</string>
-				<key>utf8</key>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>gd</string>
+				<key>runningsubtext</key>
+				<string>Fetching results…</string>
+				<key>script</key>
+				<string>/usr/bin/python search.py -e google -l de "{query}"</string>
+				<key>title</key>
+				<string>Search with Google</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
 				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
+			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>0114011C-F380-4CAA-8267-BE89E7477DE7</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>plusspaces</key>
-				<false/>
-				<key>url</key>
-				<string>https://en.wikipedia.org/wiki/{query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>6FA7BF23-5149-46CC-8A7F-A6B844568C55</string>
+			<string>0877E34C-7243-4E59-B01B-299F8BE837A6</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
@@ -221,7 +222,7 @@
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
 				<key>script</key>
-				<string>/usr/bin/python wiki.py "{query}"</string>
+				<string>/usr/bin/python search.py -e wikipedia "{query}"</string>
 				<key>title</key>
 				<string>Search Wikipedia</string>
 				<key>type</key>
@@ -248,7 +249,7 @@
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
 				<key>script</key>
-				<string>/usr/bin/python wiki_de.py "{query}"</string>
+				<string>/usr/bin/python search.py -e wikipedia -l de "{query}"</string>
 				<key>title</key>
 				<string>Search German Wikipedia</string>
 				<key>type</key>
@@ -266,40 +267,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>plusspaces</key>
-				<false/>
-				<key>url</key>
-				<string>https://de.wikipedia.org/wiki/{query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>35657B60-9219-49BB-9067-C87F2ABBF8CC</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>plusspaces</key>
-				<false/>
-				<key>url</key>
-				<string>https://www.bing.com/search?q={query}&amp;go=Submit&amp;qs=n&amp;form=QBRE&amp;filt=all&amp;pq={query}&amp;sc=8-6&amp;sp=-1&amp;sk=</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>8392BD28-5159-4CBD-B54D-CF2702B89E3E</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
@@ -309,7 +276,7 @@
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
 				<key>script</key>
-				<string>/usr/bin/python bing.py "{query}"</string>
+				<string>/usr/bin/python search.py -e bing "{query}"</string>
 				<key>title</key>
 				<string>Search with Bing</string>
 				<key>type</key>
@@ -336,7 +303,7 @@
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
 				<key>script</key>
-				<string>/usr/bin/python wiktionary.py "{query}"</string>
+				<string>/usr/bin/python search.py -e wiktionary "{query}"</string>
 				<key>title</key>
 				<string>Search Wiktionary</string>
 				<key>type</key>
@@ -354,54 +321,18 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>plusspaces</key>
-				<false/>
-				<key>url</key>
-				<string>https://en.wiktionary.org/wiki/{query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>9E37324D-FAE5-40C3-B94E-1310C1028879</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>plusspaces</key>
-				<false/>
-				<key>url</key>
-				<string>https://de.wiktionary.org/wiki/{query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>935CA5C5-0175-4F70-9E28-F8510A338FE0</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>s</string>
+				<string>wnd</string>
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
 				<key>script</key>
-				<string>/usr/bin/python search.py ddg "{query}"</string>
-				<key>subtext</key>
-				<string>Search web via multiple search engines</string>
+				<string>/usr/bin/python search.py -e wiktionary -l de "{query}"</string>
 				<key>title</key>
-				<string>Search Web</string>
+				<string>Search Wiktionary (DE)</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -410,7 +341,7 @@
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>A423BEDD-7A37-490D-8901-B6684D239579</string>
+			<string>A9B8F463-0582-4B14-A44A-1B3B229B7055</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
@@ -427,7 +358,90 @@
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
-			<string>002301F2-9623-49CB-8042-2C77B487A56E</string>
+			<string>1133DEAA-5A8F-4E7D-9E9C-A76CB82D9F92</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>dd</string>
+				<key>runningsubtext</key>
+				<string>Fetching results…</string>
+				<key>script</key>
+				<string>/usr/bin/python search.py -e ddg -l de "{query}"</string>
+				<key>title</key>
+				<string>Search with DuckDuckGo</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>C7678A85-DE2F-43A9-B8A3-6F7BECDA4608</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>bd</string>
+				<key>runningsubtext</key>
+				<string>Fetching results…</string>
+				<key>script</key>
+				<string>/usr/bin/python search.py -e bing -l de "{query}"</string>
+				<key>title</key>
+				<string>Search with Bing</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>E27C4EA8-5B61-4C98-BED0-EDB34E30CF61</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>keyword</key>
+				<string>searchio</string>
+				<key>runningsubtext</key>
+				<string>Generating list…</string>
+				<key>script</key>
+				<string>/usr/bin/python search.py --list</string>
+				<key>subtext</key>
+				<string>View list of supported search engines</string>
+				<key>title</key>
+				<string>Supported Search Engines</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>2F2432A8-3DCF-47C7-A1F4-680C2BF00198</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
@@ -436,67 +450,42 @@
 	<string></string>
 	<key>uidata</key>
 	<dict>
-		<key>002301F2-9623-49CB-8042-2C77B487A56E</key>
+		<key>0877E34C-7243-4E59-B01B-299F8BE837A6</key>
+		<dict>
+			<key>ypos</key>
+			<real>250</real>
+		</dict>
+		<key>1133DEAA-5A8F-4E7D-9E9C-A76CB82D9F92</key>
 		<dict>
 			<key>ypos</key>
 			<real>850</real>
-		</dict>
-		<key>0114011C-F380-4CAA-8267-BE89E7477DE7</key>
-		<dict>
-			<key>ypos</key>
-			<real>130</real>
 		</dict>
 		<key>18E144DF-1054-4A12-B5F0-AC05C6F7DEFD</key>
 		<dict>
 			<key>ypos</key>
 			<real>130</real>
 		</dict>
-		<key>35657B60-9219-49BB-9067-C87F2ABBF8CC</key>
+		<key>2F2432A8-3DCF-47C7-A1F4-680C2BF00198</key>
 		<dict>
 			<key>ypos</key>
-			<real>370</real>
+			<real>1210</real>
 		</dict>
 		<key>41C03945-94E6-4089-B4E9-1B19446E3D76</key>
 		<dict>
 			<key>ypos</key>
-			<real>490</real>
+			<real>610</real>
 		</dict>
 		<key>6BA5F1D0-6222-4657-8EDE-9C4C2DDC3A68</key>
 		<dict>
 			<key>ypos</key>
-			<real>370</real>
+			<real>490</real>
 		</dict>
 		<key>6D9FE2EC-FFBC-432E-B45B-F51FF74015F2</key>
 		<dict>
 			<key>ypos</key>
-			<real>250</real>
+			<real>370</real>
 		</dict>
-		<key>6FA7BF23-5149-46CC-8A7F-A6B844568C55</key>
-		<dict>
-			<key>ypos</key>
-			<real>250</real>
-		</dict>
-		<key>8392BD28-5159-4CBD-B54D-CF2702B89E3E</key>
-		<dict>
-			<key>ypos</key>
-			<real>490</real>
-		</dict>
-		<key>935CA5C5-0175-4F70-9E28-F8510A338FE0</key>
-		<dict>
-			<key>ypos</key>
-			<real>730</real>
-		</dict>
-		<key>9E37324D-FAE5-40C3-B94E-1310C1028879</key>
-		<dict>
-			<key>ypos</key>
-			<real>610</real>
-		</dict>
-		<key>9F48BA93-0B3C-4BA5-A695-2B3F44821EBA</key>
-		<dict>
-			<key>ypos</key>
-			<real>10</real>
-		</dict>
-		<key>A423BEDD-7A37-490D-8901-B6684D239579</key>
+		<key>A9B8F463-0582-4B14-A44A-1B3B229B7055</key>
 		<dict>
 			<key>ypos</key>
 			<real>850</real>
@@ -506,10 +495,20 @@
 			<key>ypos</key>
 			<real>10</real>
 		</dict>
+		<key>C7678A85-DE2F-43A9-B8A3-6F7BECDA4608</key>
+		<dict>
+			<key>ypos</key>
+			<real>970</real>
+		</dict>
 		<key>CA339DBD-BB74-4EAA-8817-694C7E9C4E76</key>
 		<dict>
 			<key>ypos</key>
-			<real>610</real>
+			<real>730</real>
+		</dict>
+		<key>E27C4EA8-5B61-4C98-BED0-EDB34E30CF61</key>
+		<dict>
+			<key>ypos</key>
+			<real>1090</real>
 		</dict>
 	</dict>
 	<key>webaddress</key>
