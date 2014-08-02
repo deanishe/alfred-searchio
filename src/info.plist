@@ -129,6 +129,17 @@
 				<string></string>
 			</dict>
 		</array>
+		<key>FCE73A46-8D9B-4A73-A19A-9B7ED27CB1E0</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1133DEAA-5A8F-4E7D-9E9C-A76CB82D9F92</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string>Dean Jackson</string>
@@ -179,7 +190,7 @@
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
 				<key>script</key>
-				<string>/usr/bin/python search.py -e google "{query}"</string>
+				<string>/usr/bin/python search.py "{query}"</string>
 				<key>title</key>
 				<string>Search with Google</string>
 				<key>type</key>
@@ -332,6 +343,23 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>plusspaces</key>
+				<false/>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>1133DEAA-5A8F-4E7D-9E9C-A76CB82D9F92</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
@@ -353,23 +381,6 @@
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
 			<string>A9B8F463-0582-4B14-A44A-1B3B229B7055</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>plusspaces</key>
-				<false/>
-				<key>url</key>
-				<string>{query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>1133DEAA-5A8F-4E7D-9E9C-A76CB82D9F92</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
@@ -483,6 +494,33 @@
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>ws</string>
+				<key>runningsubtext</key>
+				<string>Fetching results…</string>
+				<key>script</key>
+				<string>/usr/bin/python search.py -e wikipedia -l simple "{query}"</string>
+				<key>title</key>
+				<string>Search Wiktionary</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>FCE73A46-8D9B-4A73-A19A-9B7ED27CB1E0</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -552,6 +590,11 @@
 		<dict>
 			<key>ypos</key>
 			<real>1090</real>
+		</dict>
+		<key>FCE73A46-8D9B-4A73-A19A-9B7ED27CB1E0</key>
+		<dict>
+			<key>ypos</key>
+			<real>1450</real>
 		</dict>
 	</dict>
 	<key>webaddress</key>
