@@ -2,9 +2,9 @@
 
 Auto-suggest search results from multiple search engines and languages.
 
-![](screen3.png "")
+![Wikipedia search in English](screen3.png "Wikipedia search in English")
 
-![](screen4.png "")
+![Wikipedia search in German](screen4.png "Wikipedia search in German")
 
 Supports the following search engines/websites:
 
@@ -26,6 +26,8 @@ By default, your system language will be used. To specify a custom language:
 
 ![](screen2.png "")
 
+## Icons ##
+
 Icons for each search engine can be found in the `icons` subirectory of the Workflow.
 
 ## Languages ##
@@ -33,6 +35,20 @@ Icons for each search engine can be found in the `icons` subirectory of the Work
 The `-l` or `--language` argument to `search.py` doesn't follow any hard-and-fast rules: it depends on the search engine you're using. With some search engines (Google, Wikipedia, Wiktionary, Bing, DuckDuckGo), it's a language, e.g. `uk` = Ukrainian. In others (Yahoo!, Ask), it's treated as a region, e.g. `uk` = United Kingdom.
 
 Some search engines (Bing, DuckDuckGo) do not provide language-specific suggestions, but actioning the result will open a list of language-specific results in your browser.
+
+## Search engines ##
+
+The following search engines are supported. Pass the `id` to the `-e`/`--engine` argument of `search.py` to search using that engine. If `--engine` is not specified, Google will be used.
+
+|     id     |    Name    |
+|------------|------------|
+| google     | Google     |
+| wikipedia  | Wikipedia  |
+| wiktionary | Wiktionary |
+| ddg        | DuckDuckGo |
+| bing       | Bing       |
+| yahoo      | Yahoo!     |
+| ask        | Ask.com    |
 
 ### Wikipedia, Wiktionary ###
 
@@ -49,6 +65,45 @@ Bing and DuckDuckGo do not provide language-specific suggestions, but the result
 ### Ask, Yahoo! ###
 
 Ask.com and Yahoo! do not provide language-specific search suggestions/results, but rather region-specific ones. In many cases, this won't make a difference (e.g. `--language de` and `--language fr` will provide German and French results respectively), however the behaviour is different in some cases, e.g. `uk` means "United Kingdom", not "Ukrainian".
+
+## Examples ##
+
+Use these in the `Script` field of a Script Filter.
+
+```bash
+# Google (default engine) in your system (default) language
+/usr/bin/python search.py "{query}"
+
+# Google in German
+/usr/bin/python search.py -l de "{query}"
+
+# Google in French
+/usr/bin/python search.py -l fr "{query}"
+
+# Google in Brazilian Portuguese
+/usr/bin/python search.py -l pt-BR "{query}"
+
+# DuckDuckGo in system (default) language
+/usr/bin/python search.py -e ddg "{query}"
+
+# DuckDuckGo in Spanish
+/usr/bin/python search.py -e ddg -l es "{query}"
+
+# Yahoo! UK
+/usr/bin/python search.py -e yahoo -l uk "{query}"
+
+# Yahoo! Australia
+/usr/bin/python search.py -e yahoo -l au "{query}"
+
+# Wikipedia in Simple English
+/usr/bin/python search.py -e wikipedia -l simple "{query}"
+
+# Wikipedia in Polish
+/usr/bin/python search.py -e wikipedia -l pl "{query}"
+
+# Wiktionary in Spanish
+/usr/bin/python search.py -e wiktionary -l es "{query}"
+```
 
 ## Licensing, thanks ##
 
