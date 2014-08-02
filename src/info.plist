@@ -30,6 +30,17 @@
 				<string></string>
 			</dict>
 		</array>
+		<key>3604BBA2-1BA5-41C4-BE24-9B00090737D3</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1133DEAA-5A8F-4E7D-9E9C-A76CB82D9F92</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
 		<key>41C03945-94E6-4089-B4E9-1B19446E3D76</key>
 		<array>
 			<dict>
@@ -122,7 +133,7 @@
 	<key>createdby</key>
 	<string>Dean Jackson</string>
 	<key>description</key>
-	<string>Search via DuckDuckGo/Google/Bing/Wikipedia/Wiktionary</string>
+	<string>Search via DuckDuckGo/Google/Bing/Wikipedia/Wiktionary/Ask</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
@@ -445,6 +456,33 @@
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>y</string>
+				<key>runningsubtext</key>
+				<string>Fetching results…</string>
+				<key>script</key>
+				<string>/usr/bin/python search.py -e yahoo -l uk "{query}"</string>
+				<key>title</key>
+				<string>Search with Yahoo! UK</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>3604BBA2-1BA5-41C4-BE24-9B00090737D3</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -469,6 +507,11 @@
 		<dict>
 			<key>ypos</key>
 			<real>1210</real>
+		</dict>
+		<key>3604BBA2-1BA5-41C4-BE24-9B00090737D3</key>
+		<dict>
+			<key>ypos</key>
+			<real>1330</real>
 		</dict>
 		<key>41C03945-94E6-4089-B4E9-1B19446E3D76</key>
 		<dict>
