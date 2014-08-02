@@ -30,7 +30,7 @@ from __future__ import print_function, unicode_literals
 
 import sys
 from hashlib import md5
-from urllib import quote_plus
+import urllib
 import subprocess
 
 from workflow import Workflow, web, ICON_ERROR
@@ -74,6 +74,7 @@ class Suggest(object):
     _custom_suggest_urls = {}
     _custom_search_urls = {}
     _lang_region_map = {}
+    _quote_plus = True
 
     @property
     def icon(self):
@@ -123,7 +124,10 @@ class Suggest(object):
         options = self.options.copy()
         options['query'] = query
         for key in options:
-            options[key] = quote_plus(options[key].encode('utf-8'))
+            if self._quote_plus:
+                options[key] = urllib.quote_plus(options[key].encode('utf-8'))
+            else:
+                options[key] = urllib.quote(options[key].encode('utf-8'))
         return url.format(**options)
 
 
@@ -227,6 +231,7 @@ class Wiktionary(Suggest):
     name = 'Wiktionary'
     _suggest_url = 'https://{lang}.wiktionary.org/w/api.php'
     _search_url = 'https://{lang}.wiktionary.org/wiki/{query}'
+    _quote_plus = False
 
     def _suggest(self):
         url = self.suggest_url.format(lang=self.options['lang'])
@@ -244,6 +249,7 @@ class Wikipedia(Suggest):
     name = 'Wikipedia'
     _suggest_url = 'https://{lang}.wikipedia.org/w/api.php'
     _search_url = 'https://{lang}.wikipedia.org/wiki/{query}'
+    _quote_plus = False
 
     def _suggest(self):
         url = self.suggest_url.format(lang=self.options['lang'])
