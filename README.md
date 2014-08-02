@@ -24,6 +24,7 @@ There are several searches pre-configured. Only some have keywords (i.e. can be 
 - `w` — Search in system (default) language using Wikipedia
 - `d` — Search in system (default) language using DuckDuckGo
 - `searchio` — Show list of supported search engines
+- `searchiohelp` — Open help (this README) in your browser
 
 To add a new search, either copy/paste an existing Script Filter, or create a new one as follows:
 
