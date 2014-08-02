@@ -85,6 +85,17 @@
 				<string></string>
 			</dict>
 		</array>
+		<key>B4A82FCF-3661-4BC7-980E-76E299A34808</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>FF5496AD-5550-43AE-A752-A57A9C534160</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
 		<key>BD4C3479-73CE-4705-9062-F71ADC5C8533</key>
 		<array>
 			<dict>
@@ -521,6 +532,44 @@
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>searchiohelp</string>
+				<key>subtext</key>
+				<string>Open help file in your browser</string>
+				<key>text</key>
+				<string>Searchio Help</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>B4A82FCF-3661-4BC7-980E-76E299A34808</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>plusspaces</key>
+				<false/>
+				<key>url</key>
+				<string>https://github.com/deanishe/alfred-searchio/blob/feature/multilingual/README.md#searchio-workflow-for-alfred</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>FF5496AD-5550-43AE-A752-A57A9C534160</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -571,6 +620,11 @@
 			<key>ypos</key>
 			<real>850</real>
 		</dict>
+		<key>B4A82FCF-3661-4BC7-980E-76E299A34808</key>
+		<dict>
+			<key>ypos</key>
+			<real>1570</real>
+		</dict>
 		<key>BD4C3479-73CE-4705-9062-F71ADC5C8533</key>
 		<dict>
 			<key>ypos</key>
@@ -595,6 +649,11 @@
 		<dict>
 			<key>ypos</key>
 			<real>1450</real>
+		</dict>
+		<key>FF5496AD-5550-43AE-A752-A57A9C534160</key>
+		<dict>
+			<key>ypos</key>
+			<real>1570</real>
 		</dict>
 	</dict>
 	<key>webaddress</key>
