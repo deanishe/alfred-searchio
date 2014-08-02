@@ -16,6 +16,10 @@ Supports the following search engines/websites:
 - Yahoo!
 - Ask.com
 
+## Download and installation ##
+
+Download the latest version from the [GitHub releases page](https://github.com/deanishe/alfred-searchio/releases/latest) or [Packal](http://www.packal.org/workflow/searchio).
+
 ## Usage ##
 
 There are several searches pre-configured. Only some have keywords (i.e. can be used as-is):
