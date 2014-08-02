@@ -16,7 +16,16 @@ Supports the following search engines/websites:
 - Yahoo!
 - Ask.com
 
-There are some example searches configured by default (with and without keywords). To add a new one, either copy/paste an existing one, or create a new Script Filter as follows:
+## Usage ##
+
+There are several searches pre-configured. Only some have keywords (i.e. can be used as-is):
+
+- `g` — Search in system (default) language using Google
+- `w` — Search in system (default) language using Wikipedia
+- `d` — Search in system (default) language using DuckDuckGo
+- `searchio` — Show list of supported search engines
+
+To add a new search, either copy/paste an existing Script Filter, or create a new one as follows:
 
 ![](screen1.png "")
 
@@ -25,6 +34,8 @@ There are some example searches configured by default (with and without keywords
 By default, your system language will be used. To specify a custom language:
 
 ![](screen2.png "")
+
+**Note:** Be sure to connect the Script Filter to the Open URL action or it won't work.
 
 ## Icons ##
 
