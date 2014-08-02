@@ -224,33 +224,6 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>gd</string>
-				<key>runningsubtext</key>
-				<string>Fetching results…</string>
-				<key>script</key>
-				<string>/usr/bin/python search.py -e google -l de "{query}"</string>
-				<key>title</key>
-				<string>Search with Google</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>0877E34C-7243-4E59-B01B-299F8BE837A6</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
 				<string>w</string>
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
@@ -277,8 +250,31 @@
 				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
-				<key>keyword</key>
-				<string>wd</string>
+				<key>runningsubtext</key>
+				<string>Fetching results…</string>
+				<key>script</key>
+				<string>/usr/bin/python search.py -e google -l de "{query}"</string>
+				<key>title</key>
+				<string>Search with Google</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>0877E34C-7243-4E59-B01B-299F8BE837A6</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
 				<key>script</key>
@@ -304,8 +300,6 @@
 				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
-				<key>keyword</key>
-				<string>b</string>
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
 				<key>script</key>
@@ -331,8 +325,6 @@
 				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
-				<key>keyword</key>
-				<string>wn</string>
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
 				<key>script</key>
@@ -375,8 +367,6 @@
 				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
-				<key>keyword</key>
-				<string>wnd</string>
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
 				<key>script</key>
@@ -402,8 +392,6 @@
 				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
-				<key>keyword</key>
-				<string>dd</string>
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
 				<key>script</key>
@@ -429,8 +417,6 @@
 				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
-				<key>keyword</key>
-				<string>bd</string>
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
 				<key>script</key>
@@ -446,6 +432,56 @@
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
 			<string>E27C4EA8-5B61-4C98-BED0-EDB34E30CF61</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>runningsubtext</key>
+				<string>Fetching results…</string>
+				<key>script</key>
+				<string>/usr/bin/python search.py -e yahoo -l uk "{query}"</string>
+				<key>title</key>
+				<string>Search with Yahoo! UK</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>3604BBA2-1BA5-41C4-BE24-9B00090737D3</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>runningsubtext</key>
+				<string>Fetching results…</string>
+				<key>script</key>
+				<string>/usr/bin/python search.py -e wikipedia -l simple "{query}"</string>
+				<key>title</key>
+				<string>Search Wiktionary</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>FCE73A46-8D9B-4A73-A19A-9B7ED27CB1E0</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
@@ -475,60 +511,6 @@
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
 			<string>2F2432A8-3DCF-47C7-A1F4-680C2BF00198</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
-				<string>y</string>
-				<key>runningsubtext</key>
-				<string>Fetching results…</string>
-				<key>script</key>
-				<string>/usr/bin/python search.py -e yahoo -l uk "{query}"</string>
-				<key>title</key>
-				<string>Search with Yahoo! UK</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>3604BBA2-1BA5-41C4-BE24-9B00090737D3</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
-				<string>ws</string>
-				<key>runningsubtext</key>
-				<string>Fetching results…</string>
-				<key>script</key>
-				<string>/usr/bin/python search.py -e wikipedia -l simple "{query}"</string>
-				<key>title</key>
-				<string>Search Wiktionary</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>FCE73A46-8D9B-4A73-A19A-9B7ED27CB1E0</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
@@ -578,7 +560,7 @@
 		<key>0877E34C-7243-4E59-B01B-299F8BE837A6</key>
 		<dict>
 			<key>ypos</key>
-			<real>250</real>
+			<real>370</real>
 		</dict>
 		<key>1133DEAA-5A8F-4E7D-9E9C-A76CB82D9F92</key>
 		<dict>
@@ -593,12 +575,12 @@
 		<key>2F2432A8-3DCF-47C7-A1F4-680C2BF00198</key>
 		<dict>
 			<key>ypos</key>
-			<real>1210</real>
+			<real>1450</real>
 		</dict>
 		<key>3604BBA2-1BA5-41C4-BE24-9B00090737D3</key>
 		<dict>
 			<key>ypos</key>
-			<real>1330</real>
+			<real>1210</real>
 		</dict>
 		<key>41C03945-94E6-4089-B4E9-1B19446E3D76</key>
 		<dict>
@@ -613,7 +595,7 @@
 		<key>6D9FE2EC-FFBC-432E-B45B-F51FF74015F2</key>
 		<dict>
 			<key>ypos</key>
-			<real>370</real>
+			<real>250</real>
 		</dict>
 		<key>A9B8F463-0582-4B14-A44A-1B3B229B7055</key>
 		<dict>
@@ -648,7 +630,7 @@
 		<key>FCE73A46-8D9B-4A73-A19A-9B7ED27CB1E0</key>
 		<dict>
 			<key>ypos</key>
-			<real>1450</real>
+			<real>1330</real>
 		</dict>
 		<key>FF5496AD-5550-43AE-A752-A57A9C534160</key>
 		<dict>
