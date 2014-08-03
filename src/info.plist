@@ -30,6 +30,17 @@
 				<string></string>
 			</dict>
 		</array>
+		<key>2F2432A8-3DCF-47C7-A1F4-680C2BF00198</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F475E2AB-BBA7-4C5B-9319-4B26133397EF</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
 		<key>3604BBA2-1BA5-41C4-BE24-9B00090737D3</key>
 		<array>
 			<dict>
@@ -134,6 +145,17 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>1133DEAA-5A8F-4E7D-9E9C-A76CB82D9F92</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>F475E2AB-BBA7-4C5B-9319-4B26133397EF</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6B5D7BC9-4C88-46CE-BCC2-DFDD40A385D2</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -250,12 +272,14 @@
 				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
+				<key>keyword</key>
+				<string>gd</string>
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
 				<key>script</key>
 				<string>/usr/bin/python search.py -e google -l de "{query}"</string>
 				<key>title</key>
-				<string>Search with Google</string>
+				<string>Search with Google (DE)</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -275,6 +299,8 @@
 				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
+				<key>keyword</key>
+				<string>wd</string>
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
 				<key>script</key>
@@ -325,6 +351,8 @@
 				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
+				<key>keyword</key>
+				<string>wn</string>
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
 				<key>script</key>
@@ -350,12 +378,14 @@
 				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
+				<key>keyword</key>
+				<string>wnd</string>
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
 				<key>script</key>
 				<string>/usr/bin/python search.py -e wiktionary -l de "{query}"</string>
 				<key>title</key>
-				<string>Search Wiktionary (DE)</string>
+				<string>Search German Wiktionary</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -392,6 +422,8 @@
 				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
+				<key>keyword</key>
+				<string>d</string>
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
 				<key>script</key>
@@ -442,6 +474,8 @@
 				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
+				<key>keyword</key>
+				<string>y</string>
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
 				<key>script</key>
@@ -482,6 +516,48 @@
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
 			<string>FCE73A46-8D9B-4A73-A19A-9B7ED27CB1E0</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>/usr/bin/python settings.py toggle-query-in-results</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>F475E2AB-BBA7-4C5B-9319-4B26133397EF</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>output</key>
+				<integer>0</integer>
+				<key>removeextension</key>
+				<false/>
+				<key>sticky</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>Settings Updated</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>6B5D7BC9-4C88-46CE-BCC2-DFDD40A385D2</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
@@ -587,6 +663,11 @@
 			<key>ypos</key>
 			<real>610</real>
 		</dict>
+		<key>6B5D7BC9-4C88-46CE-BCC2-DFDD40A385D2</key>
+		<dict>
+			<key>ypos</key>
+			<real>1450</real>
+		</dict>
 		<key>6BA5F1D0-6222-4657-8EDE-9C4C2DDC3A68</key>
 		<dict>
 			<key>ypos</key>
@@ -626,6 +707,11 @@
 		<dict>
 			<key>ypos</key>
 			<real>1090</real>
+		</dict>
+		<key>F475E2AB-BBA7-4C5B-9319-4B26133397EF</key>
+		<dict>
+			<key>ypos</key>
+			<real>1450</real>
 		</dict>
 		<key>FCE73A46-8D9B-4A73-A19A-9B7ED27CB1E0</key>
 		<dict>
