@@ -33,7 +33,7 @@ from hashlib import md5
 import urllib
 import subprocess
 
-from workflow import Workflow, web, ICON_ERROR
+from workflow import Workflow, web, ICON_ERROR, ICON_SETTINGS
 
 
 DEFAULT_ENGINE = 'google'
@@ -94,25 +94,32 @@ class Suggest(object):
         url = url.replace('{query}', '{{query}}')
         return url.format(**self.options)
 
-    def __init__(self, wf, options):
+    def __init__(self, wf, options, show_query_in_results=False):
         self.wf = wf
         self.options = options
+        self.show_query_in_results = show_query_in_results
         # Map language to region for engines that require that
         if self.options['lang'] in self._lang_region_map:
             self.options['lang'] = self._lang_region_map[self.options['lang']]
 
     def search(self):
+        # Create cache key
         components = [self.name]
         for t in self.options.items():
             components.extend(t)
         m = md5()
-        log.debug(components)
+        log.debug('key components : {}'.format(components))
         m.update(':'.join(components).encode('utf-8'))
         key = m.hexdigest()
-        return self.wf.cached_data(key, self._suggest, max_age=600)
+
+        # return self.wf.cached_data(key, self._suggest, max_age=600)
+        results = self.wf.cached_data(key, self._suggest, max_age=600)
+
         # Add query to results
-        # results = self.wf.cached_data(key, self._suggest, max_age=600)
-        # return [self.options['query']] + results
+        if self.show_query_in_results:
+            results = [self.options['query']] + results
+
+        return results
 
     def _suggest(self):
         """Return list of unicode suggestions"""
@@ -137,7 +144,8 @@ class Google(Suggest):
     id_ = 'google'
     name = 'Google'
     _suggest_url = 'https://suggestqueries.google.com/complete/search'
-    _search_url = 'http://www.google.com/webhp?q={query}#hl={lang}&safe=off&q={query}'
+    # _search_url = 'https://www.google.com/webhp?q={query}#hl={lang}&safe=off&q={query}'
+    _search_url = 'https://www.google.com/search?q={query}&hl={lang}&safe=off'
 
     def _suggest(self):
         response = web.get(self.suggest_url, {'client': 'firefox',
@@ -311,6 +319,13 @@ def main(wf):
                 print(fmt.format(id_, engines[id_].name))
             print()
         else:
+            # Show settings
+            qir = ('No', 'Yes')[wf.settings.get('show_query_in_results', False)]
+            wf.add_item('Show query in results: {}'.format(qir),
+                        'Action this item to toggle setting',
+                        arg='show_query_in_results',
+                        valid=True,
+                        icon=ICON_SETTINGS)
             name_id_list = sorted([(cls.name, id_, cls) for (id_, cls) in
                                    engines.items()])
             for name, id_, cls in name_id_list:
@@ -358,7 +373,9 @@ def main(wf):
             return
 
     # Instantiate `Suggest` subclass with workflow object
-    engine = engines[options['engine']](wf, options)
+    engine = engines[options['engine']](wf, options,
+                                        wf.settings.get('show_query_in_results',
+                                                        False))
 
     results = engine.search()
 
