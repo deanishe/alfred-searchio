@@ -15,7 +15,7 @@ Provide auto-suggestion results for <query>
 Usage:
     search.py [(-t|--text)] [-e|--engine ENGINE_ID] [--lang LANG] [<query>]
     search.py (-h|--help)
-    search.py [-t|--text] (-L|--list)
+    search.py [-t|--text] (-L|--list) [<query>]
 
 Options:
     -e, --engine=ENGINE_ID  ID of search engine to use
@@ -76,6 +76,14 @@ class Suggest(object):
     _lang_region_map = {}
     _quote_plus = True
 
+    def __init__(self, wf, options, show_query_in_results=False):
+        self.wf = wf
+        self.options = options
+        self.show_query_in_results = show_query_in_results
+        # Map language to region for engines that require that
+        if self.options['lang'] in self._lang_region_map:
+            self.options['lang'] = self._lang_region_map[self.options['lang']]
+
     @property
     def icon(self):
         return 'icons/{}.png'.format(self.id_)
@@ -93,14 +101,6 @@ class Suggest(object):
         # Ensure {query} is not added from options (it'll be added by `url_for`)
         url = url.replace('{query}', '{{query}}')
         return url.format(**self.options)
-
-    def __init__(self, wf, options, show_query_in_results=False):
-        self.wf = wf
-        self.options = options
-        self.show_query_in_results = show_query_in_results
-        # Map language to region for engines that require that
-        if self.options['lang'] in self._lang_region_map:
-            self.options['lang'] = self._lang_region_map[self.options['lang']]
 
     def search(self):
         # Create cache key
@@ -144,7 +144,6 @@ class Google(Suggest):
     id_ = 'google'
     name = 'Google'
     _suggest_url = 'https://suggestqueries.google.com/complete/search'
-    # _search_url = 'https://www.google.com/webhp?q={query}#hl={lang}&safe=off&q={query}'
     _search_url = 'https://www.google.com/search?q={query}&hl={lang}&safe=off'
 
     def _suggest(self):
@@ -152,6 +151,142 @@ class Google(Suggest):
                                               'q': self.options['query'],
                                               'hl': self.options['lang']})
         response.raise_for_status()
+        _, results = response.json()
+        return results
+
+
+class GoogleImages(Suggest):
+    """Get search suggestions from Google Images"""
+
+    id_ = 'google-images'
+    name = 'Google Images'
+    _suggest_url = 'https://suggestqueries.google.com/complete/search'
+    _search_url = 'https://www.google.com/search?tbm=isch&q={query}&hl={lang}&safe=off'
+    # _search_url = 'https://www.google.com/search?q={query}&hl={lang}&safe=off'
+
+    def _suggest(self):
+        response = web.get(self.suggest_url, {'client': 'firefox',
+                                              'ds': 'i',
+                                              'q': self.options['query'],
+                                              'hl': self.options['lang']})
+        response.raise_for_status()
+        _, results = response.json()
+        return results
+
+
+class GoogleMaps(Suggest):
+    """Get search suggestions from Google Maps"""
+
+    id_ = 'google-maps'
+    name = 'Google Maps'
+    _suggest_url = 'https://maps.google.com/maps/suggest'
+    _search_url = 'https://www.google.com/search?q={query}&hl={lang}&safe=off'
+
+    def _suggest(self):
+        response = web.get(self.suggest_url, {'v': '2',
+                                              'cp': '999',
+                                              'json': 'b',
+                                              'q': self.options['query'],
+                                              'hl': self.options['lang'],
+                                              'gl': self.options['lang']})
+        response.raise_for_status()
+
+        results = response.json().get('suggestion', [])
+
+        if not results:
+            return []
+        results = [d['query'] for d in results if 'query' in d]
+
+        return results
+
+
+class YouTube(Suggest):
+    """Get search suggestions from Youtube"""
+
+    id_ = 'youtube'
+    name = 'YouTube'
+    _suggest_url = 'https://suggestqueries.google.com/complete/search'
+    _search_url = 'https://www.youtube.com/results?search_query={query}'
+    # _search_url = 'https://www.google.com/search?q={query}&hl={lang}&safe=off'
+
+    def _suggest(self):
+        response = web.get(self.suggest_url, {'client': 'firefox',
+                                              'ds': 'yt',
+                                              'q': self.options['query'],
+                                              'hl': self.options['lang']})
+        response.raise_for_status()
+        _, results = response.json()
+        return results
+
+
+class Amazon(Suggest):
+    """Get search suggestions from Amazon"""
+
+    # markets
+    # 1 = us
+    # 2 = ??
+    # 3 = uk
+    # 4 = de
+    # 5 = fr
+    # 7 = ca
+    # 44551 = es
+
+    id_ = 'amazon'
+    name = 'Amazon'
+    _suggest_url = 'https://completion.amazon.com/search/complete'
+    _search_url = 'https://www.amazon.{lang}/gp/search?ie=UTF8&keywords={query}'
+    _lang_region_map = {
+        'en': 'com',
+        'uk': 'co.uk',
+        'de': 'de',
+        'fr': 'fr',
+        'ca': 'ca',
+        'es': 'es',
+    }
+    _custom_suggest_urls = {
+        'co.uk': 'https://completion.amazon.co.uk/search/complete',
+        'de': 'https://completion.amazon.co.uk/search/complete',
+        'fr': 'https://completion.amazon.co.uk/search/complete',
+        'es': 'https://completion.amazon.co.uk/search/complete',
+    }
+
+    _domain_market_map = {
+        'com': '1',
+        'co.uk': '3',
+        'de': '4',
+        'fr': '5',
+        'ca': '7',
+        'es': '44551',
+    }
+
+    def _suggest(self):
+        market = self._domain_market_map.get(self.options['lang'], '1')
+        response = web.get(self.suggest_url, {'method': 'completion',
+                                              'search-alias': 'aps',
+                                              'q': self.options['query'],
+                                              'mkt': market})
+        response.raise_for_status()
+        results = response.json()[1]
+        return results
+
+
+class Ebay(Suggest):
+    """Get search suggestions from eBay"""
+
+    id_ = 'ebay'
+    name = 'eBay'
+    _suggest_url = 'https://anywhere.ebay.com/services/suggest/'
+    _search_url = 'http://shop.ebay.{lang}/?_nkw={query}'
+    _lang_region_map = {
+        'en': 'com',
+        'uk': 'co.uk',
+    }
+
+    def _suggest(self):
+        response = web.get(self.suggest_url, {'s': '0',
+                                              'q': self.options['query']})
+        response.raise_for_status()
+        log.debug(response.url)
         _, results = response.json()
         return results
 
@@ -308,17 +443,27 @@ def main(wf):
     ####################################################################
 
     if args.get('--list'):  # Show list of supported engines
-        if display_text:
-            length = sorted([len(l) for l in engines.keys()])[-1]
+
+        query = args.get('<query>')
+
+        name_id_list = sorted([(cls.name, id_) for (id_, cls) in
+                               engines.items()])
+
+        if query:
+            name_id_list = wf.filter(query, name_id_list, lambda x: x[0])
+
+        if display_text:  # Display for terminal
+            length = sorted([len(t[1]) for t in name_id_list])[-1]
             fmt = '{{:{}s}} | {{}}'.format(length)
             print('Supported search engines\n')
             print('Use `-e ENGINE_ID` to specify the search engine.\n')
-            print(fmt.format('ID', 'Search Engine'))
+            print(fmt.format('ENGINE_ID', 'Search Engine'))
             print('-' * 40)
-            for id_ in sorted(engines):
-                print(fmt.format(id_, engines[id_].name))
+            for name, id_ in name_id_list:
+                print(fmt.format(id_, name))
             print()
-        else:
+
+        else:  # Display for Alfred
             # Show settings
             qir = ('No', 'Yes')[wf.settings.get('show_query_in_results', False)]
             wf.add_item('Show query in results: {}'.format(qir),
@@ -326,14 +471,13 @@ def main(wf):
                         arg='show_query_in_results',
                         valid=True,
                         icon=ICON_SETTINGS)
-            name_id_list = sorted([(cls.name, id_, cls) for (id_, cls) in
-                                   engines.items()])
-            for name, id_, cls in name_id_list:
+
+            for name, id_ in name_id_list:
                 wf.add_item(
                     name,
                     'Use `--engine {}` in your Script Filter'.format(id_),
                     valid=False,
-                    icon='icons/{}.png'.format(cls.id_))
+                    icon='icons/{}.png'.format(id_))
             wf.send_feedback()
         return
 

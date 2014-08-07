@@ -9,8 +9,13 @@ Auto-suggest search results from multiple search engines and languages.
 Supports the following search engines/websites:
 
 - Google
+- Google Images
+- Google Maps
+- YouTube
 - Wikipedia
 - Wiktionary
+- Amazon
+- eBay
 - DuckDuckGo
 - Bing
 - Yahoo!
@@ -24,11 +29,19 @@ Download the latest version from the [GitHub releases page](https://github.com/d
 
 There are several searches pre-configured. Only some have keywords (i.e. can be used as-is):
 
-- `g` — Search in system (default) language using Google
-- `w` — Search in system (default) language using Wikipedia
-- `d` — Search in system (default) language using DuckDuckGo
-- `searchio` — Show settings and list of supported search engines. Currently, the only setting is a toggle to also show the `<query>` in the results list (default: False).
+- `g` — Search Google in system (i.e. default) language
+- `m` — Search Google Maps in system (i.e. default) language
+- `gi` — Search Google Images in system (i.e. default) language
+- `w` — Search Wikipedia in system (i.e. default) language
+- `wn` — Search Wiktionary in system (i.e. default) language
+- `a` — Search Amazon in system (i.e. default) language. If your system language is English, this will search  Amazon.com. Use `-l uk` in the Script Filter to search Amazon.co.uk or `-l ca` to search Amazon.ca.
+- `yt` — Search YouTube in system (i.e. default) language
+- `searchio [<query>]` — Show settings and list of supported search engines. Currently, the only setting is a toggle to also show the `<query>` in the results list (default: `No`).
 - `searchiohelp` — Open help (this README) in your browser
+
+Most of the other available search engines also have an example Script Filter configured, but without a keyword. Add a keyword if you wish to use one of the examples.
+
+Several of the Script Filters demonstrate the use of the `--language` (or `-l`) option to the `search.py` script to search in a different language/region. See [the Languages section](#languages) for more information.
 
 To add a new search, either copy/paste an existing Script Filter, or create a new one as follows:
 
@@ -48,23 +61,28 @@ Icons for each search engine can be found in the `icons` subirectory of the Work
 
 ## Languages ##
 
-The `-l` or `--language` argument to `search.py` doesn't follow any hard-and-fast rules: it depends on the search engine you're using. With some search engines (Google, Wikipedia, Wiktionary, Bing, DuckDuckGo), it's a language, e.g. `uk` = Ukrainian. In others (Yahoo!, Ask), it's treated as a region, e.g. `uk` = United Kingdom.
+The `-l` or `--language` argument to `search.py` doesn't follow any hard-and-fast rules: it depends on the search engine you're using. With some search engines (Google, Wikipedia, Wiktionary, Bing, DuckDuckGo), it's a language, e.g. `uk` = Ukrainian. In others (Yahoo!, Amazon, Ask), it's treated as a region, e.g. `uk` = United Kingdom.
 
-Some search engines (Bing, DuckDuckGo) do not provide language-specific suggestions, but actioning the result will open a list of language-specific results in your browser.
+Some search engines (Bing, DuckDuckGo, eBay) do not provide language-specific suggestions, but actioning the result will open a list of language-specific results in your browser.
 
 ## Search engines ##
 
-The following search engines are supported. Pass the `id` to the `-e`/`--engine` argument of `search.py` to search using that engine. If `--engine` is not specified, Google will be used.
+The following search engines are supported. Pass the `ID` to the `-e`/`--engine` argument of `search.py` to search using that engine. If `--engine` is not specified, Google will be used.
 
-|     id     |    Name    |
-|------------|------------|
-| google     | Google     |
-| wikipedia  | Wikipedia  |
-| wiktionary | Wiktionary |
-| ddg        | DuckDuckGo |
-| bing       | Bing       |
-| yahoo      | Yahoo!     |
-| ask        | Ask.com    |
+|       ID      |      Name     |
+|---------------|---------------|
+| amazon        | Amazon        |
+| ask           | Ask           |
+| bing          | Bing          |
+| ddg           | DuckDuckGo    |
+| google        | Google        |
+| google-images | Google Images |
+| google-maps   | Google Maps   |
+| wikipedia     | Wikipedia     |
+| wiktionary    | Wiktionary    |
+| yahoo         | Yahoo!        |
+| youtube       | YouTube       |
+| ebay          | eBay          |
 
 ### Wikipedia, Wiktionary ###
 
@@ -74,13 +92,13 @@ The `--language` argument will be treated as a subdomain, e.g. `de` will retriev
 
 The `--language` argument should work for [any language supported by Google](https://www.google.com/preferences#languages), with the obvious exceptions of things like Klingon and Hacker…
 
-### Bing, DuckDuckGo ###
+### Bing, DuckDuckGo, eBay ###
 
-Bing and DuckDuckGo do not provide language-specific suggestions, but the results opened in your browser should be restricted to the specified language.
+Bing, eBay and DuckDuckGo do not provide language-specific suggestions, but the results opened in your browser should be restricted to the specified language/region.
 
-### Ask, Yahoo! ###
+### Ask, Amazon, Yahoo! ###
 
-Ask.com and Yahoo! do not provide language-specific search suggestions/results, but rather region-specific ones. In many cases, this won't make a difference (e.g. `--language de` and `--language fr` will provide German and French results respectively), however the behaviour is different in some cases, e.g. `uk` means "United Kingdom", not "Ukrainian".
+Ask.com, Amazon and Yahoo! do not provide language-specific search suggestions/results, but rather region-specific ones. In many cases, this won't make a difference (e.g. `--language de` and `--language fr` will provide German and French results respectively), however the behaviour is different in some cases, e.g. `uk` means "United Kingdom", not "Ukrainian".
 
 ## Examples ##
 
@@ -96,8 +114,14 @@ Use these in the `Script` field of a Script Filter.
 # Google in French
 /usr/bin/python search.py -l fr "{query}"
 
-# Google in Brazilian Portuguese
-/usr/bin/python search.py -l pt-BR "{query}"
+# YouTube in Brazilian Portuguese
+/usr/bin/python search.py -e youtube -l pt-BR "{query}"
+
+# Amazon.co.uk
+/usr/bin/python search.py -e amazon -l uk "{query}"
+
+# Amazon.ca
+/usr/bin/python search.py -e amazon -l ca "{query}"
 
 # DuckDuckGo in system (default) language
 /usr/bin/python search.py -e ddg "{query}"
