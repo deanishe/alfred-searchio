@@ -545,6 +545,7 @@ def main(wf):
                 wf.add_item(phrase,
                             "Search {} for '{}'".format(engine.name, phrase),
                             valid=True,
+                            autocomplete=phrase,
                             uid=url,
                             arg=url,
                             icon=engine.icon)
