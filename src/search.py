@@ -180,7 +180,7 @@ class GoogleMaps(Suggest):
     id_ = 'google-maps'
     name = 'Google Maps'
     _suggest_url = 'https://maps.google.com/maps/suggest'
-    _search_url = 'https://www.google.com/search?q={query}&hl={lang}&safe=off'
+    _search_url = 'https://www.google.com/maps/preview?q={query}&hl={lang}'
 
     def _suggest(self):
         response = web.get(self.suggest_url, {'v': '2',
