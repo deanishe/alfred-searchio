@@ -161,7 +161,8 @@ class GoogleImages(Suggest):
     id_ = 'google-images'
     name = 'Google Images'
     _suggest_url = 'https://suggestqueries.google.com/complete/search'
-    _search_url = 'https://www.google.com/search?tbm=isch&q={query}&hl={lang}&safe=off'
+    _search_url = ('https://www.google.com/search?tbm=isch&'
+                   'q={query}&hl={lang}&safe=off')
     # _search_url = 'https://www.google.com/search?q={query}&hl={lang}&safe=off'
 
     def _suggest(self):
@@ -304,11 +305,13 @@ class Bing(Suggest):
     id_ = 'bing'
     name = 'Bing'
     _suggest_url = 'http://api.bing.com/osjson.aspx'
-    _search_url = 'https://www.bing.com/search?q={query}&go=Submit&qs=n&form=QBRE&filt=all&pq={query}&sc=8-6&sp=-1&sk='
+    _search_url = ('https://www.bing.com/search?q={query}&go=Submit&'
+                   'qs=n&form=QBRE&filt=all&pq={query}&sc=8-6&sp=-1&sk=')
 
     def _suggest(self):
-        response = web.get(self.suggest_url, {'query': self.options['query'],
-                                              'language': self.options['lang']})
+        response = web.get(self.suggest_url,
+                           {'query': self.options['query'],
+                            'language': self.options['lang']})
         response.raise_for_status()
         _, results = response.json()
         return results
@@ -324,7 +327,8 @@ class Yahoo(Suggest):
     id_ = 'yahoo'
     name = 'Yahoo!'
     _suggest_url = 'http://{lang}-sayt.ff.search.yahoo.com/gossip-{lang}-sayt'
-    _search_url = 'https://{lang}.search.yahoo.com/search?ei=utf-8&fr=crmas&p={query}'
+    _search_url = ('https://{lang}.search.yahoo.com/search?ei=utf-8&'
+                   'fr=crmas&p={query}')
     _custom_suggest_urls = {
         'en': 'http://ff.search.yahoo.com/gossip'
     }
@@ -334,7 +338,8 @@ class Yahoo(Suggest):
 
     def _suggest(self):
         url = self.suggest_url.format(lang=self.options['lang'])
-        response = web.get(url, {'output': 'fxjson', 'command': self.options['query']})
+        response = web.get(url, {'output': 'fxjson',
+                                 'command': self.options['query']})
         response.raise_for_status()
         results = response.json()[1]
         return results
@@ -381,7 +386,7 @@ class Wiktionary(Suggest):
         response = web.get(url, {'action': 'opensearch',
                                  'search': self.options['query']})
         response.raise_for_status()
-        _, results = response.json()
+        _, results = response.json()[0:2]
         return results
 
 
@@ -399,7 +404,7 @@ class Wikipedia(Suggest):
         response = web.get(url, {'action': 'opensearch',
                                  'search': self.options['query']})
         response.raise_for_status()
-        _, results = response.json()
+        _, results = response.json()[0:2]
         return results
 
 
