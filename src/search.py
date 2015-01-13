@@ -38,6 +38,8 @@ from workflow import Workflow, web, ICON_ERROR, ICON_SETTINGS
 
 DEFAULT_ENGINE = 'google'
 
+UPDATE_SETTINGS = {'github_slug': 'deanishe/alfred-searchio'}
+HELP_URL = 'https://github.com/deanishe/alfred-searchio/issues'
 
 log = None
 
@@ -470,7 +472,8 @@ def main(wf):
 
         else:  # Display for Alfred
             # Show settings
-            qir = ('No', 'Yes')[wf.settings.get('show_query_in_results', False)]
+            qir = ('No', 'Yes')[wf.settings.get('show_query_in_results',
+                                                False)]
             wf.add_item('Show query in results: {}'.format(qir),
                         'Action this item to toggle setting',
                         arg='show_query_in_results',
@@ -489,6 +492,13 @@ def main(wf):
     ####################################################################
     # Perform search and show results
     ####################################################################
+
+    # Check for update
+    if wf.update_available:
+        wf.add_item('Update available',
+                    '↩ to install update',
+                    autocomplete='workflow:update',
+                    icon='icons/update-available.png')
 
     # Turn args into proper dictionary of options
     options = {}
@@ -560,6 +570,7 @@ def main(wf):
 
 
 if __name__ == '__main__':
-    wf = Workflow()
+    wf = Workflow(update_settings=UPDATE_SETTINGS,
+                  help_url=HELP_URL)
     log = wf.logger
     sys.exit(wf.run(main))
