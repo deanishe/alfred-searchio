@@ -259,6 +259,14 @@
 				<integer>102</integer>
 				<key>keyword</key>
 				<string>searchio</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
 				<key>runningsubtext</key>
 				<string>Generating list…</string>
 				<key>script</key>
@@ -368,6 +376,14 @@
 				<integer>102</integer>
 				<key>keyword</key>
 				<string>g</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
 				<key>script</key>
@@ -395,6 +411,14 @@
 				<integer>102</integer>
 				<key>keyword</key>
 				<string>m</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
 				<key>script</key>
@@ -422,6 +446,14 @@
 				<integer>102</integer>
 				<key>keyword</key>
 				<string>gi</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
 				<key>script</key>
@@ -449,6 +481,14 @@
 				<integer>102</integer>
 				<key>keyword</key>
 				<string>w</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
 				<key>script</key>
@@ -476,6 +516,14 @@
 				<integer>102</integer>
 				<key>keyword</key>
 				<string>wn</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
 				<key>script</key>
@@ -503,6 +551,14 @@
 				<integer>102</integer>
 				<key>keyword</key>
 				<string>a</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
 				<key>script</key>
@@ -547,6 +603,14 @@
 				<integer>102</integer>
 				<key>keyword</key>
 				<string>yt</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
 				<key>script</key>
@@ -572,6 +636,14 @@
 				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
 				<key>script</key>
@@ -597,6 +669,14 @@
 				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
 				<key>script</key>
@@ -622,6 +702,14 @@
 				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
 				<key>script</key>
@@ -647,6 +735,14 @@
 				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
 				<key>script</key>
@@ -672,6 +768,14 @@
 				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
 				<key>script</key>
@@ -697,6 +801,14 @@
 				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
 				<key>script</key>
@@ -722,6 +834,14 @@
 				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
 				<key>script</key>
@@ -747,6 +867,14 @@
 				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
 				<key>script</key>
@@ -772,6 +900,14 @@
 				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
 				<key>script</key>
@@ -797,6 +933,14 @@
 				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
 				<key>script</key>
@@ -822,6 +966,14 @@
 				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
 				<key>script</key>
