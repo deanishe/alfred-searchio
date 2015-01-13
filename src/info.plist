@@ -318,7 +318,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>/usr/bin/python settings.py toggle-query-in-results</string>
+				<string>/usr/bin/python settings.py "{query}"</string>
 				<key>type</key>
 				<integer>0</integer>
 			</dict>

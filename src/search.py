@@ -476,7 +476,15 @@ def main(wf):
                                                 False)]
             wf.add_item('Show query in results: {}'.format(qir),
                         'Action this item to toggle setting',
-                        arg='show_query_in_results',
+                        arg='toggle-query-in-results',
+                        valid=True,
+                        icon=ICON_SETTINGS)
+
+            qir = ('No', 'Yes')[wf.settings.get('show_update_notification',
+                                                True)]
+            wf.add_item('Notify of new versions: {}'.format(qir),
+                        'Action this item to toggle setting',
+                        arg='toggle-update-notification',
                         valid=True,
                         icon=ICON_SETTINGS)
 
@@ -494,7 +502,8 @@ def main(wf):
     ####################################################################
 
     # Check for update
-    if wf.update_available:
+    if (wf.update_available and
+            wf.settings.get('show_update_notification', True)):
         wf.add_item('Update available',
                     '↩ to install update',
                     autocomplete='workflow:update',
@@ -560,7 +569,7 @@ def main(wf):
                 wf.add_item(phrase,
                             "Search {} for '{}'".format(engine.name, phrase),
                             valid=True,
-                            autocomplete=phrase,
+                            autocomplete=phrase + ' ',
                             uid=url,
                             arg=url,
                             icon=engine.icon)

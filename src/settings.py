@@ -13,6 +13,7 @@
 Usage:
     settings.py
     settings.py toggle-query-in-results
+    settings.py toggle-update-notification
 
 Options:
     toggle-query-in-results    Whether to show <query> in results or not
@@ -55,6 +56,16 @@ def main(wf):
             print('Query will be shown in suggestions')
         else:
             print('Query will not be shown in suggestions')
+
+        return call_alfred('searchio')
+
+    if args.get('toggle-update-notification'):
+        qir = not wf.settings.get('show_update_notification', True)
+        wf.settings['show_update_notification'] = qir
+        if qir:
+            print('You will be notified of available updates')
+        else:
+            print('You will not be notified of available updates')
 
         return call_alfred('searchio')
 
