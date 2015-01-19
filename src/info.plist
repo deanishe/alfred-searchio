@@ -228,6 +228,17 @@
 				<string></string>
 			</dict>
 		</array>
+		<key>FC7DCD03-6AC4-40D2-94C0-AD6F5B788174</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1133DEAA-5A8F-4E7D-9E9C-A76CB82D9F92</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
 		<key>FCE73A46-8D9B-4A73-A19A-9B7ED27CB1E0</key>
 		<array>
 			<dict>
@@ -768,6 +779,8 @@
 				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
+				<key>keyword</key>
+				<string>wnd</string>
 				<key>queuedelaycustom</key>
 				<integer>1</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -801,6 +814,8 @@
 				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
+				<key>keyword</key>
+				<string>gd</string>
 				<key>queuedelaycustom</key>
 				<integer>1</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -900,6 +915,8 @@
 				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
+				<key>keyword</key>
+				<string>wd</string>
 				<key>queuedelaycustom</key>
 				<integer>1</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -933,6 +950,8 @@
 				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
+				<key>keyword</key>
+				<string>ad</string>
 				<key>queuedelaycustom</key>
 				<integer>1</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -989,6 +1008,39 @@
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
 			<string>531A6FA1-3566-4B71-B5D5-9CECB2B976BF</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Fetching results…</string>
+				<key>script</key>
+				<string>/usr/bin/python search.py -e amazon -l pt "{query}"</string>
+				<key>title</key>
+				<string>Amazon.com.br Search</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>FC7DCD03-6AC4-40D2-94C0-AD6F5B788174</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
@@ -1106,6 +1158,11 @@
 		<dict>
 			<key>ypos</key>
 			<real>1250</real>
+		</dict>
+		<key>FC7DCD03-6AC4-40D2-94C0-AD6F5B788174</key>
+		<dict>
+			<key>ypos</key>
+			<real>2250</real>
 		</dict>
 		<key>FCE73A46-8D9B-4A73-A19A-9B7ED27CB1E0</key>
 		<dict>

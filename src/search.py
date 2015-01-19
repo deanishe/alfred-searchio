@@ -245,12 +245,14 @@ class Amazon(Suggest):
         'fr': 'fr',
         'ca': 'ca',
         'es': 'es',
+        'pt': 'com.br',
     }
     _custom_suggest_urls = {
         'co.uk': 'https://completion.amazon.co.uk/search/complete',
         'de': 'https://completion.amazon.co.uk/search/complete',
         'fr': 'https://completion.amazon.co.uk/search/complete',
         'es': 'https://completion.amazon.co.uk/search/complete',
+        'com.br': 'https://completion.amazon.com/search/complete',
     }
 
     _domain_market_map = {
@@ -260,12 +262,14 @@ class Amazon(Suggest):
         'fr': '5',
         'ca': '7',
         'es': '44551',
+        'com.br': '526970',
     }
 
     def _suggest(self):
         market = self._domain_market_map.get(self.options['lang'], '1')
         response = web.get(self.suggest_url, {'method': 'completion',
                                               'search-alias': 'aps',
+                                              'client': 'alfred-searchio',
                                               'q': self.options['query'],
                                               'mkt': market})
         response.raise_for_status()
