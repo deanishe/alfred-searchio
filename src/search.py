@@ -155,6 +155,21 @@ class Suggest(object):
         return url.format(**options)
 
 
+class Yandex(Suggest):
+    """Get search suggestions from Yandex.ru"""
+
+    id_ = 'yandex'
+    name = 'Yandex.ru'
+    _suggest_url = 'http://suggest.yandex.net/suggest-ff.cgi'
+    _search_url = 'http://yandex.ru/yandsearch?text={query}'
+
+    def _suggest(self):
+        response = web.get(self.suggest_url, {'part': self.options['query']})
+        response.raise_for_status()
+        _, results = response.json()
+        return results
+
+
 class Google(Suggest):
     """Get search suggestions from Google"""
 
