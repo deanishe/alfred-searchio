@@ -44,10 +44,18 @@ HELP_URL = 'https://github.com/deanishe/alfred-searchio/issues'
 log = None
 
 
+def check_output(cmd):
+    """Workaround for Python 2.6"""
+    if hasattr(subprocess, 'check_output'):
+        return subprocess.check_output(cmd)
+    proc = subprocess.Popen(cmd, stdout=subprocess.PIPE)
+    output, _ = proc.communicate()
+    return output
+
+
 def get_system_language():
     """Return system language"""
-    output = subprocess.check_output(['defaults', 'read', '-g',
-                                      'AppleLanguages'])
+    output = check_output(['defaults', 'read', '-g', 'AppleLanguages'])
     output = output.strip('()\n ')
     langs = [s.strip('", ') for s in output.split('\n')]
     if not len(langs):
@@ -61,8 +69,8 @@ def get_system_language():
 class Suggest(object):
     """Base class for auto-suggestion
 
-    Subclasses must override ``name``, ``icon``,
-    ``suggest_url`` and ``search_url`` class attributes,
+    Subclasses must override ``id_``, ``name``,
+    ``_suggest_url`` and ``_search_url`` class attributes,
     and ``_suggest`` method.
 
     ``url_for`` method may also need to be overridden.
@@ -71,10 +79,15 @@ class Suggest(object):
 
     id_ = None
     name = None
+    #: Base URL for suggestions (with formatting placeholders)
     _suggest_url = None
+    #: Base URL for searches  (with formatting placeholders)
     _search_url = None
+    #: Mapping of ``lang`` to custom URLs
     _custom_suggest_urls = {}
+    #: Mapping of ``lang`` to custom URLs
     _custom_search_urls = {}
+    #: Mapping of ``lang`` (or region) to TLDs, e.g. ``'uk': 'co.uk'``
     _lang_region_map = {}
     _quote_plus = True
 
@@ -88,10 +101,12 @@ class Suggest(object):
 
     @property
     def icon(self):
-        return 'icons/{}.png'.format(self.id_)
+        """Relative path to icon for Alfred results"""
+        return 'icons/{0}.png'.format(self.id_)
 
     @property
     def suggest_url(self):
+        """Return URL to fetch suggestions from"""
         url = self._custom_suggest_urls.get(self.options['lang'],
                                             self._suggest_url)
         return url.format(**self.options)
@@ -110,7 +125,7 @@ class Suggest(object):
         for t in self.options.items():
             components.extend(t)
         m = md5()
-        log.debug('key components : {}'.format(components))
+        log.debug('key components : {0}'.format(components))
         m.update(':'.join(components).encode('utf-8'))
         key = m.hexdigest()
 
@@ -233,6 +248,7 @@ class Amazon(Suggest):
     # 5 = fr
     # 7 = ca
     # 44551 = es
+    # 526970 = com.br
 
     id_ = 'amazon'
     name = 'Amazon'
@@ -323,7 +339,7 @@ class Bing(Suggest):
         return results
 
     def url_for(self, query):
-        query = query + ' language:{}'.format(self.options['lang'])
+        query = query + ' language:{0}'.format(self.options['lang'])
         return super(Bing, self).url_for(query)
 
 
@@ -372,7 +388,7 @@ class DuckDuckGo(Suggest):
         return [d.get('phrase') for d in results]
 
     def url_for(self, query):
-        query = query + ' r:{}'.format(self.options['lang'])
+        query = query + ' r:{0}'.format(self.options['lang'])
         url = super(DuckDuckGo, self).url_for(query)
         log.debug(url)
         return url
@@ -446,7 +462,7 @@ def main(wf):
 
     engines = {}
     for cls in Suggest.__subclasses__():
-        log.debug('subclass : {}'.format(cls.name))
+        log.debug('subclass : {0}'.format(cls.name))
         engines[cls.id_] = cls
 
     ####################################################################
@@ -465,7 +481,7 @@ def main(wf):
 
         if display_text:  # Display for terminal
             length = sorted([len(t[1]) for t in name_id_list])[-1]
-            fmt = '{{:{}s}} | {{}}'.format(length)
+            fmt = '{{0:{0}s}} | {{1}}'.format(length)
             print('Supported search engines\n')
             print('Use `-e ENGINE_ID` to specify the search engine.\n')
             print(fmt.format('ENGINE_ID', 'Search Engine'))
@@ -478,7 +494,7 @@ def main(wf):
             # Show settings
             qir = ('No', 'Yes')[wf.settings.get('show_query_in_results',
                                                 False)]
-            wf.add_item('Show query in results: {}'.format(qir),
+            wf.add_item('Show query in results: {0}'.format(qir),
                         'Action this item to toggle setting',
                         arg='toggle-query-in-results',
                         valid=True,
@@ -486,7 +502,7 @@ def main(wf):
 
             qir = ('No', 'Yes')[wf.settings.get('show_update_notification',
                                                 True)]
-            wf.add_item('Notify of new versions: {}'.format(qir),
+            wf.add_item('Notify of new versions: {0}'.format(qir),
                         'Action this item to toggle setting',
                         arg='toggle-update-notification',
                         valid=True,
@@ -495,9 +511,9 @@ def main(wf):
             for name, id_ in name_id_list:
                 wf.add_item(
                     name,
-                    'Use `--engine {}` in your Script Filter'.format(id_),
+                    'Use `--engine {0}` in your Script Filter'.format(id_),
                     valid=False,
-                    icon='icons/{}.png'.format(id_))
+                    icon='icons/{0}.png'.format(id_))
             wf.send_feedback()
         return
 
@@ -533,12 +549,12 @@ def main(wf):
 
     if not options['engine'] in engines:
         if display_text:
-            print("Unknown engine : '{}'. Use `--list` to see "
+            print("Unknown engine : '{0}'. Use `--list` to see "
                   "valid engines.".format(options['engine']),
                   file=sys.stderr)
             sys.exit(1)
         else:
-            wf.add_item('Invalid engine: {}'.format(options['engine']),
+            wf.add_item('Invalid engine: {0}'.format(options['engine']),
                         'Check your workflow settings',
                         icon=ICON_ERROR)
             wf.send_feedback()
@@ -556,7 +572,7 @@ def main(wf):
             print('No results', file=sys.stderr)
         else:
             wf.add_item(
-                "Search {} for '{}'".format(engine.name, options['query']),
+                "Search {0} for '{1}'".format(engine.name, options['query']),
                 valid=True,
                 arg=engine.url_for(options['query']),
                 icon=engine.icon)
@@ -564,14 +580,14 @@ def main(wf):
     else:
         if display_text:
             length = sorted([len(r) for r in results])[-1]
-            fmt = '{{:{}s}} {{}}'.format(length)
+            fmt = '{{0:{0}s}} {{1}}'.format(length)
             for phrase in results:
                 print(fmt.format(phrase, engine.url_for(phrase)))
         else:
             for phrase in results:
                 url = engine.url_for(phrase)
                 wf.add_item(phrase,
-                            "Search {} for '{}'".format(engine.name, phrase),
+                            "Search {0} for '{1}'".format(engine.name, phrase),
                             valid=True,
                             autocomplete=phrase + ' ',
                             uid=url,
