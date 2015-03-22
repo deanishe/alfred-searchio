@@ -509,7 +509,7 @@ def main(wf):
         query = args.get('<query>')
 
         name_id_list = sorted([(cls.name, id_) for (id_, cls) in
-                               engines.items()])
+                               engines.items()], key=lambda t: t[0].lower())
 
         if query:
             name_id_list = wf.filter(query, name_id_list, lambda x: x[0])
