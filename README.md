@@ -20,6 +20,8 @@ Supports the following search engines/websites:
 - Bing
 - Yahoo!
 - Ask.com
+- Yandex.ru
+- Naver.com
 
 ## Download and installation ##
 
