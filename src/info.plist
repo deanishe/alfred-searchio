@@ -173,6 +173,17 @@
 				<string></string>
 			</dict>
 		</array>
+		<key>C0D55C1A-F608-45EF-8DD8-8983FE98EA29</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1133DEAA-5A8F-4E7D-9E9C-A76CB82D9F92</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
 		<key>C7678A85-DE2F-43A9-B8A3-6F7BECDA4608</key>
 		<array>
 			<dict>
@@ -1088,6 +1099,39 @@
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Fetching results…</string>
+				<key>script</key>
+				<string>/usr/bin/python search.py -e naver "{query}"</string>
+				<key>title</key>
+				<string>Naver.com Search</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>C0D55C1A-F608-45EF-8DD8-8983FE98EA29</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -1177,6 +1221,11 @@
 		<dict>
 			<key>ypos</key>
 			<real>810</real>
+		</dict>
+		<key>C0D55C1A-F608-45EF-8DD8-8983FE98EA29</key>
+		<dict>
+			<key>ypos</key>
+			<real>2490</real>
 		</dict>
 		<key>C7678A85-DE2F-43A9-B8A3-6F7BECDA4608</key>
 		<dict>

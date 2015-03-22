@@ -170,6 +170,26 @@ class Yandex(Suggest):
         return results
 
 
+class Naver(Suggest):
+    """Get search suggestions from Naver.com"""
+
+    id_ = 'naver'
+    name = 'Naver.com'
+    _suggest_url = 'http://ac.search.naver.com/nx/ac'
+    _search_url = 'http://search.naver.com/search.naver?ie=utf-8&query={query}'
+
+    def _suggest(self):
+        response = web.get(self.suggest_url, {
+                           'q': self.options['query'],
+                           'of': 'os',
+                           'ie': 'utf-8',
+                           'oe': 'utf-8',
+                           })
+        response.raise_for_status()
+        results = response.json()[1]
+        return results
+
+
 class Google(Suggest):
     """Get search suggestions from Google"""
 
