@@ -465,6 +465,24 @@ class Wikipedia(Suggest):
         return results
 
 
+class Wikia(Suggest):
+    """Get search suggestions from Wikia"""
+
+    id_ = 'wikia'
+    name = 'Wikia'
+    _suggest_url = 'https://{lang}.wikia.com/api.php'
+    _search_url = 'https://{lang}.wikia.com/wiki/{query}'
+    _quote_plus = False
+
+    def _suggest(self):
+        url = self.suggest_url.format(lang=self.options['lang'])
+        response = web.get(url, {'action': 'opensearch',
+                                 'search': self.options['query']})
+        response.raise_for_status()
+        _, results = response.json()[0:2]
+        return results
+
+
 class Ask(Suggest):
     """Get search suggestions from Ask.com"""
 

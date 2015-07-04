@@ -22,6 +22,7 @@ Supports the following search engines/websites:
 - Ask.com
 - Yandex.ru
 - Naver.com
+- Wikia.com
 
 ## Download and installation ##
 
@@ -77,14 +78,17 @@ The following search engines are supported. Pass the `ID` to the `-e`/`--engine`
 | ask           | Ask           |
 | bing          | Bing          |
 | ddg           | DuckDuckGo    |
+| ebay          | eBay          |
 | google        | Google        |
 | google-images | Google Images |
 | google-maps   | Google Maps   |
+| naver         | Naver.com     |
+| wikia         | Wikia         |
 | wikipedia     | Wikipedia     |
 | wiktionary    | Wiktionary    |
 | yahoo         | Yahoo!        |
+| yandex        | Yandex.ru     |
 | youtube       | YouTube       |
-| ebay          | eBay          |
 
 ### Wikipedia, Wiktionary ###
 
@@ -101,6 +105,12 @@ Bing, eBay and DuckDuckGo do not provide language-specific suggestions, but the 
 ### Ask, Amazon, Yahoo! ###
 
 Ask.com, Amazon and Yahoo! do not provide language-specific search suggestions/results, but rather region-specific ones. In many cases, this won't make a difference (e.g. `--language de` and `--language fr` will provide German and French results respectively), however the behaviour is different in some cases, e.g. `uk` means "United Kingdom", not "Ukrainian".
+
+### Wikia.com ###
+
+Wikia.com is a special case. Instead of languages or regions, the `--language` option is used to set a specific wiki, e.g. `--language gameofthrones` will search `gameofthrones.wikia.com`.
+
+You *must* specify a `--language` option for Wikia searches.
 
 ## Examples ##
 
@@ -145,12 +155,18 @@ Use these in the `Script` field of a Script Filter.
 
 # Wiktionary in Spanish
 /usr/bin/python search.py -e wiktionary -l es "{query}"
+
+# Game of Thrones wiki at Wikia.com
+/usr/bin/python search.py -e wikia -l gameofthrones "{query}"
+
+# Borderlands wiki at Wikia.com
+/usr/bin/python search.py -e wikia -l borderlands "{query}"
 ```
 
 ## Licensing, thanks ##
 
 The code in this workflow is released under the [MIT Licence](http://opensource.org/licenses/MIT).
 
-The icons belong to the respective search engines.
+The icons belong to the respective search engines and websites.
 
 This workflow uses the [Alfred-Workflow](http://www.deanishe.net/alfred-workflow/) library and [docopt](http://docopt.org/) (both MIT-licensed).
