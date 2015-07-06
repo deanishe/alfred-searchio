@@ -44,7 +44,7 @@ There are several searches pre-configured. Only some have keywords (i.e. can be 
 
 Most of the other available search engines also have an example Script Filter configured, but without a keyword. Add a keyword if you wish to use one of the examples.
 
-Several of the Script Filters demonstrate the use of the `--language` (or `-l`) option to the `search.py` script to search in a different language/region. See [the Languages section](#languages) for more information.
+Several of the Script Filters demonstrate the use of the `--lang` (or `-l`) option to the `search.py` script to search in a different language/region. See [the Languages section](#languages) for more information.
 
 To add a new search, either copy/paste an existing Script Filter, or create a new one as follows:
 
@@ -64,7 +64,7 @@ Icons for each search engine can be found in the `icons` subirectory of the Work
 
 ## Languages ##
 
-The `-l` or `--language` argument to `search.py` doesn't follow any hard-and-fast rules: it depends on the search engine you're using. With some search engines (Google, Wikipedia, Wiktionary, Bing, DuckDuckGo), it's a language, e.g. `uk` = Ukrainian. In others (Yahoo!, Amazon, Ask), it's treated as a region, e.g. `uk` = United Kingdom.
+The `-l` or `--lang` argument to `search.py` doesn't follow any hard-and-fast rules: it depends on the search engine you're using. With some search engines (Google, Wikipedia, Wiktionary, Bing, DuckDuckGo), it's a language, e.g. `uk` = Ukrainian. In others (Yahoo!, Amazon, Ask), it's treated as a region, e.g. `uk` = United Kingdom.
 
 Some search engines (Bing, DuckDuckGo, eBay) do not provide language-specific suggestions, but actioning the result will open a list of language-specific results in your browser.
 
@@ -92,11 +92,11 @@ The following search engines are supported. Pass the `ID` to the `-e`/`--engine`
 
 ### Wikipedia, Wiktionary ###
 
-The `--language` argument will be treated as a subdomain, e.g. `de` will retrieve results from `de.wikipedia.org`.
+The `--lang` argument will be treated as a subdomain, e.g. `de` will retrieve results from `de.wikipedia.org`.
 
 ### Google ###
 
-The `--language` argument should work for [any language supported by Google](https://www.google.com/preferences#languages), with the obvious exceptions of things like Klingon and Hacker…
+The `--lang` argument should work for [any language supported by Google](https://www.google.com/preferences#languages), with the obvious exceptions of things like Klingon and Hacker…
 
 ### Bing, DuckDuckGo, eBay ###
 
@@ -104,13 +104,13 @@ Bing, eBay and DuckDuckGo do not provide language-specific suggestions, but the 
 
 ### Ask, Amazon, Yahoo! ###
 
-Ask.com, Amazon and Yahoo! do not provide language-specific search suggestions/results, but rather region-specific ones. In many cases, this won't make a difference (e.g. `--language de` and `--language fr` will provide German and French results respectively), however the behaviour is different in some cases, e.g. `uk` means "United Kingdom", not "Ukrainian".
+Ask.com, Amazon and Yahoo! do not provide language-specific search suggestions/results, but rather region-specific ones. In many cases, this won't make a difference (e.g. `--lang de` and `--lang fr` will provide German and French results respectively), however the behaviour is different in some cases, e.g. `uk` means "United Kingdom", not "Ukrainian".
 
 ### Wikia.com ###
 
-Wikia.com is a special case. Instead of languages or regions, the `--language` option is used to set a specific wiki, e.g. `--language gameofthrones` will search `gameofthrones.wikia.com`.
+Wikia.com is a special case. Instead of languages or regions, the `--lang` option is used to set a specific wiki, e.g. `--lang gameofthrones` will search `gameofthrones.wikia.com`.
 
-You *must* specify a `--language` option for Wikia searches.
+You *must* specify a `--lang` option for Wikia searches.
 
 ## Examples ##
 
