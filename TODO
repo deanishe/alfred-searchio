@@ -1,5 +1,6 @@
 Wikipedia/Wiktionary:
 General:
+	- Allow custom icon via CLI option
 	- Find more OpenSearch suggestion compatible search engines
 	- Move JSON parsing to parent class
 		The format should always be more or less the same (OpenSearch), so each subclass only need provide the URL.
