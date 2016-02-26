@@ -2,9 +2,8 @@
 
 Auto-suggest search results from multiple search engines and languages.
 
-![Wikipedia search in English](screen3.png "Wikipedia search in English")
+![Searchio! Demo](demo.gif "Searchio! Demo")
 
-![Wikipedia search in German](screen4.png "Wikipedia search in German")
 
 Supports the following search engines/websites:
 

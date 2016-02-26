@@ -1,2 +1,3 @@
 src/info.dist.plist
 src/info.daj.plist
+*.pyc
