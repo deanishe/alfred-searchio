@@ -2,7 +2,7 @@
 
 Auto-suggest search results from multiple search engines and languages.
 
-![Searchio! Demo](demo.gif "Searchio! Demo")
+![Searchio! Demo][demo]
 
 
 Supports the following search engines/websites:
@@ -47,13 +47,13 @@ Several of the Script Filters demonstrate the use of the `--lang` (or `-l`) opti
 
 To add a new search, either copy/paste an existing Script Filter, or create a new one as follows:
 
-![](screen1.png "")
+![][screen1]
 
 **Note:** Be sure to select the same escaping options as in the screenshot (Backquotes, Double Quotes, Backslashes, Dollars).
 
 By default, your system language will be used. To specify a custom language:
 
-![](screen2.png "")
+![][screen2]
 
 **Note:** Be sure to connect the Script Filter to the Open URL action or it won't work.
 
@@ -169,3 +169,8 @@ The code in this workflow is released under the [MIT Licence](http://opensource.
 The icons belong to the respective search engines and websites.
 
 This workflow uses the [Alfred-Workflow](http://www.deanishe.net/alfred-workflow/) library and [docopt](http://docopt.org/) (both MIT-licensed).
+
+
+[demo]: http://www.deanishe.net/alfred-searchio/demo.gif
+[screen1]: http://www.deanishe.net/alfred-searchio/screen1.png
+[screen2]: http://www.deanishe.net/alfred-searchio/screen2.png
