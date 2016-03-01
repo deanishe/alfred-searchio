@@ -44,18 +44,71 @@ HELP_URL = 'https://github.com/deanishe/alfred-searchio/issues'
 log = None
 
 
+class CommandError(Exception):
+    """Improved exception for exec'd commands.
+
+    Raised by `check_output()` if a command exits with non-zero status.
+
+    Attributes:
+        command (list): Command that was run.
+        returncode (int): Exit status of command.
+        stderr (str): Command's STDERR output.
+    """
+
+    def __init__(self, command, returncode, stderr, *args, **kwargs):
+        self.command = command
+        self.returncode = returncode
+        self.stderr = stderr
+        super(CommandError, self).__init__(command, returncode, stderr, *args, **kwargs)
+
+    def __str__(self):
+        return 'CommandError: {!r} exited with {!r}:\n{}'.format(
+            self.command, self.returncode, self.stderr)
+
+    def __repr__(self):
+        return 'CommandError({!r}, {!r}, {!r})'.format(
+            self.command, self.returncode, self.stderr)
+
+
 def check_output(cmd):
-    """Workaround for Python 2.6"""
-    if hasattr(subprocess, 'check_output'):
-        return subprocess.check_output(cmd)
-    proc = subprocess.Popen(cmd, stdout=subprocess.PIPE)
-    output, _ = proc.communicate()
-    return output
+    """Improved `subprocess.check_output` with error capture.
+
+    Args:
+        cmd (list): Command to execute (first argument to
+            `subprocess.Popen()`).
+
+    Raises:
+        CommandError: Raised if command exists with non-zero status.
+
+    Returns:
+        str: Output of command (STDOUT).
+    """
+    proc = subprocess.Popen(cmd,
+                            stdout=subprocess.PIPE,
+                            stderr=subprocess.PIPE)
+    stdout, stderr = proc.communicate()
+    if proc.returncode:
+        # log.debug('exit code=%r, stderr=%r', proc.returncode, stderr)
+        err = CommandError(cmd, proc.returncode, stderr)
+        raise err
+    return stdout
 
 
 def get_system_language():
-    """Return system language"""
-    output = check_output(['defaults', 'read', '-g', 'AppleLanguages'])
+    """Return system language.
+
+    Defaults to `'en'` if `AppleLanguages` is not set.
+
+    Returns:
+        str: Language name, e.g. 'en', 'de'.
+    """
+    try:
+        output = check_output(['defaults', 'read', '-g', 'AppleLanguages'])
+    except CommandError as err:
+        log.error('Error reading AppleLanguages, defaulting to English:\n%s',
+                  err)
+        return 'en'
+
     output = output.strip('()\n ')
     langs = [s.strip('", ') for s in output.split('\n')]
     if not len(langs):
@@ -63,18 +116,26 @@ def get_system_language():
     lang = langs[0]
     if len(lang) > 2:
         lang = lang[:2]
+    log.debug('System language : %r', lang)
     return lang
 
 
 class Suggest(object):
-    """Base class for auto-suggestion
+    """Base class for auto-suggestion.
 
-    Subclasses must override ``id_``, ``name``,
-    ``_suggest_url`` and ``_search_url`` class attributes,
-    and ``_suggest`` method.
+    Subclasses must override `id_`, `name`,
+    `_suggest_url` and `_search_url` class attributes,
+    and `_suggest` method.
 
-    ``url_for`` method may also need to be overridden.
+    `url_for` method may also need to be overridden.
 
+    Attributes:
+        id_ (str): Program name of the engine. Used on command line.
+            E.g. 'google-images'.
+        name (str): Human-readable name of engine, e.g. 'Google Images'.
+        options (dict): Search parameters, most importantly `query`.
+        show_query_in_results (bool): Add query to start of results.
+        wf (workflow.Workflow): Active `Workflow` object.
     """
 
     id_ = None
@@ -83,11 +144,11 @@ class Suggest(object):
     _suggest_url = None
     #: Base URL for searches  (with formatting placeholders)
     _search_url = None
-    #: Mapping of ``lang`` to custom URLs
+    #: Mapping of `lang` to custom URLs
     _custom_suggest_urls = {}
-    #: Mapping of ``lang`` to custom URLs
+    #: Mapping of `lang` to custom URLs
     _custom_search_urls = {}
-    #: Mapping of ``lang`` (or region) to TLDs, e.g. ``'uk': 'co.uk'``
+    #: Mapping of `lang` (or region) to TLDs, e.g. `'uk': 'co.uk'`
     _lang_region_map = {}
     _quote_plus = True
 
@@ -101,18 +162,19 @@ class Suggest(object):
 
     @property
     def icon(self):
-        """Relative path to icon for Alfred results"""
+        """Relative path to icon for Alfred results."""
         return 'icons/{0}.png'.format(self.id_)
 
     @property
     def suggest_url(self):
-        """Return URL to fetch suggestions from"""
+        """URL to fetch suggestions from."""
         url = self._custom_suggest_urls.get(self.options['lang'],
                                             self._suggest_url)
         return url.format(**self.options)
 
     @property
     def search_url(self):
+        """URL for full search results (webpage)."""
         url = self._custom_search_urls.get(self.options['lang'],
                                            self._search_url)
         # Ensure {query} is not added from options (it'll be added by `url_for`)
@@ -120,6 +182,11 @@ class Suggest(object):
         return url.format(**self.options)
 
     def search(self):
+        """Call `_suggest()` subclass method, and cache and return suggestions.
+
+        Returns:
+            list: Unicode search suggestions.
+        """
         # Create cache key
         components = [self.name]
         for t in self.options.items():
@@ -139,11 +206,11 @@ class Suggest(object):
         return results
 
     def _suggest(self):
-        """Return list of unicode suggestions"""
+        """Return list of unicode suggestions."""
         raise NotImplementedError()
 
     def url_for(self, query):
-        """Return browser URL for `query`"""
+        """Return browser URL for `query`."""
         url = self.search_url.encode('utf-8')
         options = self.options.copy()
         options['query'] = query
@@ -156,7 +223,7 @@ class Suggest(object):
 
 
 class Yandex(Suggest):
-    """Get search suggestions from Yandex.ru"""
+    """Get search suggestions from Yandex.ru."""
 
     id_ = 'yandex'
     name = 'Yandex.ru'
@@ -352,7 +419,7 @@ class Ebay(Suggest):
 class Bing(Suggest):
     """Get search suggestions from Bing
 
-    Bing has specific Market (i.e. region) settings plus a ``language:``
+    Bing has specific Market (i.e. region) settings plus a `language:`
 
     argument in the search query.
 
