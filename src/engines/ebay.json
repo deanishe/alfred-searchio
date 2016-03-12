@@ -1,0 +1,20 @@
+{
+  "id": "ebay",
+  "name": "eBay",
+  "search_url": "http://shop.ebay.{tld}/?_nkw={query}",
+  "suggest_url": "https://anywhere.ebay.com/services/suggest/?s=0&q={query}",
+  "variants": {
+    "us": {
+      "name": "United States",
+      "params": { "tld": "com" }
+    },
+    "uk": {
+      "name": "United Kingdom",
+      "params": { "tld": "co.uk" }
+    },
+    "de": {
+      "name": "Deutschland",
+      "params": { "tld": "de" }
+    }
+  }
+}

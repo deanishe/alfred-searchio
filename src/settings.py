@@ -33,12 +33,12 @@ ALFRED_SCRIPT = 'tell application "Alfred 2" to search "{}"'
 
 
 def _applescriptify(text):
-    """Replace double quotes in text"""
+    """Replace double quotes in text."""
     return text.replace('"', '" + quote + "')
 
 
 def call_alfred(query):
-    """Run Alfred with ``query`` via AppleScript"""
+    """Run Alfred with `query` via AppleScript."""
     script = ALFRED_SCRIPT.format(_applescriptify(query))
     log.debug('calling Alfred with : {!r}'.format(script))
     return subprocess.call(['osascript', '-e', script])
