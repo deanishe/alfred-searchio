@@ -13,22 +13,20 @@
 
 from __future__ import print_function, unicode_literals
 
-import os
-import sys
 
-from engines import SuggestBase
+from engines import Engine
 
 
-class Google(SuggestBase):
+class Google(Engine):
     """Get search suggestions from Google."""
 
     @property
     def id(self):
-        return 'google'
+        return 'googlepy'
 
     @property
     def name(self):
-        return 'Google'
+        return 'GooglePy'
 
     @property
     def suggest_url(self):
@@ -42,11 +40,11 @@ class Google(SuggestBase):
     def variants(self):
         return {
             'en': {
-              'name': 'English',
-              'vars': { 'hl': 'en' },
+                'name': 'English',
+                'vars': { 'hl': 'en' },
             },
             'de': {
-              'name': 'Deutsch',
-              'vars': { 'hl': 'de' },
+                'name': 'Deutsch',
+                'vars': { 'hl': 'de' },
             },
         }

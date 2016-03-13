@@ -2,3 +2,4 @@ src/info.dist.plist
 src/info.daj.plist
 *.pyc
 *.dist-info
+/extra/*.html

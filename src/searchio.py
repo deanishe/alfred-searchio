@@ -15,12 +15,15 @@ searchio.py
 
 from __future__ import print_function, unicode_literals
 
+import os
 import sys
 import subprocess
 
 from workflow import Workflow, ICON_SETTINGS
 
 from engines import get_engines
+from engines import Manager as EngineManager
+import util
 
 
 DEFAULT_ENGINE = 'google'
@@ -65,7 +68,7 @@ Options:
 """
 
 
-HELP_LIST = """\
+HELP_LIST = """
 Searchio! supported engines
 ===========================
 
@@ -77,7 +80,7 @@ DuckDuckGo for "socks".
 Use `searchio.py variants -e <engine>` to see an engine's variants.
 """
 
-HELP_VARIANTS = """\
+HELP_VARIANTS = """
 Variants for {name}
 ============={underline}
 
@@ -313,39 +316,39 @@ def do_settings(wf, query=None):
 # 888888'   `88888P8 dP       dP `88888P8 dP    dP   dP   `88888P'
 
 def do_list_variants(wf, engine_id, query=None):
-    engines = get_engines()
-    for engine in engines:
-        if engine.id == engine_id:
-            break
-        else:
-            raise ValueError('Unknown engine : {0!r}'.format(engine_id))
+    engine_dirs = [os.path.join(os.path.dirname(__file__), 'engines')]
+    em = EngineManager(engine_dirs)
+
+    engine = em.get_engine(engine_id)
+
+    if not engine:
+        raise ValueError('Unknown engine : {0!r}'.format(engine_id))
 
     log.debug('engine=%r', engine)
     var = engine.variants
-    variants = [(var[vid]['name'], vid) for vid in var]
+    variants = [(vid, var[vid]['name']) for vid in var]
 
     if query:
-        variants = wf.filter(query, variants, lambda t: t[0].lower())
+        variants = wf.filter(query, variants, lambda t: t[1].lower())
     else:
         variants.sort()
 
     # ---------------------------------------------------------
     # Show results
 
-    if textmode():
+    if textmode():  # Display for terminal
+
         h = HELP_VARIANTS.format(name=engine.name,
                                  underline=('=' * len(engine.name)))
         print(h, file=sys.stderr)
 
-        maxlen = sorted([7] + [len(t[0]) for t in variants])[-1]
-        fmt = '{{0:{0}s}} | {{1}}'.format(maxlen)
-        print(fmt.format('Variant', 'ID'))
-        print('-' * 40)
+        table = util.Table(['ID', 'Variant'])
         for t in variants:
-            print(fmt.format(*t))
+            table.add_row(t)
+        print(table)
         print()
-        return
-    else:
+
+    else:  # Display for Alfred
         for name, vid in variants:
             wf.add_item(name,
                         '{0} > {1}'.format(engine.id, vid),
@@ -370,24 +373,22 @@ def do_list_engines(wf, query):
         query (unicode): String to filter engines by. May be `None`
             or empty string.
     """
-    engines = get_engines()
-    name_id_list = [(e.name, e.id) for e in engines]
+    engine_dirs = [os.path.join(os.path.dirname(__file__), 'engines')]
+    em = EngineManager(engine_dirs)
+    engines = em.engines
 
     if query:
-        name_id_list = wf.filter(query, name_id_list, lambda t: t[0])
-    else:
-        name_id_list.sort()
+        engines = wf.filter(query, engines, lambda e: e.name)
 
     if textmode():  # Display for terminal
 
         print(HELP_LIST, file=sys.stderr)
 
-        maxlen = sorted([len(t[0]) for t in name_id_list])[-1]
-        fmt = '{{0:{0}s}} | {{1}}'.format(maxlen)
-        print(fmt.format('Search Engine', 'ID'))
-        print('-' * 40)
-        for t in name_id_list:
-            print(fmt.format(*t))
+        table = util.Table(['ID', 'Search Engine'])
+        for e in engines:
+            table.add_row((e.id, e.name))
+
+        print(table)
         print()
 
     else:  # Display for Alfred

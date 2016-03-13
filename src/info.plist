@@ -77,6 +77,25 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>/usr/bin/python settings.py "{query}"</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>F475E2AB-BBA7-4C5B-9319-4B26133397EF</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>escaping</key>
@@ -139,25 +158,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>/usr/bin/python settings.py "{query}"</string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>F475E2AB-BBA7-4C5B-9319-4B26133397EF</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
@@ -213,7 +213,9 @@
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
 				<key>script</key>
-				<string>/usr/bin/python searchio.py search "{query}"</string>
+				<string>export PYTHONIOENCODING=UTF-8
+
+/usr/bin/python searchio.py search "{query}"</string>
 				<key>title</key>
 				<string>Google Search</string>
 				<key>type</key>
@@ -265,7 +267,9 @@
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
 				<key>script</key>
-				<string>/usr/bin/python searchio.py search -e google -v de "{query}"</string>
+				<string>export PYTHONIOENCODING=UTF-8
+
+/usr/bin/python searchio.py search -e google -v de "{query}"</string>
 				<key>title</key>
 				<string>Google Search (DE)</string>
 				<key>type</key>
