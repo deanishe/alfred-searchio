@@ -9,12 +9,13 @@
 #
 
 """
+Google search as Python plugin.
 """
 
-from __future__ import print_function, unicode_literals
+from __future__ import absolute_import, print_function, unicode_literals
 
 
-from engines import Engine
+from searchio.engines import Engine
 
 
 class Google(Engine):

@@ -20,52 +20,15 @@ import json
 import logging
 import os
 import urllib
-import sys
 
 from workflow import web
+
+from searchio import util
 
 log = logging.getLogger('workflow.{0}'.format(__name__))
 
 imported_dirs = set()
 _imported = set()
-
-# TODO: Create plugin objects from JSON files.
-
-
-def url_encode_dict(dic):
-    """Copy of `dic` with values URL-encoded.
-
-    Leave keys unaltered, URL-encode values (i.e. UTF-8 strings).
-
-    Args:
-        dic (TYPE): Dictionary whose values to URL-encode.
-
-    Returns:
-        dict: New dictionary with URL-encoded values.
-    """
-    encoded = {}
-
-    for k, v in dic.items():
-        if isinstance(v, unicode):
-            v = v.encode('utf-8')
-        elif not isinstance(v, str):
-            v = str(v)
-        encoded[k] = urllib.quote_plus(v)
-
-    return encoded
-
-
-def in_same_directory(*paths):
-    paths = [os.path.abspath(p) for p in paths]
-    parent = None
-    for path in paths:
-        if not parent:
-            parent = os.path.dirname(path)
-
-        elif os.path.dirname(path) != parent:
-            return False
-
-    return True
 
 
 def find_engines(dirpath):
@@ -95,8 +58,27 @@ def find_engines(dirpath):
 
 
 class Manager(object):
+    """Import and instantiate engine plugins.
+
+    Loads Python/JSON files from specified directories
+    and creates Engine objects from the classes/configuration
+    in them.
+
+    Pass the directories to search on instantiation or using
+    `Manager.load_engines(dirpath)`.
+
+    Access the generated Engine objects with `Manager.engines`
+    and `Manager.get_engine(engine_id)`.
+
+    """
 
     def __init__(self, dirpaths=None):
+        """Create new `Manager` object.
+
+        Args:
+            dirpaths (iterable, optional): Directories to load engines
+                from.
+        """
         self._dirpaths = set()
         self._imported = set()
         self._engines = {}
@@ -107,6 +89,12 @@ class Manager(object):
                 self.load_engines(path)
 
     def load_engines(self, dirpath):
+        """Load configurations in `dirpath` and create corresponding objects.
+
+        Args:
+            dirpath (str): Path to directory containing engines.
+        """
+
         dirpath = os.path.abspath(dirpath)
 
         if dirpath in self._dirpaths:
@@ -125,26 +113,30 @@ class Manager(object):
             ext = os.path.splitext(path)[1][1:].lower()
             method_name = '_load_{0}'.format(ext)
 
-            log.debug('engines=%r', self._engines)
-
             # Call appropriate method
             for engine in getattr(self, method_name)(path):
                 if engine.id in self._engines:
                     log.warning('Overriding existing engine %r with %r',
                                 self._engines[engine.id], engine)
                 self._engines[engine.id] = engine
+                log.debug('    + %s', engine.id)
 
             self._imported.add(path)
-            log.debug('Loaded engine from %r', path)
-            log.debug('engines=%r', self._engines)
+            # log.debug('Loaded engines from %r', path)
 
     def _load_py(self, path):
+        """Import Python module and instantiate its Engines.
+
+        Args:
+            path (str): Path to .py file containing `Engine`
+                subclasses.
+
+        Returns:
+            list: `Engine` objects.
+        """
 
         modname = os.path.splitext(os.path.basename(path))[0]
-        if self._is_builtin(path):
-            modname = 'engines.builtin.{0}'.format(modname)
-        else:
-            modname = 'engines.user.{0}'.format(modname)
+        modname = 'engines.{0}'.format(modname)
 
         imp.load_source(modname, path)
 
@@ -156,7 +148,14 @@ class Manager(object):
                 yield klass()
 
     def _load_json(self, path):
+        """Load an Engine from a JSON file.
 
+        Args:
+            path (str): Path to JSON file to load.
+
+        Returns:
+            list: `Engine` objects based on JSON file.
+        """
         return [JSONEngine(path)]
 
     @property
@@ -171,10 +170,11 @@ class Manager(object):
         return self._engines.get(engine_id)
 
     def _is_builtin(self, path):
-        return in_same_directory(path, __file__)
+        return util.in_same_directory(path, __file__)
 
 
 class BaseEngine(object):
+    """Implements actual search functionality for `Engine`."""
 
     def suggest(self, query, variant_id):
         """Return list of unicode suggestions."""
@@ -185,8 +185,7 @@ class BaseEngine(object):
         return self._post_process_response(r.json())
 
     def _post_process_response(self, response_data):
-        _, results = response_data
-        return results
+        return response_data[1]
 
     @property
     def icon(self):
@@ -208,7 +207,7 @@ class BaseEngine(object):
         rplc = dict(query=query, variant=variant_id)
         rplc.update(variant.get('vars', {}))
 
-        rplc = url_encode_dict(rplc)
+        rplc = util.url_encode_dict(rplc)
 
         url = variant.get('suggest_url', self.suggest_url)
         return url.format(**rplc)
@@ -221,7 +220,7 @@ class BaseEngine(object):
         variant = self.variants[variant_id]
         rplc = {'query': query, 'variant': variant_id}
         rplc.update(variant.get('vars', {}))
-        rplc = url_encode_dict(rplc)
+        rplc = util.url_encode_dict(rplc)
 
         url = variant.get('search_url', self.search_url)
         return url.format(**rplc)
@@ -271,19 +270,8 @@ class BaseEngine(object):
 class Engine(BaseEngine):
     """Base class for auto-suggestion.
 
-    Subclasses must override `id_`, `name`,
-    `_suggest_url` and `_search_url` class attributes,
-    and `_suggest` method.
-
-    `url_for` method may also need to be overridden.
-
-    Attributes:
-        id_ (str): Program name of the engine. Used on command line.
-            E.g. 'google-images'.
-        name (str): Human-readable name of engine, e.g. 'Google Images'.
-        options (dict): Search parameters, most importantly `query`.
-        show_query_in_results (bool): Add query to start of results.
-        wf (workflow.Workflow): Active `Workflow` object.
+    Subclasses must override `id`, `name`, `suggest_url`, `search_url`
+    and `variants` properties.
     """
 
     __metaclass__ = abc.ABCMeta
@@ -333,8 +321,20 @@ class Engine(BaseEngine):
 
 
 class JSONEngine(BaseEngine):
+    """Engine based on configuration stored in a JSON file.
 
+    Attributes:
+        path (str): The JSON file engine's configuration was loaded from.
+    """
     def __init__(self, json_path):
+        """Craete new JSON-based Engine.
+
+        Args:
+            json_path (str): Path to JSON configuration file.
+
+        Raises:
+            ValueError: Raised if JSON configuration is invalid/incomplete.
+        """
         self.path = json_path
         self._id = None
         self._name = None
@@ -380,93 +380,6 @@ class JSONEngine(BaseEngine):
         return self._variants
 
 
-
-def _get_engine_modules(dirpath):
-    """Return list of files in dirpath matching `*.py`"""
-
-    modnames = []
-
-    for filename in os.listdir(dirpath):
-        if filename.endswith('.py') and not filename.startswith('_'):
-            name = os.path.splitext(filename)[0]
-            modnames.append(name)
-
-    return modnames
-
-
-def import_engines(dirpath):
-    """Import Python modules in `dirpath`.
-
-    Import *.py files in `dirpath`. Files starting with _ (underscore)
-    are ignored.
-
-    Builtins (i.e. .py files in the `engines` package) are imported
-    as `engines.<modname>`. Other files are imported as
-    `engines.user.<modname>`.
-
-    Args:
-        dirpath (str): Directory path.
-    """
-    dirpath = os.path.abspath(dirpath)
-
-    # Is `dirpath` this package?
-    builtin = dirpath == os.path.abspath(os.path.dirname(__file__))
-
-    for filename in os.listdir(dirpath):
-        if not filename.endswith('.py') or filename.startswith('_'):
-            continue
-
-        path = os.path.join(dirpath, filename)
-        if path in _imported:
-            log.debug('Already imported %r', path)
-            continue
-
-        modname = os.path.splitext(filename)[0]
-        if builtin:
-            modname = 'engines.{}'.format(modname)
-        else:
-            modname = 'engines.user.{}'.format(modname)
-        imp.load_source(modname, path)
-        _imported.add(path)
-        log.debug('Loaded engines from %r', path)
-
-
-def import_engines_old(dirpath):
-    """Import all `*.py` modules within directory `dirpath`.
-
-    Modules will be imported under `engines.user_<modname>`.
-
-    As a result, user modules may override built-ins.
-
-    """
-
-    dirpath = os.path.abspath(dirpath)
-
-    if dirpath in imported_dirs:
-        log.debug('Directory already imported : `%s`', dirpath)
-        return
-
-    imported_dirs.add(dirpath)
-
-    # Is `dirpath` this package?
-    builtin = dirpath == os.path.abspath(os.path.dirname(__file__))
-
-    if not builtin and dirpath not in sys.path:
-        sys.path.append(dirpath)
-
-    kind = ('user', 'built-in')[builtin]
-
-    for modname in _get_engine_modules(dirpath):
-        if builtin:
-            modname = 'engines.{0}'.format(modname)
-
-        try:
-            __import__(modname)
-            log.debug('Imported %s generators from `%s`', kind, modname)
-        except Exception as err:
-            log.error('Error importing `%s` : %s', modname, err)
-
-
 def get_subclasses(klass):
     """Return list of all subclasses of `klass`.
 
@@ -481,37 +394,3 @@ def get_subclasses(klass):
         subclasses += get_subclasses(cls)
 
     return subclasses
-
-
-def get_engines():
-    """Return a list containing an instance of each available generator.
-
-    It would be preferable to return the class (not all generators are
-    needed), but abstract base classes use properties, not attributes,
-    to enforce interface compliance :(
-
-    """
-    # TODO: Create engines from JSON files.
-    engines = []
-    builtin_dir = os.path.abspath(os.path.dirname(__file__))
-
-    # Import the built-ins only once
-    if builtin_dir not in imported_dirs:
-        import_engines(builtin_dir)
-
-    log.debug('subclasses=%r', SuggestBase.__subclasses__())
-    for klass in get_subclasses(SuggestBase):
-        # Ignore base classes
-        # if klass.__name__ == 'WordGenBase':
-        #     continue
-        log.debug('subclass=%r', klass)
-        try:
-            inst = klass()
-            log.debug('Loaded generator : `%s`', inst.name)
-        except Exception as err:
-            log.error(err)
-        else:
-            engines.append(inst)
-
-    engines.sort(key=lambda c: c.name)
-    return engines

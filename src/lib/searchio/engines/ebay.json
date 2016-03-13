@@ -6,15 +6,15 @@
   "variants": {
     "us": {
       "name": "United States",
-      "params": { "tld": "com" }
+      "vars": { "tld": "com" }
     },
     "uk": {
       "name": "United Kingdom",
-      "params": { "tld": "co.uk" }
+      "vars": { "tld": "co.uk" }
     },
     "de": {
       "name": "Deutschland",
-      "params": { "tld": "de" }
+      "vars": { "tld": "de" }
     }
   }
 }

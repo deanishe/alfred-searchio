@@ -14,12 +14,24 @@
 from __future__ import print_function, unicode_literals, absolute_import
 
 import logging
-
-import engines
+import os
+import sys
 
 logging.basicConfig(level=logging.DEBUG)
 
-for e in engines.get_engines():
-    print(e)
+libpath = os.path.abspath(os.path.join(os.path.dirname(__file__), 'lib'))
+engine_path = os.path.join(libpath, 'searchio/engines')
 
-print(e.suggest('poop', 'en'))
+if libpath not in sys.path:
+    sys.path.insert(0, libpath)
+
+
+from searchio.engines import Manager
+
+em = Manager()
+em.load_engines(engine_path)
+
+for engine in em.engines:
+    print(engine)
+    v = engine.variants.keys()[0]
+    print(engine.suggest('poop', v))

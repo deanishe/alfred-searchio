@@ -1,0 +1,588 @@
+{
+  "id": "google-images",
+  "name": "Google Images",
+  "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl={variant}",
+  "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl={variant}&safe=off",
+  "variants": {
+    "ach": {
+      "name": "Acoli",
+      "vars": { "hl": "ach" }
+    },
+    "af": {
+      "name": "Afrikaans",
+      "vars": { "hl": "af" }
+    },
+    "ak": {
+      "name": "Akan",
+      "vars": { "hl": "ak" }
+    },
+    "am": {
+      "name": "\u12a0\u121b\u122d\u129b",
+      "vars": { "hl": "am" }
+    },
+    "ar": {
+      "name": "\u0627\u0644\u0639\u0631\u0628\u064a\u0629",
+      "vars": { "hl": "ar" }
+    },
+    "az": {
+      "name": "az\u0259rbaycan dili",
+      "vars": { "hl": "az" }
+    },
+    "ban": {
+      "name": "Balinese",
+      "vars": { "hl": "ban" }
+    },
+    "be": {
+      "name": "\u0431\u0435\u043b\u0430\u0440\u0443\u0441\u043a\u0430\u044f",
+      "vars": { "hl": "be" }
+    },
+    "bem": {
+      "name": "Ichibemba",
+      "vars": { "hl": "bem" }
+    },
+    "bg": {
+      "name": "\u0431\u044a\u043b\u0433\u0430\u0440\u0441\u043a\u0438",
+      "vars": { "hl": "bg" }
+    },
+    "bn": {
+      "name": "\u09ac\u09be\u0982\u09b2\u09be",
+      "vars": { "hl": "bn" }
+    },
+    "br": {
+      "name": "brezhoneg",
+      "vars": { "hl": "br" }
+    },
+    "bs": {
+      "name": "bosanski",
+      "vars": { "hl": "bs" }
+    },
+    "ca": {
+      "name": "catal\u00e0",
+      "vars": { "hl": "ca" }
+    },
+    "ceb": {
+      "name": "Cebuano",
+      "vars": { "hl": "ceb" }
+    },
+    "chr": {
+      "name": "\u13e3\u13b3\u13a9",
+      "vars": { "hl": "chr" }
+    },
+    "ckb": {
+      "name": "Central Kurdish",
+      "vars": { "hl": "ckb" }
+    },
+    "co": {
+      "name": "Corsican",
+      "vars": { "hl": "co" }
+    },
+    "crs": {
+      "name": "Seychellois Creole",
+      "vars": { "hl": "crs" }
+    },
+    "cs": {
+      "name": "\u010de\u0161tina",
+      "vars": { "hl": "cs" }
+    },
+    "cy": {
+      "name": "Cymraeg",
+      "vars": { "hl": "cy" }
+    },
+    "da": {
+      "name": "dansk",
+      "vars": { "hl": "da" }
+    },
+    "de": {
+      "name": "Deutsch",
+      "vars": { "hl": "de" }
+    },
+    "ee": {
+      "name": "E\u028begbe",
+      "vars": { "hl": "ee" }
+    },
+    "el": {
+      "name": "\u0395\u03bb\u03bb\u03b7\u03bd\u03b9\u03ba\u03ac",
+      "vars": { "hl": "el" }
+    },
+    "en": {
+      "name": "English",
+      "vars": { "hl": "en" }
+    },
+    "eo": {
+      "name": "esperanto",
+      "vars": { "hl": "eo" }
+    },
+    "es": {
+      "name": "espa\u00f1ol",
+      "vars": { "hl": "es" }
+    },
+    "es-419": {
+      "name": "espa\u00f1ol (Latinoam\u00e9rica)",
+      "vars": { "hl": "es-419" }
+    },
+    "et": {
+      "name": "eesti",
+      "vars": { "hl": "et" }
+    },
+    "eu": {
+      "name": "euskara",
+      "vars": { "hl": "eu" }
+    },
+    "fa": {
+      "name": "\u0641\u0627\u0631\u0633\u06cc",
+      "vars": { "hl": "fa" }
+    },
+    "fi": {
+      "name": "suomi",
+      "vars": { "hl": "fi" }
+    },
+    "fo": {
+      "name": "f\u00f8royskt",
+      "vars": { "hl": "fo" }
+    },
+    "fr": {
+      "name": "fran\u00e7ais",
+      "vars": { "hl": "fr" }
+    },
+    "fy": {
+      "name": "West-Frysk",
+      "vars": { "hl": "fy" }
+    },
+    "ga": {
+      "name": "Gaeilge",
+      "vars": { "hl": "ga" }
+    },
+    "gaa": {
+      "name": "Ga",
+      "vars": { "hl": "gaa" }
+    },
+    "gd": {
+      "name": "G\u00e0idhlig",
+      "vars": { "hl": "gd" }
+    },
+    "gl": {
+      "name": "galego",
+      "vars": { "hl": "gl" }
+    },
+    "gn": {
+      "name": "Guarani",
+      "vars": { "hl": "gn" }
+    },
+    "gu": {
+      "name": "\u0a97\u0ac1\u0a9c\u0ab0\u0abe\u0aa4\u0ac0",
+      "vars": { "hl": "gu" }
+    },
+    "ha": {
+      "name": "Hausa",
+      "vars": { "hl": "ha" }
+    },
+    "haw": {
+      "name": "\u02bb\u014clelo Hawai\u02bbi",
+      "vars": { "hl": "haw" }
+    },
+    "hi": {
+      "name": "\u0939\u093f\u0928\u094d\u0926\u0940",
+      "vars": { "hl": "hi" }
+    },
+    "hr": {
+      "name": "hrvatski",
+      "vars": { "hl": "hr" }
+    },
+    "ht": {
+      "name": "Haitian Creole",
+      "vars": { "hl": "ht" }
+    },
+    "hu": {
+      "name": "magyar",
+      "vars": { "hl": "hu" }
+    },
+    "hy": {
+      "name": "\u0570\u0561\u0575\u0565\u0580\u0565\u0576",
+      "vars": { "hl": "hy" }
+    },
+    "ia": {
+      "name": "Interlingua",
+      "vars": { "hl": "ia" }
+    },
+    "id": {
+      "name": "Indonesia",
+      "vars": { "hl": "id" }
+    },
+    "ig": {
+      "name": "Igbo",
+      "vars": { "hl": "ig" }
+    },
+    "is": {
+      "name": "\u00edslenska",
+      "vars": { "hl": "is" }
+    },
+    "it": {
+      "name": "italiano",
+      "vars": { "hl": "it" }
+    },
+    "iw": {
+      "name": "\u05e2\u05d1\u05e8\u05d9\u05ea",
+      "vars": { "hl": "iw" }
+    },
+    "ja": {
+      "name": "\u65e5\u672c\u8a9e",
+      "vars": { "hl": "ja" }
+    },
+    "jw": {
+      "name": "Javanese",
+      "vars": { "hl": "jw" }
+    },
+    "ka": {
+      "name": "\u10e5\u10d0\u10e0\u10d7\u10e3\u10da\u10d8",
+      "vars": { "hl": "ka" }
+    },
+    "kg": {
+      "name": "Kongo",
+      "vars": { "hl": "kg" }
+    },
+    "kk": {
+      "name": "\u049b\u0430\u0437\u0430\u049b \u0442\u0456\u043b\u0456",
+      "vars": { "hl": "kk" }
+    },
+    "km": {
+      "name": "\u1781\u17d2\u1798\u17c2\u179a",
+      "vars": { "hl": "km" }
+    },
+    "kn": {
+      "name": "\u0c95\u0ca8\u0ccd\u0ca8\u0ca1",
+      "vars": { "hl": "kn" }
+    },
+    "ko": {
+      "name": "\ud55c\uad6d\uc5b4",
+      "vars": { "hl": "ko" }
+    },
+    "kri": {
+      "name": "Krio (Sierra Leone)",
+      "vars": { "hl": "kri" }
+    },
+    "ky": {
+      "name": "\u043a\u044b\u0440\u0433\u044b\u0437\u0447\u0430",
+      "vars": { "hl": "ky" }
+    },
+    "la": {
+      "name": "Latin",
+      "vars": { "hl": "la" }
+    },
+    "lg": {
+      "name": "Luganda",
+      "vars": { "hl": "lg" }
+    },
+    "ln": {
+      "name": "ling\u00e1la",
+      "vars": { "hl": "ln" }
+    },
+    "lo": {
+      "name": "\u0ea5\u0eb2\u0ea7",
+      "vars": { "hl": "lo" }
+    },
+    "loz": {
+      "name": "Lozi",
+      "vars": { "hl": "loz" }
+    },
+    "lt": {
+      "name": "lietuvi\u0173",
+      "vars": { "hl": "lt" }
+    },
+    "lua": {
+      "name": "Luba-Lulua",
+      "vars": { "hl": "lua" }
+    },
+    "lv": {
+      "name": "latvie\u0161u",
+      "vars": { "hl": "lv" }
+    },
+    "mfe": {
+      "name": "kreol morisien",
+      "vars": { "hl": "mfe" }
+    },
+    "mg": {
+      "name": "Malagasy",
+      "vars": { "hl": "mg" }
+    },
+    "mi": {
+      "name": "Maori",
+      "vars": { "hl": "mi" }
+    },
+    "mk": {
+      "name": "\u043c\u0430\u043a\u0435\u0434\u043e\u043d\u0441\u043a\u0438",
+      "vars": { "hl": "mk" }
+    },
+    "ml": {
+      "name": "\u0d2e\u0d32\u0d2f\u0d3e\u0d33\u0d02",
+      "vars": { "hl": "ml" }
+    },
+    "mn": {
+      "name": "\u043c\u043e\u043d\u0433\u043e\u043b",
+      "vars": { "hl": "mn" }
+    },
+    "mr": {
+      "name": "\u092e\u0930\u093e\u0920\u0940",
+      "vars": { "hl": "mr" }
+    },
+    "ms": {
+      "name": "Bahasa Melayu",
+      "vars": { "hl": "ms" }
+    },
+    "mt": {
+      "name": "Malti",
+      "vars": { "hl": "mt" }
+    },
+    "my": {
+      "name": "\u1017\u1019\u102c",
+      "vars": { "hl": "my" }
+    },
+    "ne": {
+      "name": "\u0928\u0947\u092a\u093e\u0932\u0940",
+      "vars": { "hl": "ne" }
+    },
+    "nl": {
+      "name": "Nederlands",
+      "vars": { "hl": "nl" }
+    },
+    "nn": {
+      "name": "nynorsk",
+      "vars": { "hl": "nn" }
+    },
+    "no": {
+      "name": "norsk",
+      "vars": { "hl": "no" }
+    },
+    "nso": {
+      "name": "Northern Sotho",
+      "vars": { "hl": "nso" }
+    },
+    "ny": {
+      "name": "Nyanja",
+      "vars": { "hl": "ny" }
+    },
+    "nyn": {
+      "name": "Runyankore",
+      "vars": { "hl": "nyn" }
+    },
+    "oc": {
+      "name": "Occitan",
+      "vars": { "hl": "oc" }
+    },
+    "om": {
+      "name": "Oromoo",
+      "vars": { "hl": "om" }
+    },
+    "or": {
+      "name": "\u0b13\u0b21\u0b3c\u0b3f\u0b06",
+      "vars": { "hl": "or" }
+    },
+    "pa": {
+      "name": "\u0a2a\u0a70\u0a1c\u0a3e\u0a2c\u0a40",
+      "vars": { "hl": "pa" }
+    },
+    "pcm": {
+      "name": "Nigerian Pidgin",
+      "vars": { "hl": "pcm" }
+    },
+    "pl": {
+      "name": "polski",
+      "vars": { "hl": "pl" }
+    },
+    "ps": {
+      "name": "\u067e\u069a\u062a\u0648",
+      "vars": { "hl": "ps" }
+    },
+    "pt-BR": {
+      "name": "portugu\u00eas (Brasil)",
+      "vars": { "hl": "pt-BR" }
+    },
+    "pt-PT": {
+      "name": "portugu\u00eas (Portugal)",
+      "vars": { "hl": "pt-PT" }
+    },
+    "qu": {
+      "name": "Runasimi",
+      "vars": { "hl": "qu" }
+    },
+    "rm": {
+      "name": "rumantsch",
+      "vars": { "hl": "rm" }
+    },
+    "rn": {
+      "name": "Ikirundi",
+      "vars": { "hl": "rn" }
+    },
+    "ro": {
+      "name": "rom\u00e2n\u0103",
+      "vars": { "hl": "ro" }
+    },
+    "ru": {
+      "name": "\u0440\u0443\u0441\u0441\u043a\u0438\u0439",
+      "vars": { "hl": "ru" }
+    },
+    "rw": {
+      "name": "Kinyarwanda",
+      "vars": { "hl": "rw" }
+    },
+    "sd": {
+      "name": "Sindhi",
+      "vars": { "hl": "sd" }
+    },
+    "si": {
+      "name": "\u0dc3\u0dd2\u0d82\u0dc4\u0dbd",
+      "vars": { "hl": "si" }
+    },
+    "sk": {
+      "name": "sloven\u010dina",
+      "vars": { "hl": "sk" }
+    },
+    "sl": {
+      "name": "sloven\u0161\u010dina",
+      "vars": { "hl": "sl" }
+    },
+    "sn": {
+      "name": "chiShona",
+      "vars": { "hl": "sn" }
+    },
+    "so": {
+      "name": "Soomaali",
+      "vars": { "hl": "so" }
+    },
+    "sq": {
+      "name": "shqip",
+      "vars": { "hl": "sq" }
+    },
+    "sr": {
+      "name": "\u0441\u0440\u043f\u0441\u043a\u0438",
+      "vars": { "hl": "sr" }
+    },
+    "sr-Latn": {
+      "name": "srpski (latinica)",
+      "vars": { "hl": "sr-Latn" }
+    },
+    "sr-ME": {
+      "name": "srpski (Crna Gora)",
+      "vars": { "hl": "sr-ME" }
+    },
+    "st": {
+      "name": "Southern Sotho",
+      "vars": { "hl": "st" }
+    },
+    "su": {
+      "name": "Sundanese",
+      "vars": { "hl": "su" }
+    },
+    "sv": {
+      "name": "svenska",
+      "vars": { "hl": "sv" }
+    },
+    "sw": {
+      "name": "Kiswahili",
+      "vars": { "hl": "sw" }
+    },
+    "ta": {
+      "name": "\u0ba4\u0bae\u0bbf\u0bb4\u0bcd",
+      "vars": { "hl": "ta" }
+    },
+    "te": {
+      "name": "\u0c24\u0c46\u0c32\u0c41\u0c17\u0c41",
+      "vars": { "hl": "te" }
+    },
+    "tg": {
+      "name": "Tajik",
+      "vars": { "hl": "tg" }
+    },
+    "th": {
+      "name": "\u0e44\u0e17\u0e22",
+      "vars": { "hl": "th" }
+    },
+    "ti": {
+      "name": "\u1275\u130d\u122d\u129b",
+      "vars": { "hl": "ti" }
+    },
+    "tk": {
+      "name": "Turkmen",
+      "vars": { "hl": "tk" }
+    },
+    "tl": {
+      "name": "Filipino",
+      "vars": { "hl": "tl" }
+    },
+    "tlh": {
+      "name": "Klingon",
+      "vars": { "hl": "tlh" }
+    },
+    "tn": {
+      "name": "Tswana",
+      "vars": { "hl": "tn" }
+    },
+    "to": {
+      "name": "lea fakatonga",
+      "vars": { "hl": "to" }
+    },
+    "tr": {
+      "name": "T\u00fcrk\u00e7e",
+      "vars": { "hl": "tr" }
+    },
+    "tt": {
+      "name": "Tatar",
+      "vars": { "hl": "tt" }
+    },
+    "tum": {
+      "name": "Tumbuka",
+      "vars": { "hl": "tum" }
+    },
+    "tw": {
+      "name": "Twi",
+      "vars": { "hl": "tw" }
+    },
+    "ug": {
+      "name": "\u0626\u06c7\u064a\u063a\u06c7\u0631\u0686\u06d5",
+      "vars": { "hl": "ug" }
+    },
+    "uk": {
+      "name": "\u0443\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430",
+      "vars": { "hl": "uk" }
+    },
+    "ur": {
+      "name": "\u0627\u0631\u062f\u0648",
+      "vars": { "hl": "ur" }
+    },
+    "uz": {
+      "name": "o\u2018zbek",
+      "vars": { "hl": "uz" }
+    },
+    "vi": {
+      "name": "Ti\u1ebfng Vi\u1ec7t",
+      "vars": { "hl": "vi" }
+    },
+    "wo": {
+      "name": "Wolof",
+      "vars": { "hl": "wo" }
+    },
+    "xh": {
+      "name": "Xhosa",
+      "vars": { "hl": "xh" }
+    },
+    "yi": {
+      "name": "\u05d9\u05d9\u05b4\u05d3\u05d9\u05e9",
+      "vars": { "hl": "yi" }
+    },
+    "yo": {
+      "name": "\u00c8d\u00e8 Yor\u00f9b\u00e1",
+      "vars": { "hl": "yo" }
+    },
+    "zh-CN": {
+      "name": "\u4e2d\u6587 (\u7b80\u4f53)",
+      "vars": { "hl": "zh-CN" }
+    },
+    "zh-TW": {
+      "name": "\u4e2d\u6587 (\u7e41\u9ad4)",
+      "vars": { "hl": "zh-TW" }
+    },
+    "zu": {
+      "name": "isiZulu",
+      "vars": { "hl": "zu" }
+    }
+  }
+}

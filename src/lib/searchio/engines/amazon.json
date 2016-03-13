@@ -6,31 +6,31 @@
   "variants": {
     "us": {
       "name": "United States",
-      "params": { "tld": "com", "ctld": "com", "market": "1" }
+      "vars": { "tld": "com", "ctld": "com", "market": "1" }
     },
     "uk": {
       "name": "United Kingdom",
-      "params": { "tld": "co.uk", "ctld": "co.uk", "market": "3" }
+      "vars": { "tld": "co.uk", "ctld": "co.uk", "market": "3" }
     },
     "ca": {
       "name": "Canada",
-      "params": { "tld": "ca", "ctld": "com", "market": "7" }
+      "vars": { "tld": "ca", "ctld": "com", "market": "7" }
     },
     "de": {
       "name": "Deutschland",
-      "params": { "tld": "de", "ctld": "co.uk", "market": "4" }
+      "vars": { "tld": "de", "ctld": "co.uk", "market": "4" }
     },
     "fr": {
       "name": "France",
-      "params": { "tld": "fr", "ctld": "co.uk", "market": "5" }
+      "vars": { "tld": "fr", "ctld": "co.uk", "market": "5" }
     },
     "es": {
       "name": "France",
-      "params": { "tld": "es", "ctld": "co.uk", "market": "44551" }
+      "vars": { "tld": "es", "ctld": "co.uk", "market": "44551" }
     },
     "br": {
       "name": "Brasil",
-      "params": { "tld": "com.br", "ctld": "com", "market": "526970" }
+      "vars": { "tld": "com.br", "ctld": "com", "market": "526970" }
     }
   }
 }

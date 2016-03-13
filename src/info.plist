@@ -113,7 +113,7 @@
 				<key>runningsubtext</key>
 				<string>Generating list…</string>
 				<key>script</key>
-				<string>/usr/bin/python searchio.py --list "{query}"</string>
+				<string>./searchio list "{query}"</string>
 				<key>subtext</key>
 				<string>View/search list of supported search engines</string>
 				<key>title</key>
@@ -215,7 +215,7 @@
 				<key>script</key>
 				<string>export PYTHONIOENCODING=UTF-8
 
-/usr/bin/python searchio.py search "{query}"</string>
+./searchio search "{query}"</string>
 				<key>title</key>
 				<string>Google Search</string>
 				<key>type</key>
@@ -269,7 +269,7 @@
 				<key>script</key>
 				<string>export PYTHONIOENCODING=UTF-8
 
-/usr/bin/python searchio.py search -e google -v de "{query}"</string>
+./searchio search -e google -v de "{query}"</string>
 				<key>title</key>
 				<string>Google Search (DE)</string>
 				<key>type</key>
