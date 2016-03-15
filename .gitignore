@@ -3,3 +3,4 @@ src/info.daj.plist
 *.pyc
 *.dist-info
 /extra/*.html
+/extra/wikia-pages/

@@ -15,12 +15,13 @@ Generate TSV of the languages supported by Google.
 from __future__ import print_function, unicode_literals, absolute_import
 
 from HTMLParser import HTMLParser
-# import os
-from urllib import urlopen
+import os
 
+from common import fetch_page
 
 # Google's preferences pages
 URL = 'https://www.google.com/preferences'
+CACHEPATH = os.path.join(os.path.dirname(__file__), 'google.html')
 
 
 def parse_page(html):
@@ -58,33 +59,9 @@ def parse_page(html):
     return langs
 
 
-def fetch_page(url):
-    """Return contents of `url`.
-
-    Args:
-        url (str): URL to read.
-
-    Returns:
-        str: Contents of HTTP response.
-    """
-    return urlopen(url).read()
-
-
-# def fetch_page(url):
-#     """Test function to return locally-saved data.
-
-#     Args:
-#         url (str): Ignored.
-
-#     Returns:
-#         str: Contents of `google.html`.
-#     """
-#     with open(os.path.join(os.path.dirname(__file__), 'google.html')) as fp:
-#         return fp.read()
-
 def main():
     """Parse and print languages from Google's preferences page."""
-    html = fetch_page(URL).decode('ISO-8859-1')
+    html = fetch_page(URL, CACHEPATH).decode('ISO-8859-1')
     langs = parse_page(html)
     for key, name in sorted(langs):
         print('{}\t{}'.format(key, name).encode('utf-8'))
