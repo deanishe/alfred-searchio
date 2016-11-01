@@ -1,5 +1,8 @@
 Wikipedia/Wiktionary:
+
 General:
+	- Allow alternates via modifier
+		Suggestions from one engine, but hold modifier to search with alternate
 	- Allow custom icon via CLI option
 	- Find more OpenSearch suggestion compatible search engines
 	- Move JSON parsing to parent class
