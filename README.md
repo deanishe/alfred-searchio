@@ -171,6 +171,6 @@ The icons belong to the respective search engines and websites.
 This workflow uses the [Alfred-Workflow](http://www.deanishe.net/alfred-workflow/) library and [docopt](http://docopt.org/) (both MIT-licensed).
 
 
-[demo]: http://www.deanishe.net/alfred-searchio/demo.gif
+[demo]: ./docs/demo.gif
 [screen1]: http://www.deanishe.net/alfred-searchio/screen1.png
 [screen2]: http://www.deanishe.net/alfred-searchio/screen2.png
