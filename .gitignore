@@ -4,11 +4,11 @@
 
 # Ignore private info files
 /src/info.dist.plist
+/src/info.bak.plist
 /src/info.daj.plist
 
 # Python junk
 *.dist-info
-
 
 # Created by https://www.gitignore.io/api/python,sublimetext,vim
 
