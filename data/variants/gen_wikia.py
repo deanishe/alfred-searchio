@@ -61,17 +61,20 @@ class Wiki(object):
         d = {
             'name': self.name,
             'id': self.id,
-            'search_url': 'http://{subdomain}.wikia.com/wiki/Special:Search?search={query}',
-            'suggest_url': 'http://{subdomain}.wikia.com/api.php?action=opensearch&search={query}&namespace=0|4|112|114|118',
+            'search_url': 'http://{domain}/wiki/Special:Search?search={query}',
+            'suggest_url': 'http://{domain}/api.php?action=opensearch&search={query}&namespace=0|4|112|114|118',
             'variants': {}
         }
         if not self.wikis:
-            d['variants']['*'] = {'name': 'Default'}
+            d['variants']['*'] = {'name': 'Default',
+                                  'vars': {'domain': 'wikia.com',
+                                           'language': 'en'}}
         else:
             for domain, name, language in self.wikis:
                 sub = domain.replace('.wikia.com', '')
-                v = {'name': language, 'vars': {'subdomain': sub}}
-                d['variants'][language] = v
+                v = {'name': name, 'vars': {'domain': domain,
+                                            'language': language}}
+                d['variants'][sub] = v
 
         return json.dumps(d, indent=2, sort_keys=True)
 

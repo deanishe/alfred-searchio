@@ -41,9 +41,10 @@ class CommandError(Exception):
         """Create new `CommandError`.
 
         Args:
-            command (sequence): The first argument passed to `subprocess.Popen()`.
+            command (sequence): The first argument passed to
+                :class:`subprocess.Popen`.
             returncode (int): The exit code of the process.
-            stderr (str): The output on STDERR of the process.
+            stderr (str): The output on ``STDERR`` of the process.
         """
         self.command = command
         self.returncode = returncode
@@ -54,19 +55,27 @@ class CommandError(Exception):
         """Prettified error message.
 
         Returns:
-            unicode: Error message.
+            str: Error message.
         """
         return 'CommandError: {!r} exited with {!r}:\n{}'.format(
+            self.command, self.returncode, self.stderr)
+
+    def __unicode__(self):
+        """Prettified error message.
+
+        Returns:
+            unicode: Error message.
+        """
+        return u'CommandError: {!r} exited with {!r}:\n{}'.format(
             self.command, self.returncode, self.stderr)
 
     def __repr__(self):
         """Code-like representation of the error.
 
         Returns:
-            unicode: String representation of error.
+            str: String representation of error.
         """
-        return 'CommandError({!r}, {!r}, {!r})'.format(
-            self.command, self.returncode, self.stderr)
+        return str(self)
 
 
 def check_output(cmd):
@@ -287,17 +296,19 @@ class Table(object):
                 newrow.append(f.format(s))
             padded.append(newrow)
 
-        hr = [' '] + [('-' * (w+2)) for w in widths] + ['']
-        hr = '+'.join(hr)
-        text = [hr]
+        # hr = [' '] + [('-' * (w+2)) for w in widths] + ['']
+        hr = [('-' * w) for w in widths]
+        hr = '-'.join(hr)
+        text = []
         for row in padded:
             is_title, cells = row[0], row[1:]
-            text.append(''.join([' | ',
-                                  ' | '.join(cells),
-                                  ' | ']))
+            # text.append(''.join([' | ',
+            #                      ' | '.join(cells),
+            #                      ' | ']))
+            text.append(' | '.join(cells))
             if is_title:
                 text.append(hr)
 
         text.append(hr)
 
-        return b'\n'.join(text)
+        return '\n'.join(text)

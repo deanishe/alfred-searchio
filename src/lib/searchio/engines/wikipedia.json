@@ -1,0 +1,16 @@
+{
+  "id": "wikipedia",
+  "name": "Wikipedia",
+  "suggest_url": "https://{language}.wikipedia.org/w/api.php?action=opensearch&search={query}",
+  "search_url": "https://{language}.wikipedia.org/wiki/{query}",
+  "variants": {
+    "en": {
+      "name": "English",
+      "vars": {"language": "en"}
+    },
+    "de": {
+      "name": "Deutsch",
+      "vars": {"language": "de"}
+    }
+  }
+}

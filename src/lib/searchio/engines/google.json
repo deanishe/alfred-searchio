@@ -1,7 +1,7 @@
 {
   "id": "google",
   "name": "Google",
-  "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&q={query}&hl={variant}",
+  "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&q={query}&hl={hl}",
   "search_url": "https://www.google.com/search?q={query}&hl={hl}&safe=off",
   "variants": {
     "ach": {

@@ -1,0 +1,16 @@
+{
+  "id": "wiktionary",
+  "name": "Wiktionary",
+  "suggest_url": "https://{language}.wiktionary.org/w/api.php?action=opensearch&search={query}",
+  "search_url": "https://{language}.wiktionary.org/wiki/{query}",
+  "variants": {
+    "en": {
+      "name": "English",
+      "vars": {"language": "en"}
+    },
+    "de": {
+      "name": "Deutsch",
+      "vars": {"language": "de"}
+    }
+  }
+}

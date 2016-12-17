@@ -15,7 +15,7 @@ core.py
 User-facing workflow functions.
 """
 
-from __future__ import print_function, unicode_literals, absolute_import
+from __future__ import print_function, absolute_import
 
 from hashlib import md5
 import logging
@@ -29,12 +29,14 @@ from searchio.engines import Manager as EngineManager
 from searchio import util
 
 
-log = logging.getLogger('workflow.{0}'.format(__name__))
+log = logging.getLogger('workflow.{}'.format(__name__))
 
 
 def cached_search(wf, engine, variant_id, query):
 
-    reldir = 'searches/{0}/{1}'.format(engine.id, variant_id)
+    h = md5(query.encode('utf-8')).hexdigest()
+    reldir = 'searches/{}/{}/{}/{}'.format(engine.id, variant_id,
+                                           h[:2], h[2:4])
     # Ensure cache directory exists
     dirpath = wf.cachefile(reldir)
     # log.debug('reldir=%r, dirpath=%r', reldir, dirpath)
@@ -44,7 +46,7 @@ def cached_search(wf, engine, variant_id, query):
     if not os.path.exists(dirpath):
         os.makedirs(dirpath)
 
-    key ='{0}/{1}'.format(reldir, md5(query.encode('utf-8')).hexdigest())
+    key = u'{0}/{1}'.format(reldir, h)
 
     def _wrapper():
         return engine.suggest(query, variant_id)
@@ -88,8 +90,8 @@ def do_search(wf, query, engine_id, variant_id):
 
     variant = engine.variants[variant_id]
 
-    qir = ('No', 'Yes')[wf.settings.get('show_query_in_results',
-                                        False)]
+    qir = (u'No', u'Yes')[wf.settings.get('show_query_in_results',
+                                          False)]
 
     # TODO: Cache search results
     # results = engine.suggest(query, variant_id)
@@ -105,12 +107,12 @@ def do_search(wf, query, engine_id, variant_id):
 
     if util.textmode():
         print()
-        msg = '{0:d} results for "{1:s}"'.format(len(results), query)
+        msg = u'{0:d} results for "{1:s}"'.format(len(results), query)
         print(msg, file=sys.stderr)
         print('=' * len(msg))
         print()
         # TODO: Show URLs in text search results?
-        table = util.Table(['Suggestion', 'URL'])
+        table = util.Table([u'Suggestion', u'URL'])
         for term in results:
             url = engine.get_search_url(term, variant_id)
             table.add_row((term, url))
@@ -123,32 +125,33 @@ def do_search(wf, query, engine_id, variant_id):
 
     else:  # XML results for Alfred
         def subtitle(term):
-            return 'Search {0} ({1}) for "{2}"'.format(engine.name,
-                                                       variant['name'],
-                                                       term)
-
-        # Show `query` in results if that option is set and query
-        # isn't already in `results`. Use `query` as fallback if
-        # there are no results.
-        if (qir or not results) and query not in results:
-            url = engine.get_search_url(query, variant_id)
-            wf.add_item(query,
-                        subtitle(query),
-                        arg=url,
-                        uid=url,
-                        autocomplete=query + ' ',
-                        valid=True,
-                        icon=engine.icon)
+            return u'Search {} ({}) for "{}"'.format(engine.name,
+                                                     variant['name'],
+                                                     term)
 
         for term in results:
             url = engine.get_search_url(term, variant_id)
             wf.add_item(term,
                         subtitle(term),
                         arg=url,
-                        uid=url,
-                        autocomplete=term + ' ',
+                        # uid=url,
+                        autocomplete=term + u' ',
                         valid=True,
                         icon=engine.icon)
+
+        # Show `query` in results if that option is set and query
+        # isn't already in `results`. Use `query` as fallback if
+        # there are no results.
+        if query not in results:
+            url = engine.get_search_url(query, variant_id)
+            wf.add_item(query,
+                        subtitle(query),
+                        arg=url,
+                        # uid=url,
+                        autocomplete=query + u' ',
+                        valid=True,
+                        icon=engine.icon)
+
         wf.send_feedback()
 
 
@@ -180,7 +183,7 @@ def do_list_variants(wf, engine_id, query=None):
     engine = em.get_engine(engine_id)
 
     if not engine:
-        raise ValueError('Unknown engine : {0!r}'.format(engine_id))
+        raise ValueError('Unknown engine : {!r}'.format(engine_id))
 
     log.debug('engine=%r', engine)
     var = engine.variants
@@ -197,10 +200,10 @@ def do_list_variants(wf, engine_id, query=None):
     if util.textmode():  # Display for terminal
 
         h = HELP_VARIANTS.format(name=engine.name,
-                                 underline=('=' * len(engine.name)))
+                                 underline=(u'=' * len(engine.name)))
         print(h, file=sys.stderr)
 
-        table = util.Table(['ID', 'Variant'])
+        table = util.Table([u'ID', u'Variant'])
         for t in variants:
             table.add_row(t)
         print(table)
@@ -209,7 +212,7 @@ def do_list_variants(wf, engine_id, query=None):
     else:  # Display for Alfred
         for name, vid in variants:
             wf.add_item(name,
-                        '{0} > {1}'.format(engine.id, vid),
+                        u'{0} > {1}'.format(engine.id, vid),
                         icon=engine.icon)
         wf.send_feedback()
 
@@ -242,7 +245,7 @@ def do_list_engines(wf, query):
 
         print(HELP_LIST, file=sys.stderr)
 
-        table = util.Table(['ID', 'Search Engine'])
+        table = util.Table([u'ID', u'Search Engine'])
         for e in engines:
             table.add_row((e.id, e.name))
 
@@ -252,18 +255,18 @@ def do_list_engines(wf, query):
     else:  # Display for Alfred
         # Show settings
         # TODO: Move settings to a separate command
-        qir = ('No', 'Yes')[wf.settings.get('show_query_in_results',
-                                            False)]
-        wf.add_item('Show query in results: {0}'.format(qir),
-                    'Action this item to toggle setting',
+        qir = (u'No', u'Yes')[wf.settings.get('show_query_in_results',
+                                              False)]
+        wf.add_item(u'Show query in results: {}'.format(qir),
+                    u'Action this item to toggle setting',
                     arg='toggle-query-in-results',
                     valid=True,
                     icon=ICON_SETTINGS)
 
-        qir = ('No', 'Yes')[wf.settings.get('show_update_notification',
-                                            True)]
-        wf.add_item('Notify of new versions: {0}'.format(qir),
-                    'Action this item to toggle setting',
+        qir = (u'No', u'Yes')[wf.settings.get('show_update_notification',
+                                              True)]
+        wf.add_item(u'Notify of new versions: {}'.format(qir),
+                    u'Action this item to toggle setting',
                     arg='toggle-update-notification',
                     valid=True,
                     icon=ICON_SETTINGS)
@@ -271,8 +274,8 @@ def do_list_engines(wf, query):
         # Show engines
         # TODO: Repair listing engines in Alfred
         for engine in engines:
-            subtitle = ('Use `searchio.py {0} "{{query}}"` '
-                        'in your Script Filter'.format(engine.id))
+            subtitle = (u'Use `./searchio --engine {} "{{query}}"` '
+                        u'in your Script Filter'.format(engine.id))
             wf.add_item(
                 engine.name,
                 subtitle,

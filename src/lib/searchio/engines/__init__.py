@@ -23,3 +23,7 @@ from searchio.engines._engines import (
     BaseEngine,
     JSONEngine,
 )
+
+# TODO: Duck Duck Go variants
+# TODO: Wikipedia variants
+# TODO: Wiktionary variants

@@ -8,11 +8,9 @@
 # Created on 2016-03-12
 #
 
-"""
-Generate Google JSON variants configuration based on `google-languages.tsv`
-"""
+"""Generate Google JSON variants configuration based on `google-languages.tsv`"""
 
-from __future__ import print_function, unicode_literals, absolute_import
+from __future__ import print_function, absolute_import
 
 import json
 import os

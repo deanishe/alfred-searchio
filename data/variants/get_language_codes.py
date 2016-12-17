@@ -8,10 +8,9 @@
 # Created on 2016-03-13
 #
 
-"""
-"""
+"""Output TSV list of ISO-639-1 language codes,names."""
 
-from __future__ import print_function, unicode_literals, absolute_import
+from __future__ import print_function, absolute_import
 
 from urllib import urlopen
 
@@ -34,9 +33,9 @@ def main():
         if len(abbr) != 2:
             continue
 
-        name = name.split(',', 1)[0].strip()
+        name = name.split(u',', 1)[0].strip()
 
-        print('{0}\t{1}'.format(abbr, name).encode('utf-8'))
+        print(u'{0}\t{1}'.format(abbr, name).encode('utf-8'))
 
 
 if __name__ == '__main__':

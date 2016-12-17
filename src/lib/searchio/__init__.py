@@ -15,7 +15,7 @@ Searchio!
 Alfred 2 search suggestion workflow.
 """
 
-from __future__ import print_function, unicode_literals, absolute_import
+from __future__ import print_function, absolute_import
 
 
 DEFAULT_ENGINE = 'google'
@@ -35,23 +35,23 @@ MAX_CACHE_AGE = 600
 #                        88
 #                        dP
 
-HELP_MAIN = """\
-searchio.py [<command>] [options] [<query>]
+HELP_MAIN = u"""\
+searchio [<command>] [options] [<query>]
 
 Provide auto-suggestion results for <query>.
 
 <engine> is the ID (short name). View them all with:
-    searchio.py list
+    searchio list
 
 Use `list` and `variants` to view the available engines/variants.
 
 
 Usage:
-    searchio.py search [-e <engine>] [-v <variant>] <query>
-    searchio.py settings [<query>]
-    searchio.py list [<query>]
-    searchio.py variants [-e <engine>] [<query>]
-    searchio.py -h
+    searchio search [-e <engine>] [-v <variant>] <query>
+    searchio settings [<query>]
+    searchio list [<query>]
+    searchio variants [-e <engine>] [<query>]
+    searchio -h
 
 Options:
     -e, --engine=<ID>       ID (short name) of search engine to use
@@ -63,23 +63,23 @@ Options:
 """
 
 
-HELP_LIST = """
+HELP_LIST = u"""
 Searchio! supported engines
 ===========================
 
-Use `ID` to specify the engine to `searchio.py search`, e.g. to search
+Use `ID` to specify the engine to `searchio search`, e.g. to search
 DuckDuckGo for "socks".
 
-    searchio.py search ddg socks
+    searchio search -e ddg socks
 
-Use `searchio.py variants -e <engine>` to see an engine's variants.
+Use `searchio variants -e <engine>` to see an engine's variants.
 """
 
-HELP_VARIANTS = """
+HELP_VARIANTS = u"""
 Variants for {name}
 ============={underline}
 
 Use `-v <ID>` to specify a variant, e.g. to search Amazon Germany:
 
-    searchio.py search -e amazon -v de socken
+    searchio search -e amazon -v de socken
 """

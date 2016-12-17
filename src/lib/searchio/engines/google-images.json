@@ -1,7 +1,7 @@
 {
   "id": "google-images",
   "name": "Google Images",
-  "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl={variant}",
+  "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl={hl}",
   "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl={variant}&safe=off",
   "variants": {
     "ach": {

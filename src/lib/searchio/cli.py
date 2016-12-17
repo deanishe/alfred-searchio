@@ -8,15 +8,14 @@
 # Created on 2016-03-13
 #
 
-"""
-"""
+"""Command-line interface to searchio command."""
 
-from __future__ import print_function, unicode_literals, absolute_import
+from __future__ import print_function, absolute_import
 
 import logging
 import sys
 
-log = logging.getLogger('workflow.{0}'.format(__name__))
+log = logging.getLogger('workflow.{}'.format(__name__))
 
 
 def cli(wf):
@@ -65,8 +64,8 @@ def cli(wf):
         # Check for updates and notify user if one is available
         if (wf.update_available and
                 wf.settings.get('show_update_notification', True)):
-            wf.add_item('Update available',
-                        '↩ to install update',
+            wf.add_item(u'Update available',
+                        u'↩ to install update',
                         autocomplete='workflow:update',
                         icon='icons/update-available.png')
 
@@ -75,8 +74,8 @@ def cli(wf):
 
 
 def main():
-    from workflow import Workflow
+    from workflow import Workflow3
     from searchio import UPDATE_SETTINGS, HELP_URL
-    wf = Workflow(update_settings=UPDATE_SETTINGS,
-                  help_url=HELP_URL)
+    wf = Workflow3(update_settings=UPDATE_SETTINGS,
+                   help_url=HELP_URL)
     sys.exit(wf.run(cli))

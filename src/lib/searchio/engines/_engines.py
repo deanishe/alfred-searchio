@@ -8,9 +8,7 @@
 # Created on 2016-03-01
 #
 
-"""
-Searchio! search engines.
-"""
+"""Searchio! search engines."""
 
 from __future__ import print_function, unicode_literals, absolute_import
 
@@ -20,6 +18,7 @@ import json
 import logging
 import os
 import urllib
+import time
 
 from workflow import web
 
@@ -79,6 +78,7 @@ class Manager(object):
             dirpaths (iterable, optional): Directories to load engines
                 from.
         """
+        s = time.time()
         self._dirpaths = set()
         self._imported = set()
         self._engines = {}
@@ -87,6 +87,8 @@ class Manager(object):
         if dirpaths:
             for path in dirpaths:
                 self.load_engines(path)
+        log.debug('%d engines loaded in %0.3fs',
+                  len(self._engines), time.time() - s)
 
     def load_engines(self, dirpath):
         """Load configurations in `dirpath` and create corresponding objects.
@@ -146,7 +148,7 @@ class Manager(object):
         for klass in get_subclasses(Engine):
             if klass not in self._engine_classes:
                 self._engine_classes.add(klass)
-                yield klass()
+                yield klass(path)
 
     def _load_json(self, path):
         """Load an Engine from a JSON file.
@@ -177,6 +179,10 @@ class Manager(object):
 class BaseEngine(object):
     """Implements actual search functionality for `Engine`."""
 
+    def __init__(self, path=None):
+        self.path = path
+        self._icon = None
+
     def suggest(self, query, variant_id):
         """Return list of unicode suggestions."""
         url = self.get_suggest_url(query, variant_id)
@@ -195,8 +201,23 @@ class BaseEngine(object):
         Assumes icon is in same directory as this Python module and is
         called `<id>.png` where `<id>` is the `id` of the class.
         """
-        filename = '{0}.png'.format(self.id)
-        return os.path.join(os.path.dirname(__file__), filename)
+        if not self._icon:
+            candidates = ['{}.png'.format(self.id)]
+            dp = os.path.dirname(self.path)
+            bn = os.path.basename(self.path)
+            n, x = os.path.splitext(bn)
+            if self.path:
+                candidates.append('{}.png'.format(n))
+            for filename in candidates:
+                p = os.path.join(dp, filename)
+                if os.path.exists(p):
+                    log.debug('[%s/icon] %r', self.id, p)
+                    self._icon = p
+                    break
+            else:
+                self._icon = 'icon.png'
+
+        return self._icon
 
     def get_suggest_url(self, query, variant_id):
         """URL to fetch suggestions from."""
@@ -328,7 +349,7 @@ class JSONEngine(BaseEngine):
         path (str): The JSON file engine's configuration was loaded from.
     """
     def __init__(self, json_path):
-        """Craete new JSON-based Engine.
+        """Create new JSON-based Engine.
 
         Args:
             json_path (str): Path to JSON configuration file.
@@ -336,7 +357,8 @@ class JSONEngine(BaseEngine):
         Raises:
             ValueError: Raised if JSON configuration is invalid/incomplete.
         """
-        self.path = json_path
+        super(JSONEngine, self).__init__(json_path)
+        # self.path = json_path
         self._id = None
         self._name = None
         self._suggest_url = None
