@@ -1,4 +1,42 @@
-Wikipedia/Wiktionary:
+Commands:
+	- Browse engines & variants in Alfred
+
+Engines:
+	Engines still to implement in v2
+
+Wikipedia:
+	- variants @priority(1)
+Wiktionary:
+	- variants @priority(1)
+	eBay:
+	- variants
+	IMDb:
+	- URL
+	- icon
+	- variants
+	Yandex:
+	- URL
+	- icon
+	Naver:
+	- URL
+	- icon
+	- variants?
+	YouTube:
+	- URL
+	- icon
+	- variants
+	Bing:
+	- URL
+	- icon
+	- variants
+	Yahoo!:
+	- URL
+	- icon
+	- variants
+	Ask:
+	- URL
+	- icon
+	- variants
 
 General:
 	- Allow alternates via modifier
@@ -9,17 +47,17 @@ General:
 		The format should always be more or less the same (OpenSearch), so each subclass only need provide the URL.
 			Note: Yahoo! adds a couple of fields. Use `results[1]` to get the list of results.
 	- Change `name` to `description` (or `long_name`/`display_name`) and `id_` to `name`
-	- Remove `icon` and ensure icon filename is `name`.png @done(14-08-02 17:06)
-	- Move icons to a subdirectory @done(14-08-02 17:01)
 	- Add separate module to allow dynamic creation of Script Filters (?)
 	- Move `Suggest` and its subclasses to individual modules (?)
 			- No need to import all subclasses in most cases
 Icons:
-	- Yahoo! @done(14-08-02 17:01)
-	- Ask @done(14-08-02 17:01)
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+	- Remove `icon` and ensure icon filename is `name`.png @done(14-08-02 17:06) @project(General)
+	- Yahoo! @done(14-08-02 17:01) @project(Icons)
+	- Move icons to a subdirectory @done(14-08-02 17:01) @project(General)
+	- Ask @done(14-08-02 17:01) @project(Icons)
 	- Generalise custom per-language URLs @done(14-06-19 02:42) @project(General)
 	- enable easy searching of different language sites via command-line arguments @done(14-06-19 01:24) @project(Wikipedia/Wiktionary)
 	- Possible to enable different languages for other search engines? @done(14-06-19 01:24) @project(General)
