@@ -222,7 +222,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>/usr/bin/python settings.py "$1"</string>
+				<string>./searchio config "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -278,17 +278,17 @@
 				<key>queuemode</key>
 				<integer>1</integer>
 				<key>runningsubtext</key>
-				<string>Generating list…</string>
+				<string>Loading settings…</string>
 				<key>script</key>
-				<string>./searchio list "$1"</string>
+				<string>./searchio config "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
-				<string>View/search list of supported search engines</string>
+				<string>Settings, help &amp; supported search engines</string>
 				<key>title</key>
-				<string>Supported Search Engines</string>
+				<string>Searchio! Settings &amp; Help</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -1036,11 +1036,11 @@
 	</dict>
 	<key>variables</key>
 	<dict>
-		<key>GOOGLE_PLACES_APIKEY</key>
+		<key>GOOGLE_PLACES_API_KEY</key>
 		<string></string>
 	</dict>
 	<key>version</key>
-	<string>2.0</string>
+	<string>2.0.0-alpha1</string>
 	<key>webaddress</key>
 	<string></string>
 </dict>

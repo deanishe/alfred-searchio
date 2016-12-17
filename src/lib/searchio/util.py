@@ -309,6 +309,6 @@ class Table(object):
             if is_title:
                 text.append(hr)
 
-        text.append(hr)
+        # text.append(hr)
 
         return '\n'.join(text)

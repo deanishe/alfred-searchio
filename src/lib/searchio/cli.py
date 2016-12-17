@@ -8,7 +8,27 @@
 # Created on 2016-03-13
 #
 
-"""Command-line interface to searchio command."""
+"""searchio <command> [<options>] [<args>...]
+
+Alfred 3 workflow to provide search completion suggestions
+from various search engines in various languages.
+
+Usage:
+    searchio <command> [<args>...]
+    searchio -h|--version
+
+Options:
+    -h, --help       Display this help message
+    --version        Show version number and exit
+
+Commands:
+    search       Perform a search
+    list         Display (filtered) list of engines
+    variants     Display (filtered) list of engine variants
+    config       Display (filtered) settings
+    clean        Delete stale cache files
+    help         Show help for a command
+"""
 
 from __future__ import print_function, absolute_import
 
@@ -18,65 +38,57 @@ import sys
 log = logging.getLogger('workflow.{}'.format(__name__))
 
 
+def usage(wf=None):
+    """CLI usage instructions."""
+    return __doc__
+
+
 def cli(wf):
     """Script entry point.
 
     Args:
-        wf (workflow.Workflow): Active workflow instance.
+        wf (worflow.Workflow3): Active workflow object.
+
     """
     from docopt import docopt
 
-    from searchio import DEFAULT_ENGINE, HELP_MAIN
-    from searchio import core
-    from searchio import util
-
-    # Use system language as default variant
-    lang = wf.cached_data('system-language',
-                          lambda: util.get_system_language(),
-                          max_age=86400)
-    log.debug('default variant=%r, default=engine=%r', lang, DEFAULT_ENGINE)
-
-    args = docopt(HELP_MAIN.format(variant=lang,
-                                   engine=DEFAULT_ENGINE), wf.args)
-
+    vstr = '{} v{}'.format(wf.name, wf.version)
+    wf.args
+    args = docopt(usage(wf), version=vstr, options_first=True)
     log.debug('args=%r', args)
 
-    query = wf.decode(args.get('<query>') or '')
-    engine_id = wf.decode(args.get('--engine') or '')
-    variant = wf.decode(args.get('--variant') or '')
+    cmd = args.get('<command>')
+    argv = [cmd] + args.get('<args>')
 
     # ---------------------------------------------------------
-    # Clean cache
+    # Call sub-command
 
-    if args.get('clean'):
-        return core.do_clean(wf)
+    if cmd == 'search':
+        from searchio.cmd.search import run
+        return run(wf, argv)
 
-    # ---------------------------------------------------------
-    # List engines
+    elif cmd == 'help':
+        from searchio.cmd.help import run
+        return run(wf, argv)
 
-    if args.get('list'):
-        return core.do_list_engines(wf, query)
+    elif cmd == 'list':
+        from searchio.cmd.list import run
+        return run(wf, argv)
 
-    # ---------------------------------------------------------
-    # List variants
+    elif cmd == 'variants':
+        from searchio.cmd.variants import run
+        return run(wf, argv)
 
-    if args.get('variants'):
-        return core.do_list_variants(wf, engine_id, query)
+    elif cmd == 'config':
+        from searchio.cmd.config import run
+        return run(wf, argv)
 
-    # ---------------------------------------------------------
-    # Perform search
+    elif cmd == 'clean':
+        from searchio.cmd.clean import run
+        return run(wf, argv)
 
-    if args.get('search'):
-        # Check for updates and notify user if one is available
-        if (wf.update_available and
-                wf.settings.get('show_update_notification', True)):
-            wf.add_item(u'Update available',
-                        u'↩ to install update',
-                        autocomplete='workflow:update',
-                        icon='icons/update-available.png')
-
-        engine_id = engine_id or DEFAULT_ENGINE
-        return core.do_search(wf, query, engine_id, variant)
+    else:
+        raise ValueError('Unknown command "{}". Use -h for help.'.format(cmd))
 
 
 def main():
