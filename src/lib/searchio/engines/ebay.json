@@ -1,20 +1,155 @@
 {
-  "id": "ebay",
-  "name": "eBay",
-  "search_url": "http://shop.ebay.{tld}/?_nkw={query}",
-  "suggest_url": "https://anywhere.ebay.com/services/suggest/?s=0&q={query}",
-  "variants": {
-    "us": {
-      "name": "United States",
-      "vars": { "tld": "com" }
-    },
-    "uk": {
-      "name": "United Kingdom",
-      "vars": { "tld": "co.uk" }
-    },
-    "de": {
-      "name": "Deutschland",
-      "vars": { "tld": "de" }
+    "id": "ebay",
+    "name": "eBay",
+    "search_url": "https://www.ebay.{tld}/sch/i.html?_nkw={query}",
+    "suggest_url": "https://autosug.ebay.com/autosug?fmt=osr&sId={site}&kwd={query}",
+    "variants": {
+        "at": {
+            "name": "Österreich",
+            "vars": {
+            		"site": 16,
+                "tld": "at"
+            }
+        },
+        "au": {
+            "name": "Australia",
+            "vars": {
+                "site": 15,
+                "tld": "au"
+            }
+        },
+        "bg-fr": {
+            "name": "Belgium (Français)",
+            "vars": {
+                "site": 23,
+                "tld": ".be"
+            }
+        },
+        "bg-nl": {
+            "name": "Belgium (Nederlands)",
+            "vars": {
+                "site": 123,
+                "tld": ".be"
+            }
+        },
+        "ca-en": {
+            "name": "Canada (English)",
+            "vars": {
+                "site": 2,
+                "tld": "ca"
+            }
+        },
+        "ca-fr": {
+            "name": "Canada (Français)",
+            "vars": {
+                "site": 210,
+                "tld": "ca"
+            }
+        },
+        "ch": {
+            "name": "Suisse",
+            "vars": {
+                "site": 193,
+                "tld": ".ch"
+            }
+        },
+        "de": {
+            "name": "Deutschland",
+            "vars": {
+            		"site": 77,
+                "tld": "de"
+            }
+        },
+        "es": {
+            "name": "España",
+            "vars": {
+                "site": 186,
+                "tld": ".es"
+            }
+        },
+        "fr": {
+            "name": "France",
+            "vars": {
+                "site": 71,
+                "tld": ".fr"
+            }
+        },
+        "hk": {
+            "name": "Hong Kong",
+            "vars": {
+                "site": 201,
+                "tld": ".hk"
+            }
+        },
+        "ie": {
+            "name": "Ireland",
+            "vars": {
+                "site": 205,
+                "tld": ".ie"
+            }
+        },
+        "in": {
+            "name": "India",
+            "vars": {
+                "site": 203,
+                "tld": ".in"
+            }
+        },
+        "it": {
+            "name": "Italia",
+            "vars": {
+                "site": 101,
+                "tld": ".it"
+            }
+        },
+        "my": {
+            "name": "Malaysia",
+            "vars": {
+                "site": 207,
+                "tld": ".my"
+            }
+        },
+        "nl": {
+            "name": "Nederlands",
+            "vars": {
+                "site": 146,
+                "tld": ".nl"
+            }
+        },
+        "ph": {
+            "name": "Philippines",
+            "vars": {
+                "site": 211,
+                "tld": ".ph"
+            }
+        },
+        "pl": {
+            "name": "Polska",
+            "vars": {
+                "site": 212,
+                "tld": ".pl"
+            }
+        },
+        "sg": {
+            "name": "Singapore",
+            "vars": {
+                "site": 216,
+                "tld": ".sg"
+            }
+        },
+        "uk": {
+            "name": "United Kingdom",
+            "vars": {
+                "site": 3,
+                "tld": "co.uk"
+            }
+        },
+        "us": {
+            "name": "United States",
+            "vars": {
+                "site": 0,
+                "tld": "com"
+            }
+        }
     }
-  }
 }
