@@ -274,7 +274,7 @@ def do_list_engines(wf, query):
         # Show engines
         # TODO: Repair listing engines in Alfred
         for engine in engines:
-            subtitle = (u'Use `./searchio --engine {} "{{query}}"` '
+            subtitle = (u'Use `./searchio --engine {} "…"` '
                         u'in your Script Filter'.format(engine.id))
             wf.add_item(
                 engine.name,
