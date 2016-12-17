@@ -18,7 +18,7 @@ from searchio.engines import Engine
 from searchio.engines._google import LANGUAGES
 
 _error_msg = """\
-GOOGLE_PLACES_APIKEY not set
+GOOGLE_PLACES_API_KEY not set
 
 The Google Maps search requires an API key for the
 Google Places API.
@@ -26,7 +26,7 @@ Google Places API.
 You can get a key from:
 https://developers.google.com/places/web-service/autocomplete
 
-Then set GOOGLE_PLACES_APIKEY in the workflow configuration
+Then set GOOGLE_PLACES_API_KEY in the workflow configuration
 sheet.
 """
 
@@ -44,7 +44,7 @@ class GoogleMaps(Engine):
 
     @property
     def suggest_url(self):
-        key = os.getenv('GOOGLE_PLACES_APIKEY')
+        key = os.getenv('GOOGLE_PLACES_API_KEY')
         if not key:
             raise RuntimeError(_error_msg)
 
