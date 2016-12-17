@@ -46,6 +46,12 @@ def cli(wf):
     variant = wf.decode(args.get('--variant') or '')
 
     # ---------------------------------------------------------
+    # Clean cache
+
+    if args.get('clean'):
+        return core.do_clean(wf)
+
+    # ---------------------------------------------------------
     # List engines
 
     if args.get('list'):

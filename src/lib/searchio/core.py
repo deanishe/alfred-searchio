@@ -21,6 +21,7 @@ from hashlib import md5
 import logging
 import os
 import sys
+from time import time
 
 from workflow import ICON_SETTINGS
 
@@ -90,17 +91,18 @@ def do_search(wf, query, engine_id, variant_id):
 
     variant = engine.variants[variant_id]
 
-    qir = (u'No', u'Yes')[wf.settings.get('show_query_in_results',
-                                          False)]
+    # qir = (u'No', u'Yes')[wf.settings.get('show_query_in_results',
+    #                                       False)]
 
     # TODO: Cache search results
     # results = engine.suggest(query, variant_id)
+    s = time()
     results = cached_search(wf, engine, variant_id, query)
 
     if wf.settings.get('show_query_in_results'):
         results = [query] + results
 
-    log.debug('results=%r', results)
+    log.debug('%d result(s) in %0.3fs', len(results), time() - s)
 
     # ---------------------------------------------------------
     # Text results
@@ -283,3 +285,52 @@ def do_list_engines(wf, query):
                 icon=engine.icon)
         wf.send_feedback()
     return
+
+
+#          dP
+#          88
+# .d8888b. 88 .d8888b. .d8888b. 88d888b.
+# 88'  `"" 88 88ooood8 88'  `88 88'  `88
+# 88.  ... 88 88.  ... 88.  .88 88    88
+# `88888P' dP `88888P' `88888P8 dP    dP
+
+def do_clean(wf):
+    """Clean the workflow cache."""
+    from shutil import rmtree
+
+    path = wf.cachefile('searches')
+    if not os.path.exists(path):
+        return
+
+    def _relpath(p):
+        return p.replace(path + '/', '')
+
+    def _emptydir(p):
+        files = os.listdir(p)
+        if not files:
+            return True
+        for fn in files:
+            if fn in ('.DS_Store', r'Icon\r'):
+                continue
+            return False
+
+        return True
+
+    i = 0
+    for root, dirnames, filenames in os.walk(path, topdown=False):
+        for fn in filenames:
+            p = os.path.join(root, fn)
+            age = time() - os.path.getmtime(p)
+            if age > 86400:
+                log.debug('[clean/expired] %r', _relpath(p))
+                os.unlink(p)
+                i += 1
+
+        for dn in dirnames:
+            p = os.path.join(root, dn)
+            if _emptydir(p):
+                log.debug('[clean/empty] %r', _relpath(p))
+                rmtree(p)
+                i += 1
+
+    log.info('[clean] %d stale item(s) deleted', i)

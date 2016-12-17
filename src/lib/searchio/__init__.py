@@ -48,6 +48,7 @@ Use `list` and `variants` to view the available engines/variants.
 
 Usage:
     searchio search [-e <engine>] [-v <variant>] <query>
+    searchio clean
     searchio settings [<query>]
     searchio list [<query>]
     searchio variants [-e <engine>] [<query>]
