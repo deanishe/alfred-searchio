@@ -1,40 +1,64 @@
+
+Features:
+	- info.plist manipulation
+		- Add/remove user-configured searches
+	- Add via URL (auto-discovery)
+		- Get URL of frontmost browser
+
 Commands:
-	- Browse engines & variants in Alfred
+
+	Config:
+		- Browse engines & variants in Alfred
+			- Add user searches
+		- Browse user searches
+			- Remove user searches
+
+	Add:
+		- Add new search to info.plist
 
 Engines:
 	Engines still to implement in v2
 
-Wikipedia:
+	Wikipedia:
 	- variants @priority(1)
-Wiktionary:
-	- variants @priority(1)
+
+	Wiktionary:
+		- variants @priority(1)
+
 	eBay:
 	- variants
+
 	IMDb:
-	- URL
+	- URLs
 	- icon
 	- variants
+
 	Yandex:
-	- URL
+	- URLs
 	- icon
+
 	Naver:
-	- URL
+	- URLs
 	- icon
 	- variants?
+
 	YouTube:
-	- URL
+	- URLs
 	- icon
 	- variants
+
 	Bing:
-	- URL
+	- URLs
 	- icon
 	- variants
+
 	Yahoo!:
-	- URL
+	- URLs
 	- icon
 	- variants
+
 	Ask:
-	- URL
+	- URLs
 	- icon
 	- variants
 
@@ -42,6 +66,7 @@ General:
 	- Allow alternates via modifier
 		Suggestions from one engine, but hold modifier to search with alternate
 	- Allow custom icon via CLI option
+		Is that possible? Reasonable?
 	- Find more OpenSearch suggestion compatible search engines
 	- Move JSON parsing to parent class
 		The format should always be more or less the same (OpenSearch), so each subclass only need provide the URL.
@@ -50,8 +75,10 @@ General:
 	- Add separate module to allow dynamic creation of Script Filters (?)
 	- Move `Suggest` and its subclasses to individual modules (?)
 			- No need to import all subclasses in most cases
-Icons:
 
+Icons:
+	- Update action
+	- Update available
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
 	- Remove `icon` and ensure icon filename is `name`.png @done(14-08-02 17:06) @project(General)

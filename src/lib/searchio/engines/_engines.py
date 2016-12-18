@@ -172,6 +172,20 @@ class Manager(object):
     def get_engine(self, engine_id):
         return self._engines.get(engine_id)
 
+    def get_variant(self, engine_id, variant_id):
+        engine = self.get_engine(engine_id)
+        if not engine:
+            raise ValueError('Unknown engine: {!r}'.format(engine_id))
+
+        if variant_id not in engine.variants:
+            if '*' in engine.variants:
+                variant_id = '*'
+            else:
+                raise ValueError('Unknown variant for {!r} : {!r}'.format(
+                    engine.name, variant_id))
+
+        return engine.variants[variant_id]
+
     def _is_builtin(self, path):
         return util.in_same_directory(path, __file__)
 
@@ -179,11 +193,13 @@ class Manager(object):
 class BaseEngine(object):
     """Implements actual search functionality for `Engine`."""
 
+    _placeholder = u'QXQXQXQX'
+
     def __init__(self, path=None):
         self.path = path
         self._icon = None
 
-    def suggest(self, query, variant_id):
+    def suggest(self, variant_id, query):
         """Return list of unicode suggestions."""
         url = self.get_suggest_url(query, variant_id)
         r = web.get(url)
@@ -219,12 +235,14 @@ class BaseEngine(object):
 
         return self._icon
 
-    def get_suggest_url(self, query, variant_id):
+    def get_suggest_url(self, variant_id, query=None):
         """URL to fetch suggestions from."""
         if variant_id not in self.variants:
-            raise ValueError('Unknown variant : {0!r}'.format(variant_id))
+            raise ValueError('Unknown variant : {!r}'.format(variant_id))
         # TODO: Add GET var replacement/addition?
         variant = self.variants[variant_id]
+
+        query = query or self._placeholder
 
         rplc = dict(query=query, variant=variant_id)
         rplc.update(variant.get('vars', {}))
@@ -232,49 +250,27 @@ class BaseEngine(object):
         rplc = util.url_encode_dict(rplc)
 
         url = variant.get('suggest_url', self.suggest_url)
-        return url.format(**rplc)
+        return url.format(**rplc).replace(self._placeholder, u'{query}')
 
-    def get_search_url(self, query, variant_id):
+    def get_search_url(self, variant_id, query=None):
         """URL for full search results (webpage)."""
         if variant_id not in self.variants:
-            raise ValueError('Unknown variant : {0!r}'.format(variant_id))
+            raise ValueError('Unknown variant : {!r}'.format(variant_id))
         # TODO: Add GET var replacement/addition?
         variant = self.variants[variant_id]
+
+        query = query or self._placeholder
+
         rplc = {'query': query, 'variant': variant_id}
         rplc.update(variant.get('vars', {}))
         rplc = util.url_encode_dict(rplc)
 
         url = variant.get('search_url', self.search_url)
-        return url.format(**rplc)
+        return url.format(**rplc).replace(self._placeholder, u'{query}')
 
-    # def suggest(self, query, variant):
-    #     """Cache and return suggestions from `_suggest()` method on subclasses.
-
-    #     Returns:
-    #         list: Unicode search suggestions.
-    #     """
-    #     # Create cache key
-    #     key = '{0}/{1}/{2}'.format(self.id, variant,
-    #                                md5(query.encode('utf-8')).hexdigest())
-    #     # for t in self.options.items():
-    #     #     components.extend(t)
-    #     # key = md5(':'.join(components).encode('utf-8')).hexdigest()
-    #     # log.debug('key components : {0!r}'.format(components))
-
-    #     def _wrapper():
-    #         return self._suggest(query, variant)
-
-    #     results = self.wf.cached_data(key, self._wrapper, max_age=600)
-
-    #     # Add query to results
-    #     if self.show_query_in_results:
-    #         results = [self.options['query']] + results
-
-    #     return results
-
-    def search(self, query, variant):
+    def search(self, variant_id, query):
         """Synonym for `suggest()`."""
-        return self.suggest(query, variant)
+        return self.suggest(query, variant_id)
 
     def url_for(self, query):
         """Return browser URL for `query`."""

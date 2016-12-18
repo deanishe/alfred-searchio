@@ -22,12 +22,13 @@ Options:
     --version        Show version number and exit
 
 Commands:
-    search       Perform a search
-    list         Display (filtered) list of engines
-    variants     Display (filtered) list of engine variants
-    config       Display (filtered) settings
+    add          Add a new search to the workflow
     clean        Delete stale cache files
+    config       Display (filtered) settings
     help         Show help for a command
+    list         Display (filtered) list of engines
+    search       Perform a search
+    variants     Display (filtered) list of engine variants
 """
 
 from __future__ import print_function, absolute_import
@@ -62,6 +63,10 @@ def cli(wf):
 
     # ---------------------------------------------------------
     # Call sub-command
+
+    if cmd == 'add':
+        from searchio.cmd.add import run
+        return run(wf, argv)
 
     if cmd == 'search':
         from searchio.cmd.search import run

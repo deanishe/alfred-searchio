@@ -17,19 +17,32 @@ User-facing workflow functions.
 
 from __future__ import print_function, absolute_import
 
-from hashlib import md5
 import logging
 import os
-from time import time
 
-from workflow import ICON_SETTINGS
-
-from searchio import MAX_CACHE_AGE, DEFAULT_ENGINE
-from searchio.engines import Manager as EngineManager
+from searchio import DEFAULT_ENGINE
 from searchio import util
 
 
 log = logging.getLogger('workflow.{}'.format(__name__))
+
+
+def get_icon(wf, name):
+    return wf.workflowfile('icons/{}.png'.format(name))
+
+
+def icon_maker(wf):
+    def _getter(name):
+        return get_icon(wf, name)
+    return _getter
+
+
+def get_engine_manager(wf):
+    """Return `searchio.engines.EngineManager`."""
+    import searchio.engines
+    engine_dirs = [os.path.dirname(searchio.engines.__file__)]
+    em = searchio.engines.Manager(engine_dirs)
+    return em
 
 
 def get_defaults(wf):
@@ -49,25 +62,3 @@ def get_defaults(wf):
 
     log.debug('defaults=%r', d)
     return d
-
-
-def cached_search(wf, engine, variant_id, query):
-
-    h = md5(query.encode('utf-8')).hexdigest()
-    reldir = 'searches/{}/{}/{}/{}'.format(engine.id, variant_id,
-                                           h[:2], h[2:4])
-    # Ensure cache directory exists
-    dirpath = wf.cachefile(reldir)
-    # log.debug('reldir=%r, dirpath=%r', reldir, dirpath)
-    # log.debug('bundleid=%r', wf.bundleid)
-    # log.debug('info=%r', wf.info)
-    # log.debug('env=%r', wf.alfred_env)
-    if not os.path.exists(dirpath):
-        os.makedirs(dirpath)
-
-    key = u'{0}/{1}'.format(reldir, h)
-
-    def _wrapper():
-        return engine.suggest(query, variant_id)
-
-    return wf.cached_data(key, _wrapper, max_age=MAX_CACHE_AGE)
