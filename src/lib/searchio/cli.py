@@ -27,6 +27,7 @@ Commands:
     config       Display (filtered) settings
     help         Show help for a command
     list         Display (filtered) list of engines
+    reload       Update info.plist
     search       Perform a search
     variants     Display (filtered) list of engine variants
 """
@@ -68,8 +69,12 @@ def cli(wf):
         from searchio.cmd.add import run
         return run(wf, argv)
 
-    if cmd == 'search':
-        from searchio.cmd.search import run
+    elif cmd == 'clean':
+        from searchio.cmd.clean import run
+        return run(wf, argv)
+
+    elif cmd == 'config':
+        from searchio.cmd.config import run
         return run(wf, argv)
 
     elif cmd == 'help':
@@ -80,16 +85,20 @@ def cli(wf):
         from searchio.cmd.list import run
         return run(wf, argv)
 
+    if cmd == 'reload':
+        from searchio.cmd.reload import run
+        return run(wf, argv)
+
+    if cmd == 'search':
+        from searchio.cmd.search import run
+        return run(wf, argv)
+
+    if cmd == 'user':
+        from searchio.cmd.user import run
+        return run(wf, argv)
+
     elif cmd == 'variants':
         from searchio.cmd.variants import run
-        return run(wf, argv)
-
-    elif cmd == 'config':
-        from searchio.cmd.config import run
-        return run(wf, argv)
-
-    elif cmd == 'clean':
-        from searchio.cmd.clean import run
         return run(wf, argv)
 
     else:

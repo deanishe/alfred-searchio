@@ -87,7 +87,7 @@ class Manager(object):
         if dirpaths:
             for path in dirpaths:
                 self.load_engines(path)
-        log.debug('%d engines loaded in %0.3fs',
+        log.debug('%d engine(s) loaded in %0.3fs',
                   len(self._engines), time.time() - s)
 
     def load_engines(self, dirpath):
@@ -109,7 +109,7 @@ class Manager(object):
                 log.debug('Already imported %r', path)
                 continue
 
-            log.debug('Reading %r ...', path)
+            log.debug('Loading %r ...', path)
 
             # Just extension, lowercase, i.e. "py" or "json"
             ext = os.path.splitext(path)[1][1:].lower()
@@ -121,8 +121,8 @@ class Manager(object):
                     log.warning('Overriding existing engine %r with %r',
                                 self._engines[engine.id], engine)
                 self._engines[engine.id] = engine
-                log.debug('Loaded "%s" (%d variant(s); id=%s)',
-                          engine.name, len(engine.variants), engine.id)
+                log.debug('Engine [%s] "%s" (%d variant(s))',
+                          engine.id, engine.name, len(engine.variants))
 
             self._imported.add(path)
             # log.debug('Loaded engines from %r', path)

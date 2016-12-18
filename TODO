@@ -13,6 +13,10 @@ Commands:
 		- Browse user searches
 			- Remove user searches
 
+Update:
+	- Update info.plist
+	- Clear and/or update caches
+
 	Add:
 		- Add new search to info.plist
 

@@ -175,6 +175,16 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
+				<string>C2AF821C-7119-4638-AC0C-360EF570DEC5</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
 				<string>35A4633B-D448-4DEB-BE76-C7707446695A</string>
 				<key>modifiers</key>
 				<integer>0</integer>
@@ -352,6 +362,19 @@
 		</array>
 		<key>B1B7F733-EFC9-4CE1-88E7-08A110720EE0</key>
 		<array/>
+		<key>C2AF821C-7119-4638-AC0C-360EF570DEC5</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>77C51F8E-96BD-4F45-8043-1D4FFD234301</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>C8F7785D-3469-4D54-A86B-71B6EB260F53</key>
 		<array>
 			<dict>
@@ -755,57 +778,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>externaltriggerid</key>
-				<string>help</string>
-				<key>passinputasargument</key>
-				<false/>
-				<key>passvariables</key>
-				<false/>
-				<key>workflowbundleid</key>
-				<string>self</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.callexternaltrigger</string>
-			<key>uid</key>
-			<string>B1B7F733-EFC9-4CE1-88E7-08A110720EE0</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>triggerid</key>
-				<string>update</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.external</string>
-			<key>uid</key>
-			<string>2BBA8827-6AAC-48B3-8381-01C70621357C</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>externaltriggerid</key>
-				<string>config</string>
-				<key>passinputasargument</key>
-				<false/>
-				<key>passvariables</key>
-				<false/>
-				<key>workflowbundleid</key>
-				<string>self</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.callexternaltrigger</string>
-			<key>uid</key>
-			<string>CEE08850-50A0-45E9-B9EA-C6E78E1335AE</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -833,57 +805,55 @@
 				<integer>102</integer>
 				<key>script</key>
 				<string>query="$1"
-set -e
-./searchio add -e "$engine" -v "$variant" "$query"
 
-echo -n "$query"</string>
+log() {
+  echo "$@" &gt;&amp;2
+}
+
+fatal() {
+  echo -n "$@"
+  log "$@"
+  exit 1
+}
+
+log "."
+log "/---------- NEW ----------\\"
+log "engine=$engine"
+log "variant=$variant"
+log "name=$name"
+# log "query=$query"
+
+opts=(add)
+
+test -n "$engine" &amp;&amp; { opts+=(--engine "$engine") } || { fatal "engine unset" }
+test -n "$variant" &amp;&amp; { opts+=(--variant "$variant") }  || { fatal "variant unset" }
+test -n "$name" &amp;&amp; { opts+=("$name") } || { fatal "name unset" }
+# test -n "$query" &amp;&amp; { opts+=("$query") } || { fatal "query unset" }
+
+output="$( ./searchio $opts 2&gt;&amp;1 )"
+ok=$?
+
+[[ $ok -ne 0 ]] &amp;&amp; {
+  log "$output"
+  echo -n "$output"
+} || {
+  echo -n "$name"
+}
+
+log "\\---------- NEW ----------/"
+
+exit $ok</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>type</key>
-				<integer>0</integer>
+				<integer>5</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>21BEF8AB-87EA-469B-85A4-0C331260B4FF</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>triggerid</key>
-				<string>help</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.external</string>
-			<key>uid</key>
-			<string>AB93844D-D4B4-4B12-AF81-D39A87D70DBD</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>./searchio update</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>0A5780FA-9C49-4528-BC2D-4E79BEBFDD57</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -909,6 +879,70 @@ echo -n "$query"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>triggerid</key>
+				<string>new</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>275E19D5-14AC-4CA0-B718-562E79802ADE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>help</string>
+				<key>passinputasargument</key>
+				<false/>
+				<key>passvariables</key>
+				<false/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>B1B7F733-EFC9-4CE1-88E7-08A110720EE0</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>config</string>
+				<key>passinputasargument</key>
+				<false/>
+				<key>passvariables</key>
+				<false/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>CEE08850-50A0-45E9-B9EA-C6E78E1335AE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>triggerid</key>
+				<string>help</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>AB93844D-D4B4-4B12-AF81-D39A87D70DBD</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -928,19 +962,6 @@ echo -n "$query"</string>
 			<string>FF24EBA1-84CD-4DAB-BBD5-E4AB11A9F57A</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>triggerid</key>
-				<string>new</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.external</string>
-			<key>uid</key>
-			<string>275E19D5-14AC-4CA0-B718-562E79802ADE</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -972,7 +993,7 @@ echo -n "$query"</string>
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string>Google Search</string>
+				<string>Google Search (English)</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -984,6 +1005,25 @@ echo -n "$query"</string>
 			<string>18E144DF-1054-4A12-B5F0-AC05C6F7DEFD</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>inputstring</key>
+				<string>{var:action}</string>
+				<key>matchcasesensitive</key>
+				<true/>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string>new</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.filter</string>
+			<key>uid</key>
+			<string>AEE3BBA9-87D3-42ED-AF69-43175A362FAE</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1026,32 +1066,13 @@ echo -n "$query"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>inputstring</key>
-				<string>{var:action}</string>
-				<key>matchcasesensitive</key>
-				<true/>
-				<key>matchmode</key>
-				<integer>0</integer>
-				<key>matchstring</key>
-				<string>variant</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.filter</string>
-			<key>uid</key>
-			<string>AEE3BBA9-87D3-42ED-AF69-43175A362FAE</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>triggerid</key>
-				<string>user</string>
+				<string>reload</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.external</string>
 			<key>uid</key>
-			<string>6D491305-65B8-4277-A438-B5B2DBFDB1D5</string>
+			<string>2BBA8827-6AAC-48B3-8381-01C70621357C</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1059,20 +1080,55 @@ echo -n "$query"</string>
 			<key>config</key>
 			<dict>
 				<key>externaltriggerid</key>
-				<string>user</string>
+				<string>reload</string>
 				<key>passinputasargument</key>
 				<false/>
 				<key>passvariables</key>
-				<true/>
+				<false/>
 				<key>workflowbundleid</key>
 				<string>self</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.output.callexternaltrigger</string>
 			<key>uid</key>
-			<string>038601C3-C18D-4ECB-8AB2-8C64E8A1AF84</string>
+			<string>77C51F8E-96BD-4F45-8043-1D4FFD234301</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string># Clear stale elements from cache and update info.plist
+
+set -e
+
+log() {
+  echo "$@" &gt;&amp;2
+}
+
+log "."
+log "Cleaning caches ..."
+./searchio clean
+log "Updating info.plist ..."
+./searchio reload</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>0A5780FA-9C49-4528-BC2D-4E79BEBFDD57</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1116,6 +1172,100 @@ echo -n "$query"</string>
 			<string>0877E34C-7243-4E59-B01B-299F8BE837A6</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>inputstring</key>
+				<string>{query}</string>
+				<key>matchcasesensitive</key>
+				<true/>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string>reload</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.filter</string>
+			<key>uid</key>
+			<string>C2AF821C-7119-4638-AC0C-360EF570DEC5</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>gi</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>1</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Fetching results…</string>
+				<key>script</key>
+				<string>./searchio search -e google-images -v en "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Google Images</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>60DD370E-7583-445F-8009-B6165FBD5C55</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>triggerid</key>
+				<string>user</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>6D491305-65B8-4277-A438-B5B2DBFDB1D5</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>user</string>
+				<key>passinputasargument</key>
+				<false/>
+				<key>passvariables</key>
+				<true/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>038601C3-C18D-4ECB-8AB2-8C64E8A1AF84</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1187,68 +1337,6 @@ echo -n "$query"</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>gi</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<false/>
-				<key>queuedelaymode</key>
-				<integer>1</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string>Fetching results…</string>
-				<key>script</key>
-				<string>./searchio search -e google-images -v en "$1"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string></string>
-				<key>title</key>
-				<string>Google Images</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>60DD370E-7583-445F-8009-B6165FBD5C55</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>{query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>1133DEAA-5A8F-4E7D-9E9C-A76CB82D9F92</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
 				<string>gm</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
@@ -1281,6 +1369,25 @@ echo -n "$query"</string>
 			<string>7A62F38A-75C7-4C10-85FB-49F0A84503B3</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>1133DEAA-5A8F-4E7D-9E9C-A76CB82D9F92</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1638,7 +1745,7 @@ echo -n "$query"</string>
 			<key>xpos</key>
 			<integer>840</integer>
 			<key>ypos</key>
-			<integer>370</integer>
+			<integer>540</integer>
 		</dict>
 		<key>0877E34C-7243-4E59-B01B-299F8BE837A6</key>
 		<dict>
@@ -1654,16 +1761,16 @@ echo -n "$query"</string>
 			<key>colorindex</key>
 			<integer>12</integer>
 			<key>xpos</key>
-			<integer>1920</integer>
+			<integer>1200</integer>
 			<key>ypos</key>
-			<integer>210</integer>
+			<integer>370</integer>
 		</dict>
 		<key>1133DEAA-5A8F-4E7D-9E9C-A76CB82D9F92</key>
 		<dict>
 			<key>xpos</key>
 			<integer>840</integer>
 			<key>ypos</key>
-			<integer>530</integer>
+			<integer>800</integer>
 		</dict>
 		<key>1264847E-C784-4D54-B4E1-8017CB361C68</key>
 		<dict>
@@ -1710,7 +1817,7 @@ echo -n "$query"</string>
 			<key>xpos</key>
 			<integer>2650</integer>
 			<key>ypos</key>
-			<integer>210</integer>
+			<integer>200</integer>
 		</dict>
 		<key>275E19D5-14AC-4CA0-B718-562E79802ADE</key>
 		<dict>
@@ -1721,7 +1828,7 @@ echo -n "$query"</string>
 			<key>xpos</key>
 			<integer>2460</integer>
 			<key>ypos</key>
-			<integer>210</integer>
+			<integer>200</integer>
 		</dict>
 		<key>2BBA8827-6AAC-48B3-8381-01C70621357C</key>
 		<dict>
@@ -1730,9 +1837,9 @@ echo -n "$query"</string>
 			<key>note</key>
 			<string>Update info.plist and caches</string>
 			<key>xpos</key>
-			<integer>1740</integer>
+			<integer>1020</integer>
 			<key>ypos</key>
-			<integer>210</integer>
+			<integer>370</integer>
 		</dict>
 		<key>2F2432A8-3DCF-47C7-A1F4-680C2BF00198</key>
 		<dict>
@@ -1754,7 +1861,7 @@ echo -n "$query"</string>
 			<key>xpos</key>
 			<integer>720</integer>
 			<key>ypos</key>
-			<integer>400</integer>
+			<integer>570</integer>
 		</dict>
 		<key>433CD656-03AD-480D-9AF2-748967A92F6A</key>
 		<dict>
@@ -1772,7 +1879,7 @@ echo -n "$query"</string>
 			<key>xpos</key>
 			<integer>2290</integer>
 			<key>ypos</key>
-			<integer>210</integer>
+			<integer>200</integer>
 		</dict>
 		<key>4DF57E98-9CEE-4F2D-8677-DA8E3D8CE1B9</key>
 		<dict>
@@ -1792,7 +1899,7 @@ echo -n "$query"</string>
 			<key>xpos</key>
 			<integer>2830</integer>
 			<key>ypos</key>
-			<integer>210</integer>
+			<integer>200</integer>
 		</dict>
 		<key>598AD703-A0E9-46F0-9269-B4D4CEE29E4E</key>
 		<dict>
@@ -1830,7 +1937,7 @@ echo -n "$query"</string>
 			<key>xpos</key>
 			<integer>1020</integer>
 			<key>ypos</key>
-			<integer>370</integer>
+			<integer>540</integer>
 		</dict>
 		<key>6E13EB0E-2BDA-47F9-9C31-7E88FAAC8168</key>
 		<dict>
@@ -1871,6 +1978,15 @@ echo -n "$query"</string>
 			<integer>1430</integer>
 			<key>ypos</key>
 			<integer>80</integer>
+		</dict>
+		<key>77C51F8E-96BD-4F45-8043-1D4FFD234301</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>12</integer>
+			<key>xpos</key>
+			<integer>840</integer>
+			<key>ypos</key>
+			<integer>370</integer>
 		</dict>
 		<key>7A62F38A-75C7-4C10-85FB-49F0A84503B3</key>
 		<dict>
@@ -1937,11 +2053,11 @@ echo -n "$query"</string>
 			<key>colorindex</key>
 			<integer>9</integer>
 			<key>note</key>
-			<string>action = variant</string>
+			<string>action = new</string>
 			<key>xpos</key>
 			<integer>2150</integer>
 			<key>ypos</key>
-			<integer>240</integer>
+			<integer>230</integer>
 		</dict>
 		<key>B1B7F733-EFC9-4CE1-88E7-08A110720EE0</key>
 		<dict>
@@ -1951,6 +2067,17 @@ echo -n "$query"</string>
 			<integer>840</integer>
 			<key>ypos</key>
 			<integer>210</integer>
+		</dict>
+		<key>C2AF821C-7119-4638-AC0C-360EF570DEC5</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>12</integer>
+			<key>note</key>
+			<string>action = reload</string>
+			<key>xpos</key>
+			<integer>720</integer>
+			<key>ypos</key>
+			<integer>400</integer>
 		</dict>
 		<key>C8F7785D-3469-4D54-A86B-71B6EB260F53</key>
 		<dict>
@@ -2015,7 +2142,7 @@ echo -n "$query"</string>
 			<key>xpos</key>
 			<integer>1200</integer>
 			<key>ypos</key>
-			<integer>370</integer>
+			<integer>540</integer>
 		</dict>
 		<key>F10C6E94-3BE0-4FCD-A2DE-59D9A205B65A</key>
 		<dict>
@@ -2031,7 +2158,7 @@ echo -n "$query"</string>
 		<key>FB02A7FF-2849-496E-8C99-DC5680EC1262</key>
 		<dict>
 			<key>note</key>
-			<string>Duck Duck Go (United Kingdom)</string>
+			<string>eBay Deutschland</string>
 			<key>xpos</key>
 			<integer>60</integer>
 			<key>ypos</key>
