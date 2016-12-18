@@ -3,6 +3,7 @@
     "name": "eBay",
     "search_url": "https://www.ebay.{tld}/sch/i.html?_nkw={query}",
     "suggest_url": "https://autosug.ebay.com/autosug?fmt=osr&sId={site}&kwd={query}",
+    "title_scheme": "{engine.name} {variant[name]}",
     "variants": {
         "at": {
             "name": "Österreich",

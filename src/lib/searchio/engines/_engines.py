@@ -25,14 +25,14 @@ from workflow import web
 
 from searchio import util
 
-log = logging.getLogger('workflow.{0}'.format(__name__))
+log = logging.getLogger(__name__)
 
 imported_dirs = set()
 _imported = set()
 
 
 def find_engines(dirpath):
-    """Find *.py and *.json engine files in `dirpath`.
+    """Find *.py and *.json engine files in ``dirpath``.
 
     The yielded paths may or may not point to valid engine files.
 
@@ -67,6 +67,9 @@ class Manager(object):
     Pass the directories to search on instantiation or using
     `Manager.load_engines(dirpath)`.
 
+    `Manager.load_engines() *must* be called to import the
+    engines.
+
     Access the generated Engine objects with `Manager.engines`
     and `Manager.get_engine(engine_id)`.
 
@@ -93,7 +96,7 @@ class Manager(object):
         Args:
             dirpath (str): Path to directory containing engines.
         """
-        if dirpath not in self._dirpaths:
+        if os.path.isdir(dirpath):
             self._dirpaths[dirpath] = True
 
     def load_engines(self, dirpaths=None):
@@ -109,19 +112,18 @@ class Manager(object):
         start = time.time()
         engines = {}
 
-        paths = {
-            'json': [],
-            'py': [],
-        }
+        filepaths = []
 
         # Find files
         for dirpath in self.dirpaths:
 
             for path in find_engines(dirpath):
+                if path not in filepaths:
+                    filepaths.append(path)
                 # Just extension, lowercase, i.e. "py" or "json"
-                ext = os.path.splitext(path)[1][1:].lower()
-                if ext in paths:
-                    paths[ext].append(path)
+                # ext = os.path.splitext(path)[1][1:].lower()
+                # if ext in ('json', 'py'):
+                #     filepaths.append(path)
 
         # Load collected files
         def _add_engine(engine):
@@ -134,7 +136,7 @@ class Manager(object):
                       engine.id, engine.name, len(engine.variants))
 
         imported = set()
-        for p in paths['json'] + paths['py']:
+        for p in filepaths:
             if p in imported:
                 continue
 
@@ -159,23 +161,6 @@ class Manager(object):
 
         self._engines = engines
 
-        # meth = {'py': self._load_py, 'json': self._load_json}[ext]
-
-        # # Call appropriate method
-        # for engine in meth(path):
-        #     if engine.id in self._engines:
-        #         log.warning('Overriding existing engine %r with %r',
-        #                     self._engines[engine.id], engine)
-        #     self._engines[engine.id] = engine
-        #     log.debug('Engine [%s] "%s" (%d variant(s))',
-        #               engine.id, engine.name, len(engine.variants))
-
-        # self._imported.add(path)
-        # # log.debug('Loaded engines from %r', path)
-
-        # log.debug('%d engine(s) loaded in %0.3fs',
-        #           len(self._engines), time.time() - start)
-
     def _loadpy(self, path):
         """Import Python module and instantiate its Engines.
 
@@ -194,16 +179,51 @@ class Manager(object):
 
     @property
     def dirpaths(self):
+        """Engine directories.
+
+        Searched for .py and .js files defining engines when
+        `Manager.load_engines()` is called.
+
+        Returns:
+            list: Unicode paths to engine directories.
+        """
         return self._dirpaths.keys()
 
     @property
     def engines(self):
+        """Loaded `Engine` objects.
+
+        Populated by `Manager.load_engines`.
+
+        Returns:
+            list: Sequence of `Engine` instances.
+        """
         return sorted(self._engines.values(), key=lambda e: e.id)
 
     def get_engine(self, engine_id):
+        """Return `Engine` instance for ID.
+
+        Args:
+            engine_id (str): Engine ID.
+
+        Returns:
+            Engine: Engine for this ID or `None`
+        """
         return self._engines.get(engine_id)
 
     def get_variant(self, engine_id, variant_id):
+        """Return `Variant` for engine and variant IDs.
+
+        Args:
+            engine_id (str): Engine ID.
+            variant_id (str): Variant ID
+
+        Returns:
+            Variant: Corresponding `Variant`
+
+        Raises:
+            ValueError: If engine or variant IDs are unknown
+        """
         engine = self.get_engine(engine_id)
         if not engine:
             raise ValueError('Unknown engine: {!r}'.format(engine_id))
@@ -224,6 +244,7 @@ class Manager(object):
 class BaseEngine(object):
     """Implements actual search functionality for `Engine`."""
 
+    # TODO: Default to URL still containing '{query}'
     _placeholder = u'QXQXQXQX'
 
     def __init__(self, path=None):
@@ -240,6 +261,11 @@ class BaseEngine(object):
 
     def _post_process_response(self, response_data):
         return response_data[1]
+
+    @property
+    def title_scheme(self):
+        """Scheme for "Engine name (variant name)"."""
+        return u'{engine.name} ({variant.name})'
 
     @property
     def icon(self):
@@ -272,7 +298,10 @@ class BaseEngine(object):
     def get_suggest_url(self, variant_id, query=None):
         """URL to fetch suggestions from."""
         if variant_id not in self.variants:
-            raise ValueError('Unknown variant : {!r}'.format(variant_id))
+            if '*' in self.variants:
+                variant_id = '*'
+            else:
+                raise ValueError('Unknown variant : {!r}'.format(variant_id))
         # TODO: Add GET var replacement/addition?
         variant = self.variants[variant_id]
 
@@ -289,7 +318,10 @@ class BaseEngine(object):
     def get_search_url(self, variant_id, query=None):
         """URL for full search results (webpage)."""
         if variant_id not in self.variants:
-            raise ValueError('Unknown variant : {!r}'.format(variant_id))
+            if '*' in self.variants:
+                variant_id = '*'
+            else:
+                raise ValueError('Unknown variant : {!r}'.format(variant_id))
         # TODO: Add GET var replacement/addition?
         variant = self.variants[variant_id]
 
@@ -345,6 +377,17 @@ class Engine(BaseEngine):
         return
 
     @abc.abstractproperty
+    def title_scheme(self):
+        """Format pattern for human-readable title of variants.
+
+        E.g. ``'{engine.name} {variant.name}'`` to produce
+        ``'Amazon Deutschland'`` or ``'{engine.name} ({variant.name})'``
+        to get ``'Google (Deutsch)'``
+
+        """
+        return
+
+    @abc.abstractproperty
     def suggest_url(self):
         """Default base URL for suggestions (with formatting placeholders)."""
         return
@@ -393,6 +436,7 @@ class JSONEngine(BaseEngine):
         self._name = None
         self._suggest_url = None
         self._search_url = None
+        self._title_scheme = None
         self._variants = None
 
         # Load JSON
@@ -406,11 +450,16 @@ class JSONEngine(BaseEngine):
                     'Required item {0!r} is missing in {1!r}'.format(
                         key, json_path))
 
+        # Required keys
         self._id = data['id']
         self._name = data['name']
         self._suggest_url = data['suggest_url']
         self._search_url = data['search_url']
         self._variants = data['variants']
+
+        # Optional keys
+        self._title_scheme = (data.get('title_scheme') or
+                              u'{engine.name} ({variant[name]})')
 
     @property
     def id(self):
@@ -419,6 +468,10 @@ class JSONEngine(BaseEngine):
     @property
     def name(self):
         return self._name
+
+    @property
+    def title_scheme(self):
+        return self._title_scheme
 
     @property
     def suggest_url(self):
@@ -430,7 +483,14 @@ class JSONEngine(BaseEngine):
 
     @property
     def variants(self):
-        return self._variants
+        variants = {}
+        for id_, d in self._variants.items():
+            if 'title' not in d:
+                s = self.title_scheme.format(engine=self, variant=d)
+                d['title'] = s
+            variants[id_] = d
+
+        return variants
 
 
 def get_subclasses(klass):

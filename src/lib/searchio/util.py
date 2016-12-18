@@ -8,12 +8,7 @@
 # Created on 2016-03-12
 #
 
-"""
-util.py
-=======
-
-General helper functions.
-"""
+"""General helper functions."""
 
 from __future__ import print_function, absolute_import
 
@@ -23,7 +18,7 @@ import urllib
 import subprocess
 import sys
 
-log = logging.getLogger('workflow.{0}'.format(__name__))
+log = logging.getLogger(__name__)
 
 
 class CommandError(Exception):

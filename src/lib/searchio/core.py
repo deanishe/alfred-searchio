@@ -8,12 +8,7 @@
 # Created on 2016-03-13
 #
 
-"""
-core.py
-=======
-
-User-facing workflow functions.
-"""
+"""User-facing workflow functions."""
 
 from __future__ import print_function, absolute_import
 
@@ -24,7 +19,7 @@ from searchio import DEFAULT_ENGINE
 from searchio import util
 
 
-log = logging.getLogger('workflow.{}'.format(__name__))
+log = logging.getLogger(__name__)
 
 
 def get_icon(wf, name):

@@ -38,7 +38,7 @@ import logging
 import os
 import sys
 
-log = logging.getLogger('workflow.{}'.format(__name__))
+log = logging.getLogger(__name__)
 
 
 def usage(wf=None):

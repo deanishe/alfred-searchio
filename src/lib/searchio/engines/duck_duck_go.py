@@ -8,8 +8,7 @@
 # Created on 2016-12-17
 #
 
-"""
-"""
+"""Search suggestions from Duck Duck Go."""
 
 from __future__ import print_function, absolute_import
 
@@ -89,6 +88,11 @@ REGIONS = {
 
 class DuckDuckgo(Engine):
     """Search suggestions from Duck Duck Go."""
+
+    @property
+    def title_scheme(self):
+        """Scheme for "Engine name (variant name)"."""
+        return u'{engine.name} ({variant.name})'
 
     @property
     def id(self):

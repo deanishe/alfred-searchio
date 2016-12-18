@@ -35,6 +35,11 @@ class GoogleMaps(Engine):
     """Get search suggestions from Google Maps."""
 
     @property
+    def title_scheme(self):
+        """Scheme for "Engine name (variant name)"."""
+        return u'{engine.name} ({variant.name})'
+
+    @property
     def id(self):
         return 'google-maps'
 

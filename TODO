@@ -4,6 +4,24 @@ Features:
 		- Add/remove user-configured searches
 	- Add via URL (auto-discovery)
 		- Get URL of frontmost browser
+	- Allow alternates via modifier?
+		Suggestions from one engine, but hold modifier to search with alternate
+	- Allow custom icon via CLI option
+		Is that possible? Reasonable?
+	- Move JSON parsing to parent class
+		The format should always be more or less the same (OpenSearch), so each subclass only need provide the URL.
+			Note: Yahoo! adds a couple of fields. Use `results[1]` to get the list of results.
+	- Change `name` to `description` (or `long_name`/`display_name`) and `id_` to `name`?
+	- Add separate module to allow dynamic creation of Script Filters (?)
+	- Move `Suggest` and its subclasses to individual modules (?)
+			- No need to import all subclasses in most cases
+
+Architecture:
+	- Default to no variant (i.e. '*' or error)
+	- Make `Engine` dumber
+	- Make `Variant` ABC
+		- Very dumb class. Everything is static.
+		- Suggest/search URLs must only contain `{query}` placeholder
 
 Commands:
 
@@ -22,19 +40,34 @@ Update:
 
 Engines:
 	Engines still to implement in v2
-	- Make `Variant` class
+	- Handle single/default variants (e.g. Yandex)
+	- Make `Variant` class/ABC
+	- Find more OpenSearch suggestion compatible search engines
 
-	Custom Search:
-		- Support custom searches based on just URLs
+	API/Format:
+		- Default to URLs still containing {query}
+		- Add support for variant titles
+			Case: "Google (Deutsch)" but "Amazon Deutschland"
+			- Use explicit "title" in `vars`/ABC?
+			- Add `title_scheme` to ABC & JSON?
+		- UIDs/UUIDs
+			Identify searches already saved by user
+			Should work with auto-discovered, URL-based searches, too
+			Would they work for UUIDs in info.plist?
+			- Generate from canonical suggest URL (containing '{query}')
 
-	Wikipedia:
-	- variants @priority(1)
 
-	Wiktionary:
-		- variants @priority(1)
+	User Search:
+		- Create a `Variant`.
 
-	eBay:
-	- variants
+	- Wikipedia: @done(16-12-18 13:43)
+		- variants @priority(1) @done(16-12-18 13:42)
+
+	- Wiktionary: @done(16-12-18 13:43)
+		- variants @priority(1) @done(16-12-18 13:42)
+
+	- eBay: @done(16-12-18 13:43)
+	- variants @done(16-12-18 13:43)
 
 	IMDb:
 	- URLs
@@ -42,16 +75,16 @@ Engines:
 	- variants
 
 	Yandex:
-	- URLs
+	- URL
 	- icon
 
 	Naver:
-	- URLs
+	- URL
 	- icon
 	- variants?
 
 	YouTube:
-	- URLs
+	- URL
 	- icon
 	- variants
 
@@ -70,23 +103,9 @@ Engines:
 	- icon
 	- variants
 
-General:
-	- Allow alternates via modifier
-		Suggestions from one engine, but hold modifier to search with alternate
-	- Allow custom icon via CLI option
-		Is that possible? Reasonable?
-	- Find more OpenSearch suggestion compatible search engines
-	- Move JSON parsing to parent class
-		The format should always be more or less the same (OpenSearch), so each subclass only need provide the URL.
-			Note: Yahoo! adds a couple of fields. Use `results[1]` to get the list of results.
-	- Change `name` to `description` (or `long_name`/`display_name`) and `id_` to `name`
-	- Add separate module to allow dynamic creation of Script Filters (?)
-	- Move `Suggest` and its subclasses to individual modules (?)
-			- No need to import all subclasses in most cases
-
 Icons:
-	- Update action
-	- Update available
+	- Update action @done(16-12-18 13:44)
+	- Update available @done(16-12-18 13:44)
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
 	- Remove `icon` and ensure icon filename is `name`.png @done(14-08-02 17:06) @project(General)

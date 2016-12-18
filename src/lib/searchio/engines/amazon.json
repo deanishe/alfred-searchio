@@ -3,6 +3,7 @@
   "name": "Amazon",
   "search_url": "https://www.amazon.{tld}/gp/search?ie=UTF8&keywords={query}",
   "suggest_url": "https://completion.amazon.{ctld}/search/complete?mkt={market}&method=completion&search-alias=aps&client=alfred-searchio&q={query}",
+  "title_scheme": "{engine.name} {variant[name]}",
   "variants": {
     "us": {
       "name": "United States",

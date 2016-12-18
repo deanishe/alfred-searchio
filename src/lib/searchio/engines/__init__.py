@@ -24,6 +24,14 @@ from searchio.engines._engines import (
     JSONEngine,
 )
 
-# TODO: Duck Duck Go variants
-# TODO: Wikipedia variants
-# TODO: Wiktionary variants
+__all__ = (
+    'Manager',
+    'Engine',
+    'BaseEngine',
+    'JSONEngine',
+)
+
+
+# TODO: Better Engine API: engines.load(*dirpaths) -> Manager
+def load(*dirpaths):
+    raise NotImplementedError('engines.load() not implemented')
