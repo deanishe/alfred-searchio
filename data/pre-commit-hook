@@ -1,35 +1,15 @@
 #!/bin/bash
-
-# Prevent an API key from ending up in the repo
+# Reject if API key is in info.plist
 
 set -e
 
-# Redirect output to stderr.
-exec 1>&2
+exec 1>&2 # Redirect output to stderr.
 
-varname=GOOGLE_PLACES_API_KEY
 root="$( git rev-parse --show-toplevel )"
-# echo "repo=$root"
-
-# Remove my API key from info.plist
 ip="$root/src/info.plist"
-ipbak="$root/src/info.bak.plist"
-ap="$root/.apikey"
-
-test -f "$ap" && apikey="$( cat "$ap" )"
 
 test -f "$ip" || { echo "$ip not found"; exit 1; }
+value="$( /usr/libexec/PlistBuddy -c 'Print :variables:GOOGLE_PLACES_API_KEY' "$ip" )"
+test -n "$value" && { echo "GOOGLE_PLACES_API_KEY is set info.plist"; exit 1; }
 
-# echo "Backing up info.plist ..."
-cp -v "$ip" "$ipbak"  || { i=$?; echo "cp failed: $i"; exit $i; }
-
-curkey="$( /usr/libexec/PlistBuddy -c "Print :variables:$varname" "$ip" )"
-test -n "$curkey" && {
-	# echo "Cleaning info.plist ..."
-	/usr/libexec/PlistBuddy -c "Set :variables:$varname \"\"" "$ip"
-}
-
-test -n "$apikey" && {
-	# echo "Updating info.daj.plist ..."
-	/usr/libexec/PlistBuddy -c "Set :variables:$varname \"$apikey\"" "$ipbak";
-}
+exit 0
