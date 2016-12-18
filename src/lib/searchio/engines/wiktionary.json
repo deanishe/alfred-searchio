@@ -1,16 +1,458 @@
 {
   "id": "wiktionary",
   "name": "Wiktionary",
-  "suggest_url": "https://{language}.wiktionary.org/w/api.php?action=opensearch&search={query}",
-  "search_url": "https://{language}.wiktionary.org/wiki/{query}",
+  "search_url": "https://{lang}.wiktionary.org/wiki/{query}",
+  "suggest_url": "https://{lang}.wiktionary.org/w/api.php?action=opensearch&search={query}",
   "variants": {
+    "id": {
+      "vars": {
+        "lang": "id"
+      },
+      "name": "Bahasa Indonesia"
+    },
+    "is": {
+      "vars": {
+        "lang": "is"
+      },
+      "name": "\u00cdslenska"
+    },
+    "io": {
+      "vars": {
+        "lang": "io"
+      },
+      "name": "Ido"
+    },
+    "te": {
+      "vars": {
+        "lang": "te"
+      },
+      "name": "\u0c24\u0c46\u0c32\u0c41\u0c17\u0c41 / Telugu"
+    },
+    "ko": {
+      "vars": {
+        "lang": "ko"
+      },
+      "name": "\ud55c\uad6d\uc5b4 / Hangugeo"
+    },
+    "kn": {
+      "vars": {
+        "lang": "kn"
+      },
+      "name": "\u0c95\u0ca8\u0ccd\u0ca8\u0ca1 / Kannada"
+    },
+    "mg": {
+      "vars": {
+        "lang": "mg"
+      },
+      "name": "Malagasy"
+    },
+    "my": {
+      "vars": {
+        "lang": "my"
+      },
+      "name": "\u1019\u103c\u1014\u103a\u1019\u102c\u1018\u102c\u101e\u102c / Myanmarsar"
+    },
+    "it": {
+      "vars": {
+        "lang": "it"
+      },
+      "name": "Italiano"
+    },
+    "ta": {
+      "vars": {
+        "lang": "ta"
+      },
+      "name": "\u0ba4\u0bae\u0bbf\u0bb4\u0bcd / Tami\u1e3b"
+    },
+    "he": {
+      "vars": {
+        "lang": "he"
+      },
+      "name": "\u05e2\u05d1\u05e8\u05d9\u05ea / \u02bfIvrit"
+    },
+    "ku": {
+      "vars": {
+        "lang": "ku"
+      },
+      "name": "Kurd\u00ee / \u0643\u0648\u0631\u062f\u06cc"
+    },
+    "ky": {
+      "vars": {
+        "lang": "ky"
+      },
+      "name": "\u041a\u044b\u0440\u0433\u044b\u0437\u0447\u0430 / Kyrgyz\u010da"
+    },
     "en": {
-      "name": "English",
-      "vars": {"language": "en"}
+      "vars": {
+        "lang": "en"
+      },
+      "name": "Simple English"
+    },
+    "pl": {
+      "vars": {
+        "lang": "pl"
+      },
+      "name": "Polski"
+    },
+    "wa": {
+      "vars": {
+        "lang": "wa"
+      },
+      "name": "Walon"
+    },
+    "ml": {
+      "vars": {
+        "lang": "ml"
+      },
+      "name": "\u0d2e\u0d32\u0d2f\u0d3e\u0d33\u0d02 / Malayalam"
+    },
+    "sk": {
+      "vars": {
+        "lang": "sk"
+      },
+      "name": "Sloven\u010dina"
+    },
+    "fi": {
+      "vars": {
+        "lang": "fi"
+      },
+      "name": "Suomi"
+    },
+    "fj": {
+      "vars": {
+        "lang": "fj"
+      },
+      "name": "Na Vosa Vaka-Viti"
+    },
+    "da": {
+      "vars": {
+        "lang": "da"
+      },
+      "name": "Dansk"
+    },
+    "vi": {
+      "vars": {
+        "lang": "vi"
+      },
+      "name": "Ti\u1ebfng Vi\u1ec7t"
     },
     "de": {
-      "name": "Deutsch",
-      "vars": {"language": "de"}
+      "vars": {
+        "lang": "de"
+      },
+      "name": "Deutsch"
+    },
+    "fa": {
+      "vars": {
+        "lang": "fa"
+      },
+      "name": "\u0641\u0627\u0631\u0633\u06cc / F\u0101rsi"
+    },
+    "vo": {
+      "vars": {
+        "lang": "vo"
+      },
+      "name": "Volap\u00fck"
+    },
+    "uk": {
+      "vars": {
+        "lang": "uk"
+      },
+      "name": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430 / Ukrayins\u2019ka"
+    },
+    "fy": {
+      "vars": {
+        "lang": "fy"
+      },
+      "name": "Frysk"
+    },
+    "nb": {
+      "vars": {
+        "lang": "nb"
+      },
+      "name": "Norsk (Bokm\u00e5l)"
+    },
+    "tl": {
+      "vars": {
+        "lang": "tl"
+      },
+      "name": "Tagalog"
+    },
+    "br": {
+      "vars": {
+        "lang": "br"
+      },
+      "name": "Brezhoneg"
+    },
+    "oc": {
+      "vars": {
+        "lang": "oc"
+      },
+      "name": "Occitan"
+    },
+    "fr": {
+      "vars": {
+        "lang": "fr"
+      },
+      "name": "Fran\u00e7ais"
+    },
+    "nl": {
+      "vars": {
+        "lang": "nl"
+      },
+      "name": "Nederlands"
+    },
+    "sv": {
+      "vars": {
+        "lang": "sv"
+      },
+      "name": "Svenska"
+    },
+    "nn": {
+      "vars": {
+        "lang": "nn"
+      },
+      "name": "Norsk (Nynorsk)"
+    },
+    "tr": {
+      "vars": {
+        "lang": "tr"
+      },
+      "name": "T\u00fcrk\u00e7e"
+    },
+    "ru": {
+      "vars": {
+        "lang": "ru"
+      },
+      "name": "\u0420\u0443\u0441\u0441\u043a\u0438\u0439 / Russkiy"
+    },
+    "li": {
+      "vars": {
+        "lang": "li"
+      },
+      "name": "Limburgs"
+    },
+    "lo": {
+      "vars": {
+        "lang": "lo"
+      },
+      "name": "\u0e9e\u0eb2\u0eaa\u0eb2\u0ea5\u0eb2\u0ea7 / Phaasaa Laao"
+    },
+    "nan": {
+      "vars": {
+        "lang": "nan"
+      },
+      "name": "B\u00e2n-l\u00e2m-g\u00fa / H\u014d-l\u00f3-o\u0113"
+    },
+    "la": {
+      "vars": {
+        "lang": "la"
+      },
+      "name": "Latina"
+    },
+    "ja": {
+      "vars": {
+        "lang": "ja"
+      },
+      "name": "\u65e5\u672c\u8a9e / Nihongo"
+    },
+    "hi": {
+      "vars": {
+        "lang": "hi"
+      },
+      "name": "\u0939\u093f\u0928\u094d\u0926\u0940 / Hind\u012b"
+    },
+    "ast": {
+      "vars": {
+        "lang": "ast"
+      },
+      "name": "Asturianu"
+    },
+    "bg": {
+      "vars": {
+        "lang": "bg"
+      },
+      "name": "\u0411\u044a\u043b\u0433\u0430\u0440\u0441\u043a\u0438 / B\u01celgarski"
+    },
+    "chr": {
+      "vars": {
+        "lang": "chr"
+      },
+      "name": "\u13e3\u13b3\u13a9 / Tsalagi"
+    },
+    "tg": {
+      "vars": {
+        "lang": "tg"
+      },
+      "name": "\u0422\u043e\u04b7\u0438\u043a\u04e3 / Tojik\u012b"
+    },
+    "sr": {
+      "vars": {
+        "lang": "sr"
+      },
+      "name": "\u0421\u0440\u043f\u0441\u043a\u0438 / Srpski"
+    },
+    "jv": {
+      "vars": {
+        "lang": "jv"
+      },
+      "name": "Basa Jawa"
+    },
+    "ro": {
+      "vars": {
+        "lang": "ro"
+      },
+      "name": "Rom\u00e2n\u0103"
+    },
+    "pt": {
+      "vars": {
+        "lang": "pt"
+      },
+      "name": "Portugu\u00eas"
+    },
+    "lt": {
+      "vars": {
+        "lang": "lt"
+      },
+      "name": "Lietuvi\u0173"
+    },
+    "hy": {
+      "vars": {
+        "lang": "hy"
+      },
+      "name": "\u0540\u0561\u0575\u0565\u0580\u0565\u0576 / Hayeren"
+    },
+    "scn": {
+      "vars": {
+        "lang": "scn"
+      },
+      "name": "Sicilianu"
+    },
+    "sh": {
+      "vars": {
+        "lang": "sh"
+      },
+      "name": "Srpskohrvatski / \u0421\u0440\u043f\u0441\u043a\u043e\u0445\u0440\u0432\u0430\u0442\u0441\u043a\u0438"
+    },
+    "cy": {
+      "vars": {
+        "lang": "cy"
+      },
+      "name": "Cymraeg"
+    },
+    "gl": {
+      "vars": {
+        "lang": "gl"
+      },
+      "name": "Galego"
+    },
+    "th": {
+      "vars": {
+        "lang": "th"
+      },
+      "name": "\u0e20\u0e32\u0e29\u0e32\u0e44\u0e17\u0e22 / Phasa Thai"
+    },
+    "or": {
+      "vars": {
+        "lang": "or"
+      },
+      "name": "\u0b13\u0b21\u0b3f\u0b3c\u0b06 / O\u1e5bi\u0101"
+    },
+    "az": {
+      "vars": {
+        "lang": "az"
+      },
+      "name": "Az\u0259rbaycanca"
+    },
+    "cs": {
+      "vars": {
+        "lang": "cs"
+      },
+      "name": "\u010ce\u0161tina"
+    },
+    "sw": {
+      "vars": {
+        "lang": "sw"
+      },
+      "name": "Kiswahili"
+    },
+    "uz": {
+      "vars": {
+        "lang": "uz"
+      },
+      "name": "O\u02bbzbekcha / \u040e\u0437\u0431\u0435\u043a\u0447\u0430"
+    },
+    "el": {
+      "vars": {
+        "lang": "el"
+      },
+      "name": "\u0395\u03bb\u03bb\u03b7\u03bd\u03b9\u03ba\u03ac / Ell\u012bnik\u00e1"
+    },
+    "eo": {
+      "vars": {
+        "lang": "eo"
+      },
+      "name": "Esperanto"
+    },
+    "ar": {
+      "vars": {
+        "lang": "ar"
+      },
+      "name": "\u0627\u0644\u0639\u0631\u0628\u064a\u0629 / Al-\u02bfArab\u012byah"
+    },
+    "es": {
+      "vars": {
+        "lang": "es"
+      },
+      "name": "Espa\u00f1ol"
+    },
+    "hu": {
+      "vars": {
+        "lang": "hu"
+      },
+      "name": "Magyar"
+    },
+    "eu": {
+      "vars": {
+        "lang": "eu"
+      },
+      "name": "Euskara"
+    },
+    "et": {
+      "vars": {
+        "lang": "et"
+      },
+      "name": "Eesti"
+    },
+    "zh": {
+      "vars": {
+        "lang": "zh"
+      },
+      "name": "\u4e2d\u6587 / Zh\u014dngw\u00e9n"
+    },
+    "hr": {
+      "vars": {
+        "lang": "hr"
+      },
+      "name": "Hrvatski"
+    },
+    "ca": {
+      "vars": {
+        "lang": "ca"
+      },
+      "name": "Catal\u00e0"
+    },
+    "af": {
+      "vars": {
+        "lang": "af"
+      },
+      "name": "Afrikaans"
+    },
+    "ps": {
+      "vars": {
+        "lang": "ps"
+      },
+      "name": "\u067e\u069a\u062a\u0648 / Pa\u0282to"
     }
   }
 }

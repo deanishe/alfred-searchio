@@ -18,12 +18,21 @@ import sys
 from urllib import urlopen
 
 
-def log(*args, **kwargs):
-    kwargs['file'] = sys.stderr
-    print(*args, **kwargs)
+def log(s, *args):
+    """Simple STDERR logger."""
+    if args:
+        s = s % args
+    print(s, file=sys.stderr)
 
 
-def fetch_page(url, cachepath=None):
+def datapath(filename):
+    """Return path to a file in the data directory."""
+    p = os.path.dirname(__file__)
+    gp = os.path.dirname(p)
+    return os.path.join(gp, filename)
+
+
+def httpget(url, cachepath=None):
     """Return contents of `url`.
 
     Args:
