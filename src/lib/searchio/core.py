@@ -28,20 +28,28 @@ log = logging.getLogger('workflow.{}'.format(__name__))
 
 
 def get_icon(wf, name):
+    """Return path to icon in workflow's ``icons`` subdirectory."""
     return wf.workflowfile('icons/{}.png'.format(name))
 
 
 def icon_maker(wf):
+    """Return a ``get_icon`` partial for ``wf``."""
     def _getter(name):
         return get_icon(wf, name)
+
     return _getter
 
 
 def get_engine_manager(wf):
     """Return `searchio.engines.EngineManager`."""
     import searchio.engines
-    engine_dirs = [os.path.dirname(searchio.engines.__file__)]
+    engine_dirs = [
+        os.path.dirname(searchio.engines.__file__),
+        wf.datafile('engines'),
+    ]
     em = searchio.engines.Manager(engine_dirs)
+    # TODO: Add user engine directory
+    em.load_engines()
     return em
 
 

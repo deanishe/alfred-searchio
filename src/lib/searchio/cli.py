@@ -35,6 +35,7 @@ Commands:
 from __future__ import print_function, absolute_import
 
 import logging
+import os
 import sys
 
 log = logging.getLogger('workflow.{}'.format(__name__))
@@ -61,6 +62,15 @@ def cli(wf):
 
     cmd = args.get('<command>')
     argv = [cmd] + args.get('<args>')
+
+    # ---------------------------------------------------------
+    # Initialise
+
+    try:
+        os.makedirs(wf.datafile('engines'), 0700)
+    except Exception as err:
+        if err.errno != 17:  # ignore file exists
+            raise err
 
     # ---------------------------------------------------------
     # Call sub-command

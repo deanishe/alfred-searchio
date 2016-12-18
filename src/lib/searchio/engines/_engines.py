@@ -13,6 +13,7 @@
 from __future__ import print_function, unicode_literals, absolute_import
 
 import abc
+from collections import OrderedDict
 import imp
 import json
 import logging
@@ -78,56 +79,104 @@ class Manager(object):
             dirpaths (iterable, optional): Directories to load engines
                 from.
         """
-        s = time.time()
-        self._dirpaths = set()
-        self._imported = set()
+        self._dirpaths = OrderedDict()
         self._engines = {}
-        self._engine_classes = set()
 
         if dirpaths:
-            for path in dirpaths:
-                self.load_engines(path)
-        log.debug('%d engine(s) loaded in %0.3fs',
-                  len(self._engines), time.time() - s)
+            for dirpath in dirpaths:
+                self.add_directory(dirpath)
+                # self.load_engines(path)
 
-    def load_engines(self, dirpath):
-        """Load configurations in `dirpath` and create corresponding objects.
+    def add_directory(self, dirpath):
+        """Add plugin directory.
 
         Args:
             dirpath (str): Path to directory containing engines.
         """
+        if dirpath not in self._dirpaths:
+            self._dirpaths[dirpath] = True
 
-        dirpath = os.path.abspath(dirpath)
+    def load_engines(self, dirpaths=None):
+        """Load configurations in `dirpath` and create corresponding objects.
 
-        if dirpath in self._dirpaths:
-            log.debug('Engines already loaded from %r', dirpath)
-            return 0
+        Args:
+            dirpaths (list, optional): Paths to directories containing engines.
+        """
+        dirpaths = dirpaths or []
+        for p in dirpaths:
+            self.add_directory(p)
 
-        for path in find_engines(dirpath):
+        start = time.time()
+        engines = {}
 
-            if path in self._imported:
-                log.debug('Already imported %r', path)
+        paths = {
+            'json': [],
+            'py': [],
+        }
+
+        # Find files
+        for dirpath in self.dirpaths:
+
+            for path in find_engines(dirpath):
+                # Just extension, lowercase, i.e. "py" or "json"
+                ext = os.path.splitext(path)[1][1:].lower()
+                if ext in paths:
+                    paths[ext].append(path)
+
+        # Load collected files
+        def _add_engine(engine):
+            if engine.id in engines:
+                log.warning('Overriding existing engine %r with %r',
+                            engines[engine.id], engine)
+
+            engines[engine.id] = engine
+            log.debug('[engines/load] id=%s, name="%s", variants=%d',
+                      engine.id, engine.name, len(engine.variants))
+
+        imported = set()
+        for p in paths['json'] + paths['py']:
+            if p in imported:
                 continue
 
-            log.debug('Loading %r ...', path)
+            imported.add(p)
+            log.debug('[engines/load] %s ...', p)
 
-            # Just extension, lowercase, i.e. "py" or "json"
-            ext = os.path.splitext(path)[1][1:].lower()
-            method_name = '_load_{0}'.format(ext)
+            if p.lower().endswith('.json'):
+                _add_engine(JSONEngine(p))
+            else:
+                self._loadpy(p)
 
-            # Call appropriate method
-            for engine in getattr(self, method_name)(path):
-                if engine.id in self._engines:
-                    log.warning('Overriding existing engine %r with %r',
-                                self._engines[engine.id], engine)
-                self._engines[engine.id] = engine
-                log.debug('Engine [%s] "%s" (%d variant(s))',
-                          engine.id, engine.name, len(engine.variants))
+        # Find newly-added classes and add an instance of each
+        # to self._engines.
+        seen = set()
+        for klass in get_subclasses(Engine):
+            if klass not in seen:
+                seen.add(klass)
+                _add_engine(klass(path))
 
-            self._imported.add(path)
-            # log.debug('Loaded engines from %r', path)
+        log.debug('[engines/load] %d engine(s) in %0.3fs',
+                  len(engines), time.time() - start)
 
-    def _load_py(self, path):
+        self._engines = engines
+
+        # meth = {'py': self._load_py, 'json': self._load_json}[ext]
+
+        # # Call appropriate method
+        # for engine in meth(path):
+        #     if engine.id in self._engines:
+        #         log.warning('Overriding existing engine %r with %r',
+        #                     self._engines[engine.id], engine)
+        #     self._engines[engine.id] = engine
+        #     log.debug('Engine [%s] "%s" (%d variant(s))',
+        #               engine.id, engine.name, len(engine.variants))
+
+        # self._imported.add(path)
+        # # log.debug('Loaded engines from %r', path)
+
+        # log.debug('%d engine(s) loaded in %0.3fs',
+        #           len(self._engines), time.time() - start)
+
+    def _loadpy(self, path):
         """Import Python module and instantiate its Engines.
 
         Args:
@@ -143,27 +192,9 @@ class Manager(object):
 
         imp.load_source(modname, path)
 
-        # Find newly-added classes and add an instance of each
-        # to self._engines.
-        for klass in get_subclasses(Engine):
-            if klass not in self._engine_classes:
-                self._engine_classes.add(klass)
-                yield klass(path)
-
-    def _load_json(self, path):
-        """Load an Engine from a JSON file.
-
-        Args:
-            path (str): Path to JSON file to load.
-
-        Returns:
-            list: `Engine` objects based on JSON file.
-        """
-        return [JSONEngine(path)]
-
     @property
     def dirpaths(self):
-        return tuple(sorted(self._dirpaths))
+        return self._dirpaths.keys()
 
     @property
     def engines(self):
@@ -219,18 +250,21 @@ class BaseEngine(object):
         """
         if not self._icon:
             candidates = ['{}.png'.format(self.id)]
-            dp = os.path.dirname(self.path)
-            bn = os.path.basename(self.path)
-            n, x = os.path.splitext(bn)
             if self.path:
-                candidates.append('{}.png'.format(n))
+                n = os.path.basename(self.path)
+                candidates.append('{}.png'.format(os.path.splitext(n)[0]))
+
             for filename in candidates:
-                p = os.path.join(dp, filename)
+                p = filename
+                if self.path:
+                    p = os.path.join(os.path.dirname(self.path), filename)
+
                 if os.path.exists(p):
-                    log.debug('[%s/icon] %r', self.id, p)
+                    log.debug('[engines/%s/icon] %r', self.id, p)
                     self._icon = p
                     break
             else:
+                log.warning('[engines/%s/icon] No icon', self.id)
                 self._icon = 'icon.png'
 
         return self._icon

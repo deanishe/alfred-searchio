@@ -979,7 +979,7 @@ exit $ok</string>
 				<key>queuedelayimmediatelyinitially</key>
 				<false/>
 				<key>queuedelaymode</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>queuemode</key>
 				<integer>2</integer>
 				<key>runningsubtext</key>
@@ -1146,9 +1146,9 @@ log "Updating info.plist ..."
 				<key>queuedelayimmediatelyinitially</key>
 				<false/>
 				<key>queuedelaymode</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>queuemode</key>
-				<integer>1</integer>
+				<integer>2</integer>
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
 				<key>script</key>
@@ -1208,9 +1208,9 @@ log "Updating info.plist ..."
 				<key>queuedelayimmediatelyinitially</key>
 				<false/>
 				<key>queuedelaymode</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>queuemode</key>
-				<integer>1</integer>
+				<integer>2</integer>
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
 				<key>script</key>
@@ -1343,9 +1343,9 @@ log "Updating info.plist ..."
 				<key>queuedelayimmediatelyinitially</key>
 				<false/>
 				<key>queuedelaymode</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>queuemode</key>
-				<integer>1</integer>
+				<integer>2</integer>
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
 				<key>script</key>
@@ -1448,9 +1448,9 @@ log "Updating info.plist ..."
 				<key>queuedelayimmediatelyinitially</key>
 				<false/>
 				<key>queuedelaymode</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>queuemode</key>
-				<integer>1</integer>
+				<integer>2</integer>
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
 				<key>script</key>
@@ -1548,7 +1548,7 @@ log "Updating info.plist ..."
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string>Wiktionary</string>
+				<string>Wiktionary (English)</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -1768,9 +1768,9 @@ log "Updating info.plist ..."
 		<key>1133DEAA-5A8F-4E7D-9E9C-A76CB82D9F92</key>
 		<dict>
 			<key>xpos</key>
-			<integer>840</integer>
+			<integer>700</integer>
 			<key>ypos</key>
-			<integer>800</integer>
+			<integer>680</integer>
 		</dict>
 		<key>1264847E-C784-4D54-B4E1-8017CB361C68</key>
 		<dict>

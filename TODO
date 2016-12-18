@@ -22,6 +22,10 @@ Update:
 
 Engines:
 	Engines still to implement in v2
+	- Make `Variant` class
+
+	Custom Search:
+		- Support custom searches based on just URLs
 
 	Wikipedia:
 	- variants @priority(1)
