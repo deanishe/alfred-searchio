@@ -297,7 +297,7 @@ class Table(object):
             padded.append(newrow)
 
         # hr = [' '] + [('-' * (w+2)) for w in widths] + ['']
-        hr = [('-' * w) for w in widths]
+        hr = [('-' * w) for w in widths] + ['--']
         hr = '-'.join(hr)
         text = []
         for row in padded:
