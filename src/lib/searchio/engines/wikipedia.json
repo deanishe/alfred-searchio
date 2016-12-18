@@ -1,16 +1,1975 @@
 {
-  "id": "wikipedia",
-  "name": "Wikipedia",
-  "suggest_url": "https://{language}.wikipedia.org/w/api.php?action=opensearch&search={query}",
-  "search_url": "https://{language}.wikipedia.org/wiki/{query}",
-  "variants": {
-    "en": {
-      "name": "English",
-      "vars": {"language": "en"}
-    },
-    "de": {
-      "name": "Deutsch",
-      "vars": {"language": "de"}
+    "id": "wikipedia",
+    "name": "Wikipedia",
+    "search_url": "https://{language}.wikipedia.org/wiki/{query}",
+    "suggest_url": "https://{language}.wikipedia.org/w/api.php?action=opensearch&search={query}",
+    "variants": {
+        "ab": {
+            "name": "Abkhazian Wikipedia",
+            "title": "Abkhazian Wikipedia",
+            "vars": {
+                "subdomain": "ab"
+            }
+        },
+        "ace": {
+            "name": "Acehnese Wikipedia",
+            "title": "Acehnese Wikipedia",
+            "vars": {
+                "subdomain": "ace"
+            }
+        },
+        "ady": {
+            "name": "Adyghe Wikipedia",
+            "title": "Adyghe Wikipedia",
+            "vars": {
+                "subdomain": "ady"
+            }
+        },
+        "af": {
+            "name": "Afrikaanse Wikipedia",
+            "title": "Afrikaanse Wikipedia",
+            "vars": {
+                "subdomain": "af"
+            }
+        },
+        "ak": {
+            "name": "Akan Wikipedia",
+            "title": "Akan Wikipedia",
+            "vars": {
+                "subdomain": "ak"
+            }
+        },
+        "als": {
+            "name": "Alemannic Wikipedia",
+            "title": "Alemannic Wikipedia",
+            "vars": {
+                "subdomain": "als"
+            }
+        },
+        "am": {
+            "name": "Amharic Wikipedia",
+            "title": "Amharic Wikipedia",
+            "vars": {
+                "subdomain": "am"
+            }
+        },
+        "an": {
+            "name": "Aragonese Wikipedia",
+            "title": "Aragonese Wikipedia",
+            "vars": {
+                "subdomain": "an"
+            }
+        },
+        "ang": {
+            "name": "Anglo-Saxon Wikipedia",
+            "title": "Anglo-Saxon Wikipedia",
+            "vars": {
+                "subdomain": "ang"
+            }
+        },
+        "ar": {
+            "name": "ويكيبيديا العربية",
+            "title": "ويكيبيديا العربية",
+            "vars": {
+                "subdomain": "ar"
+            }
+        },
+        "arc": {
+            "name": "Syriac Wikipedia",
+            "title": "Syriac Wikipedia",
+            "vars": {
+                "subdomain": "arc"
+            }
+        },
+        "arz": {
+            "name": "Egyptian Arabic Wikipedia",
+            "title": "Egyptian Arabic Wikipedia",
+            "vars": {
+                "subdomain": "arz"
+            }
+        },
+        "as": {
+            "name": "Assamese Wikipedia",
+            "title": "Assamese Wikipedia",
+            "vars": {
+                "subdomain": "as"
+            }
+        },
+        "ast": {
+            "name": "Asturian Wikipedia",
+            "title": "Asturian Wikipedia",
+            "vars": {
+                "subdomain": "ast"
+            }
+        },
+        "av": {
+            "name": "Avar Wikipedia",
+            "title": "Avar Wikipedia",
+            "vars": {
+                "subdomain": "av"
+            }
+        },
+        "ay": {
+            "name": "Aymara Wikipedia",
+            "title": "Aymara Wikipedia",
+            "vars": {
+                "subdomain": "ay"
+            }
+        },
+        "az": {
+            "name": "Azərbaycanca Vikipediya",
+            "title": "Azərbaycanca Vikipediya",
+            "vars": {
+                "subdomain": "az"
+            }
+        },
+        "azb": {
+            "name": "Southern Azerbaijani Wikipedia",
+            "title": "Southern Azerbaijani Wikipedia",
+            "vars": {
+                "subdomain": "azb"
+            }
+        },
+        "ba": {
+            "name": "Bashkir Wikipedia",
+            "title": "Bashkir Wikipedia",
+            "vars": {
+                "subdomain": "ba"
+            }
+        },
+        "bal": {
+            "name": "Balochi Wikipedia",
+            "title": "Balochi Wikipedia",
+            "vars": {
+                "subdomain": "bal"
+            }
+        },
+        "bar": {
+            "name": "Bavarian Wikipedia",
+            "title": "Bavarian Wikipedia",
+            "vars": {
+                "subdomain": "bar"
+            }
+        },
+        "bat-smg": {
+            "name": "Samogitian Wikipedia",
+            "title": "Samogitian Wikipedia",
+            "vars": {
+                "subdomain": "bat-smg"
+            }
+        },
+        "bcl": {
+            "name": "Central Bicolano Wikipedia",
+            "title": "Central Bicolano Wikipedia",
+            "vars": {
+                "subdomain": "bcl"
+            }
+        },
+        "be": {
+            "name": "Беларуская Вікіпедыя",
+            "title": "Беларуская Вікіпедыя",
+            "vars": {
+                "subdomain": "be"
+            }
+        },
+        "be-x-old": {
+            "name": "Беларуская Вікіпэдыя",
+            "title": "Беларуская Вікіпэдыя",
+            "vars": {
+                "subdomain": "be-x-old"
+            }
+        },
+        "bg": {
+            "name": "Българоезична Уикипедия",
+            "title": "Българоезична Уикипедия",
+            "vars": {
+                "subdomain": "bg"
+            }
+        },
+        "bh": {
+            "name": "Bhojpuri Wikipedia",
+            "title": "Bhojpuri Wikipedia",
+            "vars": {
+                "subdomain": "bh"
+            }
+        },
+        "bi": {
+            "name": "Bislama Wikipedia",
+            "title": "Bislama Wikipedia",
+            "vars": {
+                "subdomain": "bi"
+            }
+        },
+        "bjn": {
+            "name": "Banjar Wikipedia",
+            "title": "Banjar Wikipedia",
+            "vars": {
+                "subdomain": "bjn"
+            }
+        },
+        "bm": {
+            "name": "Bambara Wikipedia",
+            "title": "Bambara Wikipedia",
+            "vars": {
+                "subdomain": "bm"
+            }
+        },
+        "bn": {
+            "name": "বাংলা উইকিপিডিয়া",
+            "title": "বাংলা উইকিপিডিয়া",
+            "vars": {
+                "subdomain": "bn"
+            }
+        },
+        "bo": {
+            "name": "Tibetan Wikipedia",
+            "title": "Tibetan Wikipedia",
+            "vars": {
+                "subdomain": "bo"
+            }
+        },
+        "bpy": {
+            "name": "বিষ্ণুপ্রিয়া মনিপুরী উইকিপিডিয়া",
+            "title": "বিষ্ণুপ্রিয়া মনিপুরী উইকিপিডিয়া",
+            "vars": {
+                "subdomain": "bpy"
+            }
+        },
+        "br": {
+            "name": "Breton Wikipedia",
+            "title": "Breton Wikipedia",
+            "vars": {
+                "subdomain": "br"
+            }
+        },
+        "bs": {
+            "name": "Bosanska Wikipedia",
+            "title": "Bosanska Wikipedia",
+            "vars": {
+                "subdomain": "bs"
+            }
+        },
+        "bug": {
+            "name": "Buginese Wikipedia",
+            "title": "Buginese Wikipedia",
+            "vars": {
+                "subdomain": "bug"
+            }
+        },
+        "bxr": {
+            "name": "Buryat (Russia) Wikipedia",
+            "title": "Buryat (Russia) Wikipedia",
+            "vars": {
+                "subdomain": "bxr"
+            }
+        },
+        "ca": {
+            "name": "Viquipèdia en català",
+            "title": "Viquipèdia en català",
+            "vars": {
+                "subdomain": "ca"
+            }
+        },
+        "cbk-zam": {
+            "name": "Zamboanga Chavacano Wikipedia",
+            "title": "Zamboanga Chavacano Wikipedia",
+            "vars": {
+                "subdomain": "cbk-zam"
+            }
+        },
+        "cdo": {
+            "name": "Min Dong Wikipedia",
+            "title": "Min Dong Wikipedia",
+            "vars": {
+                "subdomain": "cdo"
+            }
+        },
+        "ce": {
+            "name": "Chechen Wikipedia",
+            "title": "Chechen Wikipedia",
+            "vars": {
+                "subdomain": "ce"
+            }
+        },
+        "ceb": {
+            "name": "Wikipedya sa Sinugboanon",
+            "title": "Wikipedya sa Sinugboanon",
+            "vars": {
+                "subdomain": "ceb"
+            }
+        },
+        "ch": {
+            "name": "Chamorro Wikipedia",
+            "title": "Chamorro Wikipedia",
+            "vars": {
+                "subdomain": "ch"
+            }
+        },
+        "chr": {
+            "name": "Cherokee Wikipedia",
+            "title": "Cherokee Wikipedia",
+            "vars": {
+                "subdomain": "chr"
+            }
+        },
+        "chy": {
+            "name": "Cheyenne Wikipedia",
+            "title": "Cheyenne Wikipedia",
+            "vars": {
+                "subdomain": "chy"
+            }
+        },
+        "ckb": {
+            "name": "Sorani Kurdish Wikipedia",
+            "title": "Sorani Kurdish Wikipedia",
+            "vars": {
+                "subdomain": "ckb"
+            }
+        },
+        "co": {
+            "name": "Corsican Wikipedia",
+            "title": "Corsican Wikipedia",
+            "vars": {
+                "subdomain": "co"
+            }
+        },
+        "cr": {
+            "name": "Cree Wikipedia",
+            "title": "Cree Wikipedia",
+            "vars": {
+                "subdomain": "cr"
+            }
+        },
+        "crh": {
+            "name": "Crimean Tatar Wikipedia",
+            "title": "Crimean Tatar Wikipedia",
+            "vars": {
+                "subdomain": "crh"
+            }
+        },
+        "cs": {
+            "name": "Česká Wikipedie",
+            "title": "Česká Wikipedie",
+            "vars": {
+                "subdomain": "cs"
+            }
+        },
+        "csb": {
+            "name": "Kashubian Wikipedia",
+            "title": "Kashubian Wikipedia",
+            "vars": {
+                "subdomain": "csb"
+            }
+        },
+        "cu": {
+            "name": "Old Church Slavonic Wikipedia",
+            "title": "Old Church Slavonic Wikipedia",
+            "vars": {
+                "subdomain": "cu"
+            }
+        },
+        "cv": {
+            "name": "Chuvash Wikipedia",
+            "title": "Chuvash Wikipedia",
+            "vars": {
+                "subdomain": "cv"
+            }
+        },
+        "cy": {
+            "name": "Welsh Wikipedia",
+            "title": "Welsh Wikipedia",
+            "vars": {
+                "subdomain": "cy"
+            }
+        },
+        "da": {
+            "name": "Dansk Wikipedia",
+            "title": "Dansk Wikipedia",
+            "vars": {
+                "subdomain": "da"
+            }
+        },
+        "de": {
+            "name": "Deutschsprachige Wikipedia",
+            "title": "Deutschsprachige Wikipedia",
+            "vars": {
+                "subdomain": "de"
+            }
+        },
+        "diq": {
+            "name": "Zazaki Wikipedia",
+            "title": "Zazaki Wikipedia",
+            "vars": {
+                "subdomain": "diq"
+            }
+        },
+        "dsb": {
+            "name": "Dolnoserbska wikipedija",
+            "title": "Dolnoserbska wikipedija",
+            "vars": {
+                "subdomain": "dsb"
+            }
+        },
+        "dv": {
+            "name": "Divehi Wikipedia",
+            "title": "Divehi Wikipedia",
+            "vars": {
+                "subdomain": "dv"
+            }
+        },
+        "dz": {
+            "name": "Dzongkha Wikipedia",
+            "title": "Dzongkha Wikipedia",
+            "vars": {
+                "subdomain": "dz"
+            }
+        },
+        "ee": {
+            "name": "Ewe Wikipedia",
+            "title": "Ewe Wikipedia",
+            "vars": {
+                "subdomain": "ee"
+            }
+        },
+        "el": {
+            "name": "Ελληνική Βικιπαίδεια",
+            "title": "Ελληνική Βικιπαίδεια",
+            "vars": {
+                "subdomain": "el"
+            }
+        },
+        "eml": {
+            "name": "Emilian-Romagnol Wikipedia",
+            "title": "Emilian-Romagnol Wikipedia",
+            "vars": {
+                "subdomain": "eml"
+            }
+        },
+        "en": {
+            "name": "English Wikipedia",
+            "title": "English Wikipedia",
+            "vars": {
+                "subdomain": "en"
+            }
+        },
+        "eo": {
+            "name": "Vikipedio en Esperanto",
+            "title": "Vikipedio en Esperanto",
+            "vars": {
+                "subdomain": "eo"
+            }
+        },
+        "es": {
+            "name": "Wikipedia en español",
+            "title": "Wikipedia en español",
+            "vars": {
+                "subdomain": "es"
+            }
+        },
+        "et": {
+            "name": "Eestikeelne Vikipeedia",
+            "title": "Eestikeelne Vikipeedia",
+            "vars": {
+                "subdomain": "et"
+            }
+        },
+        "eu": {
+            "name": "Euskarazko Wikipedia",
+            "title": "Euskarazko Wikipedia",
+            "vars": {
+                "subdomain": "eu"
+            }
+        },
+        "fa": {
+            "name": "ویکی‌پدیای فارسی",
+            "title": "ویکی‌پدیای فارسی",
+            "vars": {
+                "subdomain": "fa"
+            }
+        },
+        "ff": {
+            "name": "Fula Wikipedia",
+            "title": "Fula Wikipedia",
+            "vars": {
+                "subdomain": "ff"
+            }
+        },
+        "fi": {
+            "name": "Suomenkielinen Wikipedia",
+            "title": "Suomenkielinen Wikipedia",
+            "vars": {
+                "subdomain": "fi"
+            }
+        },
+        "fiu-vro": {
+            "name": "Voro Wikipedia",
+            "title": "Voro Wikipedia",
+            "vars": {
+                "subdomain": "fiu-vro"
+            }
+        },
+        "fj": {
+            "name": "Fijian Wikipedia",
+            "title": "Fijian Wikipedia",
+            "vars": {
+                "subdomain": "fj"
+            }
+        },
+        "fo": {
+            "name": "Faroese Wikipedia",
+            "title": "Faroese Wikipedia",
+            "vars": {
+                "subdomain": "fo"
+            }
+        },
+        "fr": {
+            "name": "Wikipédia en français",
+            "title": "Wikipédia en français",
+            "vars": {
+                "subdomain": "fr"
+            }
+        },
+        "frp": {
+            "name": "Franco-Provençal Wikipedia",
+            "title": "Franco-Provençal Wikipedia",
+            "vars": {
+                "subdomain": "frp"
+            }
+        },
+        "frr": {
+            "name": "North Frisian Wikipedia",
+            "title": "North Frisian Wikipedia",
+            "vars": {
+                "subdomain": "frr"
+            }
+        },
+        "fur": {
+            "name": "Friulian Wikipedia",
+            "title": "Friulian Wikipedia",
+            "vars": {
+                "subdomain": "fur"
+            }
+        },
+        "fy": {
+            "name": "West Frisian Wikipedia",
+            "title": "West Frisian Wikipedia",
+            "vars": {
+                "subdomain": "fy"
+            }
+        },
+        "ga": {
+            "name": "Vicipéid na Gaeilge",
+            "title": "Vicipéid na Gaeilge",
+            "vars": {
+                "subdomain": "ga"
+            }
+        },
+        "gag": {
+            "name": "Gagauz Wikipedia",
+            "title": "Gagauz Wikipedia",
+            "vars": {
+                "subdomain": "gag"
+            }
+        },
+        "gan": {
+            "name": "Gan Chinese Wikipedia",
+            "title": "Gan Chinese Wikipedia",
+            "vars": {
+                "subdomain": "gan"
+            }
+        },
+        "gd": {
+            "name": "Scottish Gaelic Wikipedia",
+            "title": "Scottish Gaelic Wikipedia",
+            "vars": {
+                "subdomain": "gd"
+            }
+        },
+        "gl": {
+            "name": "Galipedia",
+            "title": "Galipedia",
+            "vars": {
+                "subdomain": "gl"
+            }
+        },
+        "glk": {
+            "name": "Gilaki Wikipedia",
+            "title": "Gilaki Wikipedia",
+            "vars": {
+                "subdomain": "glk"
+            }
+        },
+        "gn": {
+            "name": "Guarani Wikipedia",
+            "title": "Guarani Wikipedia",
+            "vars": {
+                "subdomain": "gn"
+            }
+        },
+        "gom": {
+            "name": "Goan Konkani Wikipedia",
+            "title": "Goan Konkani Wikipedia",
+            "vars": {
+                "subdomain": "gom"
+            }
+        },
+        "got": {
+            "name": "Gothic Wikipedia",
+            "title": "Gothic Wikipedia",
+            "vars": {
+                "subdomain": "got"
+            }
+        },
+        "gu": {
+            "name": "Gujarati Wikipedia",
+            "title": "Gujarati Wikipedia",
+            "vars": {
+                "subdomain": "gu"
+            }
+        },
+        "gv": {
+            "name": "Manx Wikipedia",
+            "title": "Manx Wikipedia",
+            "vars": {
+                "subdomain": "gv"
+            }
+        },
+        "ha": {
+            "name": "Hausa Wikipedia",
+            "title": "Hausa Wikipedia",
+            "vars": {
+                "subdomain": "ha"
+            }
+        },
+        "hak": {
+            "name": "Hakka Wikipedia",
+            "title": "Hakka Wikipedia",
+            "vars": {
+                "subdomain": "hak"
+            }
+        },
+        "haw": {
+            "name": "Hawaiian Wikipedia",
+            "title": "Hawaiian Wikipedia",
+            "vars": {
+                "subdomain": "haw"
+            }
+        },
+        "he": {
+            "name": "ויקיפדיה העברית",
+            "title": "ויקיפדיה העברית",
+            "vars": {
+                "subdomain": "he"
+            }
+        },
+        "hi": {
+            "name": "हिन्दी विकिपीडिया",
+            "title": "हिन्दी विकिपीडिया",
+            "vars": {
+                "subdomain": "hi"
+            }
+        },
+        "hif": {
+            "name": "Fiji Hindi Wikipedia",
+            "title": "Fiji Hindi Wikipedia",
+            "vars": {
+                "subdomain": "hif"
+            }
+        },
+        "hr": {
+            "name": "Hrvatska Wikipedija",
+            "title": "Hrvatska Wikipedija",
+            "vars": {
+                "subdomain": "hr"
+            }
+        },
+        "hsb": {
+            "name": "Hornjoserbska wikipedija",
+            "title": "Hornjoserbska wikipedija",
+            "vars": {
+                "subdomain": "hsb"
+            }
+        },
+        "ht": {
+            "name": "Haitian Creole Wikipedia",
+            "title": "Haitian Creole Wikipedia",
+            "vars": {
+                "subdomain": "ht"
+            }
+        },
+        "hu": {
+            "name": "Magyar Wikipédia",
+            "title": "Magyar Wikipédia",
+            "vars": {
+                "subdomain": "hu"
+            }
+        },
+        "hy": {
+            "name": "Հայերեն Վիքիպեդիա",
+            "title": "Հայերեն Վիքիպեդիա",
+            "vars": {
+                "subdomain": "hy"
+            }
+        },
+        "ia": {
+            "name": "Interlingua Wikipedia",
+            "title": "Interlingua Wikipedia",
+            "vars": {
+                "subdomain": "ia"
+            }
+        },
+        "id": {
+            "name": "Wikipedia bahasa Indonesia",
+            "title": "Wikipedia bahasa Indonesia",
+            "vars": {
+                "subdomain": "id"
+            }
+        },
+        "ie": {
+            "name": "Interlingue Wikipedia",
+            "title": "Interlingue Wikipedia",
+            "vars": {
+                "subdomain": "ie"
+            }
+        },
+        "ig": {
+            "name": "Igbo Wikipedia",
+            "title": "Igbo Wikipedia",
+            "vars": {
+                "subdomain": "ig"
+            }
+        },
+        "ik": {
+            "name": "Inupiak Wikipedia",
+            "title": "Inupiak Wikipedia",
+            "vars": {
+                "subdomain": "ik"
+            }
+        },
+        "ilo": {
+            "name": "Ilokano Wikipedia",
+            "title": "Ilokano Wikipedia",
+            "vars": {
+                "subdomain": "ilo"
+            }
+        },
+        "io": {
+            "name": "Ido Wikipedia",
+            "title": "Ido Wikipedia",
+            "vars": {
+                "subdomain": "io"
+            }
+        },
+        "is": {
+            "name": "Icelandic Wikipedia",
+            "title": "Icelandic Wikipedia",
+            "vars": {
+                "subdomain": "is"
+            }
+        },
+        "it": {
+            "name": "Wikipedia in italiano",
+            "title": "Wikipedia in italiano",
+            "vars": {
+                "subdomain": "it"
+            }
+        },
+        "iu": {
+            "name": "Iniktitut Wikipedia",
+            "title": "Iniktitut Wikipedia",
+            "vars": {
+                "subdomain": "iu"
+            }
+        },
+        "ja": {
+            "name": "ウィキペディア日本語版",
+            "title": "ウィキペディア日本語版",
+            "vars": {
+                "subdomain": "ja"
+            }
+        },
+        "jbo": {
+            "name": "Lojban Wikipedia",
+            "title": "Lojban Wikipedia",
+            "vars": {
+                "subdomain": "jbo"
+            }
+        },
+        "jv": {
+            "name": "Javanese Wikipedia",
+            "title": "Javanese Wikipedia",
+            "vars": {
+                "subdomain": "jv"
+            }
+        },
+        "ka": {
+            "name": "ქართული ვიკიპედია",
+            "title": "ქართული ვიკიპედია",
+            "vars": {
+                "subdomain": "ka"
+            }
+        },
+        "kaa": {
+            "name": "Karakalpak Wikipedia",
+            "title": "Karakalpak Wikipedia",
+            "vars": {
+                "subdomain": "kaa"
+            }
+        },
+        "kab": {
+            "name": "Kabyle Wikipedia",
+            "title": "Kabyle Wikipedia",
+            "vars": {
+                "subdomain": "kab"
+            }
+        },
+        "kbd": {
+            "name": "Kabardian Wikipedia",
+            "title": "Kabardian Wikipedia",
+            "vars": {
+                "subdomain": "kbd"
+            }
+        },
+        "kg": {
+            "name": "Kongo Wikipedia",
+            "title": "Kongo Wikipedia",
+            "vars": {
+                "subdomain": "kg"
+            }
+        },
+        "ki": {
+            "name": "Kikuyu Wikipedia",
+            "title": "Kikuyu Wikipedia",
+            "vars": {
+                "subdomain": "ki"
+            }
+        },
+        "kl": {
+            "name": "Greenlandic Wikipedia",
+            "title": "Greenlandic Wikipedia",
+            "vars": {
+                "subdomain": "kl"
+            }
+        },
+        "km": {
+            "name": "Khmer Wikipedia",
+            "title": "Khmer Wikipedia",
+            "vars": {
+                "subdomain": "km"
+            }
+        },
+        "kn": {
+            "name": "ಕನ್ನಡ ವಿಕಿಪೀಡಿಯ",
+            "title": "ಕನ್ನಡ ವಿಕಿಪೀಡಿಯ",
+            "vars": {
+                "subdomain": "kn"
+            }
+        },
+        "ko": {
+            "name": "한국어 위키백과",
+            "title": "한국어 위키백과",
+            "vars": {
+                "subdomain": "ko"
+            }
+        },
+        "koi": {
+            "name": "Komi-Permyak Wikipedia",
+            "title": "Komi-Permyak Wikipedia",
+            "vars": {
+                "subdomain": "koi"
+            }
+        },
+        "krc": {
+            "name": "Karachay-Balkar Wikipedia",
+            "title": "Karachay-Balkar Wikipedia",
+            "vars": {
+                "subdomain": "krc"
+            }
+        },
+        "ks": {
+            "name": "Kashmiri Wikipedia",
+            "title": "Kashmiri Wikipedia",
+            "vars": {
+                "subdomain": "ks"
+            }
+        },
+        "ksh": {
+            "name": "Ripuarian Wikipedia",
+            "title": "Ripuarian Wikipedia",
+            "vars": {
+                "subdomain": "ksh"
+            }
+        },
+        "ku": {
+            "name": "Kurdish Wikipedia",
+            "title": "Kurdish Wikipedia",
+            "vars": {
+                "subdomain": "ku"
+            }
+        },
+        "kv": {
+            "name": "Komi Wikipedia",
+            "title": "Komi Wikipedia",
+            "vars": {
+                "subdomain": "kv"
+            }
+        },
+        "kw": {
+            "name": "Cornish Wikipedia",
+            "title": "Cornish Wikipedia",
+            "vars": {
+                "subdomain": "kw"
+            }
+        },
+        "ky": {
+            "name": "Kyrgyz Wikipedia",
+            "title": "Kyrgyz Wikipedia",
+            "vars": {
+                "subdomain": "ky"
+            }
+        },
+        "la": {
+            "name": "Vicipaedia Latina",
+            "title": "Vicipaedia Latina",
+            "vars": {
+                "subdomain": "la"
+            }
+        },
+        "lad": {
+            "name": "Ladino Wikipedia",
+            "title": "Ladino Wikipedia",
+            "vars": {
+                "subdomain": "lad"
+            }
+        },
+        "lb": {
+            "name": "Luxembourgish Wikipedia",
+            "title": "Luxembourgish Wikipedia",
+            "vars": {
+                "subdomain": "lb"
+            }
+        },
+        "lbe": {
+            "name": "Lak Wikipedia",
+            "title": "Lak Wikipedia",
+            "vars": {
+                "subdomain": "lbe"
+            }
+        },
+        "lez": {
+            "name": "Lezgi Wikipedia",
+            "title": "Lezgi Wikipedia",
+            "vars": {
+                "subdomain": "lez"
+            }
+        },
+        "lg": {
+            "name": "Luganda Wikipedia",
+            "title": "Luganda Wikipedia",
+            "vars": {
+                "subdomain": "lg"
+            }
+        },
+        "li": {
+            "name": "Limburgish Wikipedia",
+            "title": "Limburgish Wikipedia",
+            "vars": {
+                "subdomain": "li"
+            }
+        },
+        "lij": {
+            "name": "Ligurian Wikipedia",
+            "title": "Ligurian Wikipedia",
+            "vars": {
+                "subdomain": "lij"
+            }
+        },
+        "lmo": {
+            "name": "Lombard Wikipedia",
+            "title": "Lombard Wikipedia",
+            "vars": {
+                "subdomain": "lmo"
+            }
+        },
+        "ln": {
+            "name": "Lingala Wikipedia",
+            "title": "Lingala Wikipedia",
+            "vars": {
+                "subdomain": "ln"
+            }
+        },
+        "lo": {
+            "name": "Lao Wikipedia",
+            "title": "Lao Wikipedia",
+            "vars": {
+                "subdomain": "lo"
+            }
+        },
+        "lrc": {
+            "name": "Northern Luri Wikipedia",
+            "title": "Northern Luri Wikipedia",
+            "vars": {
+                "subdomain": "lrc"
+            }
+        },
+        "lt": {
+            "name": "Lietuviškoji Vikipedija",
+            "title": "Lietuviškoji Vikipedija",
+            "vars": {
+                "subdomain": "lt"
+            }
+        },
+        "ltg": {
+            "name": "Latgalian Wikipedia",
+            "title": "Latgalian Wikipedia",
+            "vars": {
+                "subdomain": "ltg"
+            }
+        },
+        "lv": {
+            "name": "Vikipēdija latviešu valodā",
+            "title": "Vikipēdija latviešu valodā",
+            "vars": {
+                "subdomain": "lv"
+            }
+        },
+        "mai": {
+            "name": "Maithili Wikipedia",
+            "title": "Maithili Wikipedia",
+            "vars": {
+                "subdomain": "mai"
+            }
+        },
+        "map-bms": {
+            "name": "Banyumasan Wikipedia",
+            "title": "Banyumasan Wikipedia",
+            "vars": {
+                "subdomain": "map-bms"
+            }
+        },
+        "mdf": {
+            "name": "Moksha Wikipedia",
+            "title": "Moksha Wikipedia",
+            "vars": {
+                "subdomain": "mdf"
+            }
+        },
+        "mg": {
+            "name": "Malagasy Wikipedia",
+            "title": "Malagasy Wikipedia",
+            "vars": {
+                "subdomain": "mg"
+            }
+        },
+        "mhr": {
+            "name": "Meadow Mari Wikipedia",
+            "title": "Meadow Mari Wikipedia",
+            "vars": {
+                "subdomain": "mhr"
+            }
+        },
+        "mi": {
+            "name": "Māori Wikipedia",
+            "title": "Māori Wikipedia",
+            "vars": {
+                "subdomain": "mi"
+            }
+        },
+        "min": {
+            "name": "Minangkabau Wikipedia",
+            "title": "Minangkabau Wikipedia",
+            "vars": {
+                "subdomain": "min"
+            }
+        },
+        "mk": {
+            "name": "Македонска Википедија",
+            "title": "Македонска Википедија",
+            "vars": {
+                "subdomain": "mk"
+            }
+        },
+        "ml": {
+            "name": "Malayalam Wikipedia",
+            "title": "Malayalam Wikipedia",
+            "vars": {
+                "subdomain": "ml"
+            }
+        },
+        "mn": {
+            "name": "Монгол Википедиа",
+            "title": "Монгол Википедиа",
+            "vars": {
+                "subdomain": "mn"
+            }
+        },
+        "mr": {
+            "name": "Marathi Wikipedia",
+            "title": "Marathi Wikipedia",
+            "vars": {
+                "subdomain": "mr"
+            }
+        },
+        "mrj": {
+            "name": "Hill Mari Wikipedia",
+            "title": "Hill Mari Wikipedia",
+            "vars": {
+                "subdomain": "mrj"
+            }
+        },
+        "ms": {
+            "name": "Wikipedia Bahasa Melayu",
+            "title": "Wikipedia Bahasa Melayu",
+            "vars": {
+                "subdomain": "ms"
+            }
+        },
+        "mt": {
+            "name": "Maltese Wikipedia",
+            "title": "Maltese Wikipedia",
+            "vars": {
+                "subdomain": "mt"
+            }
+        },
+        "mwl": {
+            "name": "Mirandese Wikipedia",
+            "title": "Mirandese Wikipedia",
+            "vars": {
+                "subdomain": "mwl"
+            }
+        },
+        "my": {
+            "name": "Burmese Wikipedia",
+            "title": "Burmese Wikipedia",
+            "vars": {
+                "subdomain": "my"
+            }
+        },
+        "myv": {
+            "name": "Erzya Wikipedia",
+            "title": "Erzya Wikipedia",
+            "vars": {
+                "subdomain": "myv"
+            }
+        },
+        "mzn": {
+            "name": "Mazandarani Wikipedia",
+            "title": "Mazandarani Wikipedia",
+            "vars": {
+                "subdomain": "mzn"
+            }
+        },
+        "na": {
+            "name": "Nauruan Wikipedia",
+            "title": "Nauruan Wikipedia",
+            "vars": {
+                "subdomain": "na"
+            }
+        },
+        "nah": {
+            "name": "Nāhuatl Wikipedia",
+            "title": "Nāhuatl Wikipedia",
+            "vars": {
+                "subdomain": "nah"
+            }
+        },
+        "nap": {
+            "name": "Neapolitan Wikipedia",
+            "title": "Neapolitan Wikipedia",
+            "vars": {
+                "subdomain": "nap"
+            }
+        },
+        "nds": {
+            "name": "Low Saxon Wikipedia",
+            "title": "Low Saxon Wikipedia",
+            "vars": {
+                "subdomain": "nds"
+            }
+        },
+        "nds-nl": {
+            "name": "Dutch Low Saxon Wikipedia",
+            "title": "Dutch Low Saxon Wikipedia",
+            "vars": {
+                "subdomain": "nds-nl"
+            }
+        },
+        "ne": {
+            "name": "Nepali Wikipedia",
+            "title": "Nepali Wikipedia",
+            "vars": {
+                "subdomain": "ne"
+            }
+        },
+        "new": {
+            "name": "Newar Wikipedia",
+            "title": "Newar Wikipedia",
+            "vars": {
+                "subdomain": "new"
+            }
+        },
+        "nl": {
+            "name": "Nederlandstalige Wikipedia",
+            "title": "Nederlandstalige Wikipedia",
+            "vars": {
+                "subdomain": "nl"
+            }
+        },
+        "nn": {
+            "name": "Nynorsk Wikipedia",
+            "title": "Nynorsk Wikipedia",
+            "vars": {
+                "subdomain": "nn"
+            }
+        },
+        "no": {
+            "name": "Bokmål Wikipedia",
+            "title": "Bokmål Wikipedia",
+            "vars": {
+                "subdomain": "no"
+            }
+        },
+        "nov": {
+            "name": "Novial Wikipedia",
+            "title": "Novial Wikipedia",
+            "vars": {
+                "subdomain": "nov"
+            }
+        },
+        "nrm": {
+            "name": "Norman Wikipedia",
+            "title": "Norman Wikipedia",
+            "vars": {
+                "subdomain": "nrm"
+            }
+        },
+        "nso": {
+            "name": "Northern Sotho Wikipedia",
+            "title": "Northern Sotho Wikipedia",
+            "vars": {
+                "subdomain": "nso"
+            }
+        },
+        "nv": {
+            "name": "Navajo Wikipedia",
+            "title": "Navajo Wikipedia",
+            "vars": {
+                "subdomain": "nv"
+            }
+        },
+        "ny": {
+            "name": "Chichewa Wikipedia",
+            "title": "Chichewa Wikipedia",
+            "vars": {
+                "subdomain": "ny"
+            }
+        },
+        "oc": {
+            "name": "Occitan Wikipedia",
+            "title": "Occitan Wikipedia",
+            "vars": {
+                "subdomain": "oc"
+            }
+        },
+        "om": {
+            "name": "Oromo Wikipedia",
+            "title": "Oromo Wikipedia",
+            "vars": {
+                "subdomain": "om"
+            }
+        },
+        "or": {
+            "name": "Oriya Wikipedia",
+            "title": "Oriya Wikipedia",
+            "vars": {
+                "subdomain": "or"
+            }
+        },
+        "os": {
+            "name": "Ossetian Wikipedia",
+            "title": "Ossetian Wikipedia",
+            "vars": {
+                "subdomain": "os"
+            }
+        },
+        "pa": {
+            "name": "Eastern Punjabi Wikipedia",
+            "title": "Eastern Punjabi Wikipedia",
+            "vars": {
+                "subdomain": "pa"
+            }
+        },
+        "pag": {
+            "name": "Pangasinan Wikipedia",
+            "title": "Pangasinan Wikipedia",
+            "vars": {
+                "subdomain": "pag"
+            }
+        },
+        "pam": {
+            "name": "Kapampangan Wikipedia",
+            "title": "Kapampangan Wikipedia",
+            "vars": {
+                "subdomain": "pam"
+            }
+        },
+        "pap": {
+            "name": "Papiamentu Wikipedia",
+            "title": "Papiamentu Wikipedia",
+            "vars": {
+                "subdomain": "pap"
+            }
+        },
+        "pcd": {
+            "name": "Picard Wikipedia",
+            "title": "Picard Wikipedia",
+            "vars": {
+                "subdomain": "pcd"
+            }
+        },
+        "pdc": {
+            "name": "Pennsylvania German Wikipedia",
+            "title": "Pennsylvania German Wikipedia",
+            "vars": {
+                "subdomain": "pdc"
+            }
+        },
+        "pfl": {
+            "name": "Palatine German Wikipedia",
+            "title": "Palatine German Wikipedia",
+            "vars": {
+                "subdomain": "pfl"
+            }
+        },
+        "pi": {
+            "name": "Pali Wikipedia",
+            "title": "Pali Wikipedia",
+            "vars": {
+                "subdomain": "pi"
+            }
+        },
+        "pih": {
+            "name": "Norfolk Wikipedia",
+            "title": "Norfolk Wikipedia",
+            "vars": {
+                "subdomain": "pih"
+            }
+        },
+        "pl": {
+            "name": "Polskojęzyczna Wikipedia",
+            "title": "Polskojęzyczna Wikipedia",
+            "vars": {
+                "subdomain": "pl"
+            }
+        },
+        "pms": {
+            "name": "Piedmontese Wikipedia",
+            "title": "Piedmontese Wikipedia",
+            "vars": {
+                "subdomain": "pms"
+            }
+        },
+        "pnb": {
+            "name": "Western Punjabi Wikipedia",
+            "title": "Western Punjabi Wikipedia",
+            "vars": {
+                "subdomain": "pnb"
+            }
+        },
+        "pnt": {
+            "name": "Pontic Wikipedia",
+            "title": "Pontic Wikipedia",
+            "vars": {
+                "subdomain": "pnt"
+            }
+        },
+        "ps": {
+            "name": "Pashto Wikipedia",
+            "title": "Pashto Wikipedia",
+            "vars": {
+                "subdomain": "ps"
+            }
+        },
+        "pt": {
+            "name": "Wikipedia em português",
+            "title": "Wikipedia em português",
+            "vars": {
+                "subdomain": "pt"
+            }
+        },
+        "qu": {
+            "name": "Quechua Wikipedia",
+            "title": "Quechua Wikipedia",
+            "vars": {
+                "subdomain": "qu"
+            }
+        },
+        "rm": {
+            "name": "Romansh Wikipedia",
+            "title": "Romansh Wikipedia",
+            "vars": {
+                "subdomain": "rm"
+            }
+        },
+        "rmy": {
+            "name": "Vlax Romani Wikipedia",
+            "title": "Vlax Romani Wikipedia",
+            "vars": {
+                "subdomain": "rmy"
+            }
+        },
+        "rn": {
+            "name": "Kirundi Wikipedia",
+            "title": "Kirundi Wikipedia",
+            "vars": {
+                "subdomain": "rn"
+            }
+        },
+        "ro": {
+            "name": "Wikipedia în română",
+            "title": "Wikipedia în română",
+            "vars": {
+                "subdomain": "ro"
+            }
+        },
+        "roa-rup": {
+            "name": "Aromanian Wikipedia",
+            "title": "Aromanian Wikipedia",
+            "vars": {
+                "subdomain": "roa-rup"
+            }
+        },
+        "roa-tara": {
+            "name": "Tarantino Wikipedia",
+            "title": "Tarantino Wikipedia",
+            "vars": {
+                "subdomain": "roa-tara"
+            }
+        },
+        "ru": {
+            "name": "Русская Википедия",
+            "title": "Русская Википедия",
+            "vars": {
+                "subdomain": "ru"
+            }
+        },
+        "rue": {
+            "name": "Rusyn Wikipedia",
+            "title": "Rusyn Wikipedia",
+            "vars": {
+                "subdomain": "rue"
+            }
+        },
+        "rw": {
+            "name": "Kinyarwanda Wikipedia",
+            "title": "Kinyarwanda Wikipedia",
+            "vars": {
+                "subdomain": "rw"
+            }
+        },
+        "sa": {
+            "name": "Sanskrit Wikipedia",
+            "title": "Sanskrit Wikipedia",
+            "vars": {
+                "subdomain": "sa"
+            }
+        },
+        "sah": {
+            "name": "Sakha Wikipedia",
+            "title": "Sakha Wikipedia",
+            "vars": {
+                "subdomain": "sah"
+            }
+        },
+        "sc": {
+            "name": "Sardinian Wikipedia",
+            "title": "Sardinian Wikipedia",
+            "vars": {
+                "subdomain": "sc"
+            }
+        },
+        "scn": {
+            "name": "Sicilian Wikipedia",
+            "title": "Sicilian Wikipedia",
+            "vars": {
+                "subdomain": "scn"
+            }
+        },
+        "sco": {
+            "name": "Scots Wikipedia",
+            "title": "Scots Wikipedia",
+            "vars": {
+                "subdomain": "sco"
+            }
+        },
+        "sd": {
+            "name": "سنڌي وڪيپيڊيا",
+            "title": "سنڌي وڪيپيڊيا",
+            "vars": {
+                "subdomain": "sd"
+            }
+        },
+        "se": {
+            "name": "Northern Sami Wikipedia",
+            "title": "Northern Sami Wikipedia",
+            "vars": {
+                "subdomain": "se"
+            }
+        },
+        "sg": {
+            "name": "Sango Wikipedia",
+            "title": "Sango Wikipedia",
+            "vars": {
+                "subdomain": "sg"
+            }
+        },
+        "sh": {
+            "name": "Srpskohrvatska Wikipedija",
+            "title": "Srpskohrvatska Wikipedija",
+            "vars": {
+                "subdomain": "sh"
+            }
+        },
+        "si": {
+            "name": "Sinhalese Wikipedia",
+            "title": "Sinhalese Wikipedia",
+            "vars": {
+                "subdomain": "si"
+            }
+        },
+        "simple": {
+            "name": "Simple English Wikipedia",
+            "title": "Simple English Wikipedia",
+            "vars": {
+                "subdomain": "simple"
+            }
+        },
+        "sk": {
+            "name": "Slovenská Wikipedia",
+            "title": "Slovenská Wikipedia",
+            "vars": {
+                "subdomain": "sk"
+            }
+        },
+        "sl": {
+            "name": "Slovenska Wikipedija",
+            "title": "Slovenska Wikipedija",
+            "vars": {
+                "subdomain": "sl"
+            }
+        },
+        "sm": {
+            "name": "Samoan Wikipedia",
+            "title": "Samoan Wikipedia",
+            "vars": {
+                "subdomain": "sm"
+            }
+        },
+        "sn": {
+            "name": "Shona Wikipedia",
+            "title": "Shona Wikipedia",
+            "vars": {
+                "subdomain": "sn"
+            }
+        },
+        "so": {
+            "name": "Somali Wikipedia",
+            "title": "Somali Wikipedia",
+            "vars": {
+                "subdomain": "so"
+            }
+        },
+        "sq": {
+            "name": "Wikipedia shqip",
+            "title": "Wikipedia shqip",
+            "vars": {
+                "subdomain": "sq"
+            }
+        },
+        "sr": {
+            "name": "Википедија на српском језику",
+            "title": "Википедија на српском језику",
+            "vars": {
+                "subdomain": "sr"
+            }
+        },
+        "srn": {
+            "name": "Sranan Tongo Wikipedia",
+            "title": "Sranan Tongo Wikipedia",
+            "vars": {
+                "subdomain": "srn"
+            }
+        },
+        "ss": {
+            "name": "Swati Wikipedia",
+            "title": "Swati Wikipedia",
+            "vars": {
+                "subdomain": "ss"
+            }
+        },
+        "st": {
+            "name": "Sesotho Wikipedia",
+            "title": "Sesotho Wikipedia",
+            "vars": {
+                "subdomain": "st"
+            }
+        },
+        "stq": {
+            "name": "Saterland Frisian Wikipedia",
+            "title": "Saterland Frisian Wikipedia",
+            "vars": {
+                "subdomain": "stq"
+            }
+        },
+        "su": {
+            "name": "Sundanese Wikipedia",
+            "title": "Sundanese Wikipedia",
+            "vars": {
+                "subdomain": "su"
+            }
+        },
+        "sv": {
+            "name": "Svenskspråkiga Wikipedia",
+            "title": "Svenskspråkiga Wikipedia",
+            "vars": {
+                "subdomain": "sv"
+            }
+        },
+        "sw": {
+            "name": "Wikipedia ya Kiswahili",
+            "title": "Wikipedia ya Kiswahili",
+            "vars": {
+                "subdomain": "sw"
+            }
+        },
+        "szl": {
+            "name": "Silesian Wikipedia",
+            "title": "Silesian Wikipedia",
+            "vars": {
+                "subdomain": "szl"
+            }
+        },
+        "ta": {
+            "name": "Tamil Wikipedia",
+            "title": "Tamil Wikipedia",
+            "vars": {
+                "subdomain": "ta"
+            }
+        },
+        "tcy": {
+            "name": "Tulu Wikipedia",
+            "title": "Tulu Wikipedia",
+            "vars": {
+                "subdomain": "tcy"
+            }
+        },
+        "te": {
+            "name": "తెలుగు వికీపీడియా",
+            "title": "తెలుగు వికీపీడియా",
+            "vars": {
+                "subdomain": "te"
+            }
+        },
+        "tet": {
+            "name": "Tetum Wikipedia",
+            "title": "Tetum Wikipedia",
+            "vars": {
+                "subdomain": "tet"
+            }
+        },
+        "tg": {
+            "name": "Tajik Wikipedia",
+            "title": "Tajik Wikipedia",
+            "vars": {
+                "subdomain": "tg"
+            }
+        },
+        "th": {
+            "name": "วิกิพีเดียภาษาไทย",
+            "title": "วิกิพีเดียภาษาไทย",
+            "vars": {
+                "subdomain": "th"
+            }
+        },
+        "ti": {
+            "name": "Tigrinya Wikipedia",
+            "title": "Tigrinya Wikipedia",
+            "vars": {
+                "subdomain": "ti"
+            }
+        },
+        "tk": {
+            "name": "Turkmen Wikipedia",
+            "title": "Turkmen Wikipedia",
+            "vars": {
+                "subdomain": "tk"
+            }
+        },
+        "tl": {
+            "name": "Tagalog Wikipedia",
+            "title": "Tagalog Wikipedia",
+            "vars": {
+                "subdomain": "tl"
+            }
+        },
+        "tn": {
+            "name": "Tswana Wikipedia",
+            "title": "Tswana Wikipedia",
+            "vars": {
+                "subdomain": "tn"
+            }
+        },
+        "to": {
+            "name": "Tongan Wikipedia",
+            "title": "Tongan Wikipedia",
+            "vars": {
+                "subdomain": "to"
+            }
+        },
+        "tpi": {
+            "name": "Tok Pisin Wikipedia",
+            "title": "Tok Pisin Wikipedia",
+            "vars": {
+                "subdomain": "tpi"
+            }
+        },
+        "tr": {
+            "name": "Türkçe Vikipedi",
+            "title": "Türkçe Vikipedi",
+            "vars": {
+                "subdomain": "tr"
+            }
+        },
+        "ts": {
+            "name": "Tsonga Wikipedia",
+            "title": "Tsonga Wikipedia",
+            "vars": {
+                "subdomain": "ts"
+            }
+        },
+        "tt": {
+            "name": "Tatar Wikipedia",
+            "title": "Tatar Wikipedia",
+            "vars": {
+                "subdomain": "tt"
+            }
+        },
+        "tum": {
+            "name": "Tumbuku Wikipedia",
+            "title": "Tumbuku Wikipedia",
+            "vars": {
+                "subdomain": "tum"
+            }
+        },
+        "tw": {
+            "name": "Twi Wikipedia",
+            "title": "Twi Wikipedia",
+            "vars": {
+                "subdomain": "tw"
+            }
+        },
+        "ty": {
+            "name": "Tahitian Wikipedia",
+            "title": "Tahitian Wikipedia",
+            "vars": {
+                "subdomain": "ty"
+            }
+        },
+        "tyv": {
+            "name": "Tuvinian Wikipedia",
+            "title": "Tuvinian Wikipedia",
+            "vars": {
+                "subdomain": "tyv"
+            }
+        },
+        "udm": {
+            "name": "Udmurt Wikipedia",
+            "title": "Udmurt Wikipedia",
+            "vars": {
+                "subdomain": "udm"
+            }
+        },
+        "ug": {
+            "name": "Uyghur Wikipedia",
+            "title": "Uyghur Wikipedia",
+            "vars": {
+                "subdomain": "ug"
+            }
+        },
+        "uk": {
+            "name": "Українська Вікіпедія",
+            "title": "Українська Вікіпедія",
+            "vars": {
+                "subdomain": "uk"
+            }
+        },
+        "ur": {
+            "name": "Urdu Wikipedia",
+            "title": "Urdu Wikipedia",
+            "vars": {
+                "subdomain": "ur"
+            }
+        },
+        "uz": {
+            "name": "Uzbek Wikipedia",
+            "title": "Uzbek Wikipedia",
+            "vars": {
+                "subdomain": "uz"
+            }
+        },
+        "ve": {
+            "name": "Venda Wikipedia",
+            "title": "Venda Wikipedia",
+            "vars": {
+                "subdomain": "ve"
+            }
+        },
+        "vec": {
+            "name": "Venetian Wikipedia",
+            "title": "Venetian Wikipedia",
+            "vars": {
+                "subdomain": "vec"
+            }
+        },
+        "vep": {
+            "name": "Veps Wikipedia",
+            "title": "Veps Wikipedia",
+            "vars": {
+                "subdomain": "vep"
+            }
+        },
+        "vi": {
+            "name": "Wikipedia tiếng Việt",
+            "title": "Wikipedia tiếng Việt",
+            "vars": {
+                "subdomain": "vi"
+            }
+        },
+        "vls": {
+            "name": "West Flemish Wikipedia",
+            "title": "West Flemish Wikipedia",
+            "vars": {
+                "subdomain": "vls"
+            }
+        },
+        "vo": {
+            "name": "Vükiped Volapükik",
+            "title": "Vükiped Volapükik",
+            "vars": {
+                "subdomain": "vo"
+            }
+        },
+        "wa": {
+            "name": "Walloon Wikipedia",
+            "title": "Walloon Wikipedia",
+            "vars": {
+                "subdomain": "wa"
+            }
+        },
+        "war": {
+            "name": "Waray Wikipedia",
+            "title": "Waray Wikipedia",
+            "vars": {
+                "subdomain": "war"
+            }
+        },
+        "wo": {
+            "name": "Wolof Wikipedia",
+            "title": "Wolof Wikipedia",
+            "vars": {
+                "subdomain": "wo"
+            }
+        },
+        "wuu": {
+            "name": "Wu Wikipedia",
+            "title": "Wu Wikipedia",
+            "vars": {
+                "subdomain": "wuu"
+            }
+        },
+        "xal": {
+            "name": "Kalmyk Wikipedia",
+            "title": "Kalmyk Wikipedia",
+            "vars": {
+                "subdomain": "xal"
+            }
+        },
+        "xh": {
+            "name": "Xhosa Wikipedia",
+            "title": "Xhosa Wikipedia",
+            "vars": {
+                "subdomain": "xh"
+            }
+        },
+        "xmf": {
+            "name": "Mingrelian Wikipedia",
+            "title": "Mingrelian Wikipedia",
+            "vars": {
+                "subdomain": "xmf"
+            }
+        },
+        "yi": {
+            "name": "Yiddish Wikipedia",
+            "title": "Yiddish Wikipedia",
+            "vars": {
+                "subdomain": "yi"
+            }
+        },
+        "yo": {
+            "name": "Yoruba Wikipedia",
+            "title": "Yoruba Wikipedia",
+            "vars": {
+                "subdomain": "yo"
+            }
+        },
+        "za": {
+            "name": "Zhuang Wikipedia",
+            "title": "Zhuang Wikipedia",
+            "vars": {
+                "subdomain": "za"
+            }
+        },
+        "zea": {
+            "name": "Zealandic Wikipedia",
+            "title": "Zealandic Wikipedia",
+            "vars": {
+                "subdomain": "zea"
+            }
+        },
+        "zh": {
+            "name": "中文维基百科",
+            "title": "中文维基百科",
+            "vars": {
+                "subdomain": "zh"
+            }
+        },
+        "zh-classical": {
+            "name": "Classical Chinese Wikipedia",
+            "title": "Classical Chinese Wikipedia",
+            "vars": {
+                "subdomain": "zh-classical"
+            }
+        },
+        "zh-min-nan": {
+            "name": "Min Nan Wikipedia",
+            "title": "Min Nan Wikipedia",
+            "vars": {
+                "subdomain": "zh-min-nan"
+            }
+        },
+        "zh-yue": {
+            "name": "Cantonese Wikipedia",
+            "title": "Cantonese Wikipedia",
+            "vars": {
+                "subdomain": "zh-yue"
+            }
+        },
+        "zu": {
+            "name": "Zulu Wikipedia",
+            "title": "Zulu Wikipedia",
+            "vars": {
+                "subdomain": "zu"
+            }
+        }
     }
-  }
 }
