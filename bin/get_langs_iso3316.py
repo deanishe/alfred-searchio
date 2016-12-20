@@ -8,21 +8,22 @@
 # Created on 2016-03-13
 #
 
-"""Output TSV list of ISO-639-1 language codes,names."""
+"""Output TSV list of ISO-639-1 language ``code,name``."""
 
 from __future__ import print_function, absolute_import
 
-from urllib import urlopen
+from common import datapath, httpget, Lang, print_lang
 
 from bs4 import BeautifulSoup as BS
 
 
 url = 'https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes'
+cachepath = datapath('ISO 3316-1 Country Codes.html')
 
 
 def main():
-    html = urlopen(url).read().decode('utf-8')
-    soup = BS(html)
+    html = httpget(url, cachepath)
+    soup = BS(html, 'html.parser')
     for row in soup.find_all('tr'):
         cells = row.find_all('td')
         if len(cells) != 10:
@@ -35,7 +36,7 @@ def main():
 
         name = name.split(u',', 1)[0].strip()
 
-        print(u'{0}\t{1}'.format(abbr, name).encode('utf-8'))
+        print_lang(Lang(abbr, name))
 
 
 if __name__ == '__main__':

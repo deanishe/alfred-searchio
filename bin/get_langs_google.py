@@ -8,20 +8,21 @@
 # Created on 2016-03-12
 #
 
-"""
-Generate TSV of the languages supported by Google.
-"""
+"""Generate TSV of the languages supported by Google."""
 
-from __future__ import print_function, unicode_literals, absolute_import
+from __future__ import print_function, absolute_import
 
 from HTMLParser import HTMLParser
-import os
 
-from common import fetch_page
+from common import datapath, httpget, Lang, print_lang
 
 # Google's preferences pages
-URL = 'https://www.google.com/preferences'
-CACHEPATH = os.path.join(os.path.dirname(__file__), 'google.html')
+url = 'https://www.google.com/preferences'
+cachepath = datapath('Google Prefs.html')
+
+
+def html():
+    return httpget(url, cachepath).decode('ISO-8859-1')
 
 
 def parse_page(html):
@@ -54,17 +55,18 @@ def parse_page(html):
         if key[0] not in 'abcdefghijklmnopqrstuvwxyz':
             continue
 
-        langs.append((key, name))
+        langs.append(Lang(key, name))
 
     return langs
 
 
 def main():
     """Parse and print languages from Google's preferences page."""
-    html = fetch_page(URL, CACHEPATH).decode('ISO-8859-1')
-    langs = parse_page(html)
-    for key, name in sorted(langs):
-        print('{}\t{}'.format(key, name).encode('utf-8'))
+    langs = parse_page(html())
+    langs.sort()
+    for l in langs:
+        print_lang(l)
+
 
 if __name__ == '__main__':
     main()
