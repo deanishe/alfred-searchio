@@ -14,11 +14,18 @@ from __future__ import print_function, absolute_import
 
 import logging
 import os
+from unicodedata import normalize
 import urllib
+import re
 import subprocess
 import sys
+from uuid import uuid4
 
-log = logging.getLogger(__name__)
+
+def logger(name):
+    return logging.getLogger('workflow.' + name)
+
+log = logger(__name__)
 
 
 class CommandError(Exception):
@@ -123,6 +130,40 @@ def get_system_language():
     return lang
 
 
+def fold_diacritics(s):
+    """Fold diacritics.
+
+    Args:
+        s (unicode): Unicode string
+
+    Returns:
+        unicode: Unicode string containing only ASCII
+    """
+    s = normalize('NFD', s).encode('ascii', 'ignore')
+    return unicode(s)
+
+
+def slugify(text):
+    """Make ID-friendly string.
+
+    Args:
+        s (basestring): String to make a slug from.
+
+    Returns:
+        unicode: Filepath- and URL-friendly slug containing
+            only ASCII
+    """
+    if isinstance(text, str):
+        text = text.decode('utf-8')
+
+    text = fold_diacritics(text).lower()
+    text = re.sub(r'[^a-z-]+', '-', text)
+    text = re.sub(r'-+', '-', text)
+    text = text.strip('-').strip()
+
+    return text
+
+
 def textmode():
     """Return `True` if STDOUT is a tty.
 
@@ -130,6 +171,49 @@ def textmode():
         bool: Whether STDOUT is a tty.
     """
     return sys.stdout.isatty()
+
+
+def valid_url(url):
+    """Return `True` if URL is valid."""
+    return re.match(r'https?://\S+', url) is not None
+
+
+def uuid():
+    """Return a `str` UUID."""
+    return str(uuid4())
+
+
+def _bstr(s):
+    """Ensure ``s`` is a a`str`.
+
+    UTF-8 encode Unicode, call `str`
+    on everything else.
+    """
+    if isinstance(s, unicode):
+        s = s.encode('utf-8')
+    elif not isinstance(s, str):
+        s = str(s)
+    return s
+
+
+def mkurl(url, query=None):
+    """Replace ``{query}`` in ``url`` with URL-encoded ``query``.
+
+    Args:
+        url (str): URL template
+        query (str, optional): Query to insert into ``url``
+
+    Returns:
+        str: UTF-8 encoded URL
+    """
+    from urllib import quote_plus
+    if not query:
+        return url
+
+    url = _bstr(url)
+    query = _bstr(query)
+
+    return url.format(query=quote_plus(query))
 
 
 def url_encode_dict(dic):
@@ -155,6 +239,38 @@ def url_encode_dict(dic):
     return encoded
 
 
+def shortpath(path):
+    """Return relative or shortened path.
+
+    Args:
+        path (str): Path to shorten.
+
+    Returns:
+        str: Relative path or path with ~ instead of ``$HOME``.
+    """
+    cwd = os.path.abspath(os.getcwd()) + '/'
+    path = os.path.abspath(path)
+    if path.startswith(cwd):
+        path = path.replace(cwd, './')
+    return path.replace(os.getenv('HOME'), '~')
+
+
+def getjson(url):
+    """Retrieve URL and parse response as JSON.
+
+    Args:
+        url (str): URL to fetch
+
+    Returns:
+        object: JSON-deserialised HTTP response.
+    """
+    from workflow import web
+    r = web.get(url)
+    log.debug('[%s] %s', r.status_code, r.url)
+    r.raise_for_status()
+    return r.json()
+
+
 def in_same_directory(*paths):
     """Return `True` if `paths` are all in the same directory.
 
@@ -174,6 +290,21 @@ def in_same_directory(*paths):
             return False
 
     return True
+
+
+class Cell(object):
+
+    def __init__(self, text, width=0, align=-1):
+        self.text = text
+        self.width = width
+        self.align = align
+
+    def __str__(self):
+        return self.__unicode__().encode('utf-8')
+
+    def __unicode__(self):
+        if len(self.text) >= self.width:
+            return self.text
 
 
 class Table(object):
@@ -201,12 +332,12 @@ class Table(object):
                              self.width, len(row)))
         l = []
         for obj in row:
-            if isinstance(obj, unicode):
-                s = obj.encode('utf-8')
-            elif isinstance(obj, str):
+            if isinstance(obj, str):
+                s = obj.decode('utf-8')
+            elif isinstance(obj, unicode):
                 s = obj
             else:
-                s = str(obj)
+                s = unicode(obj)
 
             l.append(s)
 
@@ -246,19 +377,19 @@ class Table(object):
             row (list): Various objects.
 
         Returns:
-            str: UTF-8 encoded string.
+            list: List of Unicode strings.
         """
 
         is_title, data = row[0], row[1:]
         str_row = [is_title]
 
         for i, cell in enumerate(data):
-            if isinstance(cell, unicode):
-                cell = cell.encode('utf-8')
-            elif isinstance(cell, str):
+            if isinstance(cell, str):
+                cell = cell.decode('utf-8')
+            elif isinstance(cell, unicode):
                 pass
             else:
-                cell = repr(cell)
+                cell = unicode(cell)
 
             str_row.append(cell)
 
@@ -287,13 +418,13 @@ class Table(object):
             is_title, cells = row[0], row[1:]
             newrow = [is_title]
             for i, s in enumerate(cells):
-                f = '{{:{}s}}'.format(widths[i])
+                f = u'{{:{}s}}'.format(widths[i])
                 newrow.append(f.format(s))
             padded.append(newrow)
 
         # hr = [' '] + [('-' * (w+2)) for w in widths] + ['']
-        hr = [('-' * w) for w in widths] + ['--']
-        hr = '-'.join(hr)
+        hr = [(u'-' * w) for w in widths]
+        hr = u'-+-'.join(hr)
         text = []
         for row in padded:
             is_title, cells = row[0], row[1:]
@@ -306,4 +437,4 @@ class Table(object):
 
         # text.append(hr)
 
-        return '\n'.join(text)
+        return u'\n'.join(text).encode('utf-8')

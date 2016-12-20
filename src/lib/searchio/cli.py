@@ -34,11 +34,12 @@ Commands:
 
 from __future__ import print_function, absolute_import
 
-import logging
 import os
 import sys
 
-log = logging.getLogger(__name__)
+from searchio import util
+
+log = util.logger(__name__)
 
 
 def usage(wf=None):
@@ -67,7 +68,8 @@ def cli(wf):
     # Initialise
 
     try:
-        os.makedirs(wf.datafile('engines'), 0700)
+        # os.makedirs(wf.datafile('engines'), 0700)
+        os.makedirs(wf.datafile('searches'), 0700)
     except Exception as err:
         if err.errno != 17:  # ignore file exists
             raise err

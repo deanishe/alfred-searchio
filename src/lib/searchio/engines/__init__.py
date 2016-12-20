@@ -8,30 +8,22 @@
 # Created on 2016-03-13
 #
 
-"""
-Searchio! Engines
-=================
+"""Searchio! engines."""
 
-
-"""
-
-from __future__ import print_function, unicode_literals, absolute_import
+from __future__ import print_function, absolute_import
 
 from searchio.engines._engines import (
-    Manager,
-    Engine,
-    BaseEngine,
-    JSONEngine,
+    engine,
+    engines,
+    load,
+    search,
+    searches,
 )
 
-__all__ = (
-    'Manager',
-    'Engine',
-    'BaseEngine',
-    'JSONEngine',
-)
-
-
-# TODO: Better Engine API: engines.load(*dirpaths) -> Manager
-def load(*dirpaths):
-    raise NotImplementedError('engines.load() not implemented')
+__all__ = [
+    'engine',
+    'engines',
+    'load',
+    'search',
+    'searches',
+]

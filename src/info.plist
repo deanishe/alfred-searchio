@@ -21,6 +21,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>0A5780FA-9C49-4528-BC2D-4E79BEBFDD57</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>92B38613-CD0E-404E-8D4F-61D0A656F227</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>1264847E-C784-4D54-B4E1-8017CB361C68</key>
 		<array>
 			<dict>
@@ -595,7 +608,7 @@
 				<key>runningsubtext</key>
 				<string>Loading variants…</string>
 				<key>script</key>
-				<string>./searchio variants --engine "$engine" "$1"</string>
+				<string>./searchio variants "$engine" "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -781,13 +794,13 @@
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
-				<false/>
+				<true/>
 				<key>removeextension</key>
 				<false/>
 				<key>text</key>
 				<string>{query}</string>
 				<key>title</key>
-				<string>Added New Search</string>
+				<string>ERROR</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.output.notification</string>
@@ -818,17 +831,25 @@ fatal() {
 
 log "."
 log "/---------- NEW ----------\\"
+log "query=$query"
 log "engine=$engine"
-log "variant=$variant"
-log "name=$name"
-# log "query=$query"
 
-opts=(add)
+log "uid=$uid"
+log "title=$title"
+log "search_url=$search_url"
 
-test -n "$engine" &amp;&amp; { opts+=(--engine "$engine") } || { fatal "engine unset" }
-test -n "$variant" &amp;&amp; { opts+=(--variant "$variant") }  || { fatal "variant unset" }
-test -n "$name" &amp;&amp; { opts+=("$name") } || { fatal "name unset" }
-# test -n "$query" &amp;&amp; { opts+=("$query") } || { fatal "query unset" }
+log "description=$description"
+log "suggest_url=$suggest_url"
+
+log "lang=$lang"
+log "country=$country"
+log "icon=$icon"
+
+
+opts=(add --env)
+
+test -n "$title" || fatal 'required var "title" unset'
+test -n "$search_url" || fatal 'required var "search_url" unset'
 
 output="$( ./searchio $opts 2&gt;&amp;1 )"
 ok=$?
@@ -836,8 +857,6 @@ ok=$?
 [[ $ok -ne 0 ]] &amp;&amp; {
   log "$output"
   echo -n "$output"
-} || {
-  echo -n "$name"
 }
 
 log "\\---------- NEW ----------/"
@@ -863,7 +882,7 @@ exit $ok</string>
 				<key>externaltriggerid</key>
 				<string>new</string>
 				<key>passinputasargument</key>
-				<true/>
+				<false/>
 				<key>passvariables</key>
 				<true/>
 				<key>workflowbundleid</key>
@@ -985,7 +1004,7 @@ exit $ok</string>
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
 				<key>script</key>
-				<string>./searchio search "$1"</string>
+				<string>./searchio search google-english "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -1098,6 +1117,27 @@ exit $ok</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>ERROR</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>92B38613-CD0E-404E-8D4F-61D0A656F227</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -1105,23 +1145,41 @@ exit $ok</string>
 				<key>script</key>
 				<string># Clear stale elements from cache and update info.plist
 
-set -e
+query="$1"
 
 log() {
   echo "$@" &gt;&amp;2
 }
 
+fatal() {
+  echo -n "$@"
+  log "$@"
+  exit 1
+}
+
+# test -n "$search" &amp;&amp; { opts+=("$search") }  || { fatal 'required var "search" unset' }
+# test -n "$search" &amp;&amp; { opts+=("$title") }  || { fatal 'required var "title" unset' }
+
 log "."
 log "Cleaning caches ..."
-./searchio clean
+./searchio clean 1&gt;&amp;2
+ok=$?
+[[ $ok -ne 0 ]] &amp;&amp; {
+  fatal "searchio clean failed: $ok"
+}
+
 log "Updating info.plist ..."
-./searchio reload</string>
+./searchio reload 1&gt;&amp;2
+ok=$?
+[[ $ok -ne 0 ]] &amp;&amp; {
+  fatal "searchio reload failed: $ok"
+}</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>type</key>
-				<integer>0</integer>
+				<integer>5</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
@@ -1152,7 +1210,7 @@ log "Updating info.plist ..."
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
 				<key>script</key>
-				<string>./searchio search -e google -v de "$1"</string>
+				<string>./searchio search google-deutsch "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -1454,7 +1512,7 @@ log "Updating info.plist ..."
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
 				<key>script</key>
-				<string>./searchio search -e wikipedia -v en "$1"</string>
+				<string>./searchio search wikipedia-english "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -1497,7 +1555,7 @@ log "Updating info.plist ..."
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
 				<key>script</key>
-				<string>./searchio search -e wikipedia -v de "$1"</string>
+				<string>./searchio search wikipedia-deutsch "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -1540,7 +1598,7 @@ log "Updating info.plist ..."
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
 				<key>script</key>
-				<string>./searchio search -e wiktionary -v en "$1"</string>
+				<string>./searchio search wiktionary-english "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -1583,7 +1641,7 @@ log "Updating info.plist ..."
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
 				<key>script</key>
-				<string>./searchio search -e wiktionary -v de "$1"</string>
+				<string>./searchio search wiktionary-deutsch "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -1626,7 +1684,7 @@ log "Updating info.plist ..."
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
 				<key>script</key>
-				<string>./searchio search -e amazon -v de "$1"</string>
+				<string>./searchio search amazon.de "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -2005,6 +2063,15 @@ log "Updating info.plist ..."
 			<integer>840</integer>
 			<key>ypos</key>
 			<integer>50</integer>
+		</dict>
+		<key>92B38613-CD0E-404E-8D4F-61D0A656F227</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>12</integer>
+			<key>xpos</key>
+			<integer>1370</integer>
+			<key>ypos</key>
+			<integer>370</integer>
 		</dict>
 		<key>9D22C791-2308-470B-B135-E2E03B69DB73</key>
 		<dict>

@@ -1,1975 +1,1348 @@
 {
-    "id": "wikipedia",
-    "name": "Wikipedia",
-    "search_url": "https://{language}.wikipedia.org/wiki/{query}",
-    "suggest_url": "https://{language}.wikipedia.org/w/api.php?action=opensearch&search={query}",
-    "variants": {
-        "ab": {
-            "name": "Abkhazian Wikipedia",
-            "title": "Abkhazian Wikipedia",
-            "vars": {
-                "subdomain": "ab"
-            }
-        },
-        "ace": {
-            "name": "Acehnese Wikipedia",
-            "title": "Acehnese Wikipedia",
-            "vars": {
-                "subdomain": "ace"
-            }
-        },
-        "ady": {
-            "name": "Adyghe Wikipedia",
-            "title": "Adyghe Wikipedia",
-            "vars": {
-                "subdomain": "ady"
-            }
-        },
-        "af": {
-            "name": "Afrikaanse Wikipedia",
-            "title": "Afrikaanse Wikipedia",
-            "vars": {
-                "subdomain": "af"
-            }
-        },
-        "ak": {
-            "name": "Akan Wikipedia",
-            "title": "Akan Wikipedia",
-            "vars": {
-                "subdomain": "ak"
-            }
-        },
-        "als": {
-            "name": "Alemannic Wikipedia",
-            "title": "Alemannic Wikipedia",
-            "vars": {
-                "subdomain": "als"
-            }
-        },
-        "am": {
-            "name": "Amharic Wikipedia",
-            "title": "Amharic Wikipedia",
-            "vars": {
-                "subdomain": "am"
-            }
-        },
-        "an": {
-            "name": "Aragonese Wikipedia",
-            "title": "Aragonese Wikipedia",
-            "vars": {
-                "subdomain": "an"
-            }
-        },
-        "ang": {
-            "name": "Anglo-Saxon Wikipedia",
-            "title": "Anglo-Saxon Wikipedia",
-            "vars": {
-                "subdomain": "ang"
-            }
-        },
-        "ar": {
-            "name": "ويكيبيديا العربية",
-            "title": "ويكيبيديا العربية",
-            "vars": {
-                "subdomain": "ar"
-            }
-        },
-        "arc": {
-            "name": "Syriac Wikipedia",
-            "title": "Syriac Wikipedia",
-            "vars": {
-                "subdomain": "arc"
-            }
-        },
-        "arz": {
-            "name": "Egyptian Arabic Wikipedia",
-            "title": "Egyptian Arabic Wikipedia",
-            "vars": {
-                "subdomain": "arz"
-            }
-        },
-        "as": {
-            "name": "Assamese Wikipedia",
-            "title": "Assamese Wikipedia",
-            "vars": {
-                "subdomain": "as"
-            }
-        },
-        "ast": {
-            "name": "Asturian Wikipedia",
-            "title": "Asturian Wikipedia",
-            "vars": {
-                "subdomain": "ast"
-            }
-        },
-        "av": {
-            "name": "Avar Wikipedia",
-            "title": "Avar Wikipedia",
-            "vars": {
-                "subdomain": "av"
-            }
-        },
-        "ay": {
-            "name": "Aymara Wikipedia",
-            "title": "Aymara Wikipedia",
-            "vars": {
-                "subdomain": "ay"
-            }
-        },
-        "az": {
-            "name": "Azərbaycanca Vikipediya",
-            "title": "Azərbaycanca Vikipediya",
-            "vars": {
-                "subdomain": "az"
-            }
-        },
-        "azb": {
-            "name": "Southern Azerbaijani Wikipedia",
-            "title": "Southern Azerbaijani Wikipedia",
-            "vars": {
-                "subdomain": "azb"
-            }
-        },
-        "ba": {
-            "name": "Bashkir Wikipedia",
-            "title": "Bashkir Wikipedia",
-            "vars": {
-                "subdomain": "ba"
-            }
-        },
-        "bal": {
-            "name": "Balochi Wikipedia",
-            "title": "Balochi Wikipedia",
-            "vars": {
-                "subdomain": "bal"
-            }
-        },
-        "bar": {
-            "name": "Bavarian Wikipedia",
-            "title": "Bavarian Wikipedia",
-            "vars": {
-                "subdomain": "bar"
-            }
-        },
-        "bat-smg": {
-            "name": "Samogitian Wikipedia",
-            "title": "Samogitian Wikipedia",
-            "vars": {
-                "subdomain": "bat-smg"
-            }
-        },
-        "bcl": {
-            "name": "Central Bicolano Wikipedia",
-            "title": "Central Bicolano Wikipedia",
-            "vars": {
-                "subdomain": "bcl"
-            }
-        },
-        "be": {
-            "name": "Беларуская Вікіпедыя",
-            "title": "Беларуская Вікіпедыя",
-            "vars": {
-                "subdomain": "be"
-            }
-        },
-        "be-x-old": {
-            "name": "Беларуская Вікіпэдыя",
-            "title": "Беларуская Вікіпэдыя",
-            "vars": {
-                "subdomain": "be-x-old"
-            }
-        },
-        "bg": {
-            "name": "Българоезична Уикипедия",
-            "title": "Българоезична Уикипедия",
-            "vars": {
-                "subdomain": "bg"
-            }
-        },
-        "bh": {
-            "name": "Bhojpuri Wikipedia",
-            "title": "Bhojpuri Wikipedia",
-            "vars": {
-                "subdomain": "bh"
-            }
-        },
-        "bi": {
-            "name": "Bislama Wikipedia",
-            "title": "Bislama Wikipedia",
-            "vars": {
-                "subdomain": "bi"
-            }
-        },
-        "bjn": {
-            "name": "Banjar Wikipedia",
-            "title": "Banjar Wikipedia",
-            "vars": {
-                "subdomain": "bjn"
-            }
-        },
-        "bm": {
-            "name": "Bambara Wikipedia",
-            "title": "Bambara Wikipedia",
-            "vars": {
-                "subdomain": "bm"
-            }
-        },
-        "bn": {
-            "name": "বাংলা উইকিপিডিয়া",
-            "title": "বাংলা উইকিপিডিয়া",
-            "vars": {
-                "subdomain": "bn"
-            }
-        },
-        "bo": {
-            "name": "Tibetan Wikipedia",
-            "title": "Tibetan Wikipedia",
-            "vars": {
-                "subdomain": "bo"
-            }
-        },
-        "bpy": {
-            "name": "বিষ্ণুপ্রিয়া মনিপুরী উইকিপিডিয়া",
-            "title": "বিষ্ণুপ্রিয়া মনিপুরী উইকিপিডিয়া",
-            "vars": {
-                "subdomain": "bpy"
-            }
-        },
-        "br": {
-            "name": "Breton Wikipedia",
-            "title": "Breton Wikipedia",
-            "vars": {
-                "subdomain": "br"
-            }
-        },
-        "bs": {
-            "name": "Bosanska Wikipedia",
-            "title": "Bosanska Wikipedia",
-            "vars": {
-                "subdomain": "bs"
-            }
-        },
-        "bug": {
-            "name": "Buginese Wikipedia",
-            "title": "Buginese Wikipedia",
-            "vars": {
-                "subdomain": "bug"
-            }
-        },
-        "bxr": {
-            "name": "Buryat (Russia) Wikipedia",
-            "title": "Buryat (Russia) Wikipedia",
-            "vars": {
-                "subdomain": "bxr"
-            }
-        },
-        "ca": {
-            "name": "Viquipèdia en català",
-            "title": "Viquipèdia en català",
-            "vars": {
-                "subdomain": "ca"
-            }
-        },
-        "cbk-zam": {
-            "name": "Zamboanga Chavacano Wikipedia",
-            "title": "Zamboanga Chavacano Wikipedia",
-            "vars": {
-                "subdomain": "cbk-zam"
-            }
-        },
-        "cdo": {
-            "name": "Min Dong Wikipedia",
-            "title": "Min Dong Wikipedia",
-            "vars": {
-                "subdomain": "cdo"
-            }
-        },
-        "ce": {
-            "name": "Chechen Wikipedia",
-            "title": "Chechen Wikipedia",
-            "vars": {
-                "subdomain": "ce"
-            }
-        },
-        "ceb": {
-            "name": "Wikipedya sa Sinugboanon",
-            "title": "Wikipedya sa Sinugboanon",
-            "vars": {
-                "subdomain": "ceb"
-            }
-        },
-        "ch": {
-            "name": "Chamorro Wikipedia",
-            "title": "Chamorro Wikipedia",
-            "vars": {
-                "subdomain": "ch"
-            }
-        },
-        "chr": {
-            "name": "Cherokee Wikipedia",
-            "title": "Cherokee Wikipedia",
-            "vars": {
-                "subdomain": "chr"
-            }
-        },
-        "chy": {
-            "name": "Cheyenne Wikipedia",
-            "title": "Cheyenne Wikipedia",
-            "vars": {
-                "subdomain": "chy"
-            }
-        },
-        "ckb": {
-            "name": "Sorani Kurdish Wikipedia",
-            "title": "Sorani Kurdish Wikipedia",
-            "vars": {
-                "subdomain": "ckb"
-            }
-        },
-        "co": {
-            "name": "Corsican Wikipedia",
-            "title": "Corsican Wikipedia",
-            "vars": {
-                "subdomain": "co"
-            }
-        },
-        "cr": {
-            "name": "Cree Wikipedia",
-            "title": "Cree Wikipedia",
-            "vars": {
-                "subdomain": "cr"
-            }
-        },
-        "crh": {
-            "name": "Crimean Tatar Wikipedia",
-            "title": "Crimean Tatar Wikipedia",
-            "vars": {
-                "subdomain": "crh"
-            }
-        },
-        "cs": {
-            "name": "Česká Wikipedie",
-            "title": "Česká Wikipedie",
-            "vars": {
-                "subdomain": "cs"
-            }
-        },
-        "csb": {
-            "name": "Kashubian Wikipedia",
-            "title": "Kashubian Wikipedia",
-            "vars": {
-                "subdomain": "csb"
-            }
-        },
-        "cu": {
-            "name": "Old Church Slavonic Wikipedia",
-            "title": "Old Church Slavonic Wikipedia",
-            "vars": {
-                "subdomain": "cu"
-            }
-        },
-        "cv": {
-            "name": "Chuvash Wikipedia",
-            "title": "Chuvash Wikipedia",
-            "vars": {
-                "subdomain": "cv"
-            }
-        },
-        "cy": {
-            "name": "Welsh Wikipedia",
-            "title": "Welsh Wikipedia",
-            "vars": {
-                "subdomain": "cy"
-            }
-        },
-        "da": {
-            "name": "Dansk Wikipedia",
-            "title": "Dansk Wikipedia",
-            "vars": {
-                "subdomain": "da"
-            }
-        },
-        "de": {
-            "name": "Deutschsprachige Wikipedia",
-            "title": "Deutschsprachige Wikipedia",
-            "vars": {
-                "subdomain": "de"
-            }
-        },
-        "diq": {
-            "name": "Zazaki Wikipedia",
-            "title": "Zazaki Wikipedia",
-            "vars": {
-                "subdomain": "diq"
-            }
-        },
-        "dsb": {
-            "name": "Dolnoserbska wikipedija",
-            "title": "Dolnoserbska wikipedija",
-            "vars": {
-                "subdomain": "dsb"
-            }
-        },
-        "dv": {
-            "name": "Divehi Wikipedia",
-            "title": "Divehi Wikipedia",
-            "vars": {
-                "subdomain": "dv"
-            }
-        },
-        "dz": {
-            "name": "Dzongkha Wikipedia",
-            "title": "Dzongkha Wikipedia",
-            "vars": {
-                "subdomain": "dz"
-            }
-        },
-        "ee": {
-            "name": "Ewe Wikipedia",
-            "title": "Ewe Wikipedia",
-            "vars": {
-                "subdomain": "ee"
-            }
-        },
-        "el": {
-            "name": "Ελληνική Βικιπαίδεια",
-            "title": "Ελληνική Βικιπαίδεια",
-            "vars": {
-                "subdomain": "el"
-            }
-        },
-        "eml": {
-            "name": "Emilian-Romagnol Wikipedia",
-            "title": "Emilian-Romagnol Wikipedia",
-            "vars": {
-                "subdomain": "eml"
-            }
-        },
-        "en": {
-            "name": "English Wikipedia",
-            "title": "English Wikipedia",
-            "vars": {
-                "subdomain": "en"
-            }
-        },
-        "eo": {
-            "name": "Vikipedio en Esperanto",
-            "title": "Vikipedio en Esperanto",
-            "vars": {
-                "subdomain": "eo"
-            }
-        },
-        "es": {
-            "name": "Wikipedia en español",
-            "title": "Wikipedia en español",
-            "vars": {
-                "subdomain": "es"
-            }
-        },
-        "et": {
-            "name": "Eestikeelne Vikipeedia",
-            "title": "Eestikeelne Vikipeedia",
-            "vars": {
-                "subdomain": "et"
-            }
-        },
-        "eu": {
-            "name": "Euskarazko Wikipedia",
-            "title": "Euskarazko Wikipedia",
-            "vars": {
-                "subdomain": "eu"
-            }
-        },
-        "fa": {
-            "name": "ویکی‌پدیای فارسی",
-            "title": "ویکی‌پدیای فارسی",
-            "vars": {
-                "subdomain": "fa"
-            }
-        },
-        "ff": {
-            "name": "Fula Wikipedia",
-            "title": "Fula Wikipedia",
-            "vars": {
-                "subdomain": "ff"
-            }
-        },
-        "fi": {
-            "name": "Suomenkielinen Wikipedia",
-            "title": "Suomenkielinen Wikipedia",
-            "vars": {
-                "subdomain": "fi"
-            }
-        },
-        "fiu-vro": {
-            "name": "Voro Wikipedia",
-            "title": "Voro Wikipedia",
-            "vars": {
-                "subdomain": "fiu-vro"
-            }
-        },
-        "fj": {
-            "name": "Fijian Wikipedia",
-            "title": "Fijian Wikipedia",
-            "vars": {
-                "subdomain": "fj"
-            }
-        },
-        "fo": {
-            "name": "Faroese Wikipedia",
-            "title": "Faroese Wikipedia",
-            "vars": {
-                "subdomain": "fo"
-            }
-        },
-        "fr": {
-            "name": "Wikipédia en français",
-            "title": "Wikipédia en français",
-            "vars": {
-                "subdomain": "fr"
-            }
-        },
-        "frp": {
-            "name": "Franco-Provençal Wikipedia",
-            "title": "Franco-Provençal Wikipedia",
-            "vars": {
-                "subdomain": "frp"
-            }
-        },
-        "frr": {
-            "name": "North Frisian Wikipedia",
-            "title": "North Frisian Wikipedia",
-            "vars": {
-                "subdomain": "frr"
-            }
-        },
-        "fur": {
-            "name": "Friulian Wikipedia",
-            "title": "Friulian Wikipedia",
-            "vars": {
-                "subdomain": "fur"
-            }
-        },
-        "fy": {
-            "name": "West Frisian Wikipedia",
-            "title": "West Frisian Wikipedia",
-            "vars": {
-                "subdomain": "fy"
-            }
-        },
-        "ga": {
-            "name": "Vicipéid na Gaeilge",
-            "title": "Vicipéid na Gaeilge",
-            "vars": {
-                "subdomain": "ga"
-            }
-        },
-        "gag": {
-            "name": "Gagauz Wikipedia",
-            "title": "Gagauz Wikipedia",
-            "vars": {
-                "subdomain": "gag"
-            }
-        },
-        "gan": {
-            "name": "Gan Chinese Wikipedia",
-            "title": "Gan Chinese Wikipedia",
-            "vars": {
-                "subdomain": "gan"
-            }
-        },
-        "gd": {
-            "name": "Scottish Gaelic Wikipedia",
-            "title": "Scottish Gaelic Wikipedia",
-            "vars": {
-                "subdomain": "gd"
-            }
-        },
-        "gl": {
-            "name": "Galipedia",
-            "title": "Galipedia",
-            "vars": {
-                "subdomain": "gl"
-            }
-        },
-        "glk": {
-            "name": "Gilaki Wikipedia",
-            "title": "Gilaki Wikipedia",
-            "vars": {
-                "subdomain": "glk"
-            }
-        },
-        "gn": {
-            "name": "Guarani Wikipedia",
-            "title": "Guarani Wikipedia",
-            "vars": {
-                "subdomain": "gn"
-            }
-        },
-        "gom": {
-            "name": "Goan Konkani Wikipedia",
-            "title": "Goan Konkani Wikipedia",
-            "vars": {
-                "subdomain": "gom"
-            }
-        },
-        "got": {
-            "name": "Gothic Wikipedia",
-            "title": "Gothic Wikipedia",
-            "vars": {
-                "subdomain": "got"
-            }
-        },
-        "gu": {
-            "name": "Gujarati Wikipedia",
-            "title": "Gujarati Wikipedia",
-            "vars": {
-                "subdomain": "gu"
-            }
-        },
-        "gv": {
-            "name": "Manx Wikipedia",
-            "title": "Manx Wikipedia",
-            "vars": {
-                "subdomain": "gv"
-            }
-        },
-        "ha": {
-            "name": "Hausa Wikipedia",
-            "title": "Hausa Wikipedia",
-            "vars": {
-                "subdomain": "ha"
-            }
-        },
-        "hak": {
-            "name": "Hakka Wikipedia",
-            "title": "Hakka Wikipedia",
-            "vars": {
-                "subdomain": "hak"
-            }
-        },
-        "haw": {
-            "name": "Hawaiian Wikipedia",
-            "title": "Hawaiian Wikipedia",
-            "vars": {
-                "subdomain": "haw"
-            }
-        },
-        "he": {
-            "name": "ויקיפדיה העברית",
-            "title": "ויקיפדיה העברית",
-            "vars": {
-                "subdomain": "he"
-            }
-        },
-        "hi": {
-            "name": "हिन्दी विकिपीडिया",
-            "title": "हिन्दी विकिपीडिया",
-            "vars": {
-                "subdomain": "hi"
-            }
-        },
-        "hif": {
-            "name": "Fiji Hindi Wikipedia",
-            "title": "Fiji Hindi Wikipedia",
-            "vars": {
-                "subdomain": "hif"
-            }
-        },
-        "hr": {
-            "name": "Hrvatska Wikipedija",
-            "title": "Hrvatska Wikipedija",
-            "vars": {
-                "subdomain": "hr"
-            }
-        },
-        "hsb": {
-            "name": "Hornjoserbska wikipedija",
-            "title": "Hornjoserbska wikipedija",
-            "vars": {
-                "subdomain": "hsb"
-            }
-        },
-        "ht": {
-            "name": "Haitian Creole Wikipedia",
-            "title": "Haitian Creole Wikipedia",
-            "vars": {
-                "subdomain": "ht"
-            }
-        },
-        "hu": {
-            "name": "Magyar Wikipédia",
-            "title": "Magyar Wikipédia",
-            "vars": {
-                "subdomain": "hu"
-            }
-        },
-        "hy": {
-            "name": "Հայերեն Վիքիպեդիա",
-            "title": "Հայերեն Վիքիպեդիա",
-            "vars": {
-                "subdomain": "hy"
-            }
-        },
-        "ia": {
-            "name": "Interlingua Wikipedia",
-            "title": "Interlingua Wikipedia",
-            "vars": {
-                "subdomain": "ia"
-            }
-        },
-        "id": {
-            "name": "Wikipedia bahasa Indonesia",
-            "title": "Wikipedia bahasa Indonesia",
-            "vars": {
-                "subdomain": "id"
-            }
-        },
-        "ie": {
-            "name": "Interlingue Wikipedia",
-            "title": "Interlingue Wikipedia",
-            "vars": {
-                "subdomain": "ie"
-            }
-        },
-        "ig": {
-            "name": "Igbo Wikipedia",
-            "title": "Igbo Wikipedia",
-            "vars": {
-                "subdomain": "ig"
-            }
-        },
-        "ik": {
-            "name": "Inupiak Wikipedia",
-            "title": "Inupiak Wikipedia",
-            "vars": {
-                "subdomain": "ik"
-            }
-        },
-        "ilo": {
-            "name": "Ilokano Wikipedia",
-            "title": "Ilokano Wikipedia",
-            "vars": {
-                "subdomain": "ilo"
-            }
-        },
-        "io": {
-            "name": "Ido Wikipedia",
-            "title": "Ido Wikipedia",
-            "vars": {
-                "subdomain": "io"
-            }
-        },
-        "is": {
-            "name": "Icelandic Wikipedia",
-            "title": "Icelandic Wikipedia",
-            "vars": {
-                "subdomain": "is"
-            }
-        },
-        "it": {
-            "name": "Wikipedia in italiano",
-            "title": "Wikipedia in italiano",
-            "vars": {
-                "subdomain": "it"
-            }
-        },
-        "iu": {
-            "name": "Iniktitut Wikipedia",
-            "title": "Iniktitut Wikipedia",
-            "vars": {
-                "subdomain": "iu"
-            }
-        },
-        "ja": {
-            "name": "ウィキペディア日本語版",
-            "title": "ウィキペディア日本語版",
-            "vars": {
-                "subdomain": "ja"
-            }
-        },
-        "jbo": {
-            "name": "Lojban Wikipedia",
-            "title": "Lojban Wikipedia",
-            "vars": {
-                "subdomain": "jbo"
-            }
-        },
-        "jv": {
-            "name": "Javanese Wikipedia",
-            "title": "Javanese Wikipedia",
-            "vars": {
-                "subdomain": "jv"
-            }
-        },
-        "ka": {
-            "name": "ქართული ვიკიპედია",
-            "title": "ქართული ვიკიპედია",
-            "vars": {
-                "subdomain": "ka"
-            }
-        },
-        "kaa": {
-            "name": "Karakalpak Wikipedia",
-            "title": "Karakalpak Wikipedia",
-            "vars": {
-                "subdomain": "kaa"
-            }
-        },
-        "kab": {
-            "name": "Kabyle Wikipedia",
-            "title": "Kabyle Wikipedia",
-            "vars": {
-                "subdomain": "kab"
-            }
-        },
-        "kbd": {
-            "name": "Kabardian Wikipedia",
-            "title": "Kabardian Wikipedia",
-            "vars": {
-                "subdomain": "kbd"
-            }
-        },
-        "kg": {
-            "name": "Kongo Wikipedia",
-            "title": "Kongo Wikipedia",
-            "vars": {
-                "subdomain": "kg"
-            }
-        },
-        "ki": {
-            "name": "Kikuyu Wikipedia",
-            "title": "Kikuyu Wikipedia",
-            "vars": {
-                "subdomain": "ki"
-            }
-        },
-        "kl": {
-            "name": "Greenlandic Wikipedia",
-            "title": "Greenlandic Wikipedia",
-            "vars": {
-                "subdomain": "kl"
-            }
-        },
-        "km": {
-            "name": "Khmer Wikipedia",
-            "title": "Khmer Wikipedia",
-            "vars": {
-                "subdomain": "km"
-            }
-        },
-        "kn": {
-            "name": "ಕನ್ನಡ ವಿಕಿಪೀಡಿಯ",
-            "title": "ಕನ್ನಡ ವಿಕಿಪೀಡಿಯ",
-            "vars": {
-                "subdomain": "kn"
-            }
-        },
-        "ko": {
-            "name": "한국어 위키백과",
-            "title": "한국어 위키백과",
-            "vars": {
-                "subdomain": "ko"
-            }
-        },
-        "koi": {
-            "name": "Komi-Permyak Wikipedia",
-            "title": "Komi-Permyak Wikipedia",
-            "vars": {
-                "subdomain": "koi"
-            }
-        },
-        "krc": {
-            "name": "Karachay-Balkar Wikipedia",
-            "title": "Karachay-Balkar Wikipedia",
-            "vars": {
-                "subdomain": "krc"
-            }
-        },
-        "ks": {
-            "name": "Kashmiri Wikipedia",
-            "title": "Kashmiri Wikipedia",
-            "vars": {
-                "subdomain": "ks"
-            }
-        },
-        "ksh": {
-            "name": "Ripuarian Wikipedia",
-            "title": "Ripuarian Wikipedia",
-            "vars": {
-                "subdomain": "ksh"
-            }
-        },
-        "ku": {
-            "name": "Kurdish Wikipedia",
-            "title": "Kurdish Wikipedia",
-            "vars": {
-                "subdomain": "ku"
-            }
-        },
-        "kv": {
-            "name": "Komi Wikipedia",
-            "title": "Komi Wikipedia",
-            "vars": {
-                "subdomain": "kv"
-            }
-        },
-        "kw": {
-            "name": "Cornish Wikipedia",
-            "title": "Cornish Wikipedia",
-            "vars": {
-                "subdomain": "kw"
-            }
-        },
-        "ky": {
-            "name": "Kyrgyz Wikipedia",
-            "title": "Kyrgyz Wikipedia",
-            "vars": {
-                "subdomain": "ky"
-            }
-        },
-        "la": {
-            "name": "Vicipaedia Latina",
-            "title": "Vicipaedia Latina",
-            "vars": {
-                "subdomain": "la"
-            }
-        },
-        "lad": {
-            "name": "Ladino Wikipedia",
-            "title": "Ladino Wikipedia",
-            "vars": {
-                "subdomain": "lad"
-            }
-        },
-        "lb": {
-            "name": "Luxembourgish Wikipedia",
-            "title": "Luxembourgish Wikipedia",
-            "vars": {
-                "subdomain": "lb"
-            }
-        },
-        "lbe": {
-            "name": "Lak Wikipedia",
-            "title": "Lak Wikipedia",
-            "vars": {
-                "subdomain": "lbe"
-            }
-        },
-        "lez": {
-            "name": "Lezgi Wikipedia",
-            "title": "Lezgi Wikipedia",
-            "vars": {
-                "subdomain": "lez"
-            }
-        },
-        "lg": {
-            "name": "Luganda Wikipedia",
-            "title": "Luganda Wikipedia",
-            "vars": {
-                "subdomain": "lg"
-            }
-        },
-        "li": {
-            "name": "Limburgish Wikipedia",
-            "title": "Limburgish Wikipedia",
-            "vars": {
-                "subdomain": "li"
-            }
-        },
-        "lij": {
-            "name": "Ligurian Wikipedia",
-            "title": "Ligurian Wikipedia",
-            "vars": {
-                "subdomain": "lij"
-            }
-        },
-        "lmo": {
-            "name": "Lombard Wikipedia",
-            "title": "Lombard Wikipedia",
-            "vars": {
-                "subdomain": "lmo"
-            }
-        },
-        "ln": {
-            "name": "Lingala Wikipedia",
-            "title": "Lingala Wikipedia",
-            "vars": {
-                "subdomain": "ln"
-            }
-        },
-        "lo": {
-            "name": "Lao Wikipedia",
-            "title": "Lao Wikipedia",
-            "vars": {
-                "subdomain": "lo"
-            }
-        },
-        "lrc": {
-            "name": "Northern Luri Wikipedia",
-            "title": "Northern Luri Wikipedia",
-            "vars": {
-                "subdomain": "lrc"
-            }
-        },
-        "lt": {
-            "name": "Lietuviškoji Vikipedija",
-            "title": "Lietuviškoji Vikipedija",
-            "vars": {
-                "subdomain": "lt"
-            }
-        },
-        "ltg": {
-            "name": "Latgalian Wikipedia",
-            "title": "Latgalian Wikipedia",
-            "vars": {
-                "subdomain": "ltg"
-            }
-        },
-        "lv": {
-            "name": "Vikipēdija latviešu valodā",
-            "title": "Vikipēdija latviešu valodā",
-            "vars": {
-                "subdomain": "lv"
-            }
-        },
-        "mai": {
-            "name": "Maithili Wikipedia",
-            "title": "Maithili Wikipedia",
-            "vars": {
-                "subdomain": "mai"
-            }
-        },
-        "map-bms": {
-            "name": "Banyumasan Wikipedia",
-            "title": "Banyumasan Wikipedia",
-            "vars": {
-                "subdomain": "map-bms"
-            }
-        },
-        "mdf": {
-            "name": "Moksha Wikipedia",
-            "title": "Moksha Wikipedia",
-            "vars": {
-                "subdomain": "mdf"
-            }
-        },
-        "mg": {
-            "name": "Malagasy Wikipedia",
-            "title": "Malagasy Wikipedia",
-            "vars": {
-                "subdomain": "mg"
-            }
-        },
-        "mhr": {
-            "name": "Meadow Mari Wikipedia",
-            "title": "Meadow Mari Wikipedia",
-            "vars": {
-                "subdomain": "mhr"
-            }
-        },
-        "mi": {
-            "name": "Māori Wikipedia",
-            "title": "Māori Wikipedia",
-            "vars": {
-                "subdomain": "mi"
-            }
-        },
-        "min": {
-            "name": "Minangkabau Wikipedia",
-            "title": "Minangkabau Wikipedia",
-            "vars": {
-                "subdomain": "min"
-            }
-        },
-        "mk": {
-            "name": "Македонска Википедија",
-            "title": "Македонска Википедија",
-            "vars": {
-                "subdomain": "mk"
-            }
-        },
-        "ml": {
-            "name": "Malayalam Wikipedia",
-            "title": "Malayalam Wikipedia",
-            "vars": {
-                "subdomain": "ml"
-            }
-        },
-        "mn": {
-            "name": "Монгол Википедиа",
-            "title": "Монгол Википедиа",
-            "vars": {
-                "subdomain": "mn"
-            }
-        },
-        "mr": {
-            "name": "Marathi Wikipedia",
-            "title": "Marathi Wikipedia",
-            "vars": {
-                "subdomain": "mr"
-            }
-        },
-        "mrj": {
-            "name": "Hill Mari Wikipedia",
-            "title": "Hill Mari Wikipedia",
-            "vars": {
-                "subdomain": "mrj"
-            }
-        },
-        "ms": {
-            "name": "Wikipedia Bahasa Melayu",
-            "title": "Wikipedia Bahasa Melayu",
-            "vars": {
-                "subdomain": "ms"
-            }
-        },
-        "mt": {
-            "name": "Maltese Wikipedia",
-            "title": "Maltese Wikipedia",
-            "vars": {
-                "subdomain": "mt"
-            }
-        },
-        "mwl": {
-            "name": "Mirandese Wikipedia",
-            "title": "Mirandese Wikipedia",
-            "vars": {
-                "subdomain": "mwl"
-            }
-        },
-        "my": {
-            "name": "Burmese Wikipedia",
-            "title": "Burmese Wikipedia",
-            "vars": {
-                "subdomain": "my"
-            }
-        },
-        "myv": {
-            "name": "Erzya Wikipedia",
-            "title": "Erzya Wikipedia",
-            "vars": {
-                "subdomain": "myv"
-            }
-        },
-        "mzn": {
-            "name": "Mazandarani Wikipedia",
-            "title": "Mazandarani Wikipedia",
-            "vars": {
-                "subdomain": "mzn"
-            }
-        },
-        "na": {
-            "name": "Nauruan Wikipedia",
-            "title": "Nauruan Wikipedia",
-            "vars": {
-                "subdomain": "na"
-            }
-        },
-        "nah": {
-            "name": "Nāhuatl Wikipedia",
-            "title": "Nāhuatl Wikipedia",
-            "vars": {
-                "subdomain": "nah"
-            }
-        },
-        "nap": {
-            "name": "Neapolitan Wikipedia",
-            "title": "Neapolitan Wikipedia",
-            "vars": {
-                "subdomain": "nap"
-            }
-        },
-        "nds": {
-            "name": "Low Saxon Wikipedia",
-            "title": "Low Saxon Wikipedia",
-            "vars": {
-                "subdomain": "nds"
-            }
-        },
-        "nds-nl": {
-            "name": "Dutch Low Saxon Wikipedia",
-            "title": "Dutch Low Saxon Wikipedia",
-            "vars": {
-                "subdomain": "nds-nl"
-            }
-        },
-        "ne": {
-            "name": "Nepali Wikipedia",
-            "title": "Nepali Wikipedia",
-            "vars": {
-                "subdomain": "ne"
-            }
-        },
-        "new": {
-            "name": "Newar Wikipedia",
-            "title": "Newar Wikipedia",
-            "vars": {
-                "subdomain": "new"
-            }
-        },
-        "nl": {
-            "name": "Nederlandstalige Wikipedia",
-            "title": "Nederlandstalige Wikipedia",
-            "vars": {
-                "subdomain": "nl"
-            }
-        },
-        "nn": {
-            "name": "Nynorsk Wikipedia",
-            "title": "Nynorsk Wikipedia",
-            "vars": {
-                "subdomain": "nn"
-            }
-        },
-        "no": {
-            "name": "Bokmål Wikipedia",
-            "title": "Bokmål Wikipedia",
-            "vars": {
-                "subdomain": "no"
-            }
-        },
-        "nov": {
-            "name": "Novial Wikipedia",
-            "title": "Novial Wikipedia",
-            "vars": {
-                "subdomain": "nov"
-            }
-        },
-        "nrm": {
-            "name": "Norman Wikipedia",
-            "title": "Norman Wikipedia",
-            "vars": {
-                "subdomain": "nrm"
-            }
-        },
-        "nso": {
-            "name": "Northern Sotho Wikipedia",
-            "title": "Northern Sotho Wikipedia",
-            "vars": {
-                "subdomain": "nso"
-            }
-        },
-        "nv": {
-            "name": "Navajo Wikipedia",
-            "title": "Navajo Wikipedia",
-            "vars": {
-                "subdomain": "nv"
-            }
-        },
-        "ny": {
-            "name": "Chichewa Wikipedia",
-            "title": "Chichewa Wikipedia",
-            "vars": {
-                "subdomain": "ny"
-            }
-        },
-        "oc": {
-            "name": "Occitan Wikipedia",
-            "title": "Occitan Wikipedia",
-            "vars": {
-                "subdomain": "oc"
-            }
-        },
-        "om": {
-            "name": "Oromo Wikipedia",
-            "title": "Oromo Wikipedia",
-            "vars": {
-                "subdomain": "om"
-            }
-        },
-        "or": {
-            "name": "Oriya Wikipedia",
-            "title": "Oriya Wikipedia",
-            "vars": {
-                "subdomain": "or"
-            }
-        },
-        "os": {
-            "name": "Ossetian Wikipedia",
-            "title": "Ossetian Wikipedia",
-            "vars": {
-                "subdomain": "os"
-            }
-        },
-        "pa": {
-            "name": "Eastern Punjabi Wikipedia",
-            "title": "Eastern Punjabi Wikipedia",
-            "vars": {
-                "subdomain": "pa"
-            }
-        },
-        "pag": {
-            "name": "Pangasinan Wikipedia",
-            "title": "Pangasinan Wikipedia",
-            "vars": {
-                "subdomain": "pag"
-            }
-        },
-        "pam": {
-            "name": "Kapampangan Wikipedia",
-            "title": "Kapampangan Wikipedia",
-            "vars": {
-                "subdomain": "pam"
-            }
-        },
-        "pap": {
-            "name": "Papiamentu Wikipedia",
-            "title": "Papiamentu Wikipedia",
-            "vars": {
-                "subdomain": "pap"
-            }
-        },
-        "pcd": {
-            "name": "Picard Wikipedia",
-            "title": "Picard Wikipedia",
-            "vars": {
-                "subdomain": "pcd"
-            }
-        },
-        "pdc": {
-            "name": "Pennsylvania German Wikipedia",
-            "title": "Pennsylvania German Wikipedia",
-            "vars": {
-                "subdomain": "pdc"
-            }
-        },
-        "pfl": {
-            "name": "Palatine German Wikipedia",
-            "title": "Palatine German Wikipedia",
-            "vars": {
-                "subdomain": "pfl"
-            }
-        },
-        "pi": {
-            "name": "Pali Wikipedia",
-            "title": "Pali Wikipedia",
-            "vars": {
-                "subdomain": "pi"
-            }
-        },
-        "pih": {
-            "name": "Norfolk Wikipedia",
-            "title": "Norfolk Wikipedia",
-            "vars": {
-                "subdomain": "pih"
-            }
-        },
-        "pl": {
-            "name": "Polskojęzyczna Wikipedia",
-            "title": "Polskojęzyczna Wikipedia",
-            "vars": {
-                "subdomain": "pl"
-            }
-        },
-        "pms": {
-            "name": "Piedmontese Wikipedia",
-            "title": "Piedmontese Wikipedia",
-            "vars": {
-                "subdomain": "pms"
-            }
-        },
-        "pnb": {
-            "name": "Western Punjabi Wikipedia",
-            "title": "Western Punjabi Wikipedia",
-            "vars": {
-                "subdomain": "pnb"
-            }
-        },
-        "pnt": {
-            "name": "Pontic Wikipedia",
-            "title": "Pontic Wikipedia",
-            "vars": {
-                "subdomain": "pnt"
-            }
-        },
-        "ps": {
-            "name": "Pashto Wikipedia",
-            "title": "Pashto Wikipedia",
-            "vars": {
-                "subdomain": "ps"
-            }
-        },
-        "pt": {
-            "name": "Wikipedia em português",
-            "title": "Wikipedia em português",
-            "vars": {
-                "subdomain": "pt"
-            }
-        },
-        "qu": {
-            "name": "Quechua Wikipedia",
-            "title": "Quechua Wikipedia",
-            "vars": {
-                "subdomain": "qu"
-            }
-        },
-        "rm": {
-            "name": "Romansh Wikipedia",
-            "title": "Romansh Wikipedia",
-            "vars": {
-                "subdomain": "rm"
-            }
-        },
-        "rmy": {
-            "name": "Vlax Romani Wikipedia",
-            "title": "Vlax Romani Wikipedia",
-            "vars": {
-                "subdomain": "rmy"
-            }
-        },
-        "rn": {
-            "name": "Kirundi Wikipedia",
-            "title": "Kirundi Wikipedia",
-            "vars": {
-                "subdomain": "rn"
-            }
-        },
-        "ro": {
-            "name": "Wikipedia în română",
-            "title": "Wikipedia în română",
-            "vars": {
-                "subdomain": "ro"
-            }
-        },
-        "roa-rup": {
-            "name": "Aromanian Wikipedia",
-            "title": "Aromanian Wikipedia",
-            "vars": {
-                "subdomain": "roa-rup"
-            }
-        },
-        "roa-tara": {
-            "name": "Tarantino Wikipedia",
-            "title": "Tarantino Wikipedia",
-            "vars": {
-                "subdomain": "roa-tara"
-            }
-        },
-        "ru": {
-            "name": "Русская Википедия",
-            "title": "Русская Википедия",
-            "vars": {
-                "subdomain": "ru"
-            }
-        },
-        "rue": {
-            "name": "Rusyn Wikipedia",
-            "title": "Rusyn Wikipedia",
-            "vars": {
-                "subdomain": "rue"
-            }
-        },
-        "rw": {
-            "name": "Kinyarwanda Wikipedia",
-            "title": "Kinyarwanda Wikipedia",
-            "vars": {
-                "subdomain": "rw"
-            }
-        },
-        "sa": {
-            "name": "Sanskrit Wikipedia",
-            "title": "Sanskrit Wikipedia",
-            "vars": {
-                "subdomain": "sa"
-            }
-        },
-        "sah": {
-            "name": "Sakha Wikipedia",
-            "title": "Sakha Wikipedia",
-            "vars": {
-                "subdomain": "sah"
-            }
-        },
-        "sc": {
-            "name": "Sardinian Wikipedia",
-            "title": "Sardinian Wikipedia",
-            "vars": {
-                "subdomain": "sc"
-            }
-        },
-        "scn": {
-            "name": "Sicilian Wikipedia",
-            "title": "Sicilian Wikipedia",
-            "vars": {
-                "subdomain": "scn"
-            }
-        },
-        "sco": {
-            "name": "Scots Wikipedia",
-            "title": "Scots Wikipedia",
-            "vars": {
-                "subdomain": "sco"
-            }
-        },
-        "sd": {
-            "name": "سنڌي وڪيپيڊيا",
-            "title": "سنڌي وڪيپيڊيا",
-            "vars": {
-                "subdomain": "sd"
-            }
-        },
-        "se": {
-            "name": "Northern Sami Wikipedia",
-            "title": "Northern Sami Wikipedia",
-            "vars": {
-                "subdomain": "se"
-            }
-        },
-        "sg": {
-            "name": "Sango Wikipedia",
-            "title": "Sango Wikipedia",
-            "vars": {
-                "subdomain": "sg"
-            }
-        },
-        "sh": {
-            "name": "Srpskohrvatska Wikipedija",
-            "title": "Srpskohrvatska Wikipedija",
-            "vars": {
-                "subdomain": "sh"
-            }
-        },
-        "si": {
-            "name": "Sinhalese Wikipedia",
-            "title": "Sinhalese Wikipedia",
-            "vars": {
-                "subdomain": "si"
-            }
-        },
-        "simple": {
-            "name": "Simple English Wikipedia",
-            "title": "Simple English Wikipedia",
-            "vars": {
-                "subdomain": "simple"
-            }
-        },
-        "sk": {
-            "name": "Slovenská Wikipedia",
-            "title": "Slovenská Wikipedia",
-            "vars": {
-                "subdomain": "sk"
-            }
-        },
-        "sl": {
-            "name": "Slovenska Wikipedija",
-            "title": "Slovenska Wikipedija",
-            "vars": {
-                "subdomain": "sl"
-            }
-        },
-        "sm": {
-            "name": "Samoan Wikipedia",
-            "title": "Samoan Wikipedia",
-            "vars": {
-                "subdomain": "sm"
-            }
-        },
-        "sn": {
-            "name": "Shona Wikipedia",
-            "title": "Shona Wikipedia",
-            "vars": {
-                "subdomain": "sn"
-            }
-        },
-        "so": {
-            "name": "Somali Wikipedia",
-            "title": "Somali Wikipedia",
-            "vars": {
-                "subdomain": "so"
-            }
-        },
-        "sq": {
-            "name": "Wikipedia shqip",
-            "title": "Wikipedia shqip",
-            "vars": {
-                "subdomain": "sq"
-            }
-        },
-        "sr": {
-            "name": "Википедија на српском језику",
-            "title": "Википедија на српском језику",
-            "vars": {
-                "subdomain": "sr"
-            }
-        },
-        "srn": {
-            "name": "Sranan Tongo Wikipedia",
-            "title": "Sranan Tongo Wikipedia",
-            "vars": {
-                "subdomain": "srn"
-            }
-        },
-        "ss": {
-            "name": "Swati Wikipedia",
-            "title": "Swati Wikipedia",
-            "vars": {
-                "subdomain": "ss"
-            }
-        },
-        "st": {
-            "name": "Sesotho Wikipedia",
-            "title": "Sesotho Wikipedia",
-            "vars": {
-                "subdomain": "st"
-            }
-        },
-        "stq": {
-            "name": "Saterland Frisian Wikipedia",
-            "title": "Saterland Frisian Wikipedia",
-            "vars": {
-                "subdomain": "stq"
-            }
-        },
-        "su": {
-            "name": "Sundanese Wikipedia",
-            "title": "Sundanese Wikipedia",
-            "vars": {
-                "subdomain": "su"
-            }
-        },
-        "sv": {
-            "name": "Svenskspråkiga Wikipedia",
-            "title": "Svenskspråkiga Wikipedia",
-            "vars": {
-                "subdomain": "sv"
-            }
-        },
-        "sw": {
-            "name": "Wikipedia ya Kiswahili",
-            "title": "Wikipedia ya Kiswahili",
-            "vars": {
-                "subdomain": "sw"
-            }
-        },
-        "szl": {
-            "name": "Silesian Wikipedia",
-            "title": "Silesian Wikipedia",
-            "vars": {
-                "subdomain": "szl"
-            }
-        },
-        "ta": {
-            "name": "Tamil Wikipedia",
-            "title": "Tamil Wikipedia",
-            "vars": {
-                "subdomain": "ta"
-            }
-        },
-        "tcy": {
-            "name": "Tulu Wikipedia",
-            "title": "Tulu Wikipedia",
-            "vars": {
-                "subdomain": "tcy"
-            }
-        },
-        "te": {
-            "name": "తెలుగు వికీపీడియా",
-            "title": "తెలుగు వికీపీడియా",
-            "vars": {
-                "subdomain": "te"
-            }
-        },
-        "tet": {
-            "name": "Tetum Wikipedia",
-            "title": "Tetum Wikipedia",
-            "vars": {
-                "subdomain": "tet"
-            }
-        },
-        "tg": {
-            "name": "Tajik Wikipedia",
-            "title": "Tajik Wikipedia",
-            "vars": {
-                "subdomain": "tg"
-            }
-        },
-        "th": {
-            "name": "วิกิพีเดียภาษาไทย",
-            "title": "วิกิพีเดียภาษาไทย",
-            "vars": {
-                "subdomain": "th"
-            }
-        },
-        "ti": {
-            "name": "Tigrinya Wikipedia",
-            "title": "Tigrinya Wikipedia",
-            "vars": {
-                "subdomain": "ti"
-            }
-        },
-        "tk": {
-            "name": "Turkmen Wikipedia",
-            "title": "Turkmen Wikipedia",
-            "vars": {
-                "subdomain": "tk"
-            }
-        },
-        "tl": {
-            "name": "Tagalog Wikipedia",
-            "title": "Tagalog Wikipedia",
-            "vars": {
-                "subdomain": "tl"
-            }
-        },
-        "tn": {
-            "name": "Tswana Wikipedia",
-            "title": "Tswana Wikipedia",
-            "vars": {
-                "subdomain": "tn"
-            }
-        },
-        "to": {
-            "name": "Tongan Wikipedia",
-            "title": "Tongan Wikipedia",
-            "vars": {
-                "subdomain": "to"
-            }
-        },
-        "tpi": {
-            "name": "Tok Pisin Wikipedia",
-            "title": "Tok Pisin Wikipedia",
-            "vars": {
-                "subdomain": "tpi"
-            }
-        },
-        "tr": {
-            "name": "Türkçe Vikipedi",
-            "title": "Türkçe Vikipedi",
-            "vars": {
-                "subdomain": "tr"
-            }
-        },
-        "ts": {
-            "name": "Tsonga Wikipedia",
-            "title": "Tsonga Wikipedia",
-            "vars": {
-                "subdomain": "ts"
-            }
-        },
-        "tt": {
-            "name": "Tatar Wikipedia",
-            "title": "Tatar Wikipedia",
-            "vars": {
-                "subdomain": "tt"
-            }
-        },
-        "tum": {
-            "name": "Tumbuku Wikipedia",
-            "title": "Tumbuku Wikipedia",
-            "vars": {
-                "subdomain": "tum"
-            }
-        },
-        "tw": {
-            "name": "Twi Wikipedia",
-            "title": "Twi Wikipedia",
-            "vars": {
-                "subdomain": "tw"
-            }
-        },
-        "ty": {
-            "name": "Tahitian Wikipedia",
-            "title": "Tahitian Wikipedia",
-            "vars": {
-                "subdomain": "ty"
-            }
-        },
-        "tyv": {
-            "name": "Tuvinian Wikipedia",
-            "title": "Tuvinian Wikipedia",
-            "vars": {
-                "subdomain": "tyv"
-            }
-        },
-        "udm": {
-            "name": "Udmurt Wikipedia",
-            "title": "Udmurt Wikipedia",
-            "vars": {
-                "subdomain": "udm"
-            }
-        },
-        "ug": {
-            "name": "Uyghur Wikipedia",
-            "title": "Uyghur Wikipedia",
-            "vars": {
-                "subdomain": "ug"
-            }
-        },
-        "uk": {
-            "name": "Українська Вікіпедія",
-            "title": "Українська Вікіпедія",
-            "vars": {
-                "subdomain": "uk"
-            }
-        },
-        "ur": {
-            "name": "Urdu Wikipedia",
-            "title": "Urdu Wikipedia",
-            "vars": {
-                "subdomain": "ur"
-            }
-        },
-        "uz": {
-            "name": "Uzbek Wikipedia",
-            "title": "Uzbek Wikipedia",
-            "vars": {
-                "subdomain": "uz"
-            }
-        },
-        "ve": {
-            "name": "Venda Wikipedia",
-            "title": "Venda Wikipedia",
-            "vars": {
-                "subdomain": "ve"
-            }
-        },
-        "vec": {
-            "name": "Venetian Wikipedia",
-            "title": "Venetian Wikipedia",
-            "vars": {
-                "subdomain": "vec"
-            }
-        },
-        "vep": {
-            "name": "Veps Wikipedia",
-            "title": "Veps Wikipedia",
-            "vars": {
-                "subdomain": "vep"
-            }
-        },
-        "vi": {
-            "name": "Wikipedia tiếng Việt",
-            "title": "Wikipedia tiếng Việt",
-            "vars": {
-                "subdomain": "vi"
-            }
-        },
-        "vls": {
-            "name": "West Flemish Wikipedia",
-            "title": "West Flemish Wikipedia",
-            "vars": {
-                "subdomain": "vls"
-            }
-        },
-        "vo": {
-            "name": "Vükiped Volapükik",
-            "title": "Vükiped Volapükik",
-            "vars": {
-                "subdomain": "vo"
-            }
-        },
-        "wa": {
-            "name": "Walloon Wikipedia",
-            "title": "Walloon Wikipedia",
-            "vars": {
-                "subdomain": "wa"
-            }
-        },
-        "war": {
-            "name": "Waray Wikipedia",
-            "title": "Waray Wikipedia",
-            "vars": {
-                "subdomain": "war"
-            }
-        },
-        "wo": {
-            "name": "Wolof Wikipedia",
-            "title": "Wolof Wikipedia",
-            "vars": {
-                "subdomain": "wo"
-            }
-        },
-        "wuu": {
-            "name": "Wu Wikipedia",
-            "title": "Wu Wikipedia",
-            "vars": {
-                "subdomain": "wuu"
-            }
-        },
-        "xal": {
-            "name": "Kalmyk Wikipedia",
-            "title": "Kalmyk Wikipedia",
-            "vars": {
-                "subdomain": "xal"
-            }
-        },
-        "xh": {
-            "name": "Xhosa Wikipedia",
-            "title": "Xhosa Wikipedia",
-            "vars": {
-                "subdomain": "xh"
-            }
-        },
-        "xmf": {
-            "name": "Mingrelian Wikipedia",
-            "title": "Mingrelian Wikipedia",
-            "vars": {
-                "subdomain": "xmf"
-            }
-        },
-        "yi": {
-            "name": "Yiddish Wikipedia",
-            "title": "Yiddish Wikipedia",
-            "vars": {
-                "subdomain": "yi"
-            }
-        },
-        "yo": {
-            "name": "Yoruba Wikipedia",
-            "title": "Yoruba Wikipedia",
-            "vars": {
-                "subdomain": "yo"
-            }
-        },
-        "za": {
-            "name": "Zhuang Wikipedia",
-            "title": "Zhuang Wikipedia",
-            "vars": {
-                "subdomain": "za"
-            }
-        },
-        "zea": {
-            "name": "Zealandic Wikipedia",
-            "title": "Zealandic Wikipedia",
-            "vars": {
-                "subdomain": "zea"
-            }
-        },
-        "zh": {
-            "name": "中文维基百科",
-            "title": "中文维基百科",
-            "vars": {
-                "subdomain": "zh"
-            }
-        },
-        "zh-classical": {
-            "name": "Classical Chinese Wikipedia",
-            "title": "Classical Chinese Wikipedia",
-            "vars": {
-                "subdomain": "zh-classical"
-            }
-        },
-        "zh-min-nan": {
-            "name": "Min Nan Wikipedia",
-            "title": "Min Nan Wikipedia",
-            "vars": {
-                "subdomain": "zh-min-nan"
-            }
-        },
-        "zh-yue": {
-            "name": "Cantonese Wikipedia",
-            "title": "Cantonese Wikipedia",
-            "vars": {
-                "subdomain": "zh-yue"
-            }
-        },
-        "zu": {
-            "name": "Zulu Wikipedia",
-            "title": "Zulu Wikipedia",
-            "vars": {
-                "subdomain": "zu"
-            }
-        }
+  "description": "Collaborative encyclopaedia",
+  "icon": "",
+  "searches": [
+    {
+      "country": "",
+      "description": "Wikipedia (English)",
+      "icon": "",
+      "lang": "en",
+      "search_url": "https://en.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://en.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "English",
+      "uid": "wikipedia.en"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Svenska)",
+      "icon": "",
+      "lang": "sv",
+      "search_url": "https://sv.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://sv.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Svenska",
+      "uid": "wikipedia.sv"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Sinugboanong Binisaya)",
+      "icon": "",
+      "lang": "ceb",
+      "search_url": "https://ceb.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://ceb.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Sinugboanong Binisaya",
+      "uid": "wikipedia.ceb"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Deutsch)",
+      "icon": "",
+      "lang": "de",
+      "search_url": "https://de.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://de.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Deutsch",
+      "uid": "wikipedia.de"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Nederlands)",
+      "icon": "",
+      "lang": "nl",
+      "search_url": "https://nl.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://nl.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Nederlands",
+      "uid": "wikipedia.nl"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Fran\u00e7ais)",
+      "icon": "",
+      "lang": "fr",
+      "search_url": "https://fr.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://fr.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Fran\u00e7ais",
+      "uid": "wikipedia.fr"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (\u0420\u0443\u0441\u0441\u043a\u0438\u0439)",
+      "icon": "",
+      "lang": "ru",
+      "search_url": "https://ru.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://ru.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "\u0420\u0443\u0441\u0441\u043a\u0438\u0439",
+      "uid": "wikipedia.ru"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Italiano)",
+      "icon": "",
+      "lang": "it",
+      "search_url": "https://it.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://it.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Italiano",
+      "uid": "wikipedia.it"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Espa\u00f1ol)",
+      "icon": "",
+      "lang": "es",
+      "search_url": "https://es.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://es.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Espa\u00f1ol",
+      "uid": "wikipedia.es"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Winaray)",
+      "icon": "",
+      "lang": "war",
+      "search_url": "https://war.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://war.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Winaray",
+      "uid": "wikipedia.war"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Polski)",
+      "icon": "",
+      "lang": "pl",
+      "search_url": "https://pl.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://pl.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Polski",
+      "uid": "wikipedia.pl"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Ti\u1ebfng Vi\u1ec7t)",
+      "icon": "",
+      "lang": "vi",
+      "search_url": "https://vi.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://vi.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Ti\u1ebfng Vi\u1ec7t",
+      "uid": "wikipedia.vi"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (\u65e5\u672c\u8a9e)",
+      "icon": "",
+      "lang": "ja",
+      "search_url": "https://ja.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://ja.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "\u65e5\u672c\u8a9e",
+      "uid": "wikipedia.ja"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Portugu\u00eas)",
+      "icon": "",
+      "lang": "pt",
+      "search_url": "https://pt.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://pt.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Portugu\u00eas",
+      "uid": "wikipedia.pt"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (\u4e2d\u6587)",
+      "icon": "",
+      "lang": "zh",
+      "search_url": "https://zh.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://zh.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "\u4e2d\u6587",
+      "uid": "wikipedia.zh"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430)",
+      "icon": "",
+      "lang": "uk",
+      "search_url": "https://uk.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://uk.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430",
+      "uid": "wikipedia.uk"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Catal\u00e0)",
+      "icon": "",
+      "lang": "ca",
+      "search_url": "https://ca.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://ca.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Catal\u00e0",
+      "uid": "wikipedia.ca"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (\u0641\u0627\u0631\u0633\u06cc)",
+      "icon": "",
+      "lang": "fa",
+      "search_url": "https://fa.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://fa.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "\u0641\u0627\u0631\u0633\u06cc",
+      "uid": "wikipedia.fa"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Norsk (Bokm\u00e5l))",
+      "icon": "",
+      "lang": "no",
+      "search_url": "https://no.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://no.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Norsk (Bokm\u00e5l)",
+      "uid": "wikipedia.no"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (\u0627\u0644\u0639\u0631\u0628\u064a\u0629)",
+      "icon": "",
+      "lang": "ar",
+      "search_url": "https://ar.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://ar.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "\u0627\u0644\u0639\u0631\u0628\u064a\u0629",
+      "uid": "wikipedia.ar"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Srpskohrvatski / \u0421\u0440\u043f\u0441\u043a\u043e\u0445\u0440\u0432\u0430\u0442\u0441\u043a\u0438)",
+      "icon": "",
+      "lang": "sh",
+      "search_url": "https://sh.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://sh.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Srpskohrvatski / \u0421\u0440\u043f\u0441\u043a\u043e\u0445\u0440\u0432\u0430\u0442\u0441\u043a\u0438",
+      "uid": "wikipedia.sh"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Suomi)",
+      "icon": "",
+      "lang": "fi",
+      "search_url": "https://fi.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://fi.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Suomi",
+      "uid": "wikipedia.fi"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Magyar)",
+      "icon": "",
+      "lang": "hu",
+      "search_url": "https://hu.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://hu.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Magyar",
+      "uid": "wikipedia.hu"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Bahasa Indonesia)",
+      "icon": "",
+      "lang": "id",
+      "search_url": "https://id.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://id.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Bahasa Indonesia",
+      "uid": "wikipedia.id"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Rom\u00e2n\u0103)",
+      "icon": "",
+      "lang": "ro",
+      "search_url": "https://ro.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://ro.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Rom\u00e2n\u0103",
+      "uid": "wikipedia.ro"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (\u010ce\u0161tina)",
+      "icon": "",
+      "lang": "cs",
+      "search_url": "https://cs.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://cs.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "\u010ce\u0161tina",
+      "uid": "wikipedia.cs"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (\ud55c\uad6d\uc5b4)",
+      "icon": "",
+      "lang": "ko",
+      "search_url": "https://ko.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://ko.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "\ud55c\uad6d\uc5b4",
+      "uid": "wikipedia.ko"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (\u0421\u0440\u043f\u0441\u043a\u0438 / Srpski)",
+      "icon": "",
+      "lang": "sr",
+      "search_url": "https://sr.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://sr.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "\u0421\u0440\u043f\u0441\u043a\u0438 / Srpski",
+      "uid": "wikipedia.sr"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (T\u00fcrk\u00e7e)",
+      "icon": "",
+      "lang": "tr",
+      "search_url": "https://tr.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://tr.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "T\u00fcrk\u00e7e",
+      "uid": "wikipedia.tr"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Bahasa Melayu)",
+      "icon": "",
+      "lang": "ms",
+      "search_url": "https://ms.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://ms.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Bahasa Melayu",
+      "uid": "wikipedia.ms"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Euskara)",
+      "icon": "",
+      "lang": "eu",
+      "search_url": "https://eu.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://eu.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Euskara",
+      "uid": "wikipedia.eu"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Esperanto)",
+      "icon": "",
+      "lang": "eo",
+      "search_url": "https://eo.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://eo.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Esperanto",
+      "uid": "wikipedia.eo"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (\u0411\u044a\u043b\u0433\u0430\u0440\u0441\u043a\u0438)",
+      "icon": "",
+      "lang": "bg",
+      "search_url": "https://bg.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://bg.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "\u0411\u044a\u043b\u0433\u0430\u0440\u0441\u043a\u0438",
+      "uid": "wikipedia.bg"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Minangkabau)",
+      "icon": "",
+      "lang": "min",
+      "search_url": "https://min.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://min.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Minangkabau",
+      "uid": "wikipedia.min"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Dansk)",
+      "icon": "",
+      "lang": "da",
+      "search_url": "https://da.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://da.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Dansk",
+      "uid": "wikipedia.da"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (\u049a\u0430\u0437\u0430\u049b\u0448\u0430)",
+      "icon": "",
+      "lang": "kk",
+      "search_url": "https://kk.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://kk.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "\u049a\u0430\u0437\u0430\u049b\u0448\u0430",
+      "uid": "wikipedia.kk"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Sloven\u010dina)",
+      "icon": "",
+      "lang": "sk",
+      "search_url": "https://sk.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://sk.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Sloven\u010dina",
+      "uid": "wikipedia.sk"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (\u0540\u0561\u0575\u0565\u0580\u0565\u0576)",
+      "icon": "",
+      "lang": "hy",
+      "search_url": "https://hy.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://hy.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "\u0540\u0561\u0575\u0565\u0580\u0565\u0576",
+      "uid": "wikipedia.hy"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (B\u00e2n-l\u00e2m-g\u00fa)",
+      "icon": "",
+      "lang": "zh-min-nan",
+      "search_url": "https://zh-min-nan.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://zh-min-nan.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "B\u00e2n-l\u00e2m-g\u00fa",
+      "uid": "wikipedia.zh-min-nan"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (\u05e2\u05d1\u05e8\u05d9\u05ea)",
+      "icon": "",
+      "lang": "he",
+      "search_url": "https://he.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://he.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "\u05e2\u05d1\u05e8\u05d9\u05ea",
+      "uid": "wikipedia.he"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Lietuvi\u0173)",
+      "icon": "",
+      "lang": "lt",
+      "search_url": "https://lt.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://lt.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Lietuvi\u0173",
+      "uid": "wikipedia.lt"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Hrvatski)",
+      "icon": "",
+      "lang": "hr",
+      "search_url": "https://hr.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://hr.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Hrvatski",
+      "uid": "wikipedia.hr"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (\u041d\u043e\u0445\u0447\u0438\u0439\u043d)",
+      "icon": "",
+      "lang": "ce",
+      "search_url": "https://ce.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://ce.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "\u041d\u043e\u0445\u0447\u0438\u0439\u043d",
+      "uid": "wikipedia.ce"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Sloven\u0161\u010dina)",
+      "icon": "",
+      "lang": "sl",
+      "search_url": "https://sl.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://sl.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Sloven\u0161\u010dina",
+      "uid": "wikipedia.sl"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Eesti)",
+      "icon": "",
+      "lang": "et",
+      "search_url": "https://et.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://et.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Eesti",
+      "uid": "wikipedia.et"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Galego)",
+      "icon": "",
+      "lang": "gl",
+      "search_url": "https://gl.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://gl.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Galego",
+      "uid": "wikipedia.gl"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Nynorsk)",
+      "icon": "",
+      "lang": "nn",
+      "search_url": "https://nn.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://nn.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Nynorsk",
+      "uid": "wikipedia.nn"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (O\u2018zbek)",
+      "icon": "",
+      "lang": "uz",
+      "search_url": "https://uz.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://uz.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "O\u2018zbek",
+      "uid": "wikipedia.uz"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Latina)",
+      "icon": "",
+      "lang": "la",
+      "search_url": "https://la.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://la.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Latina",
+      "uid": "wikipedia.la"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (\u0395\u03bb\u03bb\u03b7\u03bd\u03b9\u03ba\u03ac)",
+      "icon": "",
+      "lang": "el",
+      "search_url": "https://el.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://el.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "\u0395\u03bb\u03bb\u03b7\u03bd\u03b9\u03ba\u03ac",
+      "uid": "wikipedia.el"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (\u0411\u0435\u043b\u0430\u0440\u0443\u0441\u043a\u0430\u044f)",
+      "icon": "",
+      "lang": "be",
+      "search_url": "https://be.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://be.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "\u0411\u0435\u043b\u0430\u0440\u0443\u0441\u043a\u0430\u044f",
+      "uid": "wikipedia.be"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Simple English)",
+      "icon": "",
+      "lang": "simple",
+      "search_url": "https://simple.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://simple.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Simple English",
+      "uid": "wikipedia.simple"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Volap\u00fck)",
+      "icon": "",
+      "lang": "vo",
+      "search_url": "https://vo.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://vo.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Volap\u00fck",
+      "uid": "wikipedia.vo"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (\u0939\u093f\u0928\u094d\u0926\u0940)",
+      "icon": "",
+      "lang": "hi",
+      "search_url": "https://hi.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://hi.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "\u0939\u093f\u0928\u094d\u0926\u0940",
+      "uid": "wikipedia.hi"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (\u0e44\u0e17\u0e22)",
+      "icon": "",
+      "lang": "th",
+      "search_url": "https://th.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://th.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "\u0e44\u0e17\u0e22",
+      "uid": "wikipedia.th"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Az\u0259rbaycanca)",
+      "icon": "",
+      "lang": "az",
+      "search_url": "https://az.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://az.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Az\u0259rbaycanca",
+      "uid": "wikipedia.az"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (\u10e5\u10d0\u10e0\u10d7\u10e3\u10da\u10d8)",
+      "icon": "",
+      "lang": "ka",
+      "search_url": "https://ka.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://ka.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "\u10e5\u10d0\u10e0\u10d7\u10e3\u10da\u10d8",
+      "uid": "wikipedia.ka"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (\u0627\u0631\u062f\u0648)",
+      "icon": "",
+      "lang": "ur",
+      "search_url": "https://ur.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://ur.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "\u0627\u0631\u062f\u0648",
+      "uid": "wikipedia.ur"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (\u0ba4\u0bae\u0bbf\u0bb4\u0bcd)",
+      "icon": "",
+      "lang": "ta",
+      "search_url": "https://ta.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://ta.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "\u0ba4\u0bae\u0bbf\u0bb4\u0bcd",
+      "uid": "wikipedia.ta"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Cymraeg)",
+      "icon": "",
+      "lang": "cy",
+      "search_url": "https://cy.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://cy.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Cymraeg",
+      "uid": "wikipedia.cy"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (\u041c\u0430\u043a\u0435\u0434\u043e\u043d\u0441\u043a\u0438)",
+      "icon": "",
+      "lang": "mk",
+      "search_url": "https://mk.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://mk.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "\u041c\u0430\u043a\u0435\u0434\u043e\u043d\u0441\u043a\u0438",
+      "uid": "wikipedia.mk"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Occitan)",
+      "icon": "",
+      "lang": "oc",
+      "search_url": "https://oc.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://oc.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Occitan",
+      "uid": "wikipedia.oc"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Malagasy)",
+      "icon": "",
+      "lang": "mg",
+      "search_url": "https://mg.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://mg.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Malagasy",
+      "uid": "wikipedia.mg"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Latvie\u0161u)",
+      "icon": "",
+      "lang": "lv",
+      "search_url": "https://lv.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://lv.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Latvie\u0161u",
+      "uid": "wikipedia.lv"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Bosanski)",
+      "icon": "",
+      "lang": "bs",
+      "search_url": "https://bs.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://bs.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Bosanski",
+      "uid": "wikipedia.bs"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (\u0928\u0947\u092a\u093e\u0932 \u092d\u093e\u0937\u093e)",
+      "icon": "",
+      "lang": "new",
+      "search_url": "https://new.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://new.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "\u0928\u0947\u092a\u093e\u0932 \u092d\u093e\u0937\u093e",
+      "uid": "wikipedia.new"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Tatar\u00e7a / \u0422\u0430\u0442\u0430\u0440\u0447\u0430)",
+      "icon": "",
+      "lang": "tt",
+      "search_url": "https://tt.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://tt.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Tatar\u00e7a / \u0422\u0430\u0442\u0430\u0440\u0447\u0430",
+      "uid": "wikipedia.tt"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (\u0422\u043e\u04b7\u0438\u043a\u04e3)",
+      "icon": "",
+      "lang": "tg",
+      "search_url": "https://tg.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://tg.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "\u0422\u043e\u04b7\u0438\u043a\u04e3",
+      "uid": "wikipedia.tg"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (\u0c24\u0c46\u0c32\u0c41\u0c17\u0c41)",
+      "icon": "",
+      "lang": "te",
+      "search_url": "https://te.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://te.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "\u0c24\u0c46\u0c32\u0c41\u0c17\u0c41",
+      "uid": "wikipedia.te"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Tagalog)",
+      "icon": "",
+      "lang": "tl",
+      "search_url": "https://tl.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://tl.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Tagalog",
+      "uid": "wikipedia.tl"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Piemont\u00e8is)",
+      "icon": "",
+      "lang": "pms",
+      "search_url": "https://pms.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://pms.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Piemont\u00e8is",
+      "uid": "wikipedia.pms"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Shqip)",
+      "icon": "",
+      "lang": "sq",
+      "search_url": "https://sq.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://sq.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Shqip",
+      "uid": "wikipedia.sq"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Brezhoneg)",
+      "icon": "",
+      "lang": "br",
+      "search_url": "https://br.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://br.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Brezhoneg",
+      "uid": "wikipedia.br"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (\u041a\u044b\u0440\u0433\u044b\u0437\u0447\u0430)",
+      "icon": "",
+      "lang": "ky",
+      "search_url": "https://ky.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://ky.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "\u041a\u044b\u0440\u0433\u044b\u0437\u0447\u0430",
+      "uid": "wikipedia.ky"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (\u0411\u0435\u043b\u0430\u0440\u0443\u0441\u043a\u0430\u044f (\u0442\u0430\u0440\u0430\u0448\u043a\u0435\u0432\u0456\u0446\u0430))",
+      "icon": "",
+      "lang": "be-tarask",
+      "search_url": "https://be-tarask.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://be-tarask.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "\u0411\u0435\u043b\u0430\u0440\u0443\u0441\u043a\u0430\u044f (\u0442\u0430\u0440\u0430\u0448\u043a\u0435\u0432\u0456\u0446\u0430)",
+      "uid": "wikipedia.be-tarask"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Kr\u00e8yol ayisyen)",
+      "icon": "",
+      "lang": "ht",
+      "search_url": "https://ht.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://ht.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Kr\u00e8yol ayisyen",
+      "uid": "wikipedia.ht"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Basa Jawa)",
+      "icon": "",
+      "lang": "jv",
+      "search_url": "https://jv.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://jv.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Basa Jawa",
+      "uid": "wikipedia.jv"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (\u7cb5\u8a9e)",
+      "icon": "",
+      "lang": "zh-yue",
+      "search_url": "https://zh-yue.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://zh-yue.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "\u7cb5\u8a9e",
+      "uid": "wikipedia.zh-yue"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Asturianu)",
+      "icon": "",
+      "lang": "ast",
+      "search_url": "https://ast.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://ast.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Asturianu",
+      "uid": "wikipedia.ast"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (L\u00ebtzebuergesch)",
+      "icon": "",
+      "lang": "lb",
+      "search_url": "https://lb.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://lb.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "L\u00ebtzebuergesch",
+      "uid": "wikipedia.lb"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (\u0d2e\u0d32\u0d2f\u0d3e\u0d33\u0d02)",
+      "icon": "",
+      "lang": "ml",
+      "search_url": "https://ml.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://ml.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "\u0d2e\u0d32\u0d2f\u0d3e\u0d33\u0d02",
+      "uid": "wikipedia.ml"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (\u09ac\u09be\u0982\u09b2\u09be)",
+      "icon": "",
+      "lang": "bn",
+      "search_url": "https://bn.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://bn.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "\u09ac\u09be\u0982\u09b2\u09be",
+      "uid": "wikipedia.bn"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (\u092e\u0930\u093e\u0920\u0940)",
+      "icon": "",
+      "lang": "mr",
+      "search_url": "https://mr.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://mr.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "\u092e\u0930\u093e\u0920\u0940",
+      "uid": "wikipedia.mr"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Afrikaans)",
+      "icon": "",
+      "lang": "af",
+      "search_url": "https://af.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://af.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Afrikaans",
+      "uid": "wikipedia.af"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (\u0634\u0627\u06c1 \u0645\u06a9\u06be\u06cc \u067e\u0646\u062c\u0627\u0628\u06cc (Sh\u0101hmukh\u012b Pa\u00f1j\u0101b\u012b))",
+      "icon": "",
+      "lang": "pnb",
+      "search_url": "https://pnb.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://pnb.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "\u0634\u0627\u06c1 \u0645\u06a9\u06be\u06cc \u067e\u0646\u062c\u0627\u0628\u06cc (Sh\u0101hmukh\u012b Pa\u00f1j\u0101b\u012b)",
+      "uid": "wikipedia.pnb"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Scots)",
+      "icon": "",
+      "lang": "sco",
+      "search_url": "https://sco.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://sco.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Scots",
+      "uid": "wikipedia.sco"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (\u00cdslenska)",
+      "icon": "",
+      "lang": "is",
+      "search_url": "https://is.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://is.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "\u00cdslenska",
+      "uid": "wikipedia.is"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Gaeilge)",
+      "icon": "",
+      "lang": "ga",
+      "search_url": "https://ga.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://ga.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Gaeilge",
+      "uid": "wikipedia.ga"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (\u0411\u0430\u0448\u04a1\u043e\u0440\u0442)",
+      "icon": "",
+      "lang": "ba",
+      "search_url": "https://ba.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://ba.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "\u0411\u0430\u0448\u04a1\u043e\u0440\u0442",
+      "uid": "wikipedia.ba"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (\u0427\u0103\u0432\u0430\u0448)",
+      "icon": "",
+      "lang": "cv",
+      "search_url": "https://cv.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://cv.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "\u0427\u0103\u0432\u0430\u0448",
+      "uid": "wikipedia.cv"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Frysk)",
+      "icon": "",
+      "lang": "fy",
+      "search_url": "https://fy.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://fy.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Frysk",
+      "uid": "wikipedia.fy"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Kiswahili)",
+      "icon": "",
+      "lang": "sw",
+      "search_url": "https://sw.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://sw.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Kiswahili",
+      "uid": "wikipedia.sw"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Lumbaart)",
+      "icon": "",
+      "lang": "lmo",
+      "search_url": "https://lmo.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://lmo.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Lumbaart",
+      "uid": "wikipedia.lmo"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (\u1019\u103c\u1014\u103a\u1019\u102c\u1018\u102c\u101e\u102c)",
+      "icon": "",
+      "lang": "my",
+      "search_url": "https://my.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://my.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "\u1019\u103c\u1014\u103a\u1019\u102c\u1018\u102c\u101e\u102c",
+      "uid": "wikipedia.my"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Aragon\u00e9s)",
+      "icon": "",
+      "lang": "an",
+      "search_url": "https://an.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://an.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Aragon\u00e9s",
+      "uid": "wikipedia.an"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Yor\u00f9b\u00e1)",
+      "icon": "",
+      "lang": "yo",
+      "search_url": "https://yo.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://yo.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Yor\u00f9b\u00e1",
+      "uid": "wikipedia.yo"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (\u0928\u0947\u092a\u093e\u0932\u0940)",
+      "icon": "",
+      "lang": "ne",
+      "search_url": "https://ne.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://ne.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "\u0928\u0947\u092a\u093e\u0932\u0940",
+      "uid": "wikipedia.ne"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Ido)",
+      "icon": "",
+      "lang": "io",
+      "search_url": "https://io.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://io.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Ido",
+      "uid": "wikipedia.io"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (\u0a97\u0ac1\u0a9c\u0ab0\u0abe\u0aa4\u0ac0)",
+      "icon": "",
+      "lang": "gu",
+      "search_url": "https://gu.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://gu.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "\u0a97\u0ac1\u0a9c\u0ab0\u0abe\u0aa4\u0ac0",
+      "uid": "wikipedia.gu"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Plattd\u00fc\u00fctsch)",
+      "icon": "",
+      "lang": "nds",
+      "search_url": "https://nds.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://nds.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Plattd\u00fc\u00fctsch",
+      "uid": "wikipedia.nds"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Sicilianu)",
+      "icon": "",
+      "lang": "scn",
+      "search_url": "https://scn.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://scn.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Sicilianu",
+      "uid": "wikipedia.scn"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (\u0987\u09ae\u09be\u09b0 \u09a0\u09be\u09b0/\u09ac\u09bf\u09b7\u09cd\u09a3\u09c1\u09aa\u09cd\u09b0\u09bf\u09af\u09bc\u09be \u09ae\u09a3\u09bf\u09aa\u09c1\u09b0\u09c0)",
+      "icon": "",
+      "lang": "bpy",
+      "search_url": "https://bpy.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://bpy.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "\u0987\u09ae\u09be\u09b0 \u09a0\u09be\u09b0/\u09ac\u09bf\u09b7\u09cd\u09a3\u09c1\u09aa\u09cd\u09b0\u09bf\u09af\u09bc\u09be \u09ae\u09a3\u09bf\u09aa\u09c1\u09b0\u09c0",
+      "uid": "wikipedia.bpy"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (\u0a2a\u0a70\u0a1c\u0a3e\u0a2c\u0a40)",
+      "icon": "",
+      "lang": "pa",
+      "search_url": "https://pa.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://pa.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "\u0a2a\u0a70\u0a1c\u0a3e\u0a2c\u0a40",
+      "uid": "wikipedia.pa"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Kurd\u00ee / \u0643\u0648\u0631\u062f\u06cc)",
+      "icon": "",
+      "lang": "ku",
+      "search_url": "https://ku.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://ku.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Kurd\u00ee / \u0643\u0648\u0631\u062f\u06cc",
+      "uid": "wikipedia.ku"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Alemannisch)",
+      "icon": "",
+      "lang": "als",
+      "search_url": "https://als.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://als.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Alemannisch",
+      "uid": "wikipedia.als"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Boarisch)",
+      "icon": "",
+      "lang": "bar",
+      "search_url": "https://bar.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://bar.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Boarisch",
+      "uid": "wikipedia.bar"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (\u0c95\u0ca8\u0ccd\u0ca8\u0ca1)",
+      "icon": "",
+      "lang": "kn",
+      "search_url": "https://kn.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://kn.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "\u0c95\u0ca8\u0ccd\u0ca8\u0ca1",
+      "uid": "wikipedia.kn"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Runa Simi)",
+      "icon": "",
+      "lang": "qu",
+      "search_url": "https://qu.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://qu.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Runa Simi",
+      "uid": "wikipedia.qu"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Interlingua)",
+      "icon": "",
+      "lang": "ia",
+      "search_url": "https://ia.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://ia.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Interlingua",
+      "uid": "wikipedia.ia"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Basa Sunda)",
+      "icon": "",
+      "lang": "su",
+      "search_url": "https://su.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://su.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Basa Sunda",
+      "uid": "wikipedia.su"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Soran\u00ee / \u06a9\u0648\u0631\u062f\u06cc)",
+      "icon": "",
+      "lang": "ckb",
+      "search_url": "https://ckb.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://ckb.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Soran\u00ee / \u06a9\u0648\u0631\u062f\u06cc",
+      "uid": "wikipedia.ckb"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (\u041c\u043e\u043d\u0433\u043e\u043b)",
+      "icon": "",
+      "lang": "mn",
+      "search_url": "https://mn.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://mn.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "\u041c\u043e\u043d\u0433\u043e\u043b",
+      "uid": "wikipedia.mn"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (\u0645\u0635\u0631\u0649 (Ma\u1e63ri))",
+      "icon": "",
+      "lang": "arz",
+      "search_url": "https://arz.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://arz.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "\u0645\u0635\u0631\u0649 (Ma\u1e63ri)",
+      "uid": "wikipedia.arz"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (\u017demait\u0117\u0161ka)",
+      "icon": "",
+      "lang": "bat-smg",
+      "search_url": "https://bat-smg.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://bat-smg.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "\u017demait\u0117\u0161ka",
+      "uid": "wikipedia.bat-smg"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Nnapulitano)",
+      "icon": "",
+      "lang": "nap",
+      "search_url": "https://nap.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://nap.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Nnapulitano",
+      "uid": "wikipedia.nap"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Walon)",
+      "icon": "",
+      "lang": "wa",
+      "search_url": "https://wa.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://wa.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Walon",
+      "uid": "wikipedia.wa"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (G\u00e0idhlig)",
+      "icon": "",
+      "lang": "gd",
+      "search_url": "https://gd.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://gd.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "G\u00e0idhlig",
+      "uid": "wikipedia.gd"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Basa Ugi)",
+      "icon": "",
+      "lang": "bug",
+      "search_url": "https://bug.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://bug.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Basa Ugi",
+      "uid": "wikipedia.bug"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (\u05d9\u05d9\u05b4\u05d3\u05d9\u05e9)",
+      "icon": "",
+      "lang": "yi",
+      "search_url": "https://yi.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://yi.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "\u05d9\u05d9\u05b4\u05d3\u05d9\u05e9",
+      "uid": "wikipedia.yi"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (\u12a0\u121b\u122d\u129b)",
+      "icon": "",
+      "lang": "am",
+      "search_url": "https://am.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://am.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "\u12a0\u121b\u122d\u129b",
+      "uid": "wikipedia.am"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Basa Banyumasan)",
+      "icon": "",
+      "lang": "map-bms",
+      "search_url": "https://map-bms.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://map-bms.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Basa Banyumasan",
+      "uid": "wikipedia.map-bms"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (\u0dc3\u0dd2\u0d82\u0dc4\u0dbd)",
+      "icon": "",
+      "lang": "si",
+      "search_url": "https://si.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://si.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "\u0dc3\u0dd2\u0d82\u0dc4\u0dbd",
+      "uid": "wikipedia.si"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (F\u00f8royskt)",
+      "icon": "",
+      "lang": "fo",
+      "search_url": "https://fo.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://fo.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "F\u00f8royskt",
+      "uid": "wikipedia.fo"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (\u0645\u064e\u0632\u0650\u0631\u0648\u0646\u064a)",
+      "icon": "",
+      "lang": "mzn",
+      "search_url": "https://mzn.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://mzn.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "\u0645\u064e\u0632\u0650\u0631\u0648\u0646\u064a",
+      "uid": "wikipedia.mzn"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (\u062a\u06c6\u0631\u06a9\u062c\u0647)",
+      "icon": "",
+      "lang": "azb",
+      "search_url": "https://azb.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://azb.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "\u062a\u06c6\u0631\u06a9\u062c\u0647",
+      "uid": "wikipedia.azb"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (\u0b13\u0b21\u0b3c\u0b3f\u0b06)",
+      "icon": "",
+      "lang": "or",
+      "search_url": "https://or.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://or.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "\u0b13\u0b21\u0b3c\u0b3f\u0b06",
+      "uid": "wikipedia.or"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Limburgs)",
+      "icon": "",
+      "lang": "li",
+      "search_url": "https://li.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://li.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Limburgs",
+      "uid": "wikipedia.li"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (\u0421\u0430\u0445\u0430 \u0442\u044b\u043b\u0430 (Saxa Tyla))",
+      "icon": "",
+      "lang": "sah",
+      "search_url": "https://sah.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://sah.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "\u0421\u0430\u0445\u0430 \u0442\u044b\u043b\u0430 (Saxa Tyla)",
+      "uid": "wikipedia.sah"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (Hornjoserbsce)",
+      "icon": "",
+      "lang": "hsb",
+      "search_url": "https://hsb.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://hsb.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "Hornjoserbsce",
+      "uid": "wikipedia.hsb"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (V\u00e8neto)",
+      "icon": "",
+      "lang": "vec",
+      "search_url": "https://vec.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://vec.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "V\u00e8neto",
+      "uid": "wikipedia.vec"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (\u0418\u0440\u043e\u043d\u0430\u0443)",
+      "icon": "",
+      "lang": "os",
+      "search_url": "https://os.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://os.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "\u0418\u0440\u043e\u043d\u0430\u0443",
+      "uid": "wikipedia.os"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (\u0938\u0902\u0938\u094d\u0915\u0943\u0924\u092e\u094d)",
+      "icon": "",
+      "lang": "sa",
+      "search_url": "https://sa.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://sa.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "\u0938\u0902\u0938\u094d\u0915\u0943\u0924\u092e\u094d",
+      "uid": "wikipedia.sa"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (\u041a\u044b\u0440\u044b\u043a \u041c\u0430\u0440\u044b (Kyryk Mary))",
+      "icon": "",
+      "lang": "mrj",
+      "search_url": "https://mrj.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://mrj.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "\u041a\u044b\u0440\u044b\u043a \u041c\u0430\u0440\u044b (Kyryk Mary)",
+      "uid": "wikipedia.mrj"
+    },
+    {
+      "country": "",
+      "description": "Wikipedia (N\u0101huatl)",
+      "icon": "",
+      "lang": "nah",
+      "search_url": "https://nah.wikipedia.org/wiki/{query}",
+      "suggest_url": "https://nah.wikipedia.org/w/api.php?action=opensearch&search={query}",
+      "title": "N\u0101huatl",
+      "uid": "wikipedia.nah"
     }
+  ],
+  "title": "Wikipedia",
+  "uid": "wikipedia"
 }

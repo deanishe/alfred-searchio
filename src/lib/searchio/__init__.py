@@ -25,3 +25,11 @@ HELP_URL = 'https://github.com/deanishe/alfred-searchio/issues'
 
 # Cache search results for 15 minutes
 MAX_CACHE_AGE = 900
+
+IMAGE_EXTENSIONS = [
+    '.png',
+    '.icns',
+    '.jpg',
+    '.jpeg',
+    '.gif',
+]

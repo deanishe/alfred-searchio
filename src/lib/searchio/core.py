@@ -12,40 +12,38 @@
 
 from __future__ import print_function, absolute_import
 
-import logging
 import os
 
 from searchio import DEFAULT_ENGINE
 from searchio import util
 
-
-log = logging.getLogger(__name__)
-
-
-def get_icon(wf, name):
-    """Return path to icon in workflow's ``icons`` subdirectory."""
-    return wf.workflowfile('icons/{}.png'.format(name))
+log = util.logger(__name__)
 
 
-def icon_maker(wf):
-    """Return a ``get_icon`` partial for ``wf``."""
-    def _getter(name):
-        return get_icon(wf, name)
+class Context(object):
+    """Wrap workflow in program helper functions.
 
-    return _getter
+    Attributes:
+        wf (workflow.Workflow3): Current workflow object.
+    """
+    def __init__(self, wf):
+        self.wf = wf
 
+    def icon(self, name):
+        return self.wf.workflowfile('icons/{}.png'.format(name))
 
-def get_engine_manager(wf):
-    """Return `searchio.engines.EngineManager`."""
-    import searchio.engines
-    engine_dirs = [
-        os.path.dirname(searchio.engines.__file__),
-        wf.datafile('engines'),
-    ]
-    em = searchio.engines.Manager(engine_dirs)
-    # TODO: Add user engine directory
-    em.load_engines()
-    return em
+    # TODO: Right data model for data directory/saved searches
+    @property
+    def engine_dirs(self):
+        return [
+            os.path.join(os.path.dirname(__file__), 'engines'),
+            self.wf.datafile('engines'),
+        ]
+
+    @property
+    def searches_dir(self):
+        return self.wf.datafile('searches')
+    # TODO: defaults
 
 
 def get_defaults(wf):
