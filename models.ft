@@ -1,0 +1,15 @@
+# Models
+
+## Search
+
+### Alfred needs
+- title
+- description/subtitle (optional)
+- icon
+- URL
+- language (optional)
+- country (optional)
+
+### Searchio needs
+- UUID (to find/run search)
+- 
