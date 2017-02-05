@@ -25,7 +25,70 @@ from uuid import uuid4
 def logger(name):
     return logging.getLogger('workflow.' + name)
 
+
 log = logger(__name__)
+
+
+class FileFinder(object):
+    """Find named file in sequence of directories.
+
+    Results are cached.
+
+    Attributes:
+        dirpaths (sequence): Directories to search in.
+        extensions (sequence): File extensions to search for.
+    """
+
+    def __init__(self, dirpaths, extensions):
+        """Create new FileFinder.
+
+        Args:
+            dirpaths (sequence): Directories to search in.
+            extensions (sequence): File extensions to search for.
+
+        """
+        self.dirpaths = dirpaths
+        self.extensions = extensions
+        self._hits = {}
+
+    def find(self, name, default=None):
+        """Find named file in ``self.dirpaths``.
+
+        ``self.dirpaths`` and ``self.extensions`` are searched
+        in order, ``self.dirpaths[0]``/``name``.``self.extensions[0]``
+        being the first path tried.
+
+        Args:
+            name (str): Name of file (minus extension)
+            default (None, optional): Return if file isn't found
+
+        Returns:
+            str: Path to file (if found).
+        """
+        if name in self._hits:
+            return self._hits[name]
+
+        for dp in self.dirpaths:
+            for x in self.extensions:
+                p = os.path.join(dp, '{}.{}'.format(name, x))
+                if os.path.exists(p):
+                    self._hits[name] = p
+                    return p
+
+        return default
+
+    def __iter__(self):
+        """Yield all matching in all directories.
+
+        Yields:
+            str: Paths to files.
+        """
+        for dp in self.dirpaths:
+            for fn in os.listdir(dp):
+                x = os.path.splitext(fn)[1].lstrip('.').lower()
+                if x not in self.extensions:
+                    continue
+                yield os.path.join(dp, fn)
 
 
 class CommandError(Exception):
@@ -213,7 +276,11 @@ def mkurl(url, query=None):
     url = _bstr(url)
     query = _bstr(query)
 
-    return url.format(query=quote_plus(query))
+    d = dict(query=quote_plus(query))
+    for k,v in os.environ.items():
+        d[k] = quote_plus(v)
+
+    return url.format(**d)
 
 
 def url_encode_dict(dic):
@@ -292,19 +359,18 @@ def in_same_directory(*paths):
     return True
 
 
-class Cell(object):
+def path2uid(p):
+    """Return UID based on path.
 
-    def __init__(self, text, width=0, align=-1):
-        self.text = text
-        self.width = width
-        self.align = align
+    UID is lowercase basename without file extension.
 
-    def __str__(self):
-        return self.__unicode__().encode('utf-8')
+    Args:
+        p (str): path
 
-    def __unicode__(self):
-        if len(self.text) >= self.width:
-            return self.text
+    Returns:
+        str: UID based on path.
+    """
+    return os.path.splitext(os.path.basename(p))[0].lower()
 
 
 class Table(object):

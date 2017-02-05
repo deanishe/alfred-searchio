@@ -19,25 +19,48 @@ from searchio import util
 
 log = util.logger(__name__)
 
+IMAGE_EXTS = ['png', 'icns', 'jpg', 'jpeg']
+
 
 class Context(object):
-    """Wrap workflow in program helper functions.
+    """Program helper functions and variables.
 
     Attributes:
         wf (workflow.Workflow3): Current workflow object.
     """
     def __init__(self, wf):
         self.wf = wf
+        self._icon_finder = None
+        # self._engine_finder = None
 
     def icon(self, name):
-        return self.wf.workflowfile('icons/{}.png'.format(name))
+        if not self._icon_finder:
+            self._icon_finder = util.FileFinder(self.icon_dirs, IMAGE_EXTS)
 
-    # TODO: Right data model for data directory/saved searches
+        return self._icon_finder.find(name, 'icon.png')
+
+    def search(self, uid):
+        return self.wf.datafile('searches/{}.json'.format(uid))
+
+    # def engine(self, uid):
+    #     if not self._engine_finder:
+    #         self._engine_finder = util.FileFinder(self.engine_dirs, ['json'])
+
+    #     return self._engine_finder.find(uid)
+
     @property
     def engine_dirs(self):
         return [
             os.path.join(os.path.dirname(__file__), 'engines'),
             self.wf.datafile('engines'),
+        ]
+
+    @property
+    def icon_dirs(self):
+        return [
+            self.wf.datafile('icons'),
+            self.wf.workflowfile('icons/engines'),
+            self.wf.workflowfile('icons'),
         ]
 
     @property

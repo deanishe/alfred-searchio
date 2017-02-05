@@ -17,10 +17,10 @@ import json
 
 from bs4 import BeautifulSoup as BS
 
-from common import datapath, httpget, log, mkdata, mksearch
+from common import datapath, httpget, log, mkdata, mkvariant
 
 url = 'https://www.wiktionary.org'
-path = datapath('Wiktionary.html')
+# path = datapath('Wiktionary.html')
 
 SEARCH_URL = 'https://www.amazon.{tld}/gp/search?ie=UTF8&keywords={{query}}'
 SUGGEST_URL = 'https://completion.amazon.{ctld}/search/complete?mkt={market}&method=completion&search-alias=aps&client=alfred-searchio&q={{query}}'
@@ -89,24 +89,24 @@ def stores():
         }
     ]
     for d in data:
-        log('d=%r', d)
-        s = mksearch(u'amazon.{}'.format(d['country']),
-                     d['name'],
-                     u'Amazon {}'.format(d['name']),
-                     SEARCH_URL.format(**d),
-                     SUGGEST_URL.format(**d),
-                     # icon='amazon.png',
-                     lang=d['lang'],
-                     country=d['country'])
+        # log('d=%r', d)
+        s = mkvariant(d['country'],
+                      d['name'],
+                      u'Amazon {}'.format(d['name']),
+                      SEARCH_URL.format(**d),
+                      SUGGEST_URL.format(**d),
+                      # icon='amazon.png',
+                      # country=d['country'],
+                      )
         yield s
 
 
 def main():
 
-    data = mkdata('amazon', 'Amazon', 'Online shopping')
+    data = mkdata('Amazon', 'Online shopping')
 
     for s in stores():
-        data['searches'].append(s)
+        data['variants'].append(s)
 
     print(json.dumps(data, sort_keys=True, indent=2))
 

@@ -39,19 +39,33 @@ def sanitise_ws(s):
     return re.sub(r'\s+', ' ', s).strip()
 
 
-def mkdata(uid, title, description, icon='', searches=None, **kwargs):
+def mkdata(title, description, icon='', variants=None, **kwargs):
     """Return a dictionary initialised for a Search."""
-    searches = searches or []
-    return dict(uid=uid, title=title, description=description,
-                icon=icon, searches=searches)
+    variants = variants or []
+    d = dict(title=title, description=description,
+             variants=variants)
+    if icon:
+        d['icon'] = icon
+
+    if 'jsonpath' in kwargs:
+        d['jsonpath'] = kwargs['jsonpath']
+
+    return d
 
 
-def mksearch(uid, title, description, search_url, suggest_url=None,
-             icon='', lang=u'', country=u'', **kwargs):
+def mkvariant(uid, name, title, search_url, suggest_url=None,
+              icon='', **kwargs):
     """Return a dictionary initialised for a Search."""
-    return dict(uid=uid, title=title, description=description,
-                search_url=search_url, suggest_url=suggest_url,
-                icon=icon, lang=lang, country=country)
+    d = dict(uid=uid, name=name, title=title,
+             search_url=search_url, suggest_url=suggest_url)
+    # if lang:
+    #     d['lang'] = lang
+    # if country:
+    #     d['country'] = country
+    if icon:
+        d['icon'] = icon
+
+    return d
 
 
 def datapath(filename):

@@ -20,7 +20,7 @@ from bs4 import BeautifulSoup as BS
 
 from common import (
     datapath, log,
-    mkdata, mksearch, sanitise_ws,
+    mkdata, mkvariant, sanitise_ws,
 )
 
 cachepath = datapath('YouTube.html')
@@ -68,19 +68,19 @@ def yt2search(y):
     """Convert `YT` to search `dict`."""
     uid = u'youtube.{}'.format(y.country)
     desc = u'YouTube ({})'.format(y.name)
-    return mksearch(uid, y.name, desc,
-                    SEARCH_URL.format(y=y),
-                    SUGGEST_URL.format(y=y),
-                    lang=y.lang,
-                    country=y.country)
+    return mkvariant(y.country.lower(),
+                     y.name, desc,
+                     SEARCH_URL.format(y=y),
+                     SUGGEST_URL.format(y=y),
+                     )
 
 
 def main():
-    data = mkdata(u'youtube', u'YouTube', u'Video search')
+    data = mkdata(u'YouTube', u'Video search')
 
     soup = BS(html(), 'html.parser')
     for y in parse(soup):
-        data['searches'].append(yt2search(y))
+        data['variants'].append(yt2search(y))
 
     print(json.dumps(data,
                      sort_keys=True, indent=2))

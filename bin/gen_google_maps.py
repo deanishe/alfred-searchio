@@ -5,7 +5,7 @@
 #
 # MIT Licence. See http://opensource.org/licenses/MIT
 #
-# Created on 2016-03-12
+# Created on 2017-02-05
 #
 
 """Generate Google JSON variants configuration based on `google-languages.tsv`"""
@@ -19,8 +19,8 @@ import json
 from common import datapath, log, mkdata, mkvariant
 path = datapath('google-languages.tsv')
 
-SEARCH_URL = 'https://www.google.com/search?q={{query}}&hl={hl}&safe=off'
-SUGGEST_URL = 'https://suggestqueries.google.com/complete/search?client=firefox&q={{query}}&hl={hl}'
+SEARCH_URL = 'https://www.google.com/maps/search/{{query}}?hl={hl}'
+SUGGEST_URL = 'https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={{query}}&language={hl}&key={{GOOGLE_PLACES_API_KEY}}'
 
 Lang = namedtuple('Lang', 'id name')
 
@@ -32,22 +32,16 @@ def langs():
 
 
 def main():
-    data = mkdata(u'Google', u'Google web search')
+    data = mkdata(u'Google Maps', u'Location search',
+                  jsonpath='predictions[*].description')
     for l in langs():
         s = mkvariant(l.id.lower(), l.name,
-                      u'Google ({})'.format(l.name),
+                      u'Google Maps ({})'.format(l.name),
                       SEARCH_URL.format(hl=l.id),
                       SUGGEST_URL.format(hl=l.id),
                       # lang=l.id.lower(),
                       )
         data['variants'].append(s)
-    # with open(path) as fp:
-    #     for line in fp:
-    #         line = line.decode('utf-8').strip()
-    #         if not line:
-    #             continue
-    #         id_, name = line.split('\t')
-    #         result[id_] = {'name': name, 'vars': {'hl': id_}}
 
     print(json.dumps(data, sort_keys=True, indent=2))
 

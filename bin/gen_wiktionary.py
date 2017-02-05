@@ -17,7 +17,7 @@ import json
 
 from bs4 import BeautifulSoup as BS
 
-from common import datapath, httpget, log, mkdata, mksearch
+from common import datapath, httpget, log, mkdata, mkvariant
 
 url = 'https://www.wiktionary.org'
 path = datapath('Wiktionary.html')
@@ -38,16 +38,11 @@ def main():
     # Use 'langlist-large' css class for wiktionaries with
     # 10K+ entries.
     # Class 'langlist' will get wikitionaries with 100+ entries.
-    data = mkdata('wiktionary', 'Wiktionary', 'Collaborative dictionary')
-    # data = {
-    #     'uid': 'wiktionary',
-    #     'title': 'Wiktionary',
-    #     'description': 'Collaborative dictionary',
-    #     'searches': [],
-    # }
+    data = mkdata('Wiktionary', 'Collaborative dictionary')
+
     for div in soup.find_all('div', class_='langlist-large'):
         for link in div.select('ul li a'):
-            log('link=%r', link)
+            # log('link=%r', link)
             lang = id_ = link['lang']
             url = 'https:' + link['href']
             name = link.get_text()
@@ -55,24 +50,15 @@ def main():
             if latin:
                 name = u'{} / {}'.format(name, latin)
             w = Wiki(id_, url, lang, name)
-            log('%r', w)
+            # log('%r', w)
             url = SEARCH_URL.format(w=w)
             uid = u'wiktionary.{}'.format(w.lang)
-            d = mksearch(uid, w.name,
-                         u'Wiktionary ({w.name})'.format(w=w),
-                         url, SUGGEST_URL.format(w=w),
-                         u'wiktionary.png', w.lang)
-            data['searches'].append(d)
-            # data['searches'].append({
-            #     'uid': uid,
-            #     'title': w.name,
-            #     'description': u'Wiktionary ({w.name})'.format(w=w),
-            #     'search_url': url,
-            #     'suggest_url': SUGGEST_URL.format(w=w),
-            #     'icon': u'wiktionary.png',
-            #     'lang': w.lang,
-            #     'country': u'',
-            # })
+            d = mkvariant(w.lang,
+                          w.name,
+                          u'Wiktionary ({w.name})'.format(w=w),
+                          url, SUGGEST_URL.format(w=w),
+                          )
+            data['variants'].append(d)
 
     print(json.dumps(data, sort_keys=True, indent=2))
 

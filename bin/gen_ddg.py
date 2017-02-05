@@ -5,10 +5,10 @@
 #
 # MIT Licence. See http://opensource.org/licenses/MIT
 #
-# Created on 2016-03-12
+# Created on 2017-02-05
 #
 
-"""Generate Google JSON variants configuration based on `google-languages.tsv`"""
+"""Generate Duck Duck Go JSON variants configuration based on `ddg-variants.tsv`"""
 
 from __future__ import print_function, absolute_import
 
@@ -17,27 +17,29 @@ import csv
 import json
 
 from common import datapath, log, mkdata, mkvariant
-path = datapath('google-languages.tsv')
+path = datapath('ddg-variants.tsv')
 
-SEARCH_URL = 'https://www.google.com/search?q={{query}}&hl={hl}&safe=off'
-SUGGEST_URL = 'https://suggestqueries.google.com/complete/search?client=firefox&q={{query}}&hl={hl}'
+SEARCH_URL = 'https://duckduckgo.com/?kp=-1&kz=-1&kl={kl}&q={{query}}'
+SUGGEST_URL = 'https://duckduckgo.com/ac/?kp=-1&kz=-1&kl={kl}&q={{query}}'
 
-Lang = namedtuple('Lang', 'id name')
+Variant = namedtuple('Variant', 'id name')
 
 
-def langs():
+def variants():
     with open(path) as fp:
         for line in csv.reader(fp, delimiter='\t'):
-            yield Lang(*[s.decode('utf-8') for s in line])
+            yield Variant(*[s.decode('utf-8') for s in line])
 
 
 def main():
-    data = mkdata(u'Google', u'Google web search')
-    for l in langs():
-        s = mkvariant(l.id.lower(), l.name,
-                      u'Google ({})'.format(l.name),
-                      SEARCH_URL.format(hl=l.id),
-                      SUGGEST_URL.format(hl=l.id),
+    data = mkdata(u'Duck Duck Go', u'Alternative search engine',
+                  jsonpath='[*].phrase',)
+
+    for v in variants():
+        s = mkvariant(v.id.lower(), v.name,
+                      u'Duck Duck Go {}'.format(v.name),
+                      SEARCH_URL.format(kl=v.id),
+                      SUGGEST_URL.format(kl=v.id),
                       # lang=l.id.lower(),
                       )
         data['variants'].append(s)

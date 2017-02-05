@@ -1,0 +1,186 @@
+{
+   "predictions" : [
+      {
+         "description" : "Essen, Deutschland",
+         "id" : "63a8c971b175be360d456ad2622a9733374c5c0d",
+         "matched_substrings" : [
+            {
+               "length" : 5,
+               "offset" : 0
+            }
+         ],
+         "place_id" : "ChIJOfarlrfCuEcRnSytpBHhAGo",
+         "reference" : "CjQqAAAAyxqo5Od-Uv-LhRagPRelKqoxt_HABPSuGzjLF3xJ25fKJx-jbywJpDeCtpmreyjyEhBcbTS2kI2N0NhqsL-ZUU8yGhSQ0ZgFwmkAqy_bw23NhRMe2vycZw",
+         "structured_formatting" : {
+            "main_text" : "Essen",
+            "main_text_matched_substrings" : [
+               {
+                  "length" : 5,
+                  "offset" : 0
+               }
+            ],
+            "secondary_text" : "Deutschland"
+         },
+         "terms" : [
+            {
+               "offset" : 0,
+               "value" : "Essen"
+            },
+            {
+               "offset" : 7,
+               "value" : "Deutschland"
+            }
+         ],
+         "types" : [ "locality", "political", "geocode" ]
+      },
+      {
+         "description" : "Essendon, Victoria, Australien",
+         "id" : "590a8a3963da7fa8ca56661f3e8e34d7c5461579",
+         "matched_substrings" : [
+            {
+               "length" : 5,
+               "offset" : 0
+            }
+         ],
+         "place_id" : "ChIJK6m1WmNc1moRcNSMIXVWBAU",
+         "reference" : "CkQ2AAAAOM8IVA81LZ_iuYonXv-zZoeJebSWUXUnkN3gcd_TERu-O6P2u6y-2_9am3TdY7tx2hQ6J7QUJA2nl4pUooyNZhIQQ-IdsbbStM0HkGHEHXd32RoUkEkalLYN7NXwqTeImuk69wlz2sk",
+         "structured_formatting" : {
+            "main_text" : "Essendon",
+            "main_text_matched_substrings" : [
+               {
+                  "length" : 5,
+                  "offset" : 0
+               }
+            ],
+            "secondary_text" : "Victoria, Australien"
+         },
+         "terms" : [
+            {
+               "offset" : 0,
+               "value" : "Essendon"
+            },
+            {
+               "offset" : 10,
+               "value" : "Victoria"
+            },
+            {
+               "offset" : 20,
+               "value" : "Australien"
+            }
+         ],
+         "types" : [ "locality", "political", "geocode" ]
+      },
+      {
+         "description" : "Essen Hbf, Am Hauptbahnhof, Essen, Deutschland",
+         "id" : "50e3c3eda1a8d953cdd599505d8ccd22f26f382f",
+         "matched_substrings" : [
+            {
+               "length" : 5,
+               "offset" : 0
+            }
+         ],
+         "place_id" : "ChIJicfwQcrCuEcRBScpoj9SRJg",
+         "reference" : "CkQ9AAAAcUpMPKbQqP9UBWfQMbu7EFERitv8BvStZkKvlGrnekDh2llQNf7sxNFgE5NLHMoD3ahvpsH2Br9SbJSKG_Hy0xIQaL18szDgDZdeO-nfLfd-qhoUceYumLW6aqoNgVs7YpaKSI5B0is",
+         "structured_formatting" : {
+            "main_text" : "Essen Hbf",
+            "main_text_matched_substrings" : [
+               {
+                  "length" : 5,
+                  "offset" : 0
+               }
+            ],
+            "secondary_text" : "Am Hauptbahnhof, Essen, Deutschland"
+         },
+         "terms" : [
+            {
+               "offset" : 0,
+               "value" : "Essen Hbf"
+            },
+            {
+               "offset" : 11,
+               "value" : "Am Hauptbahnhof"
+            },
+            {
+               "offset" : 28,
+               "value" : "Essen"
+            },
+            {
+               "offset" : 35,
+               "value" : "Deutschland"
+            }
+         ],
+         "types" : [ "transit_station", "point_of_interest", "establishment", "geocode" ]
+      },
+      {
+         "description" : "Essen (Hbf), Essen, Deutschland",
+         "id" : "0d8b17aa42de821d10dc7c50839e1532e5646460",
+         "matched_substrings" : [
+            {
+               "length" : 5,
+               "offset" : 0
+            }
+         ],
+         "place_id" : "ChIJc9x_TcrCuEcRnZ7pgJNJrtE",
+         "reference" : "CjQuAAAAjCWVwWaebwlMsebTV1LfXt_ry0AIKjsiq7wrbjYdnFiL0Q5DTpnaXxJFeSKo-QtIEhAL5DhAqWq9zsh10sxn_bqHGhSfpakZ-dqQyb6OL0tYOJKPjW0Dyg",
+         "structured_formatting" : {
+            "main_text" : "Essen (Hbf)",
+            "main_text_matched_substrings" : [
+               {
+                  "length" : 5,
+                  "offset" : 0
+               }
+            ],
+            "secondary_text" : "Essen, Deutschland"
+         },
+         "terms" : [
+            {
+               "offset" : 0,
+               "value" : "Essen (Hbf)"
+            },
+            {
+               "offset" : 13,
+               "value" : "Essen"
+            },
+            {
+               "offset" : 20,
+               "value" : "Deutschland"
+            }
+         ],
+         "types" : [ "transit_station", "point_of_interest", "establishment", "geocode" ]
+      },
+      {
+         "description" : "Essen, Belgien",
+         "id" : "8eb63b1009c2e21083c7f99853a81ba34488ecb3",
+         "matched_substrings" : [
+            {
+               "length" : 5,
+               "offset" : 0
+            }
+         ],
+         "place_id" : "ChIJcUGaqDcQxEcRoFBNL6uZAAQ",
+         "reference" : "CjQmAAAAnFcbJP0Ue1ygAtTB3C9TK8VFukbfWEtkmItihSSRj1TDz2u2YjDOzjMRn25_7MLsEhCG5tZ9aOY3CUXkUxpZFMYXGhQco05Q7eywCBdnQNodTOAClCvC4Q",
+         "structured_formatting" : {
+            "main_text" : "Essen",
+            "main_text_matched_substrings" : [
+               {
+                  "length" : 5,
+                  "offset" : 0
+               }
+            ],
+            "secondary_text" : "Belgien"
+         },
+         "terms" : [
+            {
+               "offset" : 0,
+               "value" : "Essen"
+            },
+            {
+               "offset" : 7,
+               "value" : "Belgien"
+            }
+         ],
+         "types" : [ "locality", "political", "geocode" ]
+      }
+   ],
+   "status" : "OK"
+}

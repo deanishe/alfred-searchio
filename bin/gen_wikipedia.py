@@ -17,7 +17,7 @@ import json
 
 from bs4 import BeautifulSoup as BS
 
-from common import datapath, httpget, Lang, log, mkdata, mksearch
+from common import datapath, httpget, Lang, log, mkdata, mkvariant
 
 url = 'https://meta.wikimedia.org/wiki/List_of_Wikipedias'
 # url = 'http://wikistats.wmflabs.org/display.php?t=wp'
@@ -67,14 +67,15 @@ def lang2search(l):
     """Convert `Lang` to search `dict`."""
     uid = u'wikipedia.{}'.format(l.code)
     desc = u'Wikipedia ({})'.format(l.name)
-    return mksearch(uid, l.name, desc,
-                    SEARCH_URL.format(l=l),
-                    SUGGEST_URL.format(l=l),
-                    lang=l.code)
+    return mkvariant(l.code.lower(),
+                     l.name, desc,
+                     SEARCH_URL.format(l=l),
+                     SUGGEST_URL.format(l=l),
+                     )
 
 
 def main():
-    data = mkdata(u'wikipedia', u'Wikipedia', u'Collaborative encyclopaedia')
+    data = mkdata(u'Wikipedia', u'Collaborative encyclopaedia')
 
     soup = BS(html(), 'html.parser')
     for w in parse(soup):
@@ -83,7 +84,7 @@ def main():
             continue
 
         # log('wiki=%r', w)
-        data['searches'].append(lang2search(w))
+        data['variants'].append(lang2search(w))
 
     print(json.dumps(data,
                      sort_keys=True, indent=2))

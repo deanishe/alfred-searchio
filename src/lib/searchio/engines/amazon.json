@@ -1,78 +1,55 @@
 {
-  "description": "Online shopping",
-  "icon": "",
-  "searches": [
+  "description": "Online shopping", 
+  "title": "Amazon", 
+  "variants": [
     {
-      "country": "us",
-      "description": "Amazon United States",
-      "icon": "",
-      "lang": "en",
-      "search_url": "https://www.amazon.com/gp/search?ie=UTF8&keywords={query}",
-      "suggest_url": "https://completion.amazon.com/search/complete?mkt=1&method=completion&search-alias=aps&client=alfred-searchio&q={query}",
-      "title": "United States",
-      "uid": "amazon.us"
-    },
+      "name": "United States", 
+      "search_url": "https://www.amazon.com/gp/search?ie=UTF8&keywords={query}", 
+      "suggest_url": "https://completion.amazon.com/search/complete?mkt=1&method=completion&search-alias=aps&client=alfred-searchio&q={query}", 
+      "title": "Amazon United States", 
+      "uid": "us"
+    }, 
     {
-      "country": "gb",
-      "description": "Amazon United Kingdom",
-      "icon": "",
-      "lang": "en",
-      "search_url": "https://www.amazon.co.uk/gp/search?ie=UTF8&keywords={query}",
-      "suggest_url": "https://completion.amazon.co.uk/search/complete?mkt=3&method=completion&search-alias=aps&client=alfred-searchio&q={query}",
-      "title": "United Kingdom",
-      "uid": "amazon.gb"
-    },
+      "name": "United Kingdom", 
+      "search_url": "https://www.amazon.co.uk/gp/search?ie=UTF8&keywords={query}", 
+      "suggest_url": "https://completion.amazon.co.uk/search/complete?mkt=3&method=completion&search-alias=aps&client=alfred-searchio&q={query}", 
+      "title": "Amazon United Kingdom", 
+      "uid": "gb"
+    }, 
     {
-      "country": "ca",
-      "description": "Amazon Canada",
-      "icon": "",
-      "lang": "en",
-      "search_url": "https://www.amazon.ca/gp/search?ie=UTF8&keywords={query}",
-      "suggest_url": "https://completion.amazon.com/search/complete?mkt=7&method=completion&search-alias=aps&client=alfred-searchio&q={query}",
-      "title": "Canada",
-      "uid": "amazon.ca"
-    },
+      "name": "Canada", 
+      "search_url": "https://www.amazon.ca/gp/search?ie=UTF8&keywords={query}", 
+      "suggest_url": "https://completion.amazon.com/search/complete?mkt=7&method=completion&search-alias=aps&client=alfred-searchio&q={query}", 
+      "title": "Amazon Canada", 
+      "uid": "ca"
+    }, 
     {
-      "country": "de",
-      "description": "Amazon Deutschland",
-      "icon": "",
-      "lang": "de",
-      "search_url": "https://www.amazon.de/gp/search?ie=UTF8&keywords={query}",
-      "suggest_url": "https://completion.amazon.co.uk/search/complete?mkt=4&method=completion&search-alias=aps&client=alfred-searchio&q={query}",
-      "title": "Deutschland",
-      "uid": "amazon.de"
-    },
+      "name": "Deutschland", 
+      "search_url": "https://www.amazon.de/gp/search?ie=UTF8&keywords={query}", 
+      "suggest_url": "https://completion.amazon.co.uk/search/complete?mkt=4&method=completion&search-alias=aps&client=alfred-searchio&q={query}", 
+      "title": "Amazon Deutschland", 
+      "uid": "de"
+    }, 
     {
-      "country": "fr",
-      "description": "Amazon France",
-      "icon": "",
-      "lang": "fr",
-      "search_url": "https://www.amazon.fr/gp/search?ie=UTF8&keywords={query}",
-      "suggest_url": "https://completion.amazon.co.uk/search/complete?mkt=5&method=completion&search-alias=aps&client=alfred-searchio&q={query}",
-      "title": "France",
-      "uid": "amazon.fr"
-    },
+      "name": "France", 
+      "search_url": "https://www.amazon.fr/gp/search?ie=UTF8&keywords={query}", 
+      "suggest_url": "https://completion.amazon.co.uk/search/complete?mkt=5&method=completion&search-alias=aps&client=alfred-searchio&q={query}", 
+      "title": "Amazon France", 
+      "uid": "fr"
+    }, 
     {
-      "country": "es",
-      "description": "Amazon Espa\u00f1a",
-      "icon": "",
-      "lang": "es",
-      "search_url": "https://www.amazon.es/gp/search?ie=UTF8&keywords={query}",
-      "suggest_url": "https://completion.amazon.co.uk/search/complete?mkt=44551&method=completion&search-alias=aps&client=alfred-searchio&q={query}",
-      "title": "Espa\u00f1a",
-      "uid": "amazon.es"
-    },
+      "name": "Espa\u00f1a", 
+      "search_url": "https://www.amazon.es/gp/search?ie=UTF8&keywords={query}", 
+      "suggest_url": "https://completion.amazon.co.uk/search/complete?mkt=44551&method=completion&search-alias=aps&client=alfred-searchio&q={query}", 
+      "title": "Amazon Espa\u00f1a", 
+      "uid": "es"
+    }, 
     {
-      "country": "br",
-      "description": "Amazon Brasil",
-      "icon": "",
-      "lang": "pt",
-      "search_url": "https://www.amazon.com.br/gp/search?ie=UTF8&keywords={query}",
-      "suggest_url": "https://completion.amazon.com/search/complete?mkt=526970&method=completion&search-alias=aps&client=alfred-searchio&q={query}",
-      "title": "Brasil",
-      "uid": "amazon.br"
+      "name": "Brasil", 
+      "search_url": "https://www.amazon.com.br/gp/search?ie=UTF8&keywords={query}", 
+      "suggest_url": "https://completion.amazon.com/search/complete?mkt=526970&method=completion&search-alias=aps&client=alfred-searchio&q={query}", 
+      "title": "Amazon Brasil", 
+      "uid": "br"
     }
-  ],
-  "title": "Amazon",
-  "uid": "amazon"
+  ]
 }

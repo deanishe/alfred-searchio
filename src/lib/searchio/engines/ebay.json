@@ -1,156 +1,153 @@
 {
-    "id": "ebay",
-    "name": "eBay",
-    "search_url": "https://www.ebay.{tld}/sch/i.html?_nkw={query}",
-    "suggest_url": "https://autosug.ebay.com/autosug?fmt=osr&sId={site}&kwd={query}",
-    "title_scheme": "{engine.name} {variant[name]}",
-    "variants": {
-        "at": {
-            "name": "Österreich",
-            "vars": {
-            		"site": 16,
-                "tld": "at"
-            }
-        },
-        "au": {
-            "name": "Australia",
-            "vars": {
-                "site": 15,
-                "tld": "au"
-            }
-        },
-        "bg-fr": {
-            "name": "Belgium (Français)",
-            "vars": {
-                "site": 23,
-                "tld": ".be"
-            }
-        },
-        "bg-nl": {
-            "name": "Belgium (Nederlands)",
-            "vars": {
-                "site": 123,
-                "tld": ".be"
-            }
-        },
-        "ca-en": {
-            "name": "Canada (English)",
-            "vars": {
-                "site": 2,
-                "tld": "ca"
-            }
-        },
-        "ca-fr": {
-            "name": "Canada (Français)",
-            "vars": {
-                "site": 210,
-                "tld": "ca"
-            }
-        },
-        "ch": {
-            "name": "Suisse",
-            "vars": {
-                "site": 193,
-                "tld": ".ch"
-            }
-        },
-        "de": {
-            "name": "Deutschland",
-            "vars": {
-            		"site": 77,
-                "tld": "de"
-            }
-        },
-        "es": {
-            "name": "España",
-            "vars": {
-                "site": 186,
-                "tld": ".es"
-            }
-        },
-        "fr": {
-            "name": "France",
-            "vars": {
-                "site": 71,
-                "tld": ".fr"
-            }
-        },
-        "hk": {
-            "name": "Hong Kong",
-            "vars": {
-                "site": 201,
-                "tld": ".hk"
-            }
-        },
-        "ie": {
-            "name": "Ireland",
-            "vars": {
-                "site": 205,
-                "tld": ".ie"
-            }
-        },
-        "in": {
-            "name": "India",
-            "vars": {
-                "site": 203,
-                "tld": ".in"
-            }
-        },
-        "it": {
-            "name": "Italia",
-            "vars": {
-                "site": 101,
-                "tld": ".it"
-            }
-        },
-        "my": {
-            "name": "Malaysia",
-            "vars": {
-                "site": 207,
-                "tld": ".my"
-            }
-        },
-        "nl": {
-            "name": "Nederlands",
-            "vars": {
-                "site": 146,
-                "tld": ".nl"
-            }
-        },
-        "ph": {
-            "name": "Philippines",
-            "vars": {
-                "site": 211,
-                "tld": ".ph"
-            }
-        },
-        "pl": {
-            "name": "Polska",
-            "vars": {
-                "site": 212,
-                "tld": ".pl"
-            }
-        },
-        "sg": {
-            "name": "Singapore",
-            "vars": {
-                "site": 216,
-                "tld": ".sg"
-            }
-        },
-        "uk": {
-            "name": "United Kingdom",
-            "vars": {
-                "site": 3,
-                "tld": "co.uk"
-            }
-        },
-        "us": {
-            "name": "United States",
-            "vars": {
-                "site": 0,
-                "tld": "com"
-            }
-        }
+  "description": "Online auction search", 
+  "title": "eBay", 
+  "variants": [
+    {
+      "name": "Australia", 
+      "search_url": "https://www.ebay.au/sch/i.html?_nkw={query}", 
+      "suggest_url": "https://autosug.ebay.com/autosug?fmt=osr&sId=15&kwd={query}", 
+      "title": "eBay Australia", 
+      "uid": "au"
+    }, 
+    {
+      "name": "Belgium (Fran\u00e7ais)", 
+      "search_url": "https://www.ebay.be/sch/i.html?_nkw={query}", 
+      "suggest_url": "https://autosug.ebay.com/autosug?fmt=osr&sId=23&kwd={query}", 
+      "title": "eBay Belgium (Fran\u00e7ais)", 
+      "uid": "bg-fr"
+    }, 
+    {
+      "name": "Belgium (Nederlands)", 
+      "search_url": "https://www.ebay.be/sch/i.html?_nkw={query}", 
+      "suggest_url": "https://autosug.ebay.com/autosug?fmt=osr&sId=123&kwd={query}", 
+      "title": "eBay Belgium (Nederlands)", 
+      "uid": "bg-nl"
+    }, 
+    {
+      "name": "Canada (English)", 
+      "search_url": "https://www.ebay.ca/sch/i.html?_nkw={query}", 
+      "suggest_url": "https://autosug.ebay.com/autosug?fmt=osr&sId=2&kwd={query}", 
+      "title": "eBay Canada (English)", 
+      "uid": "ca-en"
+    }, 
+    {
+      "name": "Canada (Fran\u00e7ais)", 
+      "search_url": "https://www.ebay.ca/sch/i.html?_nkw={query}", 
+      "suggest_url": "https://autosug.ebay.com/autosug?fmt=osr&sId=210&kwd={query}", 
+      "title": "eBay Canada (Fran\u00e7ais)", 
+      "uid": "ca-fr"
+    }, 
+    {
+      "name": "Deutschland", 
+      "search_url": "https://www.ebay.de/sch/i.html?_nkw={query}", 
+      "suggest_url": "https://autosug.ebay.com/autosug?fmt=osr&sId=77&kwd={query}", 
+      "title": "eBay Deutschland", 
+      "uid": "de"
+    }, 
+    {
+      "name": "Espa\u00f1a", 
+      "search_url": "https://www.ebay.es/sch/i.html?_nkw={query}", 
+      "suggest_url": "https://autosug.ebay.com/autosug?fmt=osr&sId=186&kwd={query}", 
+      "title": "eBay Espa\u00f1a", 
+      "uid": "es"
+    }, 
+    {
+      "name": "France", 
+      "search_url": "https://www.ebay.fr/sch/i.html?_nkw={query}", 
+      "suggest_url": "https://autosug.ebay.com/autosug?fmt=osr&sId=71&kwd={query}", 
+      "title": "eBay France", 
+      "uid": "fr"
+    }, 
+    {
+      "name": "Hong Kong", 
+      "search_url": "https://www.ebay.hk/sch/i.html?_nkw={query}", 
+      "suggest_url": "https://autosug.ebay.com/autosug?fmt=osr&sId=201&kwd={query}", 
+      "title": "eBay Hong Kong", 
+      "uid": "hk"
+    }, 
+    {
+      "name": "India", 
+      "search_url": "https://www.ebay.in/sch/i.html?_nkw={query}", 
+      "suggest_url": "https://autosug.ebay.com/autosug?fmt=osr&sId=203&kwd={query}", 
+      "title": "eBay India", 
+      "uid": "in"
+    }, 
+    {
+      "name": "Ireland", 
+      "search_url": "https://www.ebay.ie/sch/i.html?_nkw={query}", 
+      "suggest_url": "https://autosug.ebay.com/autosug?fmt=osr&sId=205&kwd={query}", 
+      "title": "eBay Ireland", 
+      "uid": "ie"
+    }, 
+    {
+      "name": "Italia", 
+      "search_url": "https://www.ebay.it/sch/i.html?_nkw={query}", 
+      "suggest_url": "https://autosug.ebay.com/autosug?fmt=osr&sId=101&kwd={query}", 
+      "title": "eBay Italia", 
+      "uid": "it"
+    }, 
+    {
+      "name": "Malaysia", 
+      "search_url": "https://www.ebay.my/sch/i.html?_nkw={query}", 
+      "suggest_url": "https://autosug.ebay.com/autosug?fmt=osr&sId=207&kwd={query}", 
+      "title": "eBay Malaysia", 
+      "uid": "my"
+    }, 
+    {
+      "name": "Nederlands", 
+      "search_url": "https://www.ebay.nl/sch/i.html?_nkw={query}", 
+      "suggest_url": "https://autosug.ebay.com/autosug?fmt=osr&sId=146&kwd={query}", 
+      "title": "eBay Nederlands", 
+      "uid": "nl"
+    }, 
+    {
+      "name": "\u00d6sterreich", 
+      "search_url": "https://www.ebay.at/sch/i.html?_nkw={query}", 
+      "suggest_url": "https://autosug.ebay.com/autosug?fmt=osr&sId=16&kwd={query}", 
+      "title": "eBay \u00d6sterreich", 
+      "uid": "at"
+    }, 
+    {
+      "name": "Philippines", 
+      "search_url": "https://www.ebay.ph/sch/i.html?_nkw={query}", 
+      "suggest_url": "https://autosug.ebay.com/autosug?fmt=osr&sId=211&kwd={query}", 
+      "title": "eBay Philippines", 
+      "uid": "ph"
+    }, 
+    {
+      "name": "Polska", 
+      "search_url": "https://www.ebay.pl/sch/i.html?_nkw={query}", 
+      "suggest_url": "https://autosug.ebay.com/autosug?fmt=osr&sId=212&kwd={query}", 
+      "title": "eBay Polska", 
+      "uid": "pl"
+    }, 
+    {
+      "name": "Singapore", 
+      "search_url": "https://www.ebay.sg/sch/i.html?_nkw={query}", 
+      "suggest_url": "https://autosug.ebay.com/autosug?fmt=osr&sId=216&kwd={query}", 
+      "title": "eBay Singapore", 
+      "uid": "sg"
+    }, 
+    {
+      "name": "Suisse", 
+      "search_url": "https://www.ebay.ch/sch/i.html?_nkw={query}", 
+      "suggest_url": "https://autosug.ebay.com/autosug?fmt=osr&sId=193&kwd={query}", 
+      "title": "eBay Suisse", 
+      "uid": "ch"
+    }, 
+    {
+      "name": "United Kingdom", 
+      "search_url": "https://www.ebay.co.uk/sch/i.html?_nkw={query}", 
+      "suggest_url": "https://autosug.ebay.com/autosug?fmt=osr&sId=3&kwd={query}", 
+      "title": "eBay United Kingdom", 
+      "uid": "uk"
+    }, 
+    {
+      "name": "United States", 
+      "search_url": "https://www.ebay.com/sch/i.html?_nkw={query}", 
+      "suggest_url": "https://autosug.ebay.com/autosug?fmt=osr&sId=0&kwd={query}", 
+      "title": "eBay United States", 
+      "uid": "us"
     }
+  ]
 }
