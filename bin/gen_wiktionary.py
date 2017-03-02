@@ -17,7 +17,7 @@ import json
 
 from bs4 import BeautifulSoup as BS
 
-from common import datapath, httpget, log, mkdata, mkvariant
+from common import datapath, httpget, mkdata, mkvariant
 
 url = 'https://www.wiktionary.org'
 path = datapath('Wiktionary.html')
@@ -29,16 +29,21 @@ Wiki = namedtuple('Wiki', 'id url lang name')
 
 
 def html():
+    """Wiktionary HTML.
+
+    Returns:
+        str: HTML at ``url``.
+    """
     return httpget(url, path)
 
 
 def main():
-
+    """Print Wiktionary engine JSON to STDOUT."""
+    data = mkdata('Wiktionary', 'Collaborative dictionary')
     soup = BS(html(), 'html.parser')
     # Use 'langlist-large' css class for wiktionaries with
     # 10K+ entries.
     # Class 'langlist' will get wikitionaries with 100+ entries.
-    data = mkdata('Wiktionary', 'Collaborative dictionary')
 
     for div in soup.find_all('div', class_='langlist-large'):
         for link in div.select('ul li a'):
@@ -52,7 +57,6 @@ def main():
             w = Wiki(id_, url, lang, name)
             # log('%r', w)
             url = SEARCH_URL.format(w=w)
-            uid = u'wiktionary.{}'.format(w.lang)
             d = mkvariant(w.lang,
                           w.name,
                           u'Wiktionary ({w.name})'.format(w=w),

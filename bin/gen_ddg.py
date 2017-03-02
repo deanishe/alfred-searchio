@@ -8,7 +8,7 @@
 # Created on 2017-02-05
 #
 
-"""Generate Duck Duck Go JSON variants configuration based on `ddg-variants.tsv`"""
+"""Generate Duck Duck Go engine JSON."""
 
 from __future__ import print_function, absolute_import
 
@@ -16,7 +16,7 @@ from collections import namedtuple
 import csv
 import json
 
-from common import datapath, log, mkdata, mkvariant
+from common import datapath, mkdata, mkvariant
 path = datapath('ddg-variants.tsv')
 
 SEARCH_URL = 'https://duckduckgo.com/?kp=-1&kz=-1&kl={kl}&q={{query}}'
@@ -26,12 +26,18 @@ Variant = namedtuple('Variant', 'id name')
 
 
 def variants():
+    """DDG variants from `ddg-variants.tsv`.
+
+    Yields:
+        Variant: DDG variant
+    """
     with open(path) as fp:
         for line in csv.reader(fp, delimiter='\t'):
             yield Variant(*[s.decode('utf-8') for s in line])
 
 
 def main():
+    """Print DDG engine JSON to STDOUT."""
     data = mkdata(u'Duck Duck Go', u'Alternative search engine',
                   jsonpath='[*].phrase',)
 
@@ -40,16 +46,8 @@ def main():
                       u'Duck Duck Go {}'.format(v.name),
                       SEARCH_URL.format(kl=v.id),
                       SUGGEST_URL.format(kl=v.id),
-                      # lang=l.id.lower(),
                       )
         data['variants'].append(s)
-    # with open(path) as fp:
-    #     for line in fp:
-    #         line = line.decode('utf-8').strip()
-    #         if not line:
-    #             continue
-    #         id_, name = line.split('\t')
-    #         result[id_] = {'name': name, 'vars': {'hl': id_}}
 
     print(json.dumps(data, sort_keys=True, indent=2))
 

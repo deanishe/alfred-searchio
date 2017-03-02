@@ -67,12 +67,12 @@ def cli(wf):
     # ---------------------------------------------------------
     # Initialise
 
-    try:
-        # os.makedirs(wf.datafile('engines'), 0700)
-        os.makedirs(wf.datafile('searches'), 0700)
-    except Exception as err:
-        if err.errno != 17:  # ignore file exists
-            raise err
+    for fn in ('backups', 'engines', 'icons', 'searches'):
+        try:
+            os.makedirs(wf.datafile(fn), 0700)
+        except Exception as err:
+            if err.errno != 17:  # ignore file exists
+                raise err
 
     # ---------------------------------------------------------
     # Call sub-command

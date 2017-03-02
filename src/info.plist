@@ -8,6 +8,19 @@
 	<string>Internet</string>
 	<key>connections</key>
 	<dict>
+		<key>05C661C6-76C1-4C45-AACC-2611A2859A4E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>BB94D851-58EE-4CD6-9931-AB2FB9449D29</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>0877E34C-7243-4E59-B01B-299F8BE837A6</key>
 		<array>
 			<dict>
@@ -60,6 +73,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>1437F420-E986-408E-8416-34BFECD99FC8</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C1B3B49D-8DF2-47D1-98B0-4A263533C5FF</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>18E144DF-1054-4A12-B5F0-AC05C6F7DEFD</key>
 		<array>
 			<dict>
@@ -98,6 +124,16 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>B3E0930C-ADA8-418F-B389-3A0261E05706</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 		</array>
 		<key>2BBA8827-6AAC-48B3-8381-01C70621357C</key>
 		<array>
@@ -122,7 +158,7 @@
 				<key>modifiersubtext</key>
 				<string></string>
 				<key>vitoclose</key>
-				<false/>
+				<true/>
 			</dict>
 		</array>
 		<key>35A4633B-D448-4DEB-BE76-C7707446695A</key>
@@ -224,7 +260,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>DBCEA37B-DE26-4457-8873-6D7B1BC715A3</string>
+				<string>1437F420-E986-408E-8416-34BFECD99FC8</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -347,7 +383,7 @@
 				<key>modifiersubtext</key>
 				<string></string>
 				<key>vitoclose</key>
-				<false/>
+				<true/>
 			</dict>
 			<dict>
 				<key>destinationuid</key>
@@ -357,7 +393,7 @@
 				<key>modifiersubtext</key>
 				<string></string>
 				<key>vitoclose</key>
-				<false/>
+				<true/>
 			</dict>
 		</array>
 		<key>AB93844D-D4B4-4B12-AF81-D39A87D70DBD</key>
@@ -388,6 +424,29 @@
 		</array>
 		<key>B1B7F733-EFC9-4CE1-88E7-08A110720EE0</key>
 		<array/>
+		<key>BB94D851-58EE-4CD6-9931-AB2FB9449D29</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C1B3B49D-8DF2-47D1-98B0-4A263533C5FF</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>A40730EC-9C68-4E03-BAF2-DE1BF6AADA18</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>C2AF821C-7119-4638-AC0C-360EF570DEC5</key>
 		<array>
 			<dict>
@@ -424,7 +483,7 @@
 				<key>modifiersubtext</key>
 				<string></string>
 				<key>vitoclose</key>
-				<false/>
+				<true/>
 			</dict>
 			<dict>
 				<key>destinationuid</key>
@@ -434,14 +493,24 @@
 				<key>modifiersubtext</key>
 				<string></string>
 				<key>vitoclose</key>
-				<false/>
+				<true/>
 			</dict>
 		</array>
 		<key>DBCEA37B-DE26-4457-8873-6D7B1BC715A3</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>1437F420-E986-408E-8416-34BFECD99FC8</string>
+				<string>66BB6EC0-265E-4221-8770-579C8267FA49</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>05C661C6-76C1-4C45-AACC-2611A2859A4E</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -499,17 +568,17 @@
 				<key>modifiersubtext</key>
 				<string></string>
 				<key>vitoclose</key>
-				<false/>
+				<true/>
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>66BB6EC0-265E-4221-8770-579C8267FA49</string>
+				<string>DBCEA37B-DE26-4457-8873-6D7B1BC715A3</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
 				<key>vitoclose</key>
-				<false/>
+				<true/>
 			</dict>
 		</array>
 		<key>F10C6E94-3BE0-4FCD-A2DE-59D9A205B65A</key>
@@ -552,146 +621,13 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>externaltriggerid</key>
+				<key>triggerid</key>
 				<string>config.engines</string>
-				<key>passinputasargument</key>
-				<false/>
-				<key>passvariables</key>
-				<false/>
-				<key>workflowbundleid</key>
-				<string>self</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.callexternaltrigger</string>
-			<key>uid</key>
-			<string>17C66D87-03DB-4E18-B72D-9F0DF56DECAB</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string>Loading engines…</string>
-				<key>script</key>
-				<string>./searchio list "$1"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Suggestion sources supported by Searchio!</string>
-				<key>title</key>
-				<string>Searchio! Engines</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>A101898C-B574-4AFA-B342-8D5ED69E07FE</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>triggerid</key>
-				<string>config.variants</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.external</string>
 			<key>uid</key>
-			<string>F10C6E94-3BE0-4FCD-A2DE-59D9A205B65A</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>triggerid</key>
-				<string>config</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.external</string>
-			<key>uid</key>
-			<string>DE3BED0F-7CD8-43E5-9024-F3C3AC7FD4CC</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string>Loading variants…</string>
-				<key>script</key>
-				<string>./searchio variants "$engine" "$1"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Engine variants supported by Searchio!</string>
-				<key>title</key>
-				<string>Searchio! Variants</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>DA65DE7D-1536-46BB-B4AA-F6E58057C5AD</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>externaltriggerid</key>
-				<string>config.variants</string>
-				<key>passinputasargument</key>
-				<false/>
-				<key>passvariables</key>
-				<true/>
-				<key>workflowbundleid</key>
-				<string>self</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.callexternaltrigger</string>
-			<key>uid</key>
-			<string>598AD703-A0E9-46F0-9269-B4D4CEE29E4E</string>
+			<string>9ECB0004-87EB-414C-82EE-893D719D6D00</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -711,19 +647,6 @@
 			<string>alfred.workflow.output.callexternaltrigger</string>
 			<key>uid</key>
 			<string>855B996F-95CD-4E83-98E4-B5A10CFF7575</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>triggerid</key>
-				<string>config.engines</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.external</string>
-			<key>uid</key>
-			<string>9ECB0004-87EB-414C-82EE-893D719D6D00</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -773,6 +696,160 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Loading engines…</string>
+				<key>script</key>
+				<string>./searchio list "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Suggestion sources supported by Searchio!</string>
+				<key>title</key>
+				<string>Searchio! Engines</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>A101898C-B574-4AFA-B342-8D5ED69E07FE</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>config.variants</string>
+				<key>passinputasargument</key>
+				<false/>
+				<key>passvariables</key>
+				<true/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>598AD703-A0E9-46F0-9269-B4D4CEE29E4E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Loading variants…</string>
+				<key>script</key>
+				<string>./searchio variants "$engine" "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Engine variants supported by Searchio!</string>
+				<key>title</key>
+				<string>Searchio! Variants</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>DA65DE7D-1536-46BB-B4AA-F6E58057C5AD</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>triggerid</key>
+				<string>config.variants</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>F10C6E94-3BE0-4FCD-A2DE-59D9A205B65A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>config.engines</string>
+				<key>passinputasargument</key>
+				<false/>
+				<key>passvariables</key>
+				<false/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>17C66D87-03DB-4E18-B72D-9F0DF56DECAB</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>triggerid</key>
+				<string>config</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>DE3BED0F-7CD8-43E5-9024-F3C3AC7FD4CC</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.junction</string>
+			<key>uid</key>
+			<string>5E31BCBA-28F3-4A4A-BC1C-61F9F60F6521</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>inputstring</key>
 				<string>{var:action}</string>
 				<key>matchcasesensitive</key>
@@ -809,14 +886,6 @@
 			<integer>1</integer>
 		</dict>
 		<dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.junction</string>
-			<key>uid</key>
-			<string>5E31BCBA-28F3-4A4A-BC1C-61F9F60F6521</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
 			<key>config</key>
 			<dict>
 				<key>inputstring</key>
@@ -832,6 +901,25 @@
 			<string>alfred.workflow.utility.filter</string>
 			<key>uid</key>
 			<string>6E13EB0E-2BDA-47F9-9C31-7E88FAAC8168</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>new</string>
+				<key>passinputasargument</key>
+				<false/>
+				<key>passvariables</key>
+				<true/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>44A058F0-7677-47DA-A4C5-48A81C6D2448</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -926,25 +1014,6 @@ exit $ok</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>externaltriggerid</key>
-				<string>new</string>
-				<key>passinputasargument</key>
-				<false/>
-				<key>passvariables</key>
-				<true/>
-				<key>workflowbundleid</key>
-				<string>self</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.callexternaltrigger</string>
-			<key>uid</key>
-			<string>44A058F0-7677-47DA-A4C5-48A81C6D2448</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>triggerid</key>
 				<string>new</string>
 			</dict>
@@ -952,57 +1021,6 @@ exit $ok</string>
 			<string>alfred.workflow.trigger.external</string>
 			<key>uid</key>
 			<string>275E19D5-14AC-4CA0-B718-562E79802ADE</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>externaltriggerid</key>
-				<string>help</string>
-				<key>passinputasargument</key>
-				<false/>
-				<key>passvariables</key>
-				<false/>
-				<key>workflowbundleid</key>
-				<string>self</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.callexternaltrigger</string>
-			<key>uid</key>
-			<string>B1B7F733-EFC9-4CE1-88E7-08A110720EE0</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>externaltriggerid</key>
-				<string>config</string>
-				<key>passinputasargument</key>
-				<false/>
-				<key>passvariables</key>
-				<false/>
-				<key>workflowbundleid</key>
-				<string>self</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.callexternaltrigger</string>
-			<key>uid</key>
-			<string>CEE08850-50A0-45E9-B9EA-C6E78E1335AE</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>triggerid</key>
-				<string>help</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.external</string>
-			<key>uid</key>
-			<string>AB93844D-D4B4-4B12-AF81-D39A87D70DBD</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1032,6 +1050,57 @@ exit $ok</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>triggerid</key>
+				<string>help</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>AB93844D-D4B4-4B12-AF81-D39A87D70DBD</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>config</string>
+				<key>passinputasargument</key>
+				<false/>
+				<key>passvariables</key>
+				<false/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>CEE08850-50A0-45E9-B9EA-C6E78E1335AE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>help</string>
+				<key>passinputasargument</key>
+				<false/>
+				<key>passvariables</key>
+				<false/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>B1B7F733-EFC9-4CE1-88E7-08A110720EE0</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>argumenttype</key>
@@ -1047,7 +1116,7 @@ exit $ok</string>
 				<key>queuedelaymode</key>
 				<integer>0</integer>
 				<key>queuemode</key>
-				<integer>2</integer>
+				<integer>1</integer>
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
 				<key>script</key>
@@ -1057,7 +1126,7 @@ exit $ok</string>
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
-				<string></string>
+				<string>Searchio!</string>
 				<key>title</key>
 				<string>Google Search (English)</string>
 				<key>type</key>
@@ -1095,25 +1164,6 @@ exit $ok</string>
 			<key>config</key>
 			<dict>
 				<key>inputstring</key>
-				<string>{query}</string>
-				<key>matchcasesensitive</key>
-				<true/>
-				<key>matchmode</key>
-				<integer>0</integer>
-				<key>matchstring</key>
-				<string>help</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.filter</string>
-			<key>uid</key>
-			<string>9D22C791-2308-470B-B135-E2E03B69DB73</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>inputstring</key>
 				<string>{var:action}</string>
 				<key>matchcasesensitive</key>
 				<true/>
@@ -1132,37 +1182,40 @@ exit $ok</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>log() {
-	echo "$@" &gt;/dev/stderr
-}
-
-p="$alfred_workflow_data/searches/$search.json"
-
-log '.'
-log '/-------- REVEAL -------\'
-log "uid=$search"
-log "p=$p"
-log '\-------- REVEAL -------/'
-
-echo -n "$p"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
+				<key>inputstring</key>
+				<string>{query}</string>
+				<key>matchcasesensitive</key>
+				<true/>
+				<key>matchmode</key>
 				<integer>0</integer>
+				<key>matchstring</key>
+				<string>help</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.utility.filter</string>
 			<key>uid</key>
-			<string>DBCEA37B-DE26-4457-8873-6D7B1BC715A3</string>
+			<string>9D22C791-2308-470B-B135-E2E03B69DB73</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>config.engines</string>
+				<key>passinputasargument</key>
+				<false/>
+				<key>passvariables</key>
+				<false/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>B3E0930C-ADA8-418F-B389-3A0261E05706</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1174,14 +1227,6 @@ echo -n "$p"</string>
 			<string>alfred.workflow.trigger.external</string>
 			<key>uid</key>
 			<string>6D491305-65B8-4277-A438-B5B2DBFDB1D5</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>type</key>
-			<string>alfred.workflow.action.revealfile</string>
-			<key>uid</key>
-			<string>1437F420-E986-408E-8416-34BFECD99FC8</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1246,6 +1291,49 @@ echo -n "$p"</string>
 			<integer>2</integer>
 		</dict>
 		<dict>
+			<key>type</key>
+			<string>alfred.workflow.action.revealfile</string>
+			<key>uid</key>
+			<string>1437F420-E986-408E-8416-34BFECD99FC8</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>log() {
+	echo "$@" &gt;/dev/stderr
+}
+
+p="$alfred_workflow_data/searches/$search.json"
+
+log '.'
+log '/-------- REVEAL -------\'
+log "uid=$search"
+log "p=$p"
+log '\-------- REVEAL -------/'
+
+echo -n "$p"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>DBCEA37B-DE26-4457-8873-6D7B1BC715A3</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
 			<key>config</key>
 			<dict>
 				<key>alfredfiltersresults</key>
@@ -1292,25 +1380,6 @@ echo -n "$p"</string>
 			<key>config</key>
 			<dict>
 				<key>inputstring</key>
-				<string>{var:action}</string>
-				<key>matchcasesensitive</key>
-				<true/>
-				<key>matchmode</key>
-				<integer>0</integer>
-				<key>matchstring</key>
-				<string>reveal</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.filter</string>
-			<key>uid</key>
-			<string>66BB6EC0-265E-4221-8770-579C8267FA49</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>inputstring</key>
 				<string>{query}</string>
 				<key>matchcasesensitive</key>
 				<true/>
@@ -1329,13 +1398,19 @@ echo -n "$p"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>triggerid</key>
-				<string>reload</string>
+				<key>inputstring</key>
+				<string>{var:action}</string>
+				<key>matchcasesensitive</key>
+				<true/>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string>reveal</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.trigger.external</string>
+			<string>alfred.workflow.utility.filter</string>
 			<key>uid</key>
-			<string>2BBA8827-6AAC-48B3-8381-01C70621357C</string>
+			<string>66BB6EC0-265E-4221-8770-579C8267FA49</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1343,7 +1418,7 @@ echo -n "$p"</string>
 			<key>config</key>
 			<dict>
 				<key>externaltriggerid</key>
-				<string>reload</string>
+				<string>user</string>
 				<key>passinputasargument</key>
 				<false/>
 				<key>passvariables</key>
@@ -1354,83 +1429,9 @@ echo -n "$p"</string>
 			<key>type</key>
 			<string>alfred.workflow.output.callexternaltrigger</string>
 			<key>uid</key>
-			<string>77C51F8E-96BD-4F45-8043-1D4FFD234301</string>
+			<string>C1B3B49D-8DF2-47D1-98B0-4A263533C5FF</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<true/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>{query}</string>
-				<key>title</key>
-				<string>ERROR</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>92B38613-CD0E-404E-8D4F-61D0A656F227</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string># Clear stale elements from cache and update info.plist
-
-query="$1"
-
-log() {
-  echo "$@" &gt;&amp;2
-}
-
-fatal() {
-  echo -n "$@"
-  log "$@"
-  exit 1
-}
-
-# test -n "$search" &amp;&amp; { opts+=("$search") }  || { fatal 'required var "search" unset' }
-# test -n "$search" &amp;&amp; { opts+=("$title") }  || { fatal 'required var "title" unset' }
-
-log "."
-log "Cleaning caches ..."
-./searchio clean 1&gt;&amp;2
-ok=$?
-[[ $ok -ne 0 ]] &amp;&amp; {
-  fatal "searchio clean failed: $ok"
-}
-
-log "Updating info.plist ..."
-./searchio reload 1&gt;&amp;2
-ok=$?
-[[ $ok -ne 0 ]] &amp;&amp; {
-  fatal "searchio reload failed: $ok"
-}</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>5</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>0A5780FA-9C49-4528-BC2D-4E79BEBFDD57</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1478,6 +1479,139 @@ ok=$?
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>triggerid</key>
+				<string>reload</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>2BBA8827-6AAC-48B3-8381-01C70621357C</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>ERROR</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>92B38613-CD0E-404E-8D4F-61D0A656F227</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string># Clear stale elements from cache and update info.plist
+
+query="$1"
+
+log() {
+  echo "$@" &gt;&amp;2
+}
+
+fatal() {
+  echo -n "$@"
+  log "$@"
+  exit 1
+}
+
+
+log "."
+log "Cleaning caches ..."
+./searchio clean 1&gt;&amp;2
+ok=$?
+[[ $ok -ne 0 ]] &amp;&amp; {
+  fatal "searchio clean failed: $ok"
+}
+
+log "Updating info.plist ..."
+./searchio reload 1&gt;&amp;2
+ok=$?
+[[ $ok -ne 0 ]] &amp;&amp; {
+  fatal "searchio reload failed: $ok"
+}</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>0A5780FA-9C49-4528-BC2D-4E79BEBFDD57</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>reload</string>
+				<key>passinputasargument</key>
+				<false/>
+				<key>passvariables</key>
+				<false/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>77C51F8E-96BD-4F45-8043-1D4FFD234301</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>on run argv
+	set thePath to item 1 of argv
+	set posixFile to POSIX file thePath
+	tell application "Finder"
+		move posixFile to trash
+	end tell
+end run</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>BB94D851-58EE-4CD6-9931-AB2FB9449D29</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>inputstring</key>
 				<string>{query}</string>
 				<key>matchcasesensitive</key>
@@ -1491,6 +1625,44 @@ ok=$?
 			<string>alfred.workflow.utility.filter</string>
 			<key>uid</key>
 			<string>C2AF821C-7119-4638-AC0C-360EF570DEC5</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>inputstring</key>
+				<string>{var:action}</string>
+				<key>matchcasesensitive</key>
+				<true/>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string>delete</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.filter</string>
+			<key>uid</key>
+			<string>05C661C6-76C1-4C45-AACC-2611A2859A4E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>reload</string>
+				<key>passinputasargument</key>
+				<false/>
+				<key>passvariables</key>
+				<false/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>A40730EC-9C68-4E03-BAF2-DE1BF6AADA18</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1914,6 +2086,17 @@ ok=$?
 			<key>ypos</key>
 			<integer>360</integer>
 		</dict>
+		<key>05C661C6-76C1-4C45-AACC-2611A2859A4E</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
+			<key>note</key>
+			<string>action = delete</string>
+			<key>xpos</key>
+			<integer>1610</integer>
+			<key>ypos</key>
+			<integer>560</integer>
+		</dict>
 		<key>0877E34C-7243-4E59-B01B-299F8BE837A6</key>
 		<dict>
 			<key>note</key>
@@ -1927,21 +2110,23 @@ ok=$?
 		<dict>
 			<key>colorindex</key>
 			<integer>12</integer>
+			<key>note</key>
+			<string>Run "searchio clean" and "searchio reload"</string>
 			<key>xpos</key>
 			<integer>1200</integer>
 			<key>ypos</key>
-			<integer>520</integer>
+			<integer>530</integer>
 		</dict>
 		<key>1133DEAA-5A8F-4E7D-9E9C-A76CB82D9F92</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>2</integer>
+			<integer>1</integer>
 			<key>note</key>
 			<string>Open search results in browser</string>
 			<key>xpos</key>
-			<integer>840</integer>
+			<integer>680</integer>
 			<key>ypos</key>
-			<integer>690</integer>
+			<integer>680</integer>
 		</dict>
 		<key>1264847E-C784-4D54-B4E1-8017CB361C68</key>
 		<dict>
@@ -1950,7 +2135,7 @@ ok=$?
 			<key>note</key>
 			<string>action = back</string>
 			<key>xpos</key>
-			<integer>1430</integer>
+			<integer>1440</integer>
 			<key>ypos</key>
 			<integer>240</integer>
 		</dict>
@@ -1966,9 +2151,9 @@ ok=$?
 		<key>1437F420-E986-408E-8416-34BFECD99FC8</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>10</integer>
+			<integer>8</integer>
 			<key>xpos</key>
-			<integer>1740</integer>
+			<integer>1760</integer>
 			<key>ypos</key>
 			<integer>360</integer>
 		</dict>
@@ -1994,8 +2179,10 @@ ok=$?
 		<dict>
 			<key>colorindex</key>
 			<integer>9</integer>
+			<key>note</key>
+			<string>Save search</string>
 			<key>xpos</key>
-			<integer>2650</integer>
+			<integer>2690</integer>
 			<key>ypos</key>
 			<integer>200</integer>
 		</dict>
@@ -2019,7 +2206,7 @@ ok=$?
 			<key>xpos</key>
 			<integer>1020</integer>
 			<key>ypos</key>
-			<integer>520</integer>
+			<integer>530</integer>
 		</dict>
 		<key>2F2432A8-3DCF-47C7-A1F4-680C2BF00198</key>
 		<dict>
@@ -2068,7 +2255,7 @@ ok=$?
 			<key>note</key>
 			<string>action = back</string>
 			<key>xpos</key>
-			<integer>2150</integer>
+			<integer>2160</integer>
 			<key>ypos</key>
 			<integer>80</integer>
 		</dict>
@@ -2077,7 +2264,7 @@ ok=$?
 			<key>colorindex</key>
 			<integer>9</integer>
 			<key>xpos</key>
-			<integer>2830</integer>
+			<integer>2870</integer>
 			<key>ypos</key>
 			<integer>200</integer>
 		</dict>
@@ -2095,7 +2282,7 @@ ok=$?
 			<key>colorindex</key>
 			<integer>1</integer>
 			<key>xpos</key>
-			<integer>500</integer>
+			<integer>460</integer>
 			<key>ypos</key>
 			<integer>80</integer>
 		</dict>
@@ -2111,11 +2298,11 @@ ok=$?
 		<key>66BB6EC0-265E-4221-8770-579C8267FA49</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>10</integer>
+			<integer>8</integer>
 			<key>note</key>
 			<string>action = reveal</string>
 			<key>xpos</key>
-			<integer>1430</integer>
+			<integer>1610</integer>
 			<key>ypos</key>
 			<integer>390</integer>
 		</dict>
@@ -2166,7 +2353,7 @@ ok=$?
 			<key>note</key>
 			<string>action != back</string>
 			<key>xpos</key>
-			<integer>1430</integer>
+			<integer>1440</integer>
 			<key>ypos</key>
 			<integer>80</integer>
 		</dict>
@@ -2177,7 +2364,7 @@ ok=$?
 			<key>xpos</key>
 			<integer>840</integer>
 			<key>ypos</key>
-			<integer>520</integer>
+			<integer>530</integer>
 		</dict>
 		<key>7A62F38A-75C7-4C10-85FB-49F0A84503B3</key>
 		<dict>
@@ -2202,9 +2389,9 @@ ok=$?
 			<key>colorindex</key>
 			<integer>12</integer>
 			<key>xpos</key>
-			<integer>1370</integer>
+			<integer>1400</integer>
 			<key>ypos</key>
-			<integer>520</integer>
+			<integer>530</integer>
 		</dict>
 		<key>9D22C791-2308-470B-B135-E2E03B69DB73</key>
 		<dict>
@@ -2237,6 +2424,17 @@ ok=$?
 			<key>ypos</key>
 			<integer>50</integer>
 		</dict>
+		<key>A40730EC-9C68-4E03-BAF2-DE1BF6AADA18</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>12</integer>
+			<key>note</key>
+			<string>Rewrite info.plist</string>
+			<key>xpos</key>
+			<integer>1970</integer>
+			<key>ypos</key>
+			<integer>610</integer>
+		</dict>
 		<key>AB93844D-D4B4-4B12-AF81-D39A87D70DBD</key>
 		<dict>
 			<key>colorindex</key>
@@ -2255,7 +2453,7 @@ ok=$?
 			<key>note</key>
 			<string>action = new</string>
 			<key>xpos</key>
-			<integer>2150</integer>
+			<integer>2160</integer>
 			<key>ypos</key>
 			<integer>230</integer>
 		</dict>
@@ -2268,6 +2466,39 @@ ok=$?
 			<key>ypos</key>
 			<integer>210</integer>
 		</dict>
+		<key>B3E0930C-ADA8-418F-B389-3A0261E05706</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
+			<key>note</key>
+			<string>Open list of engines</string>
+			<key>xpos</key>
+			<integer>2690</integer>
+			<key>ypos</key>
+			<integer>350</integer>
+		</dict>
+		<key>BB94D851-58EE-4CD6-9931-AB2FB9449D29</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
+			<key>note</key>
+			<string>Trash search config file</string>
+			<key>xpos</key>
+			<integer>1760</integer>
+			<key>ypos</key>
+			<integer>530</integer>
+		</dict>
+		<key>C1B3B49D-8DF2-47D1-98B0-4A263533C5FF</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>10</integer>
+			<key>note</key>
+			<string>Open user searches</string>
+			<key>xpos</key>
+			<integer>1970</integer>
+			<key>ypos</key>
+			<integer>450</integer>
+		</dict>
 		<key>C2AF821C-7119-4638-AC0C-360EF570DEC5</key>
 		<dict>
 			<key>colorindex</key>
@@ -2277,7 +2508,7 @@ ok=$?
 			<key>xpos</key>
 			<integer>720</integer>
 			<key>ypos</key>
-			<integer>550</integer>
+			<integer>560</integer>
 		</dict>
 		<key>C8F7785D-3469-4D54-A86B-71B6EB260F53</key>
 		<dict>
@@ -2292,6 +2523,8 @@ ok=$?
 		<dict>
 			<key>colorindex</key>
 			<integer>1</integer>
+			<key>note</key>
+			<string>Open configuration</string>
 			<key>xpos</key>
 			<integer>1570</integer>
 			<key>ypos</key>
@@ -2310,8 +2543,10 @@ ok=$?
 		<dict>
 			<key>colorindex</key>
 			<integer>10</integer>
+			<key>note</key>
+			<string>Set filepath from search UID</string>
 			<key>xpos</key>
-			<integer>1570</integer>
+			<integer>1400</integer>
 			<key>ypos</key>
 			<integer>360</integer>
 		</dict>

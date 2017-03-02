@@ -8,7 +8,7 @@
 # Created on 2016-12-17
 #
 
-"""Generate Wikipedia variants."""
+"""Generate Wikipedia engine JSON."""
 
 from __future__ import print_function, absolute_import
 
@@ -17,12 +17,10 @@ import json
 
 from bs4 import BeautifulSoup as BS
 
-from common import datapath, httpget, Lang, log, mkdata, mkvariant
+from common import datapath, httpget, mkdata, mkvariant
 
 url = 'https://meta.wikimedia.org/wiki/List_of_Wikipedias'
-# url = 'http://wikistats.wmflabs.org/display.php?t=wp'
 cachepath = datapath('Wikipedia.html')
-# source = datapath('Wikipedia.tsv')
 
 # Ignore wikis whose article count is below...
 MIN_ARTICLE_COUNT = 10000
@@ -65,7 +63,6 @@ def parse(soup):
 
 def lang2search(l):
     """Convert `Lang` to search `dict`."""
-    uid = u'wikipedia.{}'.format(l.code)
     desc = u'Wikipedia ({})'.format(l.name)
     return mkvariant(l.code.lower(),
                      l.name, desc,
@@ -75,6 +72,7 @@ def lang2search(l):
 
 
 def main():
+    """Print Wikipedia engine JSON to STDOUT."""
     data = mkdata(u'Wikipedia', u'Collaborative encyclopaedia')
 
     soup = BS(html(), 'html.parser')

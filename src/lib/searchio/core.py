@@ -40,6 +40,16 @@ class Context(object):
         return self._icon_finder.find(name, 'icon.png')
 
     def search(self, uid):
+        """Path to search configuration for UID.
+
+        The path may or may not exist.
+
+        Args:
+            uid (str): Search UID.
+
+        Returns:
+            str: Path to search config file.
+        """
         return self.wf.datafile('searches/{}.json'.format(uid))
 
     # def engine(self, uid):
@@ -49,7 +59,13 @@ class Context(object):
     #     return self._engine_finder.find(uid)
 
     @property
+    def backup_dir(self):
+        """Directory to save ``info.plist`` backups to."""
+        return self.wf.datafile('backups')
+
+    @property
     def engine_dirs(self):
+        """Directories to search for engine configurations."""
         return [
             os.path.join(os.path.dirname(__file__), 'engines'),
             self.wf.datafile('engines'),
@@ -57,14 +73,17 @@ class Context(object):
 
     @property
     def icon_dirs(self):
+        """Directories to search for icons."""
         return [
             self.wf.datafile('icons'),
+            self.wf.datafile('engines'),
             self.wf.workflowfile('icons/engines'),
             self.wf.workflowfile('icons'),
         ]
 
     @property
     def searches_dir(self):
+        """Directory to search for search configs."""
         return self.wf.datafile('searches')
     # TODO: defaults
 
