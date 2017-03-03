@@ -1455,7 +1455,7 @@ echo -n "$p"</string>
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
 				<key>script</key>
-				<string>./searchio search -e google-images -v en "$1"</string>
+				<string>./searchio search google-images-en "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -2051,7 +2051,7 @@ end run</string>
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
 				<key>script</key>
-				<string>./searchio search -e ebay -v de "$1"</string>
+				<string>./searchio search ebay-de "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>

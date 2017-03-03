@@ -1,6 +1,5 @@
 {
   "description": "Image search", 
-  "jsonpath": "predictions[].description", 
   "title": "Google Images", 
   "variants": [
     {
