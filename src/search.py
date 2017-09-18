@@ -274,6 +274,23 @@ class Google(Suggest):
         return results
 
 
+class GoogleLucky(Suggest):
+    """Get search suggestions from Google and open it in Google Lucky"""
+
+    id_ = 'google-lucky'
+    name = 'Google Lucky'
+    _suggest_url = 'https://suggestqueries.google.com/complete/search'
+    _search_url = 'https://www.google.com/search?btnI=I%27m+Feeling+Lucky&q={query}&hl={lang}&safe=off'
+
+    def _suggest(self):
+        response = web.get(self.suggest_url, {'client': 'firefox',
+                                              'q': self.options['query'],
+                                              'hl': self.options['lang']})
+        response.raise_for_status()
+        _, results = response.json()
+        return results
+
+
 class GoogleImages(Suggest):
     """Get search suggestions from Google Images"""
 
