@@ -1,0 +1,1232 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+    <title>Preferences</title>
+
+    <head>
+        <link rel="shortcut icon" href="/images/branding/product/ico/googleg_lodp.ico">
+    </head>
+    <style>
+    body,
+    td,
+    div,
+    .p,
+    a {
+        font-family: arial, sans-serif
+    }
+
+    .ts {
+        border-collapse: collapse
+    }
+
+    .ts td {
+        padding: 0
+    }
+
+    .bdr {
+        border: 1px solid #cbdced
+    }
+
+    select {
+        font-family: arial unicode ms, arial, sans-serif
+    }
+
+    #gbar,
+    #guser {
+        font-size: 13px;
+        padding-top: 1px !important;
+    }
+
+    #gbar {
+        height: 22px
+    }
+
+    #guser {
+        padding-bottom: 7px !important;
+        text-align: right
+    }
+
+    .gbh,
+    .gbd {
+        border-top: 1px solid #c9d7f1;
+        font-size: 1px
+    }
+
+    .gbh {
+        height: 0;
+        position: absolute;
+        top: 24px;
+        width: 100%
+    }
+
+    @media all {
+        .gb1 {
+            height: 22px;
+            margin-right: .5em;
+            vertical-align: top
+        }
+        #gbar {
+            float: left
+        }
+    }
+
+    a.gb1,
+    a.gb4 {
+        text-decoration: underline !important
+    }
+
+    a.gb1,
+    a.gb4 {
+        color: #00c !important
+    }
+
+    .gbi .gb4 {
+        color: #dd8e27 !important
+    }
+
+    .gbf .gb4 {
+        color: #900 !important
+    }
+
+    #disablemsg {
+        display: none
+    }
+
+    .disabled {
+        color: #999
+    }
+
+    .disabled #disablemsg {
+        color: #000;
+        display: block;
+        padding-bottom: 1em
+    }
+    </style>
+    <script>
+    (function() {
+        window.google = {
+            kEI: 'U2HkVuiKLIiE6ASAnauoDg',
+            kEXPI: '201663,3700062,3700251,3700388,4014828,4028875,4029765,4031109,4032677,4033307,4036211,4036509,4036527,4038012,4039268,4041303,4042553,4042784,4042792,4043492,4045841,4046304,4048347,4049549,4049557,4051159,4051241,4051558,4051714,4052304,4054284,4054552,4054853,4055202,4055777,4056038,4057133,4057136,4057169,4057316,4057836,4058099,4058117,4058123,4058126,4058298,4058336,4058384,4058543,4058949,4059318,4059513,4059767,4060886,4061089,4061155,4061299,4061473,4061551,4061563,4061732,4061782,4061887,4061922,4061925,4061935,4061955,4062022,4062073,4062084,4062333,8300095,8300273,8300310,8502947,8502986,8503012,8503132,8503303,8503306,8503367,8503404,8503853,10200084',
+            authuser: 0,
+            kscs: 'c9c918f0_24'
+        };
+        google.kHL = 'en';
+    })();
+    (function() {
+        google.lc = [];
+        google.li = 0;
+        google.getEI = function(a) {
+            for (var b; a && (!a.getAttribute || !(b = a.getAttribute("eid")));) a = a.parentNode;
+            return b || google.kEI
+        };
+        google.getLEI = function(a) {
+            for (var b = null; a && (!a.getAttribute || !(b = a.getAttribute("leid")));) a = a.parentNode;
+            return b
+        };
+        google.https = function() {
+            return "https:" == window.location.protocol
+        };
+        google.ml = function() {
+            return null
+        };
+        google.wl = function(a, b) {
+            try {
+                google.ml(Error(a), !1, b)
+            } catch (d) {}
+        };
+        google.time = function() {
+            return (new Date).getTime()
+        };
+        google.log = function(a, b, d, e, g) {
+            a = google.logUrl(a, b, d, e, g);
+            if ("" != a) {
+                b = new Image;
+                var c = google.lc,
+                    f = google.li;
+                c[f] = b;
+                b.onerror = b.onload = b.onabort = function() {
+                    delete c[f]
+                };
+                window.google && window.google.vel && window.google.vel.lu && window.google.vel.lu(a);
+                b.src = a;
+                google.li = f + 1
+            }
+        };
+        google.logUrl = function(a, b, d, e, g) {
+            var c = "",
+                f = google.ls || "";
+            if (!d && -1 == b.search("&ei=")) {
+                var h = google.getEI(e),
+                    c = "&ei=" + h; - 1 == b.search("&lei=") && ((e = google.getLEI(e)) ? c += "&lei=" + e : h != google.kEI && (c += "&lei=" + google.kEI))
+            }
+            a = d || "/" + (g || "gen_204") + "?atyp=i&ct=" + a + "&cad=" + b + c + f + "&zx=" + google.time();
+            /^http:/i.test(a) && google.https() && (google.ml(Error("a"), !1, {
+                src: a,
+                glmm: 1
+            }), a = "");
+            return a
+        };
+        google.y = {};
+        google.x = function(a, b) {
+            google.y[a.id] = [a, b];
+            return !1
+        };
+        google.load = function(a, b, d) {
+            google.x({
+                id: a + k++
+            }, function() {
+                google.load(a, b, d)
+            })
+        };
+        var k = 0;
+    })();
+    </script>
+    <script>
+    function handleSubmit() {}
+    </script>
+    <script>
+    (function() {
+        'use strict';
+        var k = this,
+            l = Date.now || function() {
+                return +new Date
+            };
+        var t = {};
+        var w = function(a, d) {
+            if (null === d) return !1;
+            if ("contains" in a && 1 == d.nodeType) return a.contains(d);
+            if ("compareDocumentPosition" in a) return a == d || !!(a.compareDocumentPosition(d) & 16);
+            for (; d && a != d;) d = d.parentNode;
+            return d == a
+        };
+        var x = function(a, d) {
+                return function(b) {
+                    b || (b = window.event);
+                    return d.call(a, b)
+                }
+            },
+            B = function(a) {
+                a = a.target || a.srcElement;
+                !a.getAttribute && a.parentNode && (a = a.parentNode);
+                return a
+            },
+            C = "undefined" != typeof navigator && /Macintosh/.test(navigator.userAgent),
+            D = "undefined" != typeof navigator && !/Opera/.test(navigator.userAgent) && /WebKit/.test(navigator.userAgent),
+            E = {
+                A: 1,
+                INPUT: 1,
+                TEXTAREA: 1,
+                SELECT: 1,
+                BUTTON: 1
+            },
+            F = function() {
+                this._mouseEventsPrevented = !0
+            },
+            G = {
+                A: 13,
+                BUTTON: 0,
+                CHECKBOX: 32,
+                COMBOBOX: 13,
+                GRIDCELL: 13,
+                LINK: 13,
+                LISTBOX: 13,
+                MENU: 0,
+                MENUBAR: 0,
+                MENUITEM: 0,
+                MENUITEMCHECKBOX: 0,
+                MENUITEMRADIO: 0,
+                OPTION: 0,
+                RADIO: 32,
+                RADIOGROUP: 32,
+                RESET: 0,
+                SUBMIT: 0,
+                TAB: 0,
+                TREE: 13,
+                TREEITEM: 13
+            },
+            H = function(a) {
+                return (a.getAttribute("type") || a.tagName).toUpperCase() in aa
+            },
+            I = function(a) {
+                return (a.getAttribute("type") || a.tagName).toUpperCase() in ba
+            },
+            aa = {
+                CHECKBOX: !0,
+                OPTION: !0,
+                RADIO: !0
+            },
+            ba = {
+                COLOR: !0,
+                DATE: !0,
+                DATETIME: !0,
+                "DATETIME-LOCAL": !0,
+                EMAIL: !0,
+                MONTH: !0,
+                NUMBER: !0,
+                PASSWORD: !0,
+                RANGE: !0,
+                SEARCH: !0,
+                TEL: !0,
+                TEXT: !0,
+                TEXTAREA: !0,
+                TIME: !0,
+                URL: !0,
+                WEEK: !0
+            },
+            ca = {
+                A: !0,
+                AREA: !0,
+                BUTTON: !0,
+                DIALOG: !0,
+                IMG: !0,
+                INPUT: !0,
+                LINK: !0,
+                MENU: !0,
+                OPTGROUP: !0,
+                OPTION: !0,
+                PROGRESS: !0,
+                SELECT: !0,
+                TEXTAREA: !0
+            };
+        var J = function() {
+                this.v = this.o = null
+            },
+            L = function(a, d) {
+                var b = K;
+                b.o = a;
+                b.v = d;
+                return b
+            };
+        J.prototype.s = function() {
+            var a = this.o;
+            this.o && this.o != this.v ? this.o = this.o.__owner || this.o.parentNode : this.o = null;
+            return a
+        };
+        var M = function() {
+            this.w = [];
+            this.o = 0;
+            this.v = null;
+            this.R = !1
+        };
+        M.prototype.s = function() {
+            if (this.R) return K.s();
+            if (this.o != this.w.length) {
+                var a = this.w[this.o];
+                this.o++;
+                a != this.v && a && a.__owner && (this.R = !0, L(a.__owner, this.v));
+                return a
+            }
+            return null
+        };
+        var K = new J,
+            O = new M;
+        var Q = function() {
+                this.T = [];
+                this.o = [];
+                this.s = [];
+                this.R = {};
+                this.v = null;
+                this.w = [];
+                P(this, "_custom")
+            },
+            da = "undefined" != typeof navigator && /iPhone|iPad|iPod/.test(navigator.userAgent),
+            R = String.prototype.trim ? function(a) {
+                return a.trim()
+            } : function(a) {
+                return a.replace(/^\s+/, "").replace(/\s+$/, "")
+            },
+            ea = /\s*;\s*/,
+            ia = function(a, d) {
+                return function(b) {
+                    var c = d;
+                    if ("_custom" == c) {
+                        c = b.detail;
+                        if (!c || !c._type) return;
+                        c = c._type
+                    }
+                    var e;
+                    if ("click" == c && (C && b.metaKey || !C && b.ctrlKey || 2 == b.which || null == b.which && 4 == b.button || b.shiftKey)) c = "clickmod";
+                    else {
+                        var f;
+                        f = b.which || b.keyCode || b.key;
+                        D && 3 == f && (f = 13);
+                        if (13 != f && 32 != f) f = !1;
+                        else {
+                            var m = B(b),
+                                q = (m.getAttribute("role") || m.type || m.tagName).toUpperCase(),
+                                h;
+                            (h = "keydown" != b.type) || ("getAttribute" in m ? (h = (m.getAttribute("role") || m.tagName).toUpperCase(), h = !I(m) && ("COMBOBOX" != h || "INPUT" != h) && !m.isContentEditable) : h = !1, h = !h);
+                            (h =
+                                h || b.ctrlKey || b.shiftKey || b.altKey || b.metaKey || H(m) && 32 == f) || ((h = m.tagName in E) || (h = m.getAttributeNode("tabindex"), h = null != h && h.specified), h = !(h && !m.disabled));
+                            h ? f = !1 : (m = "INPUT" != m.tagName.toUpperCase() || m.type, h = !(q in G) && 13 == f, f = (0 == G[q] % f || h) && !!m)
+                        }
+                        f && (c = "clickkey")
+                    }
+                    q = b.srcElement || b.target;
+                    f = S(c, b, q, "", null);
+                    var g;
+                    b.path ? (O.w = b.path, O.o = 0, O.v = this, O.R = !1, m = O) : m = L(q, this);
+                    for (; h = m.s();) {
+                        g = e = h;
+                        h = c;
+                        var n = g.__jsaction;
+                        if (!n) {
+                            var u = void 0,
+                                n = null;
+                            "getAttribute" in g && (n = g.getAttribute("jsaction"));
+                            if (u = n) {
+                                n = t[u];
+                                if (!n) {
+                                    for (var n = {}, y = u.split(ea), z = 0, fa = y ? y.length : 0; z < fa; z++) {
+                                        var r = y[z];
+                                        if (r) {
+                                            var A = r.indexOf(":"),
+                                                N = -1 != A,
+                                                ga = N ? R(r.substr(0, A)) : "click",
+                                                r = N ? R(r.substr(A + 1)) : r;
+                                            n[ga] = r
+                                        }
+                                    }
+                                    t[u] = n
+                                }
+                                g.__jsaction = n
+                            } else n = ha, g.__jsaction = n
+                        }
+                        "clickkey" == h ? h = "click" : "click" != h || n.click || (h = "clickonly");
+                        g = {
+                            S: h,
+                            action: n[h] || "",
+                            event: null,
+                            W: !1
+                        };
+                        f = S(g.S, g.event || b, q, g.action || "", e, f.timeStamp);
+                        if (g.W || g.action) break
+                    }
+                    f && "touchend" == f.eventType && (f.event._preventMouseEvents = F);
+                    if (g && g.action) {
+                        if (g = "clickkey" == c) g =
+                            B(b), g = (g.type || g.tagName).toUpperCase(), (g = 32 == (b.which || b.keyCode || b.key) && "CHECKBOX" != g) || (g = B(b), q = (g.getAttribute("role") || g.tagName).toUpperCase(), g = g.tagName.toUpperCase() in ca && "A" != q && !H(g) && !I(g) || "BUTTON" == q);
+                        g && (b.preventDefault ? b.preventDefault() : b.returnValue = !1);
+                        if ("mouseenter" == c || "mouseleave" == c)
+                            if (g = b.relatedTarget, !("mouseover" == b.type && "mouseenter" == c || "mouseout" == b.type && "mouseleave" == c) || g && (g === e || w(e, g))) f.action = "", f.actionElement = null;
+                            else {
+                                var c = {},
+                                    p;
+                                for (p in b) "function" !==
+                                    typeof b[p] && "srcElement" !== p && "target" !== p && (c[p] = b[p]);
+                                c.type = "mouseover" == b.type ? "mouseenter" : "mouseleave";
+                                c.target = c.srcElement = e;
+                                c.bubbles = !1;
+                                f.event = c;
+                                f.targetElement = e
+                            }
+                    } else f.action = "", f.actionElement = null;
+                    e = f;
+                    a.v && (p = S(e.eventType, e.event, e.targetElement, e.action, e.actionElement, e.timeStamp), "clickonly" == p.eventType && (p.eventType = "click"), a.v(p, !0));
+                    if (e.actionElement) {
+                        "A" != e.actionElement.tagName || "click" != e.eventType && "clickmod" != e.eventType || (b.preventDefault ? b.preventDefault() : b.returnValue = !1);
+                        if (a.v) a.v(e);
+                        else {
+                            var v;
+                            if ((p = k.document) && !p.createEvent && p.createEventObject) try {
+                                v = p.createEventObject(b)
+                            } catch (la) {
+                                v = b
+                            } else v = b;
+                            e.event = v;
+                            a.w.push(e)
+                        }
+                        if ("touchend" == e.event.type && e.event._mouseEventsPrevented) {
+                            b = e.event;
+                            for (var ma in b);
+                            l()
+                        }
+                    }
+                }
+            },
+            S = function(a, d, b, c, e, f) {
+                return {
+                    eventType: a,
+                    event: d,
+                    targetElement: b,
+                    action: c,
+                    actionElement: e,
+                    timeStamp: f || l()
+                }
+            },
+            ha = {},
+            ja = function(a, d) {
+                return function(b) {
+                    var c = a,
+                        e = d,
+                        f = !1;
+                    "mouseenter" == c ? c = "mouseover" : "mouseleave" == c && (c = "mouseout");
+                    if (b.addEventListener) {
+                        if ("focus" == c || "blur" == c || "error" == c || "load" == c) f = !0;
+                        b.addEventListener(c, e, f)
+                    } else b.attachEvent && ("focus" == c ? c = "focusin" : "blur" == c && (c = "focusout"), e = x(b, e), b.attachEvent("on" + c, e));
+                    return {
+                        S: c,
+                        U: e,
+                        V: f
+                    }
+                }
+            },
+            P = function(a, d) {
+                if (!a.R.hasOwnProperty(d)) {
+                    var b = ia(a, d),
+                        c = ja(d, b);
+                    a.R[d] = b;
+                    a.T.push(c);
+                    for (b = 0; b < a.o.length; ++b) {
+                        var e = a.o[b];
+                        e.s.push(c.call(null, e.o))
+                    }
+                    "click" == d && P(a, "keydown")
+                }
+            };
+        Q.prototype.U = function(a) {
+            return this.R[a]
+        };
+        var W = function(a, d) {
+                var b = new ka(d),
+                    c;
+                a: {
+                    for (c = 0; c < a.o.length; c++)
+                        if (T(a.o[c], d)) {
+                            c = !0;
+                            break a
+                        }
+                    c = !1
+                }
+                if (c) return a.s.push(b), b;
+                U(a, b);
+                a.o.push(b);
+                V(a);
+                return b
+            },
+            V = function(a) {
+                for (var d = a.s.concat(a.o), b = [], c = [], e = 0; e < a.o.length; ++e) {
+                    var f = a.o[e];
+                    X(f, d) ? (b.push(f), Y(f)) : c.push(f)
+                }
+                for (e = 0; e < a.s.length; ++e) f = a.s[e], X(f, d) ? b.push(f) : (c.push(f), U(a, f));
+                a.o = c;
+                a.s = b
+            },
+            U = function(a, d) {
+                var b = d.o;
+                da && (b.style.cursor = "pointer");
+                for (b = 0; b < a.T.length; ++b) d.s.push(a.T[b].call(null, d.o))
+            },
+            ka = function(a) {
+                this.o = a;
+                this.s = []
+            },
+            T = function(a, d) {
+                for (var b = a.o, c = d; b != c && c.parentNode;) c = c.parentNode;
+                return b == c
+            },
+            X = function(a, d) {
+                for (var b = 0; b < d.length; ++b)
+                    if (d[b].o != a.o && T(d[b], a.o)) return !0;
+                return !1
+            },
+            Y = function(a) {
+                for (var d = 0; d < a.s.length; ++d) {
+                    var b = a.o,
+                        c = a.s[d];
+                    b.removeEventListener ? b.removeEventListener(c.S, c.U, c.V) : b.detachEvent && b.detachEvent("on" + c.S, c.U)
+                }
+                a.s = []
+            };
+        var Z = new Q;
+        W(Z, window.document.documentElement);
+        P(Z, "click");
+        P(Z, "focus");
+        P(Z, "focusin");
+        P(Z, "blur");
+        P(Z, "focusout");
+        P(Z, "error");
+        P(Z, "load");
+        P(Z, "change");
+        P(Z, "dblclick");
+        P(Z, "input");
+        P(Z, "keyup");
+        P(Z, "keydown");
+        P(Z, "keypress");
+        P(Z, "mousedown");
+        P(Z, "mouseenter");
+        P(Z, "mouseleave");
+        P(Z, "mouseout");
+        P(Z, "mouseover");
+        P(Z, "mouseup");
+        P(Z, "touchstart");
+        P(Z, "touchend");
+        P(Z, "touchcancel");
+        P(Z, "speech");
+        (function(a) {
+            window.google.jsad = function(d) {
+                a.v = d;
+                a.w && (0 < a.w.length && d(a.w), a.w = null)
+            };
+            window.google.jsaac = function(d) {
+                return W(a, d)
+            };
+            window.google.jsarc = function(d) {
+                Y(d);
+                for (var b = !1, c = 0; c < a.o.length; ++c)
+                    if (a.o[c] === d) {
+                        a.o.splice(c, 1);
+                        b = !0;
+                        break
+                    }
+                if (!b)
+                    for (c = 0; c < a.s.length; ++c)
+                        if (a.s[c] === d) {
+                            a.s.splice(c, 1);
+                            break
+                        }
+                V(a)
+            }
+        })(Z);
+    }).call(window);
+    </script>
+</head>
+
+<body alink=#ff0000 bgcolor=#ffffff link=#0000cc text=#000000 vlink=#551a8b topmargin=3 marginheight=3>
+    <div id=gbar>
+        <nobr><b class=gb1>Search</b> <a class=gb1 href="https://www.google.com/imghp?hl=en&tab=wi">Images</a> <a class=gb1 href="https://maps.google.com/maps?hl=en&tab=wl">Maps</a> <a class=gb1 href="https://play.google.com/?hl=en&tab=w8">Play</a> <a class=gb1 href="https://www.youtube.com/?tab=w1">YouTube</a> <a class=gb1 href="https://news.google.com/nwshp?hl=en&tab=wn">News</a> <a class=gb1 href="https://mail.google.com/mail/?tab=wm">Gmail</a> <a class=gb1 href="https://drive.google.com/?tab=wo">Drive</a> <a class=gb1 style="text-decoration:none" href="https://www.google.com/intl/en/options/"><u>More</u> &raquo;</a></nobr>
+    </div>
+    <div id=guser width=100%>
+        <nobr><span id=gbn class=gbi></span><span id=gbf class=gbf></span><span id=gbe></span><a href="http://www.google.com/history/optout?hl=en" class=gb4>Web History</a> | <a href="/preferences?hl=en" class=gb4>Settings</a> | <a target=_top id=gb_70 href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/preferences" class=gb4>Sign in</a></nobr>
+    </div>
+    <div class=gbh style=left:0></div>
+    <div class=gbh style=right:0></div>
+    <div style="width:100%;clear:both">
+        <form method=GET action="/setprefs" name="langform" id="ssform" onsubmit="handleSubmit()">
+            <input type="hidden" name="sig" value="0_o4e2REiW-kRh-I3v66jh1tfiwpw=">
+            <table class="ts" width=100%>
+                <tr>
+                    <td valign=top width=1%>
+                        <a href="/webhp"><img src="/images/branding/searchlogo/1x/googlelogo_desk_heirloom_color_150x55dp.gif" alt="Google" border=0 height=55 width=150></a>
+                    </td>
+                    <td>&nbsp;</td>
+                    <td nowrap>
+                        <table class="ts" style="border-top:1px solid #3366cc;width:100%">
+                            <tr>
+                                <td bgcolor="#e5ecf9" nowrap>
+                                    <font face="arial,sans-serif" color=#000000 size=+1><b>&nbsp;Preferences</b></font>
+                                </td>
+                                <td align=right bgcolor="#e5ecf9" nowrap>
+                                    <font face="arial,sans-serif" size=-1 color=#000000><a href="https://accounts.google.com/ManageAccount">Google Account settings</a> | <a href="//www.google.com/support/websearch/bin/answer.py?answer=35892&hl=en&p=settings_help">Preferences Help</a> | <a href=/about.html>About Google</a>&nbsp;</font>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <table width=100% border=0 cellspacing=0 cellpadding=2>
+                <tr bgcolor="#e5ecf9">
+                    <td>
+                        <font face="arial,sans-serif" size=-1> <b>Save</b> your preferences when finished and <b>return to search</b>.</font>
+                    </td>
+                    <td align=right>
+                        <font face="arial,sans-serif" size=-1>
+                            <input type=submit value="Save Preferences" name="submit2">
+                        </font>
+                    </td>
+                </tr>
+            </table>
+            <p><b>Global Preferences </b>
+                <font size=-1>(changes apply to all Google services)</font>
+                <br>
+                <center>
+                    <table border=0 cellspacing=5 cellpadding=4 width=60%>
+                        <tr>
+                            <td bgcolor="#3366cc">
+                                <table bgcolor=#ffffff cellpadding=5 cellspacing=0 border=0 width=100%>
+                                    <tr bgcolor=#eeeeee>
+                                        <td align=center><img src=/images/warning.gif align=top alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <center>
+                                                <font face="arial,sans-serif" size=-1><b>Your cookies seem to be disabled. <br> Setting preferences will not work until you enable cookies in your browser. </b>
+                                                    <br>
+                                                    <font size=-2><a href="cookies.html">How do I enable cookies?</a></font>
+                                                </font>
+                                            </center>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </center>
+                <div class="bdr" style="width:100%">
+                    <script>
+                    var selected_hl_checked_by_user = false;
+                    var currently_selected_hl = "en";
+                    var hl_lp_map = {
+                        "ach": "en",
+                        "ban": "en",
+                        "bem": "en",
+                        "ckb": "en",
+                        "es-419": "en",
+                        "kg": "en",
+                        "nn": "no",
+                        "nyn": "en",
+                        "pcm": "en",
+                        "pt-BR": "pt",
+                        "pt-PT": "pt",
+                        "tlh": "en",
+                        "xx-bork": "en",
+                        "xx-elmer": "en",
+                        "xx-hacker": "en",
+                        "xx-pirate": "en"
+                    };
+
+                    function fnDisable(hl) {
+                        var textspan = document.getElementById("t" + hl);
+                        if (textspan) textspan.className = 'disabled';
+                        var tickbox = document.getElementById("p" + hl);
+                        if (tickbox) tickbox.disabled = true;
+                        return tickbox
+                    }
+
+                    function fnEnable(hl) {
+                        var textspan = document.getElementById("t" + hl);
+                        if (textspan) textspan.className = null;
+                        var tickbox = document.getElementById("p" + hl);
+                        if (tickbox) tickbox.disabled = false;
+                        return tickbox
+                    }
+
+                    function fnSetInitialPreferences() {
+                        var tickbox = fnDisable(currently_selected_hl);
+                        if (tickbox) tickbox.checked = true
+                    }
+
+                    function fnHlToPref(hl) {
+                        if (hl_lp_map[hl]) {
+                            return hl_lp_map[hl]
+                        }
+                        return hl
+                    }
+
+                    function fnSelectionChanged(new_hl) {
+                        var tickbox = fnEnable(fnHlToPref(currently_selected_hl));
+                        if (tickbox) tickbox.checked = selected_hl_checked_by_user;
+                        tickbox = fnDisable(fnHlToPref(new_hl));
+                        if (tickbox) {
+                            selected_hl_checked_by_user = tickbox.checked;
+                            tickbox.checked = true;
+                        } else {
+                            selected_hl_checked_by_user = false;
+                        }
+                        currently_selected_hl = new_hl
+                    }
+                    var num_langprefs_checked = 0;
+
+                    function tick() {
+                        var count = 0;
+                        for (var i = 0; i < document.langform.lr.length; ++i)
+                            if (document.langform.lr[i].checked) ++count;
+                        if (count > 8 && count > num_langprefs_checked) {
+                            alert("The number of language restrictions is limited to 8, so only 8 of the languages selected will be saved.");
+                        }
+                        num_langprefs_checked = count
+                    }
+                    </script>
+                    <table class="ts bdr" width=100%>
+                        <tr>
+                            <td width=175 nowrap valign=top>&nbsp;
+                                <br>&nbsp;
+                                <font size=-1><b>Interface Language</b></font>
+                            </td>
+                            <td>
+                                <br>
+                                <font size=-1 face="arial,sans-serif">Display Google tips and messages in:
+                                    <select name=hl onchange="fnSelectionChanged(this.value)">
+                                        <option value=ach>Acoli
+                                            <option value=af>Afrikaans
+                                                <option value=ak>Akan
+                                                    <option value=az>az&#601;rbaycan dili
+                                                        <option value=ms>Bahasa Melayu
+                                                            <option value=ban>Balinese
+                                                                <option value=xx-bork>Bork, bork, bork!
+                                                                    <option value=bs>bosanski
+                                                                        <option value=br>brezhoneg
+                                                                            <option value=ca>català
+                                                                                <option value=ceb>Cebuano
+                                                                                    <option value=ckb>Central Kurdish
+                                                                                        <option value=cs>&#269;e&#353;tina
+                                                                                            <option value=sn>chiShona
+                                                                                                <option value=co>Corsican
+                                                                                                    <option value=cy>Cymraeg
+                                                                                                        <option value=da>dansk
+                                                                                                            <option value=de>Deutsch
+                                                                                                                <option value=yo>Èdè Yorùbá
+                                                                                                                    <option value=et>eesti
+                                                                                                                        <option value=xx-elmer>Elmer Fudd
+                                                                                                                            <option value=en selected>English
+                                                                                                                                <option value=es>español
+                                                                                                                                    <option value=es-419>español (Latinoamérica)
+                                                                                                                                        <option value=eo>esperanto
+                                                                                                                                            <option value=eu>euskara
+                                                                                                                                                <option value=ee>E&#651;egbe
+                                                                                                                                                    <option value=tl>Filipino
+                                                                                                                                                        <option value=fo>føroyskt
+                                                                                                                                                            <option value=fr>français
+                                                                                                                                                                <option value=gaa>Ga
+                                                                                                                                                                    <option value=ga>Gaeilge
+                                                                                                                                                                        <option value=gd>Gàidhlig
+                                                                                                                                                                            <option value=gl>galego
+                                                                                                                                                                                <option value=gn>Guarani
+                                                                                                                                                                                    <option value=xx-hacker>Hacker
+                                                                                                                                                                                        <option value=ht>Haitian Creole
+                                                                                                                                                                                            <option value=ha>Hausa
+                                                                                                                                                                                                <option value=hr>hrvatski
+                                                                                                                                                                                                    <option value=haw>&#699;&#332;lelo Hawai&#699;i
+                                                                                                                                                                                                        <option value=bem>Ichibemba
+                                                                                                                                                                                                            <option value=ig>Igbo
+                                                                                                                                                                                                                <option value=rn>Ikirundi
+                                                                                                                                                                                                                    <option value=id>Indonesia
+                                                                                                                                                                                                                        <option value=ia>Interlingua
+                                                                                                                                                                                                                            <option value=zu>isiZulu
+                                                                                                                                                                                                                                <option value=is>íslenska
+                                                                                                                                                                                                                                    <option value=it>italiano
+                                                                                                                                                                                                                                        <option value=jw>Javanese
+                                                                                                                                                                                                                                            <option value=rw>Kinyarwanda
+                                                                                                                                                                                                                                                <option value=sw>Kiswahili
+                                                                                                                                                                                                                                                    <option value=tlh>Klingon
+                                                                                                                                                                                                                                                        <option value=kg>Kongo
+                                                                                                                                                                                                                                                            <option value=mfe>kreol morisien
+                                                                                                                                                                                                                                                                <option value=kri>Krio (Sierra Leone)
+                                                                                                                                                                                                                                                                    <option value=la>Latin
+                                                                                                                                                                                                                                                                        <option value=lv>latvie&#353;u
+                                                                                                                                                                                                                                                                            <option value=to>lea fakatonga
+                                                                                                                                                                                                                                                                                <option value=lt>lietuvi&#371;
+                                                                                                                                                                                                                                                                                    <option value=ln>lingála
+                                                                                                                                                                                                                                                                                        <option value=loz>Lozi
+                                                                                                                                                                                                                                                                                            <option value=lua>Luba-Lulua
+                                                                                                                                                                                                                                                                                                <option value=lg>Luganda
+                                                                                                                                                                                                                                                                                                    <option value=hu>magyar
+                                                                                                                                                                                                                                                                                                        <option value=mg>Malagasy
+                                                                                                                                                                                                                                                                                                            <option value=mt>Malti
+                                                                                                                                                                                                                                                                                                                <option value=mi>Maori
+                                                                                                                                                                                                                                                                                                                    <option value=nl>Nederlands
+                                                                                                                                                                                                                                                                                                                        <option value=pcm>Nigerian Pidgin
+                                                                                                                                                                                                                                                                                                                            <option value=no>norsk
+                                                                                                                                                                                                                                                                                                                                <option value=nso>Northern Sotho
+                                                                                                                                                                                                                                                                                                                                    <option value=ny>Nyanja
+                                                                                                                                                                                                                                                                                                                                        <option value=nn>nynorsk
+                                                                                                                                                                                                                                                                                                                                            <option value=uz>o&#8216;zbek
+                                                                                                                                                                                                                                                                                                                                                <option value=oc>Occitan
+                                                                                                                                                                                                                                                                                                                                                    <option value=om>Oromoo
+                                                                                                                                                                                                                                                                                                                                                        <option value=xx-pirate>Pirate
+                                                                                                                                                                                                                                                                                                                                                            <option value=pl>polski
+                                                                                                                                                                                                                                                                                                                                                                <option value=pt-BR>português (Brasil)
+                                                                                                                                                                                                                                                                                                                                                                    <option value=pt-PT>português (Portugal)
+                                                                                                                                                                                                                                                                                                                                                                        <option value=ro>român&#259;
+                                                                                                                                                                                                                                                                                                                                                                            <option value=rm>rumantsch
+                                                                                                                                                                                                                                                                                                                                                                                <option value=qu>Runasimi
+                                                                                                                                                                                                                                                                                                                                                                                    <option value=nyn>Runyankore
+                                                                                                                                                                                                                                                                                                                                                                                        <option value=crs>Seychellois Creole
+                                                                                                                                                                                                                                                                                                                                                                                            <option value=sq>shqip
+                                                                                                                                                                                                                                                                                                                                                                                                <option value=sd>Sindhi
+                                                                                                                                                                                                                                                                                                                                                                                                    <option value=sk>sloven&#269;ina
+                                                                                                                                                                                                                                                                                                                                                                                                        <option value=sl>sloven&#353;&#269;ina
+                                                                                                                                                                                                                                                                                                                                                                                                            <option value=so>Soomaali
+                                                                                                                                                                                                                                                                                                                                                                                                                <option value=st>Southern Sotho
+                                                                                                                                                                                                                                                                                                                                                                                                                    <option value=sr-ME>srpski (Crna Gora)
+                                                                                                                                                                                                                                                                                                                                                                                                                        <option value=sr-Latn>srpski (latinica)
+                                                                                                                                                                                                                                                                                                                                                                                                                            <option value=su>Sundanese
+                                                                                                                                                                                                                                                                                                                                                                                                                                <option value=fi>suomi
+                                                                                                                                                                                                                                                                                                                                                                                                                                    <option value=sv>svenska
+                                                                                                                                                                                                                                                                                                                                                                                                                                        <option value=tg>Tajik
+                                                                                                                                                                                                                                                                                                                                                                                                                                            <option value=tt>Tatar
+                                                                                                                                                                                                                                                                                                                                                                                                                                                <option value=vi>Ti&#7871;ng Vi&#7879;t
+                                                                                                                                                                                                                                                                                                                                                                                                                                                    <option value=tn>Tswana
+                                                                                                                                                                                                                                                                                                                                                                                                                                                        <option value=tum>Tumbuka
+                                                                                                                                                                                                                                                                                                                                                                                                                                                            <option value=tr>Türkçe
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                <option value=tk>Turkmen
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <option value=tw>Twi
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <option value=fy>West-Frysk
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <option value=wo>Wolof
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <option value=xh>Xhosa
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <option value=el>&#917;&#955;&#955;&#951;&#957;&#953;&#954;&#940;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <option value=be>&#1073;&#1077;&#1083;&#1072;&#1088;&#1091;&#1089;&#1082;&#1072;&#1103;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <option value=bg>&#1073;&#1098;&#1083;&#1075;&#1072;&#1088;&#1089;&#1082;&#1080;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <option value=ky>&#1082;&#1099;&#1088;&#1075;&#1099;&#1079;&#1095;&#1072;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <option value=kk>&#1179;&#1072;&#1079;&#1072;&#1179; &#1090;&#1110;&#1083;&#1110;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <option value=mk>&#1084;&#1072;&#1082;&#1077;&#1076;&#1086;&#1085;&#1089;&#1082;&#1080;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <option value=mn>&#1084;&#1086;&#1085;&#1075;&#1086;&#1083;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <option value=ru>&#1088;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <option value=sr>&#1089;&#1088;&#1087;&#1089;&#1082;&#1080;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <option value=uk>&#1091;&#1082;&#1088;&#1072;&#1111;&#1085;&#1089;&#1100;&#1082;&#1072;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <option value=ka>&#4325;&#4304;&#4320;&#4311;&#4323;&#4314;&#4312;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <option value=hy>&#1392;&#1377;&#1397;&#1381;&#1408;&#1381;&#1398;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <option value=yi>&#1497;&#1497;&#1460;&#1491;&#1497;&#1513;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <option value=iw>&#1506;&#1489;&#1512;&#1497;&#1514;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <option value=ug>&#1574;&#1735;&#1610;&#1594;&#1735;&#1585;&#1670;&#1749;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <option value=ur>&#1575;&#1585;&#1583;&#1608;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <option value=ar>&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <option value=ps>&#1662;&#1690;&#1578;&#1608;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <option value=fa>&#1601;&#1575;&#1585;&#1587;&#1740;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <option value=ti>&#4725;&#4877;&#4653;&#4763;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <option value=am>&#4768;&#4635;&#4653;&#4763;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <option value=ne>&#2344;&#2375;&#2346;&#2366;&#2354;&#2368;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <option value=mr>&#2350;&#2352;&#2366;&#2336;&#2368;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <option value=hi>&#2361;&#2367;&#2344;&#2381;&#2342;&#2368;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <option value=bn>&#2476;&#2494;&#2434;&#2482;&#2494;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <option value=pa>&#2602;&#2672;&#2588;&#2622;&#2604;&#2624;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <option value=gu>&#2711;&#2753;&#2716;&#2736;&#2750;&#2724;&#2752;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <option value=or>&#2835;&#2849;&#2876;&#2879;&#2822;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <option value=ta>&#2980;&#2990;&#3007;&#2996;&#3021;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <option value=te>&#3108;&#3142;&#3122;&#3137;&#3095;&#3137;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <option value=kn>&#3221;&#3240;&#3277;&#3240;&#3233;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <option value=ml>&#3374;&#3378;&#3375;&#3390;&#3379;&#3330;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <option value=si>&#3523;&#3538;&#3458;&#3524;&#3517;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <option value=th>&#3652;&#3607;&#3618;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <option value=lo>&#3749;&#3762;&#3751;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <option value=my>&#4119;&#4121;&#4140;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <option value=km>&#6017;&#6098;&#6040;&#6082;&#6042;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <option value=chr>&#5091;&#5043;&#5033;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <option value=ko>&#54620;&#44397;&#50612;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <option value=zh-CN>&#20013;&#25991; (&#31616;&#20307;)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <option value=zh-TW>&#20013;&#25991; (&#32321;&#39636;)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <option value=ja>&#26085;&#26412;&#35486; </select>
+                                    <br>&nbsp;</font>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="ts bdr" width=100%>
+                        <tr>
+                            <td width=175 nowrap valign=top>&nbsp;
+                                <br>&nbsp;
+                                <font size=-1><b>Search Language</b></font>
+                            </td>
+                            <td>&nbsp;
+                                <br>
+                                <font size=-1 face="arial,sans-serif">Prefer pages written in these language(s): </font>
+                                <br>
+                                <table cellpadding=5 cellspacing=10 border=0>
+                                    <tr>
+                                        <td valign=top nowrap>
+                                            <font size=-1 face="arial,sans-serif">
+                                                <label>
+                                                    <input name=lr type=checkbox value=lang_af onclick=tick() id=paf> <span id=taf>Afrikaans</span></label>
+                                                <br>
+                                                <label>
+                                                    <input name=lr type=checkbox value=lang_ca onclick=tick() id=pca> <span id=tca>català</span></label>
+                                                <br>
+                                                <label>
+                                                    <input name=lr type=checkbox value=lang_cs onclick=tick() id=pcs> <span id=tcs>&#269;e&#353;tina</span></label>
+                                                <br>
+                                                <label>
+                                                    <input name=lr type=checkbox value=lang_da onclick=tick() id=pda> <span id=tda>dansk</span></label>
+                                                <br>
+                                                <label>
+                                                    <input name=lr type=checkbox value=lang_de onclick=tick() id=pde> <span id=tde>Deutsch</span></label>
+                                                <br>
+                                                <label>
+                                                    <input name=lr type=checkbox value=lang_et onclick=tick() id=pet> <span id=tet>eesti</span></label>
+                                                <br>
+                                                <label>
+                                                    <input name=lr type=checkbox value=lang_en onclick=tick() id=pen checked> <span id=ten>English</span></label>
+                                                <br>
+                                                <label>
+                                                    <input name=lr type=checkbox value=lang_es onclick=tick() id=pes> <span id=tes>español</span></label>
+                                                <br>
+                                                <label>
+                                                    <input name=lr type=checkbox value=lang_eo onclick=tick() id=peo> <span id=teo>esperanto</span></label>
+                                                <br>
+                                                <label>
+                                                    <input name=lr type=checkbox value=lang_tl onclick=tick() id=ptl> <span id=ttl>Filipino</span></label>
+                                                <br>
+                                                <label>
+                                                    <input name=lr type=checkbox value=lang_fr onclick=tick() id=pfr> <span id=tfr>français</span></label>
+                                                <br>
+                                                <label>
+                                                    <input name=lr type=checkbox value=lang_hr onclick=tick() id=phr> <span id=thr>hrvatski</span></label>
+                                            </font>
+                                        </td>
+                                        <td valign=top nowrap>
+                                            <font size=-1 face="arial,sans-serif">
+                                                <label>
+                                                    <input name=lr type=checkbox value=lang_id onclick=tick() id=pid> <span id=tid>Indonesia</span></label>
+                                                <br>
+                                                <label>
+                                                    <input name=lr type=checkbox value=lang_is onclick=tick() id=pis> <span id=tis>íslenska</span></label>
+                                                <br>
+                                                <label>
+                                                    <input name=lr type=checkbox value=lang_it onclick=tick() id=pit> <span id=tit>italiano</span></label>
+                                                <br>
+                                                <label>
+                                                    <input name=lr type=checkbox value=lang_sw onclick=tick() id=psw> <span id=tsw>Kiswahili</span></label>
+                                                <br>
+                                                <label>
+                                                    <input name=lr type=checkbox value=lang_lv onclick=tick() id=plv> <span id=tlv>latvie&#353;u</span></label>
+                                                <br>
+                                                <label>
+                                                    <input name=lr type=checkbox value=lang_lt onclick=tick() id=plt> <span id=tlt>lietuvi&#371;</span></label>
+                                                <br>
+                                                <label>
+                                                    <input name=lr type=checkbox value=lang_hu onclick=tick() id=phu> <span id=thu>magyar</span></label>
+                                                <br>
+                                                <label>
+                                                    <input name=lr type=checkbox value=lang_nl onclick=tick() id=pnl> <span id=tnl>Nederlands</span></label>
+                                                <br>
+                                                <label>
+                                                    <input name=lr type=checkbox value=lang_no onclick=tick() id=pno> <span id=tno>norsk</span></label>
+                                                <br>
+                                                <label>
+                                                    <input name=lr type=checkbox value=lang_pl onclick=tick() id=ppl> <span id=tpl>polski</span></label>
+                                                <br>
+                                                <label>
+                                                    <input name=lr type=checkbox value=lang_pt onclick=tick() id=ppt> <span id=tpt>português</span></label>
+                                                <br>
+                                                <label>
+                                                    <input name=lr type=checkbox value=lang_ro onclick=tick() id=pro> <span id=tro>român&#259;</span></label>
+                                            </font>
+                                        </td>
+                                        <td valign=top nowrap>
+                                            <font size=-1 face="arial,sans-serif">
+                                                <label>
+                                                    <input name=lr type=checkbox value=lang_sk onclick=tick() id=psk> <span id=tsk>sloven&#269;ina</span></label>
+                                                <br>
+                                                <label>
+                                                    <input name=lr type=checkbox value=lang_sl onclick=tick() id=psl> <span id=tsl>sloven&#353;&#269;ina</span></label>
+                                                <br>
+                                                <label>
+                                                    <input name=lr type=checkbox value=lang_fi onclick=tick() id=pfi> <span id=tfi>suomi</span></label>
+                                                <br>
+                                                <label>
+                                                    <input name=lr type=checkbox value=lang_sv onclick=tick() id=psv> <span id=tsv>svenska</span></label>
+                                                <br>
+                                                <label>
+                                                    <input name=lr type=checkbox value=lang_vi onclick=tick() id=pvi> <span id=tvi>Ti&#7871;ng Vi&#7879;t</span></label>
+                                                <br>
+                                                <label>
+                                                    <input name=lr type=checkbox value=lang_tr onclick=tick() id=ptr> <span id=ttr>Türkçe</span></label>
+                                                <br>
+                                                <label>
+                                                    <input name=lr type=checkbox value=lang_el onclick=tick() id=pel> <span id=tel>&#917;&#955;&#955;&#951;&#957;&#953;&#954;&#940;</span></label>
+                                                <br>
+                                                <label>
+                                                    <input name=lr type=checkbox value=lang_be onclick=tick() id=pbe> <span id=tbe>&#1073;&#1077;&#1083;&#1072;&#1088;&#1091;&#1089;&#1082;&#1072;&#1103;</span></label>
+                                                <br>
+                                                <label>
+                                                    <input name=lr type=checkbox value=lang_bg onclick=tick() id=pbg> <span id=tbg>&#1073;&#1098;&#1083;&#1075;&#1072;&#1088;&#1089;&#1082;&#1080;</span></label>
+                                                <br>
+                                                <label>
+                                                    <input name=lr type=checkbox value=lang_ru onclick=tick() id=pru> <span id=tru>&#1088;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;</span></label>
+                                                <br>
+                                                <label>
+                                                    <input name=lr type=checkbox value=lang_sr onclick=tick() id=psr> <span id=tsr>&#1089;&#1088;&#1087;&#1089;&#1082;&#1080;</span></label>
+                                                <br>
+                                                <label>
+                                                    <input name=lr type=checkbox value=lang_uk onclick=tick() id=puk> <span id=tuk>&#1091;&#1082;&#1088;&#1072;&#1111;&#1085;&#1089;&#1100;&#1082;&#1072;</span></label>
+                                            </font>
+                                        </td>
+                                        <td valign=top nowrap>
+                                            <font size=-1 face="arial,sans-serif">
+                                                <label>
+                                                    <input name=lr type=checkbox value=lang_hy onclick=tick() id=phy> <span id=thy>&#1392;&#1377;&#1397;&#1381;&#1408;&#1381;&#1398;</span></label>
+                                                <br>
+                                                <label>
+                                                    <input name=lr type=checkbox value=lang_iw onclick=tick() id=piw> <span id=tiw>&#1506;&#1489;&#1512;&#1497;&#1514;</span></label>
+                                                <br>
+                                                <label>
+                                                    <input name=lr type=checkbox value=lang_ar onclick=tick() id=par> <span id=tar>&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</span></label>
+                                                <br>
+                                                <label>
+                                                    <input name=lr type=checkbox value=lang_fa onclick=tick() id=pfa> <span id=tfa>&#1601;&#1575;&#1585;&#1587;&#1740;</span></label>
+                                                <br>
+                                                <label>
+                                                    <input name=lr type=checkbox value=lang_hi onclick=tick() id=phi> <span id=thi>&#2361;&#2367;&#2344;&#2381;&#2342;&#2368;</span></label>
+                                                <br>
+                                                <label>
+                                                    <input name=lr type=checkbox value=lang_th onclick=tick() id=pth> <span id=tth>&#3652;&#3607;&#3618;</span></label>
+                                                <br>
+                                                <label>
+                                                    <input name=lr type=checkbox value=lang_ko onclick=tick() id=pko> <span id=tko>&#54620;&#44397;&#50612;</span></label>
+                                                <br>
+                                                <label>
+                                                    <input name=lr type=checkbox value=lang_zh-CN onclick=tick() id=pzh-CN> <span id=tzh-CN>&#20013;&#25991; (&#31616;&#20307;)</span></label>
+                                                <br>
+                                                <label>
+                                                    <input name=lr type=checkbox value=lang_zh-TW onclick=tick() id=pzh-TW> <span id=tzh-TW>&#20013;&#25991; (&#32321;&#39636;)</span></label>
+                                                <br>
+                                                <label>
+                                                    <input name=lr type=checkbox value=lang_ja onclick=tick() id=pja> <span id=tja>&#26085;&#26412;&#35486;</span></label>
+                                            </font>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <script>
+                    fnSetInitialPreferences()
+                    </script>
+                    <table class="ts bdr" width="100%">
+                        <tr>
+                            <td width="175" nowrap>&nbsp;
+                                <br>&nbsp;
+                                <font size=-1><b>SafeSearch Filtering</b></font>
+                            </td>
+                            <td>
+                                <br>
+                                <font size=-1 face="arial,sans-serif"><a href="//support.google.com/websearch?p=ws_settings_safesearch&amp;hl=en">Google's SafeSearch</a> blocks web pages containing explicit sexual content from appearing in search results. </font>
+                            </td>
+                            <tr valign=top>
+                                <td width="175" nowrap>&nbsp;</td>
+                                <td>
+                                    <div style="margin:1em 0 1.2em;font-size:smaller">
+                                        <input checked="checked" id="modf" name="safeui" type="radio" value="images">
+                                        <label for="modf">Show most relevant results</label>
+                                        <br>
+                                        <input id="stf" name="safeui" type="radio" value="on">
+                                        <label for="stf">Filter explicit results.</label>
+                                    </div>
+                                    <p style="margin-bottom:1.2em;font-size:smaller"> <a href="https://accounts.google.com/ServiceLogin?service=safesearchlock&amp;ltmpl=lk&amp;hl=en&amp;continue=https://www.google.com/preferences/sslock%3Fop%3D0%26prev%3D/preferences%253Fprev%253D/%26sig%3DAAm6Z9sAAAAAVuRoW8ImMThK6GIXVI2939G87aps66CS">Lock SafeSearch</a> This will apply strict filtering to all searches from this computer using this browser. <a href="//support.google.com/websearch?p=ws_settings_safesearch_lock&amp;hl=en&amp;authuser=0">Learn more</a></p>
+                                </td>
+                            </tr>
+                    </table>
+                    <table class="ts bdr" width=100%>
+                        <tr>
+                            <td valign=top width=175 nowrap>&nbsp;
+                                <br>&nbsp;
+                                <font size=-1><b>Autocomplete</b></font>
+                            </td>
+                            <td>&nbsp;
+                                <br>
+                                <font size=-1 face="arial,sans-serif">
+                                    <input id=suggon type=radio name=suggon value=1 checked>
+                                    <label for=suggon>Provide query predictions in the search box.</label>
+                                    <br>
+                                    <input id=suggoff type=radio name=suggon value=0>
+                                    <label for=suggoff>Do not provide query predictions in the search box.</label>
+                                    <br>&nbsp;</font>
+                            </td>
+                        </tr>
+                    </table>
+                    <table id=resnum class="ts bdr" width=100%>
+                        <tr>
+                            <td valign=top width=175 nowrap>&nbsp;
+                                <br>&nbsp;
+                                <font size=-1><b>Number of Results</b></font>
+                            </td>
+                            <td>&nbsp;
+                                <br>
+                                <font size=-1 face="arial,sans-serif">Google&#39;s default (10 results) provides the fastest results.
+                                    <br>Display
+                                    <select name=num id=numsel>
+                                        <option value="10">10
+                                            <option value="20">20
+                                                <option value="30">30
+                                                    <option value="50">50
+                                                        <option value="100">100</select> results per page.
+                                    <br>&nbsp;
+                                    <div id=disablemsg></div>
+                                </font>
+                            </td>
+                        </tr>
+                    </table>
+                    <input type=hidden name=newwindow value="0">
+                    <table class="ts bdr" width=100%>
+                        <tr>
+                            <td valign=top width=175 nowrap>&nbsp;
+                                <br>&nbsp;
+                                <font size=-1><b>Results Window</b></font><a name=safeui>&nbsp;</a></td>
+                            <td>&nbsp;
+                                <br>
+                                <font size=-1 face="arial,sans-serif">
+                                    <input id=nwc type=checkbox value=1 onclick="document.langform.newwindow.value=this.checked?1:0">&nbsp;
+                                    <label for=nwc>Open search results in a new browser window.</label>
+                                </font>
+                                <br>&nbsp;</td>
+                        </tr>
+                    </table>
+                </div>
+                <input type=hidden name=q value="">
+                <br>
+                <table width=100% border=0 cellspacing=0 cellpadding=2>
+                    <tr bgcolor="#e5ecf9">
+                        <td>
+                            <font face="arial,sans-serif" size=-1> <b>Save</b> your preferences when finished and <b>return to search</b>.</font>
+                        </td>
+                        <td align=right>
+                            <font face="arial,sans-serif" size=-1>
+                                <input type=submit value="Save Preferences" name="submit2">
+                            </font>
+                        </td>
+                    </tr>
+                </table>
+                <p>
+                    <div align=center>
+                        <font face="arial,sans-serif" size=-1>&copy;2013 Google </font>
+                    </div>
+        </form>
+    </div>
+    <script></script>
+    <div id="xjsd"></div>
+    <div id="xjsi">
+        <script>
+        (function() {
+            function c(b) {
+                window.setTimeout(function() {
+                    var a = document.createElement("script");
+                    a.src = b;
+                    document.getElementById("xjsd").appendChild(a)
+                }, 0)
+            }
+            google.dljp = function(b, a) {
+                google.xjsu = b;
+                c(a)
+            };
+            google.dlj = c;
+        })();
+        (function() {
+            window.google.xjsrm = [];
+        })();
+        if (google.y) google.y.first = [];
+        if (!google.xjs) {
+            window._ = window._ || {};
+            window._._DumpException = function(e) {
+                throw e
+            };
+            if (google.timers && google.timers.load.t) {
+                google.timers.load.t.xjsls = new Date().getTime();
+            }
+            google.dljp('/xjs/_/js/k\x3dxjs.p.en_US.kDz4ACpK1PU.O/m\x3dsslk,d/rt\x3dj/d\x3d1/t\x3dzcms/rs\x3dACT90oE2ISlQyHGzoP_whlwocheT1hb_7w', '/xjs/_/js/k\x3dxjs.p.en_US.kDz4ACpK1PU.O/m\x3dsslk,d/rt\x3dj/d\x3d1/t\x3dzcms/rs\x3dACT90oE2ISlQyHGzoP_whlwocheT1hb_7w');
+            google.xjs = 1;
+        }
+        google.pmc = {
+            "sslk": {
+                "msg_w_l": "Leaving the page will stop the locking process now in progress. Leave this page?",
+                "msg_w_u": "Leaving the page will stop the unlocking process now in progress. Leave this page?",
+                "msg_w_v": "Leaving the page will stop the verifying process now in progress. Leave this page?"
+            },
+            "d": {}
+        };
+        google.y.first.push(function() {
+            if (google.med) {
+                google.med('init');
+                google.initHistory();
+                google.med('history');
+            }
+        });
+        if (google.j && google.j.en && google.j.xi) {
+            window.setTimeout(google.j.xi, 0);
+        }
+        </script>
+    </div>
+</body>
+
+</html>
