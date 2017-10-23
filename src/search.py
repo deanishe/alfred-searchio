@@ -589,6 +589,24 @@ class Ask(Suggest):
         return results
 
 
+class Kinopoisk(Suggest):
+    """Get search suggestions from Kinopoisk.ru."""
+
+    id_ = 'kinopoisk'
+    name = 'Kinopoisk.ru'
+    _suggest_url = 'https://www.kinopoisk.ru/search/suggest'
+    _search_url = 'https://www.kinopoisk.ru/index.php?kp_query={query}'
+
+    def _suggest(self):
+        response = web.get(self.suggest_url, {'topsuggest': 'true',
+                                              'q': self.options['query']})
+        response.raise_for_status()
+        results = response.json()
+        return [d.get('rus') + " (" + d.get('year') + ")"
+            if (d.get('year')!="" and d.get('year')!="0")
+            else d.get('rus') for d in results]
+
+
 def main(wf):
     from docopt import docopt
 
