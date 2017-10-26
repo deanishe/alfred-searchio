@@ -596,15 +596,54 @@ class Kinopoisk(Suggest):
     name = 'Kinopoisk.ru'
     _suggest_url = 'https://www.kinopoisk.ru/search/suggest'
     _search_url = 'https://www.kinopoisk.ru/index.php?kp_query={query}'
+    _base_url = 'https://www.kinopoisk.ru'
+    _results_urls = {}
 
     def _suggest(self):
         response = web.get(self.suggest_url, {'topsuggest': 'true',
                                               'q': self.options['query']})
         response.raise_for_status()
-        results = response.json()
-        return [d.get('rus') + " (" + d.get('year') + ")"
-            if (d.get('year')!="" and d.get('year')!="0")
-            else d.get('rus') for d in results]
+        return response.json()
+
+    def url_for(self, query):
+        if query in self._results_urls:
+            return self._base_url + self._results_urls[query]
+
+        url = self.search_url.encode('utf-8')
+        options = self.options.copy()
+        options['query'] = query
+        for key in options:
+            if self._quote_plus:
+                options[key] = urllib.quote_plus(options[key].encode('utf-8'))
+            else:
+                options[key] = urllib.quote(options[key].encode('utf-8'))
+        return url.format(**options)
+
+    def search(self):
+        components = [self.name]
+        for t in self.options.items():
+            components.extend(t)
+        m = md5()
+        log.debug('key components : {0}'.format(components))
+        m.update(':'.join(components).encode('utf-8'))
+        key = m.hexdigest()
+
+        raw_results = self.wf.cached_data(key, self._suggest, max_age=600)
+
+        results = []
+        self._results_urls = {}
+        for d in raw_results:
+            if (d['year']!="" and d['year']!="0"):
+                pretty_query = d['rus'] + " (" + d['year'] + ")"
+            else:
+                pretty_query = d['rus']
+            results.append(pretty_query)
+            self._results_urls[pretty_query] = d['link']
+
+        if self.show_query_in_results:
+            results = [self.options['query']] + results
+
+        return results
 
 
 def main(wf):
