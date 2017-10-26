@@ -634,9 +634,9 @@ class Kinopoisk(Suggest):
         self._results_urls = {}
         for d in raw_results:
             if (d['year']!="" and d['year']!="0"):
-                pretty_query = d['rus'] + " (" + d['year'] + ")"
+                pretty_query = d['rus'].replace("&nbsp;", "\u00a0") + " (" + d['year'].replace("&ndash;", "\u2013") + ")"
             else:
-                pretty_query = d['rus']
+                pretty_query = d['rus'].replace("&nbsp;", "\u00a0")
             results.append(pretty_query)
             self._results_urls[pretty_query] = d['link']
 
