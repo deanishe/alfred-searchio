@@ -603,7 +603,16 @@ class Kinopoisk(Suggest):
         response = web.get(self.suggest_url, {'topsuggest': 'true',
                                               'q': self.options['query']})
         response.raise_for_status()
-        return response.json()
+        raw_results = response.json()
+        results = {}
+        for d in raw_results:
+            if (d['year']!="" and d['year']!="0"):
+                pretty_query = d['rus'].replace("&nbsp;", "\u00a0") +" (" + d['year'].replace("&ndash;", "\u2013") + ")"
+            else:
+                pretty_query = d['rus'].replace("&nbsp;", "\u00a0")
+            results[pretty_query] = d['link']
+
+        return results
 
     def url_for(self, query):
         if query in self._results_urls:
@@ -628,17 +637,10 @@ class Kinopoisk(Suggest):
         m.update(':'.join(components).encode('utf-8'))
         key = m.hexdigest()
 
-        raw_results = self.wf.cached_data(key, self._suggest, max_age=600)
+        cached_results = self.wf.cached_data(key, self._suggest, max_age=600)
 
-        results = []
-        self._results_urls = {}
-        for d in raw_results:
-            if (d['year']!="" and d['year']!="0"):
-                pretty_query = d['rus'].replace("&nbsp;", "\u00a0") + " (" + d['year'].replace("&ndash;", "\u2013") + ")"
-            else:
-                pretty_query = d['rus'].replace("&nbsp;", "\u00a0")
-            results.append(pretty_query)
-            self._results_urls[pretty_query] = d['link']
+        self._results_urls = cached_results
+        results = cached_results.keys()
 
         if self.show_query_in_results:
             results = [self.options['query']] + results
