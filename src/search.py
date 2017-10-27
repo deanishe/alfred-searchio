@@ -32,6 +32,7 @@ import sys
 from hashlib import md5
 import urllib
 import subprocess
+import collections
 
 from workflow import Workflow, web, ICON_ERROR, ICON_SETTINGS
 
@@ -597,14 +598,14 @@ class Kinopoisk(Suggest):
     _suggest_url = 'https://www.kinopoisk.ru/search/suggest'
     _search_url = 'https://www.kinopoisk.ru/index.php?kp_query={query}'
     _base_url = 'https://www.kinopoisk.ru'
-    _results_urls = {}
+    _results_urls = collections.OrderedDict()
 
     def _suggest(self):
         response = web.get(self.suggest_url, {'topsuggest': 'true',
                                               'q': self.options['query']})
         response.raise_for_status()
         raw_results = response.json()
-        results = {}
+        results = collections.OrderedDict()
         for d in raw_results:
             if (d['year']!="" and d['year']!="0"):
                 pretty_query = d['rus'].replace("&nbsp;", "\u00a0") +" (" + d['year'].replace("&ndash;", "\u2013") + ")"
