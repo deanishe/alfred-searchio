@@ -22,6 +22,8 @@ Supports the following search engines/websites:
 - Yandex.ru
 - Naver.com
 - Wikia.com
+- Kinopoisk.ru
+
 
 ## Download and installation ##
 
@@ -88,6 +90,8 @@ The following search engines are supported. Pass the `ID` to the `-e`/`--engine`
 | yahoo         | Yahoo!        |
 | yandex        | Yandex.ru     |
 | youtube       | YouTube       |
+| kinopoisk     | Kinopoisk.ru  |
+
 
 ### Wikipedia, Wiktionary ###
 
