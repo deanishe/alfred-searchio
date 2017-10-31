@@ -32,6 +32,7 @@ import sys
 from hashlib import md5
 import urllib
 import subprocess
+import collections
 
 from workflow import Workflow, web, ICON_ERROR, ICON_SETTINGS
 
@@ -586,6 +587,65 @@ class Ask(Suggest):
                            {'li': 'ff', 'q': self.options['query']})
         response.raise_for_status()
         _, results = response.json()
+        return results
+
+
+class Kinopoisk(Suggest):
+    """Get search suggestions from Kinopoisk.ru."""
+
+    id_ = 'kinopoisk'
+    name = 'Kinopoisk.ru'
+    _suggest_url = 'https://www.kinopoisk.ru/search/suggest'
+    _search_url = 'https://www.kinopoisk.ru/index.php?kp_query={query}'
+    _base_url = 'https://www.kinopoisk.ru'
+    _results_urls = collections.OrderedDict()
+
+    def _suggest(self):
+        response = web.get(self.suggest_url, {'topsuggest': 'true',
+                                              'q': self.options['query']})
+        response.raise_for_status()
+        raw_results = response.json()
+        results = collections.OrderedDict()
+        for d in raw_results:
+            if (d['year']!="" and d['year']!="0"):
+                pretty_query = d['rus'].replace("&nbsp;", "\u00a0") +" (" + d['year'].replace("&ndash;", "\u2013") + ")"
+            else:
+                pretty_query = d['rus'].replace("&nbsp;", "\u00a0")
+            results[pretty_query] = d['link']
+
+        return results
+
+    def url_for(self, query):
+        if query in self._results_urls:
+            return self._base_url + self._results_urls[query]
+
+        url = self.search_url.encode('utf-8')
+        options = self.options.copy()
+        options['query'] = query
+        for key in options:
+            if self._quote_plus:
+                options[key] = urllib.quote_plus(options[key].encode('utf-8'))
+            else:
+                options[key] = urllib.quote(options[key].encode('utf-8'))
+        return url.format(**options)
+
+    def search(self):
+        components = [self.name]
+        for t in self.options.items():
+            components.extend(t)
+        m = md5()
+        log.debug('key components : {0}'.format(components))
+        m.update(':'.join(components).encode('utf-8'))
+        key = m.hexdigest()
+
+        cached_results = self.wf.cached_data(key, self._suggest, max_age=600)
+
+        self._results_urls = cached_results
+        results = cached_results.keys()
+
+        if self.show_query_in_results:
+            results = [self.options['query']] + results
+
         return results
 
 
