@@ -608,9 +608,9 @@ class Kinopoisk(Suggest):
         results = collections.OrderedDict()
         for d in raw_results:
             if (d['year']!="" and d['year']!="0"):
-                pretty_query = d['rus'].replace("&nbsp;", "\u00a0") +" (" + d['year'].replace("&ndash;", "\u2013") + ")"
+                pretty_query = d['name'].replace("&nbsp;", "\u00a0") +" (" + d['year'].replace("&ndash;", "\u2013") + ")"
             else:
-                pretty_query = d['rus'].replace("&nbsp;", "\u00a0")
+                pretty_query = d['name'].replace("&nbsp;", "\u00a0")
             results[pretty_query] = d['link']
 
         return results
