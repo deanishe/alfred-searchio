@@ -33,6 +33,7 @@ from hashlib import md5
 import urllib
 import subprocess
 import collections
+from HTMLParser import HTMLParser
 
 from workflow import Workflow, web, ICON_ERROR, ICON_SETTINGS
 
@@ -606,11 +607,12 @@ class Kinopoisk(Suggest):
         response.raise_for_status()
         raw_results = response.json()
         results = collections.OrderedDict()
+        h = HTMLParser()
         for d in raw_results:
             if (d['year']!="" and d['year']!="0"):
-                pretty_query = d['name'].replace("&nbsp;", "\u00a0") +" (" + d['year'].replace("&ndash;", "\u2013") + ")"
+                pretty_query = h.unescape(d['name']) + " (" + d['year'].replace("&ndash;", "\u2013") + ")"
             else:
-                pretty_query = d['name'].replace("&nbsp;", "\u00a0")
+                pretty_query = h.unescape(d['name'])
             results[pretty_query] = d['link']
 
         return results
