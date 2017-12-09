@@ -86,7 +86,8 @@ def run(wf, argv):
     else:  # Display for Alfred
         for e in engs:
             title = u'{} …'.format(e.title)
-            subtitle = u'{:d} variants'.format(len(e.variants))
+            subtitle = (str(len(e.variants)) + ' variant' +
+                        ('s', '')[len(e.variants) == 1])
             it = wf.add_item(
                 title,
                 subtitle,

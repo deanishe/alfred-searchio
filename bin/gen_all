@@ -4,7 +4,8 @@ set -e
 
 here="$( cd "$( dirname "$0" )"; pwd )"
 edir="$here/../src/lib/searchio/engines"
-engines=(amazon ddg ebay google google_images google_maps wikipedia wiktionary youtube)
+engines=(amazon ddg ebay google google_images google_maps)
+engines+=(wikia wikipedia wiktionary youtube)
 
 usage() {
     cat <<EOS

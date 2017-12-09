@@ -71,7 +71,7 @@ def cached_search(ctx, search, query):
         log.debug('[search/%s] Suggestions not supported', search.uid)
         return []
 
-    url = util.mkurl(search.suggest_url, query)
+    url = util.mkurl(search.suggest_url, query, search.pcencode)
 
     # Caching configuration
     h = hashlib.md5(query.encode('utf-8')).hexdigest()
@@ -95,7 +95,7 @@ def cached_search(ctx, search, query):
 
         # result based on user's query
         qr = Result(query,
-                    util.mkurl(search.search_url, query),
+                    util.mkurl(search.search_url, query, search.pcencode),
                     search.title)
 
         data = util.getjson(url)
@@ -113,7 +113,7 @@ def cached_search(ctx, search, query):
 
         for term in terms:
             r = Result(term,
-                       util.mkurl(search.search_url, term),
+                       util.mkurl(search.search_url, term, search.pcencode),
                        search.title)
             results.append(r)
             urls.add(r.url)
@@ -139,7 +139,7 @@ def run(wf, argv):
     start = time()
     p = ctx.search(uid)
     if not os.path.exists(p):
-        raise ValueError('Unknown search {!r}'.format(uid))
+        raise ValueError('Unknown search "{}" ({!r})'.format(uid, p))
 
     search = engines.Search.from_file(p)
 

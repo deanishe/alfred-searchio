@@ -5,6 +5,7 @@
 # Ignore private info files
 /src/info.dist.plist
 /src/info.bak.plist
+/src/info.plist.bak
 
 # Python junk
 *.dist-info

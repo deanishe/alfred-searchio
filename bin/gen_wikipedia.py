@@ -73,7 +73,7 @@ def lang2search(l):
 
 def main():
     """Print Wikipedia engine JSON to STDOUT."""
-    data = mkdata(u'Wikipedia', u'Collaborative encyclopaedia')
+    data = mkdata(u'Wikipedia', u'Collaborative encyclopaedia', pcencode=True)
 
     soup = BS(html(), 'html.parser')
     for w in parse(soup):

@@ -1,0 +1,13 @@
+{
+	"description": "South Korean search engine",
+	"title": "Naver",
+	"variants": [
+		{
+			"name": "Naver",
+			"search_url": "http://search.naver.com/search.naver?ie=utf-8&query={query}",
+			"suggest_url": "http://ac.search.naver.com/nx/ac?q={query}&of=os&ie=utf-8&oe=utf-8",
+			"title": "Naver",
+			"uid": "naver"
+		}
+	]
+}

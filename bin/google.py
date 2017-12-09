@@ -49,7 +49,7 @@ def google_search(search_url, suggest_url, title, description):
         s = mkvariant(l.id.lower(), l.name,
                       u'{} ({})'.format(title, l.name),
                       search_url.format(hl=l.id),
-                      suggest_url=None.format(hl=l.id),
+                      suggest_url=suggest_url.format(hl=l.id),
                       # lang=l.id.lower(),
                       )
         data['variants'].append(s)

@@ -50,6 +50,9 @@ def mkdata(title, description, icon='', variants=None, **kwargs):
     if 'jsonpath' in kwargs:
         d['jsonpath'] = kwargs['jsonpath']
 
+    if 'pcencode' in kwargs:
+        d['pcencode'] = kwargs['pcencode']
+
     return d
 
 

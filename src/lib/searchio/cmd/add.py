@@ -13,7 +13,7 @@
 Display help message for command(s).
 
 Usage:
-    searchio add [-s <url>] [-i <path>] [-j <jpath>] [-u <uid>] <title> <url>
+    searchio add [-s <url>] [-i <path>] [-j <jpath>] [-u <uid>] [-p] <keyword> <title> <url>
     searchio add --env
     searchio add -h
 
@@ -21,6 +21,7 @@ Options:
     -e, --env                  Read input from environment variables
     -i, --icon <path>          Path of icon for search
     -j, --json-path <jpath>    JSON path for results
+    -p, --pcencode             Whether to percent-encode query
     -s, --suggest <url>        URL for suggestions
     -u, --uid <uid>            Search UID
     -h, --help                 Display this help message
@@ -59,7 +60,9 @@ def parse_args(wf, args):
     """
     params = [
         # search dict key | envvar name | CLI option | default
+        ('keyword', 'keyword', '<keyword>', ''),
         ('uid', 'uid', '--uid', util.uuid()),
+        ('pcencode', 'pcencode', '--pcencode', False),
         ('title', 'title', '<title>', ''),
         ('search_url', 'search_url', '<url>', ''),
         ('suggest_url', 'suggest_url', '--suggest', ''),
@@ -71,9 +74,17 @@ def parse_args(wf, args):
     for k, kenv, opt, default in params:
         if args.get('--env'):
             v = os.getenv(kenv, default)
+            if default in (True, False):
+                if v == '1':
+                    v = True
+                else:
+                    v = False
         else:
             v = args.get(opt) or default
-        v = wf.decode(v).strip()
+
+        if default not in (True, False):
+            v = wf.decode(v).strip()
+
         d[k] = v
 
     return d

@@ -126,6 +126,8 @@ def run(wf, argv):
             it.setvar('jsonpath', v.jsonpath)
             it.setvar('search_url', v.search_url)
             it.setvar('suggest_url', v.suggest_url)
+            if v.pcencode:
+                it.setvar('pcencode', '1')
 
         wf.send_feedback()
 

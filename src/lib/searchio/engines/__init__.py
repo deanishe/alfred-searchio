@@ -119,7 +119,7 @@ class Engine(object):
     # Required settings
     _required = ('title', 'description', 'variants')
     # Optional settings
-    _optional = ('jsonpath',)
+    _optional = ('jsonpath', 'pcencode')
     # Settings that should be assigned to private attributes,
     # e.g. "_attribute", not "attribute".
     _private = ('variants',)
@@ -163,6 +163,7 @@ class Engine(object):
         self.title = u''
         self.description = u''
         self.jsonpath = u'[1]'
+        self.pcencode = False
         self._variants = []
 
     @property
@@ -217,6 +218,7 @@ class Variant(object):
         self._engine = weakref.ref(engine)
         self._uid = ''
         self.name = ''
+        self.pcencode = engine.pcencode
         self.title = ''
         self.search_url = ''
         self.suggest_url = ''
@@ -275,6 +277,9 @@ class Search(object):
         icon (str): Path to icon file.
         jsonpath (unicode): JSON Path for extracting suggestions from
             API responses.
+        keyword (str): Script Filter keyword.
+        pcencode (bool): Whether to use percent encoding (instead
+            of plus encoding).
         search_url (str): URL for search results.
         suggest_url (str): URL for search suggestions.
         title (unicode): Full search title, e.g. "Google (English)".
@@ -282,7 +287,7 @@ class Search(object):
             variant UIDs.
     """
     _required = ('title', 'icon', 'jsonpath', 'search_url')
-    _optional = ('suggest_url',)
+    _optional = ('pcencode', 'suggest_url', 'keyword')
     _private = ()
 
     @classmethod
@@ -344,7 +349,9 @@ class Search(object):
         self.uid = uid
         self.title = ''
         self.icon = ''
+        self.keyword = ''
         self.jsonpath = '[1]'
+        self.pcencode = False
         self.search_url = ''
         self.suggest_url = ''
 
@@ -356,8 +363,12 @@ class Search(object):
             dict: Configuration for this `Search`.
         """
         d = dict(title=self.title, icon=self.icon,
+                 keyword=self.keyword,
                  jsonpath=self.jsonpath,
                  search_url=self.search_url)
+
+        if self.pcencode:
+            d['pcencode'] = self.pcencode
 
         if self.suggest_url:
             d['suggest_url'] = self.suggest_url

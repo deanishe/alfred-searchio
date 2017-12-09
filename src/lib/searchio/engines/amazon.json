@@ -7,14 +7,14 @@
       "search_url": "https://www.amazon.com/gp/search?ie=UTF8&keywords={query}", 
       "suggest_url": "https://completion.amazon.com/search/complete?mkt=1&method=completion&search-alias=aps&client=alfred-searchio&q={query}", 
       "title": "Amazon United States", 
-      "uid": "us"
+      "uid": "com"
     }, 
     {
       "name": "United Kingdom", 
       "search_url": "https://www.amazon.co.uk/gp/search?ie=UTF8&keywords={query}", 
       "suggest_url": "https://completion.amazon.co.uk/search/complete?mkt=3&method=completion&search-alias=aps&client=alfred-searchio&q={query}", 
       "title": "Amazon United Kingdom", 
-      "uid": "gb"
+      "uid": "co.uk"
     }, 
     {
       "name": "Canada", 
@@ -49,7 +49,7 @@
       "search_url": "https://www.amazon.com.br/gp/search?ie=UTF8&keywords={query}", 
       "suggest_url": "https://completion.amazon.com/search/complete?mkt=526970&method=completion&search-alias=aps&client=alfred-searchio&q={query}", 
       "title": "Amazon Brasil", 
-      "uid": "br"
+      "uid": "com.br"
     }
   ]
 }

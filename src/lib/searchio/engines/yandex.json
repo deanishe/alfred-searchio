@@ -1,0 +1,13 @@
+{
+	"description": "Russian-language general search engine",
+	"title": "Yandex",
+	"variants": [
+		{
+			"name": "Yandex",
+			"title": "Yandex",
+			"uid": "yandex",
+			"search_url": "http://yandex.ru/yandsearch?text={query}",
+			"suggest_url": "http://suggest.yandex.net/suggest-ff.cgi?part={query}"
+		}
+	]
+}

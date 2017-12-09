@@ -1,5 +1,6 @@
 {
   "description": "Collaborative encyclopaedia", 
+  "pcencode": true, 
   "title": "Wikipedia", 
   "variants": [
     {

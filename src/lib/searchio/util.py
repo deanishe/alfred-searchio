@@ -259,7 +259,7 @@ def _bstr(s):
     return s
 
 
-def mkurl(url, query=None):
+def mkurl(url, query=None, pcencode=False):
     """Replace ``{query}`` in ``url`` with URL-encoded ``query``.
 
     Args:
@@ -269,18 +269,23 @@ def mkurl(url, query=None):
     Returns:
         str: UTF-8 encoded URL
     """
-    from urllib import quote_plus
+    if pcencode:
+        from urllib import quote
+    else:
+        from urllib import quote_plus as quote
     if not query:
         return url
 
     url = _bstr(url)
     query = _bstr(query)
 
-    d = dict(query=quote_plus(query))
-    for k,v in os.environ.items():
-        d[k] = quote_plus(v)
+    d = dict(query=quote(query))
+    for k, v in os.environ.items():
+        d[k] = quote(v)
 
-    return url.format(**d)
+    url = url.format(**d)
+    log.debug('pcencode=%r, url=%s', pcencode, url)
+    return url
 
 
 def url_encode_dict(dic):
@@ -379,6 +384,7 @@ class Table(object):
     Attributes:
         rows (list): The rows of the table.
     """
+
     def __init__(self, titles=None):
         self.rows = []
         self._str_rows = []
@@ -391,8 +397,8 @@ class Table(object):
 
         Args:
             row (iterable): Items for the row.
-        """
 
+        """
         if self.width and len(row) != self.width:
             raise ValueError('Rows must have {} elements, not {}'.format(
                              self.width, len(row)))
@@ -424,8 +430,8 @@ class Table(object):
 
         Returns:
             int: Length of first row.
-        """
 
+        """
         if self._width is None:
 
             if not self.rows:
@@ -444,8 +450,8 @@ class Table(object):
 
         Returns:
             list: List of Unicode strings.
-        """
 
+        """
         is_title, data = row[0], row[1:]
         str_row = [is_title]
 
@@ -466,8 +472,8 @@ class Table(object):
 
         Returns:
             str: UTF-8 string of tabular data.
-        """
 
+        """
         widths = [0 for _ in range(self.width)]
         table = []
         for row in self.rows:
