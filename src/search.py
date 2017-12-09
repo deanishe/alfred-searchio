@@ -509,7 +509,7 @@ class DuckDuckGo(Suggest):
         return [d.get('phrase') for d in results]
 
     def url_for(self, query):
-        query = query + ' r:{0}'.format(self.options['lang'])
+        query = query.format(self.options['lang'])
         url = super(DuckDuckGo, self).url_for(query)
         log.debug(url)
         return url
