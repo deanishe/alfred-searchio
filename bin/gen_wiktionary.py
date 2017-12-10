@@ -39,7 +39,7 @@ def html():
 
 def main():
     """Print Wiktionary engine JSON to STDOUT."""
-    data = mkdata('Wiktionary', 'Collaborative dictionary')
+    data = mkdata('Wiktionary', 'Collaborative dictionary', pcencode=True)
     soup = BS(html(), 'html.parser')
     # Use 'langlist-large' css class for wiktionaries with
     # 10K+ entries.

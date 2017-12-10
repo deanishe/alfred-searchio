@@ -30,6 +30,7 @@ Commands:
     reload       Update info.plist
     search       Perform a search
     variants     Display (filtered) list of engine variants
+    web          Import a new search from a URL
 """
 
 from __future__ import print_function, absolute_import
@@ -111,6 +112,10 @@ def cli(wf):
 
     elif cmd == 'variants':
         from searchio.cmd.variants import run
+        return run(wf, argv)
+
+    elif cmd == 'web':
+        from searchio.cmd.web import run
         return run(wf, argv)
 
     else:

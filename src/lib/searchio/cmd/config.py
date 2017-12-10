@@ -48,8 +48,9 @@ def run(wf, argv):
     """Run ``searchio list`` sub-command."""
     ctx = Context(wf)
     ICON_UPDATE_AVAILABLE = ctx.icon('update-available')
-    ICON_UPDATE_NONE = ctx.icon('update-none')
+    ICON_UPDATE_NONE = ctx.icon('update-check')
     ICON_HELP = ctx.icon('help')
+    ICON_IMPORT = ctx.icon('import')
     ICON_RELOAD = ctx.icon('reload')
 
     args = docopt(usage(wf), argv)
@@ -93,6 +94,14 @@ def run(wf, argv):
         arg=u'engines',
         valid=True,
         icon=u'icon.png',
+    ))
+
+    items.append(dict(
+        title=u'Import Search \U00002026',
+        subtitle=u'Add a search from a URL',
+        arg=u'import',
+        valid=True,
+        icon=ICON_IMPORT,
     ))
 
     items.append(dict(

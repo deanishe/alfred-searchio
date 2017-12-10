@@ -108,7 +108,7 @@ def main():
     """Print Wikipedia engine JSON to STDOUT."""
     data = mkdata(u'Wikia', u'Fandom sites', pcencode=True)
 
-    wikis = []
+    wikis = {}
     i = 0
     for url, cachepath in SOURCES:
         soup = BS(html(url, cachepath), 'html.parser')
@@ -116,7 +116,9 @@ def main():
             # log('wiki=%r', w)
             i += 1
             # log(u'[%03d] "%s" (%s)', i, w.name, w.subdomain)
-            wikis.append(w)
+            wikis[w.subdomain] = w
+
+    wikis = wikis.values()
 
     wikis.sort(key=lambda t: t.name)
     data['variants'] = [wiki2search(w) for w in wikis]

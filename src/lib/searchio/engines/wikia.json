@@ -46,20 +46,6 @@
       "uid": "aliens"
     }, 
     {
-      "name": "Alt History Wiki", 
-      "search_url": "http://althistory.wikia.com/wiki/{query}", 
-      "suggest_url": "http://althistory.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Alt History Wiki (Wikia)", 
-      "uid": "althistory"
-    }, 
-    {
-      "name": "Alternate History", 
-      "search_url": "http://althistory.wikia.com/wiki/{query}", 
-      "suggest_url": "http://althistory.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Alternate History (Wikia)", 
-      "uid": "althistory"
-    }, 
-    {
       "name": "Alternate History", 
       "search_url": "http://althistory.wikia.com/wiki/{query}", 
       "suggest_url": "http://althistory.wikia.com/api.php?action=opensearch&search={query}", 
@@ -165,13 +151,6 @@
       "uid": "avatar"
     }, 
     {
-      "name": "Avatar Wiki", 
-      "search_url": "http://avatar.wikia.com/wiki/{query}", 
-      "suggest_url": "http://avatar.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Avatar Wiki (Wikia)", 
-      "uid": "avatar"
-    }, 
-    {
       "name": "Babylon 5", 
       "search_url": "http://babylon5.wikia.com/wiki/{query}", 
       "suggest_url": "http://babylon5.wikia.com/api.php?action=opensearch&search={query}", 
@@ -228,13 +207,6 @@
       "uid": "galactica"
     }, 
     {
-      "name": "Ben 10 Fan Fiction", 
-      "search_url": "http://ben10fanfiction.wikia.com/wiki/{query}", 
-      "suggest_url": "http://ben10fanfiction.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Ben 10 Fan Fiction (Wikia)", 
-      "uid": "ben10fanfiction"
-    }, 
-    {
       "name": "Ben 10 Fanfiction Wiki", 
       "search_url": "http://ben10fanfiction.wikia.com/wiki/{query}", 
       "suggest_url": "http://ben10fanfiction.wikia.com/api.php?action=opensearch&search={query}", 
@@ -277,20 +249,6 @@
       "uid": "borderlands"
     }, 
     {
-      "name": "Brickipedia (LEGO Wiki)", 
-      "search_url": "http://lego.wikia.com/wiki/{query}", 
-      "suggest_url": "http://lego.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Brickipedia (LEGO Wiki) (Wikia)", 
-      "uid": "lego"
-    }, 
-    {
-      "name": "Brickipedia (LEGO)", 
-      "search_url": "http://lego.wikia.com/wiki/{query}", 
-      "suggest_url": "http://lego.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Brickipedia (LEGO) (Wikia)", 
-      "uid": "lego"
-    }, 
-    {
       "name": "Browncoat Wiki", 
       "search_url": "http://browncoats.wikia.com/wiki/{query}", 
       "suggest_url": "http://browncoats.wikia.com/api.php?action=opensearch&search={query}", 
@@ -310,13 +268,6 @@
       "suggest_url": "http://caw.wikia.com/api.php?action=opensearch&search={query}", 
       "title": "CAW Wrestling Wiki (Wikia)", 
       "uid": "caw"
-    }, 
-    {
-      "name": "Call of Duty", 
-      "search_url": "http://callofduty.wikia.com/wiki/{query}", 
-      "suggest_url": "http://callofduty.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Call of Duty (Wikia)", 
-      "uid": "callofduty"
     }, 
     {
       "name": "Call of Duty Wiki", 
@@ -375,13 +326,6 @@
       "uid": "cityofheroes"
     }, 
     {
-      "name": "Civilization Games Wiki", 
-      "search_url": "http://civilization.wikia.com/wiki/{query}", 
-      "suggest_url": "http://civilization.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Civilization Games Wiki (Wikia)", 
-      "uid": "civilization"
-    }, 
-    {
       "name": "Civilization Wiki", 
       "search_url": "http://civilization.wikia.com/wiki/{query}", 
       "suggest_url": "http://civilization.wikia.com/api.php?action=opensearch&search={query}", 
@@ -401,13 +345,6 @@
       "suggest_url": "http://classiccars.wikia.com/api.php?action=opensearch&search={query}", 
       "title": "Classic Cars Wiki (Wikia)", 
       "uid": "classiccars"
-    }, 
-    {
-      "name": "Club Penguin Wiki", 
-      "search_url": "http://clubpenguin.wikia.com/wiki/{query}", 
-      "suggest_url": "http://clubpenguin.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Club Penguin Wiki (Wikia)", 
-      "uid": "clubpenguin"
     }, 
     {
       "name": "Club Penguin Wiki", 
@@ -459,25 +396,11 @@
       "uid": "coronationstreet"
     }, 
     {
-      "name": "Custom BIONICLE", 
-      "search_url": "http://custombionicle.wikia.com/wiki/{query}", 
-      "suggest_url": "http://custombionicle.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Custom BIONICLE (Wikia)", 
-      "uid": "custombionicle"
-    }, 
-    {
       "name": "Custom Bionicles", 
       "search_url": "http://custombionicle.wikia.com/wiki/{query}", 
       "suggest_url": "http://custombionicle.wikia.com/api.php?action=opensearch&search={query}", 
       "title": "Custom Bionicles (Wikia)", 
       "uid": "custombionicle"
-    }, 
-    {
-      "name": "Cyber Nations", 
-      "search_url": "http://cybernations.wikia.com/wiki/{query}", 
-      "suggest_url": "http://cybernations.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Cyber Nations (Wikia)", 
-      "uid": "cybernations"
     }, 
     {
       "name": "Cyber Nations Wiki", 
@@ -492,20 +415,6 @@
       "suggest_url": "http://dcau.wikia.com/api.php?action=opensearch&search={query}", 
       "title": "DC Animated Wiki (Wikia)", 
       "uid": "dcau"
-    }, 
-    {
-      "name": "DC Database", 
-      "search_url": "http://dc.wikia.com/wiki/{query}", 
-      "suggest_url": "http://dc.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "DC Database (Wikia)", 
-      "uid": "dc"
-    }, 
-    {
-      "name": "DC Database", 
-      "search_url": "http://dc.wikia.com/wiki/{query}", 
-      "suggest_url": "http://dc.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "DC Database (Wikia)", 
-      "uid": "dc"
     }, 
     {
       "name": "DC Database", 
@@ -571,39 +480,11 @@
       "uid": "digimon"
     }, 
     {
-      "name": "Digimon Wiki", 
-      "search_url": "http://digimon.wikia.com/wiki/{query}", 
-      "suggest_url": "http://digimon.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Digimon Wiki (Wikia)", 
-      "uid": "digimon"
-    }, 
-    {
-      "name": "Disney", 
-      "search_url": "http://disney.wikia.com/wiki/{query}", 
-      "suggest_url": "http://disney.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Disney (Wikia)", 
-      "uid": "disney"
-    }, 
-    {
       "name": "Disney Wiki", 
       "search_url": "http://disney.wikia.com/wiki/{query}", 
       "suggest_url": "http://disney.wikia.com/api.php?action=opensearch&search={query}", 
       "title": "Disney Wiki (Wikia)", 
       "uid": "disney"
-    }, 
-    {
-      "name": "Doctor Who Wiki", 
-      "search_url": "http://tardis.wikia.com/wiki/{query}", 
-      "suggest_url": "http://tardis.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Doctor Who Wiki (Wikia)", 
-      "uid": "tardis"
-    }, 
-    {
-      "name": "Doctor Who Wiki", 
-      "search_url": "http://tardis.wikia.com/wiki/{query}", 
-      "suggest_url": "http://tardis.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Doctor Who Wiki (Wikia)", 
-      "uid": "tardis"
     }, 
     {
       "name": "Doctor Who Wiki", 
@@ -627,25 +508,11 @@
       "uid": "dragaera"
     }, 
     {
-      "name": "Dragon Age", 
-      "search_url": "http://dragonage.wikia.com/wiki/{query}", 
-      "suggest_url": "http://dragonage.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Dragon Age (Wikia)", 
-      "uid": "dragonage"
-    }, 
-    {
       "name": "Dragon Age Wiki", 
       "search_url": "http://dragonage.wikia.com/wiki/{query}", 
       "suggest_url": "http://dragonage.wikia.com/api.php?action=opensearch&search={query}", 
       "title": "Dragon Age Wiki (Wikia)", 
       "uid": "dragonage"
-    }, 
-    {
-      "name": "Dragon Ball", 
-      "search_url": "http://dragonball.wikia.com/wiki/{query}", 
-      "suggest_url": "http://dragonball.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Dragon Ball (Wikia)", 
-      "uid": "dragonball"
     }, 
     {
       "name": "Dragon Ball Wiki", 
@@ -704,13 +571,6 @@
       "uid": "gaming"
     }, 
     {
-      "name": "Encyclopedia SpongeBobia", 
-      "search_url": "http://spongebob.wikia.com/wiki/{query}", 
-      "suggest_url": "http://spongebob.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Encyclopedia SpongeBobia (Wikia)", 
-      "uid": "spongebob"
-    }, 
-    {
       "name": "Equestripedia (MLP Comics and Books)", 
       "search_url": "http://mlp-comics-and-books.wikia.com/wiki/{query}", 
       "suggest_url": "http://mlp-comics-and-books.wikia.com/api.php?action=opensearch&search={query}", 
@@ -723,13 +583,6 @@
       "suggest_url": "http://eureka.wikia.com/api.php?action=opensearch&search={query}", 
       "title": "Eureka Wiki (Wikia)", 
       "uid": "eureka"
-    }, 
-    {
-      "name": "EverQuest II", 
-      "search_url": "http://eq2.wikia.com/wiki/{query}", 
-      "suggest_url": "http://eq2.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "EverQuest II (Wikia)", 
-      "uid": "eq2"
     }, 
     {
       "name": "EverQuest II", 
@@ -788,13 +641,6 @@
       "uid": "fallout"
     }, 
     {
-      "name": "Fallout Wiki", 
-      "search_url": "http://fallout.wikia.com/wiki/{query}", 
-      "suggest_url": "http://fallout.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Fallout Wiki (Wikia)", 
-      "uid": "fallout"
-    }, 
-    {
       "name": "Family Guy", 
       "search_url": "http://familyguy.wikia.com/wiki/{query}", 
       "suggest_url": "http://familyguy.wikia.com/api.php?action=opensearch&search={query}", 
@@ -807,20 +653,6 @@
       "suggest_url": "http://familypedia.wikia.com/api.php?action=opensearch&search={query}", 
       "title": "Familypedia (Wikia)", 
       "uid": "familypedia"
-    }, 
-    {
-      "name": "Familypedia (Genealogy Wiki)", 
-      "search_url": "http://familypedia.wikia.com/wiki/{query}", 
-      "suggest_url": "http://familypedia.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Familypedia (Genealogy Wiki) (Wikia)", 
-      "uid": "familypedia"
-    }, 
-    {
-      "name": "Fan Fiction Wiki", 
-      "search_url": "http://fanfiction.wikia.com/wiki/{query}", 
-      "suggest_url": "http://fanfiction.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Fan Fiction Wiki (Wikia)", 
-      "uid": "fanfiction"
     }, 
     {
       "name": "Fan Fiction Wiki", 
@@ -837,13 +669,6 @@
       "uid": "fanon"
     }, 
     {
-      "name": "Fantendo (Nintendo Fanon/Gaming Fanon)", 
-      "search_url": "http://fantendo.wikia.com/wiki/{query}", 
-      "suggest_url": "http://fantendo.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Fantendo (Nintendo Fanon/Gaming Fanon) (Wikia)", 
-      "uid": "fantendo"
-    }, 
-    {
       "name": "FarScape Wiki", 
       "search_url": "http://farscape.wikia.com/wiki/{query}", 
       "suggest_url": "http://farscape.wikia.com/api.php?action=opensearch&search={query}", 
@@ -858,13 +683,6 @@
       "uid": "farmville"
     }, 
     {
-      "name": "Fighting Fantasy", 
-      "search_url": "http://fightingfantasy.wikia.com/wiki/{query}", 
-      "suggest_url": "http://fightingfantasy.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Fighting Fantasy (Wikia)", 
-      "uid": "fightingfantasy"
-    }, 
-    {
       "name": "Fighting Fantasy Wiki", 
       "search_url": "http://fightingfantasy.wikia.com/wiki/{query}", 
       "suggest_url": "http://fightingfantasy.wikia.com/api.php?action=opensearch&search={query}", 
@@ -877,20 +695,6 @@
       "suggest_url": "http://finalfantasy.wikia.com/api.php?action=opensearch&search={query}", 
       "title": "Final Fantasy (Wikia)", 
       "uid": "finalfantasy"
-    }, 
-    {
-      "name": "Final Fantasy", 
-      "search_url": "http://finalfantasy.wikia.com/wiki/{query}", 
-      "suggest_url": "http://finalfantasy.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Final Fantasy (Wikia)", 
-      "uid": "finalfantasy"
-    }, 
-    {
-      "name": "Final Fantasy XI", 
-      "search_url": "http://ffxiclopedia.wikia.com/wiki/{query}", 
-      "suggest_url": "http://ffxiclopedia.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Final Fantasy XI (Wikia)", 
-      "uid": "ffxiclopedia"
     }, 
     {
       "name": "Final Fantasy XI", 
@@ -928,13 +732,6 @@
       "uid": "forgottenrealms"
     }, 
     {
-      "name": "Forgotten Realms", 
-      "search_url": "http://forgottenrealms.wikia.com/wiki/{query}", 
-      "suggest_url": "http://forgottenrealms.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Forgotten Realms (Wikia)", 
-      "uid": "forgottenrealms"
-    }, 
-    {
       "name": "Fossil Wiki", 
       "search_url": "http://fossil.wikia.com/wiki/{query}", 
       "suggest_url": "http://fossil.wikia.com/api.php?action=opensearch&search={query}", 
@@ -954,13 +751,6 @@
       "suggest_url": "http://futurama.wikia.com/api.php?action=opensearch&search={query}", 
       "title": "Futurama Wiki (Wikia)", 
       "uid": "futurama"
-    }, 
-    {
-      "name": "Future", 
-      "search_url": "http://future.wikia.com/wiki/{query}", 
-      "suggest_url": "http://future.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Future (Wikia)", 
-      "uid": "future"
     }, 
     {
       "name": "Future Wiki", 
@@ -1012,25 +802,11 @@
       "uid": "gta"
     }, 
     {
-      "name": "Grand Theft Wiki", 
-      "search_url": "http://gta.wikia.com/wiki/{query}", 
-      "suggest_url": "http://gta.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Grand Theft Wiki (Wikia)", 
-      "uid": "gta"
-    }, 
-    {
       "name": "GuildWiki", 
       "search_url": "http://guildwars.wikia.com/wiki/{query}", 
       "suggest_url": "http://guildwars.wikia.com/api.php?action=opensearch&search={query}", 
       "title": "GuildWiki (Wikia)", 
       "uid": "guildwars"
-    }, 
-    {
-      "name": "Gundam Wiki", 
-      "search_url": "http://gundam.wikia.com/wiki/{query}", 
-      "suggest_url": "http://gundam.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Gundam Wiki (Wikia)", 
-      "uid": "gundam"
     }, 
     {
       "name": "Half-Life", 
@@ -1047,34 +823,6 @@
       "uid": "halofanon"
     }, 
     {
-      "name": "Halo Fanon", 
-      "search_url": "http://halofanon.wikia.com/wiki/{query}", 
-      "suggest_url": "http://halofanon.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Halo Fanon (Wikia)", 
-      "uid": "halofanon"
-    }, 
-    {
-      "name": "Halo Fanon Wiki", 
-      "search_url": "http://halofanon.wikia.com/wiki/{query}", 
-      "suggest_url": "http://halofanon.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Halo Fanon Wiki (Wikia)", 
-      "uid": "halofanon"
-    }, 
-    {
-      "name": "Halo Nation", 
-      "search_url": "http://halo.wikia.com/wiki/{query}", 
-      "suggest_url": "http://halo.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Halo Nation (Wikia)", 
-      "uid": "halo"
-    }, 
-    {
-      "name": "Halo Nation", 
-      "search_url": "http://halo.wikia.com/wiki/{query}", 
-      "suggest_url": "http://halo.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Halo Nation (Wikia)", 
-      "uid": "halo"
-    }, 
-    {
       "name": "Halo Nation", 
       "search_url": "http://halo.wikia.com/wiki/{query}", 
       "suggest_url": "http://halo.wikia.com/api.php?action=opensearch&search={query}", 
@@ -1087,13 +835,6 @@
       "suggest_url": "http://harrypotterfanon.wikia.com/api.php?action=opensearch&search={query}", 
       "title": "Harry Potter Fanon Wiki (Wikia)", 
       "uid": "harrypotterfanon"
-    }, 
-    {
-      "name": "Harry Potter Wiki", 
-      "search_url": "http://harrypotter.wikia.com/wiki/{query}", 
-      "suggest_url": "http://harrypotter.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Harry Potter Wiki (Wikia)", 
-      "uid": "harrypotter"
     }, 
     {
       "name": "Harry Potter Wiki", 
@@ -1122,13 +863,6 @@
       "suggest_url": "http://headhuntershorrorhouse.wikia.com/api.php?action=opensearch&search={query}", 
       "title": "Headhunter's Horror House Wiki (Wikia)", 
       "uid": "headhuntershorrorhouse"
-    }, 
-    {
-      "name": "Heroes", 
-      "search_url": "http://hero.wikia.com/wiki/{query}", 
-      "suggest_url": "http://hero.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Heroes (Wikia)", 
-      "uid": "hero"
     }, 
     {
       "name": "Heroes", 
@@ -1222,13 +956,6 @@
       "uid": "inazuma-eleven"
     }, 
     {
-      "name": "International Business Wiki", 
-      "search_url": "http://community.wikia.com/wiki/{query}", 
-      "suggest_url": "http://community.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "International Business Wiki (Wikia)", 
-      "uid": "community"
-    }, 
-    {
       "name": "Inuyasha Wiki", 
       "search_url": "http://inuyasha.wikia.com/wiki/{query}", 
       "suggest_url": "http://inuyasha.wikia.com/api.php?action=opensearch&search={query}", 
@@ -1248,13 +975,6 @@
       "suggest_url": "http://peel.wikia.com/api.php?action=opensearch&search={query}", 
       "title": "John Peel Wiki (Wikia)", 
       "uid": "peel"
-    }, 
-    {
-      "name": "Jurassic Park Wiki", 
-      "search_url": "http://jurassicpark.wikia.com/wiki/{query}", 
-      "suggest_url": "http://jurassicpark.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Jurassic Park Wiki (Wikia)", 
-      "uid": "jurassicpark"
     }, 
     {
       "name": "Jurassic Park Wiki", 
@@ -1348,13 +1068,6 @@
       "uid": "logos"
     }, 
     {
-      "name": "Logopedia", 
-      "search_url": "http://logos.wikia.com/wiki/{query}", 
-      "suggest_url": "http://logos.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Logopedia (Wikia)", 
-      "uid": "logos"
-    }, 
-    {
       "name": "London Wiki", 
       "search_url": "http://london.wikia.com/wiki/{query}", 
       "suggest_url": "http://london.wikia.com/api.php?action=opensearch&search={query}", 
@@ -1367,27 +1080,6 @@
       "suggest_url": "http://lotr.wikia.com/api.php?action=opensearch&search={query}", 
       "title": "Lord of the Rings (Wikia)", 
       "uid": "lotr"
-    }, 
-    {
-      "name": "Lord of the Rings Wiki", 
-      "search_url": "http://lotr.wikia.com/wiki/{query}", 
-      "suggest_url": "http://lotr.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Lord of the Rings Wiki (Wikia)", 
-      "uid": "lotr"
-    }, 
-    {
-      "name": "Lostpedia", 
-      "search_url": "http://lostpedia.wikia.com/wiki/{query}", 
-      "suggest_url": "http://lostpedia.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Lostpedia (Wikia)", 
-      "uid": "lostpedia"
-    }, 
-    {
-      "name": "LyricWiki", 
-      "search_url": "http://lyrics.wikia.com/wiki/{query}", 
-      "suggest_url": "http://lyrics.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "LyricWiki (Wikia)", 
-      "uid": "lyrics"
     }, 
     {
       "name": "Lyrics", 
@@ -1429,20 +1121,6 @@
       "search_url": "http://marvel.wikia.com/wiki/{query}", 
       "suggest_url": "http://marvel.wikia.com/api.php?action=opensearch&search={query}", 
       "title": "Marvel Database (Wikia)", 
-      "uid": "marvel"
-    }, 
-    {
-      "name": "Marvel Database", 
-      "search_url": "http://marvel.wikia.com/wiki/{query}", 
-      "suggest_url": "http://marvel.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Marvel Database (Wikia)", 
-      "uid": "marvel"
-    }, 
-    {
-      "name": "Marvel Database Project", 
-      "search_url": "http://marvel.wikia.com/wiki/{query}", 
-      "suggest_url": "http://marvel.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Marvel Database Project (Wikia)", 
       "uid": "marvel"
     }, 
     {
@@ -1516,13 +1194,6 @@
       "uid": "muppet"
     }, 
     {
-      "name": "Muppet Wiki", 
-      "search_url": "http://muppet.wikia.com/wiki/{query}", 
-      "suggest_url": "http://muppet.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Muppet Wiki (Wikia)", 
-      "uid": "muppet"
-    }, 
-    {
       "name": "Music", 
       "search_url": "http://music.wikia.com/wiki/{query}", 
       "suggest_url": "http://music.wikia.com/api.php?action=opensearch&search={query}", 
@@ -1544,13 +1215,6 @@
       "uid": "mlp"
     }, 
     {
-      "name": "Naruto Fanon", 
-      "search_url": "http://narutofanon.wikia.com/wiki/{query}", 
-      "suggest_url": "http://narutofanon.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Naruto Fanon (Wikia)", 
-      "uid": "narutofanon"
-    }, 
-    {
       "name": "Naruto Fanon Wiki", 
       "search_url": "http://narutofanon.wikia.com/wiki/{query}", 
       "suggest_url": "http://narutofanon.wikia.com/api.php?action=opensearch&search={query}", 
@@ -1563,13 +1227,6 @@
       "suggest_url": "http://naruto.wikia.com/api.php?action=opensearch&search={query}", 
       "title": "Narutopedia (Wikia)", 
       "uid": "naruto"
-    }, 
-    {
-      "name": "Nintendo", 
-      "search_url": "http://nintendo.wikia.com/wiki/{query}", 
-      "suggest_url": "http://nintendo.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Nintendo (Wikia)", 
-      "uid": "nintendo"
     }, 
     {
       "name": "Nintendo", 
@@ -1607,13 +1264,6 @@
       "uid": "onepiece"
     }, 
     {
-      "name": "One Wiki to Rule Them All (everything Tolkien)", 
-      "search_url": "http://lotr.wikia.com/wiki/{query}", 
-      "suggest_url": "http://lotr.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "One Wiki to Rule Them All (everything Tolkien) (Wikia)", 
-      "uid": "lotr"
-    }, 
-    {
       "name": "Orson Scott Card", 
       "search_url": "http://enderverse.wikia.com/wiki/{query}", 
       "suggest_url": "http://enderverse.wikia.com/api.php?action=opensearch&search={query}", 
@@ -1628,24 +1278,10 @@
       "uid": "otherverse"
     }, 
     {
-      "name": "OtherVerse Wiki", 
-      "search_url": "http://otherverse.wikia.com/wiki/{query}", 
-      "suggest_url": "http://otherverse.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "OtherVerse Wiki (Wikia)", 
-      "uid": "otherverse"
-    }, 
-    {
       "name": "Particracy", 
       "search_url": "http://particracy.wikia.com/wiki/{query}", 
       "suggest_url": "http://particracy.wikia.com/api.php?action=opensearch&search={query}", 
       "title": "Particracy (Wikia)", 
-      "uid": "particracy"
-    }, 
-    {
-      "name": "Particracy Wiki", 
-      "search_url": "http://particracy.wikia.com/wiki/{query}", 
-      "suggest_url": "http://particracy.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Particracy Wiki (Wikia)", 
       "uid": "particracy"
     }, 
     {
@@ -1712,32 +1348,11 @@
       "uid": "pokemonfanon"
     }, 
     {
-      "name": "Pok\u00e9mon Fanon", 
-      "search_url": "http://pokemonfanon.wikia.com/wiki/{query}", 
-      "suggest_url": "http://pokemonfanon.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Pok\u00e9mon Fanon (Wikia)", 
-      "uid": "pokemonfanon"
-    }, 
-    {
       "name": "Pok\u00e9mon Wiki", 
       "search_url": "http://pokemon.wikia.com/wiki/{query}", 
       "suggest_url": "http://pokemon.wikia.com/api.php?action=opensearch&search={query}", 
       "title": "Pok\u00e9mon Wiki (Wikia)", 
       "uid": "pokemon"
-    }, 
-    {
-      "name": "Pok\u00e9mon Wiki", 
-      "search_url": "http://pokemon.wikia.com/wiki/{query}", 
-      "suggest_url": "http://pokemon.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Pok\u00e9mon Wiki (Wikia)", 
-      "uid": "pokemon"
-    }, 
-    {
-      "name": "Power Rangers (RangerWiki)", 
-      "search_url": "http://powerrangers.wikia.com/wiki/{query}", 
-      "suggest_url": "http://powerrangers.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Power Rangers (RangerWiki) (Wikia)", 
-      "uid": "powerrangers"
     }, 
     {
       "name": "Power Rangers Universe", 
@@ -1759,13 +1374,6 @@
       "suggest_url": "http://primeval.wikia.com/api.php?action=opensearch&search={query}", 
       "title": "Primeval Wiki (Wikia)", 
       "uid": "primeval"
-    }, 
-    {
-      "name": "Pro Wresting", 
-      "search_url": "http://prowrestling.wikia.com/wiki/{query}", 
-      "suggest_url": "http://prowrestling.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Pro Wresting (Wikia)", 
-      "uid": "prowrestling"
     }, 
     {
       "name": "Pro Wrestling Wiki", 
@@ -1803,13 +1411,6 @@
       "uid": "pad"
     }, 
     {
-      "name": "RangerWiki (Power Rangers and Super Sentai)", 
-      "search_url": "http://powerrangers.wikia.com/wiki/{query}", 
-      "suggest_url": "http://powerrangers.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "RangerWiki (Power Rangers and Super Sentai) (Wikia)", 
-      "uid": "powerrangers"
-    }, 
-    {
       "name": "Ranma 1/2 Fan Fiction Wiki", 
       "search_url": "http://jusenkyo.wikia.com/wiki/{query}", 
       "suggest_url": "http://jusenkyo.wikia.com/api.php?action=opensearch&search={query}", 
@@ -1836,13 +1437,6 @@
       "suggest_url": "http://religion.wikia.com/api.php?action=opensearch&search={query}", 
       "title": "Religion Wiki (Wikia)", 
       "uid": "religion"
-    }, 
-    {
-      "name": "Resident Evil", 
-      "search_url": "http://residentevil.wikia.com/wiki/{query}", 
-      "suggest_url": "http://residentevil.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Resident Evil (Wikia)", 
-      "uid": "residentevil"
     }, 
     {
       "name": "Resident Evil Wiki", 
@@ -1880,13 +1474,6 @@
       "uid": "runescape"
     }, 
     {
-      "name": "RuneScape Wiki", 
-      "search_url": "http://runescape.wikia.com/wiki/{query}", 
-      "suggest_url": "http://runescape.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "RuneScape Wiki (Wikia)", 
-      "uid": "runescape"
-    }, 
-    {
       "name": "SW Merchandise", 
       "search_url": "http://swmerchandise.wikia.com/wiki/{query}", 
       "suggest_url": "http://swmerchandise.wikia.com/api.php?action=opensearch&search={query}", 
@@ -1915,13 +1502,6 @@
       "uid": "scoobydoo"
     }, 
     {
-      "name": "Scooby-Doo", 
-      "search_url": "http://scoobydoo.wikia.com/wiki/{query}", 
-      "suggest_url": "http://scoobydoo.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Scooby-Doo (Wikia)", 
-      "uid": "scoobydoo"
-    }, 
-    {
       "name": "Scratchpad", 
       "search_url": "http://scratchpad.wikia.com/wiki/{query}", 
       "suggest_url": "http://scratchpad.wikia.com/api.php?action=opensearch&search={query}", 
@@ -1934,13 +1514,6 @@
       "suggest_url": "http://sigmastorm2.wikia.com/api.php?action=opensearch&search={query}", 
       "title": "Sigmastorm2 Wiki (Wikia)", 
       "uid": "sigmastorm2"
-    }, 
-    {
-      "name": "Simpsons Wiki", 
-      "search_url": "http://simpsons.wikia.com/wiki/{query}", 
-      "suggest_url": "http://simpsons.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Simpsons Wiki (Wikia)", 
-      "uid": "simpsons"
     }, 
     {
       "name": "Simpsons Wiki", 
@@ -1976,20 +1549,6 @@
       "suggest_url": "http://sonicfanon.wikia.com/api.php?action=opensearch&search={query}", 
       "title": "Sonic Fanon (Wikia)", 
       "uid": "sonicfanon"
-    }, 
-    {
-      "name": "Sonic Fanon", 
-      "search_url": "http://sonicfanon.wikia.com/wiki/{query}", 
-      "suggest_url": "http://sonicfanon.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Sonic Fanon (Wikia)", 
-      "uid": "sonicfanon"
-    }, 
-    {
-      "name": "Sonic News Network", 
-      "search_url": "http://sonic.wikia.com/wiki/{query}", 
-      "suggest_url": "http://sonic.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Sonic News Network (Wikia)", 
-      "uid": "sonic"
     }, 
     {
       "name": "Sonic News Network", 
@@ -2034,46 +1593,11 @@
       "uid": "spongebob"
     }, 
     {
-      "name": "Star Trek", 
-      "search_url": "http://memory-alpha.wikia.com/wiki/{query}", 
-      "suggest_url": "http://memory-alpha.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Star Trek (Wikia)", 
-      "uid": "memory-alpha"
-    }, 
-    {
-      "name": "Star Trek", 
-      "search_url": "http://memory-alpha.wikia.com/wiki/{query}", 
-      "suggest_url": "http://memory-alpha.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Star Trek (Wikia)", 
-      "uid": "memory-alpha"
-    }, 
-    {
-      "name": "Star Trek (Memory Alpha)", 
-      "search_url": "http://memory-alpha.wikia.com/wiki/{query}", 
-      "suggest_url": "http://memory-alpha.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Star Trek (Memory Alpha) (Wikia)", 
-      "uid": "memory-alpha"
-    }, 
-    {
       "name": "Star Trek Expanded", 
       "search_url": "http://stexpanded.wikia.com/wiki/{query}", 
       "suggest_url": "http://stexpanded.wikia.com/api.php?action=opensearch&search={query}", 
       "title": "Star Trek Expanded (Wikia)", 
       "uid": "stexpanded"
-    }, 
-    {
-      "name": "Star Trek Expanded Universe", 
-      "search_url": "http://stexpanded.wikia.com/wiki/{query}", 
-      "suggest_url": "http://stexpanded.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Star Trek Expanded Universe (Wikia)", 
-      "uid": "stexpanded"
-    }, 
-    {
-      "name": "Star Trek Non-Canon/Licensed (Memory Beta)", 
-      "search_url": "http://memory-beta.wikia.com/wiki/{query}", 
-      "suggest_url": "http://memory-beta.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Star Trek Non-Canon/Licensed (Memory Beta) (Wikia)", 
-      "uid": "memory-beta"
     }, 
     {
       "name": "Star Trek Non-canon", 
@@ -2094,20 +1618,6 @@
       "search_url": "http://starwars.wikia.com/wiki/{query}", 
       "suggest_url": "http://starwars.wikia.com/api.php?action=opensearch&search={query}", 
       "title": "Star Wars (Wikia)", 
-      "uid": "starwars"
-    }, 
-    {
-      "name": "Star Wars", 
-      "search_url": "http://starwars.wikia.com/wiki/{query}", 
-      "suggest_url": "http://starwars.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Star Wars (Wikia)", 
-      "uid": "starwars"
-    }, 
-    {
-      "name": "Star Wars (Wookieepedia)", 
-      "search_url": "http://starwars.wikia.com/wiki/{query}", 
-      "suggest_url": "http://starwars.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Star Wars (Wookieepedia) (Wikia)", 
       "uid": "starwars"
     }, 
     {
@@ -2139,20 +1649,6 @@
       "uid": "swfanon"
     }, 
     {
-      "name": "Star Wars Fanon", 
-      "search_url": "http://swfanon.wikia.com/wiki/{query}", 
-      "suggest_url": "http://swfanon.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Star Wars Fanon (Wikia)", 
-      "uid": "swfanon"
-    }, 
-    {
-      "name": "Star Wars Fanon", 
-      "search_url": "http://swfanon.wikia.com/wiki/{query}", 
-      "suggest_url": "http://swfanon.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Star Wars Fanon (Wikia)", 
-      "uid": "swfanon"
-    }, 
-    {
       "name": "Star Wars Galaxies", 
       "search_url": "http://swg.wikia.com/wiki/{query}", 
       "suggest_url": "http://swg.wikia.com/api.php?action=opensearch&search={query}", 
@@ -2171,20 +1667,6 @@
       "search_url": "http://stargate.wikia.com/wiki/{query}", 
       "suggest_url": "http://stargate.wikia.com/api.php?action=opensearch&search={query}", 
       "title": "Stargate Command (Wikia)", 
-      "uid": "stargate"
-    }, 
-    {
-      "name": "Stargate Wiki", 
-      "search_url": "http://stargate.wikia.com/wiki/{query}", 
-      "suggest_url": "http://stargate.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Stargate Wiki (Wikia)", 
-      "uid": "stargate"
-    }, 
-    {
-      "name": "Stargate Wiki", 
-      "search_url": "http://stargate.wikia.com/wiki/{query}", 
-      "suggest_url": "http://stargate.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Stargate Wiki (Wikia)", 
       "uid": "stargate"
     }, 
     {
@@ -2265,13 +1747,6 @@
       "uid": "bionic"
     }, 
     {
-      "name": "The Elder Scrolls Wiki", 
-      "search_url": "http://elderscrolls.wikia.com/wiki/{query}", 
-      "suggest_url": "http://elderscrolls.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "The Elder Scrolls Wiki (Wikia)", 
-      "uid": "elderscrolls"
-    }, 
-    {
       "name": "The Firefly and Serenity Database", 
       "search_url": "http://firefly.wikia.com/wiki/{query}", 
       "suggest_url": "http://firefly.wikia.com/api.php?action=opensearch&search={query}", 
@@ -2314,13 +1789,6 @@
       "uid": "sims"
     }, 
     {
-      "name": "The Sims Wiki", 
-      "search_url": "http://sims.wikia.com/wiki/{query}", 
-      "suggest_url": "http://sims.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "The Sims Wiki (Wikia)", 
-      "uid": "sims"
-    }, 
-    {
       "name": "The Soulcalibur Wiki", 
       "search_url": "http://soulcalibur.wikia.com/wiki/{query}", 
       "suggest_url": "http://soulcalibur.wikia.com/api.php?action=opensearch&search={query}", 
@@ -2335,32 +1803,11 @@
       "uid": "x-files"
     }, 
     {
-      "name": "The X-Files Wiki", 
-      "search_url": "http://x-files.wikia.com/wiki/{query}", 
-      "suggest_url": "http://x-files.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "The X-Files Wiki (Wikia)", 
-      "uid": "x-files"
-    }, 
-    {
       "name": "Thomas the Tank Engine", 
       "search_url": "http://ttte.wikia.com/wiki/{query}", 
       "suggest_url": "http://ttte.wikia.com/api.php?action=opensearch&search={query}", 
       "title": "Thomas the Tank Engine (Wikia)", 
       "uid": "ttte"
-    }, 
-    {
-      "name": "Thomas the Tank Engine Wikia", 
-      "search_url": "http://ttte.wikia.com/wiki/{query}", 
-      "suggest_url": "http://ttte.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Thomas the Tank Engine Wikia (Wikia)", 
-      "uid": "ttte"
-    }, 
-    {
-      "name": "TibiaWiki", 
-      "search_url": "http://tibia.wikia.com/wiki/{query}", 
-      "suggest_url": "http://tibia.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "TibiaWiki (Wikia)", 
-      "uid": "tibia"
     }, 
     {
       "name": "TibiaWiki", 
@@ -2405,24 +1852,10 @@
       "uid": "transformers"
     }, 
     {
-      "name": "Transformers Wiki", 
-      "search_url": "http://transformers.wikia.com/wiki/{query}", 
-      "suggest_url": "http://transformers.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Transformers Wiki (Wikia)", 
-      "uid": "transformers"
-    }, 
-    {
       "name": "Traveller", 
       "search_url": "http://traveller.wikia.com/wiki/{query}", 
       "suggest_url": "http://traveller.wikia.com/api.php?action=opensearch&search={query}", 
       "title": "Traveller (Wikia)", 
-      "uid": "traveller"
-    }, 
-    {
-      "name": "Traveller Wiki", 
-      "search_url": "http://traveller.wikia.com/wiki/{query}", 
-      "suggest_url": "http://traveller.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Traveller Wiki (Wikia)", 
       "uid": "traveller"
     }, 
     {
@@ -2454,13 +1887,6 @@
       "uid": "uncyclopedia"
     }, 
     {
-      "name": "Uncyclopedia", 
-      "search_url": "http://uncyclopedia.wikia.com/wiki/{query}", 
-      "suggest_url": "http://uncyclopedia.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Uncyclopedia (Wikia)", 
-      "uid": "uncyclopedia"
-    }, 
-    {
       "name": "Vampire Diaries Wiki", 
       "search_url": "http://vampirediaries.wikia.com/wiki/{query}", 
       "suggest_url": "http://vampirediaries.wikia.com/api.php?action=opensearch&search={query}", 
@@ -2468,25 +1894,11 @@
       "uid": "vampirediaries"
     }, 
     {
-      "name": "Villains", 
-      "search_url": "http://villains.wikia.com/wiki/{query}", 
-      "suggest_url": "http://villains.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Villains (Wikia)", 
-      "uid": "villains"
-    }, 
-    {
       "name": "Villains Wiki", 
       "search_url": "http://villains.wikia.com/wiki/{query}", 
       "suggest_url": "http://villains.wikia.com/api.php?action=opensearch&search={query}", 
       "title": "Villains Wiki (Wikia)", 
       "uid": "villains"
-    }, 
-    {
-      "name": "Vintage Sewing Patterns", 
-      "search_url": "http://vintagepatterns.wikia.com/wiki/{query}", 
-      "suggest_url": "http://vintagepatterns.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Vintage Sewing Patterns (Wikia)", 
-      "uid": "vintagepatterns"
     }, 
     {
       "name": "Vintage Sewing Patterns", 
@@ -2580,13 +1992,6 @@
       "uid": "wikiality"
     }, 
     {
-      "name": "Wikianswers", 
-      "search_url": "http://answers.wikia.com/wiki/{query}", 
-      "suggest_url": "http://answers.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Wikianswers (Wikia)", 
-      "uid": "answers"
-    }, 
-    {
       "name": "Wikianswers Addresses", 
       "search_url": "http://address.wikia.com/wiki/{query}", 
       "suggest_url": "http://address.wikia.com/api.php?action=opensearch&search={query}", 
@@ -2601,32 +2006,11 @@
       "uid": "anime"
     }, 
     {
-      "name": "Wikianswers Bleach", 
-      "search_url": "http://bleach.wikia.com/wiki/{query}", 
-      "suggest_url": "http://bleach.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Wikianswers Bleach (Wikia)", 
-      "uid": "bleach"
-    }, 
-    {
-      "name": "Wikianswers Club Penguin", 
-      "search_url": "http://clubpenguin.wikia.com/wiki/{query}", 
-      "suggest_url": "http://clubpenguin.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Wikianswers Club Penguin (Wikia)", 
-      "uid": "clubpenguin"
-    }, 
-    {
       "name": "Wikianswers Justin Bieber", 
       "search_url": "http://justinbieber.wikia.com/wiki/{query}", 
       "suggest_url": "http://justinbieber.wikia.com/api.php?action=opensearch&search={query}", 
       "title": "Wikianswers Justin Bieber (Wikia)", 
       "uid": "justinbieber"
-    }, 
-    {
-      "name": "Wikianswers LEGO", 
-      "search_url": "http://lego.wikia.com/wiki/{query}", 
-      "suggest_url": "http://lego.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Wikianswers LEGO (Wikia)", 
-      "uid": "lego"
     }, 
     {
       "name": "Wikianswers Lostpedia", 
@@ -2664,32 +2048,11 @@
       "uid": "heykidscomics"
     }, 
     {
-      "name": "World of Warcraft", 
-      "search_url": "http://wowwiki.wikia.com/wiki/{query}", 
-      "suggest_url": "http://wowwiki.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "World of Warcraft (Wikia)", 
-      "uid": "wowwiki"
-    }, 
-    {
       "name": "World of Warcraft Wiki", 
       "search_url": "http://wowwiki.wikia.com/wiki/{query}", 
       "suggest_url": "http://wowwiki.wikia.com/api.php?action=opensearch&search={query}", 
       "title": "World of Warcraft Wiki (Wikia)", 
       "uid": "wowwiki"
-    }, 
-    {
-      "name": "Yu-Gi-Oh Card Maker", 
-      "search_url": "http://ycm.wikia.com/wiki/{query}", 
-      "suggest_url": "http://ycm.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Yu-Gi-Oh Card Maker (Wikia)", 
-      "uid": "ycm"
-    }, 
-    {
-      "name": "Yu-Gi-Oh!", 
-      "search_url": "http://yugioh.wikia.com/wiki/{query}", 
-      "suggest_url": "http://yugioh.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "Yu-Gi-Oh! (Wikia)", 
-      "uid": "yugioh"
     }, 
     {
       "name": "Yu-Gi-Oh!", 
@@ -2704,13 +2067,6 @@
       "suggest_url": "http://ycm.wikia.com/api.php?action=opensearch&search={query}", 
       "title": "Yu-Gi-Oh! Card Maker (Wikia)", 
       "uid": "ycm"
-    }, 
-    {
-      "name": "eWrestling", 
-      "search_url": "http://ewrestling.wikia.com/wiki/{query}", 
-      "suggest_url": "http://ewrestling.wikia.com/api.php?action=opensearch&search={query}", 
-      "title": "eWrestling (Wikia)", 
-      "uid": "ewrestling"
     }, 
     {
       "name": "eWrestling", 

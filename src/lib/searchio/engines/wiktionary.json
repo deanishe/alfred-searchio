@@ -1,5 +1,6 @@
 {
   "description": "Collaborative dictionary", 
+  "pcencode": true, 
   "title": "Wiktionary", 
   "variants": [
     {
