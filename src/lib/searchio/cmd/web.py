@@ -24,11 +24,13 @@ Options:
 from __future__ import print_function, absolute_import
 
 import json
+import os
 import subprocess
 from urlparse import urlparse
 
 from docopt import docopt
-from workflow import ICON_WARNING
+from workflow import ICON_ERROR, ICON_WARNING
+from workflow.background import run_in_background, is_running
 
 from searchio.core import Context
 from searchio import util
@@ -152,57 +154,52 @@ def do_get_url(wf, args):
 
 def do_import_search(wf, url):
     """Parse URL for OpenSearch config."""
-    from workflow import web
-    from searchio import opensearch
-
     ctx = Context(wf)
-    ICON_ERROR = ctx.icon('error')
-    ICON_IMPORT = ctx.icon('import')
-    error = None
+    # ICON_IMPORT = ctx.icon('import')
+    ICONS_PROGRESS = [
+        ctx.icon('progress-1'),
+        ctx.icon('progress-2'),
+        ctx.icon('progress-3'),
+        ctx.icon('progress-4'),
+    ]
 
-    log.info('importing "%s" ...', url)
-    try:
-        search = opensearch.parse(url)
-    except opensearch.NoAutoSuggest:
-        error = 'Autosuggest is not supported'
-    except opensearch.Invalid:
-        error = "Couldn't parse OpenSearch definition"
-    except opensearch.NotFound:
-        error = "Site doesn't support OpenSearch"
+    data = wf.cached_data('import', None, max_age=0, session=True)
+    if data:
+        error = data['error']
+        search = data['search']
+        # Clear cache data
+        wf.cache_data('import', None, session=True)
+        wf.cache_data('import-status', None, session=True)
 
-    if error:
-        wf.add_item(error, icon=ICON_ERROR)
-        wf.send_feedback()
-        return
+        if error:
+            wf.add_item(error, icon=ICON_ERROR)
+            wf.send_feedback()
+            return
 
-    icon = wf.workflowfile('icons/icon.png')
-    item_icon = ICON_IMPORT
-    if search.icon_url:
-        log.info('fetching search icon ...')
-        p = wf.datafile('icons/{}.png'.format(search.uid))
-        try:
-            r = web.get(search.icon_url)
-            r.raise_for_status()
-        except Exception as err:
-            log.error('error fetching icon (%s): %r', search.icon_url, err)
-        else:
-            r.save_to_path(p)
-            icon = p
-            item_icon = p
+        it = wf.add_item(u'Add "{}"'.format(search['name']),
+                         u'↩ to add search',
+                         valid=True,
+                         icon=search['icon'])
 
-    it = wf.add_item(u'Add "{}"'.format(search.name),
-                     u'↩ to add search',
-                     valid=True,
-                     icon=item_icon)
+        for k, v in search.items():
+            it.setvar(k, v)
 
-    it.setvar('engine', 'OpenSearch')
-    it.setvar('uid', search.uid)
-    it.setvar('title', search.name)
-    it.setvar('name', search.name)
-    it.setvar('icon', icon)
-    # it.setvar('jsonpath', search.jsonpath)
-    it.setvar('search_url', search.search_url)
-    it.setvar('suggest_url', search.suggest_url)
+    else:
+        progress = int(os.getenv('progress') or '0')
+        i = progress % len(ICONS_PROGRESS)
+        picon = ICONS_PROGRESS[i]
+        log.debug('progress=%d, i=%d, picon=%s', progress, i, picon)
+        wf.setvar('progress', progress + 1)
+        if not is_running('import'):
+            run_in_background('import', ['./searchio', 'fetch', url])
+
+        status = wf.cached_data('import-status', None, max_age=0, session=True)
+        title = status or u'Fetching OpenSearch Configuration …'
+
+        wf.rerun = 0.2
+        wf.add_item(title,
+                    u'Results will be shown momentarily',
+                    icon=picon)
 
     wf.send_feedback()
 

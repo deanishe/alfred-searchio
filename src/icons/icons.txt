@@ -29,3 +29,8 @@ toggle-on         fontawesome   1B981B    check-circle-o
 
 error             elusive       D0141C    error-alt
 warning           fontawesome   FDAC27    warning
+
+progress-1        weathericons  AF49FE    time-12
+progress-2        weathericons  AF49FE    time-3
+progress-3        weathericons  AF49FE    time-6
+progress-4        weathericons  AF49FE    time-9

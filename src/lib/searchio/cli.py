@@ -90,6 +90,10 @@ def cli(wf):
         from searchio.cmd.config import run
         return run(wf, argv)
 
+    elif cmd == 'fetch':
+        from searchio.cmd.fetch import run
+        return run(wf, argv)
+
     elif cmd == 'help':
         from searchio.cmd.help import run
         return run(wf, argv)
