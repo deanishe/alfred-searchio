@@ -42,53 +42,6 @@ def usage(wf):
     return __doc__
 
 
-# def do_import_search(wf, url):
-#     """Parse URL for OpenSearch config."""
-#     from workflow import web
-#     from searchio import opensearch
-
-#     ctx = Context(wf)
-#     ICON_ERROR = ctx.icon('error')
-#     ICON_IMPORT = ctx.icon('import')
-#     error = None
-
-#     if error:
-#         wf.add_item(error, icon=ICON_ERROR)
-#         wf.send_feedback()
-#         return
-
-#     icon = wf.workflowfile('icons/icon.png')
-#     item_icon = ICON_IMPORT
-#     if search.icon_url:
-#         log.info('fetching search icon ...')
-#         p = wf.datafile('icons/{}.png'.format(search.uid))
-#         try:
-#             r = web.get(search.icon_url)
-#             r.raise_for_status()
-#         except Exception as err:
-#             log.error('error fetching icon (%s): %r', search.icon_url, err)
-#         else:
-#             r.save_to_path(p)
-#             icon = p
-#             item_icon = p
-
-#     it = wf.add_item(u'Add "{}"'.format(search.name),
-#                      u'↩ to add search',
-#                      valid=True,
-#                      icon=item_icon)
-
-#     it.setvar('engine', 'OpenSearch')
-#     it.setvar('uid', search.uid)
-#     it.setvar('title', search.name)
-#     it.setvar('name', search.name)
-#     it.setvar('icon', icon)
-#     # it.setvar('jsonpath', search.jsonpath)
-#     it.setvar('search_url', search.search_url)
-#     it.setvar('suggest_url', search.suggest_url)
-
-#     wf.send_feedback()
-
-
 def import_search(wf, url):
     """Fetch a search from URL."""
     log.info('[fetch] importing "%s" ...', url)
@@ -138,6 +91,9 @@ def run(wf, argv):
     args = docopt(usage(wf), argv)
     error = search = None
     url = args.get('<url>')
+    # Clear old cache data
+    wf.clear_session_cache()
+
     search, error = import_search(wf, url)
     data = dict(error=error, search=search)
     wf.cache_data('import', data, session=True)

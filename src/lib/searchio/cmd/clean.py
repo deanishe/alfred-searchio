@@ -45,6 +45,9 @@ def run(wf, argv):
 
     args = docopt(usage(wf), argv)
 
+    # Clear old session data
+    wf.clear_session_cache()
+
     # Clear entire cache
     if args.get('--all'):
         return wf.clear_cache()
