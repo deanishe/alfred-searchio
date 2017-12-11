@@ -1,0 +1,4 @@
+#!/bin/bash
+# Dummy hook (v2 has a real one)
+
+exit 0
