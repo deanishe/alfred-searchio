@@ -34,7 +34,7 @@ def langs():
             yield Lang(*[s.decode('utf-8') for s in line])
 
 
-def google_search(search_url, suggest_url, title, description):
+def google_search(search_url, suggest_url, title, description, jsonpath=None):
     """Generate an engine definition for a Google search.
 
     Args:
@@ -42,9 +42,15 @@ def google_search(search_url, suggest_url, title, description):
         suggest_url (str): Suggest URL template
         title (unicode): Engine title
         description (unicode): Engine description
+        jsonpath (unicode, optional): JSONPath for results
 
     """
-    data = mkdata(title, description)
+    kwargs = {}
+    if jsonpath:
+        kwargs['jsonpath'] = jsonpath
+
+    data = mkdata(title, description, **kwargs)
+
     for l in langs():
         s = mkvariant(l.id.lower(), l.name,
                       u'{} ({})'.format(title, l.name),

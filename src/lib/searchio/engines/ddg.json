@@ -1,6 +1,6 @@
 {
   "description": "Alternative search engine", 
-  "jsonpath": "[*].phrase", 
+  "jsonpath": "$[*].phrase", 
   "title": "Duck Duck Go", 
   "variants": [
     {

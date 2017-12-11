@@ -2,6 +2,9 @@
 /.autoenv.zsh
 /.autoenv_leave.zsh
 
+# Build binary
+/src/search
+
 # Ignore private info files
 /src/info.dist.plist
 /src/info.bak.plist

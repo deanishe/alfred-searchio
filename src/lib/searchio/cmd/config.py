@@ -81,8 +81,8 @@ def run(wf, argv):
     # ))
 
     items.append(dict(
-        title=u'User Engines \U00002026',
-        subtitle=u'Your own engines',
+        title=u'Installed Searches \U00002026',
+        subtitle=u'Your configured searches',
         arg=u'user',
         valid=True,
         icon=u'icon.png',
@@ -90,7 +90,7 @@ def run(wf, argv):
 
     items.append(dict(
         title=u'All Engines \U00002026',
-        subtitle=u'Browse supported engines',
+        subtitle=u'View supported engines and add new searches',
         arg=u'engines',
         valid=True,
         icon=u'icon.png',
@@ -105,16 +105,6 @@ def run(wf, argv):
     ))
 
     items.append(dict(
-        title=u'Online Help',
-        subtitle=u'Open the help page in your browser',
-        arg=u'help',
-        valid=True,
-        # autocomplete=u'workflow:help',
-        # valid=False,
-        icon=ICON_HELP,
-    ))
-
-    items.append(dict(
         title=u'Reload',
         subtitle=u'Re-create your searches',
         arg=u'reload',
@@ -122,6 +112,16 @@ def run(wf, argv):
         # autocomplete=u'workflow:help',
         # valid=False,
         icon=ICON_RELOAD,
+    ))
+
+    items.append(dict(
+        title=u'Online Help',
+        subtitle=u'Open the help page in your browser',
+        arg=u'help',
+        valid=True,
+        # autocomplete=u'workflow:help',
+        # valid=False,
+        icon=ICON_HELP,
     ))
 
     if not wf.update_available:

@@ -107,8 +107,8 @@ class Engine(object):
 
     Attributes:
         description (unicode): Search engine details, e.g. "Image search"
-        jsonpath (unicode): JSON path to results. The default '[1]' is
-            appropriate for OpenSearch results.
+        jsonpath (unicode): JSON path to results. The default ``$[1][*]``
+            is appropriate for OpenSearch results.
         title (unicode): Name of search engine.
         uid (str): UID of engine (usu. based on filename).
 
@@ -162,7 +162,7 @@ class Engine(object):
         self.uid = uid
         self.title = u''
         self.description = u''
-        self.jsonpath = u'[1]'
+        self.jsonpath = u'$[1][*]'
         self.pcencode = False
         self._variants = []
 

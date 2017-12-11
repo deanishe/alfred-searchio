@@ -39,7 +39,7 @@ def variants():
 def main():
     """Print DDG engine JSON to STDOUT."""
     data = mkdata(u'Duck Duck Go', u'Alternative search engine',
-                  jsonpath='[*].phrase',)
+                  jsonpath='$[*].phrase',)
 
     for v in variants():
         s = mkvariant(v.id.lower(), v.name,

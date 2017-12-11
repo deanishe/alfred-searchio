@@ -24,6 +24,7 @@ Options:
 
 from __future__ import print_function, absolute_import
 
+import json
 import os
 from plistlib import readPlist, readPlistFromString, writePlist
 
@@ -59,7 +60,7 @@ SCRIPT_FILTER = """
         <key>queuedelayimmediatelyinitially</key>
         <false/>
         <key>queuedelaymode</key>
-        <integer>1</integer>
+        <integer>0</integer>
         <key>queuemode</key>
         <integer>1</integer>
         <key>runningsubtext</key>
@@ -93,7 +94,7 @@ DEFAULTS = [
     {
         'title': 'Google (English)',
         'icon': 'icons/engines/google.png',
-        'jsonpath': '[1]',
+        'jsonpath': '$[1][*]',
         'keyword': 'g',
         'search_url': 'https://www.google.com/search?q={query}&hl=en&safe=off',
         'suggest_url': 'https://suggestqueries.google.com/complete/search?client=firefox&q={query}&hl=en',
@@ -102,7 +103,7 @@ DEFAULTS = [
     {
         'title': 'Google (Deutsch)',
         'icon': 'icons/engines/google.png',
-        'jsonpath': '[1]',
+        'jsonpath': '$[1][*]',
         'keyword': 'gd',
         'search_url': 'https://www.google.com/search?q={query}&hl=de&safe=off',
         'suggest_url': 'https://suggestqueries.google.com/complete/search?client=firefox&q={query}&hl=de',
@@ -111,7 +112,7 @@ DEFAULTS = [
     {
         'title': 'Wikipedia (English)',
         'icon': 'icons/engines/wikipedia.png',
-        'jsonpath': '[1]',
+        'jsonpath': '$[1][*]',
         'keyword': 'w',
         'search_url': 'https://en.wikipedia.org/wiki/{query}',
         'suggest_url': 'https://en.wikipedia.org/w/api.php?action=opensearch&search={query}',
@@ -120,7 +121,7 @@ DEFAULTS = [
     {
         'title': 'Wikipedia (Deutsch)',
         'icon': 'icons/engines/wikipedia.png',
-        'jsonpath': '[1]',
+        'jsonpath': '$[1][*]',
         'keyword': 'wd',
         'search_url': 'https://de.wikipedia.org/wiki/{query}',
         'suggest_url': 'https://de.wikipedia.org/w/api.php?action=opensearch&search={query}',
@@ -129,7 +130,7 @@ DEFAULTS = [
     {
         'title': 'YouTube (United States)',
         'icon': 'icons/engines/youtube.png',
-        'jsonpath': '[1]',
+        'jsonpath': '$[1][*]',
         'keyword': 'yt',
         'search_url': 'https://www.youtube.com/results?gl=us&persist_gl=1&search_query={query}',
         'suggest_url': 'https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=us&q={query}',
@@ -138,7 +139,7 @@ DEFAULTS = [
     {
         'title': 'YouTube (Germany)',
         'icon': 'icons/engines/youtube.png',
-        'jsonpath': '[1]',
+        'jsonpath': '$[1][*]',
         'keyword': 'ytd',
         'search_url': 'https://www.youtube.com/results?gl=de&persist_gl=1&search_query={query}',
         'suggest_url': 'https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=de&q={query}',
@@ -182,9 +183,20 @@ def remove_script_filters(wf, data):
 def add_script_filters(wf, data, searches=None):
     """Add user searches to info.plist data."""
     ctx = Context(wf)
-    if not searches:
-        f = util.FileFinder([ctx.searches_dir], ['json'])
-        searches = [Search.from_file(p) for p in f]
+    only = set()
+
+    if searches:  # add them to the user's searches dir
+        for s in searches:
+            path = os.path.join(ctx.searches_dir, s.uid + '.json')
+            with open(path, 'wb') as fp:
+                json.dump(s.dict, fp)
+            only.add(s.uid)
+            log.info('Saved search "%s"', s.title)
+
+    f = util.FileFinder([ctx.searches_dir], ['json'])
+    searches = [Search.from_file(p) for p in f]
+    if only:
+        searches = [s for s in searches if s.uid in only]
 
     ypos = 220
     for s in searches:
@@ -195,7 +207,8 @@ def add_script_filters(wf, data, searches=None):
         d = readPlistFromString(SCRIPT_FILTER)
         d['uid'] = s.uid
         d['config']['title'] = s.title
-        d['config']['script'] = './searchio search {} "$1"'.format(s.uid)
+        # d['config']['script'] = './searchio search {} "$1"'.format(s.uid)
+        d['config']['script'] = './search {} "$1"'.format(s.uid)
         d['config']['keyword'] = s.keyword
         data['objects'].append(d)
         data['connections'][s.uid] = [{

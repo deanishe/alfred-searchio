@@ -23,7 +23,7 @@ back              fontawesome   D0141C    arrow-circle-left
 clipboard         open-iconic   4A90E2    clipboard
 help              fontawesome   4A90E2    question-circle
 import            elusive       AF49FE    download
-reload            fontawesome   AF49FE    refresh
+reload            fontawesome   FDAC27    refresh
 toggle-off        fontawesome   D0141C    circle-o
 toggle-on         fontawesome   1B981B    check-circle-o
 

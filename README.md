@@ -1,167 +1,98 @@
-# Searchio! workflow for Alfred #
+Searchio! workflow for Alfred
+=============================
 
 Auto-suggest search results from multiple search engines and languages.
 
 ![Searchio! Demo][demo]
 
 
+Contents
+--------
+
+<!-- MarkdownTOC autolink="true" bracket="round" depth="3" autoanchor="true" -->
+
+- [Download and installation](#download-and-installation)
+- [Usage](#usage)
+    - [Configuration](#configuration)
+    - [Importing Searches](#importing-searches)
+- [Adding Engines](#adding-engines)
+- [Licensing, thanks](#licensing-thanks)
+
+<!-- /MarkdownTOC -->
+
 Supports the following search engines/websites:
 
+- Amazon
+- Bing
+- DuckDuckGo
+- eBay
 - Google
 - Google Images
-- Google Maps
-- YouTube
+- Google Maps (requires a Google Places API key)
+- Naver
+- Wikia (only the top ~200 wikis, but you can [import](#importing-searches) any others)
 - Wikipedia
 - Wiktionary
-- Amazon
-- eBay
-- DuckDuckGo
-- Bing
-- Yahoo!
-- Ask.com
-- Yandex.ru
-- Naver.com
-- Wikia.com
+- Yandex
+- YouTube
+- **plus** it can [import a search configuration](#importing-searches) from *any* website that supports OpenSearch autosuggestions
 
-## Download and installation ##
 
-Download the latest version from the [GitHub releases page](https://github.com/deanishe/alfred-searchio/releases/latest) or [Packal](http://www.packal.org/workflow/searchio).
+<a name="download-and-installation"></a>
+Download and installation
+-------------------------
 
-## Usage ##
+Download the latest version from the [GitHub releases page](https://github.com/deanishe/alfred-searchio/releases/latest).
 
-There are several searches pre-configured. Only some have keywords (i.e. can be used as-is):
 
-- `g` — Search Google in system (i.e. default) language
-- `m` — Search Google Maps in system (i.e. default) language
-- `gi` — Search Google Images in system (i.e. default) language
-- `w` — Search Wikipedia in system (i.e. default) language
-- `wn` — Search Wiktionary in system (i.e. default) language
-- `a` — Search Amazon in system (i.e. default) language. If your system language is English, this will search  Amazon.com. Use `-l uk` in the Script Filter to search Amazon.co.uk or `-l ca` to search Amazon.ca.
-- `yt` — Search YouTube in system (i.e. default) language
-- `searchio [<query>]` — Show settings and list of supported search engines. Currently, the only setting is a toggle to also show the `<query>` in the results list (default: `No`).
-- `searchiohelp` — Open help (this README) in your browser
+<a name="usage"></a>
+Usage
+-----
 
-Most of the other available search engines also have an example Script Filter configured, but without a keyword. Add a keyword if you wish to use one of the examples.
+There are several example searches pre-configured:
 
-Several of the Script Filters demonstrate the use of the `--lang` (or `-l`) option to the `search.py` script to search in a different language/region. See [the Languages section](#languages) for more information.
+- `g` — Search Google in English
+- `gd` — Search Google in German
+- `w` — Search the English Wikipedia
+- `wd` — Search the German Wikipedia
+- `yt` — Search the United States version of YouTube
+- `ytd` — Search the German version of YouTube
 
-To add a new search, either copy/paste an existing Script Filter, or create a new one as follows:
 
-![][screen1]
+<a name="configuration"></a>
+### Configuration ###
 
-**Note:** Be sure to select the same escaping options as in the screenshot (Backquotes, Double Quotes, Backslashes, Dollars).
+There is a single variable in the workflow configuration screen (open the workflow in Alfred Preferences and hit the `[𝒙]` button): `GOOGLE_PLACES_API_KEY`. You must set this to use Google Maps search. You can get an API key [here](https://developers.google.com/places/web-service/get-api-key).
 
-By default, your system language will be used. To specify a custom language:
+- `searchio [<query>]` — Show workflow settings
+    - `Update Available …` — Shown if there is a new version of the workflow available to download. Action the item to install it.
+    - `Installed Searches …` — View and delete your configured searches
+    - `All Engines …` — View supported engines and add new searches
+    - `Import Search …` — Import a new search configuration from a URL (see [Importing Searches](#importing-searches))
+    - `Reload` — Regenerate the workflow's Script Filters from your configured searches (and clean the cache). Run this if you screw up the Script Filters or an update overwrites them.
+    - `Online Help` — Open this page in your browser.
+    - `Workflow up to Date` — You have the latest version of the workflow. Action this item to force a check for a new version.
 
-![][screen2]
 
-**Note:** Be sure to connect the Script Filter to the Open URL action or it won't work.
+<a name="importing-searches"></a>
+### Importing Searches ###
 
-## Icons ##
+Searchio! has the ability to import a search configuration from any website that supports the OpenSearch autosuggestion API.
 
-Icons for each search engine can be found in the `icons` subirectory of the Workflow.
+Run `searchio` > `Import Search …` and the workflow will offer to import a search from a URL on your clipboard, the frontmost Safari tab or the frontmost Chrome tab.
 
-## Languages ##
+It will try to find and read the OpenSearch description at the URL and import it (and the website's icon if available), then ask you to assign a keyword for the search.
 
-The `-l` or `--lang` argument to `search.py` doesn't follow any hard-and-fast rules: it depends on the search engine you're using. With some search engines (Google, Wikipedia, Wiktionary, Bing, DuckDuckGo), it's a language, e.g. `uk` = Ukrainian. In others (Yahoo!, Amazon, Ask), it's treated as a region, e.g. `uk` = United Kingdom.
+**NOTE**: Although many websites support OpenSearch, few support the autosuggestion API that Searchio! uses. Sites based on MediaWiki usually support the API, so you can add all your favourite Wikia wikis (the built-in Wikia engine only supports the few hundred most popular wikis).
 
-Some search engines (Bing, DuckDuckGo, eBay) do not provide language-specific suggestions, but actioning the result will open a list of language-specific results in your browser.
 
-## Search engines ##
+<a name="adding-engines"></a>
+Adding Engines
+--------------
 
-The following search engines are supported. Pass the `ID` to the `-e`/`--engine` argument of `search.py` to search using that engine. If `--engine` is not specified, Google will be used.
+TODO
 
-|       ID      |      Name     |
-|---------------|---------------|
-| amazon        | Amazon        |
-| ask           | Ask           |
-| bing          | Bing          |
-| ddg           | DuckDuckGo    |
-| ebay          | eBay          |
-| google        | Google        |
-| google-images | Google Images |
-| google-maps   | Google Maps   |
-| naver         | Naver.com     |
-| wikia         | Wikia         |
-| wikipedia     | Wikipedia     |
-| wiktionary    | Wiktionary    |
-| yahoo         | Yahoo!        |
-| yandex        | Yandex.ru     |
-| youtube       | YouTube       |
-
-### Wikipedia, Wiktionary ###
-
-The `--lang` argument will be treated as a subdomain, e.g. `de` will retrieve results from `de.wikipedia.org`.
-
-### Google ###
-
-The `--lang` argument should work for [any language supported by Google](https://www.google.com/preferences#languages), with the obvious exceptions of things like Klingon and Hacker…
-
-### Bing, DuckDuckGo, eBay ###
-
-Bing, eBay and DuckDuckGo do not provide language-specific suggestions, but the results opened in your browser should be restricted to the specified language/region.
-
-### Ask, Amazon, Yahoo! ###
-
-Ask.com, Amazon and Yahoo! do not provide language-specific search suggestions/results, but rather region-specific ones. In many cases, this won't make a difference (e.g. `--lang de` and `--lang fr` will provide German and French results respectively), however the behaviour is different in some cases, e.g. `uk` means "United Kingdom", not "Ukrainian".
-
-### Wikia.com ###
-
-Wikia.com is a special case. Instead of languages or regions, the `--lang` option is used to set a specific wiki, e.g. `--lang gameofthrones` will search `gameofthrones.wikia.com`.
-
-You *must* specify a `--lang` option for Wikia searches.
-
-## Examples ##
-
-Use these in the `Script` field of a Script Filter.
-
-```bash
-# Google (default engine) in your system (default) language
-/usr/bin/python search.py "{query}"
-
-# Google in German
-/usr/bin/python search.py -l de "{query}"
-
-# Google in French
-/usr/bin/python search.py -l fr "{query}"
-
-# YouTube in Brazilian Portuguese
-/usr/bin/python search.py -e youtube -l pt-BR "{query}"
-
-# Amazon.co.uk
-/usr/bin/python search.py -e amazon -l uk "{query}"
-
-# Amazon.ca
-/usr/bin/python search.py -e amazon -l ca "{query}"
-
-# DuckDuckGo in system (default) language
-/usr/bin/python search.py -e ddg "{query}"
-
-# DuckDuckGo in Spanish
-/usr/bin/python search.py -e ddg -l es "{query}"
-
-# Yahoo! UK
-/usr/bin/python search.py -e yahoo -l uk "{query}"
-
-# Yahoo! Australia
-/usr/bin/python search.py -e yahoo -l au "{query}"
-
-# Wikipedia in Simple English
-/usr/bin/python search.py -e wikipedia -l simple "{query}"
-
-# Wikipedia in Polish
-/usr/bin/python search.py -e wikipedia -l pl "{query}"
-
-# Wiktionary in Spanish
-/usr/bin/python search.py -e wiktionary -l es "{query}"
-
-# Game of Thrones wiki at Wikia.com
-/usr/bin/python search.py -e wikia -l gameofthrones "{query}"
-
-# Borderlands wiki at Wikia.com
-/usr/bin/python search.py -e wikia -l borderlands "{query}"
-```
-
+<a name="licensing-thanks"></a>
 ## Licensing, thanks ##
 
 The code in this workflow is released under the [MIT Licence](http://opensource.org/licenses/MIT).
@@ -172,5 +103,3 @@ This workflow uses the [Alfred-Workflow](http://www.deanishe.net/alfred-workflow
 
 
 [demo]: ./docs/demo.gif
-[screen1]: http://www.deanishe.net/alfred-searchio/screen1.png
-[screen2]: http://www.deanishe.net/alfred-searchio/screen2.png

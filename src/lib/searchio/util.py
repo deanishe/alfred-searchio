@@ -276,8 +276,10 @@ def mkurl(url, query=None, pcencode=False):
     if not query:
         return url
 
-    url = _bstr(url)
     query = _bstr(query)
+    url = _bstr(url)
+    # Replace ${...} patterns needed by Go
+    url = re.sub(r'\$(\{.+?\})', r'\1', url)
 
     d = dict(query=quote(query))
     for k, v in os.environ.items():
