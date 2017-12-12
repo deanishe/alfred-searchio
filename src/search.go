@@ -186,9 +186,12 @@ func doSearch(s *Search, q string) error {
 
 	// Send results to Alfred
 	for _, word := range words {
+		URL := s.SearchURLForQuery(word)
 		wf.NewItem(word).
 			Subtitle(s.Title).
-			Arg(s.SearchURLForQuery(word)).
+			Autocomplete(word + " ").
+			Arg(URL).
+			UID(URL).
 			Icon(&aw.Icon{Value: s.Icon}).
 			Valid(true)
 	}
@@ -215,6 +218,7 @@ func run() {
 	}
 }
 
+// Run via Workflow.Run to catch panics.
 func main() {
 	wf.Run(run)
 }
