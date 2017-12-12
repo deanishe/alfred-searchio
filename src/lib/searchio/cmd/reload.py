@@ -35,6 +35,12 @@ from searchio import util
 
 log = util.logger(__name__)
 
+# X position of all generated Script Filters
+XPOS = 270
+# Y position of first Script Filter
+YPOS = 220
+# Vertical space between (top of) each Script Filter
+YOFFSET = 170
 
 # UID of action to connect Script Filters to
 OPEN_URL_UID = '1133DEAA-5A8F-4E7D-9E9C-A76CB82D9F92'
@@ -198,7 +204,7 @@ def add_script_filters(wf, data, searches=None):
     if only:
         searches = [s for s in searches if s.uid in only]
 
-    ypos = 220
+    ypos = YPOS
     for s in searches:
         if not s.keyword:
             log.error('No keyword for search "%s" (%s)', s.title, s.uid)
@@ -219,10 +225,10 @@ def add_script_filters(wf, data, searches=None):
         }]
         data['uidata'][s.uid] = {
             'note': s.title,
-            'xpos': 60,
+            'xpos': XPOS,
             'ypos': ypos,
         }
-        ypos += 170
+        ypos += YOFFSET
         log.info('Added Script Filter "%s" (%s)', s.title, s.uid)
 
     link_icons(wf, searches)

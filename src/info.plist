@@ -2296,7 +2296,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>950</integer>
+			<integer>970</integer>
 			<key>ypos</key>
 			<integer>360</integer>
 		</dict>
@@ -2307,7 +2307,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>note</key>
 			<string>action = delete</string>
 			<key>xpos</key>
-			<integer>1720</integer>
+			<integer>1740</integer>
 			<key>ypos</key>
 			<integer>560</integer>
 		</dict>
@@ -2318,7 +2318,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>note</key>
 			<string>Run "searchio clean" and "searchio reload"</string>
 			<key>xpos</key>
-			<integer>1310</integer>
+			<integer>1330</integer>
 			<key>ypos</key>
 			<integer>530</integer>
 		</dict>
@@ -2329,7 +2329,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>note</key>
 			<string>Open search results in browser</string>
 			<key>xpos</key>
-			<integer>680</integer>
+			<integer>700</integer>
 			<key>ypos</key>
 			<integer>1000</integer>
 		</dict>
@@ -2340,7 +2340,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>note</key>
 			<string>action = back</string>
 			<key>xpos</key>
-			<integer>1550</integer>
+			<integer>1570</integer>
 			<key>ypos</key>
 			<integer>240</integer>
 		</dict>
@@ -2349,7 +2349,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<integer>1870</integer>
+			<integer>1890</integer>
 			<key>ypos</key>
 			<integer>360</integer>
 		</dict>
@@ -2358,7 +2358,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>2400</integer>
+			<integer>2420</integer>
 			<key>ypos</key>
 			<integer>50</integer>
 		</dict>
@@ -2369,7 +2369,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>note</key>
 			<string>$keyword != ""</string>
 			<key>xpos</key>
-			<integer>1550</integer>
+			<integer>1570</integer>
 			<key>ypos</key>
 			<integer>1180</integer>
 		</dict>
@@ -2380,7 +2380,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>note</key>
 			<string>Save search</string>
 			<key>xpos</key>
-			<integer>1830</integer>
+			<integer>1850</integer>
 			<key>ypos</key>
 			<integer>1000</integer>
 		</dict>
@@ -2391,7 +2391,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>note</key>
 			<string>Add a new search</string>
 			<key>xpos</key>
-			<integer>1130</integer>
+			<integer>1150</integer>
 			<key>ypos</key>
 			<integer>1000</integer>
 		</dict>
@@ -2402,7 +2402,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>note</key>
 			<string>Update info.plist and caches</string>
 			<key>xpos</key>
-			<integer>1130</integer>
+			<integer>1150</integer>
 			<key>ypos</key>
 			<integer>530</integer>
 		</dict>
@@ -2413,7 +2413,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>note</key>
 			<string>View configuration</string>
 			<key>xpos</key>
-			<integer>250</integer>
+			<integer>270</integer>
 			<key>ypos</key>
 			<integer>50</integer>
 		</dict>
@@ -2424,7 +2424,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>note</key>
 			<string>action = user</string>
 			<key>xpos</key>
-			<integer>720</integer>
+			<integer>740</integer>
 			<key>ypos</key>
 			<integer>390</integer>
 		</dict>
@@ -2433,7 +2433,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>colorindex</key>
 			<integer>9</integer>
 			<key>xpos</key>
-			<integer>1510</integer>
+			<integer>1530</integer>
 			<key>ypos</key>
 			<integer>830</integer>
 		</dict>
@@ -2442,7 +2442,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>950</integer>
+			<integer>970</integer>
 			<key>ypos</key>
 			<integer>830</integer>
 		</dict>
@@ -2451,7 +2451,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>colorindex</key>
 			<integer>9</integer>
 			<key>xpos</key>
-			<integer>2400</integer>
+			<integer>2420</integer>
 			<key>ypos</key>
 			<integer>200</integer>
 		</dict>
@@ -2462,7 +2462,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>note</key>
 			<string>Reload</string>
 			<key>xpos</key>
-			<integer>2160</integer>
+			<integer>2180</integer>
 			<key>ypos</key>
 			<integer>1130</integer>
 		</dict>
@@ -2473,7 +2473,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>note</key>
 			<string>Set $trigger to "config"</string>
 			<key>xpos</key>
-			<integer>850</integer>
+			<integer>870</integer>
 			<key>ypos</key>
 			<integer>560</integer>
 		</dict>
@@ -2484,7 +2484,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>note</key>
 			<string>action = back</string>
 			<key>xpos</key>
-			<integer>2270</integer>
+			<integer>2290</integer>
 			<key>ypos</key>
 			<integer>80</integer>
 		</dict>
@@ -2493,7 +2493,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>colorindex</key>
 			<integer>9</integer>
 			<key>xpos</key>
-			<integer>2160</integer>
+			<integer>2180</integer>
 			<key>ypos</key>
 			<integer>1000</integer>
 		</dict>
@@ -2502,7 +2502,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>1680</integer>
+			<integer>1700</integer>
 			<key>ypos</key>
 			<integer>50</integer>
 		</dict>
@@ -2511,7 +2511,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>colorindex</key>
 			<integer>1</integer>
 			<key>xpos</key>
-			<integer>460</integer>
+			<integer>480</integer>
 			<key>ypos</key>
 			<integer>80</integer>
 		</dict>
@@ -2522,7 +2522,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>note</key>
 			<string>action = reveal</string>
 			<key>xpos</key>
-			<integer>1720</integer>
+			<integer>1740</integer>
 			<key>ypos</key>
 			<integer>390</integer>
 		</dict>
@@ -2533,7 +2533,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>note</key>
 			<string>View user searches</string>
 			<key>xpos</key>
-			<integer>1130</integer>
+			<integer>1150</integer>
 			<key>ypos</key>
 			<integer>360</integer>
 		</dict>
@@ -2544,7 +2544,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>note</key>
 			<string>action = engines</string>
 			<key>xpos</key>
-			<integer>720</integer>
+			<integer>740</integer>
 			<key>ypos</key>
 			<integer>80</integer>
 		</dict>
@@ -2555,7 +2555,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>note</key>
 			<string>Get keyword for new search</string>
 			<key>xpos</key>
-			<integer>1510</integer>
+			<integer>1530</integer>
 			<key>ypos</key>
 			<integer>1000</integer>
 		</dict>
@@ -2566,7 +2566,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>note</key>
 			<string>action != back</string>
 			<key>xpos</key>
-			<integer>1550</integer>
+			<integer>1570</integer>
 			<key>ypos</key>
 			<integer>80</integer>
 		</dict>
@@ -2575,7 +2575,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>colorindex</key>
 			<integer>12</integer>
 			<key>xpos</key>
-			<integer>950</integer>
+			<integer>970</integer>
 			<key>ypos</key>
 			<integer>530</integer>
 		</dict>
@@ -2586,7 +2586,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>note</key>
 			<string>Set $trigger to "user"</string>
 			<key>xpos</key>
-			<integer>2060</integer>
+			<integer>2080</integer>
 			<key>ypos</key>
 			<integer>560</integer>
 		</dict>
@@ -2595,7 +2595,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>950</integer>
+			<integer>970</integer>
 			<key>ypos</key>
 			<integer>50</integer>
 		</dict>
@@ -2606,7 +2606,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>note</key>
 			<string>{query} not empty</string>
 			<key>xpos</key>
-			<integer>2060</integer>
+			<integer>2080</integer>
 			<key>ypos</key>
 			<integer>1030</integer>
 		</dict>
@@ -2617,7 +2617,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>note</key>
 			<string>Open configuration</string>
 			<key>xpos</key>
-			<integer>1510</integer>
+			<integer>1530</integer>
 			<key>ypos</key>
 			<integer>670</integer>
 		</dict>
@@ -2628,7 +2628,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>note</key>
 			<string>Set $keyword</string>
 			<key>xpos</key>
-			<integer>1700</integer>
+			<integer>1720</integer>
 			<key>ypos</key>
 			<integer>1030</integer>
 		</dict>
@@ -2637,7 +2637,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>colorindex</key>
 			<integer>12</integer>
 			<key>xpos</key>
-			<integer>1510</integer>
+			<integer>1530</integer>
 			<key>ypos</key>
 			<integer>530</integer>
 		</dict>
@@ -2648,7 +2648,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>note</key>
 			<string>Import a search from a URL</string>
 			<key>xpos</key>
-			<integer>1130</integer>
+			<integer>1150</integer>
 			<key>ypos</key>
 			<integer>830</integer>
 		</dict>
@@ -2659,7 +2659,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>note</key>
 			<string>action = help</string>
 			<key>xpos</key>
-			<integer>720</integer>
+			<integer>740</integer>
 			<key>ypos</key>
 			<integer>240</integer>
 		</dict>
@@ -2670,7 +2670,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>note</key>
 			<string>View search engines</string>
 			<key>xpos</key>
-			<integer>1130</integer>
+			<integer>1150</integer>
 			<key>ypos</key>
 			<integer>50</integer>
 		</dict>
@@ -2679,7 +2679,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>colorindex</key>
 			<integer>7</integer>
 			<key>xpos</key>
-			<integer>1310</integer>
+			<integer>1330</integer>
 			<key>ypos</key>
 			<integer>50</integer>
 		</dict>
@@ -2690,7 +2690,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>note</key>
 			<string>Rewrite info.plist</string>
 			<key>xpos</key>
-			<integer>2170</integer>
+			<integer>2190</integer>
 			<key>ypos</key>
 			<integer>530</integer>
 		</dict>
@@ -2701,7 +2701,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>note</key>
 			<string>Open help in browser</string>
 			<key>xpos</key>
-			<integer>1130</integer>
+			<integer>1150</integer>
 			<key>ypos</key>
 			<integer>210</integer>
 		</dict>
@@ -2712,7 +2712,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>note</key>
 			<string>action = new</string>
 			<key>xpos</key>
-			<integer>2270</integer>
+			<integer>2290</integer>
 			<key>ypos</key>
 			<integer>230</integer>
 		</dict>
@@ -2721,7 +2721,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>colorindex</key>
 			<integer>6</integer>
 			<key>xpos</key>
-			<integer>950</integer>
+			<integer>970</integer>
 			<key>ypos</key>
 			<integer>210</integer>
 		</dict>
@@ -2732,7 +2732,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>note</key>
 			<string>Open list of engines</string>
 			<key>xpos</key>
-			<integer>2370</integer>
+			<integer>2390</integer>
 			<key>ypos</key>
 			<integer>1060</integer>
 		</dict>
@@ -2743,7 +2743,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>note</key>
 			<string>Trash search config file</string>
 			<key>xpos</key>
-			<integer>1870</integer>
+			<integer>1890</integer>
 			<key>ypos</key>
 			<integer>530</integer>
 		</dict>
@@ -2754,7 +2754,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>note</key>
 			<string>action = import</string>
 			<key>xpos</key>
-			<integer>720</integer>
+			<integer>740</integer>
 			<key>ypos</key>
 			<integer>860</integer>
 		</dict>
@@ -2765,7 +2765,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>note</key>
 			<string>Open user searches</string>
 			<key>xpos</key>
-			<integer>2290</integer>
+			<integer>2310</integer>
 			<key>ypos</key>
 			<integer>370</integer>
 		</dict>
@@ -2776,7 +2776,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>note</key>
 			<string>action = reload</string>
 			<key>xpos</key>
-			<integer>720</integer>
+			<integer>740</integer>
 			<key>ypos</key>
 			<integer>560</integer>
 		</dict>
@@ -2785,7 +2785,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>1310</integer>
+			<integer>1330</integer>
 			<key>ypos</key>
 			<integer>830</integer>
 		</dict>
@@ -2796,7 +2796,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>note</key>
 			<string>Open configuration</string>
 			<key>xpos</key>
-			<integer>1680</integer>
+			<integer>1700</integer>
 			<key>ypos</key>
 			<integer>210</integer>
 		</dict>
@@ -2805,7 +2805,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>2030</integer>
+			<integer>2050</integer>
 			<key>ypos</key>
 			<integer>50</integer>
 		</dict>
@@ -2816,7 +2816,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>note</key>
 			<string>Set filepath from search UID</string>
 			<key>xpos</key>
-			<integer>1510</integer>
+			<integer>1530</integer>
 			<key>ypos</key>
 			<integer>360</integer>
 		</dict>
@@ -2827,7 +2827,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>note</key>
 			<string>View configuration</string>
 			<key>xpos</key>
-			<integer>60</integer>
+			<integer>50</integer>
 			<key>ypos</key>
 			<integer>50</integer>
 		</dict>
@@ -2836,7 +2836,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>colorindex</key>
 			<integer>10</integer>
 			<key>xpos</key>
-			<integer>1300</integer>
+			<integer>1320</integer>
 			<key>ypos</key>
 			<integer>360</integer>
 		</dict>
@@ -2847,7 +2847,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>note</key>
 			<string>View engine variants</string>
 			<key>xpos</key>
-			<integer>1850</integer>
+			<integer>1870</integer>
 			<key>ypos</key>
 			<integer>50</integer>
 		</dict>
@@ -2858,7 +2858,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>note</key>
 			<string>$keyword = ""</string>
 			<key>xpos</key>
-			<integer>1350</integer>
+			<integer>1370</integer>
 			<key>ypos</key>
 			<integer>1030</integer>
 		</dict>
@@ -2869,7 +2869,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>note</key>
 			<string>{query} empty</string>
 			<key>xpos</key>
-			<integer>2060</integer>
+			<integer>2080</integer>
 			<key>ypos</key>
 			<integer>1160</integer>
 		</dict>
@@ -2878,7 +2878,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>colorindex</key>
 			<integer>6</integer>
 			<key>xpos</key>
-			<integer>1310</integer>
+			<integer>1330</integer>
 			<key>ypos</key>
 			<integer>210</integer>
 		</dict>
@@ -2887,7 +2887,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>note</key>
 			<string>Google (Deutsch)</string>
 			<key>xpos</key>
-			<integer>60</integer>
+			<integer>270</integer>
 			<key>ypos</key>
 			<integer>220</integer>
 		</dict>
@@ -2896,7 +2896,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>note</key>
 			<string>Google (English)</string>
 			<key>xpos</key>
-			<integer>60</integer>
+			<integer>270</integer>
 			<key>ypos</key>
 			<integer>390</integer>
 		</dict>
@@ -2905,7 +2905,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>note</key>
 			<string>Wikipedia (Deutsch)</string>
 			<key>xpos</key>
-			<integer>60</integer>
+			<integer>270</integer>
 			<key>ypos</key>
 			<integer>560</integer>
 		</dict>
@@ -2914,7 +2914,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>note</key>
 			<string>Wikipedia (English)</string>
 			<key>xpos</key>
-			<integer>60</integer>
+			<integer>270</integer>
 			<key>ypos</key>
 			<integer>730</integer>
 		</dict>
@@ -2923,7 +2923,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>note</key>
 			<string>YouTube (Germany)</string>
 			<key>xpos</key>
-			<integer>60</integer>
+			<integer>270</integer>
 			<key>ypos</key>
 			<integer>900</integer>
 		</dict>
@@ -2932,7 +2932,7 @@ Search suggestions from multiple search engines in different locales</string>
 			<key>note</key>
 			<string>YouTube (United States)</string>
 			<key>xpos</key>
-			<integer>60</integer>
+			<integer>270</integer>
 			<key>ypos</key>
 			<integer>1070</integer>
 		</dict>
