@@ -52,6 +52,33 @@ class Context(object):
         """
         return self.wf.datafile('searches/{}.json'.format(uid))
 
+    def getbool(self, key, default=False):
+        """Get a workflow variable as a boolean.
+
+        ``1``, ``yes`` and ``on`` evaluate to ``True``;
+        ``0``, ``no`` and ``off`` evaluate to ``False``.
+
+        Args:
+            key (str): Name of variable
+            default (bool, optional): Value to return if variable is
+                unset or empty.
+
+        Returns:
+            bool: Value of variable or `default`
+        """
+        v = os.getenv(key)
+        if not v:
+            return default
+
+        if v.lower() in ('1', 'yes', 'on'):
+            return True
+
+        if v.lower() in ('0', 'no', 'off'):
+            return False
+
+        log.warning('Invalid value for "%s": %s', key, v)
+        return default
+
     # def engine(self, uid):
     #     if not self._engine_finder:
     #         self._engine_finder = util.FileFinder(self.engine_dirs, ['json'])

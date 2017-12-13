@@ -14,6 +14,8 @@ Contents
 - [Download and installation](#download-and-installation)
 - [Usage](#usage)
     - [Configuration](#configuration)
+        - [Workflow Configuration Sheet](#workflow-configuration-sheet)
+        - [In-Workflow Configuration](#in-workflow-configuration)
     - [Importing Searches](#importing-searches)
 - [Adding Engines](#adding-engines)
 - [Licensing, thanks](#licensing-thanks)
@@ -62,7 +64,22 @@ There are several example searches pre-configured:
 <a name="configuration"></a>
 ### Configuration ###
 
-There is a single variable in the workflow configuration screen (open the workflow in Alfred Preferences and hit the `[𝒙]` button): `GOOGLE_PLACES_API_KEY`. You must set this to use Google Maps search. You can get an API key [here](https://developers.google.com/places/web-service/get-api-key).
+The workflow is configured via the `searchio` keyword and some [workflow variables](https://www.alfredapp.com/help/workflows/advanced/variables/) set in the workflow configuration sheet.
+
+
+<a name="workflow-configuration-sheet"></a>
+#### Workflow Configuration Sheet ####
+
+There are some variables in the workflow configuration screen (open the workflow in Alfred Preferences and hit the `[𝒙]` button):
+
+|           Name          |                                                                                                    Description                                                                                                    |
+|-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `GOOGLE_PLACES_API_KEY` | You must set this to use Google Maps search. You can get an API key [here](https://developers.google.com/places/web-service/get-api-key).                                                                         |
+| `SHOW_QUERY_IN_RESULTS` | Set to `1` or `yes` to always append the entered query to the end of the results (so you can hit `↑` to select it). If unset (or set to `0` or `no`), the query will only be shown if there are no other results. |
+
+
+<a name="in-workflow-configuration"></a>
+#### In-Workflow Configuration ####
 
 - `searchio [<query>]` — Show workflow settings
     - `Update Available …` — Shown if there is a new version of the workflow available to download. Action the item to install it.
@@ -70,6 +87,7 @@ There is a single variable in the workflow configuration screen (open the workfl
     - `All Engines …` — View supported engines and add new searches
     - `Import Search …` — Import a new search configuration from a URL (see [Importing Searches](#importing-searches))
     - `Reload` — Regenerate the workflow's Script Filters from your configured searches (and clean the cache). Run this if you screw up the Script Filters or an update overwrites them.
+    - `Show Query in Results` — Turn the option to show the query you entered in the results on/off. The query is added to the end of the results, so you can hit `↑` to go straight to it. The query is always shown if there are no other results.
     - `Online Help` — Open this page in your browser.
     - `Workflow up to Date` — You have the latest version of the workflow. Action this item to force a check for a new version.
 

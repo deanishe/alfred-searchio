@@ -23,6 +23,8 @@ import (
 	"strings"
 	"time"
 
+	"golang.org/x/net/html/charset"
+
 	"github.com/NodePrime/jsonpath"
 	aw "github.com/deanishe/awgo"
 	"github.com/deanishe/awgo/util"
@@ -30,6 +32,7 @@ import (
 
 var (
 	maxAge                = time.Second * 900
+	queryInResults        bool // Also add query to results
 	searchID, query       string
 	searchesDir, cacheDir string
 	// HTTPTimeout is the timeout for establishing an HTTP(S) connection.
@@ -39,7 +42,28 @@ var (
 
 func init() {
 	wf = aw.New()
+	queryInResults = GetenvBool("SHOW_QUERY_IN_RESULTS")
 	searchesDir = filepath.Join(wf.DataDir(), "searches")
+}
+
+// GetenvBool returns a boolean based on an environment/workflow variable.
+// "1", "yes" = true, "0", "no", empty = false
+func GetenvBool(key string) bool {
+	s := strings.ToLower(os.Getenv(key))
+	switch s {
+	case "":
+		return false
+	case "0":
+		return false
+	case "no":
+		return false
+	case "1":
+		return true
+	case "yes":
+		return true
+	}
+	log.Printf("[WARNING] don't understand value \"%s\" for \"%s\", returning false", s, key)
+	return false
 }
 
 // Search is a Searchio! search configuration.
@@ -107,6 +131,21 @@ func loadSearch(id string) (*Search, error) {
 	return s, nil
 }
 
+func decodeResponse(r *http.Response) ([]byte, error) {
+	data, err := ioutil.ReadAll(r.Body)
+	if err != nil {
+		return nil, err
+	}
+	enc, name, ok := charset.DetermineEncoding(data, r.Header.Get("Content-Type"))
+	log.Printf("enc=%v, name=%s, ok=%v", enc, name, ok)
+
+	data, err = enc.NewDecoder().Bytes(data)
+	if err != nil {
+		return nil, err
+	}
+	return data, nil
+}
+
 // Query server.
 func searchServer(s *Search, q string) ([]string, error) {
 	var (
@@ -120,17 +159,16 @@ func searchServer(s *Search, q string) ([]string, error) {
 		return nil, err
 	}
 	defer r.Body.Close()
+	log.Printf("[%d] %s", r.StatusCode, r.Status)
 
 	if r.StatusCode > 299 {
 		return nil, fmt.Errorf("[%d] %s", r.StatusCode, r.Status)
 	}
 
-	data, err := ioutil.ReadAll(r.Body)
+	data, err := decodeResponse(r)
 	if err != nil {
 		return nil, err
 	}
-
-	log.Printf("response=%s", data)
 
 	// Append + as we want to extract a value, not a path
 	jp := s.Jsonpath
@@ -153,7 +191,6 @@ func searchServer(s *Search, q string) ([]string, error) {
 			break
 		}
 		if r != nil {
-			// log.Printf("r=%s", r.Value)
 			var word string
 			if err := json.Unmarshal(r.Value, &word); err != nil {
 				return nil, err
@@ -178,21 +215,42 @@ func doSearch(s *Search, q string) error {
 	)
 	util.MustExist(filepath.Join(wf.CacheDir(), reldir))
 
-	log.Printf("querying \"%s\" for \"%s\" ...", s.Title, q)
+	log.Printf(`querying "%s" for "%s" ...`, s.Title, q)
 	reload := func() (interface{}, error) { return searchServer(s, q) }
 	if err := wf.Cache.LoadOrStoreJSON(name, maxAge, reload, &words); err != nil {
 		return err
 	}
 
+	log.Printf(`%d results for "%s"`, len(words), q)
+
 	// Send results to Alfred
+	var (
+		querySeen bool
+		icon      = &aw.Icon{Value: s.Icon}
+	)
 	for _, word := range words {
+		if strings.ToLower(word) == strings.ToLower(q) {
+			querySeen = true
+		}
 		URL := s.SearchURLForQuery(word)
 		wf.NewItem(word).
 			Subtitle(s.Title).
 			Autocomplete(word + " ").
 			Arg(URL).
 			UID(URL).
-			Icon(&aw.Icon{Value: s.Icon}).
+			Icon(icon).
+			Valid(true)
+	}
+
+	// Add query at end of results
+	if (queryInResults && !querySeen) || len(words) == 0 {
+		URL := s.SearchURLForQuery(q)
+		wf.NewItem(q).
+			Subtitle(s.Title).
+			Autocomplete(q + " ").
+			Arg(URL).
+			UID(URL).
+			Icon(icon).
 			Valid(true)
 	}
 

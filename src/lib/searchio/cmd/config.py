@@ -47,11 +47,14 @@ def usage(wf=None):
 def run(wf, argv):
     """Run ``searchio list`` sub-command."""
     ctx = Context(wf)
+    ICON_ACTIVE = ctx.icon('searches-active')
     ICON_UPDATE_AVAILABLE = ctx.icon('update-available')
     ICON_UPDATE_NONE = ctx.icon('update-check')
     ICON_HELP = ctx.icon('help')
     ICON_IMPORT = ctx.icon('import')
     ICON_RELOAD = ctx.icon('reload')
+    ICON_ON = ctx.icon('toggle-on')
+    ICON_OFF = ctx.icon('toggle-off')
 
     args = docopt(usage(wf), argv)
 
@@ -72,20 +75,12 @@ def run(wf, argv):
             icon=ICON_UPDATE_AVAILABLE,
         ))
 
-    # items.append(dict(
-    #     title=title,
-    #     subtitle=subtitle,
-    #     autocomplete=u'workflow:update',
-    #     valid=False,
-    #     icon=icon,
-    # ))
-
     items.append(dict(
         title=u'Installed Searches \U00002026',
         subtitle=u'Your configured searches',
         arg=u'user',
         valid=True,
-        icon=u'icon.png',
+        icon=ICON_ACTIVE,
     ))
 
     items.append(dict(
@@ -112,6 +107,17 @@ def run(wf, argv):
         # autocomplete=u'workflow:help',
         # valid=False,
         icon=ICON_RELOAD,
+    ))
+
+    icon = ICON_ON if ctx.getbool('SHOW_QUERY_IN_RESULTS') else ICON_OFF
+    items.append(dict(
+        title=u'Show Query in Results',
+        subtitle=u'Always add query to end of results',
+        arg=u'toggle-show-query',
+        valid=True,
+        # autocomplete=u'workflow:help',
+        # valid=False,
+        icon=icon,
     ))
 
     items.append(dict(

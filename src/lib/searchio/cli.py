@@ -110,6 +110,10 @@ def cli(wf):
         from searchio.cmd.search import run
         return run(wf, argv)
 
+    if cmd == 'toggle':
+        from searchio.cmd.toggle import run
+        return run(wf, argv)
+
     if cmd == 'user':
         from searchio.cmd.user import run
         return run(wf, argv)

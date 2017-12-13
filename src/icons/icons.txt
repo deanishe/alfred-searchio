@@ -15,6 +15,7 @@
 
 # Workflow icons
 icon              elusive       D0141C    search-alt
+searches-active   elusive       1B981B    search-alt
 
 update-available  material      FDAC27    cloud-download
 update-check      material      1B981B    cloud-download
