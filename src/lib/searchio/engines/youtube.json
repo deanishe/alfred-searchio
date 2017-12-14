@@ -68,7 +68,7 @@
     {
       "name": "Brazil", 
       "search_url": "https://www.youtube.com/results?gl=br&persist_gl=1&search_query={query}", 
-      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=br&q={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=pt-br&q={query}", 
       "title": "YouTube (Brazil)", 
       "uid": "br"
     }, 
@@ -425,7 +425,7 @@
     {
       "name": "Portugal", 
       "search_url": "https://www.youtube.com/results?gl=pt&persist_gl=1&search_query={query}", 
-      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=pt&q={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=pt-pt&q={query}", 
       "title": "YouTube (Portugal)", 
       "uid": "pt"
     }, 
