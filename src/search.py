@@ -596,13 +596,14 @@ class Kinopoisk(Suggest):
 
     id_ = 'kinopoisk'
     name = 'Kinopoisk.ru'
-    _suggest_url = 'https://www.kinopoisk.ru/search/suggest'
+    _suggest_url = 'https://www.kinopoisk.ru/handler_search.php'
     _search_url = 'https://www.kinopoisk.ru/index.php?kp_query={query}'
     _base_url = 'https://www.kinopoisk.ru'
     _results_urls = collections.OrderedDict()
 
     def _suggest(self):
         response = web.get(self.suggest_url, {'topsuggest': 'true',
+                                              'ajax': '1',
                                               'q': self.options['query']})
         response.raise_for_status()
         raw_results = response.json()
@@ -610,9 +611,9 @@ class Kinopoisk(Suggest):
         h = HTMLParser()
         for d in raw_results:
             if (d['year']!="" and d['year']!="0"):
-                pretty_query = h.unescape(d['name']) + " (" + d['year'].replace("&ndash;", "\u2013") + ")"
+                pretty_query = h.unescape(d['rus']) + " (" + d['year'].replace("&ndash;", "\u2013") + ")"
             else:
-                pretty_query = h.unescape(d['name'])
+                pretty_query = h.unescape(d['rus'])
             results[pretty_query] = d['link']
 
         return results
