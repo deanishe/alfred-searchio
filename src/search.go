@@ -25,7 +25,7 @@ import (
 
 	"golang.org/x/net/html/charset"
 
-	"github.com/NodePrime/jsonpath"
+	"github.com/JumboInteractiveLimited/jsonpath"
 	aw "github.com/deanishe/awgo"
 	"github.com/deanishe/awgo/util"
 )
@@ -42,7 +42,8 @@ var (
 
 func init() {
 	wf = aw.New()
-	queryInResults = GetenvBool("SHOW_QUERY_IN_RESULTS")
+	// queryInResults = GetenvBool("SHOW_QUERY_IN_RESULTS")
+	queryInResults = wf.Config.GetBool("SHOW_QUERY_IN_RESULTS")
 	searchesDir = filepath.Join(wf.DataDir(), "searches")
 }
 
