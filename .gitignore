@@ -1,6 +1,4 @@
 /.apikey
-/.autoenv.zsh
-/.autoenv_leave.zsh
 
 # Build binary
 /src/search
