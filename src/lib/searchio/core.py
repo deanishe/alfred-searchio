@@ -27,11 +27,12 @@ class Context(object):
 
     Attributes:
         wf (workflow.Workflow3): Current workflow object.
+
     """
     def __init__(self, wf):
+        """Create new `Context` for Workflow."""
         self.wf = wf
         self._icon_finder = None
-        # self._engine_finder = None
 
     def icon(self, name):
         if not self._icon_finder:
@@ -49,6 +50,7 @@ class Context(object):
 
         Returns:
             str: Path to search config file.
+
         """
         return self.wf.datafile('searches/{}.json'.format(uid))
 
@@ -65,6 +67,7 @@ class Context(object):
 
         Returns:
             bool: Value of variable or `default`
+
         """
         v = os.getenv(key)
         if not v:
@@ -78,12 +81,6 @@ class Context(object):
 
         log.warning('Invalid value for "%s": %s', key, v)
         return default
-
-    # def engine(self, uid):
-    #     if not self._engine_finder:
-    #         self._engine_finder = util.FileFinder(self.engine_dirs, ['json'])
-
-    #     return self._engine_finder.find(uid)
 
     @property
     def backup_dir(self):
@@ -112,7 +109,6 @@ class Context(object):
     def searches_dir(self):
         """Directory to search for search configs."""
         return self.wf.datafile('searches')
-    # TODO: defaults
 
 
 def get_defaults(wf):

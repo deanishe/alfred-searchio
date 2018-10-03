@@ -68,7 +68,7 @@ SCRIPT_FILTER = """
         <key>queuedelaymode</key>
         <integer>0</integer>
         <key>queuemode</key>
-        <integer>1</integer>
+        <integer>2</integer>
         <key>runningsubtext</key>
         <string>Fetching results…</string>
         <key>script</key>
