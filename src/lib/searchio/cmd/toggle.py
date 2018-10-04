@@ -61,4 +61,5 @@ def run(wf, argv):
     key = args.get('<setting>')
     if key == 'show-query':
         return do_toggle_show_query(wf)
+
     raise ValueError('Unknown Setting: ' + key)
