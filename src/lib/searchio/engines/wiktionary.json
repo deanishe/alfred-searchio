@@ -1,0 +1,539 @@
+{
+  "description": "Collaborative dictionary", 
+  "pcencode": true, 
+  "title": "Wiktionary", 
+  "variants": [
+    {
+      "name": "English", 
+      "search_url": "https://en.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://en.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (English)", 
+      "uid": "en"
+    }, 
+    {
+      "name": "Fran\u00e7ais", 
+      "search_url": "https://fr.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://fr.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (Fran\u00e7ais)", 
+      "uid": "fr"
+    }, 
+    {
+      "name": "Malagasy", 
+      "search_url": "https://mg.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://mg.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (Malagasy)", 
+      "uid": "mg"
+    }, 
+    {
+      "name": "Catal\u00e0", 
+      "search_url": "https://ca.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://ca.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (Catal\u00e0)", 
+      "uid": "ca"
+    }, 
+    {
+      "name": "Deutsch", 
+      "search_url": "https://de.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://de.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (Deutsch)", 
+      "uid": "de"
+    }, 
+    {
+      "name": "Eesti", 
+      "search_url": "https://et.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://et.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (Eesti)", 
+      "uid": "et"
+    }, 
+    {
+      "name": "\u0395\u03bb\u03bb\u03b7\u03bd\u03b9\u03ba\u03ac / Ell\u012bnik\u00e1", 
+      "search_url": "https://el.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://el.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (\u0395\u03bb\u03bb\u03b7\u03bd\u03b9\u03ba\u03ac / Ell\u012bnik\u00e1)", 
+      "uid": "el"
+    }, 
+    {
+      "name": "Espa\u00f1ol", 
+      "search_url": "https://es.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://es.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (Espa\u00f1ol)", 
+      "uid": "es"
+    }, 
+    {
+      "name": "\ud55c\uad6d\uc5b4 / Hangugeo", 
+      "search_url": "https://ko.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://ko.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (\ud55c\uad6d\uc5b4 / Hangugeo)", 
+      "uid": "ko"
+    }, 
+    {
+      "name": "\u0540\u0561\u0575\u0565\u0580\u0565\u0576 / Hayeren", 
+      "search_url": "https://hy.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://hy.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (\u0540\u0561\u0575\u0565\u0580\u0565\u0576 / Hayeren)", 
+      "uid": "hy"
+    }, 
+    {
+      "name": "\u0939\u093f\u0928\u094d\u0926\u0940 / Hind\u012b", 
+      "search_url": "https://hi.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://hi.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (\u0939\u093f\u0928\u094d\u0926\u0940 / Hind\u012b)", 
+      "uid": "hi"
+    }, 
+    {
+      "name": "Ido", 
+      "search_url": "https://io.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://io.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (Ido)", 
+      "uid": "io"
+    }, 
+    {
+      "name": "Bahasa Indonesia", 
+      "search_url": "https://id.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://id.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (Bahasa Indonesia)", 
+      "uid": "id"
+    }, 
+    {
+      "name": "Italiano", 
+      "search_url": "https://it.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://it.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (Italiano)", 
+      "uid": "it"
+    }, 
+    {
+      "name": "\u0c95\u0ca8\u0ccd\u0ca8\u0ca1 / Kannada", 
+      "search_url": "https://kn.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://kn.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (\u0c95\u0ca8\u0ccd\u0ca8\u0ca1 / Kannada)", 
+      "uid": "kn"
+    }, 
+    {
+      "name": "Kurd\u00ee / \u0643\u0648\u0631\u062f\u06cc", 
+      "search_url": "https://ku.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://ku.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (Kurd\u00ee / \u0643\u0648\u0631\u062f\u06cc)", 
+      "uid": "ku"
+    }, 
+    {
+      "name": "Lietuvi\u0173", 
+      "search_url": "https://lt.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://lt.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (Lietuvi\u0173)", 
+      "uid": "lt"
+    }, 
+    {
+      "name": "Limburgs", 
+      "search_url": "https://li.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://li.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (Limburgs)", 
+      "uid": "li"
+    }, 
+    {
+      "name": "Magyar", 
+      "search_url": "https://hu.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://hu.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (Magyar)", 
+      "uid": "hu"
+    }, 
+    {
+      "name": "\u0d2e\u0d32\u0d2f\u0d3e\u0d33\u0d02 / Malayalam", 
+      "search_url": "https://ml.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://ml.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (\u0d2e\u0d32\u0d2f\u0d3e\u0d33\u0d02 / Malayalam)", 
+      "uid": "ml"
+    }, 
+    {
+      "name": "\u1019\u103c\u1014\u103a\u1019\u102c\u1018\u102c\u101e\u102c / Myanmarsar", 
+      "search_url": "https://my.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://my.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (\u1019\u103c\u1014\u103a\u1019\u102c\u1018\u102c\u101e\u102c / Myanmarsar)", 
+      "uid": "my"
+    }, 
+    {
+      "name": "Nederlands", 
+      "search_url": "https://nl.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://nl.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (Nederlands)", 
+      "uid": "nl"
+    }, 
+    {
+      "name": "\u65e5\u672c\u8a9e / Nihongo", 
+      "search_url": "https://ja.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://ja.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (\u65e5\u672c\u8a9e / Nihongo)", 
+      "uid": "ja"
+    }, 
+    {
+      "name": "Norsk (Bokm\u00e5l)", 
+      "search_url": "https://nb.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://nb.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (Norsk (Bokm\u00e5l))", 
+      "uid": "nb"
+    }, 
+    {
+      "name": "\u0b13\u0b21\u0b3f\u0b3c\u0b06 / O\u1e5bi\u0101", 
+      "search_url": "https://or.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://or.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (\u0b13\u0b21\u0b3f\u0b3c\u0b06 / O\u1e5bi\u0101)", 
+      "uid": "or"
+    }, 
+    {
+      "name": "O\u02bbzbekcha / \u040e\u0437\u0431\u0435\u043a\u0447\u0430", 
+      "search_url": "https://uz.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://uz.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (O\u02bbzbekcha / \u040e\u0437\u0431\u0435\u043a\u0447\u0430)", 
+      "uid": "uz"
+    }, 
+    {
+      "name": "Polski", 
+      "search_url": "https://pl.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://pl.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (Polski)", 
+      "uid": "pl"
+    }, 
+    {
+      "name": "Portugu\u00eas", 
+      "search_url": "https://pt.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://pt.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (Portugu\u00eas)", 
+      "uid": "pt"
+    }, 
+    {
+      "name": "Rom\u00e2n\u0103", 
+      "search_url": "https://ro.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://ro.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (Rom\u00e2n\u0103)", 
+      "uid": "ro"
+    }, 
+    {
+      "name": "\u0420\u0443\u0441\u0441\u043a\u0438\u0439 / Russkiy", 
+      "search_url": "https://ru.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://ru.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (\u0420\u0443\u0441\u0441\u043a\u0438\u0439 / Russkiy)", 
+      "uid": "ru"
+    }, 
+    {
+      "name": "\u0421\u0440\u043f\u0441\u043a\u0438 / Srpski", 
+      "search_url": "https://sr.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://sr.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (\u0421\u0440\u043f\u0441\u043a\u0438 / Srpski)", 
+      "uid": "sr"
+    }, 
+    {
+      "name": "Srpskohrvatski / \u0421\u0440\u043f\u0441\u043a\u043e\u0445\u0440\u0432\u0430\u0442\u0441\u043a\u0438", 
+      "search_url": "https://sh.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://sh.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (Srpskohrvatski / \u0421\u0440\u043f\u0441\u043a\u043e\u0445\u0440\u0432\u0430\u0442\u0441\u043a\u0438)", 
+      "uid": "sh"
+    }, 
+    {
+      "name": "Suomi", 
+      "search_url": "https://fi.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://fi.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (Suomi)", 
+      "uid": "fi"
+    }, 
+    {
+      "name": "Svenska", 
+      "search_url": "https://sv.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://sv.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (Svenska)", 
+      "uid": "sv"
+    }, 
+    {
+      "name": "\u0ba4\u0bae\u0bbf\u0bb4\u0bcd / Tami\u1e3b", 
+      "search_url": "https://ta.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://ta.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (\u0ba4\u0bae\u0bbf\u0bb4\u0bcd / Tami\u1e3b)", 
+      "uid": "ta"
+    }, 
+    {
+      "name": "\u0c24\u0c46\u0c32\u0c41\u0c17\u0c41 / Telugu", 
+      "search_url": "https://te.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://te.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (\u0c24\u0c46\u0c32\u0c41\u0c17\u0c41 / Telugu)", 
+      "uid": "te"
+    }, 
+    {
+      "name": "\u0e20\u0e32\u0e29\u0e32\u0e44\u0e17\u0e22 / Phasa Thai", 
+      "search_url": "https://th.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://th.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (\u0e20\u0e32\u0e29\u0e32\u0e44\u0e17\u0e22 / Phasa Thai)", 
+      "uid": "th"
+    }, 
+    {
+      "name": "\u13e3\u13b3\u13a9 / Tsalagi", 
+      "search_url": "https://chr.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://chr.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (\u13e3\u13b3\u13a9 / Tsalagi)", 
+      "uid": "chr"
+    }, 
+    {
+      "name": "T\u00fcrk\u00e7e", 
+      "search_url": "https://tr.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://tr.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (T\u00fcrk\u00e7e)", 
+      "uid": "tr"
+    }, 
+    {
+      "name": "Ti\u1ebfng Vi\u1ec7t", 
+      "search_url": "https://vi.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://vi.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (Ti\u1ebfng Vi\u1ec7t)", 
+      "uid": "vi"
+    }, 
+    {
+      "name": "\u4e2d\u6587 / Zh\u014dngw\u00e9n", 
+      "search_url": "https://zh.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://zh.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (\u4e2d\u6587 / Zh\u014dngw\u00e9n)", 
+      "uid": "zh"
+    }, 
+    {
+      "name": "Afrikaans", 
+      "search_url": "https://af.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://af.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (Afrikaans)", 
+      "uid": "af"
+    }, 
+    {
+      "name": "\u0627\u0644\u0639\u0631\u0628\u064a\u0629 / Al-\u02bfArab\u012byah", 
+      "search_url": "https://ar.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://ar.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (\u0627\u0644\u0639\u0631\u0628\u064a\u0629 / Al-\u02bfArab\u012byah)", 
+      "uid": "ar"
+    }, 
+    {
+      "name": "Asturianu", 
+      "search_url": "https://ast.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://ast.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (Asturianu)", 
+      "uid": "ast"
+    }, 
+    {
+      "name": "Az\u0259rbaycanca", 
+      "search_url": "https://az.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://az.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (Az\u0259rbaycanca)", 
+      "uid": "az"
+    }, 
+    {
+      "name": "\u0411\u044a\u043b\u0433\u0430\u0440\u0441\u043a\u0438 / B\u01celgarski", 
+      "search_url": "https://bg.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://bg.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (\u0411\u044a\u043b\u0433\u0430\u0440\u0441\u043a\u0438 / B\u01celgarski)", 
+      "uid": "bg"
+    }, 
+    {
+      "name": "B\u00e2n-l\u00e2m-g\u00fa / H\u014d-l\u00f3-o\u0113", 
+      "search_url": "https://nan.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://nan.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (B\u00e2n-l\u00e2m-g\u00fa / H\u014d-l\u00f3-o\u0113)", 
+      "uid": "nan"
+    }, 
+    {
+      "name": "Brezhoneg", 
+      "search_url": "https://br.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://br.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (Brezhoneg)", 
+      "uid": "br"
+    }, 
+    {
+      "name": "\u010ce\u0161tina", 
+      "search_url": "https://cs.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://cs.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (\u010ce\u0161tina)", 
+      "uid": "cs"
+    }, 
+    {
+      "name": "Cymraeg", 
+      "search_url": "https://cy.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://cy.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (Cymraeg)", 
+      "uid": "cy"
+    }, 
+    {
+      "name": "Dansk", 
+      "search_url": "https://da.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://da.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (Dansk)", 
+      "uid": "da"
+    }, 
+    {
+      "name": "Esperanto", 
+      "search_url": "https://eo.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://eo.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (Esperanto)", 
+      "uid": "eo"
+    }, 
+    {
+      "name": "Euskara", 
+      "search_url": "https://eu.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://eu.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (Euskara)", 
+      "uid": "eu"
+    }, 
+    {
+      "name": "\u0641\u0627\u0631\u0633\u06cc / F\u0101rsi", 
+      "search_url": "https://fa.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://fa.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (\u0641\u0627\u0631\u0633\u06cc / F\u0101rsi)", 
+      "uid": "fa"
+    }, 
+    {
+      "name": "Frysk", 
+      "search_url": "https://fy.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://fy.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (Frysk)", 
+      "uid": "fy"
+    }, 
+    {
+      "name": "Galego", 
+      "search_url": "https://gl.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://gl.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (Galego)", 
+      "uid": "gl"
+    }, 
+    {
+      "name": "Hrvatski", 
+      "search_url": "https://hr.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://hr.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (Hrvatski)", 
+      "uid": "hr"
+    }, 
+    {
+      "name": "\u00cdslenska", 
+      "search_url": "https://is.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://is.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (\u00cdslenska)", 
+      "uid": "is"
+    }, 
+    {
+      "name": "\u05e2\u05d1\u05e8\u05d9\u05ea / \u02bfIvrit", 
+      "search_url": "https://he.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://he.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (\u05e2\u05d1\u05e8\u05d9\u05ea / \u02bfIvrit)", 
+      "uid": "he"
+    }, 
+    {
+      "name": "Basa Jawa", 
+      "search_url": "https://jv.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://jv.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (Basa Jawa)", 
+      "uid": "jv"
+    }, 
+    {
+      "name": "\u041a\u044b\u0440\u0433\u044b\u0437\u0447\u0430 / Kyrgyz\u010da", 
+      "search_url": "https://ky.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://ky.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (\u041a\u044b\u0440\u0433\u044b\u0437\u0447\u0430 / Kyrgyz\u010da)", 
+      "uid": "ky"
+    }, 
+    {
+      "name": "\u0e9e\u0eb2\u0eaa\u0eb2\u0ea5\u0eb2\u0ea7 / Phaasaa Laao", 
+      "search_url": "https://lo.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://lo.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (\u0e9e\u0eb2\u0eaa\u0eb2\u0ea5\u0eb2\u0ea7 / Phaasaa Laao)", 
+      "uid": "lo"
+    }, 
+    {
+      "name": "Latina", 
+      "search_url": "https://la.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://la.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (Latina)", 
+      "uid": "la"
+    }, 
+    {
+      "name": "Na Vosa Vaka-Viti", 
+      "search_url": "https://fj.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://fj.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (Na Vosa Vaka-Viti)", 
+      "uid": "fj"
+    }, 
+    {
+      "name": "Norsk (Nynorsk)", 
+      "search_url": "https://nn.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://nn.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (Norsk (Nynorsk))", 
+      "uid": "nn"
+    }, 
+    {
+      "name": "Occitan", 
+      "search_url": "https://oc.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://oc.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (Occitan)", 
+      "uid": "oc"
+    }, 
+    {
+      "name": "\u067e\u069a\u062a\u0648 / Pa\u0282to", 
+      "search_url": "https://ps.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://ps.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (\u067e\u069a\u062a\u0648 / Pa\u0282to)", 
+      "uid": "ps"
+    }, 
+    {
+      "name": "Sicilianu", 
+      "search_url": "https://scn.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://scn.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (Sicilianu)", 
+      "uid": "scn"
+    }, 
+    {
+      "name": "Simple English", 
+      "search_url": "https://en.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://en.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (Simple English)", 
+      "uid": "en"
+    }, 
+    {
+      "name": "Sloven\u010dina", 
+      "search_url": "https://sk.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://sk.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (Sloven\u010dina)", 
+      "uid": "sk"
+    }, 
+    {
+      "name": "Kiswahili", 
+      "search_url": "https://sw.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://sw.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (Kiswahili)", 
+      "uid": "sw"
+    }, 
+    {
+      "name": "Tagalog", 
+      "search_url": "https://tl.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://tl.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (Tagalog)", 
+      "uid": "tl"
+    }, 
+    {
+      "name": "\u0422\u043e\u04b7\u0438\u043a\u04e3 / Tojik\u012b", 
+      "search_url": "https://tg.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://tg.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (\u0422\u043e\u04b7\u0438\u043a\u04e3 / Tojik\u012b)", 
+      "uid": "tg"
+    }, 
+    {
+      "name": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430 / Ukrayins\u2019ka", 
+      "search_url": "https://uk.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://uk.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430 / Ukrayins\u2019ka)", 
+      "uid": "uk"
+    }, 
+    {
+      "name": "Volap\u00fck", 
+      "search_url": "https://vo.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://vo.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (Volap\u00fck)", 
+      "uid": "vo"
+    }, 
+    {
+      "name": "Walon", 
+      "search_url": "https://wa.wiktionary.org/wiki/{query}", 
+      "suggest_url": "https://wa.wiktionary.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wiktionary (Walon)", 
+      "uid": "wa"
+    }
+  ]
+}

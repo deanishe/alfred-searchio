@@ -1,0 +1,55 @@
+{
+  "description": "Online shopping", 
+  "title": "Amazon", 
+  "variants": [
+    {
+      "name": "United States", 
+      "search_url": "https://www.amazon.com/gp/search?ie=UTF8&keywords={query}", 
+      "suggest_url": "https://completion.amazon.com/search/complete?mkt=1&method=completion&search-alias=aps&client=alfred-searchio&q={query}", 
+      "title": "Amazon United States", 
+      "uid": "com"
+    }, 
+    {
+      "name": "United Kingdom", 
+      "search_url": "https://www.amazon.co.uk/gp/search?ie=UTF8&keywords={query}", 
+      "suggest_url": "https://completion.amazon.co.uk/search/complete?mkt=3&method=completion&search-alias=aps&client=alfred-searchio&q={query}", 
+      "title": "Amazon United Kingdom", 
+      "uid": "co.uk"
+    }, 
+    {
+      "name": "Canada", 
+      "search_url": "https://www.amazon.ca/gp/search?ie=UTF8&keywords={query}", 
+      "suggest_url": "https://completion.amazon.com/search/complete?mkt=7&method=completion&search-alias=aps&client=alfred-searchio&q={query}", 
+      "title": "Amazon Canada", 
+      "uid": "ca"
+    }, 
+    {
+      "name": "Deutschland", 
+      "search_url": "https://www.amazon.de/gp/search?ie=UTF8&keywords={query}", 
+      "suggest_url": "https://completion.amazon.co.uk/search/complete?mkt=4&method=completion&search-alias=aps&client=alfred-searchio&q={query}", 
+      "title": "Amazon Deutschland", 
+      "uid": "de"
+    }, 
+    {
+      "name": "France", 
+      "search_url": "https://www.amazon.fr/gp/search?ie=UTF8&keywords={query}", 
+      "suggest_url": "https://completion.amazon.co.uk/search/complete?mkt=5&method=completion&search-alias=aps&client=alfred-searchio&q={query}", 
+      "title": "Amazon France", 
+      "uid": "fr"
+    }, 
+    {
+      "name": "Espa\u00f1a", 
+      "search_url": "https://www.amazon.es/gp/search?ie=UTF8&keywords={query}", 
+      "suggest_url": "https://completion.amazon.co.uk/search/complete?mkt=44551&method=completion&search-alias=aps&client=alfred-searchio&q={query}", 
+      "title": "Amazon Espa\u00f1a", 
+      "uid": "es"
+    }, 
+    {
+      "name": "Brasil", 
+      "search_url": "https://www.amazon.com.br/gp/search?ie=UTF8&keywords={query}", 
+      "suggest_url": "https://completion.amazon.com/search/complete?mkt=526970&method=completion&search-alias=aps&client=alfred-searchio&q={query}", 
+      "title": "Amazon Brasil", 
+      "uid": "com.br"
+    }
+  ]
+}

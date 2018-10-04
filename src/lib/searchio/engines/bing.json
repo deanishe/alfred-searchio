@@ -1,0 +1,1308 @@
+{
+  "description": "General search engine", 
+  "title": "Bing", 
+  "variants": [
+    {
+      "name": "Afar", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:aa&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:aa&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=aa", 
+      "title": "Bing (Afar)", 
+      "uid": "aa"
+    }, 
+    {
+      "name": "Abkhazian", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:ab&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:ab&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=ab", 
+      "title": "Bing (Abkhazian)", 
+      "uid": "ab"
+    }, 
+    {
+      "name": "Avestan", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:ae&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:ae&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=ae", 
+      "title": "Bing (Avestan)", 
+      "uid": "ae"
+    }, 
+    {
+      "name": "Afrikaans", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:af&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:af&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=af", 
+      "title": "Bing (Afrikaans)", 
+      "uid": "af"
+    }, 
+    {
+      "name": "Akan", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:ak&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:ak&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=ak", 
+      "title": "Bing (Akan)", 
+      "uid": "ak"
+    }, 
+    {
+      "name": "Amharic", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:am&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:am&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=am", 
+      "title": "Bing (Amharic)", 
+      "uid": "am"
+    }, 
+    {
+      "name": "Aragonese", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:an&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:an&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=an", 
+      "title": "Bing (Aragonese)", 
+      "uid": "an"
+    }, 
+    {
+      "name": "Arabic", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:ar&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:ar&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=ar", 
+      "title": "Bing (Arabic)", 
+      "uid": "ar"
+    }, 
+    {
+      "name": "Assamese", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:as&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:as&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=as", 
+      "title": "Bing (Assamese)", 
+      "uid": "as"
+    }, 
+    {
+      "name": "Avaric", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:av&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:av&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=av", 
+      "title": "Bing (Avaric)", 
+      "uid": "av"
+    }, 
+    {
+      "name": "Aymara", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:ay&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:ay&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=ay", 
+      "title": "Bing (Aymara)", 
+      "uid": "ay"
+    }, 
+    {
+      "name": "Azerbaijani", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:az&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:az&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=az", 
+      "title": "Bing (Azerbaijani)", 
+      "uid": "az"
+    }, 
+    {
+      "name": "Bashkir", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:ba&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:ba&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=ba", 
+      "title": "Bing (Bashkir)", 
+      "uid": "ba"
+    }, 
+    {
+      "name": "Belarusian", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:be&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:be&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=be", 
+      "title": "Bing (Belarusian)", 
+      "uid": "be"
+    }, 
+    {
+      "name": "Bulgarian", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:bg&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:bg&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=bg", 
+      "title": "Bing (Bulgarian)", 
+      "uid": "bg"
+    }, 
+    {
+      "name": "Bihari", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:bh&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:bh&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=bh", 
+      "title": "Bing (Bihari)", 
+      "uid": "bh"
+    }, 
+    {
+      "name": "Bislama", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:bi&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:bi&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=bi", 
+      "title": "Bing (Bislama)", 
+      "uid": "bi"
+    }, 
+    {
+      "name": "Bambara", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:bm&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:bm&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=bm", 
+      "title": "Bing (Bambara)", 
+      "uid": "bm"
+    }, 
+    {
+      "name": "Bengali", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:bn&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:bn&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=bn", 
+      "title": "Bing (Bengali)", 
+      "uid": "bn"
+    }, 
+    {
+      "name": "Tibetan", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:bo&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:bo&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=bo", 
+      "title": "Bing (Tibetan)", 
+      "uid": "bo"
+    }, 
+    {
+      "name": "Breton", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:br&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:br&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=br", 
+      "title": "Bing (Breton)", 
+      "uid": "br"
+    }, 
+    {
+      "name": "Bosnian", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:bs&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:bs&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=bs", 
+      "title": "Bing (Bosnian)", 
+      "uid": "bs"
+    }, 
+    {
+      "name": "Catalan", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:ca&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:ca&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=ca", 
+      "title": "Bing (Catalan)", 
+      "uid": "ca"
+    }, 
+    {
+      "name": "Chechen", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:ce&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:ce&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=ce", 
+      "title": "Bing (Chechen)", 
+      "uid": "ce"
+    }, 
+    {
+      "name": "Chamorro", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:ch&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:ch&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=ch", 
+      "title": "Bing (Chamorro)", 
+      "uid": "ch"
+    }, 
+    {
+      "name": "Corsican", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:co&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:co&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=co", 
+      "title": "Bing (Corsican)", 
+      "uid": "co"
+    }, 
+    {
+      "name": "Cree", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:cr&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:cr&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=cr", 
+      "title": "Bing (Cree)", 
+      "uid": "cr"
+    }, 
+    {
+      "name": "Czech", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:cs&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:cs&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=cs", 
+      "title": "Bing (Czech)", 
+      "uid": "cs"
+    }, 
+    {
+      "name": "Church Slavic", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:cu&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:cu&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=cu", 
+      "title": "Bing (Church Slavic)", 
+      "uid": "cu"
+    }, 
+    {
+      "name": "Chuvash", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:cv&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:cv&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=cv", 
+      "title": "Bing (Chuvash)", 
+      "uid": "cv"
+    }, 
+    {
+      "name": "Welsh", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:cy&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:cy&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=cy", 
+      "title": "Bing (Welsh)", 
+      "uid": "cy"
+    }, 
+    {
+      "name": "Danish", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:da&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:da&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=da", 
+      "title": "Bing (Danish)", 
+      "uid": "da"
+    }, 
+    {
+      "name": "German", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:de&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:de&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=de", 
+      "title": "Bing (German)", 
+      "uid": "de"
+    }, 
+    {
+      "name": "Divehi", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:dv&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:dv&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=dv", 
+      "title": "Bing (Divehi)", 
+      "uid": "dv"
+    }, 
+    {
+      "name": "Dzongkha", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:dz&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:dz&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=dz", 
+      "title": "Bing (Dzongkha)", 
+      "uid": "dz"
+    }, 
+    {
+      "name": "Ewe", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:ee&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:ee&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=ee", 
+      "title": "Bing (Ewe)", 
+      "uid": "ee"
+    }, 
+    {
+      "name": "Greek", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:el&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:el&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=el", 
+      "title": "Bing (Greek)", 
+      "uid": "el"
+    }, 
+    {
+      "name": "English", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:en&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:en&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=en", 
+      "title": "Bing (English)", 
+      "uid": "en"
+    }, 
+    {
+      "name": "Esperanto", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:eo&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:eo&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=eo", 
+      "title": "Bing (Esperanto)", 
+      "uid": "eo"
+    }, 
+    {
+      "name": "Spanish", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:es&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:es&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=es", 
+      "title": "Bing (Spanish)", 
+      "uid": "es"
+    }, 
+    {
+      "name": "Estonian", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:et&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:et&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=et", 
+      "title": "Bing (Estonian)", 
+      "uid": "et"
+    }, 
+    {
+      "name": "Basque", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:eu&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:eu&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=eu", 
+      "title": "Bing (Basque)", 
+      "uid": "eu"
+    }, 
+    {
+      "name": "Persian", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:fa&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:fa&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=fa", 
+      "title": "Bing (Persian)", 
+      "uid": "fa"
+    }, 
+    {
+      "name": "Fulah", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:ff&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:ff&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=ff", 
+      "title": "Bing (Fulah)", 
+      "uid": "ff"
+    }, 
+    {
+      "name": "Finnish", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:fi&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:fi&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=fi", 
+      "title": "Bing (Finnish)", 
+      "uid": "fi"
+    }, 
+    {
+      "name": "Fijian", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:fj&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:fj&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=fj", 
+      "title": "Bing (Fijian)", 
+      "uid": "fj"
+    }, 
+    {
+      "name": "Faroese", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:fo&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:fo&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=fo", 
+      "title": "Bing (Faroese)", 
+      "uid": "fo"
+    }, 
+    {
+      "name": "French", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:fr&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:fr&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=fr", 
+      "title": "Bing (French)", 
+      "uid": "fr"
+    }, 
+    {
+      "name": "Western Frisian", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:fy&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:fy&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=fy", 
+      "title": "Bing (Western Frisian)", 
+      "uid": "fy"
+    }, 
+    {
+      "name": "Irish", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:ga&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:ga&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=ga", 
+      "title": "Bing (Irish)", 
+      "uid": "ga"
+    }, 
+    {
+      "name": "Scottish Gaelic", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:gd&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:gd&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=gd", 
+      "title": "Bing (Scottish Gaelic)", 
+      "uid": "gd"
+    }, 
+    {
+      "name": "Galician", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:gl&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:gl&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=gl", 
+      "title": "Bing (Galician)", 
+      "uid": "gl"
+    }, 
+    {
+      "name": "Guaran\u00ed", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:gn&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:gn&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=gn", 
+      "title": "Bing (Guaran\u00ed)", 
+      "uid": "gn"
+    }, 
+    {
+      "name": "Gujarati", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:gu&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:gu&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=gu", 
+      "title": "Bing (Gujarati)", 
+      "uid": "gu"
+    }, 
+    {
+      "name": "Manx", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:gv&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:gv&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=gv", 
+      "title": "Bing (Manx)", 
+      "uid": "gv"
+    }, 
+    {
+      "name": "Hausa", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:ha&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:ha&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=ha", 
+      "title": "Bing (Hausa)", 
+      "uid": "ha"
+    }, 
+    {
+      "name": "Hebrew", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:he&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:he&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=he", 
+      "title": "Bing (Hebrew)", 
+      "uid": "he"
+    }, 
+    {
+      "name": "Hindi", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:hi&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:hi&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=hi", 
+      "title": "Bing (Hindi)", 
+      "uid": "hi"
+    }, 
+    {
+      "name": "Hiri Motu", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:ho&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:ho&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=ho", 
+      "title": "Bing (Hiri Motu)", 
+      "uid": "ho"
+    }, 
+    {
+      "name": "Croatian", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:hr&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:hr&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=hr", 
+      "title": "Bing (Croatian)", 
+      "uid": "hr"
+    }, 
+    {
+      "name": "Haitian", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:ht&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:ht&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=ht", 
+      "title": "Bing (Haitian)", 
+      "uid": "ht"
+    }, 
+    {
+      "name": "Hungarian", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:hu&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:hu&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=hu", 
+      "title": "Bing (Hungarian)", 
+      "uid": "hu"
+    }, 
+    {
+      "name": "Armenian", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:hy&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:hy&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=hy", 
+      "title": "Bing (Armenian)", 
+      "uid": "hy"
+    }, 
+    {
+      "name": "Herero", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:hz&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:hz&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=hz", 
+      "title": "Bing (Herero)", 
+      "uid": "hz"
+    }, 
+    {
+      "name": "Interlingua (International Auxiliary Language Association)", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:ia&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:ia&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=ia", 
+      "title": "Bing (Interlingua (International Auxiliary Language Association))", 
+      "uid": "ia"
+    }, 
+    {
+      "name": "Indonesian", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:id&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:id&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=id", 
+      "title": "Bing (Indonesian)", 
+      "uid": "id"
+    }, 
+    {
+      "name": "Interlingue", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:ie&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:ie&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=ie", 
+      "title": "Bing (Interlingue)", 
+      "uid": "ie"
+    }, 
+    {
+      "name": "Igbo", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:ig&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:ig&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=ig", 
+      "title": "Bing (Igbo)", 
+      "uid": "ig"
+    }, 
+    {
+      "name": "Sichuan Yi", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:ii&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:ii&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=ii", 
+      "title": "Bing (Sichuan Yi)", 
+      "uid": "ii"
+    }, 
+    {
+      "name": "Inupiaq", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:ik&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:ik&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=ik", 
+      "title": "Bing (Inupiaq)", 
+      "uid": "ik"
+    }, 
+    {
+      "name": "Ido", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:io&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:io&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=io", 
+      "title": "Bing (Ido)", 
+      "uid": "io"
+    }, 
+    {
+      "name": "Icelandic", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:is&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:is&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=is", 
+      "title": "Bing (Icelandic)", 
+      "uid": "is"
+    }, 
+    {
+      "name": "Italian", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:it&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:it&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=it", 
+      "title": "Bing (Italian)", 
+      "uid": "it"
+    }, 
+    {
+      "name": "Inuktitut", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:iu&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:iu&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=iu", 
+      "title": "Bing (Inuktitut)", 
+      "uid": "iu"
+    }, 
+    {
+      "name": "Japanese", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:ja&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:ja&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=ja", 
+      "title": "Bing (Japanese)", 
+      "uid": "ja"
+    }, 
+    {
+      "name": "Javanese", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:jv&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:jv&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=jv", 
+      "title": "Bing (Javanese)", 
+      "uid": "jv"
+    }, 
+    {
+      "name": "Georgian", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:ka&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:ka&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=ka", 
+      "title": "Bing (Georgian)", 
+      "uid": "ka"
+    }, 
+    {
+      "name": "Kongo", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:kg&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:kg&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=kg", 
+      "title": "Bing (Kongo)", 
+      "uid": "kg"
+    }, 
+    {
+      "name": "Kikuyu", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:ki&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:ki&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=ki", 
+      "title": "Bing (Kikuyu)", 
+      "uid": "ki"
+    }, 
+    {
+      "name": "Kwanyama", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:kj&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:kj&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=kj", 
+      "title": "Bing (Kwanyama)", 
+      "uid": "kj"
+    }, 
+    {
+      "name": "Kazakh", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:kk&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:kk&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=kk", 
+      "title": "Bing (Kazakh)", 
+      "uid": "kk"
+    }, 
+    {
+      "name": "Kalaallisut", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:kl&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:kl&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=kl", 
+      "title": "Bing (Kalaallisut)", 
+      "uid": "kl"
+    }, 
+    {
+      "name": "Khmer", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:km&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:km&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=km", 
+      "title": "Bing (Khmer)", 
+      "uid": "km"
+    }, 
+    {
+      "name": "Kannada", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:kn&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:kn&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=kn", 
+      "title": "Bing (Kannada)", 
+      "uid": "kn"
+    }, 
+    {
+      "name": "Korean", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:ko&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:ko&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=ko", 
+      "title": "Bing (Korean)", 
+      "uid": "ko"
+    }, 
+    {
+      "name": "Kanuri", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:kr&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:kr&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=kr", 
+      "title": "Bing (Kanuri)", 
+      "uid": "kr"
+    }, 
+    {
+      "name": "Kashmiri", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:ks&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:ks&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=ks", 
+      "title": "Bing (Kashmiri)", 
+      "uid": "ks"
+    }, 
+    {
+      "name": "Kurdish", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:ku&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:ku&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=ku", 
+      "title": "Bing (Kurdish)", 
+      "uid": "ku"
+    }, 
+    {
+      "name": "Komi", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:kv&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:kv&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=kv", 
+      "title": "Bing (Komi)", 
+      "uid": "kv"
+    }, 
+    {
+      "name": "Cornish", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:kw&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:kw&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=kw", 
+      "title": "Bing (Cornish)", 
+      "uid": "kw"
+    }, 
+    {
+      "name": "Kirghiz", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:ky&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:ky&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=ky", 
+      "title": "Bing (Kirghiz)", 
+      "uid": "ky"
+    }, 
+    {
+      "name": "Latin", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:la&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:la&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=la", 
+      "title": "Bing (Latin)", 
+      "uid": "la"
+    }, 
+    {
+      "name": "Luxembourgish", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:lb&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:lb&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=lb", 
+      "title": "Bing (Luxembourgish)", 
+      "uid": "lb"
+    }, 
+    {
+      "name": "Ganda", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:lg&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:lg&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=lg", 
+      "title": "Bing (Ganda)", 
+      "uid": "lg"
+    }, 
+    {
+      "name": "Limburgish", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:li&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:li&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=li", 
+      "title": "Bing (Limburgish)", 
+      "uid": "li"
+    }, 
+    {
+      "name": "Lingala", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:ln&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:ln&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=ln", 
+      "title": "Bing (Lingala)", 
+      "uid": "ln"
+    }, 
+    {
+      "name": "Lao", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:lo&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:lo&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=lo", 
+      "title": "Bing (Lao)", 
+      "uid": "lo"
+    }, 
+    {
+      "name": "Lithuanian", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:lt&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:lt&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=lt", 
+      "title": "Bing (Lithuanian)", 
+      "uid": "lt"
+    }, 
+    {
+      "name": "Luba-Katanga", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:lu&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:lu&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=lu", 
+      "title": "Bing (Luba-Katanga)", 
+      "uid": "lu"
+    }, 
+    {
+      "name": "Latvian", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:lv&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:lv&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=lv", 
+      "title": "Bing (Latvian)", 
+      "uid": "lv"
+    }, 
+    {
+      "name": "Malagasy", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:mg&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:mg&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=mg", 
+      "title": "Bing (Malagasy)", 
+      "uid": "mg"
+    }, 
+    {
+      "name": "Marshallese", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:mh&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:mh&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=mh", 
+      "title": "Bing (Marshallese)", 
+      "uid": "mh"
+    }, 
+    {
+      "name": "M\u0101ori", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:mi&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:mi&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=mi", 
+      "title": "Bing (M\u0101ori)", 
+      "uid": "mi"
+    }, 
+    {
+      "name": "Macedonian", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:mk&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:mk&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=mk", 
+      "title": "Bing (Macedonian)", 
+      "uid": "mk"
+    }, 
+    {
+      "name": "Malayalam", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:ml&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:ml&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=ml", 
+      "title": "Bing (Malayalam)", 
+      "uid": "ml"
+    }, 
+    {
+      "name": "Mongolian", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:mn&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:mn&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=mn", 
+      "title": "Bing (Mongolian)", 
+      "uid": "mn"
+    }, 
+    {
+      "name": "Moldavian", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:mo&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:mo&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=mo", 
+      "title": "Bing (Moldavian)", 
+      "uid": "mo"
+    }, 
+    {
+      "name": "Marathi", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:mr&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:mr&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=mr", 
+      "title": "Bing (Marathi)", 
+      "uid": "mr"
+    }, 
+    {
+      "name": "Malay", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:ms&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:ms&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=ms", 
+      "title": "Bing (Malay)", 
+      "uid": "ms"
+    }, 
+    {
+      "name": "Maltese", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:mt&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:mt&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=mt", 
+      "title": "Bing (Maltese)", 
+      "uid": "mt"
+    }, 
+    {
+      "name": "Burmese", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:my&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:my&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=my", 
+      "title": "Bing (Burmese)", 
+      "uid": "my"
+    }, 
+    {
+      "name": "Nauru", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:na&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:na&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=na", 
+      "title": "Bing (Nauru)", 
+      "uid": "na"
+    }, 
+    {
+      "name": "Norwegian Bokm\u00e5l", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:nb&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:nb&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=nb", 
+      "title": "Bing (Norwegian Bokm\u00e5l)", 
+      "uid": "nb"
+    }, 
+    {
+      "name": "North Ndebele", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:nd&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:nd&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=nd", 
+      "title": "Bing (North Ndebele)", 
+      "uid": "nd"
+    }, 
+    {
+      "name": "Nepali", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:ne&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:ne&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=ne", 
+      "title": "Bing (Nepali)", 
+      "uid": "ne"
+    }, 
+    {
+      "name": "Ndonga", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:ng&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:ng&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=ng", 
+      "title": "Bing (Ndonga)", 
+      "uid": "ng"
+    }, 
+    {
+      "name": "Dutch", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:nl&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:nl&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=nl", 
+      "title": "Bing (Dutch)", 
+      "uid": "nl"
+    }, 
+    {
+      "name": "Norwegian Nynorsk", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:nn&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:nn&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=nn", 
+      "title": "Bing (Norwegian Nynorsk)", 
+      "uid": "nn"
+    }, 
+    {
+      "name": "Norwegian", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:no&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:no&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=no", 
+      "title": "Bing (Norwegian)", 
+      "uid": "no"
+    }, 
+    {
+      "name": "South Ndebele", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:nr&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:nr&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=nr", 
+      "title": "Bing (South Ndebele)", 
+      "uid": "nr"
+    }, 
+    {
+      "name": "Navajo", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:nv&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:nv&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=nv", 
+      "title": "Bing (Navajo)", 
+      "uid": "nv"
+    }, 
+    {
+      "name": "Chichewa", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:ny&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:ny&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=ny", 
+      "title": "Bing (Chichewa)", 
+      "uid": "ny"
+    }, 
+    {
+      "name": "Occitan", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:oc&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:oc&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=oc", 
+      "title": "Bing (Occitan)", 
+      "uid": "oc"
+    }, 
+    {
+      "name": "Ojibwa", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:oj&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:oj&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=oj", 
+      "title": "Bing (Ojibwa)", 
+      "uid": "oj"
+    }, 
+    {
+      "name": "Oromo", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:om&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:om&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=om", 
+      "title": "Bing (Oromo)", 
+      "uid": "om"
+    }, 
+    {
+      "name": "Oriya", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:or&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:or&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=or", 
+      "title": "Bing (Oriya)", 
+      "uid": "or"
+    }, 
+    {
+      "name": "Ossetian", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:os&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:os&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=os", 
+      "title": "Bing (Ossetian)", 
+      "uid": "os"
+    }, 
+    {
+      "name": "Panjabi", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:pa&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:pa&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=pa", 
+      "title": "Bing (Panjabi)", 
+      "uid": "pa"
+    }, 
+    {
+      "name": "P\u0101li", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:pi&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:pi&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=pi", 
+      "title": "Bing (P\u0101li)", 
+      "uid": "pi"
+    }, 
+    {
+      "name": "Polish", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:pl&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:pl&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=pl", 
+      "title": "Bing (Polish)", 
+      "uid": "pl"
+    }, 
+    {
+      "name": "Pashto", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:ps&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:ps&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=ps", 
+      "title": "Bing (Pashto)", 
+      "uid": "ps"
+    }, 
+    {
+      "name": "Portuguese", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:pt&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:pt&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=pt", 
+      "title": "Bing (Portuguese)", 
+      "uid": "pt"
+    }, 
+    {
+      "name": "Quechua", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:qu&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:qu&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=qu", 
+      "title": "Bing (Quechua)", 
+      "uid": "qu"
+    }, 
+    {
+      "name": "Raeto-Romance", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:rm&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:rm&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=rm", 
+      "title": "Bing (Raeto-Romance)", 
+      "uid": "rm"
+    }, 
+    {
+      "name": "Kirundi", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:rn&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:rn&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=rn", 
+      "title": "Bing (Kirundi)", 
+      "uid": "rn"
+    }, 
+    {
+      "name": "Romanian", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:ro&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:ro&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=ro", 
+      "title": "Bing (Romanian)", 
+      "uid": "ro"
+    }, 
+    {
+      "name": "Russian", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:ru&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:ru&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=ru", 
+      "title": "Bing (Russian)", 
+      "uid": "ru"
+    }, 
+    {
+      "name": "Kinyarwanda", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:rw&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:rw&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=rw", 
+      "title": "Bing (Kinyarwanda)", 
+      "uid": "rw"
+    }, 
+    {
+      "name": "Sanskrit", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:sa&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:sa&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=sa", 
+      "title": "Bing (Sanskrit)", 
+      "uid": "sa"
+    }, 
+    {
+      "name": "Sardinian", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:sc&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:sc&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=sc", 
+      "title": "Bing (Sardinian)", 
+      "uid": "sc"
+    }, 
+    {
+      "name": "Sindhi", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:sd&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:sd&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=sd", 
+      "title": "Bing (Sindhi)", 
+      "uid": "sd"
+    }, 
+    {
+      "name": "Northern Sami", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:se&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:se&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=se", 
+      "title": "Bing (Northern Sami)", 
+      "uid": "se"
+    }, 
+    {
+      "name": "Sango", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:sg&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:sg&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=sg", 
+      "title": "Bing (Sango)", 
+      "uid": "sg"
+    }, 
+    {
+      "name": "Serbo-Croatian", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:sh&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:sh&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=sh", 
+      "title": "Bing (Serbo-Croatian)", 
+      "uid": "sh"
+    }, 
+    {
+      "name": "Sinhala", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:si&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:si&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=si", 
+      "title": "Bing (Sinhala)", 
+      "uid": "si"
+    }, 
+    {
+      "name": "Slovak", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:sk&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:sk&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=sk", 
+      "title": "Bing (Slovak)", 
+      "uid": "sk"
+    }, 
+    {
+      "name": "Slovenian", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:sl&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:sl&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=sl", 
+      "title": "Bing (Slovenian)", 
+      "uid": "sl"
+    }, 
+    {
+      "name": "Samoan", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:sm&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:sm&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=sm", 
+      "title": "Bing (Samoan)", 
+      "uid": "sm"
+    }, 
+    {
+      "name": "Shona", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:sn&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:sn&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=sn", 
+      "title": "Bing (Shona)", 
+      "uid": "sn"
+    }, 
+    {
+      "name": "Somali", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:so&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:so&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=so", 
+      "title": "Bing (Somali)", 
+      "uid": "so"
+    }, 
+    {
+      "name": "Albanian", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:sq&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:sq&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=sq", 
+      "title": "Bing (Albanian)", 
+      "uid": "sq"
+    }, 
+    {
+      "name": "Serbian", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:sr&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:sr&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=sr", 
+      "title": "Bing (Serbian)", 
+      "uid": "sr"
+    }, 
+    {
+      "name": "Swati", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:ss&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:ss&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=ss", 
+      "title": "Bing (Swati)", 
+      "uid": "ss"
+    }, 
+    {
+      "name": "Southern Sotho", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:st&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:st&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=st", 
+      "title": "Bing (Southern Sotho)", 
+      "uid": "st"
+    }, 
+    {
+      "name": "Sundanese", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:su&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:su&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=su", 
+      "title": "Bing (Sundanese)", 
+      "uid": "su"
+    }, 
+    {
+      "name": "Swedish", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:sv&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:sv&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=sv", 
+      "title": "Bing (Swedish)", 
+      "uid": "sv"
+    }, 
+    {
+      "name": "Swahili", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:sw&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:sw&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=sw", 
+      "title": "Bing (Swahili)", 
+      "uid": "sw"
+    }, 
+    {
+      "name": "Tamil", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:ta&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:ta&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=ta", 
+      "title": "Bing (Tamil)", 
+      "uid": "ta"
+    }, 
+    {
+      "name": "Telugu", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:te&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:te&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=te", 
+      "title": "Bing (Telugu)", 
+      "uid": "te"
+    }, 
+    {
+      "name": "Tajik", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:tg&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:tg&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=tg", 
+      "title": "Bing (Tajik)", 
+      "uid": "tg"
+    }, 
+    {
+      "name": "Thai", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:th&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:th&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=th", 
+      "title": "Bing (Thai)", 
+      "uid": "th"
+    }, 
+    {
+      "name": "Tigrinya", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:ti&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:ti&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=ti", 
+      "title": "Bing (Tigrinya)", 
+      "uid": "ti"
+    }, 
+    {
+      "name": "Turkmen", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:tk&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:tk&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=tk", 
+      "title": "Bing (Turkmen)", 
+      "uid": "tk"
+    }, 
+    {
+      "name": "Tagalog", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:tl&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:tl&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=tl", 
+      "title": "Bing (Tagalog)", 
+      "uid": "tl"
+    }, 
+    {
+      "name": "Tswana", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:tn&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:tn&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=tn", 
+      "title": "Bing (Tswana)", 
+      "uid": "tn"
+    }, 
+    {
+      "name": "Tonga", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:to&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:to&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=to", 
+      "title": "Bing (Tonga)", 
+      "uid": "to"
+    }, 
+    {
+      "name": "Turkish", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:tr&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:tr&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=tr", 
+      "title": "Bing (Turkish)", 
+      "uid": "tr"
+    }, 
+    {
+      "name": "Tsonga", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:ts&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:ts&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=ts", 
+      "title": "Bing (Tsonga)", 
+      "uid": "ts"
+    }, 
+    {
+      "name": "Tatar", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:tt&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:tt&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=tt", 
+      "title": "Bing (Tatar)", 
+      "uid": "tt"
+    }, 
+    {
+      "name": "Twi", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:tw&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:tw&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=tw", 
+      "title": "Bing (Twi)", 
+      "uid": "tw"
+    }, 
+    {
+      "name": "Tahitian", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:ty&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:ty&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=ty", 
+      "title": "Bing (Tahitian)", 
+      "uid": "ty"
+    }, 
+    {
+      "name": "Uighur", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:ug&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:ug&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=ug", 
+      "title": "Bing (Uighur)", 
+      "uid": "ug"
+    }, 
+    {
+      "name": "Ukrainian", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:uk&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:uk&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=uk", 
+      "title": "Bing (Ukrainian)", 
+      "uid": "uk"
+    }, 
+    {
+      "name": "Urdu", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:ur&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:ur&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=ur", 
+      "title": "Bing (Urdu)", 
+      "uid": "ur"
+    }, 
+    {
+      "name": "Uzbek", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:uz&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:uz&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=uz", 
+      "title": "Bing (Uzbek)", 
+      "uid": "uz"
+    }, 
+    {
+      "name": "Venda", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:ve&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:ve&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=ve", 
+      "title": "Bing (Venda)", 
+      "uid": "ve"
+    }, 
+    {
+      "name": "Vietnamese", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:vi&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:vi&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=vi", 
+      "title": "Bing (Vietnamese)", 
+      "uid": "vi"
+    }, 
+    {
+      "name": "Volap\u00fck", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:vo&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:vo&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=vo", 
+      "title": "Bing (Volap\u00fck)", 
+      "uid": "vo"
+    }, 
+    {
+      "name": "Walloon", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:wa&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:wa&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=wa", 
+      "title": "Bing (Walloon)", 
+      "uid": "wa"
+    }, 
+    {
+      "name": "Wolof", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:wo&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:wo&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=wo", 
+      "title": "Bing (Wolof)", 
+      "uid": "wo"
+    }, 
+    {
+      "name": "Xhosa", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:xh&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:xh&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=xh", 
+      "title": "Bing (Xhosa)", 
+      "uid": "xh"
+    }, 
+    {
+      "name": "Yiddish", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:yi&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:yi&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=yi", 
+      "title": "Bing (Yiddish)", 
+      "uid": "yi"
+    }, 
+    {
+      "name": "Yoruba", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:yo&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:yo&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=yo", 
+      "title": "Bing (Yoruba)", 
+      "uid": "yo"
+    }, 
+    {
+      "name": "Zhuang", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:za&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:za&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=za", 
+      "title": "Bing (Zhuang)", 
+      "uid": "za"
+    }, 
+    {
+      "name": "Chinese", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:zh&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:zh&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=zh", 
+      "title": "Bing (Chinese)", 
+      "uid": "zh"
+    }, 
+    {
+      "name": "Zulu", 
+      "search_url": "https://www.bing.com/search?q={query}%20language:zu&go=Submit&qs=n&form=QBRE&filt=all&pq={query}%20language:zu&sc=8-6&sp=-1&sk=", 
+      "suggest_url": "http://api.bing.com/osjson.aspx?query={query}&language=zu", 
+      "title": "Bing (Zulu)", 
+      "uid": "zu"
+    }
+  ]
+}

@@ -1,0 +1,629 @@
+{
+  "description": "Video search", 
+  "title": "YouTube", 
+  "variants": [
+    {
+      "name": "Algeria", 
+      "search_url": "https://www.youtube.com/results?gl=dz&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=dz&q={query}", 
+      "title": "YouTube (Algeria)", 
+      "uid": "dz"
+    }, 
+    {
+      "name": "Argentina", 
+      "search_url": "https://www.youtube.com/results?gl=ar&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=ar&q={query}", 
+      "title": "YouTube (Argentina)", 
+      "uid": "ar"
+    }, 
+    {
+      "name": "Australia", 
+      "search_url": "https://www.youtube.com/results?gl=au&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=au&q={query}", 
+      "title": "YouTube (Australia)", 
+      "uid": "au"
+    }, 
+    {
+      "name": "Austria", 
+      "search_url": "https://www.youtube.com/results?gl=at&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=at&q={query}", 
+      "title": "YouTube (Austria)", 
+      "uid": "at"
+    }, 
+    {
+      "name": "Azerbaijan", 
+      "search_url": "https://www.youtube.com/results?gl=az&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=az&q={query}", 
+      "title": "YouTube (Azerbaijan)", 
+      "uid": "az"
+    }, 
+    {
+      "name": "Bahrain", 
+      "search_url": "https://www.youtube.com/results?gl=bh&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=bh&q={query}", 
+      "title": "YouTube (Bahrain)", 
+      "uid": "bh"
+    }, 
+    {
+      "name": "Belarus", 
+      "search_url": "https://www.youtube.com/results?gl=by&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=by&q={query}", 
+      "title": "YouTube (Belarus)", 
+      "uid": "by"
+    }, 
+    {
+      "name": "Belgium", 
+      "search_url": "https://www.youtube.com/results?gl=be&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=be&q={query}", 
+      "title": "YouTube (Belgium)", 
+      "uid": "be"
+    }, 
+    {
+      "name": "Bosnia and Herzegovina", 
+      "search_url": "https://www.youtube.com/results?gl=ba&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=ba&q={query}", 
+      "title": "YouTube (Bosnia and Herzegovina)", 
+      "uid": "ba"
+    }, 
+    {
+      "name": "Brazil", 
+      "search_url": "https://www.youtube.com/results?gl=br&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=pt-br&q={query}", 
+      "title": "YouTube (Brazil)", 
+      "uid": "br"
+    }, 
+    {
+      "name": "Bulgaria", 
+      "search_url": "https://www.youtube.com/results?gl=bg&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=bg&q={query}", 
+      "title": "YouTube (Bulgaria)", 
+      "uid": "bg"
+    }, 
+    {
+      "name": "Canada", 
+      "search_url": "https://www.youtube.com/results?gl=ca&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=ca&q={query}", 
+      "title": "YouTube (Canada)", 
+      "uid": "ca"
+    }, 
+    {
+      "name": "Chile", 
+      "search_url": "https://www.youtube.com/results?gl=cl&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=cl&q={query}", 
+      "title": "YouTube (Chile)", 
+      "uid": "cl"
+    }, 
+    {
+      "name": "Colombia", 
+      "search_url": "https://www.youtube.com/results?gl=co&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=co&q={query}", 
+      "title": "YouTube (Colombia)", 
+      "uid": "co"
+    }, 
+    {
+      "name": "Croatia", 
+      "search_url": "https://www.youtube.com/results?gl=hr&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=hr&q={query}", 
+      "title": "YouTube (Croatia)", 
+      "uid": "hr"
+    }, 
+    {
+      "name": "Czech Republic", 
+      "search_url": "https://www.youtube.com/results?gl=cz&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=cz&q={query}", 
+      "title": "YouTube (Czech Republic)", 
+      "uid": "cz"
+    }, 
+    {
+      "name": "Denmark", 
+      "search_url": "https://www.youtube.com/results?gl=dk&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=dk&q={query}", 
+      "title": "YouTube (Denmark)", 
+      "uid": "dk"
+    }, 
+    {
+      "name": "Egypt", 
+      "search_url": "https://www.youtube.com/results?gl=eg&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=eg&q={query}", 
+      "title": "YouTube (Egypt)", 
+      "uid": "eg"
+    }, 
+    {
+      "name": "Estonia", 
+      "search_url": "https://www.youtube.com/results?gl=ee&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=ee&q={query}", 
+      "title": "YouTube (Estonia)", 
+      "uid": "ee"
+    }, 
+    {
+      "name": "Finland", 
+      "search_url": "https://www.youtube.com/results?gl=fi&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=fi&q={query}", 
+      "title": "YouTube (Finland)", 
+      "uid": "fi"
+    }, 
+    {
+      "name": "France", 
+      "search_url": "https://www.youtube.com/results?gl=fr&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=fr&q={query}", 
+      "title": "YouTube (France)", 
+      "uid": "fr"
+    }, 
+    {
+      "name": "Georgia", 
+      "search_url": "https://www.youtube.com/results?gl=ge&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=ge&q={query}", 
+      "title": "YouTube (Georgia)", 
+      "uid": "ge"
+    }, 
+    {
+      "name": "Germany", 
+      "search_url": "https://www.youtube.com/results?gl=de&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=de&q={query}", 
+      "title": "YouTube (Germany)", 
+      "uid": "de"
+    }, 
+    {
+      "name": "Ghana", 
+      "search_url": "https://www.youtube.com/results?gl=gh&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=gh&q={query}", 
+      "title": "YouTube (Ghana)", 
+      "uid": "gh"
+    }, 
+    {
+      "name": "Greece", 
+      "search_url": "https://www.youtube.com/results?gl=gr&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=gr&q={query}", 
+      "title": "YouTube (Greece)", 
+      "uid": "gr"
+    }, 
+    {
+      "name": "Hong Kong", 
+      "search_url": "https://www.youtube.com/results?gl=hk&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=hk&q={query}", 
+      "title": "YouTube (Hong Kong)", 
+      "uid": "hk"
+    }, 
+    {
+      "name": "Hungary", 
+      "search_url": "https://www.youtube.com/results?gl=hu&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=hu&q={query}", 
+      "title": "YouTube (Hungary)", 
+      "uid": "hu"
+    }, 
+    {
+      "name": "Iceland", 
+      "search_url": "https://www.youtube.com/results?gl=is&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=is&q={query}", 
+      "title": "YouTube (Iceland)", 
+      "uid": "is"
+    }, 
+    {
+      "name": "India", 
+      "search_url": "https://www.youtube.com/results?gl=in&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=in&q={query}", 
+      "title": "YouTube (India)", 
+      "uid": "in"
+    }, 
+    {
+      "name": "Indonesia", 
+      "search_url": "https://www.youtube.com/results?gl=id&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=id&q={query}", 
+      "title": "YouTube (Indonesia)", 
+      "uid": "id"
+    }, 
+    {
+      "name": "Iraq", 
+      "search_url": "https://www.youtube.com/results?gl=iq&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=iq&q={query}", 
+      "title": "YouTube (Iraq)", 
+      "uid": "iq"
+    }, 
+    {
+      "name": "Ireland", 
+      "search_url": "https://www.youtube.com/results?gl=ie&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=ie&q={query}", 
+      "title": "YouTube (Ireland)", 
+      "uid": "ie"
+    }, 
+    {
+      "name": "Israel", 
+      "search_url": "https://www.youtube.com/results?gl=il&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=il&q={query}", 
+      "title": "YouTube (Israel)", 
+      "uid": "il"
+    }, 
+    {
+      "name": "Italy", 
+      "search_url": "https://www.youtube.com/results?gl=it&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=it&q={query}", 
+      "title": "YouTube (Italy)", 
+      "uid": "it"
+    }, 
+    {
+      "name": "Jamaica", 
+      "search_url": "https://www.youtube.com/results?gl=jm&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=jm&q={query}", 
+      "title": "YouTube (Jamaica)", 
+      "uid": "jm"
+    }, 
+    {
+      "name": "Japan", 
+      "search_url": "https://www.youtube.com/results?gl=jp&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=jp&q={query}", 
+      "title": "YouTube (Japan)", 
+      "uid": "jp"
+    }, 
+    {
+      "name": "Jordan", 
+      "search_url": "https://www.youtube.com/results?gl=jo&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=jo&q={query}", 
+      "title": "YouTube (Jordan)", 
+      "uid": "jo"
+    }, 
+    {
+      "name": "Kazakhstan", 
+      "search_url": "https://www.youtube.com/results?gl=kz&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=kz&q={query}", 
+      "title": "YouTube (Kazakhstan)", 
+      "uid": "kz"
+    }, 
+    {
+      "name": "Kenya", 
+      "search_url": "https://www.youtube.com/results?gl=ke&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=ke&q={query}", 
+      "title": "YouTube (Kenya)", 
+      "uid": "ke"
+    }, 
+    {
+      "name": "Kuwait", 
+      "search_url": "https://www.youtube.com/results?gl=kw&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=kw&q={query}", 
+      "title": "YouTube (Kuwait)", 
+      "uid": "kw"
+    }, 
+    {
+      "name": "Latvia", 
+      "search_url": "https://www.youtube.com/results?gl=lv&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=lv&q={query}", 
+      "title": "YouTube (Latvia)", 
+      "uid": "lv"
+    }, 
+    {
+      "name": "Lebanon", 
+      "search_url": "https://www.youtube.com/results?gl=lb&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=lb&q={query}", 
+      "title": "YouTube (Lebanon)", 
+      "uid": "lb"
+    }, 
+    {
+      "name": "Libya", 
+      "search_url": "https://www.youtube.com/results?gl=ly&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=ly&q={query}", 
+      "title": "YouTube (Libya)", 
+      "uid": "ly"
+    }, 
+    {
+      "name": "Lithuania", 
+      "search_url": "https://www.youtube.com/results?gl=lt&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=lt&q={query}", 
+      "title": "YouTube (Lithuania)", 
+      "uid": "lt"
+    }, 
+    {
+      "name": "Luxembourg", 
+      "search_url": "https://www.youtube.com/results?gl=lu&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=lu&q={query}", 
+      "title": "YouTube (Luxembourg)", 
+      "uid": "lu"
+    }, 
+    {
+      "name": "Macedonia", 
+      "search_url": "https://www.youtube.com/results?gl=mk&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=mk&q={query}", 
+      "title": "YouTube (Macedonia)", 
+      "uid": "mk"
+    }, 
+    {
+      "name": "Malaysia", 
+      "search_url": "https://www.youtube.com/results?gl=my&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=my&q={query}", 
+      "title": "YouTube (Malaysia)", 
+      "uid": "my"
+    }, 
+    {
+      "name": "Mexico", 
+      "search_url": "https://www.youtube.com/results?gl=mx&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=mx&q={query}", 
+      "title": "YouTube (Mexico)", 
+      "uid": "mx"
+    }, 
+    {
+      "name": "Montenegro", 
+      "search_url": "https://www.youtube.com/results?gl=me&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=me&q={query}", 
+      "title": "YouTube (Montenegro)", 
+      "uid": "me"
+    }, 
+    {
+      "name": "Morocco", 
+      "search_url": "https://www.youtube.com/results?gl=ma&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=ma&q={query}", 
+      "title": "YouTube (Morocco)", 
+      "uid": "ma"
+    }, 
+    {
+      "name": "Nepal", 
+      "search_url": "https://www.youtube.com/results?gl=np&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=np&q={query}", 
+      "title": "YouTube (Nepal)", 
+      "uid": "np"
+    }, 
+    {
+      "name": "Netherlands", 
+      "search_url": "https://www.youtube.com/results?gl=nl&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=nl&q={query}", 
+      "title": "YouTube (Netherlands)", 
+      "uid": "nl"
+    }, 
+    {
+      "name": "New Zealand", 
+      "search_url": "https://www.youtube.com/results?gl=nz&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=nz&q={query}", 
+      "title": "YouTube (New Zealand)", 
+      "uid": "nz"
+    }, 
+    {
+      "name": "Nigeria", 
+      "search_url": "https://www.youtube.com/results?gl=ng&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=ng&q={query}", 
+      "title": "YouTube (Nigeria)", 
+      "uid": "ng"
+    }, 
+    {
+      "name": "Norway", 
+      "search_url": "https://www.youtube.com/results?gl=no&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=no&q={query}", 
+      "title": "YouTube (Norway)", 
+      "uid": "no"
+    }, 
+    {
+      "name": "Oman", 
+      "search_url": "https://www.youtube.com/results?gl=om&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=om&q={query}", 
+      "title": "YouTube (Oman)", 
+      "uid": "om"
+    }, 
+    {
+      "name": "Pakistan", 
+      "search_url": "https://www.youtube.com/results?gl=pk&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=pk&q={query}", 
+      "title": "YouTube (Pakistan)", 
+      "uid": "pk"
+    }, 
+    {
+      "name": "Peru", 
+      "search_url": "https://www.youtube.com/results?gl=pe&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=pe&q={query}", 
+      "title": "YouTube (Peru)", 
+      "uid": "pe"
+    }, 
+    {
+      "name": "Philippines", 
+      "search_url": "https://www.youtube.com/results?gl=ph&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=ph&q={query}", 
+      "title": "YouTube (Philippines)", 
+      "uid": "ph"
+    }, 
+    {
+      "name": "Poland", 
+      "search_url": "https://www.youtube.com/results?gl=pl&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=pl&q={query}", 
+      "title": "YouTube (Poland)", 
+      "uid": "pl"
+    }, 
+    {
+      "name": "Portugal", 
+      "search_url": "https://www.youtube.com/results?gl=pt&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=pt-pt&q={query}", 
+      "title": "YouTube (Portugal)", 
+      "uid": "pt"
+    }, 
+    {
+      "name": "Puerto Rico", 
+      "search_url": "https://www.youtube.com/results?gl=pr&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=pr&q={query}", 
+      "title": "YouTube (Puerto Rico)", 
+      "uid": "pr"
+    }, 
+    {
+      "name": "Qatar", 
+      "search_url": "https://www.youtube.com/results?gl=qa&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=qa&q={query}", 
+      "title": "YouTube (Qatar)", 
+      "uid": "qa"
+    }, 
+    {
+      "name": "Romania", 
+      "search_url": "https://www.youtube.com/results?gl=ro&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=ro&q={query}", 
+      "title": "YouTube (Romania)", 
+      "uid": "ro"
+    }, 
+    {
+      "name": "Russia", 
+      "search_url": "https://www.youtube.com/results?gl=ru&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=ru&q={query}", 
+      "title": "YouTube (Russia)", 
+      "uid": "ru"
+    }, 
+    {
+      "name": "Saudi Arabia", 
+      "search_url": "https://www.youtube.com/results?gl=sa&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=sa&q={query}", 
+      "title": "YouTube (Saudi Arabia)", 
+      "uid": "sa"
+    }, 
+    {
+      "name": "Senegal", 
+      "search_url": "https://www.youtube.com/results?gl=sn&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=sn&q={query}", 
+      "title": "YouTube (Senegal)", 
+      "uid": "sn"
+    }, 
+    {
+      "name": "Serbia", 
+      "search_url": "https://www.youtube.com/results?gl=rs&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=rs&q={query}", 
+      "title": "YouTube (Serbia)", 
+      "uid": "rs"
+    }, 
+    {
+      "name": "Singapore", 
+      "search_url": "https://www.youtube.com/results?gl=sg&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=sg&q={query}", 
+      "title": "YouTube (Singapore)", 
+      "uid": "sg"
+    }, 
+    {
+      "name": "Slovakia", 
+      "search_url": "https://www.youtube.com/results?gl=sk&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=sk&q={query}", 
+      "title": "YouTube (Slovakia)", 
+      "uid": "sk"
+    }, 
+    {
+      "name": "Slovenia", 
+      "search_url": "https://www.youtube.com/results?gl=si&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=si&q={query}", 
+      "title": "YouTube (Slovenia)", 
+      "uid": "si"
+    }, 
+    {
+      "name": "South Africa", 
+      "search_url": "https://www.youtube.com/results?gl=za&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=za&q={query}", 
+      "title": "YouTube (South Africa)", 
+      "uid": "za"
+    }, 
+    {
+      "name": "South Korea", 
+      "search_url": "https://www.youtube.com/results?gl=kr&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=kr&q={query}", 
+      "title": "YouTube (South Korea)", 
+      "uid": "kr"
+    }, 
+    {
+      "name": "Spain", 
+      "search_url": "https://www.youtube.com/results?gl=es&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=es&q={query}", 
+      "title": "YouTube (Spain)", 
+      "uid": "es"
+    }, 
+    {
+      "name": "Sri Lanka", 
+      "search_url": "https://www.youtube.com/results?gl=lk&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=lk&q={query}", 
+      "title": "YouTube (Sri Lanka)", 
+      "uid": "lk"
+    }, 
+    {
+      "name": "Sweden", 
+      "search_url": "https://www.youtube.com/results?gl=se&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=se&q={query}", 
+      "title": "YouTube (Sweden)", 
+      "uid": "se"
+    }, 
+    {
+      "name": "Switzerland", 
+      "search_url": "https://www.youtube.com/results?gl=ch&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=ch&q={query}", 
+      "title": "YouTube (Switzerland)", 
+      "uid": "ch"
+    }, 
+    {
+      "name": "Taiwan", 
+      "search_url": "https://www.youtube.com/results?gl=tw&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=tw&q={query}", 
+      "title": "YouTube (Taiwan)", 
+      "uid": "tw"
+    }, 
+    {
+      "name": "Tanzania", 
+      "search_url": "https://www.youtube.com/results?gl=tz&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=tz&q={query}", 
+      "title": "YouTube (Tanzania)", 
+      "uid": "tz"
+    }, 
+    {
+      "name": "Thailand", 
+      "search_url": "https://www.youtube.com/results?gl=th&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=th&q={query}", 
+      "title": "YouTube (Thailand)", 
+      "uid": "th"
+    }, 
+    {
+      "name": "Tunisia", 
+      "search_url": "https://www.youtube.com/results?gl=tn&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=tn&q={query}", 
+      "title": "YouTube (Tunisia)", 
+      "uid": "tn"
+    }, 
+    {
+      "name": "Turkey", 
+      "search_url": "https://www.youtube.com/results?gl=tr&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=tr&q={query}", 
+      "title": "YouTube (Turkey)", 
+      "uid": "tr"
+    }, 
+    {
+      "name": "Uganda", 
+      "search_url": "https://www.youtube.com/results?gl=ug&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=ug&q={query}", 
+      "title": "YouTube (Uganda)", 
+      "uid": "ug"
+    }, 
+    {
+      "name": "Ukraine", 
+      "search_url": "https://www.youtube.com/results?gl=ua&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=ua&q={query}", 
+      "title": "YouTube (Ukraine)", 
+      "uid": "ua"
+    }, 
+    {
+      "name": "United Arab Emirates", 
+      "search_url": "https://www.youtube.com/results?gl=ae&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=ae&q={query}", 
+      "title": "YouTube (United Arab Emirates)", 
+      "uid": "ae"
+    }, 
+    {
+      "name": "United States", 
+      "search_url": "https://www.youtube.com/results?gl=us&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=us&q={query}", 
+      "title": "YouTube (United States)", 
+      "uid": "us"
+    }, 
+    {
+      "name": "Vietnam", 
+      "search_url": "https://www.youtube.com/results?gl=vn&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=vn&q={query}", 
+      "title": "YouTube (Vietnam)", 
+      "uid": "vn"
+    }, 
+    {
+      "name": "Yemen", 
+      "search_url": "https://www.youtube.com/results?gl=ye&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=ye&q={query}", 
+      "title": "YouTube (Yemen)", 
+      "uid": "ye"
+    }, 
+    {
+      "name": "Zimbabwe", 
+      "search_url": "https://www.youtube.com/results?gl=zw&persist_gl=1&search_query={query}", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&hl=zw&q={query}", 
+      "title": "YouTube (Zimbabwe)", 
+      "uid": "zw"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+# Icons from webfonts via http://icons.deanishe.net
+#
+# Script bin/icons reads this file and downloads the
+# specified icons to src/icons
+#
+# Colours
+# blue:   4A90E2
+# yellow: FDAC27
+# red:    D0141C
+# green:  1B981B
+# purple: AF49FE
+#
+
+# filename        font name     colour    icon name
+
+# Workflow icons
+icon              elusive       D0141C    search-alt
+searches-active   elusive       1B981B    search-alt
+
+update-available  material      FDAC27    cloud-download
+update-check      material      1B981B    cloud-download
+
+back              fontawesome   D0141C    arrow-circle-left
+clipboard         open-iconic   4A90E2    clipboard
+help              fontawesome   4A90E2    question-circle
+import            elusive       AF49FE    download
+reload            fontawesome   FDAC27    refresh
+toggle-off        fontawesome   D0141C    circle-o
+toggle-on         fontawesome   1B981B    check-circle-o
+
+error             elusive       D0141C    error-alt
+warning           fontawesome   FDAC27    warning
+
+progress-1        weathericons  AF49FE    time-12
+progress-2        weathericons  AF49FE    time-3
+progress-3        weathericons  AF49FE    time-6
+progress-4        weathericons  AF49FE    time-9

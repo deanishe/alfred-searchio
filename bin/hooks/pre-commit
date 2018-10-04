@@ -1,4 +1,30 @@
 #!/bin/bash
-# Dummy hook (v2 has a real one)
+# Reject if API key is in info.plist
 
-exit 0
+set -e
+
+# _staged <path> | Is path staged
+_staged() {
+  local p="$1"
+  git diff --name-only --cached | grep --silent "$p"
+  return $?
+}
+
+exec 1>&2 # Redirect output to stderr.
+
+_staged src/info.plist || {
+  echo "info.plist not staged"
+  exit 0
+}
+
+root="$( git rev-parse --show-toplevel )"
+ip="$root/src/info.plist"
+
+# Fail if info.plist can't be found
+test -f "$ip" || { echo "$ip not found"; exit 1; }
+
+value="$( /usr/libexec/PlistBuddy -c 'Print :variables:GOOGLE_PLACES_API_KEY' "$ip" )"
+if [[ -n "$value" ]]; then
+  echo "GOOGLE_PLACES_API_KEY set to non-empty value in info.plist"
+  exit 1
+fi

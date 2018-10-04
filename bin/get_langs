@@ -1,0 +1,28 @@
+#!/usr/bin/env zsh
+
+set -e
+
+here="$( cd "$( dirname "$0" )"; pwd )"
+datadir="$( cd "$here/../data"; pwd )"
+
+
+# log <arg>... | echo args to STDERR
+log() {
+  echo "$@" >&2
+}
+
+# fatal [<arg>...] | log error and exit 1
+fatal() {
+  log "fatal error: $@"
+  exit 1
+}
+
+test -d "$datadir" || fatal "datadir does not exist: $datadir"
+
+log "Google ..."
+out="$( "$here/get_langs_google.py" )"
+echo "$out" > "$datadir/google-languages.tsv"
+
+log "ISO 3316-1 ..."
+out="$( "$here/get_langs_iso3316.py" )"
+echo "$out" > "$datadir/iso3316-2digit.tsv"

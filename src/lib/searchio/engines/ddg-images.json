@@ -1,0 +1,483 @@
+{
+  "description": "Alternative search engine", 
+  "jsonpath": "$[*].phrase", 
+  "title": "DuckDuckGo Images", 
+  "variants": [
+    {
+      "name": "Argentina", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=ar-es&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=ar-es&q={query}", 
+      "title": "DuckDuckGo Images Argentina", 
+      "uid": "ar-es"
+    }, 
+    {
+      "name": "Austria", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=at-de&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=at-de&q={query}", 
+      "title": "DuckDuckGo Images Austria", 
+      "uid": "at-de"
+    }, 
+    {
+      "name": "Australia", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=au-en&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=au-en&q={query}", 
+      "title": "DuckDuckGo Images Australia", 
+      "uid": "au-en"
+    }, 
+    {
+      "name": "Belgium (fr)", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=be-fr&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=be-fr&q={query}", 
+      "title": "DuckDuckGo Images Belgium (fr)", 
+      "uid": "be-fr"
+    }, 
+    {
+      "name": "Belgium (nl)", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=be-nl&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=be-nl&q={query}", 
+      "title": "DuckDuckGo Images Belgium (nl)", 
+      "uid": "be-nl"
+    }, 
+    {
+      "name": "Bulgaria", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=bg-bg&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=bg-bg&q={query}", 
+      "title": "DuckDuckGo Images Bulgaria", 
+      "uid": "bg-bg"
+    }, 
+    {
+      "name": "Brazil", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=br-pt&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=br-pt&q={query}", 
+      "title": "DuckDuckGo Images Brazil", 
+      "uid": "br-pt"
+    }, 
+    {
+      "name": "Canada", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=ca-en&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=ca-en&q={query}", 
+      "title": "DuckDuckGo Images Canada", 
+      "uid": "ca-en"
+    }, 
+    {
+      "name": "Canada (fr)", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=ca-fr&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=ca-fr&q={query}", 
+      "title": "DuckDuckGo Images Canada (fr)", 
+      "uid": "ca-fr"
+    }, 
+    {
+      "name": "Switzerland (de)", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=ch-de&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=ch-de&q={query}", 
+      "title": "DuckDuckGo Images Switzerland (de)", 
+      "uid": "ch-de"
+    }, 
+    {
+      "name": "Switzerland (fr)", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=ch-fr&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=ch-fr&q={query}", 
+      "title": "DuckDuckGo Images Switzerland (fr)", 
+      "uid": "ch-fr"
+    }, 
+    {
+      "name": "Switzerland (it)", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=ch-it&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=ch-it&q={query}", 
+      "title": "DuckDuckGo Images Switzerland (it)", 
+      "uid": "ch-it"
+    }, 
+    {
+      "name": "Chile", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=cl-es&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=cl-es&q={query}", 
+      "title": "DuckDuckGo Images Chile", 
+      "uid": "cl-es"
+    }, 
+    {
+      "name": "China", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=cn-zh&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=cn-zh&q={query}", 
+      "title": "DuckDuckGo Images China", 
+      "uid": "cn-zh"
+    }, 
+    {
+      "name": "Colombia", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=co-es&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=co-es&q={query}", 
+      "title": "DuckDuckGo Images Colombia", 
+      "uid": "co-es"
+    }, 
+    {
+      "name": "Catalonia", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=ct-ca&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=ct-ca&q={query}", 
+      "title": "DuckDuckGo Images Catalonia", 
+      "uid": "ct-ca"
+    }, 
+    {
+      "name": "Czech Republic", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=cz-cs&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=cz-cs&q={query}", 
+      "title": "DuckDuckGo Images Czech Republic", 
+      "uid": "cz-cs"
+    }, 
+    {
+      "name": "Germany", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=de-de&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=de-de&q={query}", 
+      "title": "DuckDuckGo Images Germany", 
+      "uid": "de-de"
+    }, 
+    {
+      "name": "Denmark", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=dk-da&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=dk-da&q={query}", 
+      "title": "DuckDuckGo Images Denmark", 
+      "uid": "dk-da"
+    }, 
+    {
+      "name": "Estonia", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=ee-et&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=ee-et&q={query}", 
+      "title": "DuckDuckGo Images Estonia", 
+      "uid": "ee-et"
+    }, 
+    {
+      "name": "Spain (ca)", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=es-ca&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=es-ca&q={query}", 
+      "title": "DuckDuckGo Images Spain (ca)", 
+      "uid": "es-ca"
+    }, 
+    {
+      "name": "Spain", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=es-es&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=es-es&q={query}", 
+      "title": "DuckDuckGo Images Spain", 
+      "uid": "es-es"
+    }, 
+    {
+      "name": "Finland", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=fi-fi&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=fi-fi&q={query}", 
+      "title": "DuckDuckGo Images Finland", 
+      "uid": "fi-fi"
+    }, 
+    {
+      "name": "France", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=fr-fr&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=fr-fr&q={query}", 
+      "title": "DuckDuckGo Images France", 
+      "uid": "fr-fr"
+    }, 
+    {
+      "name": "Greece", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=gr-el&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=gr-el&q={query}", 
+      "title": "DuckDuckGo Images Greece", 
+      "uid": "gr-el"
+    }, 
+    {
+      "name": "Hong Kong", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=hk-tzh&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=hk-tzh&q={query}", 
+      "title": "DuckDuckGo Images Hong Kong", 
+      "uid": "hk-tzh"
+    }, 
+    {
+      "name": "Croatia", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=hr-hr&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=hr-hr&q={query}", 
+      "title": "DuckDuckGo Images Croatia", 
+      "uid": "hr-hr"
+    }, 
+    {
+      "name": "Hungary", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=hu-hu&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=hu-hu&q={query}", 
+      "title": "DuckDuckGo Images Hungary", 
+      "uid": "hu-hu"
+    }, 
+    {
+      "name": "Indonesia (en)", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=id-en&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=id-en&q={query}", 
+      "title": "DuckDuckGo Images Indonesia (en)", 
+      "uid": "id-en"
+    }, 
+    {
+      "name": "Indonesia", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=id-id&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=id-id&q={query}", 
+      "title": "DuckDuckGo Images Indonesia", 
+      "uid": "id-id"
+    }, 
+    {
+      "name": "Ireland", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=ie-en&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=ie-en&q={query}", 
+      "title": "DuckDuckGo Images Ireland", 
+      "uid": "ie-en"
+    }, 
+    {
+      "name": "Israel", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=il-he&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=il-he&q={query}", 
+      "title": "DuckDuckGo Images Israel", 
+      "uid": "il-he"
+    }, 
+    {
+      "name": "India", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=in-en&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=in-en&q={query}", 
+      "title": "DuckDuckGo Images India", 
+      "uid": "in-en"
+    }, 
+    {
+      "name": "Italy", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=it-it&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=it-it&q={query}", 
+      "title": "DuckDuckGo Images Italy", 
+      "uid": "it-it"
+    }, 
+    {
+      "name": "Japan", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=jp-jp&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=jp-jp&q={query}", 
+      "title": "DuckDuckGo Images Japan", 
+      "uid": "jp-jp"
+    }, 
+    {
+      "name": "Korea", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=kr-kr&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=kr-kr&q={query}", 
+      "title": "DuckDuckGo Images Korea", 
+      "uid": "kr-kr"
+    }, 
+    {
+      "name": "Lithuania", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=lt-lt&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=lt-lt&q={query}", 
+      "title": "DuckDuckGo Images Lithuania", 
+      "uid": "lt-lt"
+    }, 
+    {
+      "name": "Latvia", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=lv-lv&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=lv-lv&q={query}", 
+      "title": "DuckDuckGo Images Latvia", 
+      "uid": "lv-lv"
+    }, 
+    {
+      "name": "Mexico", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=mx-es&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=mx-es&q={query}", 
+      "title": "DuckDuckGo Images Mexico", 
+      "uid": "mx-es"
+    }, 
+    {
+      "name": "Malaysia (en)", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=my-en&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=my-en&q={query}", 
+      "title": "DuckDuckGo Images Malaysia (en)", 
+      "uid": "my-en"
+    }, 
+    {
+      "name": "Malaysia", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=my-ms&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=my-ms&q={query}", 
+      "title": "DuckDuckGo Images Malaysia", 
+      "uid": "my-ms"
+    }, 
+    {
+      "name": "Netherlands", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=nl-nl&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=nl-nl&q={query}", 
+      "title": "DuckDuckGo Images Netherlands", 
+      "uid": "nl-nl"
+    }, 
+    {
+      "name": "Norway", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=no-no&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=no-no&q={query}", 
+      "title": "DuckDuckGo Images Norway", 
+      "uid": "no-no"
+    }, 
+    {
+      "name": "New Zealand", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=nz-en&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=nz-en&q={query}", 
+      "title": "DuckDuckGo Images New Zealand", 
+      "uid": "nz-en"
+    }, 
+    {
+      "name": "Peru", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=pe-es&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=pe-es&q={query}", 
+      "title": "DuckDuckGo Images Peru", 
+      "uid": "pe-es"
+    }, 
+    {
+      "name": "Philippines", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=ph-en&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=ph-en&q={query}", 
+      "title": "DuckDuckGo Images Philippines", 
+      "uid": "ph-en"
+    }, 
+    {
+      "name": "Philippines (tl)", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=ph-tl&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=ph-tl&q={query}", 
+      "title": "DuckDuckGo Images Philippines (tl)", 
+      "uid": "ph-tl"
+    }, 
+    {
+      "name": "Poland", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=pl-pl&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=pl-pl&q={query}", 
+      "title": "DuckDuckGo Images Poland", 
+      "uid": "pl-pl"
+    }, 
+    {
+      "name": "Portugal", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=pt-pt&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=pt-pt&q={query}", 
+      "title": "DuckDuckGo Images Portugal", 
+      "uid": "pt-pt"
+    }, 
+    {
+      "name": "Romania", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=ro-ro&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=ro-ro&q={query}", 
+      "title": "DuckDuckGo Images Romania", 
+      "uid": "ro-ro"
+    }, 
+    {
+      "name": "Russia", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=ru-ru&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=ru-ru&q={query}", 
+      "title": "DuckDuckGo Images Russia", 
+      "uid": "ru-ru"
+    }, 
+    {
+      "name": "Sweden", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=se-sv&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=se-sv&q={query}", 
+      "title": "DuckDuckGo Images Sweden", 
+      "uid": "se-sv"
+    }, 
+    {
+      "name": "Singapore", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=sg-en&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=sg-en&q={query}", 
+      "title": "DuckDuckGo Images Singapore", 
+      "uid": "sg-en"
+    }, 
+    {
+      "name": "Slovakia", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=sk-sk&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=sk-sk&q={query}", 
+      "title": "DuckDuckGo Images Slovakia", 
+      "uid": "sk-sk"
+    }, 
+    {
+      "name": "Slovenia", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=sl-sl&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=sl-sl&q={query}", 
+      "title": "DuckDuckGo Images Slovenia", 
+      "uid": "sl-sl"
+    }, 
+    {
+      "name": "Thailand", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=th-th&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=th-th&q={query}", 
+      "title": "DuckDuckGo Images Thailand", 
+      "uid": "th-th"
+    }, 
+    {
+      "name": "Turkey", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=tr-tr&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=tr-tr&q={query}", 
+      "title": "DuckDuckGo Images Turkey", 
+      "uid": "tr-tr"
+    }, 
+    {
+      "name": "Taiwan", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=tw-tzh&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=tw-tzh&q={query}", 
+      "title": "DuckDuckGo Images Taiwan", 
+      "uid": "tw-tzh"
+    }, 
+    {
+      "name": "Ukraine", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=ua-uk&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=ua-uk&q={query}", 
+      "title": "DuckDuckGo Images Ukraine", 
+      "uid": "ua-uk"
+    }, 
+    {
+      "name": "United Kingdom", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=uk-en&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=uk-en&q={query}", 
+      "title": "DuckDuckGo Images United Kingdom", 
+      "uid": "uk-en"
+    }, 
+    {
+      "name": "United States", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=us-en&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=us-en&q={query}", 
+      "title": "DuckDuckGo Images United States", 
+      "uid": "us-en"
+    }, 
+    {
+      "name": "United States (es)", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=us-es&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=us-es&q={query}", 
+      "title": "DuckDuckGo Images United States (es)", 
+      "uid": "us-es"
+    }, 
+    {
+      "name": "Vietnam", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=vn-vi&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=vn-vi&q={query}", 
+      "title": "DuckDuckGo Images Vietnam", 
+      "uid": "vn-vi"
+    }, 
+    {
+      "name": "All Results", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=wt-wt&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=wt-wt&q={query}", 
+      "title": "DuckDuckGo Images All Results", 
+      "uid": "wt-wt"
+    }, 
+    {
+      "name": "Saudi Arabia", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=xa-ar&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=xa-ar&q={query}", 
+      "title": "DuckDuckGo Images Saudi Arabia", 
+      "uid": "xa-ar"
+    }, 
+    {
+      "name": "Saudi Arabia (en)", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=xa-en&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=xa-en&q={query}", 
+      "title": "DuckDuckGo Images Saudi Arabia (en)", 
+      "uid": "xa-en"
+    }, 
+    {
+      "name": "Latin America", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=xl-es&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=xl-es&q={query}", 
+      "title": "DuckDuckGo Images Latin America", 
+      "uid": "xl-es"
+    }, 
+    {
+      "name": "South Africa", 
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=za-en&q={query}", 
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=za-en&q={query}", 
+      "title": "DuckDuckGo Images South Africa", 
+      "uid": "za-en"
+    }
+  ]
+}

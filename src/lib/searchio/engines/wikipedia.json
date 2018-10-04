@@ -1,0 +1,945 @@
+{
+  "description": "Collaborative encyclopaedia", 
+  "pcencode": true, 
+  "title": "Wikipedia", 
+  "variants": [
+    {
+      "name": "English", 
+      "search_url": "https://en.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://en.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (English)", 
+      "uid": "en"
+    }, 
+    {
+      "name": "Svenska", 
+      "search_url": "https://sv.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://sv.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Svenska)", 
+      "uid": "sv"
+    }, 
+    {
+      "name": "Sinugboanong Binisaya", 
+      "search_url": "https://ceb.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://ceb.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Sinugboanong Binisaya)", 
+      "uid": "ceb"
+    }, 
+    {
+      "name": "Deutsch", 
+      "search_url": "https://de.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://de.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Deutsch)", 
+      "uid": "de"
+    }, 
+    {
+      "name": "Nederlands", 
+      "search_url": "https://nl.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://nl.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Nederlands)", 
+      "uid": "nl"
+    }, 
+    {
+      "name": "Fran\u00e7ais", 
+      "search_url": "https://fr.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://fr.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Fran\u00e7ais)", 
+      "uid": "fr"
+    }, 
+    {
+      "name": "\u0420\u0443\u0441\u0441\u043a\u0438\u0439", 
+      "search_url": "https://ru.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://ru.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (\u0420\u0443\u0441\u0441\u043a\u0438\u0439)", 
+      "uid": "ru"
+    }, 
+    {
+      "name": "Italiano", 
+      "search_url": "https://it.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://it.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Italiano)", 
+      "uid": "it"
+    }, 
+    {
+      "name": "Espa\u00f1ol", 
+      "search_url": "https://es.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://es.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Espa\u00f1ol)", 
+      "uid": "es"
+    }, 
+    {
+      "name": "Winaray", 
+      "search_url": "https://war.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://war.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Winaray)", 
+      "uid": "war"
+    }, 
+    {
+      "name": "Polski", 
+      "search_url": "https://pl.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://pl.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Polski)", 
+      "uid": "pl"
+    }, 
+    {
+      "name": "Ti\u1ebfng Vi\u1ec7t", 
+      "search_url": "https://vi.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://vi.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Ti\u1ebfng Vi\u1ec7t)", 
+      "uid": "vi"
+    }, 
+    {
+      "name": "\u65e5\u672c\u8a9e", 
+      "search_url": "https://ja.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://ja.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (\u65e5\u672c\u8a9e)", 
+      "uid": "ja"
+    }, 
+    {
+      "name": "Portugu\u00eas", 
+      "search_url": "https://pt.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://pt.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Portugu\u00eas)", 
+      "uid": "pt"
+    }, 
+    {
+      "name": "\u4e2d\u6587", 
+      "search_url": "https://zh.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://zh.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (\u4e2d\u6587)", 
+      "uid": "zh"
+    }, 
+    {
+      "name": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430", 
+      "search_url": "https://uk.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://uk.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430)", 
+      "uid": "uk"
+    }, 
+    {
+      "name": "Catal\u00e0", 
+      "search_url": "https://ca.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://ca.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Catal\u00e0)", 
+      "uid": "ca"
+    }, 
+    {
+      "name": "\u0641\u0627\u0631\u0633\u06cc", 
+      "search_url": "https://fa.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://fa.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (\u0641\u0627\u0631\u0633\u06cc)", 
+      "uid": "fa"
+    }, 
+    {
+      "name": "Norsk (Bokm\u00e5l)", 
+      "search_url": "https://no.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://no.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Norsk (Bokm\u00e5l))", 
+      "uid": "no"
+    }, 
+    {
+      "name": "\u0627\u0644\u0639\u0631\u0628\u064a\u0629", 
+      "search_url": "https://ar.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://ar.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (\u0627\u0644\u0639\u0631\u0628\u064a\u0629)", 
+      "uid": "ar"
+    }, 
+    {
+      "name": "Srpskohrvatski / \u0421\u0440\u043f\u0441\u043a\u043e\u0445\u0440\u0432\u0430\u0442\u0441\u043a\u0438", 
+      "search_url": "https://sh.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://sh.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Srpskohrvatski / \u0421\u0440\u043f\u0441\u043a\u043e\u0445\u0440\u0432\u0430\u0442\u0441\u043a\u0438)", 
+      "uid": "sh"
+    }, 
+    {
+      "name": "Suomi", 
+      "search_url": "https://fi.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://fi.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Suomi)", 
+      "uid": "fi"
+    }, 
+    {
+      "name": "Magyar", 
+      "search_url": "https://hu.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://hu.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Magyar)", 
+      "uid": "hu"
+    }, 
+    {
+      "name": "Bahasa Indonesia", 
+      "search_url": "https://id.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://id.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Bahasa Indonesia)", 
+      "uid": "id"
+    }, 
+    {
+      "name": "Rom\u00e2n\u0103", 
+      "search_url": "https://ro.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://ro.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Rom\u00e2n\u0103)", 
+      "uid": "ro"
+    }, 
+    {
+      "name": "\u010ce\u0161tina", 
+      "search_url": "https://cs.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://cs.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (\u010ce\u0161tina)", 
+      "uid": "cs"
+    }, 
+    {
+      "name": "\ud55c\uad6d\uc5b4", 
+      "search_url": "https://ko.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://ko.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (\ud55c\uad6d\uc5b4)", 
+      "uid": "ko"
+    }, 
+    {
+      "name": "\u0421\u0440\u043f\u0441\u043a\u0438 / Srpski", 
+      "search_url": "https://sr.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://sr.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (\u0421\u0440\u043f\u0441\u043a\u0438 / Srpski)", 
+      "uid": "sr"
+    }, 
+    {
+      "name": "T\u00fcrk\u00e7e", 
+      "search_url": "https://tr.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://tr.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (T\u00fcrk\u00e7e)", 
+      "uid": "tr"
+    }, 
+    {
+      "name": "Bahasa Melayu", 
+      "search_url": "https://ms.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://ms.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Bahasa Melayu)", 
+      "uid": "ms"
+    }, 
+    {
+      "name": "Euskara", 
+      "search_url": "https://eu.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://eu.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Euskara)", 
+      "uid": "eu"
+    }, 
+    {
+      "name": "Esperanto", 
+      "search_url": "https://eo.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://eo.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Esperanto)", 
+      "uid": "eo"
+    }, 
+    {
+      "name": "\u0411\u044a\u043b\u0433\u0430\u0440\u0441\u043a\u0438", 
+      "search_url": "https://bg.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://bg.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (\u0411\u044a\u043b\u0433\u0430\u0440\u0441\u043a\u0438)", 
+      "uid": "bg"
+    }, 
+    {
+      "name": "Minangkabau", 
+      "search_url": "https://min.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://min.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Minangkabau)", 
+      "uid": "min"
+    }, 
+    {
+      "name": "Dansk", 
+      "search_url": "https://da.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://da.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Dansk)", 
+      "uid": "da"
+    }, 
+    {
+      "name": "\u049a\u0430\u0437\u0430\u049b\u0448\u0430", 
+      "search_url": "https://kk.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://kk.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (\u049a\u0430\u0437\u0430\u049b\u0448\u0430)", 
+      "uid": "kk"
+    }, 
+    {
+      "name": "Sloven\u010dina", 
+      "search_url": "https://sk.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://sk.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Sloven\u010dina)", 
+      "uid": "sk"
+    }, 
+    {
+      "name": "\u0540\u0561\u0575\u0565\u0580\u0565\u0576", 
+      "search_url": "https://hy.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://hy.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (\u0540\u0561\u0575\u0565\u0580\u0565\u0576)", 
+      "uid": "hy"
+    }, 
+    {
+      "name": "B\u00e2n-l\u00e2m-g\u00fa", 
+      "search_url": "https://zh-min-nan.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://zh-min-nan.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (B\u00e2n-l\u00e2m-g\u00fa)", 
+      "uid": "zh-min-nan"
+    }, 
+    {
+      "name": "\u05e2\u05d1\u05e8\u05d9\u05ea", 
+      "search_url": "https://he.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://he.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (\u05e2\u05d1\u05e8\u05d9\u05ea)", 
+      "uid": "he"
+    }, 
+    {
+      "name": "Lietuvi\u0173", 
+      "search_url": "https://lt.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://lt.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Lietuvi\u0173)", 
+      "uid": "lt"
+    }, 
+    {
+      "name": "Hrvatski", 
+      "search_url": "https://hr.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://hr.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Hrvatski)", 
+      "uid": "hr"
+    }, 
+    {
+      "name": "\u041d\u043e\u0445\u0447\u0438\u0439\u043d", 
+      "search_url": "https://ce.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://ce.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (\u041d\u043e\u0445\u0447\u0438\u0439\u043d)", 
+      "uid": "ce"
+    }, 
+    {
+      "name": "Sloven\u0161\u010dina", 
+      "search_url": "https://sl.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://sl.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Sloven\u0161\u010dina)", 
+      "uid": "sl"
+    }, 
+    {
+      "name": "Eesti", 
+      "search_url": "https://et.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://et.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Eesti)", 
+      "uid": "et"
+    }, 
+    {
+      "name": "Galego", 
+      "search_url": "https://gl.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://gl.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Galego)", 
+      "uid": "gl"
+    }, 
+    {
+      "name": "Nynorsk", 
+      "search_url": "https://nn.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://nn.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Nynorsk)", 
+      "uid": "nn"
+    }, 
+    {
+      "name": "O\u2018zbek", 
+      "search_url": "https://uz.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://uz.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (O\u2018zbek)", 
+      "uid": "uz"
+    }, 
+    {
+      "name": "Latina", 
+      "search_url": "https://la.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://la.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Latina)", 
+      "uid": "la"
+    }, 
+    {
+      "name": "\u0395\u03bb\u03bb\u03b7\u03bd\u03b9\u03ba\u03ac", 
+      "search_url": "https://el.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://el.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (\u0395\u03bb\u03bb\u03b7\u03bd\u03b9\u03ba\u03ac)", 
+      "uid": "el"
+    }, 
+    {
+      "name": "\u0411\u0435\u043b\u0430\u0440\u0443\u0441\u043a\u0430\u044f", 
+      "search_url": "https://be.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://be.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (\u0411\u0435\u043b\u0430\u0440\u0443\u0441\u043a\u0430\u044f)", 
+      "uid": "be"
+    }, 
+    {
+      "name": "Simple English", 
+      "search_url": "https://simple.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://simple.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Simple English)", 
+      "uid": "simple"
+    }, 
+    {
+      "name": "Volap\u00fck", 
+      "search_url": "https://vo.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://vo.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Volap\u00fck)", 
+      "uid": "vo"
+    }, 
+    {
+      "name": "\u0939\u093f\u0928\u094d\u0926\u0940", 
+      "search_url": "https://hi.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://hi.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (\u0939\u093f\u0928\u094d\u0926\u0940)", 
+      "uid": "hi"
+    }, 
+    {
+      "name": "\u0e44\u0e17\u0e22", 
+      "search_url": "https://th.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://th.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (\u0e44\u0e17\u0e22)", 
+      "uid": "th"
+    }, 
+    {
+      "name": "Az\u0259rbaycanca", 
+      "search_url": "https://az.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://az.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Az\u0259rbaycanca)", 
+      "uid": "az"
+    }, 
+    {
+      "name": "\u10e5\u10d0\u10e0\u10d7\u10e3\u10da\u10d8", 
+      "search_url": "https://ka.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://ka.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (\u10e5\u10d0\u10e0\u10d7\u10e3\u10da\u10d8)", 
+      "uid": "ka"
+    }, 
+    {
+      "name": "\u0627\u0631\u062f\u0648", 
+      "search_url": "https://ur.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://ur.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (\u0627\u0631\u062f\u0648)", 
+      "uid": "ur"
+    }, 
+    {
+      "name": "\u0ba4\u0bae\u0bbf\u0bb4\u0bcd", 
+      "search_url": "https://ta.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://ta.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (\u0ba4\u0bae\u0bbf\u0bb4\u0bcd)", 
+      "uid": "ta"
+    }, 
+    {
+      "name": "Cymraeg", 
+      "search_url": "https://cy.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://cy.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Cymraeg)", 
+      "uid": "cy"
+    }, 
+    {
+      "name": "\u041c\u0430\u043a\u0435\u0434\u043e\u043d\u0441\u043a\u0438", 
+      "search_url": "https://mk.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://mk.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (\u041c\u0430\u043a\u0435\u0434\u043e\u043d\u0441\u043a\u0438)", 
+      "uid": "mk"
+    }, 
+    {
+      "name": "Occitan", 
+      "search_url": "https://oc.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://oc.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Occitan)", 
+      "uid": "oc"
+    }, 
+    {
+      "name": "Malagasy", 
+      "search_url": "https://mg.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://mg.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Malagasy)", 
+      "uid": "mg"
+    }, 
+    {
+      "name": "Latvie\u0161u", 
+      "search_url": "https://lv.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://lv.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Latvie\u0161u)", 
+      "uid": "lv"
+    }, 
+    {
+      "name": "Bosanski", 
+      "search_url": "https://bs.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://bs.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Bosanski)", 
+      "uid": "bs"
+    }, 
+    {
+      "name": "\u0928\u0947\u092a\u093e\u0932 \u092d\u093e\u0937\u093e", 
+      "search_url": "https://new.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://new.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (\u0928\u0947\u092a\u093e\u0932 \u092d\u093e\u0937\u093e)", 
+      "uid": "new"
+    }, 
+    {
+      "name": "Tatar\u00e7a / \u0422\u0430\u0442\u0430\u0440\u0447\u0430", 
+      "search_url": "https://tt.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://tt.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Tatar\u00e7a / \u0422\u0430\u0442\u0430\u0440\u0447\u0430)", 
+      "uid": "tt"
+    }, 
+    {
+      "name": "\u0422\u043e\u04b7\u0438\u043a\u04e3", 
+      "search_url": "https://tg.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://tg.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (\u0422\u043e\u04b7\u0438\u043a\u04e3)", 
+      "uid": "tg"
+    }, 
+    {
+      "name": "\u0c24\u0c46\u0c32\u0c41\u0c17\u0c41", 
+      "search_url": "https://te.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://te.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (\u0c24\u0c46\u0c32\u0c41\u0c17\u0c41)", 
+      "uid": "te"
+    }, 
+    {
+      "name": "Tagalog", 
+      "search_url": "https://tl.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://tl.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Tagalog)", 
+      "uid": "tl"
+    }, 
+    {
+      "name": "Piemont\u00e8is", 
+      "search_url": "https://pms.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://pms.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Piemont\u00e8is)", 
+      "uid": "pms"
+    }, 
+    {
+      "name": "Shqip", 
+      "search_url": "https://sq.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://sq.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Shqip)", 
+      "uid": "sq"
+    }, 
+    {
+      "name": "Brezhoneg", 
+      "search_url": "https://br.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://br.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Brezhoneg)", 
+      "uid": "br"
+    }, 
+    {
+      "name": "\u041a\u044b\u0440\u0433\u044b\u0437\u0447\u0430", 
+      "search_url": "https://ky.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://ky.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (\u041a\u044b\u0440\u0433\u044b\u0437\u0447\u0430)", 
+      "uid": "ky"
+    }, 
+    {
+      "name": "\u0411\u0435\u043b\u0430\u0440\u0443\u0441\u043a\u0430\u044f (\u0442\u0430\u0440\u0430\u0448\u043a\u0435\u0432\u0456\u0446\u0430)", 
+      "search_url": "https://be-tarask.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://be-tarask.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (\u0411\u0435\u043b\u0430\u0440\u0443\u0441\u043a\u0430\u044f (\u0442\u0430\u0440\u0430\u0448\u043a\u0435\u0432\u0456\u0446\u0430))", 
+      "uid": "be-tarask"
+    }, 
+    {
+      "name": "Kr\u00e8yol ayisyen", 
+      "search_url": "https://ht.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://ht.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Kr\u00e8yol ayisyen)", 
+      "uid": "ht"
+    }, 
+    {
+      "name": "Basa Jawa", 
+      "search_url": "https://jv.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://jv.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Basa Jawa)", 
+      "uid": "jv"
+    }, 
+    {
+      "name": "\u7cb5\u8a9e", 
+      "search_url": "https://zh-yue.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://zh-yue.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (\u7cb5\u8a9e)", 
+      "uid": "zh-yue"
+    }, 
+    {
+      "name": "Asturianu", 
+      "search_url": "https://ast.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://ast.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Asturianu)", 
+      "uid": "ast"
+    }, 
+    {
+      "name": "L\u00ebtzebuergesch", 
+      "search_url": "https://lb.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://lb.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (L\u00ebtzebuergesch)", 
+      "uid": "lb"
+    }, 
+    {
+      "name": "\u0d2e\u0d32\u0d2f\u0d3e\u0d33\u0d02", 
+      "search_url": "https://ml.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://ml.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (\u0d2e\u0d32\u0d2f\u0d3e\u0d33\u0d02)", 
+      "uid": "ml"
+    }, 
+    {
+      "name": "\u09ac\u09be\u0982\u09b2\u09be", 
+      "search_url": "https://bn.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://bn.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (\u09ac\u09be\u0982\u09b2\u09be)", 
+      "uid": "bn"
+    }, 
+    {
+      "name": "\u092e\u0930\u093e\u0920\u0940", 
+      "search_url": "https://mr.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://mr.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (\u092e\u0930\u093e\u0920\u0940)", 
+      "uid": "mr"
+    }, 
+    {
+      "name": "Afrikaans", 
+      "search_url": "https://af.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://af.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Afrikaans)", 
+      "uid": "af"
+    }, 
+    {
+      "name": "\u0634\u0627\u06c1 \u0645\u06a9\u06be\u06cc \u067e\u0646\u062c\u0627\u0628\u06cc (Sh\u0101hmukh\u012b Pa\u00f1j\u0101b\u012b)", 
+      "search_url": "https://pnb.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://pnb.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (\u0634\u0627\u06c1 \u0645\u06a9\u06be\u06cc \u067e\u0646\u062c\u0627\u0628\u06cc (Sh\u0101hmukh\u012b Pa\u00f1j\u0101b\u012b))", 
+      "uid": "pnb"
+    }, 
+    {
+      "name": "Scots", 
+      "search_url": "https://sco.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://sco.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Scots)", 
+      "uid": "sco"
+    }, 
+    {
+      "name": "\u00cdslenska", 
+      "search_url": "https://is.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://is.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (\u00cdslenska)", 
+      "uid": "is"
+    }, 
+    {
+      "name": "Gaeilge", 
+      "search_url": "https://ga.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://ga.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Gaeilge)", 
+      "uid": "ga"
+    }, 
+    {
+      "name": "\u0411\u0430\u0448\u04a1\u043e\u0440\u0442", 
+      "search_url": "https://ba.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://ba.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (\u0411\u0430\u0448\u04a1\u043e\u0440\u0442)", 
+      "uid": "ba"
+    }, 
+    {
+      "name": "\u0427\u0103\u0432\u0430\u0448", 
+      "search_url": "https://cv.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://cv.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (\u0427\u0103\u0432\u0430\u0448)", 
+      "uid": "cv"
+    }, 
+    {
+      "name": "Frysk", 
+      "search_url": "https://fy.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://fy.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Frysk)", 
+      "uid": "fy"
+    }, 
+    {
+      "name": "Kiswahili", 
+      "search_url": "https://sw.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://sw.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Kiswahili)", 
+      "uid": "sw"
+    }, 
+    {
+      "name": "Lumbaart", 
+      "search_url": "https://lmo.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://lmo.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Lumbaart)", 
+      "uid": "lmo"
+    }, 
+    {
+      "name": "\u1019\u103c\u1014\u103a\u1019\u102c\u1018\u102c\u101e\u102c", 
+      "search_url": "https://my.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://my.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (\u1019\u103c\u1014\u103a\u1019\u102c\u1018\u102c\u101e\u102c)", 
+      "uid": "my"
+    }, 
+    {
+      "name": "Aragon\u00e9s", 
+      "search_url": "https://an.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://an.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Aragon\u00e9s)", 
+      "uid": "an"
+    }, 
+    {
+      "name": "Yor\u00f9b\u00e1", 
+      "search_url": "https://yo.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://yo.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Yor\u00f9b\u00e1)", 
+      "uid": "yo"
+    }, 
+    {
+      "name": "\u0928\u0947\u092a\u093e\u0932\u0940", 
+      "search_url": "https://ne.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://ne.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (\u0928\u0947\u092a\u093e\u0932\u0940)", 
+      "uid": "ne"
+    }, 
+    {
+      "name": "Ido", 
+      "search_url": "https://io.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://io.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Ido)", 
+      "uid": "io"
+    }, 
+    {
+      "name": "\u0a97\u0ac1\u0a9c\u0ab0\u0abe\u0aa4\u0ac0", 
+      "search_url": "https://gu.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://gu.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (\u0a97\u0ac1\u0a9c\u0ab0\u0abe\u0aa4\u0ac0)", 
+      "uid": "gu"
+    }, 
+    {
+      "name": "Plattd\u00fc\u00fctsch", 
+      "search_url": "https://nds.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://nds.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Plattd\u00fc\u00fctsch)", 
+      "uid": "nds"
+    }, 
+    {
+      "name": "Sicilianu", 
+      "search_url": "https://scn.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://scn.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Sicilianu)", 
+      "uid": "scn"
+    }, 
+    {
+      "name": "\u0987\u09ae\u09be\u09b0 \u09a0\u09be\u09b0/\u09ac\u09bf\u09b7\u09cd\u09a3\u09c1\u09aa\u09cd\u09b0\u09bf\u09af\u09bc\u09be \u09ae\u09a3\u09bf\u09aa\u09c1\u09b0\u09c0", 
+      "search_url": "https://bpy.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://bpy.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (\u0987\u09ae\u09be\u09b0 \u09a0\u09be\u09b0/\u09ac\u09bf\u09b7\u09cd\u09a3\u09c1\u09aa\u09cd\u09b0\u09bf\u09af\u09bc\u09be \u09ae\u09a3\u09bf\u09aa\u09c1\u09b0\u09c0)", 
+      "uid": "bpy"
+    }, 
+    {
+      "name": "\u0a2a\u0a70\u0a1c\u0a3e\u0a2c\u0a40", 
+      "search_url": "https://pa.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://pa.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (\u0a2a\u0a70\u0a1c\u0a3e\u0a2c\u0a40)", 
+      "uid": "pa"
+    }, 
+    {
+      "name": "Kurd\u00ee / \u0643\u0648\u0631\u062f\u06cc", 
+      "search_url": "https://ku.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://ku.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Kurd\u00ee / \u0643\u0648\u0631\u062f\u06cc)", 
+      "uid": "ku"
+    }, 
+    {
+      "name": "Alemannisch", 
+      "search_url": "https://als.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://als.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Alemannisch)", 
+      "uid": "als"
+    }, 
+    {
+      "name": "Boarisch", 
+      "search_url": "https://bar.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://bar.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Boarisch)", 
+      "uid": "bar"
+    }, 
+    {
+      "name": "\u0c95\u0ca8\u0ccd\u0ca8\u0ca1", 
+      "search_url": "https://kn.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://kn.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (\u0c95\u0ca8\u0ccd\u0ca8\u0ca1)", 
+      "uid": "kn"
+    }, 
+    {
+      "name": "Runa Simi", 
+      "search_url": "https://qu.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://qu.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Runa Simi)", 
+      "uid": "qu"
+    }, 
+    {
+      "name": "Interlingua", 
+      "search_url": "https://ia.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://ia.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Interlingua)", 
+      "uid": "ia"
+    }, 
+    {
+      "name": "Basa Sunda", 
+      "search_url": "https://su.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://su.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Basa Sunda)", 
+      "uid": "su"
+    }, 
+    {
+      "name": "Soran\u00ee / \u06a9\u0648\u0631\u062f\u06cc", 
+      "search_url": "https://ckb.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://ckb.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Soran\u00ee / \u06a9\u0648\u0631\u062f\u06cc)", 
+      "uid": "ckb"
+    }, 
+    {
+      "name": "\u041c\u043e\u043d\u0433\u043e\u043b", 
+      "search_url": "https://mn.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://mn.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (\u041c\u043e\u043d\u0433\u043e\u043b)", 
+      "uid": "mn"
+    }, 
+    {
+      "name": "\u0645\u0635\u0631\u0649 (Ma\u1e63ri)", 
+      "search_url": "https://arz.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://arz.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (\u0645\u0635\u0631\u0649 (Ma\u1e63ri))", 
+      "uid": "arz"
+    }, 
+    {
+      "name": "\u017demait\u0117\u0161ka", 
+      "search_url": "https://bat-smg.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://bat-smg.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (\u017demait\u0117\u0161ka)", 
+      "uid": "bat-smg"
+    }, 
+    {
+      "name": "Nnapulitano", 
+      "search_url": "https://nap.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://nap.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Nnapulitano)", 
+      "uid": "nap"
+    }, 
+    {
+      "name": "Walon", 
+      "search_url": "https://wa.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://wa.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Walon)", 
+      "uid": "wa"
+    }, 
+    {
+      "name": "G\u00e0idhlig", 
+      "search_url": "https://gd.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://gd.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (G\u00e0idhlig)", 
+      "uid": "gd"
+    }, 
+    {
+      "name": "Basa Ugi", 
+      "search_url": "https://bug.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://bug.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Basa Ugi)", 
+      "uid": "bug"
+    }, 
+    {
+      "name": "\u05d9\u05d9\u05b4\u05d3\u05d9\u05e9", 
+      "search_url": "https://yi.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://yi.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (\u05d9\u05d9\u05b4\u05d3\u05d9\u05e9)", 
+      "uid": "yi"
+    }, 
+    {
+      "name": "\u12a0\u121b\u122d\u129b", 
+      "search_url": "https://am.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://am.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (\u12a0\u121b\u122d\u129b)", 
+      "uid": "am"
+    }, 
+    {
+      "name": "Basa Banyumasan", 
+      "search_url": "https://map-bms.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://map-bms.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Basa Banyumasan)", 
+      "uid": "map-bms"
+    }, 
+    {
+      "name": "\u0dc3\u0dd2\u0d82\u0dc4\u0dbd", 
+      "search_url": "https://si.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://si.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (\u0dc3\u0dd2\u0d82\u0dc4\u0dbd)", 
+      "uid": "si"
+    }, 
+    {
+      "name": "F\u00f8royskt", 
+      "search_url": "https://fo.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://fo.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (F\u00f8royskt)", 
+      "uid": "fo"
+    }, 
+    {
+      "name": "\u0645\u064e\u0632\u0650\u0631\u0648\u0646\u064a", 
+      "search_url": "https://mzn.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://mzn.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (\u0645\u064e\u0632\u0650\u0631\u0648\u0646\u064a)", 
+      "uid": "mzn"
+    }, 
+    {
+      "name": "\u062a\u06c6\u0631\u06a9\u062c\u0647", 
+      "search_url": "https://azb.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://azb.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (\u062a\u06c6\u0631\u06a9\u062c\u0647)", 
+      "uid": "azb"
+    }, 
+    {
+      "name": "\u0b13\u0b21\u0b3c\u0b3f\u0b06", 
+      "search_url": "https://or.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://or.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (\u0b13\u0b21\u0b3c\u0b3f\u0b06)", 
+      "uid": "or"
+    }, 
+    {
+      "name": "Limburgs", 
+      "search_url": "https://li.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://li.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Limburgs)", 
+      "uid": "li"
+    }, 
+    {
+      "name": "\u0421\u0430\u0445\u0430 \u0442\u044b\u043b\u0430 (Saxa Tyla)", 
+      "search_url": "https://sah.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://sah.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (\u0421\u0430\u0445\u0430 \u0442\u044b\u043b\u0430 (Saxa Tyla))", 
+      "uid": "sah"
+    }, 
+    {
+      "name": "Hornjoserbsce", 
+      "search_url": "https://hsb.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://hsb.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (Hornjoserbsce)", 
+      "uid": "hsb"
+    }, 
+    {
+      "name": "V\u00e8neto", 
+      "search_url": "https://vec.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://vec.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (V\u00e8neto)", 
+      "uid": "vec"
+    }, 
+    {
+      "name": "\u0418\u0440\u043e\u043d\u0430\u0443", 
+      "search_url": "https://os.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://os.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (\u0418\u0440\u043e\u043d\u0430\u0443)", 
+      "uid": "os"
+    }, 
+    {
+      "name": "\u0938\u0902\u0938\u094d\u0915\u0943\u0924\u092e\u094d", 
+      "search_url": "https://sa.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://sa.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (\u0938\u0902\u0938\u094d\u0915\u0943\u0924\u092e\u094d)", 
+      "uid": "sa"
+    }, 
+    {
+      "name": "\u041a\u044b\u0440\u044b\u043a \u041c\u0430\u0440\u044b (Kyryk Mary)", 
+      "search_url": "https://mrj.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://mrj.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (\u041a\u044b\u0440\u044b\u043a \u041c\u0430\u0440\u044b (Kyryk Mary))", 
+      "uid": "mrj"
+    }, 
+    {
+      "name": "N\u0101huatl", 
+      "search_url": "https://nah.wikipedia.org/wiki/{query}", 
+      "suggest_url": "https://nah.wikipedia.org/w/api.php?action=opensearch&search={query}", 
+      "title": "Wikipedia (N\u0101huatl)", 
+      "uid": "nah"
+    }
+  ]
+}

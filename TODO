@@ -1,22 +1,82 @@
-Wikipedia/Wiktionary:
-General:
-	- Allow custom icon via CLI option
-	- Find more OpenSearch suggestion compatible search engines
-	- Move JSON parsing to parent class
-		The format should always be more or less the same (OpenSearch), so each subclass only need provide the URL.
-			Note: Yahoo! adds a couple of fields. Use `results[1]` to get the list of results.
-	- Change `name` to `description` (or `long_name`/`display_name`) and `id_` to `name`
-	- Remove `icon` and ensure icon filename is `name`.png @done(14-08-02 17:06)
-	- Move icons to a subdirectory @done(14-08-02 17:01)
-	- Add separate module to allow dynamic creation of Script Filters (?)
-	- Move `Suggest` and its subclasses to individual modules (?)
-			- No need to import all subclasses in most cases
-Icons:
-	- Yahoo! @done(14-08-02 17:01)
-	- Ask @done(14-08-02 17:01)
 
+Features:
+	- info.plist manipulation
+		- Add/remove user-configured searches
+	- Add via URL (auto-discovery)
+		- Get URL of frontmost browser
+	- Allow alternates via modifier?
+		Suggestions from one engine, but hold modifier to search with alternate
+	- Allow custom icon via CLI option
+		Is that possible? Reasonable?
+
+Architecture:
+
+Commands:
+
+	Config:
+
+Update:
+	- Update info.plist
+	- Clear and/or update caches
+
+	Add:
+		- Add new search to info.plist
+
+Engines:
+	Engines still to implement in v2
+	- Find more OpenSearch suggestion compatible search engines
+
+	User Search:
+		- Create a `Variant`.
+
+	Yandex:
+	- URL
+	- icon
+
+	Naver:
+	- URL
+	- icon
+	- variants?
+
+
+	Bing:
+	- URLs
+	- icon
+	- variants
+
+	Yahoo!:
+	- URLs
+	- icon
+	- variants
+
+	Ask:
+	- URLs
+	- icon
+	- variants
+
+Icons:
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+	- variants @done(17-02-06 01:04) @project(Engines)
+	- icon @done(17-02-06 01:04) @project(Engines)
+	- YouTube: @done(17-02-06 01:04) @project(Engines)
+	- URL @done(17-02-06 01:04) @project(Engines)
+	- Remove user searches @done(17-02-06 01:02) @project(Commands / Config)
+	- Browse user searches @done(17-02-06 01:02) @project(Commands / Config)
+	- Browse engines & variants in Alfred @done(17-02-06 01:02) @project(Commands / Config)
+	- Add user searches @done(17-02-06 01:02) @project(Commands / Config)
+	- Update available @done(16-12-18 13:44) @project(Icons)
+	- Update action @done(16-12-18 13:44) @project(Icons)
+	- variants @done(16-12-18 13:43) @project(Engines)
+	- eBay: @done(16-12-18 13:43) @project(Engines)
+	- Wiktionary: @done(16-12-18 13:43) @project(Engines)
+	- Wikipedia: @done(16-12-18 13:43) @project(Engines)
+	- variants @priority(1) @done(16-12-18 13:42) @project(Engines / User Search)
+	- variants @priority(1) @done(16-12-18 13:42) @project(Engines / User Search)
+	- Remove `icon` and ensure icon filename is `name`.png @done(14-08-02 17:06) @project(General)
+	- Yahoo! @done(14-08-02 17:01) @project(Icons)
+	- Move icons to a subdirectory @done(14-08-02 17:01) @project(General)
+	- Ask @done(14-08-02 17:01) @project(Icons)
 	- Generalise custom per-language URLs @done(14-06-19 02:42) @project(General)
 	- enable easy searching of different language sites via command-line arguments @done(14-06-19 01:24) @project(Wikipedia/Wiktionary)
 	- Possible to enable different languages for other search engines? @done(14-06-19 01:24) @project(General)

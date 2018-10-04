@@ -1,7 +1,17 @@
-src/info.dist.plist
-src/info.daj.plist
+/.apikey
 
-# Created by https://www.gitignore.io/api/sublimetext,python,vim
+# Build binary
+/src/search
+
+# Ignore private info files
+/src/info.dist.plist
+/src/info.bak.plist
+/src/info.plist.bak
+
+# Python junk
+*.dist-info
+
+# Created by https://www.gitignore.io/api/python,sublimetext,vim
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
@@ -14,20 +24,18 @@ __pycache__/
 
 # Distribution / packaging
 .Python
+env/
 build/
 develop-eggs/
 dist/
 downloads/
 eggs/
 .eggs/
-lib/
 lib64/
 parts/
 sdist/
 var/
-wheels/
 *.egg-info/
-*.dist-info/
 .installed.cfg
 *.egg
 
@@ -49,7 +57,7 @@ htmlcov/
 .cache
 nosetests.xml
 coverage.xml
-*.cover
+*,cover
 .hypothesis/
 
 # Translations
@@ -82,30 +90,20 @@ target/
 # celery beat schedule file
 celerybeat-schedule
 
-# SageMath parsed files
-*.sage.py
-
-# Environments
+# dotenv
 .env
-.venv
-env/
+
+# virtualenv
+.venv/
 venv/
 ENV/
-env.bak/
-venv.bak/
 
 # Spyder project settings
 .spyderproject
-.spyproject
 
 # Rope project settings
 .ropeproject
 
-# mkdocs documentation
-/site
-
-# mypy
-.mypy_cache/
 
 ### SublimeText ###
 # cache files for sublime text
@@ -114,6 +112,7 @@ venv.bak/
 *.stTheme.cache
 
 # workspace files are user-specific
+*.sublime-project
 *.sublime-workspace
 
 # project files should be checked into the repository, unless a significant
@@ -130,21 +129,17 @@ Package Control.ca-bundle
 Package Control.system-ca-bundle
 Package Control.cache/
 Package Control.ca-certs/
-Package Control.merged-ca-bundle
-Package Control.user-ca-bundle
-oscrypto-ca-bundle.crt
 bh_unicode_properties.cache
 
 # Sublime-github package stores a github token in this file
 # https://packagecontrol.io/packages/sublime-github
 GitHub.sublime-settings
 
+
 ### Vim ###
 # swap
-[._]*.s[a-v][a-z]
-[._]*.sw[a-p]
-[._]s[a-v][a-z]
-[._]sw[a-p]
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
 # session
 Session.vim
 # temporary
@@ -152,7 +147,3 @@ Session.vim
 *~
 # auto-generated tag files
 tags
-
-# End of https://www.gitignore.io/api/sublimetext,python,vim
-*.pyc
-extra/

@@ -1,0 +1,50 @@
+#!/usr/bin/env python
+# encoding: utf-8
+#
+# Copyright (c) 2016 Dean Jackson <deanishe@deanishe.net>
+#
+# MIT Licence. See http://opensource.org/licenses/MIT
+#
+# Created on 2016-03-13
+#
+
+"""searchio Alfred 3 workflow CLI program."""
+
+from __future__ import print_function, absolute_import
+
+# import cProfile
+# from StringIO import StringIO
+# import pstats
+import os
+import sys
+
+
+# def profileme(fn):
+#     def profiled(*args, **kwargs):
+#         prof = cProfile.Profile()
+#         try:
+#             prof.enable()
+#             res = fn(*args, **kwargs)
+#             prof.disable()
+#             return res
+#         finally:
+#             s = StringIO()
+#             ps = pstats.Stats(prof, stream=s).sort_stats('cumulative')
+#             ps.print_stats(.1)
+#             print(s.getvalue(), file=sys.stderr)
+#     return profiled
+
+
+path = os.path.abspath(os.path.join(os.path.dirname(__file__), 'lib'))
+if path not in sys.path:
+    sys.path.insert(0, path)
+
+
+# @profileme
+def main():
+    from searchio import cli
+    return cli.main()
+
+
+if __name__ == '__main__':
+    sys.exit(main())

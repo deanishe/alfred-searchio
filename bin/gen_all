@@ -1,0 +1,58 @@
+#!/usr/bin/env zsh
+
+set -e
+
+here="$( cd "$( dirname "$0" )"; pwd )"
+edir="$here/../src/lib/searchio/engines"
+engines=(amazon ddg ebay google google_images google_maps)
+engines+=(wikia wikipedia wiktionary youtube)
+
+usage() {
+    cat <<EOS
+Usage: gen_all [-h]
+
+Generate JSON engine definitions by running all
+gen_*.py files in ./bin
+
+Generated files are written to searchio/engines.
+
+Options:
+    -h      Show this help message and exit
+EOS
+}
+
+while getopts ":h" opt; do
+  case $opt in
+    h)
+      usage
+      exit 0
+      ;;
+    \?)
+      log "Invalid option: -$OPTARG"
+      exit 1
+      ;;
+  esac
+done
+shift $((OPTIND-1))
+
+# abspath <path> | return absolute path to <path>
+abspath() {
+  local dir="$1"
+  local file=
+  if [[ -f "$dir" ]]; then
+    file=/$( basename "$dir" )
+    dir=$( dirname "$dir" )
+  fi
+  echo $( cd "$dir" && pwd -P )"$file"
+}
+
+edir="$( abspath "$edir" )"
+
+for e in $engines; do
+  u=${e//_/-}
+  p="$edir/$u.json"
+  # echo "$u\t\t\t\t$p ..."
+  printf "%-20s" "$u"
+  echo "$p ..."
+  "$here/gen_$e.py" > "$p"
+done

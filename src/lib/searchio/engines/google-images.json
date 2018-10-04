@@ -1,0 +1,1021 @@
+{
+  "description": "Image search", 
+  "title": "Google Images", 
+  "variants": [
+    {
+      "name": "Acoli", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=ach&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=ach&safe=off", 
+      "title": "Google Images (Acoli)", 
+      "uid": "ach"
+    }, 
+    {
+      "name": "Afrikaans", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=af&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=af&safe=off", 
+      "title": "Google Images (Afrikaans)", 
+      "uid": "af"
+    }, 
+    {
+      "name": "Akan", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=ak&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=ak&safe=off", 
+      "title": "Google Images (Akan)", 
+      "uid": "ak"
+    }, 
+    {
+      "name": "\u12a0\u121b\u122d\u129b", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=am&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=am&safe=off", 
+      "title": "Google Images (\u12a0\u121b\u122d\u129b)", 
+      "uid": "am"
+    }, 
+    {
+      "name": "\u0627\u0644\u0639\u0631\u0628\u064a\u0629", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=ar&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=ar&safe=off", 
+      "title": "Google Images (\u0627\u0644\u0639\u0631\u0628\u064a\u0629)", 
+      "uid": "ar"
+    }, 
+    {
+      "name": "az\u0259rbaycan", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=az&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=az&safe=off", 
+      "title": "Google Images (az\u0259rbaycan)", 
+      "uid": "az"
+    }, 
+    {
+      "name": "Balinese", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=ban&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=ban&safe=off", 
+      "title": "Google Images (Balinese)", 
+      "uid": "ban"
+    }, 
+    {
+      "name": "\u0431\u0435\u043b\u0430\u0440\u0443\u0441\u043a\u0430\u044f", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=be&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=be&safe=off", 
+      "title": "Google Images (\u0431\u0435\u043b\u0430\u0440\u0443\u0441\u043a\u0430\u044f)", 
+      "uid": "be"
+    }, 
+    {
+      "name": "Ichibemba", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=bem&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=bem&safe=off", 
+      "title": "Google Images (Ichibemba)", 
+      "uid": "bem"
+    }, 
+    {
+      "name": "\u0431\u044a\u043b\u0433\u0430\u0440\u0441\u043a\u0438", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=bg&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=bg&safe=off", 
+      "title": "Google Images (\u0431\u044a\u043b\u0433\u0430\u0440\u0441\u043a\u0438)", 
+      "uid": "bg"
+    }, 
+    {
+      "name": "\u09ac\u09be\u0982\u09b2\u09be", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=bn&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=bn&safe=off", 
+      "title": "Google Images (\u09ac\u09be\u0982\u09b2\u09be)", 
+      "uid": "bn"
+    }, 
+    {
+      "name": "brezhoneg", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=br&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=br&safe=off", 
+      "title": "Google Images (brezhoneg)", 
+      "uid": "br"
+    }, 
+    {
+      "name": "bosanski", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=bs&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=bs&safe=off", 
+      "title": "Google Images (bosanski)", 
+      "uid": "bs"
+    }, 
+    {
+      "name": "catal\u00e0", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=ca&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=ca&safe=off", 
+      "title": "Google Images (catal\u00e0)", 
+      "uid": "ca"
+    }, 
+    {
+      "name": "Cebuano", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=ceb&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=ceb&safe=off", 
+      "title": "Google Images (Cebuano)", 
+      "uid": "ceb"
+    }, 
+    {
+      "name": "\u13e3\u13b3\u13a9", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=chr&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=chr&safe=off", 
+      "title": "Google Images (\u13e3\u13b3\u13a9)", 
+      "uid": "chr"
+    }, 
+    {
+      "name": "\u06a9\u0648\u0631\u062f\u06cc\u06cc \u0646\u0627\u0648\u06d5\u0646\u062f\u06cc", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=ckb&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=ckb&safe=off", 
+      "title": "Google Images (\u06a9\u0648\u0631\u062f\u06cc\u06cc \u0646\u0627\u0648\u06d5\u0646\u062f\u06cc)", 
+      "uid": "ckb"
+    }, 
+    {
+      "name": "Corsican", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=co&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=co&safe=off", 
+      "title": "Google Images (Corsican)", 
+      "uid": "co"
+    }, 
+    {
+      "name": "Seychellois Creole", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=crs&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=crs&safe=off", 
+      "title": "Google Images (Seychellois Creole)", 
+      "uid": "crs"
+    }, 
+    {
+      "name": "\u010de\u0161tina", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=cs&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=cs&safe=off", 
+      "title": "Google Images (\u010de\u0161tina)", 
+      "uid": "cs"
+    }, 
+    {
+      "name": "Cymraeg", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=cy&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=cy&safe=off", 
+      "title": "Google Images (Cymraeg)", 
+      "uid": "cy"
+    }, 
+    {
+      "name": "dansk", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=da&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=da&safe=off", 
+      "title": "Google Images (dansk)", 
+      "uid": "da"
+    }, 
+    {
+      "name": "Deutsch", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=de&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=de&safe=off", 
+      "title": "Google Images (Deutsch)", 
+      "uid": "de"
+    }, 
+    {
+      "name": "E\u028begbe", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=ee&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=ee&safe=off", 
+      "title": "Google Images (E\u028begbe)", 
+      "uid": "ee"
+    }, 
+    {
+      "name": "\u0395\u03bb\u03bb\u03b7\u03bd\u03b9\u03ba\u03ac", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=el&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=el&safe=off", 
+      "title": "Google Images (\u0395\u03bb\u03bb\u03b7\u03bd\u03b9\u03ba\u03ac)", 
+      "uid": "el"
+    }, 
+    {
+      "name": "English", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=en&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=en&safe=off", 
+      "title": "Google Images (English)", 
+      "uid": "en"
+    }, 
+    {
+      "name": "esperanto", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=eo&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=eo&safe=off", 
+      "title": "Google Images (esperanto)", 
+      "uid": "eo"
+    }, 
+    {
+      "name": "espa\u00f1ol", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=es&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=es&safe=off", 
+      "title": "Google Images (espa\u00f1ol)", 
+      "uid": "es"
+    }, 
+    {
+      "name": "espa\u00f1ol (Latinoam\u00e9rica)", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=es-419&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=es-419&safe=off", 
+      "title": "Google Images (espa\u00f1ol (Latinoam\u00e9rica))", 
+      "uid": "es-419"
+    }, 
+    {
+      "name": "eesti", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=et&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=et&safe=off", 
+      "title": "Google Images (eesti)", 
+      "uid": "et"
+    }, 
+    {
+      "name": "euskara", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=eu&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=eu&safe=off", 
+      "title": "Google Images (euskara)", 
+      "uid": "eu"
+    }, 
+    {
+      "name": "\u0641\u0627\u0631\u0633\u06cc", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=fa&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=fa&safe=off", 
+      "title": "Google Images (\u0641\u0627\u0631\u0633\u06cc)", 
+      "uid": "fa"
+    }, 
+    {
+      "name": "suomi", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=fi&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=fi&safe=off", 
+      "title": "Google Images (suomi)", 
+      "uid": "fi"
+    }, 
+    {
+      "name": "f\u00f8royskt", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=fo&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=fo&safe=off", 
+      "title": "Google Images (f\u00f8royskt)", 
+      "uid": "fo"
+    }, 
+    {
+      "name": "fran\u00e7ais", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=fr&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=fr&safe=off", 
+      "title": "Google Images (fran\u00e7ais)", 
+      "uid": "fr"
+    }, 
+    {
+      "name": "West-Frysk", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=fy&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=fy&safe=off", 
+      "title": "Google Images (West-Frysk)", 
+      "uid": "fy"
+    }, 
+    {
+      "name": "Gaeilge", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=ga&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=ga&safe=off", 
+      "title": "Google Images (Gaeilge)", 
+      "uid": "ga"
+    }, 
+    {
+      "name": "Ga", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=gaa&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=gaa&safe=off", 
+      "title": "Google Images (Ga)", 
+      "uid": "gaa"
+    }, 
+    {
+      "name": "G\u00e0idhlig", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=gd&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=gd&safe=off", 
+      "title": "Google Images (G\u00e0idhlig)", 
+      "uid": "gd"
+    }, 
+    {
+      "name": "galego", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=gl&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=gl&safe=off", 
+      "title": "Google Images (galego)", 
+      "uid": "gl"
+    }, 
+    {
+      "name": "Guarani", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=gn&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=gn&safe=off", 
+      "title": "Google Images (Guarani)", 
+      "uid": "gn"
+    }, 
+    {
+      "name": "\u0a97\u0ac1\u0a9c\u0ab0\u0abe\u0aa4\u0ac0", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=gu&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=gu&safe=off", 
+      "title": "Google Images (\u0a97\u0ac1\u0a9c\u0ab0\u0abe\u0aa4\u0ac0)", 
+      "uid": "gu"
+    }, 
+    {
+      "name": "Hausa", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=ha&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=ha&safe=off", 
+      "title": "Google Images (Hausa)", 
+      "uid": "ha"
+    }, 
+    {
+      "name": "\u02bb\u014clelo Hawai\u02bbi", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=haw&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=haw&safe=off", 
+      "title": "Google Images (\u02bb\u014clelo Hawai\u02bbi)", 
+      "uid": "haw"
+    }, 
+    {
+      "name": "\u0939\u093f\u0928\u094d\u0926\u0940", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=hi&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=hi&safe=off", 
+      "title": "Google Images (\u0939\u093f\u0928\u094d\u0926\u0940)", 
+      "uid": "hi"
+    }, 
+    {
+      "name": "hrvatski", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=hr&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=hr&safe=off", 
+      "title": "Google Images (hrvatski)", 
+      "uid": "hr"
+    }, 
+    {
+      "name": "Haitian Creole", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=ht&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=ht&safe=off", 
+      "title": "Google Images (Haitian Creole)", 
+      "uid": "ht"
+    }, 
+    {
+      "name": "magyar", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=hu&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=hu&safe=off", 
+      "title": "Google Images (magyar)", 
+      "uid": "hu"
+    }, 
+    {
+      "name": "\u0570\u0561\u0575\u0565\u0580\u0565\u0576", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=hy&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=hy&safe=off", 
+      "title": "Google Images (\u0570\u0561\u0575\u0565\u0580\u0565\u0576)", 
+      "uid": "hy"
+    }, 
+    {
+      "name": "Interlingua", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=ia&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=ia&safe=off", 
+      "title": "Google Images (Interlingua)", 
+      "uid": "ia"
+    }, 
+    {
+      "name": "Indonesia", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=id&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=id&safe=off", 
+      "title": "Google Images (Indonesia)", 
+      "uid": "id"
+    }, 
+    {
+      "name": "Igbo", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=ig&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=ig&safe=off", 
+      "title": "Google Images (Igbo)", 
+      "uid": "ig"
+    }, 
+    {
+      "name": "\u00edslenska", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=is&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=is&safe=off", 
+      "title": "Google Images (\u00edslenska)", 
+      "uid": "is"
+    }, 
+    {
+      "name": "italiano", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=it&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=it&safe=off", 
+      "title": "Google Images (italiano)", 
+      "uid": "it"
+    }, 
+    {
+      "name": "\u05e2\u05d1\u05e8\u05d9\u05ea", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=iw&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=iw&safe=off", 
+      "title": "Google Images (\u05e2\u05d1\u05e8\u05d9\u05ea)", 
+      "uid": "iw"
+    }, 
+    {
+      "name": "\u65e5\u672c\u8a9e", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=ja&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=ja&safe=off", 
+      "title": "Google Images (\u65e5\u672c\u8a9e)", 
+      "uid": "ja"
+    }, 
+    {
+      "name": "Javanese", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=jw&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=jw&safe=off", 
+      "title": "Google Images (Javanese)", 
+      "uid": "jw"
+    }, 
+    {
+      "name": "\u10e5\u10d0\u10e0\u10d7\u10e3\u10da\u10d8", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=ka&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=ka&safe=off", 
+      "title": "Google Images (\u10e5\u10d0\u10e0\u10d7\u10e3\u10da\u10d8)", 
+      "uid": "ka"
+    }, 
+    {
+      "name": "Kongo", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=kg&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=kg&safe=off", 
+      "title": "Google Images (Kongo)", 
+      "uid": "kg"
+    }, 
+    {
+      "name": "\u049b\u0430\u0437\u0430\u049b \u0442\u0456\u043b\u0456", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=kk&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=kk&safe=off", 
+      "title": "Google Images (\u049b\u0430\u0437\u0430\u049b \u0442\u0456\u043b\u0456)", 
+      "uid": "kk"
+    }, 
+    {
+      "name": "\u1781\u17d2\u1798\u17c2\u179a", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=km&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=km&safe=off", 
+      "title": "Google Images (\u1781\u17d2\u1798\u17c2\u179a)", 
+      "uid": "km"
+    }, 
+    {
+      "name": "\u0c95\u0ca8\u0ccd\u0ca8\u0ca1", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=kn&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=kn&safe=off", 
+      "title": "Google Images (\u0c95\u0ca8\u0ccd\u0ca8\u0ca1)", 
+      "uid": "kn"
+    }, 
+    {
+      "name": "\ud55c\uad6d\uc5b4", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=ko&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=ko&safe=off", 
+      "title": "Google Images (\ud55c\uad6d\uc5b4)", 
+      "uid": "ko"
+    }, 
+    {
+      "name": "Krio (Sierra Leone)", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=kri&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=kri&safe=off", 
+      "title": "Google Images (Krio (Sierra Leone))", 
+      "uid": "kri"
+    }, 
+    {
+      "name": "\u043a\u044b\u0440\u0433\u044b\u0437\u0447\u0430", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=ky&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=ky&safe=off", 
+      "title": "Google Images (\u043a\u044b\u0440\u0433\u044b\u0437\u0447\u0430)", 
+      "uid": "ky"
+    }, 
+    {
+      "name": "Latin", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=la&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=la&safe=off", 
+      "title": "Google Images (Latin)", 
+      "uid": "la"
+    }, 
+    {
+      "name": "Luganda", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=lg&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=lg&safe=off", 
+      "title": "Google Images (Luganda)", 
+      "uid": "lg"
+    }, 
+    {
+      "name": "ling\u00e1la", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=ln&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=ln&safe=off", 
+      "title": "Google Images (ling\u00e1la)", 
+      "uid": "ln"
+    }, 
+    {
+      "name": "\u0ea5\u0eb2\u0ea7", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=lo&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=lo&safe=off", 
+      "title": "Google Images (\u0ea5\u0eb2\u0ea7)", 
+      "uid": "lo"
+    }, 
+    {
+      "name": "Lozi", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=loz&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=loz&safe=off", 
+      "title": "Google Images (Lozi)", 
+      "uid": "loz"
+    }, 
+    {
+      "name": "lietuvi\u0173", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=lt&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=lt&safe=off", 
+      "title": "Google Images (lietuvi\u0173)", 
+      "uid": "lt"
+    }, 
+    {
+      "name": "Luba-Lulua", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=lua&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=lua&safe=off", 
+      "title": "Google Images (Luba-Lulua)", 
+      "uid": "lua"
+    }, 
+    {
+      "name": "latvie\u0161u", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=lv&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=lv&safe=off", 
+      "title": "Google Images (latvie\u0161u)", 
+      "uid": "lv"
+    }, 
+    {
+      "name": "kreol morisien", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=mfe&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=mfe&safe=off", 
+      "title": "Google Images (kreol morisien)", 
+      "uid": "mfe"
+    }, 
+    {
+      "name": "Malagasy", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=mg&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=mg&safe=off", 
+      "title": "Google Images (Malagasy)", 
+      "uid": "mg"
+    }, 
+    {
+      "name": "Maori", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=mi&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=mi&safe=off", 
+      "title": "Google Images (Maori)", 
+      "uid": "mi"
+    }, 
+    {
+      "name": "\u043c\u0430\u043a\u0435\u0434\u043e\u043d\u0441\u043a\u0438", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=mk&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=mk&safe=off", 
+      "title": "Google Images (\u043c\u0430\u043a\u0435\u0434\u043e\u043d\u0441\u043a\u0438)", 
+      "uid": "mk"
+    }, 
+    {
+      "name": "\u0d2e\u0d32\u0d2f\u0d3e\u0d33\u0d02", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=ml&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=ml&safe=off", 
+      "title": "Google Images (\u0d2e\u0d32\u0d2f\u0d3e\u0d33\u0d02)", 
+      "uid": "ml"
+    }, 
+    {
+      "name": "\u043c\u043e\u043d\u0433\u043e\u043b", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=mn&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=mn&safe=off", 
+      "title": "Google Images (\u043c\u043e\u043d\u0433\u043e\u043b)", 
+      "uid": "mn"
+    }, 
+    {
+      "name": "\u092e\u0930\u093e\u0920\u0940", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=mr&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=mr&safe=off", 
+      "title": "Google Images (\u092e\u0930\u093e\u0920\u0940)", 
+      "uid": "mr"
+    }, 
+    {
+      "name": "Bahasa Melayu", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=ms&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=ms&safe=off", 
+      "title": "Google Images (Bahasa Melayu)", 
+      "uid": "ms"
+    }, 
+    {
+      "name": "Malti", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=mt&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=mt&safe=off", 
+      "title": "Google Images (Malti)", 
+      "uid": "mt"
+    }, 
+    {
+      "name": "\u1019\u103c\u1014\u103a\u1019\u102c", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=my&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=my&safe=off", 
+      "title": "Google Images (\u1019\u103c\u1014\u103a\u1019\u102c)", 
+      "uid": "my"
+    }, 
+    {
+      "name": "\u0928\u0947\u092a\u093e\u0932\u0940", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=ne&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=ne&safe=off", 
+      "title": "Google Images (\u0928\u0947\u092a\u093e\u0932\u0940)", 
+      "uid": "ne"
+    }, 
+    {
+      "name": "Nederlands", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=nl&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=nl&safe=off", 
+      "title": "Google Images (Nederlands)", 
+      "uid": "nl"
+    }, 
+    {
+      "name": "nynorsk", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=nn&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=nn&safe=off", 
+      "title": "Google Images (nynorsk)", 
+      "uid": "nn"
+    }, 
+    {
+      "name": "norsk", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=no&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=no&safe=off", 
+      "title": "Google Images (norsk)", 
+      "uid": "no"
+    }, 
+    {
+      "name": "Northern Sotho", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=nso&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=nso&safe=off", 
+      "title": "Google Images (Northern Sotho)", 
+      "uid": "nso"
+    }, 
+    {
+      "name": "Nyanja", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=ny&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=ny&safe=off", 
+      "title": "Google Images (Nyanja)", 
+      "uid": "ny"
+    }, 
+    {
+      "name": "Runyankore", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=nyn&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=nyn&safe=off", 
+      "title": "Google Images (Runyankore)", 
+      "uid": "nyn"
+    }, 
+    {
+      "name": "Occitan", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=oc&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=oc&safe=off", 
+      "title": "Google Images (Occitan)", 
+      "uid": "oc"
+    }, 
+    {
+      "name": "Oromoo", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=om&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=om&safe=off", 
+      "title": "Google Images (Oromoo)", 
+      "uid": "om"
+    }, 
+    {
+      "name": "\u0b13\u0b21\u0b3c\u0b3f\u0b06", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=or&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=or&safe=off", 
+      "title": "Google Images (\u0b13\u0b21\u0b3c\u0b3f\u0b06)", 
+      "uid": "or"
+    }, 
+    {
+      "name": "\u0a2a\u0a70\u0a1c\u0a3e\u0a2c\u0a40", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=pa&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=pa&safe=off", 
+      "title": "Google Images (\u0a2a\u0a70\u0a1c\u0a3e\u0a2c\u0a40)", 
+      "uid": "pa"
+    }, 
+    {
+      "name": "Nigerian Pidgin", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=pcm&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=pcm&safe=off", 
+      "title": "Google Images (Nigerian Pidgin)", 
+      "uid": "pcm"
+    }, 
+    {
+      "name": "polski", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=pl&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=pl&safe=off", 
+      "title": "Google Images (polski)", 
+      "uid": "pl"
+    }, 
+    {
+      "name": "\u067e\u069a\u062a\u0648", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=ps&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=ps&safe=off", 
+      "title": "Google Images (\u067e\u069a\u062a\u0648)", 
+      "uid": "ps"
+    }, 
+    {
+      "name": "portugu\u00eas (Brasil)", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=pt-BR&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=pt-BR&safe=off", 
+      "title": "Google Images (portugu\u00eas (Brasil))", 
+      "uid": "pt-br"
+    }, 
+    {
+      "name": "portugu\u00eas (Portugal)", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=pt-PT&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=pt-PT&safe=off", 
+      "title": "Google Images (portugu\u00eas (Portugal))", 
+      "uid": "pt-pt"
+    }, 
+    {
+      "name": "Runasimi", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=qu&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=qu&safe=off", 
+      "title": "Google Images (Runasimi)", 
+      "uid": "qu"
+    }, 
+    {
+      "name": "rumantsch", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=rm&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=rm&safe=off", 
+      "title": "Google Images (rumantsch)", 
+      "uid": "rm"
+    }, 
+    {
+      "name": "Ikirundi", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=rn&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=rn&safe=off", 
+      "title": "Google Images (Ikirundi)", 
+      "uid": "rn"
+    }, 
+    {
+      "name": "rom\u00e2n\u0103", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=ro&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=ro&safe=off", 
+      "title": "Google Images (rom\u00e2n\u0103)", 
+      "uid": "ro"
+    }, 
+    {
+      "name": "\u0440\u0443\u0441\u0441\u043a\u0438\u0439", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=ru&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=ru&safe=off", 
+      "title": "Google Images (\u0440\u0443\u0441\u0441\u043a\u0438\u0439)", 
+      "uid": "ru"
+    }, 
+    {
+      "name": "Kinyarwanda", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=rw&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=rw&safe=off", 
+      "title": "Google Images (Kinyarwanda)", 
+      "uid": "rw"
+    }, 
+    {
+      "name": "Sindhi", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=sd&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=sd&safe=off", 
+      "title": "Google Images (Sindhi)", 
+      "uid": "sd"
+    }, 
+    {
+      "name": "\u0dc3\u0dd2\u0d82\u0dc4\u0dbd", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=si&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=si&safe=off", 
+      "title": "Google Images (\u0dc3\u0dd2\u0d82\u0dc4\u0dbd)", 
+      "uid": "si"
+    }, 
+    {
+      "name": "sloven\u010dina", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=sk&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=sk&safe=off", 
+      "title": "Google Images (sloven\u010dina)", 
+      "uid": "sk"
+    }, 
+    {
+      "name": "sloven\u0161\u010dina", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=sl&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=sl&safe=off", 
+      "title": "Google Images (sloven\u0161\u010dina)", 
+      "uid": "sl"
+    }, 
+    {
+      "name": "chiShona", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=sn&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=sn&safe=off", 
+      "title": "Google Images (chiShona)", 
+      "uid": "sn"
+    }, 
+    {
+      "name": "Soomaali", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=so&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=so&safe=off", 
+      "title": "Google Images (Soomaali)", 
+      "uid": "so"
+    }, 
+    {
+      "name": "shqip", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=sq&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=sq&safe=off", 
+      "title": "Google Images (shqip)", 
+      "uid": "sq"
+    }, 
+    {
+      "name": "\u0441\u0440\u043f\u0441\u043a\u0438", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=sr&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=sr&safe=off", 
+      "title": "Google Images (\u0441\u0440\u043f\u0441\u043a\u0438)", 
+      "uid": "sr"
+    }, 
+    {
+      "name": "srpski (latinica)", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=sr-Latn&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=sr-Latn&safe=off", 
+      "title": "Google Images (srpski (latinica))", 
+      "uid": "sr-latn"
+    }, 
+    {
+      "name": "srpski (Crna Gora)", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=sr-ME&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=sr-ME&safe=off", 
+      "title": "Google Images (srpski (Crna Gora))", 
+      "uid": "sr-me"
+    }, 
+    {
+      "name": "Southern Sotho", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=st&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=st&safe=off", 
+      "title": "Google Images (Southern Sotho)", 
+      "uid": "st"
+    }, 
+    {
+      "name": "Sundanese", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=su&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=su&safe=off", 
+      "title": "Google Images (Sundanese)", 
+      "uid": "su"
+    }, 
+    {
+      "name": "svenska", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=sv&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=sv&safe=off", 
+      "title": "Google Images (svenska)", 
+      "uid": "sv"
+    }, 
+    {
+      "name": "Kiswahili", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=sw&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=sw&safe=off", 
+      "title": "Google Images (Kiswahili)", 
+      "uid": "sw"
+    }, 
+    {
+      "name": "\u0ba4\u0bae\u0bbf\u0bb4\u0bcd", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=ta&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=ta&safe=off", 
+      "title": "Google Images (\u0ba4\u0bae\u0bbf\u0bb4\u0bcd)", 
+      "uid": "ta"
+    }, 
+    {
+      "name": "\u0c24\u0c46\u0c32\u0c41\u0c17\u0c41", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=te&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=te&safe=off", 
+      "title": "Google Images (\u0c24\u0c46\u0c32\u0c41\u0c17\u0c41)", 
+      "uid": "te"
+    }, 
+    {
+      "name": "Tajik", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=tg&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=tg&safe=off", 
+      "title": "Google Images (Tajik)", 
+      "uid": "tg"
+    }, 
+    {
+      "name": "\u0e44\u0e17\u0e22", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=th&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=th&safe=off", 
+      "title": "Google Images (\u0e44\u0e17\u0e22)", 
+      "uid": "th"
+    }, 
+    {
+      "name": "\u1275\u130d\u122d\u129b", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=ti&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=ti&safe=off", 
+      "title": "Google Images (\u1275\u130d\u122d\u129b)", 
+      "uid": "ti"
+    }, 
+    {
+      "name": "Turkmen", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=tk&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=tk&safe=off", 
+      "title": "Google Images (Turkmen)", 
+      "uid": "tk"
+    }, 
+    {
+      "name": "Filipino", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=tl&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=tl&safe=off", 
+      "title": "Google Images (Filipino)", 
+      "uid": "tl"
+    }, 
+    {
+      "name": "Klingon", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=tlh&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=tlh&safe=off", 
+      "title": "Google Images (Klingon)", 
+      "uid": "tlh"
+    }, 
+    {
+      "name": "Tswana", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=tn&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=tn&safe=off", 
+      "title": "Google Images (Tswana)", 
+      "uid": "tn"
+    }, 
+    {
+      "name": "lea fakatonga", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=to&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=to&safe=off", 
+      "title": "Google Images (lea fakatonga)", 
+      "uid": "to"
+    }, 
+    {
+      "name": "T\u00fcrk\u00e7e", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=tr&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=tr&safe=off", 
+      "title": "Google Images (T\u00fcrk\u00e7e)", 
+      "uid": "tr"
+    }, 
+    {
+      "name": "Tatar", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=tt&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=tt&safe=off", 
+      "title": "Google Images (Tatar)", 
+      "uid": "tt"
+    }, 
+    {
+      "name": "Tumbuka", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=tum&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=tum&safe=off", 
+      "title": "Google Images (Tumbuka)", 
+      "uid": "tum"
+    }, 
+    {
+      "name": "Twi", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=tw&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=tw&safe=off", 
+      "title": "Google Images (Twi)", 
+      "uid": "tw"
+    }, 
+    {
+      "name": "\u0626\u06c7\u064a\u063a\u06c7\u0631\u0686\u06d5", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=ug&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=ug&safe=off", 
+      "title": "Google Images (\u0626\u06c7\u064a\u063a\u06c7\u0631\u0686\u06d5)", 
+      "uid": "ug"
+    }, 
+    {
+      "name": "\u0443\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=uk&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=uk&safe=off", 
+      "title": "Google Images (\u0443\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430)", 
+      "uid": "uk"
+    }, 
+    {
+      "name": "\u0627\u0631\u062f\u0648", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=ur&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=ur&safe=off", 
+      "title": "Google Images (\u0627\u0631\u062f\u0648)", 
+      "uid": "ur"
+    }, 
+    {
+      "name": "o\u2018zbek", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=uz&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=uz&safe=off", 
+      "title": "Google Images (o\u2018zbek)", 
+      "uid": "uz"
+    }, 
+    {
+      "name": "Ti\u1ebfng Vi\u1ec7t", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=vi&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=vi&safe=off", 
+      "title": "Google Images (Ti\u1ebfng Vi\u1ec7t)", 
+      "uid": "vi"
+    }, 
+    {
+      "name": "Wolof", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=wo&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=wo&safe=off", 
+      "title": "Google Images (Wolof)", 
+      "uid": "wo"
+    }, 
+    {
+      "name": "Xhosa", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=xh&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=xh&safe=off", 
+      "title": "Google Images (Xhosa)", 
+      "uid": "xh"
+    }, 
+    {
+      "name": "\u05d9\u05d9\u05b4\u05d3\u05d9\u05e9", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=yi&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=yi&safe=off", 
+      "title": "Google Images (\u05d9\u05d9\u05b4\u05d3\u05d9\u05e9)", 
+      "uid": "yi"
+    }, 
+    {
+      "name": "\u00c8d\u00e8 Yor\u00f9b\u00e1", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=yo&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=yo&safe=off", 
+      "title": "Google Images (\u00c8d\u00e8 Yor\u00f9b\u00e1)", 
+      "uid": "yo"
+    }, 
+    {
+      "name": "\u4e2d\u6587 (\u7b80\u4f53)", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=zh-CN&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=zh-CN&safe=off", 
+      "title": "Google Images (\u4e2d\u6587 (\u7b80\u4f53))", 
+      "uid": "zh-cn"
+    }, 
+    {
+      "name": "\u4e2d\u6587 (\u7e41\u9ad4)", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=zh-TW&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=zh-TW&safe=off", 
+      "title": "Google Images (\u4e2d\u6587 (\u7e41\u9ad4))", 
+      "uid": "zh-tw"
+    }, 
+    {
+      "name": "isiZulu", 
+      "search_url": "https://www.google.com/search?tbm=isch&q={query}&hl=zu&safe=off", 
+      "suggest_url": "https://suggestqueries.google.com/complete/search?client=firefox&ds=i&q={query}&hl=zu&safe=off", 
+      "title": "Google Images (isiZulu)", 
+      "uid": "zu"
+    }
+  ]
+}

@@ -8,62 +8,722 @@
 	<string>Internet</string>
 	<key>connections</key>
 	<dict>
-		<key>0877E34C-7243-4E59-B01B-299F8BE837A6</key>
+		<key>05C661C6-76C1-4C45-AACC-2611A2859A4E</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>1133DEAA-5A8F-4E7D-9E9C-A76CB82D9F92</string>
+				<string>BB94D851-58EE-4CD6-9931-AB2FB9449D29</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
-		<key>1539D264-9875-4F20-A2E4-8CA68D20C0CE</key>
+		<key>0A5780FA-9C49-4528-BC2D-4E79BEBFDD57</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>1133DEAA-5A8F-4E7D-9E9C-A76CB82D9F92</string>
+				<string>92B38613-CD0E-404E-8D4F-61D0A656F227</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>899A0D23-247F-478C-A05A-D63133E9E5F6</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
-		<key>18E144DF-1054-4A12-B5F0-AC05C6F7DEFD</key>
+		<key>1264847E-C784-4D54-B4E1-8017CB361C68</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>1133DEAA-5A8F-4E7D-9E9C-A76CB82D9F92</string>
+				<string>CEE08850-50A0-45E9-B9EA-C6E78E1335AE</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
-		<key>20385CD0-036E-4796-9BCD-E5E30DA265EA</key>
+		<key>1437F420-E986-408E-8416-34BFECD99FC8</key>
+		<array/>
+		<key>1DB25452-734C-4CB5-AD6C-247FA2DB8634</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>1133DEAA-5A8F-4E7D-9E9C-A76CB82D9F92</string>
+				<string>21BEF8AB-87EA-469B-85A4-0C331260B4FF</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>21BEF8AB-87EA-469B-85A4-0C331260B4FF</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>86D2665A-CF39-4039-9969-45A403FF2232</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>FCF6D1C2-1401-4D08-98A6-7AEF3E5571CB</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>275E19D5-14AC-4CA0-B718-562E79802ADE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>FA7B1E87-ED24-49A2-8689-6567B272DE0E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>1DB25452-734C-4CB5-AD6C-247FA2DB8634</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>2BBA8827-6AAC-48B3-8381-01C70621357C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>0A5780FA-9C49-4528-BC2D-4E79BEBFDD57</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 		<key>2F2432A8-3DCF-47C7-A1F4-680C2BF00198</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>F475E2AB-BBA7-4C5B-9319-4B26133397EF</string>
+				<string>5E31BCBA-28F3-4A4A-BC1C-61F9F60F6521</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<true/>
 			</dict>
 		</array>
-		<key>3604BBA2-1BA5-41C4-BE24-9B00090737D3</key>
+		<key>35A4633B-D448-4DEB-BE76-C7707446695A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>038601C3-C18D-4ECB-8AB2-8C64E8A1AF84</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>45C09FE5-9A12-4E2A-B115-E9C42C6E93C2</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B3E0930C-ADA8-418F-B389-3A0261E05706</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>4C306DA5-C9CE-4802-B79F-A7CD3C05326D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>77C51F8E-96BD-4F45-8043-1D4FFD234301</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>4DF57E98-9CEE-4F2D-8677-DA8E3D8CE1B9</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>17C66D87-03DB-4E18-B72D-9F0DF56DECAB</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>57D9898D-C7A0-469C-936B-E0290191225A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B3E0930C-ADA8-418F-B389-3A0261E05706</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>5E31BCBA-28F3-4A4A-BC1C-61F9F60F6521</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6E13EB0E-2BDA-47F9-9C31-7E88FAAC8168</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>9D22C791-2308-470B-B135-E2E03B69DB73</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>35A4633B-D448-4DEB-BE76-C7707446695A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>C2AF821C-7119-4638-AC0C-360EF570DEC5</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>C111A296-A718-41CF-AFC0-55C030A3D9FE</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>96E873B9-B127-461A-B4D9-664BFA1ACF1B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>BF5248AB-58DE-4120-AD10-35231A6B2FB9</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>66BB6EC0-265E-4221-8770-579C8267FA49</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1437F420-E986-408E-8416-34BFECD99FC8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>6D491305-65B8-4277-A438-B5B2DBFDB1D5</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E56FFAA5-8274-4461-AA14-4AC2AECCF9A3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>6E13EB0E-2BDA-47F9-9C31-7E88FAAC8168</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>855B996F-95CD-4E83-98E4-B5A10CFF7575</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>7089A306-0D83-48B7-BCFB-501B580D2ACD</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>92801112-CB8D-4647-BC77-C8BEEB551112</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<true/>
+			</dict>
+		</array>
+		<key>7136B89E-ACE6-4E44-8FE2-2F62595AF6B5</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>598AD703-A0E9-46F0-9269-B4D4CEE29E4E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>7C7B9AD8-1B2B-41B8-8E0E-71BCDBE603B3</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A40730EC-9C68-4E03-BAF2-DE1BF6AADA18</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>86D2665A-CF39-4039-9969-45A403FF2232</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>57D9898D-C7A0-469C-936B-E0290191225A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>875184F4-3ABF-462E-B1FD-A6D84DA9BA25</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>8A8E3E3C-8B3B-4739-ACD1-6B8D2668EF02</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>8F9D1F3B-C00B-4030-B2BA-84133FE9492F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>92801112-CB8D-4647-BC77-C8BEEB551112</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>21BEF8AB-87EA-469B-85A4-0C331260B4FF</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>92B38613-CD0E-404E-8D4F-61D0A656F227</key>
+		<array/>
+		<key>96E873B9-B127-461A-B4D9-664BFA1ACF1B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>AAF2D693-4ED6-48EA-85F1-F414CB079E8F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>9C43C005-06FE-404B-8F7E-779891643DDA</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C8075C84-9F68-4030-AB50-226032984DFE</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>9D22C791-2308-470B-B135-E2E03B69DB73</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B1B7F733-EFC9-4CE1-88E7-08A110720EE0</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>9ECB0004-87EB-414C-82EE-893D719D6D00</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A101898C-B574-4AFA-B342-8D5ED69E07FE</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>A101898C-B574-4AFA-B342-8D5ED69E07FE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7136B89E-ACE6-4E44-8FE2-2F62595AF6B5</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>1264847E-C784-4D54-B4E1-8017CB361C68</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<true/>
+			</dict>
+		</array>
+		<key>AAF2D693-4ED6-48EA-85F1-F414CB079E8F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>8A8E3E3C-8B3B-4739-ACD1-6B8D2668EF02</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>8F9D1F3B-C00B-4030-B2BA-84133FE9492F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>AB93844D-D4B4-4B12-AF81-D39A87D70DBD</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>FF24EBA1-84CD-4DAB-BBD5-E4AB11A9F57A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>AEE3BBA9-87D3-42ED-AF69-43175A362FAE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>44A058F0-7677-47DA-A4C5-48A81C6D2448</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>B1B7F733-EFC9-4CE1-88E7-08A110720EE0</key>
+		<array/>
+		<key>BB94D851-58EE-4CD6-9931-AB2FB9449D29</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7C7B9AD8-1B2B-41B8-8E0E-71BCDBE603B3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>BF5248AB-58DE-4120-AD10-35231A6B2FB9</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4365F3B3-F981-4003-80D6-35DB36BC7E96</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>C111A296-A718-41CF-AFC0-55C030A3D9FE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>875184F4-3ABF-462E-B1FD-A6D84DA9BA25</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>C2AF821C-7119-4638-AC0C-360EF570DEC5</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4C306DA5-C9CE-4802-B79F-A7CD3C05326D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>C8075C84-9F68-4030-AB50-226032984DFE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>377DF181-34CF-430F-AA06-30DF855D826E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<true/>
+			</dict>
+		</array>
+		<key>DA65DE7D-1536-46BB-B4AA-F6E58057C5AD</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4DF57E98-9CEE-4F2D-8677-DA8E3D8CE1B9</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>AEE3BBA9-87D3-42ED-AF69-43175A362FAE</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<true/>
+			</dict>
+		</array>
+		<key>DBCEA37B-DE26-4457-8873-6D7B1BC715A3</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>66BB6EC0-265E-4221-8770-579C8267FA49</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>05C661C6-76C1-4C45-AACC-2611A2859A4E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>DE3BED0F-7CD8-43E5-9024-F3C3AC7FD4CC</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2F2432A8-3DCF-47C7-A1F4-680C2BF00198</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>E56FFAA5-8274-4461-AA14-4AC2AECCF9A3</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1264847E-C784-4D54-B4E1-8017CB361C68</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<true/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>DBCEA37B-DE26-4457-8873-6D7B1BC715A3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<true/>
+			</dict>
+		</array>
+		<key>F10C6E94-3BE0-4FCD-A2DE-59D9A205B65A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>DA65DE7D-1536-46BB-B4AA-F6E58057C5AD</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>FA7B1E87-ED24-49A2-8689-6567B272DE0E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7089A306-0D83-48B7-BCFB-501B580D2ACD</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>FCF6D1C2-1401-4D08-98A6-7AEF3E5571CB</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>45C09FE5-9A12-4E2A-B115-E9C42C6E93C2</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>google-de</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
@@ -72,9 +732,11 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
-		<key>3A80FEE7-B90D-4723-A239-0ED6FDD6AF6E</key>
+		<key>google-en</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
@@ -83,9 +745,11 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
-		<key>41C03945-94E6-4089-B4E9-1B19446E3D76</key>
+		<key>wikipedia-de</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
@@ -94,9 +758,11 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
-		<key>531A6FA1-3566-4B71-B5D5-9CECB2B976BF</key>
+		<key>wikipedia-en</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
@@ -105,9 +771,11 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
-		<key>6BA5F1D0-6222-4657-8EDE-9C4C2DDC3A68</key>
+		<key>youtube-de</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
@@ -116,9 +784,11 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
-		<key>6D0C822D-0E06-44C9-9E76-4CFB2FA12D3C</key>
+		<key>youtube-us</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
@@ -127,160 +797,8 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
-			</dict>
-		</array>
-		<key>6D9FE2EC-FFBC-432E-B45B-F51FF74015F2</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>1133DEAA-5A8F-4E7D-9E9C-A76CB82D9F92</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-			</dict>
-		</array>
-		<key>A1F38C6C-C371-47A7-AD30-524B64FB2299</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>1133DEAA-5A8F-4E7D-9E9C-A76CB82D9F92</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-			</dict>
-		</array>
-		<key>A9B8F463-0582-4B14-A44A-1B3B229B7055</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>1133DEAA-5A8F-4E7D-9E9C-A76CB82D9F92</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-			</dict>
-		</array>
-		<key>B4A82FCF-3661-4BC7-980E-76E299A34808</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>FF5496AD-5550-43AE-A752-A57A9C534160</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-			</dict>
-		</array>
-		<key>BAD10938-7F77-4826-AAFE-1FD9A4B05FF6</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>1133DEAA-5A8F-4E7D-9E9C-A76CB82D9F92</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-			</dict>
-		</array>
-		<key>C0D55C1A-F608-45EF-8DD8-8983FE98EA29</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>1133DEAA-5A8F-4E7D-9E9C-A76CB82D9F92</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-			</dict>
-		</array>
-		<key>C7678A85-DE2F-43A9-B8A3-6F7BECDA4608</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>1133DEAA-5A8F-4E7D-9E9C-A76CB82D9F92</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-			</dict>
-		</array>
-		<key>CA339DBD-BB74-4EAA-8817-694C7E9C4E76</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>1133DEAA-5A8F-4E7D-9E9C-A76CB82D9F92</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-			</dict>
-		</array>
-		<key>E27C4EA8-5B61-4C98-BED0-EDB34E30CF61</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>1133DEAA-5A8F-4E7D-9E9C-A76CB82D9F92</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-			</dict>
-		</array>
-		<key>E2B1821F-DE2D-4751-9706-775DD9270540</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>1133DEAA-5A8F-4E7D-9E9C-A76CB82D9F92</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-			</dict>
-		</array>
-		<key>F475E2AB-BBA7-4C5B-9319-4B26133397EF</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>6B5D7BC9-4C88-46CE-BCC2-DFDD40A385D2</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-			</dict>
-		</array>
-		<key>FBA5968D-1DBE-40B6-B805-FDAD0DE785F6</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>1133DEAA-5A8F-4E7D-9E9C-A76CB82D9F92</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-			</dict>
-		</array>
-		<key>FC7DCD03-6AC4-40D2-94C0-AD6F5B788174</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>1133DEAA-5A8F-4E7D-9E9C-A76CB82D9F92</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-			</dict>
-		</array>
-		<key>FCE73A46-8D9B-4A73-A19A-9B7ED27CB1E0</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>1133DEAA-5A8F-4E7D-9E9C-A76CB82D9F92</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 	</dict>
@@ -297,6 +815,44 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>triggerid</key>
+				<string>config.engines</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>9ECB0004-87EB-414C-82EE-893D719D6D00</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>config.engines</string>
+				<key>passinputasargument</key>
+				<false/>
+				<key>passvariables</key>
+				<true/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>855B996F-95CD-4E83-98E4-B5A10CFF7575</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>escaping</key>
@@ -312,13 +868,17 @@
 				<key>queuemode</key>
 				<integer>1</integer>
 				<key>runningsubtext</key>
-				<string>Generating list…</string>
+				<string>Loading settings…</string>
 				<key>script</key>
-				<string>/usr/bin/python search.py --list "{query}"</string>
+				<string>./searchio config "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
 				<key>subtext</key>
-				<string>View/search list of supported search engines</string>
+				<string>Settings, help &amp; supported search engines</string>
 				<key>title</key>
-				<string>Supported Search Engines</string>
+				<string>Searchio! Settings &amp; Help</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -329,32 +889,245 @@
 			<key>uid</key>
 			<string>2F2432A8-3DCF-47C7-A1F4-680C2BF00198</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
+				<key>alfredfiltersresults</key>
 				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<true/>
-				<key>output</key>
+				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
-				<key>removeextension</key>
-				<false/>
-				<key>sticky</key>
-				<false/>
-				<key>text</key>
-				<string>{query}</string>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Loading engines…</string>
+				<key>script</key>
+				<string>./searchio list "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Suggestion sources supported by Searchio!</string>
 				<key>title</key>
-				<string>Settings Updated</string>
+				<string>Searchio! Engines</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
+			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>6B5D7BC9-4C88-46CE-BCC2-DFDD40A385D2</string>
+			<string>A101898C-B574-4AFA-B342-8D5ED69E07FE</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>config.variants</string>
+				<key>passinputasargument</key>
+				<false/>
+				<key>passvariables</key>
+				<true/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>598AD703-A0E9-46F0-9269-B4D4CEE29E4E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Loading variants…</string>
+				<key>script</key>
+				<string>./searchio variants "$engine" "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Engine variants supported by Searchio!</string>
+				<key>title</key>
+				<string>Searchio! Variants</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>DA65DE7D-1536-46BB-B4AA-F6E58057C5AD</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>triggerid</key>
+				<string>config.variants</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>F10C6E94-3BE0-4FCD-A2DE-59D9A205B65A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>config.engines</string>
+				<key>passinputasargument</key>
+				<false/>
+				<key>passvariables</key>
+				<false/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>17C66D87-03DB-4E18-B72D-9F0DF56DECAB</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>triggerid</key>
+				<string>config</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>DE3BED0F-7CD8-43E5-9024-F3C3AC7FD4CC</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.junction</string>
+			<key>uid</key>
+			<string>5E31BCBA-28F3-4A4A-BC1C-61F9F60F6521</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>inputstring</key>
+				<string>{var:action}</string>
+				<key>matchcasesensitive</key>
+				<true/>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string>back</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.filter</string>
+			<key>uid</key>
+			<string>4DF57E98-9CEE-4F2D-8677-DA8E3D8CE1B9</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>inputstring</key>
+				<string>{var:action}</string>
+				<key>matchcasesensitive</key>
+				<true/>
+				<key>matchmode</key>
+				<integer>1</integer>
+				<key>matchstring</key>
+				<string>back</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.filter</string>
+			<key>uid</key>
+			<string>7136B89E-ACE6-4E44-8FE2-2F62595AF6B5</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>inputstring</key>
+				<string>{query}</string>
+				<key>matchcasesensitive</key>
+				<true/>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string>engines</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.filter</string>
+			<key>uid</key>
+			<string>6E13EB0E-2BDA-47F9-9C31-7E88FAAC8168</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>new</string>
+				<key>passinputasargument</key>
+				<false/>
+				<key>passvariables</key>
+				<true/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>44A058F0-7677-47DA-A4C5-48A81C6D2448</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -364,58 +1137,324 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>/usr/bin/python settings.py "{query}"</string>
+				<string>./searchio help --online</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
 				<key>type</key>
 				<integer>0</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>F475E2AB-BBA7-4C5B-9319-4B26133397EF</string>
+			<string>FF24EBA1-84CD-4DAB-BBD5-E4AB11A9F57A</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>searchiohelp</string>
-				<key>subtext</key>
-				<string>Open help file in your browser</string>
-				<key>text</key>
-				<string>Searchio Help</string>
-				<key>withspace</key>
-				<false/>
+				<key>triggerid</key>
+				<string>help</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
+			<string>alfred.workflow.trigger.external</string>
 			<key>uid</key>
-			<string>B4A82FCF-3661-4BC7-980E-76E299A34808</string>
+			<string>AB93844D-D4B4-4B12-AF81-D39A87D70DBD</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>plusspaces</key>
+				<key>externaltriggerid</key>
+				<string>config</string>
+				<key>passinputasargument</key>
 				<false/>
-				<key>url</key>
-				<string>https://github.com/deanishe/alfred-searchio/blob/master/README.md#searchio-workflow-for-alfred</string>
-				<key>utf8</key>
+				<key>passvariables</key>
+				<false/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>CEE08850-50A0-45E9-B9EA-C6E78E1335AE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>help</string>
+				<key>passinputasargument</key>
+				<false/>
+				<key>passvariables</key>
+				<false/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>B1B7F733-EFC9-4CE1-88E7-08A110720EE0</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>gd</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>2</integer>
+				<key>runningsubtext</key>
+				<string>Fetching results…</string>
+				<key>script</key>
+				<string>./search google-de "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Searchio!</string>
+				<key>title</key>
+				<string>Google (Deutsch)</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
 				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
+			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>FF5496AD-5550-43AE-A752-A57A9C534160</string>
+			<string>google-de</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>inputstring</key>
+				<string>{var:action}</string>
+				<key>matchcasesensitive</key>
+				<true/>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string>new</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.filter</string>
+			<key>uid</key>
+			<string>AEE3BBA9-87D3-42ED-AF69-43175A362FAE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>inputstring</key>
+				<string>{var:action}</string>
+				<key>matchcasesensitive</key>
+				<true/>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string>back</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.filter</string>
+			<key>uid</key>
+			<string>1264847E-C784-4D54-B4E1-8017CB361C68</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>inputstring</key>
+				<string>{query}</string>
+				<key>matchcasesensitive</key>
+				<true/>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string>help</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.filter</string>
+			<key>uid</key>
+			<string>9D22C791-2308-470B-B135-E2E03B69DB73</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>triggerid</key>
+				<string>user</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>6D491305-65B8-4277-A438-B5B2DBFDB1D5</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>user</string>
+				<key>passinputasargument</key>
+				<false/>
+				<key>passvariables</key>
+				<true/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>038601C3-C18D-4ECB-8AB2-8C64E8A1AF84</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Loading searches…</string>
+				<key>script</key>
+				<string>./searchio user "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Your searches</string>
+				<key>title</key>
+				<string>User Searches</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>E56FFAA5-8274-4461-AA14-4AC2AECCF9A3</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>alfred.workflow.action.revealfile</string>
+			<key>uid</key>
+			<string>1437F420-E986-408E-8416-34BFECD99FC8</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>log() {
+	echo "$@" &gt;/dev/stderr
+}
+
+p="$alfred_workflow_data/searches/$search.json"
+
+log '.'
+log '/-------- REVEAL -------\'
+log "uid=$search"
+log "p=$p"
+log '\-------- REVEAL -------/'
+
+echo -n "$p"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>DBCEA37B-DE26-4457-8873-6D7B1BC715A3</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>user</string>
+				<key>passinputasargument</key>
+				<false/>
+				<key>passvariables</key>
+				<false/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>C1B3B49D-8DF2-47D1-98B0-4A263533C5FF</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
@@ -423,19 +1462,25 @@
 				<key>keyword</key>
 				<string>g</string>
 				<key>queuedelaycustom</key>
-				<integer>1</integer>
+				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
 				<false/>
 				<key>queuedelaymode</key>
 				<integer>0</integer>
 				<key>queuemode</key>
-				<integer>1</integer>
+				<integer>2</integer>
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
 				<key>script</key>
-				<string>/usr/bin/python search.py "{query}"</string>
+				<string>./search google-en "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Searchio!</string>
 				<key>title</key>
-				<string>Google Search</string>
+				<string>Google (English)</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -444,33 +1489,254 @@
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>18E144DF-1054-4A12-B5F0-AC05C6F7DEFD</string>
+			<string>google-en</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>inputstring</key>
+				<string>{query}</string>
+				<key>matchcasesensitive</key>
+				<true/>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string>user</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.filter</string>
+			<key>uid</key>
+			<string>35A4633B-D448-4DEB-BE76-C7707446695A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>inputstring</key>
+				<string>{var:action}</string>
+				<key>matchcasesensitive</key>
+				<true/>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string>reveal</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.filter</string>
+			<key>uid</key>
+			<string>66BB6EC0-265E-4221-8770-579C8267FA49</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>triggerid</key>
+				<string>reload</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>2BBA8827-6AAC-48B3-8381-01C70621357C</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>ERROR</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>92B38613-CD0E-404E-8D4F-61D0A656F227</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string># Clear stale elements from cache and update info.plist
+
+query="$1"
+
+log() {
+  echo "$@" &gt;&amp;2
+}
+
+fatal() {
+  echo -n "$@"
+  log "$@"
+  exit 1
+}
+
+
+log "."
+log "Cleaning caches ..."
+./searchio clean 1&gt;&amp;2
+ok=$?
+[[ $ok -ne 0 ]] &amp;&amp; {
+  fatal "searchio clean failed: $ok"
+}
+
+log "Updating info.plist ..."
+./searchio reload 1&gt;&amp;2
+ok=$?
+[[ $ok -ne 0 ]] &amp;&amp; {
+  fatal "searchio reload failed: $ok"
+}</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>0A5780FA-9C49-4528-BC2D-4E79BEBFDD57</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>reload</string>
+				<key>passinputasargument</key>
+				<false/>
+				<key>passvariables</key>
+				<true/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>77C51F8E-96BD-4F45-8043-1D4FFD234301</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>reload</string>
+				<key>passinputasargument</key>
+				<false/>
+				<key>passvariables</key>
+				<true/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>A40730EC-9C68-4E03-BAF2-DE1BF6AADA18</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>on run argv
+	set thePath to item 1 of argv
+	set posixFile to POSIX file thePath
+	tell application "Finder"
+		move posixFile to trash
+	end tell
+end run</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>BB94D851-58EE-4CD6-9931-AB2FB9449D29</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>inputstring</key>
+				<string>{query}</string>
+				<key>matchcasesensitive</key>
+				<true/>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string>reload</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.filter</string>
+			<key>uid</key>
+			<string>C2AF821C-7119-4638-AC0C-360EF570DEC5</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>m</string>
+				<string>wd</string>
 				<key>queuedelaycustom</key>
-				<integer>1</integer>
+				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
 				<false/>
 				<key>queuedelaymode</key>
 				<integer>0</integer>
 				<key>queuemode</key>
-				<integer>1</integer>
+				<integer>2</integer>
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
 				<key>script</key>
-				<string>/usr/bin/python search.py -e google-maps "{query}"</string>
+				<string>./search wikipedia-de "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Searchio!</string>
 				<key>title</key>
-				<string>Google Maps Search</string>
+				<string>Wikipedia (Deutsch)</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -479,48 +1745,137 @@
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>20385CD0-036E-4796-9BCD-E5E30DA265EA</string>
+			<string>wikipedia-de</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
+				<key>argument</key>
+				<string></string>
+				<key>variables</key>
+				<dict>
+					<key>trigger</key>
+					<string>user</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>7C7B9AD8-1B2B-41B8-8E0E-71BCDBE603B3</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>variables</key>
+				<dict>
+					<key>trigger</key>
+					<string>config</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>4C306DA5-C9CE-4802-B79F-A7CD3C05326D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>inputstring</key>
+				<string>{var:action}</string>
+				<key>matchcasesensitive</key>
+				<true/>
+				<key>matchmode</key>
 				<integer>0</integer>
+				<key>matchstring</key>
+				<string>delete</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.filter</string>
+			<key>uid</key>
+			<string>05C661C6-76C1-4C45-AACC-2611A2859A4E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>{var:trigger}</string>
+				<key>passinputasargument</key>
+				<false/>
+				<key>passvariables</key>
+				<false/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>899A0D23-247F-478C-A05A-D63133E9E5F6</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
 				<key>escaping</key>
 				<integer>102</integer>
-				<key>keyword</key>
-				<string>gi</string>
-				<key>queuedelaycustom</key>
-				<integer>1</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<false/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string>Fetching results…</string>
 				<key>script</key>
-				<string>/usr/bin/python search.py -e google-images "{query}"</string>
-				<key>title</key>
-				<string>Google Images Search</string>
+				<string>./searchio toggle show-query</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
 				<key>type</key>
 				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>1539D264-9875-4F20-A2E4-8CA68D20C0CE</string>
+			<string>875184F4-3ABF-462E-B1FD-A6D84DA9BA25</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{var:text}</string>
+				<key>title</key>
+				<string>{var:title}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>8A8E3E3C-8B3B-4739-ACD1-6B8D2668EF02</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
@@ -528,19 +1883,25 @@
 				<key>keyword</key>
 				<string>w</string>
 				<key>queuedelaycustom</key>
-				<integer>1</integer>
+				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
 				<false/>
 				<key>queuedelaymode</key>
 				<integer>0</integer>
 				<key>queuemode</key>
-				<integer>1</integer>
+				<integer>2</integer>
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
 				<key>script</key>
-				<string>/usr/bin/python search.py -e wikipedia "{query}"</string>
+				<string>./search wikipedia-en "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Searchio!</string>
 				<key>title</key>
-				<string>Wikipedia Search</string>
+				<string>Wikipedia (English)</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -549,33 +1910,106 @@
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>6D9FE2EC-FFBC-432E-B45B-F51FF74015F2</string>
+			<string>wikipedia-en</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>inputstring</key>
+				<string>{query}</string>
+				<key>matchcasesensitive</key>
+				<true/>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string>toggle-show-query</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.filter</string>
+			<key>uid</key>
+			<string>C111A296-A718-41CF-AFC0-55C030A3D9FE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>./searchio toggle alfred-sorts</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>AAF2D693-4ED6-48EA-85F1-F414CB079E8F</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>config</string>
+				<key>passinputasargument</key>
+				<false/>
+				<key>passvariables</key>
+				<false/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>8F9D1F3B-C00B-4030-B2BA-84133FE9492F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>wn</string>
+				<string>ytd</string>
 				<key>queuedelaycustom</key>
-				<integer>1</integer>
+				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
 				<false/>
 				<key>queuedelaymode</key>
 				<integer>0</integer>
 				<key>queuemode</key>
-				<integer>1</integer>
+				<integer>2</integer>
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
 				<key>script</key>
-				<string>/usr/bin/python search.py -e wiktionary "{query}"</string>
+				<string>./search youtube-de "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Searchio!</string>
 				<key>title</key>
-				<string>Wiktionary Search</string>
+				<string>YouTube (Germany)</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -584,48 +2018,134 @@
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>CA339DBD-BB74-4EAA-8817-694C7E9C4E76</string>
+			<string>youtube-de</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
+				<key>inputstring</key>
+				<string>{query}</string>
+				<key>matchcasesensitive</key>
+				<true/>
+				<key>matchmode</key>
 				<integer>0</integer>
+				<key>matchstring</key>
+				<string>toggle-alfred-sorts</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.filter</string>
+			<key>uid</key>
+			<string>96E873B9-B127-461A-B4D9-664BFA1ACF1B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>import</string>
+				<key>passinputasargument</key>
+				<false/>
+				<key>passvariables</key>
+				<false/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>4365F3B3-F981-4003-80D6-35DB36BC7E96</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>new</string>
+				<key>passinputasargument</key>
+				<false/>
+				<key>passvariables</key>
+				<true/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>377DF181-34CF-430F-AA06-30DF855D826E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>triggerid</key>
+				<string>import</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>9C43C005-06FE-404B-8F7E-779891643DDA</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
 				<key>escaping</key>
 				<integer>102</integer>
-				<key>keyword</key>
-				<string>a</string>
 				<key>queuedelaycustom</key>
-				<integer>1</integer>
+				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
-				<false/>
+				<true/>
 				<key>queuedelaymode</key>
 				<integer>0</integer>
 				<key>queuemode</key>
 				<integer>1</integer>
 				<key>runningsubtext</key>
-				<string>Fetching results…</string>
+				<string>Looking for URLs…</string>
 				<key>script</key>
-				<string>/usr/bin/python search.py -e amazon "{query}"</string>
+				<string>./searchio web "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Import a search from a URL</string>
 				<key>title</key>
-				<string>Amazon.com Search</string>
+				<string>Import Search</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>BAD10938-7F77-4826-AAFE-1FD9A4B05FF6</string>
+			<string>C8075C84-9F68-4030-AB50-226032984DFE</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
@@ -633,19 +2153,25 @@
 				<key>keyword</key>
 				<string>yt</string>
 				<key>queuedelaycustom</key>
-				<integer>1</integer>
+				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
 				<false/>
 				<key>queuedelaymode</key>
 				<integer>0</integer>
 				<key>queuemode</key>
-				<integer>1</integer>
+				<integer>2</integer>
 				<key>runningsubtext</key>
 				<string>Fetching results…</string>
 				<key>script</key>
-				<string>/usr/bin/python search.py -e youtube "{query}"</string>
+				<string>./search youtube-us "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Searchio!</string>
 				<key>title</key>
-				<string>YouTube Search</string>
+				<string>YouTube (United States)</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -654,149 +2180,57 @@
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>E2B1821F-DE2D-4751-9706-775DD9270540</string>
+			<string>youtube-us</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>queuedelaycustom</key>
-				<integer>1</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<false/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string>Fetching results…</string>
-				<key>script</key>
-				<string>/usr/bin/python search.py -e bing "{query}"</string>
-				<key>title</key>
-				<string>Bing Search</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
+				<key>inputstring</key>
+				<string>{query}</string>
+				<key>matchcasesensitive</key>
 				<true/>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string>import</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
+			<string>alfred.workflow.utility.filter</string>
 			<key>uid</key>
-			<string>41C03945-94E6-4089-B4E9-1B19446E3D76</string>
+			<string>BF5248AB-58DE-4120-AD10-35231A6B2FB9</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
-				<string>dd</string>
-				<key>queuedelaycustom</key>
-				<integer>1</integer>
-				<key>queuedelayimmediatelyinitially</key>
+				<key>lastpathcomponent</key>
 				<false/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string>Fetching results…</string>
-				<key>script</key>
-				<string>/usr/bin/python search.py -e ddg "{query}"</string>
-				<key>title</key>
-				<string>DuckDuckGo Search</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
+				<key>onlyshowifquerypopulated</key>
 				<true/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>ERROR</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
+			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
-			<string>C7678A85-DE2F-43A9-B8A3-6F7BECDA4608</string>
+			<string>57D9898D-C7A0-469C-936B-E0290191225A</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>queuedelaycustom</key>
-				<integer>1</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<false/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string>Fetching results…</string>
-				<key>script</key>
-				<string>/usr/bin/python search.py -e ebay "{query}"</string>
-				<key>title</key>
-				<string>eBay Search</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>FBA5968D-1DBE-40B6-B805-FDAD0DE785F6</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>queuedelaycustom</key>
-				<integer>1</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<false/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string>Fetching results…</string>
-				<key>script</key>
-				<string>/usr/bin/python search.py -e yahoo -l uk "{query}"</string>
-				<key>title</key>
-				<string>Yahoo! UK Search</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>3604BBA2-1BA5-41C4-BE24-9B00090737D3</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>plusspaces</key>
-				<false/>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
 				<key>url</key>
 				<string>{query}</string>
 				<key>utf8</key>
@@ -807,527 +2241,994 @@
 			<key>uid</key>
 			<string>1133DEAA-5A8F-4E7D-9E9C-A76CB82D9F92</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
 				<key>argumenttype</key>
 				<integer>0</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
-				<string>wnd</string>
-				<key>queuedelaycustom</key>
-				<integer>1</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<false/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string>Fetching results…</string>
-				<key>script</key>
-				<string>/usr/bin/python search.py -e wiktionary -l de "{query}"</string>
-				<key>title</key>
-				<string>German Wiktionary Search</string>
-				<key>type</key>
-				<integer>0</integer>
+				<key>subtext</key>
+				<string>Keyword for new search "{var:title}"</string>
+				<key>text</key>
+				<string>Enter Keyword</string>
 				<key>withspace</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
+			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>A9B8F463-0582-4B14-A44A-1B3B229B7055</string>
+			<string>7089A306-0D83-48B7-BCFB-501B580D2ACD</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
+				<key>concurrently</key>
+				<false/>
 				<key>escaping</key>
 				<integer>102</integer>
-				<key>keyword</key>
-				<string>gd</string>
-				<key>queuedelaycustom</key>
-				<integer>1</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<false/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string>Fetching results…</string>
 				<key>script</key>
-				<string>/usr/bin/python search.py -e google -l de "{query}"</string>
-				<key>title</key>
-				<string>Google Search (DE)</string>
+				<string>query="$1"
+
+log() {
+  echo "$@" &gt;&amp;2
+}
+
+fatal() {
+  echo -n "$@"
+  log "$@"
+  exit 1
+}
+
+log "."
+log "/---------- NEW ----------\\"
+log "query=$query"
+
+log "engine=$engine"
+log "uid=$uid"
+log "title=$title"
+log "keyword=$keyword"
+log "pcencode=$pcencode"
+log "search_url=$search_url"
+log "suggest_url=$suggest_url"
+
+log "icon=$icon"
+
+
+opts=(add --env)
+
+test -n "$title" || fatal 'required var "title" unset'
+test -n "$keyword" || fatal 'required var "keyword" unset'
+test -n "$search_url" || fatal 'required var "search_url" unset'
+
+output="$( ./searchio $opts 2&gt;&amp;1 )"
+ok=$?
+
+[[ $ok -ne 0 ]] &amp;&amp; {
+  log "$output"
+  echo -n "$output"
+}
+
+log "\\---------- NEW ----------/"
+
+exit $ok</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
 				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
+				<integer>5</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>0877E34C-7243-4E59-B01B-299F8BE837A6</string>
+			<string>21BEF8AB-87EA-469B-85A4-0C331260B4FF</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>queuedelaycustom</key>
-				<integer>1</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<false/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string>Fetching results…</string>
-				<key>script</key>
-				<string>/usr/bin/python search.py -e bing -l de "{query}"</string>
-				<key>title</key>
-				<string>German Bing Search</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
+				<key>triggerid</key>
+				<string>new</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
+			<string>alfred.workflow.trigger.external</string>
 			<key>uid</key>
-			<string>E27C4EA8-5B61-4C98-BED0-EDB34E30CF61</string>
+			<string>275E19D5-14AC-4CA0-B718-562E79802ADE</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>queuedelaycustom</key>
-				<integer>1</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<false/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string>Fetching results…</string>
-				<key>script</key>
-				<string>/usr/bin/python search.py -e wikipedia -l simple "{query}"</string>
-				<key>title</key>
-				<string>Simple Wikipedia Search</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
+				<key>inputstring</key>
+				<string>{query}</string>
+				<key>matchcasesensitive</key>
 				<true/>
+				<key>matchmode</key>
+				<integer>1</integer>
+				<key>matchstring</key>
+				<string></string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
+			<string>alfred.workflow.utility.filter</string>
 			<key>uid</key>
-			<string>FCE73A46-8D9B-4A73-A19A-9B7ED27CB1E0</string>
+			<string>86D2665A-CF39-4039-9969-45A403FF2232</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
-				<string>wd</string>
-				<key>queuedelaycustom</key>
-				<integer>1</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<false/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string>Fetching results…</string>
-				<key>script</key>
-				<string>/usr/bin/python search.py -e wikipedia -l de "{query}"</string>
-				<key>title</key>
-				<string>German Wikipedia Search</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
+				<key>argument</key>
+				<string></string>
+				<key>variables</key>
+				<dict>
+					<key>keyword</key>
+					<string>{query}</string>
+				</dict>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
+			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
-			<string>6BA5F1D0-6222-4657-8EDE-9C4C2DDC3A68</string>
+			<string>92801112-CB8D-4647-BC77-C8BEEB551112</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
-				<string>ad</string>
-				<key>queuedelaycustom</key>
-				<integer>1</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<false/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string>Fetching results…</string>
-				<key>script</key>
-				<string>/usr/bin/python search.py -e amazon -l de "{query}"</string>
-				<key>title</key>
-				<string>Amazon.de Search</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
+				<key>inputstring</key>
+				<string>{var:keyword}</string>
+				<key>matchcasesensitive</key>
 				<true/>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string></string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
+			<string>alfred.workflow.utility.filter</string>
 			<key>uid</key>
-			<string>6D0C822D-0E06-44C9-9E76-4CFB2FA12D3C</string>
+			<string>FA7B1E87-ED24-49A2-8689-6567B272DE0E</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>queuedelaycustom</key>
-				<integer>1</integer>
-				<key>queuedelayimmediatelyinitially</key>
+				<key>externaltriggerid</key>
+				<string>config.engines</string>
+				<key>passinputasargument</key>
 				<false/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string>Fetching results…</string>
-				<key>script</key>
-				<string>/usr/bin/python search.py -e amazon -l uk "{query}"</string>
-				<key>title</key>
-				<string>Amazon.co.uk Search</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
+				<key>passvariables</key>
+				<false/>
+				<key>workflowbundleid</key>
+				<string>self</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
+			<string>alfred.workflow.output.callexternaltrigger</string>
 			<key>uid</key>
-			<string>531A6FA1-3566-4B71-B5D5-9CECB2B976BF</string>
+			<string>B3E0930C-ADA8-418F-B389-3A0261E05706</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
+				<key>concurrently</key>
+				<false/>
 				<key>escaping</key>
 				<integer>102</integer>
-				<key>queuedelaycustom</key>
-				<integer>1</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<false/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string>Fetching results…</string>
 				<key>script</key>
-				<string>/usr/bin/python search.py -e amazon -l pt "{query}"</string>
-				<key>title</key>
-				<string>Amazon.com.br Search</string>
+				<string># Update info.plist
+
+log() {
+  echo "$@" &gt;&amp;2
+}
+
+fatal() {
+  echo -n "$@"
+  log "$@"
+  exit 1
+}
+
+
+log "."
+log "Updating info.plist ..."
+./searchio reload 1&gt;&amp;2
+ok=$?
+[[ $ok -ne 0 ]] &amp;&amp; {
+  fatal "searchio reload failed: $ok"
+}</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
 				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
+				<integer>5</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>FC7DCD03-6AC4-40D2-94C0-AD6F5B788174</string>
+			<string>45C09FE5-9A12-4E2A-B115-E9C42C6E93C2</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>queuedelaycustom</key>
-				<integer>1</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<false/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string>Fetching results…</string>
-				<key>script</key>
-				<string>/usr/bin/python search.py -e yandex "{query}"</string>
-				<key>title</key>
-				<string>Yandex.ru Search</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
+				<key>inputstring</key>
+				<string>{query}</string>
+				<key>matchcasesensitive</key>
 				<true/>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string></string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
+			<string>alfred.workflow.utility.filter</string>
 			<key>uid</key>
-			<string>A1F38C6C-C371-47A7-AD30-524B64FB2299</string>
+			<string>FCF6D1C2-1401-4D08-98A6-7AEF3E5571CB</string>
 			<key>version</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>queuedelaycustom</key>
-				<integer>1</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<false/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string>Fetching results…</string>
-				<key>script</key>
-				<string>/usr/bin/python search.py -e naver "{query}"</string>
-				<key>title</key>
-				<string>Naver.com Search</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
+				<key>inputstring</key>
+				<string>{var:keyword}</string>
+				<key>matchcasesensitive</key>
 				<true/>
+				<key>matchmode</key>
+				<integer>1</integer>
+				<key>matchstring</key>
+				<string></string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
+			<string>alfred.workflow.utility.filter</string>
 			<key>uid</key>
-			<string>C0D55C1A-F608-45EF-8DD8-8983FE98EA29</string>
+			<string>1DB25452-734C-4CB5-AD6C-247FA2DB8634</string>
 			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>queuedelaycustom</key>
-				<integer>1</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<false/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string>Fetching results…</string>
-				<key>script</key>
-				<string># Provide the wiki name as the --lang argument, e.g. "gameofthrones" to
-# search gameofthrones.wikia.com
-/usr/bin/python search.py -e wikia -l gameofthrones "{query}"</string>
-				<key>title</key>
-				<string>Wikia.com Search</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>3A80FEE7-B90D-4723-A239-0ED6FDD6AF6E</string>
-			<key>version</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string></string>
+	<string>Searchio!
+=========
+
+Search suggestions from multiple search engines in different locales</string>
 	<key>uidata</key>
 	<dict>
-		<key>0877E34C-7243-4E59-B01B-299F8BE837A6</key>
+		<key>038601C3-C18D-4ECB-8AB2-8C64E8A1AF84</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>10</integer>
+			<key>xpos</key>
+			<integer>970</integer>
 			<key>ypos</key>
-			<real>1580</real>
+			<integer>360</integer>
+		</dict>
+		<key>05C661C6-76C1-4C45-AACC-2611A2859A4E</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
+			<key>note</key>
+			<string>action = delete</string>
+			<key>xpos</key>
+			<integer>1740</integer>
+			<key>ypos</key>
+			<integer>560</integer>
+		</dict>
+		<key>0A5780FA-9C49-4528-BC2D-4E79BEBFDD57</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>12</integer>
+			<key>note</key>
+			<string>Run "searchio clean" and "searchio reload"</string>
+			<key>xpos</key>
+			<integer>1330</integer>
+			<key>ypos</key>
+			<integer>530</integer>
 		</dict>
 		<key>1133DEAA-5A8F-4E7D-9E9C-A76CB82D9F92</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
+			<key>note</key>
+			<string>Open search results in browser</string>
+			<key>xpos</key>
+			<integer>700</integer>
 			<key>ypos</key>
-			<real>1360</real>
+			<integer>1230</integer>
 		</dict>
-		<key>1539D264-9875-4F20-A2E4-8CA68D20C0CE</key>
+		<key>1264847E-C784-4D54-B4E1-8017CB361C68</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
+			<key>note</key>
+			<string>action = back</string>
+			<key>xpos</key>
+			<integer>1570</integer>
 			<key>ypos</key>
-			<real>480</real>
+			<integer>240</integer>
 		</dict>
-		<key>18E144DF-1054-4A12-B5F0-AC05C6F7DEFD</key>
+		<key>1437F420-E986-408E-8416-34BFECD99FC8</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
+			<key>xpos</key>
+			<integer>1890</integer>
 			<key>ypos</key>
-			<real>260</real>
+			<integer>360</integer>
 		</dict>
-		<key>20385CD0-036E-4796-9BCD-E5E30DA265EA</key>
+		<key>17C66D87-03DB-4E18-B72D-9F0DF56DECAB</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
+			<key>xpos</key>
+			<integer>2420</integer>
 			<key>ypos</key>
-			<real>370</real>
+			<integer>50</integer>
+		</dict>
+		<key>1DB25452-734C-4CB5-AD6C-247FA2DB8634</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>9</integer>
+			<key>note</key>
+			<string>$keyword != ""</string>
+			<key>xpos</key>
+			<integer>1570</integer>
+			<key>ypos</key>
+			<integer>1410</integer>
+		</dict>
+		<key>21BEF8AB-87EA-469B-85A4-0C331260B4FF</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>9</integer>
+			<key>note</key>
+			<string>Save search</string>
+			<key>xpos</key>
+			<integer>1850</integer>
+			<key>ypos</key>
+			<integer>1230</integer>
+		</dict>
+		<key>275E19D5-14AC-4CA0-B718-562E79802ADE</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>9</integer>
+			<key>note</key>
+			<string>Add a new search</string>
+			<key>xpos</key>
+			<integer>1150</integer>
+			<key>ypos</key>
+			<integer>1230</integer>
+		</dict>
+		<key>2BBA8827-6AAC-48B3-8381-01C70621357C</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>12</integer>
+			<key>note</key>
+			<string>Update info.plist and caches</string>
+			<key>xpos</key>
+			<integer>1150</integer>
+			<key>ypos</key>
+			<integer>530</integer>
 		</dict>
 		<key>2F2432A8-3DCF-47C7-A1F4-680C2BF00198</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
+			<key>note</key>
+			<string>View configuration</string>
+			<key>xpos</key>
+			<integer>270</integer>
 			<key>ypos</key>
-			<real>10</real>
+			<integer>50</integer>
 		</dict>
-		<key>3604BBA2-1BA5-41C4-BE24-9B00090737D3</key>
+		<key>35A4633B-D448-4DEB-BE76-C7707446695A</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>10</integer>
+			<key>note</key>
+			<string>action = user</string>
+			<key>xpos</key>
+			<integer>740</integer>
 			<key>ypos</key>
-			<real>1360</real>
+			<integer>390</integer>
 		</dict>
-		<key>3A80FEE7-B90D-4723-A239-0ED6FDD6AF6E</key>
+		<key>377DF181-34CF-430F-AA06-30DF855D826E</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>9</integer>
+			<key>xpos</key>
+			<integer>1530</integer>
 			<key>ypos</key>
-			<real>2610</real>
+			<integer>1060</integer>
 		</dict>
-		<key>41C03945-94E6-4089-B4E9-1B19446E3D76</key>
+		<key>4365F3B3-F981-4003-80D6-35DB36BC7E96</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>xpos</key>
+			<integer>970</integer>
 			<key>ypos</key>
-			<real>1030</real>
+			<integer>1060</integer>
 		</dict>
-		<key>531A6FA1-3566-4B71-B5D5-9CECB2B976BF</key>
+		<key>44A058F0-7677-47DA-A4C5-48A81C6D2448</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>9</integer>
+			<key>xpos</key>
+			<integer>2420</integer>
 			<key>ypos</key>
-			<real>2130</real>
+			<integer>200</integer>
 		</dict>
-		<key>6B5D7BC9-4C88-46CE-BCC2-DFDD40A385D2</key>
+		<key>45C09FE5-9A12-4E2A-B115-E9C42C6E93C2</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>9</integer>
+			<key>note</key>
+			<string>Reload</string>
+			<key>xpos</key>
+			<integer>2180</integer>
 			<key>ypos</key>
-			<real>10</real>
+			<integer>1360</integer>
 		</dict>
-		<key>6BA5F1D0-6222-4657-8EDE-9C4C2DDC3A68</key>
+		<key>4C306DA5-C9CE-4802-B79F-A7CD3C05326D</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>12</integer>
+			<key>note</key>
+			<string>Set $trigger to "config"</string>
+			<key>xpos</key>
+			<integer>870</integer>
 			<key>ypos</key>
-			<real>1910</real>
+			<integer>560</integer>
 		</dict>
-		<key>6D0C822D-0E06-44C9-9E76-4CFB2FA12D3C</key>
+		<key>4DF57E98-9CEE-4F2D-8677-DA8E3D8CE1B9</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
+			<key>note</key>
+			<string>action = back</string>
+			<key>xpos</key>
+			<integer>2290</integer>
 			<key>ypos</key>
-			<real>2020</real>
+			<integer>80</integer>
 		</dict>
-		<key>6D9FE2EC-FFBC-432E-B45B-F51FF74015F2</key>
+		<key>57D9898D-C7A0-469C-936B-E0290191225A</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>9</integer>
+			<key>xpos</key>
+			<integer>2180</integer>
 			<key>ypos</key>
-			<real>590</real>
+			<integer>1230</integer>
 		</dict>
-		<key>A1F38C6C-C371-47A7-AD30-524B64FB2299</key>
+		<key>598AD703-A0E9-46F0-9269-B4D4CEE29E4E</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<integer>1700</integer>
 			<key>ypos</key>
-			<real>2370</real>
+			<integer>50</integer>
 		</dict>
-		<key>A9B8F463-0582-4B14-A44A-1B3B229B7055</key>
+		<key>5E31BCBA-28F3-4A4A-BC1C-61F9F60F6521</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
+			<key>xpos</key>
+			<integer>480</integer>
 			<key>ypos</key>
-			<real>1470</real>
+			<integer>80</integer>
 		</dict>
-		<key>B4A82FCF-3661-4BC7-980E-76E299A34808</key>
+		<key>66BB6EC0-265E-4221-8770-579C8267FA49</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>8</integer>
+			<key>note</key>
+			<string>action = reveal</string>
+			<key>xpos</key>
+			<integer>1740</integer>
 			<key>ypos</key>
-			<real>130</real>
+			<integer>390</integer>
 		</dict>
-		<key>BAD10938-7F77-4826-AAFE-1FD9A4B05FF6</key>
+		<key>6D491305-65B8-4277-A438-B5B2DBFDB1D5</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>10</integer>
+			<key>note</key>
+			<string>View user searches</string>
+			<key>xpos</key>
+			<integer>1150</integer>
 			<key>ypos</key>
-			<real>810</real>
+			<integer>360</integer>
 		</dict>
-		<key>C0D55C1A-F608-45EF-8DD8-8983FE98EA29</key>
+		<key>6E13EB0E-2BDA-47F9-9C31-7E88FAAC8168</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
+			<key>note</key>
+			<string>action = engines</string>
+			<key>xpos</key>
+			<integer>740</integer>
 			<key>ypos</key>
-			<real>2490</real>
+			<integer>80</integer>
 		</dict>
-		<key>C7678A85-DE2F-43A9-B8A3-6F7BECDA4608</key>
+		<key>7089A306-0D83-48B7-BCFB-501B580D2ACD</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>9</integer>
+			<key>note</key>
+			<string>Get keyword for new search</string>
+			<key>xpos</key>
+			<integer>1530</integer>
 			<key>ypos</key>
-			<real>1140</real>
+			<integer>1230</integer>
 		</dict>
-		<key>CA339DBD-BB74-4EAA-8817-694C7E9C4E76</key>
+		<key>7136B89E-ACE6-4E44-8FE2-2F62595AF6B5</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>note</key>
+			<string>action != back</string>
+			<key>xpos</key>
+			<integer>1570</integer>
 			<key>ypos</key>
-			<real>700</real>
+			<integer>80</integer>
 		</dict>
-		<key>E27C4EA8-5B61-4C98-BED0-EDB34E30CF61</key>
+		<key>77C51F8E-96BD-4F45-8043-1D4FFD234301</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>12</integer>
+			<key>xpos</key>
+			<integer>970</integer>
 			<key>ypos</key>
-			<real>1690</real>
+			<integer>530</integer>
 		</dict>
-		<key>E2B1821F-DE2D-4751-9706-775DD9270540</key>
+		<key>7C7B9AD8-1B2B-41B8-8E0E-71BCDBE603B3</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
+			<key>note</key>
+			<string>Set $trigger to "user"</string>
+			<key>xpos</key>
+			<integer>2080</integer>
 			<key>ypos</key>
-			<real>920</real>
+			<integer>560</integer>
 		</dict>
-		<key>F475E2AB-BBA7-4C5B-9319-4B26133397EF</key>
+		<key>855B996F-95CD-4E83-98E4-B5A10CFF7575</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
+			<key>xpos</key>
+			<integer>970</integer>
 			<key>ypos</key>
-			<real>10</real>
+			<integer>50</integer>
 		</dict>
-		<key>FBA5968D-1DBE-40B6-B805-FDAD0DE785F6</key>
+		<key>86D2665A-CF39-4039-9969-45A403FF2232</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>9</integer>
+			<key>note</key>
+			<string>{query} not empty</string>
+			<key>xpos</key>
+			<integer>2080</integer>
 			<key>ypos</key>
-			<real>1250</real>
+			<integer>1260</integer>
 		</dict>
-		<key>FC7DCD03-6AC4-40D2-94C0-AD6F5B788174</key>
+		<key>875184F4-3ABF-462E-B1FD-A6D84DA9BA25</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
+			<key>note</key>
+			<string>Toggle SHOW_QUERY_IN_RESULTS on/off</string>
+			<key>xpos</key>
+			<integer>970</integer>
 			<key>ypos</key>
-			<real>2250</real>
+			<integer>710</integer>
 		</dict>
-		<key>FCE73A46-8D9B-4A73-A19A-9B7ED27CB1E0</key>
+		<key>899A0D23-247F-478C-A05A-D63133E9E5F6</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
+			<key>note</key>
+			<string>Open configuration</string>
+			<key>xpos</key>
+			<integer>1530</integer>
 			<key>ypos</key>
-			<real>1800</real>
+			<integer>670</integer>
 		</dict>
-		<key>FF5496AD-5550-43AE-A752-A57A9C534160</key>
+		<key>8A8E3E3C-8B3B-4739-ACD1-6B8D2668EF02</key>
 		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
+			<key>xpos</key>
+			<integer>1330</integer>
 			<key>ypos</key>
-			<real>130</real>
+			<integer>710</integer>
+		</dict>
+		<key>8F9D1F3B-C00B-4030-B2BA-84133FE9492F</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
+			<key>xpos</key>
+			<integer>1330</integer>
+			<key>ypos</key>
+			<integer>880</integer>
+		</dict>
+		<key>92801112-CB8D-4647-BC77-C8BEEB551112</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>9</integer>
+			<key>note</key>
+			<string>Set $keyword</string>
+			<key>xpos</key>
+			<integer>1720</integer>
+			<key>ypos</key>
+			<integer>1260</integer>
+		</dict>
+		<key>92B38613-CD0E-404E-8D4F-61D0A656F227</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>12</integer>
+			<key>xpos</key>
+			<integer>1530</integer>
+			<key>ypos</key>
+			<integer>530</integer>
+		</dict>
+		<key>96E873B9-B127-461A-B4D9-664BFA1ACF1B</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
+			<key>note</key>
+			<string>action == toggle-alfred-sorts</string>
+			<key>xpos</key>
+			<integer>740</integer>
+			<key>ypos</key>
+			<integer>910</integer>
+		</dict>
+		<key>9C43C005-06FE-404B-8F7E-779891643DDA</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>note</key>
+			<string>Import a search from a URL</string>
+			<key>xpos</key>
+			<integer>1150</integer>
+			<key>ypos</key>
+			<integer>1060</integer>
+		</dict>
+		<key>9D22C791-2308-470B-B135-E2E03B69DB73</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>6</integer>
+			<key>note</key>
+			<string>action = help</string>
+			<key>xpos</key>
+			<integer>740</integer>
+			<key>ypos</key>
+			<integer>240</integer>
+		</dict>
+		<key>9ECB0004-87EB-414C-82EE-893D719D6D00</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
+			<key>note</key>
+			<string>View search engines</string>
+			<key>xpos</key>
+			<integer>1150</integer>
+			<key>ypos</key>
+			<integer>50</integer>
+		</dict>
+		<key>A101898C-B574-4AFA-B342-8D5ED69E07FE</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
+			<key>xpos</key>
+			<integer>1330</integer>
+			<key>ypos</key>
+			<integer>50</integer>
+		</dict>
+		<key>A40730EC-9C68-4E03-BAF2-DE1BF6AADA18</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>12</integer>
+			<key>note</key>
+			<string>Rewrite info.plist</string>
+			<key>xpos</key>
+			<integer>2190</integer>
+			<key>ypos</key>
+			<integer>530</integer>
+		</dict>
+		<key>AAF2D693-4ED6-48EA-85F1-F414CB079E8F</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
+			<key>note</key>
+			<string>Toggle ALFRED_SORTS_RESULTS on/off</string>
+			<key>xpos</key>
+			<integer>970</integer>
+			<key>ypos</key>
+			<integer>880</integer>
+		</dict>
+		<key>AB93844D-D4B4-4B12-AF81-D39A87D70DBD</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>6</integer>
+			<key>note</key>
+			<string>Open help in browser</string>
+			<key>xpos</key>
+			<integer>1150</integer>
+			<key>ypos</key>
+			<integer>210</integer>
+		</dict>
+		<key>AEE3BBA9-87D3-42ED-AF69-43175A362FAE</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>9</integer>
+			<key>note</key>
+			<string>action = new</string>
+			<key>xpos</key>
+			<integer>2290</integer>
+			<key>ypos</key>
+			<integer>230</integer>
+		</dict>
+		<key>B1B7F733-EFC9-4CE1-88E7-08A110720EE0</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>6</integer>
+			<key>xpos</key>
+			<integer>970</integer>
+			<key>ypos</key>
+			<integer>210</integer>
+		</dict>
+		<key>B3E0930C-ADA8-418F-B389-3A0261E05706</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
+			<key>note</key>
+			<string>Open list of engines</string>
+			<key>xpos</key>
+			<integer>2390</integer>
+			<key>ypos</key>
+			<integer>1290</integer>
+		</dict>
+		<key>BB94D851-58EE-4CD6-9931-AB2FB9449D29</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
+			<key>note</key>
+			<string>Trash search config file</string>
+			<key>xpos</key>
+			<integer>1890</integer>
+			<key>ypos</key>
+			<integer>530</integer>
+		</dict>
+		<key>BF5248AB-58DE-4120-AD10-35231A6B2FB9</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>note</key>
+			<string>action = import</string>
+			<key>xpos</key>
+			<integer>740</integer>
+			<key>ypos</key>
+			<integer>1090</integer>
+		</dict>
+		<key>C111A296-A718-41CF-AFC0-55C030A3D9FE</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>7</integer>
+			<key>note</key>
+			<string>action == toggle-show-query</string>
+			<key>xpos</key>
+			<integer>740</integer>
+			<key>ypos</key>
+			<integer>740</integer>
+		</dict>
+		<key>C1B3B49D-8DF2-47D1-98B0-4A263533C5FF</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>10</integer>
+			<key>note</key>
+			<string>Open user searches</string>
+			<key>xpos</key>
+			<integer>2310</integer>
+			<key>ypos</key>
+			<integer>370</integer>
+		</dict>
+		<key>C2AF821C-7119-4638-AC0C-360EF570DEC5</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>12</integer>
+			<key>note</key>
+			<string>action = reload</string>
+			<key>xpos</key>
+			<integer>740</integer>
+			<key>ypos</key>
+			<integer>560</integer>
+		</dict>
+		<key>C8075C84-9F68-4030-AB50-226032984DFE</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>xpos</key>
+			<integer>1330</integer>
+			<key>ypos</key>
+			<integer>1060</integer>
+		</dict>
+		<key>CEE08850-50A0-45E9-B9EA-C6E78E1335AE</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
+			<key>note</key>
+			<string>Open configuration</string>
+			<key>xpos</key>
+			<integer>1700</integer>
+			<key>ypos</key>
+			<integer>210</integer>
+		</dict>
+		<key>DA65DE7D-1536-46BB-B4AA-F6E58057C5AD</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<integer>2050</integer>
+			<key>ypos</key>
+			<integer>50</integer>
+		</dict>
+		<key>DBCEA37B-DE26-4457-8873-6D7B1BC715A3</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>10</integer>
+			<key>note</key>
+			<string>Set filepath from search UID</string>
+			<key>xpos</key>
+			<integer>1530</integer>
+			<key>ypos</key>
+			<integer>360</integer>
+		</dict>
+		<key>DE3BED0F-7CD8-43E5-9024-F3C3AC7FD4CC</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>1</integer>
+			<key>note</key>
+			<string>View configuration</string>
+			<key>xpos</key>
+			<integer>50</integer>
+			<key>ypos</key>
+			<integer>50</integer>
+		</dict>
+		<key>E56FFAA5-8274-4461-AA14-4AC2AECCF9A3</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>10</integer>
+			<key>xpos</key>
+			<integer>1320</integer>
+			<key>ypos</key>
+			<integer>360</integer>
+		</dict>
+		<key>F10C6E94-3BE0-4FCD-A2DE-59D9A205B65A</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>note</key>
+			<string>View engine variants</string>
+			<key>xpos</key>
+			<integer>1870</integer>
+			<key>ypos</key>
+			<integer>50</integer>
+		</dict>
+		<key>FA7B1E87-ED24-49A2-8689-6567B272DE0E</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>9</integer>
+			<key>note</key>
+			<string>$keyword = ""</string>
+			<key>xpos</key>
+			<integer>1370</integer>
+			<key>ypos</key>
+			<integer>1260</integer>
+		</dict>
+		<key>FCF6D1C2-1401-4D08-98A6-7AEF3E5571CB</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>9</integer>
+			<key>note</key>
+			<string>{query} empty</string>
+			<key>xpos</key>
+			<integer>2080</integer>
+			<key>ypos</key>
+			<integer>1390</integer>
+		</dict>
+		<key>FF24EBA1-84CD-4DAB-BBD5-E4AB11A9F57A</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>6</integer>
+			<key>xpos</key>
+			<integer>1330</integer>
+			<key>ypos</key>
+			<integer>210</integer>
+		</dict>
+		<key>google-de</key>
+		<dict>
+			<key>note</key>
+			<string>Google (Deutsch)</string>
+			<key>xpos</key>
+			<integer>270</integer>
+			<key>ypos</key>
+			<integer>220</integer>
+		</dict>
+		<key>google-en</key>
+		<dict>
+			<key>note</key>
+			<string>Google (English)</string>
+			<key>xpos</key>
+			<integer>270</integer>
+			<key>ypos</key>
+			<integer>390</integer>
+		</dict>
+		<key>wikipedia-de</key>
+		<dict>
+			<key>note</key>
+			<string>Wikipedia (Deutsch)</string>
+			<key>xpos</key>
+			<integer>270</integer>
+			<key>ypos</key>
+			<integer>560</integer>
+		</dict>
+		<key>wikipedia-en</key>
+		<dict>
+			<key>note</key>
+			<string>Wikipedia (English)</string>
+			<key>xpos</key>
+			<integer>270</integer>
+			<key>ypos</key>
+			<integer>730</integer>
+		</dict>
+		<key>youtube-de</key>
+		<dict>
+			<key>note</key>
+			<string>YouTube (Germany)</string>
+			<key>xpos</key>
+			<integer>270</integer>
+			<key>ypos</key>
+			<integer>900</integer>
+		</dict>
+		<key>youtube-us</key>
+		<dict>
+			<key>note</key>
+			<string>YouTube (United States)</string>
+			<key>xpos</key>
+			<integer>270</integer>
+			<key>ypos</key>
+			<integer>1070</integer>
 		</dict>
 	</dict>
+	<key>variables</key>
+	<dict>
+		<key>ALFRED_SORTS_RESULTS</key>
+		<string>1</string>
+		<key>GOOGLE_PLACES_API_KEY</key>
+		<string></string>
+		<key>SHOW_QUERY_IN_RESULTS</key>
+		<string>1</string>
+	</dict>
+	<key>variablesdontexport</key>
+	<array>
+		<string>SHOW_QUERY_IN_RESULTS</string>
+		<string>ALFRED_SORTS_RESULTS</string>
+		<string>GOOGLE_PLACES_API_KEY</string>
+	</array>
+	<key>version</key>
+	<string>2.0.0</string>
 	<key>webaddress</key>
 	<string></string>
 </dict>

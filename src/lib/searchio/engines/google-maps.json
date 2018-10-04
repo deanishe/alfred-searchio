@@ -1,0 +1,1022 @@
+{
+  "description": "Location search", 
+  "jsonpath": "$.predictions[*].description", 
+  "title": "Google Maps", 
+  "variants": [
+    {
+      "name": "Acoli", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=ach", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=ach&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (Acoli)", 
+      "uid": "ach"
+    }, 
+    {
+      "name": "Afrikaans", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=af", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=af&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (Afrikaans)", 
+      "uid": "af"
+    }, 
+    {
+      "name": "Akan", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=ak", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=ak&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (Akan)", 
+      "uid": "ak"
+    }, 
+    {
+      "name": "\u12a0\u121b\u122d\u129b", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=am", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=am&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (\u12a0\u121b\u122d\u129b)", 
+      "uid": "am"
+    }, 
+    {
+      "name": "\u0627\u0644\u0639\u0631\u0628\u064a\u0629", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=ar", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=ar&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (\u0627\u0644\u0639\u0631\u0628\u064a\u0629)", 
+      "uid": "ar"
+    }, 
+    {
+      "name": "az\u0259rbaycan", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=az", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=az&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (az\u0259rbaycan)", 
+      "uid": "az"
+    }, 
+    {
+      "name": "Balinese", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=ban", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=ban&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (Balinese)", 
+      "uid": "ban"
+    }, 
+    {
+      "name": "\u0431\u0435\u043b\u0430\u0440\u0443\u0441\u043a\u0430\u044f", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=be", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=be&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (\u0431\u0435\u043b\u0430\u0440\u0443\u0441\u043a\u0430\u044f)", 
+      "uid": "be"
+    }, 
+    {
+      "name": "Ichibemba", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=bem", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=bem&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (Ichibemba)", 
+      "uid": "bem"
+    }, 
+    {
+      "name": "\u0431\u044a\u043b\u0433\u0430\u0440\u0441\u043a\u0438", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=bg", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=bg&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (\u0431\u044a\u043b\u0433\u0430\u0440\u0441\u043a\u0438)", 
+      "uid": "bg"
+    }, 
+    {
+      "name": "\u09ac\u09be\u0982\u09b2\u09be", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=bn", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=bn&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (\u09ac\u09be\u0982\u09b2\u09be)", 
+      "uid": "bn"
+    }, 
+    {
+      "name": "brezhoneg", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=br", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=br&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (brezhoneg)", 
+      "uid": "br"
+    }, 
+    {
+      "name": "bosanski", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=bs", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=bs&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (bosanski)", 
+      "uid": "bs"
+    }, 
+    {
+      "name": "catal\u00e0", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=ca", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=ca&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (catal\u00e0)", 
+      "uid": "ca"
+    }, 
+    {
+      "name": "Cebuano", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=ceb", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=ceb&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (Cebuano)", 
+      "uid": "ceb"
+    }, 
+    {
+      "name": "\u13e3\u13b3\u13a9", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=chr", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=chr&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (\u13e3\u13b3\u13a9)", 
+      "uid": "chr"
+    }, 
+    {
+      "name": "\u06a9\u0648\u0631\u062f\u06cc\u06cc \u0646\u0627\u0648\u06d5\u0646\u062f\u06cc", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=ckb", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=ckb&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (\u06a9\u0648\u0631\u062f\u06cc\u06cc \u0646\u0627\u0648\u06d5\u0646\u062f\u06cc)", 
+      "uid": "ckb"
+    }, 
+    {
+      "name": "Corsican", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=co", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=co&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (Corsican)", 
+      "uid": "co"
+    }, 
+    {
+      "name": "Seychellois Creole", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=crs", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=crs&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (Seychellois Creole)", 
+      "uid": "crs"
+    }, 
+    {
+      "name": "\u010de\u0161tina", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=cs", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=cs&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (\u010de\u0161tina)", 
+      "uid": "cs"
+    }, 
+    {
+      "name": "Cymraeg", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=cy", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=cy&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (Cymraeg)", 
+      "uid": "cy"
+    }, 
+    {
+      "name": "dansk", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=da", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=da&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (dansk)", 
+      "uid": "da"
+    }, 
+    {
+      "name": "Deutsch", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=de", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=de&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (Deutsch)", 
+      "uid": "de"
+    }, 
+    {
+      "name": "E\u028begbe", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=ee", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=ee&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (E\u028begbe)", 
+      "uid": "ee"
+    }, 
+    {
+      "name": "\u0395\u03bb\u03bb\u03b7\u03bd\u03b9\u03ba\u03ac", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=el", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=el&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (\u0395\u03bb\u03bb\u03b7\u03bd\u03b9\u03ba\u03ac)", 
+      "uid": "el"
+    }, 
+    {
+      "name": "English", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=en", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=en&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (English)", 
+      "uid": "en"
+    }, 
+    {
+      "name": "esperanto", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=eo", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=eo&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (esperanto)", 
+      "uid": "eo"
+    }, 
+    {
+      "name": "espa\u00f1ol", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=es", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=es&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (espa\u00f1ol)", 
+      "uid": "es"
+    }, 
+    {
+      "name": "espa\u00f1ol (Latinoam\u00e9rica)", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=es-419", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=es-419&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (espa\u00f1ol (Latinoam\u00e9rica))", 
+      "uid": "es-419"
+    }, 
+    {
+      "name": "eesti", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=et", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=et&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (eesti)", 
+      "uid": "et"
+    }, 
+    {
+      "name": "euskara", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=eu", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=eu&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (euskara)", 
+      "uid": "eu"
+    }, 
+    {
+      "name": "\u0641\u0627\u0631\u0633\u06cc", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=fa", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=fa&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (\u0641\u0627\u0631\u0633\u06cc)", 
+      "uid": "fa"
+    }, 
+    {
+      "name": "suomi", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=fi", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=fi&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (suomi)", 
+      "uid": "fi"
+    }, 
+    {
+      "name": "f\u00f8royskt", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=fo", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=fo&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (f\u00f8royskt)", 
+      "uid": "fo"
+    }, 
+    {
+      "name": "fran\u00e7ais", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=fr", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=fr&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (fran\u00e7ais)", 
+      "uid": "fr"
+    }, 
+    {
+      "name": "West-Frysk", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=fy", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=fy&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (West-Frysk)", 
+      "uid": "fy"
+    }, 
+    {
+      "name": "Gaeilge", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=ga", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=ga&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (Gaeilge)", 
+      "uid": "ga"
+    }, 
+    {
+      "name": "Ga", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=gaa", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=gaa&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (Ga)", 
+      "uid": "gaa"
+    }, 
+    {
+      "name": "G\u00e0idhlig", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=gd", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=gd&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (G\u00e0idhlig)", 
+      "uid": "gd"
+    }, 
+    {
+      "name": "galego", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=gl", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=gl&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (galego)", 
+      "uid": "gl"
+    }, 
+    {
+      "name": "Guarani", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=gn", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=gn&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (Guarani)", 
+      "uid": "gn"
+    }, 
+    {
+      "name": "\u0a97\u0ac1\u0a9c\u0ab0\u0abe\u0aa4\u0ac0", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=gu", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=gu&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (\u0a97\u0ac1\u0a9c\u0ab0\u0abe\u0aa4\u0ac0)", 
+      "uid": "gu"
+    }, 
+    {
+      "name": "Hausa", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=ha", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=ha&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (Hausa)", 
+      "uid": "ha"
+    }, 
+    {
+      "name": "\u02bb\u014clelo Hawai\u02bbi", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=haw", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=haw&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (\u02bb\u014clelo Hawai\u02bbi)", 
+      "uid": "haw"
+    }, 
+    {
+      "name": "\u0939\u093f\u0928\u094d\u0926\u0940", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=hi", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=hi&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (\u0939\u093f\u0928\u094d\u0926\u0940)", 
+      "uid": "hi"
+    }, 
+    {
+      "name": "hrvatski", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=hr", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=hr&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (hrvatski)", 
+      "uid": "hr"
+    }, 
+    {
+      "name": "Haitian Creole", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=ht", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=ht&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (Haitian Creole)", 
+      "uid": "ht"
+    }, 
+    {
+      "name": "magyar", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=hu", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=hu&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (magyar)", 
+      "uid": "hu"
+    }, 
+    {
+      "name": "\u0570\u0561\u0575\u0565\u0580\u0565\u0576", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=hy", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=hy&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (\u0570\u0561\u0575\u0565\u0580\u0565\u0576)", 
+      "uid": "hy"
+    }, 
+    {
+      "name": "Interlingua", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=ia", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=ia&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (Interlingua)", 
+      "uid": "ia"
+    }, 
+    {
+      "name": "Indonesia", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=id", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=id&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (Indonesia)", 
+      "uid": "id"
+    }, 
+    {
+      "name": "Igbo", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=ig", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=ig&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (Igbo)", 
+      "uid": "ig"
+    }, 
+    {
+      "name": "\u00edslenska", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=is", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=is&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (\u00edslenska)", 
+      "uid": "is"
+    }, 
+    {
+      "name": "italiano", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=it", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=it&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (italiano)", 
+      "uid": "it"
+    }, 
+    {
+      "name": "\u05e2\u05d1\u05e8\u05d9\u05ea", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=iw", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=iw&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (\u05e2\u05d1\u05e8\u05d9\u05ea)", 
+      "uid": "iw"
+    }, 
+    {
+      "name": "\u65e5\u672c\u8a9e", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=ja", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=ja&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (\u65e5\u672c\u8a9e)", 
+      "uid": "ja"
+    }, 
+    {
+      "name": "Javanese", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=jw", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=jw&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (Javanese)", 
+      "uid": "jw"
+    }, 
+    {
+      "name": "\u10e5\u10d0\u10e0\u10d7\u10e3\u10da\u10d8", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=ka", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=ka&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (\u10e5\u10d0\u10e0\u10d7\u10e3\u10da\u10d8)", 
+      "uid": "ka"
+    }, 
+    {
+      "name": "Kongo", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=kg", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=kg&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (Kongo)", 
+      "uid": "kg"
+    }, 
+    {
+      "name": "\u049b\u0430\u0437\u0430\u049b \u0442\u0456\u043b\u0456", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=kk", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=kk&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (\u049b\u0430\u0437\u0430\u049b \u0442\u0456\u043b\u0456)", 
+      "uid": "kk"
+    }, 
+    {
+      "name": "\u1781\u17d2\u1798\u17c2\u179a", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=km", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=km&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (\u1781\u17d2\u1798\u17c2\u179a)", 
+      "uid": "km"
+    }, 
+    {
+      "name": "\u0c95\u0ca8\u0ccd\u0ca8\u0ca1", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=kn", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=kn&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (\u0c95\u0ca8\u0ccd\u0ca8\u0ca1)", 
+      "uid": "kn"
+    }, 
+    {
+      "name": "\ud55c\uad6d\uc5b4", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=ko", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=ko&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (\ud55c\uad6d\uc5b4)", 
+      "uid": "ko"
+    }, 
+    {
+      "name": "Krio (Sierra Leone)", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=kri", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=kri&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (Krio (Sierra Leone))", 
+      "uid": "kri"
+    }, 
+    {
+      "name": "\u043a\u044b\u0440\u0433\u044b\u0437\u0447\u0430", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=ky", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=ky&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (\u043a\u044b\u0440\u0433\u044b\u0437\u0447\u0430)", 
+      "uid": "ky"
+    }, 
+    {
+      "name": "Latin", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=la", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=la&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (Latin)", 
+      "uid": "la"
+    }, 
+    {
+      "name": "Luganda", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=lg", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=lg&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (Luganda)", 
+      "uid": "lg"
+    }, 
+    {
+      "name": "ling\u00e1la", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=ln", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=ln&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (ling\u00e1la)", 
+      "uid": "ln"
+    }, 
+    {
+      "name": "\u0ea5\u0eb2\u0ea7", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=lo", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=lo&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (\u0ea5\u0eb2\u0ea7)", 
+      "uid": "lo"
+    }, 
+    {
+      "name": "Lozi", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=loz", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=loz&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (Lozi)", 
+      "uid": "loz"
+    }, 
+    {
+      "name": "lietuvi\u0173", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=lt", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=lt&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (lietuvi\u0173)", 
+      "uid": "lt"
+    }, 
+    {
+      "name": "Luba-Lulua", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=lua", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=lua&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (Luba-Lulua)", 
+      "uid": "lua"
+    }, 
+    {
+      "name": "latvie\u0161u", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=lv", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=lv&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (latvie\u0161u)", 
+      "uid": "lv"
+    }, 
+    {
+      "name": "kreol morisien", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=mfe", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=mfe&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (kreol morisien)", 
+      "uid": "mfe"
+    }, 
+    {
+      "name": "Malagasy", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=mg", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=mg&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (Malagasy)", 
+      "uid": "mg"
+    }, 
+    {
+      "name": "Maori", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=mi", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=mi&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (Maori)", 
+      "uid": "mi"
+    }, 
+    {
+      "name": "\u043c\u0430\u043a\u0435\u0434\u043e\u043d\u0441\u043a\u0438", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=mk", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=mk&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (\u043c\u0430\u043a\u0435\u0434\u043e\u043d\u0441\u043a\u0438)", 
+      "uid": "mk"
+    }, 
+    {
+      "name": "\u0d2e\u0d32\u0d2f\u0d3e\u0d33\u0d02", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=ml", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=ml&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (\u0d2e\u0d32\u0d2f\u0d3e\u0d33\u0d02)", 
+      "uid": "ml"
+    }, 
+    {
+      "name": "\u043c\u043e\u043d\u0433\u043e\u043b", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=mn", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=mn&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (\u043c\u043e\u043d\u0433\u043e\u043b)", 
+      "uid": "mn"
+    }, 
+    {
+      "name": "\u092e\u0930\u093e\u0920\u0940", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=mr", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=mr&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (\u092e\u0930\u093e\u0920\u0940)", 
+      "uid": "mr"
+    }, 
+    {
+      "name": "Bahasa Melayu", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=ms", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=ms&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (Bahasa Melayu)", 
+      "uid": "ms"
+    }, 
+    {
+      "name": "Malti", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=mt", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=mt&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (Malti)", 
+      "uid": "mt"
+    }, 
+    {
+      "name": "\u1019\u103c\u1014\u103a\u1019\u102c", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=my", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=my&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (\u1019\u103c\u1014\u103a\u1019\u102c)", 
+      "uid": "my"
+    }, 
+    {
+      "name": "\u0928\u0947\u092a\u093e\u0932\u0940", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=ne", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=ne&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (\u0928\u0947\u092a\u093e\u0932\u0940)", 
+      "uid": "ne"
+    }, 
+    {
+      "name": "Nederlands", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=nl", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=nl&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (Nederlands)", 
+      "uid": "nl"
+    }, 
+    {
+      "name": "nynorsk", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=nn", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=nn&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (nynorsk)", 
+      "uid": "nn"
+    }, 
+    {
+      "name": "norsk", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=no", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=no&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (norsk)", 
+      "uid": "no"
+    }, 
+    {
+      "name": "Northern Sotho", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=nso", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=nso&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (Northern Sotho)", 
+      "uid": "nso"
+    }, 
+    {
+      "name": "Nyanja", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=ny", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=ny&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (Nyanja)", 
+      "uid": "ny"
+    }, 
+    {
+      "name": "Runyankore", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=nyn", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=nyn&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (Runyankore)", 
+      "uid": "nyn"
+    }, 
+    {
+      "name": "Occitan", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=oc", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=oc&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (Occitan)", 
+      "uid": "oc"
+    }, 
+    {
+      "name": "Oromoo", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=om", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=om&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (Oromoo)", 
+      "uid": "om"
+    }, 
+    {
+      "name": "\u0b13\u0b21\u0b3c\u0b3f\u0b06", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=or", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=or&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (\u0b13\u0b21\u0b3c\u0b3f\u0b06)", 
+      "uid": "or"
+    }, 
+    {
+      "name": "\u0a2a\u0a70\u0a1c\u0a3e\u0a2c\u0a40", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=pa", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=pa&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (\u0a2a\u0a70\u0a1c\u0a3e\u0a2c\u0a40)", 
+      "uid": "pa"
+    }, 
+    {
+      "name": "Nigerian Pidgin", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=pcm", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=pcm&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (Nigerian Pidgin)", 
+      "uid": "pcm"
+    }, 
+    {
+      "name": "polski", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=pl", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=pl&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (polski)", 
+      "uid": "pl"
+    }, 
+    {
+      "name": "\u067e\u069a\u062a\u0648", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=ps", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=ps&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (\u067e\u069a\u062a\u0648)", 
+      "uid": "ps"
+    }, 
+    {
+      "name": "portugu\u00eas (Brasil)", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=pt-BR", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=pt-BR&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (portugu\u00eas (Brasil))", 
+      "uid": "pt-br"
+    }, 
+    {
+      "name": "portugu\u00eas (Portugal)", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=pt-PT", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=pt-PT&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (portugu\u00eas (Portugal))", 
+      "uid": "pt-pt"
+    }, 
+    {
+      "name": "Runasimi", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=qu", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=qu&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (Runasimi)", 
+      "uid": "qu"
+    }, 
+    {
+      "name": "rumantsch", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=rm", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=rm&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (rumantsch)", 
+      "uid": "rm"
+    }, 
+    {
+      "name": "Ikirundi", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=rn", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=rn&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (Ikirundi)", 
+      "uid": "rn"
+    }, 
+    {
+      "name": "rom\u00e2n\u0103", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=ro", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=ro&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (rom\u00e2n\u0103)", 
+      "uid": "ro"
+    }, 
+    {
+      "name": "\u0440\u0443\u0441\u0441\u043a\u0438\u0439", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=ru", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=ru&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (\u0440\u0443\u0441\u0441\u043a\u0438\u0439)", 
+      "uid": "ru"
+    }, 
+    {
+      "name": "Kinyarwanda", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=rw", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=rw&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (Kinyarwanda)", 
+      "uid": "rw"
+    }, 
+    {
+      "name": "Sindhi", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=sd", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=sd&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (Sindhi)", 
+      "uid": "sd"
+    }, 
+    {
+      "name": "\u0dc3\u0dd2\u0d82\u0dc4\u0dbd", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=si", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=si&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (\u0dc3\u0dd2\u0d82\u0dc4\u0dbd)", 
+      "uid": "si"
+    }, 
+    {
+      "name": "sloven\u010dina", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=sk", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=sk&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (sloven\u010dina)", 
+      "uid": "sk"
+    }, 
+    {
+      "name": "sloven\u0161\u010dina", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=sl", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=sl&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (sloven\u0161\u010dina)", 
+      "uid": "sl"
+    }, 
+    {
+      "name": "chiShona", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=sn", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=sn&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (chiShona)", 
+      "uid": "sn"
+    }, 
+    {
+      "name": "Soomaali", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=so", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=so&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (Soomaali)", 
+      "uid": "so"
+    }, 
+    {
+      "name": "shqip", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=sq", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=sq&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (shqip)", 
+      "uid": "sq"
+    }, 
+    {
+      "name": "\u0441\u0440\u043f\u0441\u043a\u0438", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=sr", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=sr&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (\u0441\u0440\u043f\u0441\u043a\u0438)", 
+      "uid": "sr"
+    }, 
+    {
+      "name": "srpski (latinica)", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=sr-Latn", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=sr-Latn&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (srpski (latinica))", 
+      "uid": "sr-latn"
+    }, 
+    {
+      "name": "srpski (Crna Gora)", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=sr-ME", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=sr-ME&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (srpski (Crna Gora))", 
+      "uid": "sr-me"
+    }, 
+    {
+      "name": "Southern Sotho", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=st", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=st&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (Southern Sotho)", 
+      "uid": "st"
+    }, 
+    {
+      "name": "Sundanese", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=su", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=su&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (Sundanese)", 
+      "uid": "su"
+    }, 
+    {
+      "name": "svenska", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=sv", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=sv&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (svenska)", 
+      "uid": "sv"
+    }, 
+    {
+      "name": "Kiswahili", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=sw", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=sw&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (Kiswahili)", 
+      "uid": "sw"
+    }, 
+    {
+      "name": "\u0ba4\u0bae\u0bbf\u0bb4\u0bcd", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=ta", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=ta&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (\u0ba4\u0bae\u0bbf\u0bb4\u0bcd)", 
+      "uid": "ta"
+    }, 
+    {
+      "name": "\u0c24\u0c46\u0c32\u0c41\u0c17\u0c41", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=te", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=te&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (\u0c24\u0c46\u0c32\u0c41\u0c17\u0c41)", 
+      "uid": "te"
+    }, 
+    {
+      "name": "Tajik", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=tg", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=tg&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (Tajik)", 
+      "uid": "tg"
+    }, 
+    {
+      "name": "\u0e44\u0e17\u0e22", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=th", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=th&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (\u0e44\u0e17\u0e22)", 
+      "uid": "th"
+    }, 
+    {
+      "name": "\u1275\u130d\u122d\u129b", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=ti", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=ti&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (\u1275\u130d\u122d\u129b)", 
+      "uid": "ti"
+    }, 
+    {
+      "name": "Turkmen", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=tk", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=tk&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (Turkmen)", 
+      "uid": "tk"
+    }, 
+    {
+      "name": "Filipino", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=tl", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=tl&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (Filipino)", 
+      "uid": "tl"
+    }, 
+    {
+      "name": "Klingon", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=tlh", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=tlh&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (Klingon)", 
+      "uid": "tlh"
+    }, 
+    {
+      "name": "Tswana", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=tn", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=tn&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (Tswana)", 
+      "uid": "tn"
+    }, 
+    {
+      "name": "lea fakatonga", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=to", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=to&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (lea fakatonga)", 
+      "uid": "to"
+    }, 
+    {
+      "name": "T\u00fcrk\u00e7e", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=tr", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=tr&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (T\u00fcrk\u00e7e)", 
+      "uid": "tr"
+    }, 
+    {
+      "name": "Tatar", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=tt", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=tt&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (Tatar)", 
+      "uid": "tt"
+    }, 
+    {
+      "name": "Tumbuka", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=tum", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=tum&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (Tumbuka)", 
+      "uid": "tum"
+    }, 
+    {
+      "name": "Twi", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=tw", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=tw&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (Twi)", 
+      "uid": "tw"
+    }, 
+    {
+      "name": "\u0626\u06c7\u064a\u063a\u06c7\u0631\u0686\u06d5", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=ug", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=ug&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (\u0626\u06c7\u064a\u063a\u06c7\u0631\u0686\u06d5)", 
+      "uid": "ug"
+    }, 
+    {
+      "name": "\u0443\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=uk", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=uk&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (\u0443\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430)", 
+      "uid": "uk"
+    }, 
+    {
+      "name": "\u0627\u0631\u062f\u0648", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=ur", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=ur&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (\u0627\u0631\u062f\u0648)", 
+      "uid": "ur"
+    }, 
+    {
+      "name": "o\u2018zbek", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=uz", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=uz&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (o\u2018zbek)", 
+      "uid": "uz"
+    }, 
+    {
+      "name": "Ti\u1ebfng Vi\u1ec7t", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=vi", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=vi&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (Ti\u1ebfng Vi\u1ec7t)", 
+      "uid": "vi"
+    }, 
+    {
+      "name": "Wolof", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=wo", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=wo&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (Wolof)", 
+      "uid": "wo"
+    }, 
+    {
+      "name": "Xhosa", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=xh", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=xh&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (Xhosa)", 
+      "uid": "xh"
+    }, 
+    {
+      "name": "\u05d9\u05d9\u05b4\u05d3\u05d9\u05e9", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=yi", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=yi&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (\u05d9\u05d9\u05b4\u05d3\u05d9\u05e9)", 
+      "uid": "yi"
+    }, 
+    {
+      "name": "\u00c8d\u00e8 Yor\u00f9b\u00e1", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=yo", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=yo&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (\u00c8d\u00e8 Yor\u00f9b\u00e1)", 
+      "uid": "yo"
+    }, 
+    {
+      "name": "\u4e2d\u6587 (\u7b80\u4f53)", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=zh-CN", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=zh-CN&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (\u4e2d\u6587 (\u7b80\u4f53))", 
+      "uid": "zh-cn"
+    }, 
+    {
+      "name": "\u4e2d\u6587 (\u7e41\u9ad4)", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=zh-TW", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=zh-TW&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (\u4e2d\u6587 (\u7e41\u9ad4))", 
+      "uid": "zh-tw"
+    }, 
+    {
+      "name": "isiZulu", 
+      "search_url": "https://www.google.com/maps/search/{query}?hl=zu", 
+      "suggest_url": "https://maps.googleapis.com/maps/api/place/queryautocomplete/json?input={query}&language=zu&key=${GOOGLE_PLACES_API_KEY}", 
+      "title": "Google Maps (isiZulu)", 
+      "uid": "zu"
+    }
+  ]
+}

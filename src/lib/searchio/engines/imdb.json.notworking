@@ -1,0 +1,13 @@
+{
+  "description": "Movies and TV",
+  "title": "IMDb",
+  "variants": [
+    {
+      "name": "International",
+      "search_url": "http://www.imdb.com/find?s=all&q={query}",
+      "suggest_url": "http://sg.media-imdb.com/suggests/{query:.1}/{query}.json",
+      "title": "IMDb International",
+      "uid": "int"
+    }
+  ]
+}

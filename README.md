@@ -1,180 +1,164 @@
-# Searchio! workflow for Alfred #
+Searchio! workflow for Alfred
+=============================
 
 Auto-suggest search results from multiple search engines and languages.
 
 ![Searchio! Demo][demo]
 
 
+Contents
+--------
+
+<!-- MarkdownTOC autolink="true" bracket="round" depth="3" autoanchor="true" -->
+
+- [Download and installation](#download-and-installation)
+- [Usage](#usage)
+    - [Configuration](#configuration)
+        - [Workflow Configuration Sheet](#workflow-configuration-sheet)
+        - [In-Workflow Configuration](#in-workflow-configuration)
+    - [Importing Searches](#importing-searches)
+- [Adding Engines](#adding-engines)
+- [Licensing, thanks](#licensing-thanks)
+
+<!-- /MarkdownTOC -->
+
 Supports the following search engines/websites:
 
+- Amazon
+- Bing
+- DuckDuckGo
+- DuckDuckGo Image Search
+- eBay
 - Google
+- Google "I'm Feeling Lucky"
 - Google Images
-- Google Maps
-- YouTube
+- Google Maps (requires a Google Places API key)
+- Naver
+- Wikia (only the top ~200 wikis, but you can [import](#importing-searches) any others)
 - Wikipedia
 - Wiktionary
-- Amazon
-- eBay
-- DuckDuckGo
-- Bing
-- Yahoo!
-- Ask.com
-- Yandex.ru
-- Naver.com
-- Wikia.com
-- Kinopoisk.ru
+- Yandex
+- YouTube
+- **plus** it can [import a search configuration](#importing-searches) from *any* website that supports OpenSearch autosuggestions
 
 
-## Download and installation ##
+<a name="download-and-installation"></a>
+Download and installation
+-------------------------
 
-Download the latest version from the [GitHub releases page](https://github.com/deanishe/alfred-searchio/releases/latest) or [Packal](http://www.packal.org/workflow/searchio).
-
-## Usage ##
-
-There are several searches pre-configured. Only some have keywords (i.e. can be used as-is):
-
-- `g` — Search Google in system (i.e. default) language
-- `m` — Search Google Maps in system (i.e. default) language
-- `gi` — Search Google Images in system (i.e. default) language
-- `w` — Search Wikipedia in system (i.e. default) language
-- `wn` — Search Wiktionary in system (i.e. default) language
-- `a` — Search Amazon in system (i.e. default) language. If your system language is English, this will search  Amazon.com. Use `-l uk` in the Script Filter to search Amazon.co.uk or `-l ca` to search Amazon.ca.
-- `yt` — Search YouTube in system (i.e. default) language
-- `searchio [<query>]` — Show settings and list of supported search engines. Currently, the only setting is a toggle to also show the `<query>` in the results list (default: `No`).
-- `searchiohelp` — Open help (this README) in your browser
-
-Most of the other available search engines also have an example Script Filter configured, but without a keyword. Add a keyword if you wish to use one of the examples.
-
-Several of the Script Filters demonstrate the use of the `--lang` (or `-l`) option to the `search.py` script to search in a different language/region. See [the Languages section](#languages) for more information.
-
-To add a new search, either copy/paste an existing Script Filter, or create a new one as follows:
-
-![][screen1]
-
-**Note:** Be sure to select the same escaping options as in the screenshot (Backquotes, Double Quotes, Backslashes, Dollars).
-
-By default, your system language will be used. To specify a custom language:
-
-![][screen2]
-
-**Note:** Be sure to connect the Script Filter to the Open URL action or it won't work.
-
-## Icons ##
-
-Icons for each search engine can be found in the `icons` subirectory of the Workflow.
-
-## Languages ##
-
-The `-l` or `--lang` argument to `search.py` doesn't follow any hard-and-fast rules: it depends on the search engine you're using. With some search engines (Google, Wikipedia, Wiktionary, Bing, DuckDuckGo), it's a language, e.g. `uk` = Ukrainian. In others (Yahoo!, Amazon, Ask), it's treated as a region, e.g. `uk` = United Kingdom.
-
-Some search engines (Bing, DuckDuckGo, eBay) do not provide language-specific suggestions, but actioning the result will open a list of language-specific results in your browser.
-
-## Search engines ##
-
-The following search engines are supported. Pass the `ID` to the `-e`/`--engine` argument of `search.py` to search using that engine. If `--engine` is not specified, Google will be used.
-
-|       ID      |      Name     |
-|---------------|---------------|
-| amazon        | Amazon        |
-| ask           | Ask           |
-| bing          | Bing          |
-| ddg           | DuckDuckGo    |
-| ebay          | eBay          |
-| google        | Google        |
-| google-images | Google Images |
-| google-maps   | Google Maps   |
-| naver         | Naver.com     |
-| wikia         | Wikia         |
-| wikipedia     | Wikipedia     |
-| wiktionary    | Wiktionary    |
-| yahoo         | Yahoo!        |
-| yandex        | Yandex.ru     |
-| youtube       | YouTube       |
-| kinopoisk     | Kinopoisk.ru  |
+Download the latest version from the [GitHub releases page](https://github.com/deanishe/alfred-searchio/releases/latest).
 
 
-### Wikipedia, Wiktionary ###
+<a name="usage"></a>
+Usage
+-----
 
-The `--lang` argument will be treated as a subdomain, e.g. `de` will retrieve results from `de.wikipedia.org`.
+There are several example searches pre-configured:
 
-### Google ###
+- `g` — Search Google in English
+- `gd` — Search Google in German
+- `w` — Search the English Wikipedia
+- `wd` — Search the German Wikipedia
+- `yt` — Search the United States version of YouTube
+- `ytd` — Search the German version of YouTube
 
-The `--lang` argument should work for [any language supported by Google](https://www.google.com/preferences#languages), with the obvious exceptions of things like Klingon and Hacker…
 
-### Bing, DuckDuckGo, eBay ###
+<a name="configuration"></a>
+### Configuration ###
 
-Bing, eBay and DuckDuckGo do not provide language-specific suggestions, but the results opened in your browser should be restricted to the specified language/region.
+The workflow is configured via the `searchio` keyword and some [workflow variables](https://www.alfredapp.com/help/workflows/advanced/variables/) set in the workflow configuration sheet.
 
-### Ask, Amazon, Yahoo! ###
 
-Ask.com, Amazon and Yahoo! do not provide language-specific search suggestions/results, but rather region-specific ones. In many cases, this won't make a difference (e.g. `--lang de` and `--lang fr` will provide German and French results respectively), however the behaviour is different in some cases, e.g. `uk` means "United Kingdom", not "Ukrainian".
+<a name="workflow-configuration-sheet"></a>
+#### Workflow Configuration Sheet ####
 
-### Wikia.com ###
+There are some variables in the workflow configuration screen (open the workflow in Alfred Preferences and hit the `[𝒙]` button):
 
-Wikia.com is a special case. Instead of languages or regions, the `--lang` option is used to set a specific wiki, e.g. `--lang gameofthrones` will search `gameofthrones.wikia.com`.
+|           Name          |                                                                                                    Description                                                                                                    |
+|-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `ALFRED_SORTS_RESULTS`  | Set to `1` or `yes` to enable Alfred's knowledge. Set to `0` or `no` to always show results in the order returned by the API.                                                                                     |
+| `GOOGLE_PLACES_API_KEY` | You must set this to use Google Maps search. You can get an API key [here](https://developers.google.com/places/web-service/get-api-key).                                                                         |
+| `SHOW_QUERY_IN_RESULTS` | Set to `1` or `yes` to always append the entered query to the end of the results (so you can hit `↑` to select it). If unset (or set to `0` or `no`), the query will only be shown if there are no other results. |
 
-You *must* specify a `--lang` option for Wikia searches.
 
-## Examples ##
+<a name="in-workflow-configuration"></a>
+#### In-Workflow Configuration ####
 
-Use these in the `Script` field of a Script Filter.
+- `searchio [<query>]` — Show workflow settings
+    - `Update Available …` — Shown if there is a new version of the workflow available to download. Action the item to install it.
+    - `Installed Searches …` — View and delete your configured searches
+    - `All Engines …` — View supported engines and add new searches
+    - `Import Search …` — Import a new search configuration from a URL (see [Importing Searches](#importing-searches))
+    - `Reload` — Regenerate the workflow's Script Filters from your configured searches (and clean the cache). Run this if you screw up the Script Filters or an update overwrites them.
+    - `Show Query in Results` — Turn the option to show the query you entered in the results on/off. The query is added to the end of the results, so you can hit `↑` to go straight to it. The query is always shown if there are no other results.
+    - `Alfred Sorts Results` — Turns Alfred's knowledge on/off. If on,
+    Alfred remembers which result you chose for which query and moves
+    that result to the top. If off, results are always shown in the
+    order they are returned by the API. If on, `Show Query in Results`
+    cannot guarantee that the query is always the last result.
+    - `Online Help` — Open this page in your browser.
+    - `Workflow up to Date` — You have the latest version of the workflow. Action this item to force a check for a new version.
 
-```bash
-# Google (default engine) in your system (default) language
-/usr/bin/python search.py "{query}"
 
-# Google in German
-/usr/bin/python search.py -l de "{query}"
+<a name="importing-searches"></a>
+### Importing Searches ###
 
-# Google in French
-/usr/bin/python search.py -l fr "{query}"
+Searchio! has the ability to import a search configuration from any website that supports the OpenSearch autosuggestion API.
 
-# YouTube in Brazilian Portuguese
-/usr/bin/python search.py -e youtube -l pt-BR "{query}"
+Run `searchio` > `Import Search …` and the workflow will offer to import a search from a URL on your clipboard, the frontmost Safari tab or the frontmost Chrome tab.
 
-# Amazon.co.uk
-/usr/bin/python search.py -e amazon -l uk "{query}"
+It will try to find and read the OpenSearch description at the URL and import it (and the website's icon if available), then ask you to assign a keyword for the search.
 
-# Amazon.ca
-/usr/bin/python search.py -e amazon -l ca "{query}"
+**NOTE**: Although many websites support OpenSearch, few support the autosuggestion API that Searchio! uses. Sites based on MediaWiki usually support the API, so you can add all your favourite Wikia wikis (the built-in Wikia engine only supports the few hundred most popular wikis).
 
-# DuckDuckGo in system (default) language
-/usr/bin/python search.py -e ddg "{query}"
 
-# DuckDuckGo in Spanish
-/usr/bin/python search.py -e ddg -l es "{query}"
+<a name="adding-engines"></a>
+Adding Engines
+--------------
 
-# Yahoo! UK
-/usr/bin/python search.py -e yahoo -l uk "{query}"
+In addition to the built-in engines, you can add your own definitions in the `engines` folder in the workflow's data directory. (Enter `searchio workflow:opendata` to open the data folder in Finder.)
 
-# Yahoo! Australia
-/usr/bin/python search.py -e yahoo -l au "{query}"
+An engine definition looks like this:
 
-# Wikipedia in Simple English
-/usr/bin/python search.py -e wikipedia -l simple "{query}"
-
-# Wikipedia in Polish
-/usr/bin/python search.py -e wikipedia -l pl "{query}"
-
-# Wiktionary in Spanish
-/usr/bin/python search.py -e wiktionary -l es "{query}"
-
-# Game of Thrones wiki at Wikia.com
-/usr/bin/python search.py -e wikia -l gameofthrones "{query}"
-
-# Borderlands wiki at Wikia.com
-/usr/bin/python search.py -e wikia -l borderlands "{query}"
+```json
+{
+  "description": "Alternative search engine",
+  "jsonpath": "$[*].phrase",
+  "title": "DuckDuckGo Images",
+  "pcencode": false,
+  "variants": [
+    {
+      "name": "Argentina",
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=ar-es&q={query}",
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=ar-es&q={query}",
+      "title": "DuckDuckGo Images Argentina",
+      "uid": "ar-es"
+    }
+  ]
+}
 ```
 
+`title` and `description` are self-explanatory. `jsonpath` is the JSON path expression that extracts the search suggestions from the JSON returned by the suggestion API.
+
+The optional `pcencode` field tells Searchio! to percent-encode the search query rather than use plus-encoding (the default).
+
+`variants` define the actual searches supported by the search engine, typically one per region or language. All fields are required. `suggest_url` points to the autosuggestion endpoint and `search_url` is the URL of the search results that should be opened in the browser. Both URLs must contain the `{query}` placeholder, which is replaced with the user's search query.
+
+The (optional) icon for your custom engine should be placed in the `icons` directory alongside the `engines` one. It should have the same basename as the engine definition file, just with a different file extension. Supported icon extensions are `png`, `icns`, `jpg` and `jpeg`.
+
+<a name="licensing-thanks"></a>
 ## Licensing, thanks ##
 
 The code in this workflow is released under the [MIT Licence](http://opensource.org/licenses/MIT).
 
 The icons belong to the respective search engines and websites.
 
-This workflow uses the [Alfred-Workflow](http://www.deanishe.net/alfred-workflow/) library and [docopt](http://docopt.org/) (both MIT-licensed).
+This workflow uses the following libraries:
 
+- [Alfred-Workflow](https://www.deanishe.net/alfred-workflow/)
+- [AwGo](https://github.com/deanishe/awgo/)
+- [BeautifulSoup](https://pypi.org/project/beautifulsoup4/)
+- [docopt](http://docopt.org/)
+- [jsonpath-rw](https://pypi.org/project/jsonpath-rw/)
 
 [demo]: ./docs/demo.gif
-[screen1]: http://www.deanishe.net/alfred-searchio/screen1.png
-[screen2]: http://www.deanishe.net/alfred-searchio/screen2.png
