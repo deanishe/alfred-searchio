@@ -50,6 +50,7 @@ def load(*dirpaths):
 
     Args:
         *dirpaths (str): Directories to load JSON engine defs from.
+
     """
     from searchio.util import FileFinder
     engines = []
@@ -57,6 +58,8 @@ def load(*dirpaths):
     for p in f:
         e = Engine.from_file(p)
         engines.append(e)
+
+    engines.sort(key=lambda e: e.title)
 
     return engines
 
@@ -70,6 +73,7 @@ def _obj_from_file(o, p):
 
     Returns:
         object: Updated object
+
     """
     with open(p) as fp:
         return _obj_from_dict(json.load(fp))
@@ -87,6 +91,7 @@ def _obj_from_dict(o, d):
 
     Raises:
         ValueError: Raised if required key is missing
+
     """
     for k in o._required:
         if k in d:
@@ -133,6 +138,7 @@ class Engine(object):
 
         Returns:
             Engine: Engine generated from dict.
+
         """
         e = cls(d['uid'])
         return _obj_from_dict(e, d)
@@ -146,6 +152,7 @@ class Engine(object):
 
         Returns:
             Engine: Configured engine.
+
         """
         with open(p) as fp:
             d = json.load(fp)
@@ -158,6 +165,7 @@ class Engine(object):
 
         Args:
             uid (str): UID for engine.
+
         """
         self.uid = uid
         self.title = u''
@@ -172,6 +180,7 @@ class Engine(object):
 
         Returns:
             list: Sequence of `Variant` objects for this engine.
+
         """
         return [Variant.from_dict(self, d) for d in self._variants]
 
@@ -188,6 +197,7 @@ class Variant(object):
         suggest_url (str): URL for search suggestions (including placeholder(s))
         title (unicode): Full name of the variant, e.g. "Google (English)"
             or "Amazon Deutschland".
+
     """
     _required = ('uid', 'name', 'title', 'search_url')
     _optional = ('suggest_url', 'icon')
@@ -203,6 +213,7 @@ class Variant(object):
 
         Returns:
             Variant: Variant configured from dict ``d``.
+
         """
         v = cls(engine)
         return _obj_from_dict(v, d)
@@ -214,6 +225,7 @@ class Variant(object):
 
         Args:
             engine (Engine): Engine this variant belongs to.
+
         """
         self._engine = weakref.ref(engine)
         self._uid = ''
@@ -230,6 +242,7 @@ class Variant(object):
 
         Returns:
             Engine: Variant's engine.
+
         """
         return self._engine()
 
@@ -239,6 +252,7 @@ class Variant(object):
 
         Returns:
             str: Variant UID of form `<engine-uid>-<variant-uid>`.
+
         """
         return '{}-{}'.format(self.engine.uid, self._uid)
 
@@ -248,6 +262,7 @@ class Variant(object):
 
         Returns:
             str: Path to image file.
+
         """
         return self._icon
 
@@ -257,6 +272,7 @@ class Variant(object):
 
         Returns:
             unicode: JSON Path.
+
         """
         return self.engine.jsonpath
 
@@ -266,6 +282,7 @@ class Variant(object):
 
         Returns:
             Search: Search for this variant.
+
         """
         return Search.from_variant(self)
 
@@ -285,6 +302,7 @@ class Search(object):
         title (unicode): Full search title, e.g. "Google (English)".
         uid (str): UID of search. This is a combination of engine and
             variant UIDs.
+
     """
     _required = ('title', 'icon', 'jsonpath', 'search_url')
     _optional = ('pcencode', 'suggest_url', 'keyword')
@@ -299,6 +317,7 @@ class Search(object):
 
         Returns:
             Search: Search based on `Variant`.
+
         """
         s = cls(v.uid)
 
@@ -319,6 +338,7 @@ class Search(object):
 
         Returns:
             Search: Search configured from dict ``d``.
+
         """
         s = cls(d['uid'])
         return _obj_from_dict(s, d)
@@ -332,6 +352,7 @@ class Search(object):
 
         Returns:
             Search: Search configured from JSON file.
+
         """
         s = cls(path2uid(p))
 
@@ -345,6 +366,7 @@ class Search(object):
 
         Args:
             uid (str): UID for the `Search`.
+
         """
         self.uid = uid
         self.title = ''
@@ -361,6 +383,7 @@ class Search(object):
 
         Returns:
             dict: Configuration for this `Search`.
+
         """
         d = dict(title=self.title, icon=self.icon,
                  keyword=self.keyword,

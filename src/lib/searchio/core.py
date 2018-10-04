@@ -33,6 +33,10 @@ class Context(object):
         """Create new `Context` for Workflow."""
         self.wf = wf
         self._icon_finder = None
+        for name in ['engines', 'searches', 'icons', 'backups']:
+            p = wf.datafile(name)
+            if not os.path.exists(p):
+                os.makedirs(p)
 
     def icon(self, name):
         if not self._icon_finder:

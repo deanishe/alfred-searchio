@@ -55,6 +55,7 @@ def run(wf, argv):
 
     f = util.FileFinder([ctx.searches_dir], ['json'])
     searches = [Search.from_file(p) for p in f]
+    searches.sort(key=attrgetter('title'))
 
     if query:
         searches = wf.filter(query, searches, key=attrgetter('title'))

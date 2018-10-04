@@ -12,9 +12,7 @@
 
 from __future__ import print_function, absolute_import
 
-import os
 import re
-import sys
 from urlparse import urljoin, urlparse
 from xml.etree import ElementTree as ET
 
@@ -77,17 +75,13 @@ class OpenSearch(object):
         return str(self)
 
 
-def absoluteurl(url, base=None):
-    """Make URL absolute based on base URL."""
-
-
 def _parse_html(s, baseurl):
     """Extract OpenSearch link and icon from HTML."""
     # TODO: find an icon, e.g. apple-touch-icon
     defurl = iconurl = None
     matchsize = re.compile(r'(\d+)x.*').match
 
-    soup = BS(s,  'html.parser')
+    soup = BS(s, 'html.parser')
     link = soup.find('link', type='application/opensearchdescription+xml')
     if not link:
         return None, None

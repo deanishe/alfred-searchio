@@ -119,6 +119,7 @@ DEFAULTS = [
         'title': 'Wikipedia (English)',
         'icon': 'icons/engines/wikipedia.png',
         'jsonpath': '$[1][*]',
+        'pcencode': True,
         'keyword': 'w',
         'search_url': 'https://en.wikipedia.org/wiki/{query}',
         'suggest_url': 'https://en.wikipedia.org/w/api.php?action=opensearch&search={query}',
@@ -128,6 +129,7 @@ DEFAULTS = [
         'title': 'Wikipedia (Deutsch)',
         'icon': 'icons/engines/wikipedia.png',
         'jsonpath': '$[1][*]',
+        'pcencode': True,
         'keyword': 'wd',
         'search_url': 'https://de.wikipedia.org/wiki/{query}',
         'suggest_url': 'https://de.wikipedia.org/w/api.php?action=opensearch&search={query}',
@@ -203,6 +205,8 @@ def add_script_filters(wf, data, searches=None):
     searches = [Search.from_file(p) for p in f]
     if only:
         searches = [s for s in searches if s.uid in only]
+
+    searches.sort(key=lambda s: s.title)
 
     ypos = YPOS
     for s in searches:

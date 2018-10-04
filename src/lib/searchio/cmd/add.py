@@ -37,7 +37,6 @@ from workflow.notify import notify
 
 from searchio.core import Context
 from searchio import engines
-# from searchio.searches import Manager
 from searchio import util
 
 log = util.logger(__name__)
@@ -57,6 +56,7 @@ def parse_args(wf, args):
 
     Returns:
         searchio.engines.Search: Search object
+
     """
     params = [
         # search dict key | envvar name | CLI option | default
@@ -94,7 +94,6 @@ def run(wf, argv):
     """Run ``searchio add`` sub-command."""
     args = docopt(usage(wf), argv)
     ctx = Context(wf)
-    # m = Manager(wf.datafile('searches'))
     d = parse_args(wf, args)
 
     s = engines.Search.from_dict(d)

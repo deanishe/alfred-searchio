@@ -33,6 +33,7 @@ import (
 var (
 	maxAge                = time.Second * 900
 	queryInResults        bool // Also add query to results
+	alfredSortsResults    bool // Turn off UIDs
 	searchID, query       string
 	searchesDir, cacheDir string
 	// HTTPTimeout is the timeout for establishing an HTTP(S) connection.
@@ -42,9 +43,13 @@ var (
 
 func init() {
 	wf = aw.New()
-	// queryInResults = GetenvBool("SHOW_QUERY_IN_RESULTS")
 	queryInResults = wf.Config.GetBool("SHOW_QUERY_IN_RESULTS")
+	alfredSortsResults = wf.Config.GetBool("ALFRED_SORTS_RESULTS")
 	searchesDir = filepath.Join(wf.DataDir(), "searches")
+
+	if !alfredSortsResults {
+		wf.Configure(aw.SuppressUIDs(true))
+	}
 }
 
 // GetenvBool returns a boolean based on an environment/workflow variable.
@@ -226,12 +231,12 @@ func doSearch(s *Search, q string) error {
 
 	// Send results to Alfred
 	var (
-		querySeen bool
-		icon      = &aw.Icon{Value: s.Icon}
+		// querySeen bool
+		icon = &aw.Icon{Value: s.Icon}
 	)
 	for _, word := range words {
-		if strings.ToLower(word) == strings.ToLower(q) {
-			querySeen = true
+		if strings.ToLower(word) == strings.ToLower(q) && queryInResults {
+			continue
 		}
 		URL := s.SearchURLForQuery(word)
 		wf.NewItem(word).
@@ -244,7 +249,7 @@ func doSearch(s *Search, q string) error {
 	}
 
 	// Add query at end of results
-	if (queryInResults && !querySeen) || len(words) == 0 {
+	if queryInResults || len(words) == 0 {
 		URL := s.SearchURLForQuery(q)
 		wf.NewItem(q).
 			Subtitle(s.Title).

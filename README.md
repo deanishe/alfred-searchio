@@ -27,8 +27,10 @@ Supports the following search engines/websites:
 - Amazon
 - Bing
 - DuckDuckGo
+- DuckDuckGo Image Search
 - eBay
 - Google
+- Google "I'm Feeling Lucky"
 - Google Images
 - Google Maps (requires a Google Places API key)
 - Naver
@@ -74,6 +76,7 @@ There are some variables in the workflow configuration screen (open the workflow
 
 |           Name          |                                                                                                    Description                                                                                                    |
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `ALFRED_SORTS_RESULTS`  | Set to `1` or `yes` to enable Alfred's knowledge. Set to `0` or `no` to always show results in the order returned by the API.                                                                                     |
 | `GOOGLE_PLACES_API_KEY` | You must set this to use Google Maps search. You can get an API key [here](https://developers.google.com/places/web-service/get-api-key).                                                                         |
 | `SHOW_QUERY_IN_RESULTS` | Set to `1` or `yes` to always append the entered query to the end of the results (so you can hit `↑` to select it). If unset (or set to `0` or `no`), the query will only be shown if there are no other results. |
 
@@ -88,6 +91,11 @@ There are some variables in the workflow configuration screen (open the workflow
     - `Import Search …` — Import a new search configuration from a URL (see [Importing Searches](#importing-searches))
     - `Reload` — Regenerate the workflow's Script Filters from your configured searches (and clean the cache). Run this if you screw up the Script Filters or an update overwrites them.
     - `Show Query in Results` — Turn the option to show the query you entered in the results on/off. The query is added to the end of the results, so you can hit `↑` to go straight to it. The query is always shown if there are no other results.
+    - `Alfred Sorts Results` — Turns Alfred's knowledge on/off. If on,
+    Alfred remembers which result you chose for which query and moves
+    that result to the top. If off, results are always shown in the
+    order they are returned by the API. If on, `Show Query in Results`
+    cannot guarantee that the query is always the last result.
     - `Online Help` — Open this page in your browser.
     - `Workflow up to Date` — You have the latest version of the workflow. Action this item to force a check for a new version.
 
@@ -108,7 +116,35 @@ It will try to find and read the OpenSearch description at the URL and import it
 Adding Engines
 --------------
 
-TODO
+In addition to the built-in engines, you can add your own definitions in the `engines` folder in the workflow's data directory. (Enter `searchio workflow:opendata` to open the data folder in Finder.)
+
+An engine definition looks like this:
+
+```json
+{
+  "description": "Alternative search engine",
+  "jsonpath": "$[*].phrase",
+  "title": "DuckDuckGo Images",
+  "pcencode": false,
+  "variants": [
+    {
+      "name": "Argentina",
+      "search_url": "https://duckduckgo.com/?iax=images&ia=images&kp=-2&kz=-1&kl=ar-es&q={query}",
+      "suggest_url": "https://duckduckgo.com/ac/?kp=-2&kz=-1&kl=ar-es&q={query}",
+      "title": "DuckDuckGo Images Argentina",
+      "uid": "ar-es"
+    }
+  ]
+}
+```
+
+`title` and `description` are self-explanatory. `jsonpath` is the JSON path expression that extracts the search suggestions from the JSON returned by the suggestion API.
+
+The optional `pcencode` field tells Searchio! to percent-encode the search query rather than use plus-encoding (the default).
+
+`variants` define the actual searches supported by the search engine, typically one per region or language. All fields are required. `suggest_url` points to the autosuggestion endpoint and `search_url` is the URL of the search results that should be opened in the browser. Both URLs must contain the `{query}` placeholder, which is replaced with the user's search query.
+
+The (optional) icon for your custom engine should be placed in the `icons` directory alongside the `engines` one. It should have the same basename as the engine definition file, just with a different file extension. Supported icon extensions are `png`, `icns`, `jpg` and `jpeg`.
 
 <a name="licensing-thanks"></a>
 ## Licensing, thanks ##
@@ -117,7 +153,12 @@ The code in this workflow is released under the [MIT Licence](http://opensource.
 
 The icons belong to the respective search engines and websites.
 
-This workflow uses the [Alfred-Workflow](http://www.deanishe.net/alfred-workflow/) library and [docopt](http://docopt.org/) (both MIT-licensed).
+This workflow uses the following libraries:
 
+- [Alfred-Workflow](https://www.deanishe.net/alfred-workflow/)
+- [AwGo](https://github.com/deanishe/awgo/)
+- [BeautifulSoup](https://pypi.org/project/beautifulsoup4/)
+- [docopt](http://docopt.org/)
+- [jsonpath-rw](https://pypi.org/project/jsonpath-rw/)
 
 [demo]: ./docs/demo.gif

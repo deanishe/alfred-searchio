@@ -120,6 +120,17 @@ def run(wf, argv):
         icon=icon,
     ))
 
+    icon = ICON_ON if ctx.getbool('ALFRED_SORTS_RESULTS') else ICON_OFF
+    items.append(dict(
+        title=u'Alfred Sorts Results',
+        subtitle=u"Apply Alfred's knowledge to suggestions",
+        arg=u'toggle-alfred-sorts',
+        valid=True,
+        # autocomplete=u'workflow:help',
+        # valid=False,
+        icon=icon,
+    ))
+
     items.append(dict(
         title=u'Online Help',
         subtitle=u'Open the help page in your browser',

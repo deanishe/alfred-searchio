@@ -247,10 +247,10 @@ def uuid():
 
 
 def _bstr(s):
-    """Ensure ``s`` is a a`str`.
+    """Ensure ``s`` is a `str`.
 
-    UTF-8 encode Unicode, call `str`
-    on everything else.
+    UTF-8 encode Unicode, call `str` on everything else.
+
     """
     if isinstance(s, unicode):
         s = s.encode('utf-8')
@@ -268,6 +268,7 @@ def mkurl(url, query=None, pcencode=False):
 
     Returns:
         str: UTF-8 encoded URL
+
     """
     if pcencode:
         from urllib import quote
@@ -300,6 +301,7 @@ def url_encode_dict(dic):
 
     Returns:
         dict: New dictionary with URL-encoded values.
+
     """
     encoded = {}
 
@@ -321,6 +323,7 @@ def shortpath(path):
 
     Returns:
         str: Relative path or path with ~ instead of ``$HOME``.
+
     """
     cwd = os.path.abspath(os.getcwd()) + '/'
     path = os.path.abspath(path)
@@ -337,6 +340,7 @@ def getjson(url):
 
     Returns:
         object: JSON-deserialised HTTP response.
+
     """
     from workflow import web
     r = web.get(url)
@@ -353,6 +357,7 @@ def in_same_directory(*paths):
 
     Returns:
         bool: `True` if `paths` are "siblings".
+
     """
     paths = [os.path.abspath(p) for p in paths]
     parent = None
@@ -376,6 +381,7 @@ def path2uid(p):
 
     Returns:
         str: UID based on path.
+
     """
     return os.path.splitext(os.path.basename(p))[0].lower()
 
@@ -385,6 +391,7 @@ class Table(object):
 
     Attributes:
         rows (list): The rows of the table.
+
     """
 
     def __init__(self, titles=None):
@@ -417,14 +424,6 @@ class Table(object):
 
         row = [title] + list(l)
         self.rows.append(row)
-
-    @property
-    def colwidths(self):
-        """Return widths of columns.
-
-        Returns:
-            list: `int` width of each column.
-        """
 
     @property
     def width(self):

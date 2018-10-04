@@ -55,11 +55,30 @@ def do_toggle_show_query(wf):
     print(Variables(title='Show query in results', text='Turned ' + status))
 
 
+def do_toggle_alfred_sorts(wf):
+    """Toggle "Alfred sorts results" setting."""
+    ctx = Context(wf)
+    v = ctx.getbool('ALFRED_SORTS_RESULTS')
+    if v:
+        new = '0'
+        status = 'off'
+    else:
+        new = '1'
+        status = 'on'
+
+    log.debug('turning "ALFRED_SORTS_RESULTS" %s ...', status)
+    set_config('ALFRED_SORTS_RESULTS', new)
+
+    print(Variables(title='Alfred sorts results', text='Turned ' + status))
+
+
 def run(wf, argv):
     """Run ``searchio web`` sub-command."""
     args = docopt(usage(wf), argv)
     key = args.get('<setting>')
     if key == 'show-query':
         return do_toggle_show_query(wf)
+    if key == 'alfred-sorts':
+        return do_toggle_alfred_sorts(wf)
 
     raise ValueError('Unknown Setting: ' + key)
