@@ -23,13 +23,9 @@ Options:
 
 from __future__ import print_function, absolute_import
 
-import json
-from urlparse import urlparse
-
 from docopt import docopt
 from workflow import web
 
-from searchio.core import Context
 from searchio import opensearch, util
 
 log = util.logger(__name__)
@@ -81,7 +77,7 @@ def import_search(wf, url):
 
     data = dict(engine="OpenSearch", uid=search.uid, title=search.name,
                 name=search.name, icon=icon, search_url=search.search_url,
-                suggest_url=search.suggest_url)
+                suggest_url=search.suggest_url, jsonpath=search.jsonpath)
 
     return data, None
 

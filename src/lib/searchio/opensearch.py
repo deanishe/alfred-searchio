@@ -55,6 +55,7 @@ class OpenSearch(object):
         self.search_url = None
         self.icon_url = None
         self.uid = None
+        self.jsonpath = '$[1][*]'
 
     def validate(self):
         if not self.name:
