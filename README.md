@@ -46,14 +46,13 @@ Supports the following search engines/websites:
 Download and installation
 -------------------------
 
-Download the latest version from the [GitHub releases page](https://github.com/deanishe/alfred-searchio/releases/latest).
-
+Download the latest version from the [GitHub releases page](https://github.com/deanishe/alfred-searchio/releases/latest). Install it, then run `searchio` in Alfred & to setup your searches.
 
 <a name="usage"></a>
 Usage
 -----
 
-There are several example searches pre-configured:
+Here are some example searches to setup after installation:
 
 - `g` — Search Google in English
 - `gd` — Search Google in German
